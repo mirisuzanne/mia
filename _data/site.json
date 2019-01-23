@@ -1,0 +1,18 @@
+{
+  "url": "{{ pkg.homepage }}",
+  "title": "{{ pkg.author.name }}",
+  "description": "{{ pkg.description }}",
+  "author": "{{ pkg.author.name }}",
+  "email": "{{ pkg.author.email }}",
+  "feed": {
+    "subtitle": "{{ pkg.description }}",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "{{ pkg.homepage }}/feed/feed.xml",
+    "id": "{{ pkg.homepage }}"
+  },
+  "styles": [
+    "screen.css",
+    "prism.css"
+  ]
+}

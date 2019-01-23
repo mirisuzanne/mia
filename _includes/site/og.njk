@@ -1,0 +1,13 @@
+{% set meta_title = page.title or site.title %}
+{% set meta_desc = page.description or site.description %}
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="{{ page.og.type or 'website' }}" />
+<meta property="og:title" content="{{ meta_title }}" />
+<meta property="og:description" content="{{ meta_desc }}" />
+<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="{{ meta_desc }}" />
+<meta name="twitter:title" content="{{ meta_title }}" />
+<meta name="twitter:domain" content="{{ site.url }}" />

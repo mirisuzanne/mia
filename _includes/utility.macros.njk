@@ -1,0 +1,23 @@
+{# Attributes #}
+{% macro attr_if(
+  attr,
+  value=none
+) %}
+  {%- if value -%}
+    {{- attr -}}
+    {%- set value = value | string -%}
+    {%- set value = value | url if (attr == 'href') else value -%}
+    {%- if not (value | lower == 'true') -%}
+      ="{{ value }}"
+    {%- endif -%}
+  {%- endif -%}
+{% endmacro %}
+
+
+{% macro show_attrs(
+  attrs
+) %}
+  {%- for attr, value in attrs -%}
+    {{- attr_if(attr, value) -}}
+  {%- endfor -%}
+{% endmacro %}

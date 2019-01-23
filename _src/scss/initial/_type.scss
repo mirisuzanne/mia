@@ -1,0 +1,51 @@
+// Type
+// ====
+
+@include import-webfonts;
+
+:root {
+  @include font-family('system');
+  font-size: size('responsive');
+  line-height: ratio('text-ratio');
+}
+
+h2 {
+  font-size: size('xlarge');
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: size('large');
+}
+
+p {
+  margin-bottom: size('gutter');
+}
+
+blockquote {
+  margin-bottom: size('gutter');
+
+  p:last-of-type {
+    margin-bottom: size('half-shim');
+  }
+}
+
+// Links
+// -----
+
+a {
+  #{$link} {
+    color: var-color('action');
+  }
+
+  #{$focus} {
+    color: var-color('action-hover');
+  }
+}
+
+// Special
+// -------
+
+.is-hidden {
+  @include is-hidden;
+}

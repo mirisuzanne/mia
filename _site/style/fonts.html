@@ -1,0 +1,505 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <title>Fonts | Miriam Suzanne Documentation</title>
+
+  <link href="assets/img/favicon.ico" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/webpack/app_styles.min.css" />
+
+  
+
+  
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" hidden>
+  <symbol id="icon-logo" viewBox="0 0 16 16">
+    <path d="M.2 8L0 7.8v-.2C.8 6.9 1.9 5.9 2.7 5l.4.3c-.5.8-1.1 1.6-1.8 2.3 1 1.2 1 1.3 1.7 2.4l-.4.3c-.4-.4-.5-.6-1-1C1 8.6 1.1 8.7.2 8zM13 10c.6-1.1.7-1.1 1.7-2.4-.6-.6-1.3-1.5-1.7-2.3l.3-.3c.8.8 1.8 1.8 2.7 2.6v.2l-.8.7c-.3.3-1.2 1.1-1.8 1.7L13 10z"/><path d="M2.6 13.1H3c.9 0 1.1-.2 1.1-1.4V4.2c0-1.1-.2-1.4-1.1-1.4h-.4v-.6h4.5v.7h-.3c-.9 0-1.1.2-1.1 1.4v3.2h4.6V4.2c0-1.1-.2-1.4-1.1-1.4h-.3v-.6h4.5v.7H13c-.9 0-1.1.2-1.1 1.4v7.5c0 1.1.2 1.4 1.1 1.4h.4v.7H8.9v-.7h.3c.9 0 1.1-.2 1.1-1.4V8.2H5.7v3.5c0 1.1.2 1.4 1.1 1.4h.3v.7H2.6v-.7z"/>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 28">
+    <path d="M24 21v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1V5c0-.547.453-1 1-1h22c.547 0 1 .453 1 1z"/>
+  </symbol>
+</svg>
+
+  <div data-region="app">
+    <header data-region="banner">
+      
+  <button data-nav-toggle data-toggle="button" aria-controls="nav" aria-pressed="false" type="button" data-toggle-synced="false">
+    
+  <svg data-icon="menu" data-icon-size="nav-icon" ><title>menu</title><use xlink:href="#icon-menu" />
+  </svg>
+
+  </button>
+
+
+      <div class="project-title">
+        <a href="index.html" rel="home" class="project-name">Miriam Suzanne</a>
+        
+          <span class="project-version">1.0.0</span>
+        
+      </div>
+    </header>
+
+    <div data-region="container">
+      
+  <nav data-region="nav" data-toggle="target" id="nav" data-target-id="nav" aria-expanded="false" data-auto-closing="false" data-auto-closing-on-any-click="false">
+    <form action="search.html">
+      <input type="text" name="q" placeholder="Search…" required minlength="3">
+    </form>
+
+    <div class="nav-subsection">
+      <h3 class="nav-home">
+        
+        <a href="index.html" data-nav="is-not-active">Miriam Suzanne</a>
+      </h3>
+
+      
+      
+    </div>
+
+    
+    <div class="nav-subsection">
+      <ul>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Design Tokens</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="color.html" data-nav="is-not-active">Colors</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="fonts.html" data-nav="is-active">Fonts</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="scale.html" data-nav="is-not-active">Ratios &amp;<span class="widont">&nbsp;</span>Sizes</a>
+    </li>
+  </ul>
+            </li></ul>
+    </div>
+
+    
+    
+      <div class="nav-subsection">
+        <h3 class="nav-title">
+          External Links
+        </h3>
+
+        <ul>
+          
+            <li class="nav-item">
+              <a href="http://www.11ty.io" data-nav="is-not-active">Eleventy</a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="https://oddbird.net/accoutrement/" data-nav="is-not-active">Accoutrement</a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="https://oddbird.net/herman/" data-nav="is-not-active">Herman</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+
+    
+      <aside class="footer-credit">
+        <a href="http://oddbird.net/herman/" class="footer-icon">
+          
+  <svg data-icon="logo" data-icon-size="footer-logo" ><use xlink:href="#icon-logo" />
+  </svg>
+
+        </a>
+        <span>
+          Documented with
+          <a href="http://oddbird.net/herman/" class="footer-link">
+            Herman
+          </a>
+        </span>
+        <span>
+          by
+          <a href="http://oddbird.net/" class="footer-link">
+            OddBird
+          </a>
+        </span>
+      </aside>
+    
+  </nav>
+
+
+      <main data-region="main">
+        
+  <nav class="breadcrumb">
+    
+    <a href="index.html" >Miriam Suzanne</a> »
+    <strong>Fonts</strong>
+  </nav>
+
+
+        <div data-page="fonts">
+          
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" >
+  
+    
+  
+  
+  
+  
+
+  
+    <div data-item-section="prose" class="text-block">
+      <h1 id="font-configuration">Font Configuration</h1>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+
+    
+  <div data-item-section="related">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Related</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <a href="http://oddbird.net/accoutrement/docs/type.html" class="item-name">Accoutrement Type</a>
+      
+      
+      
+      <span class="item-note">[external]</span>
+    </h4>
+
+    
+  </div>
+
+
+      
+
+      
+    
+  </div>
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--system-font">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--system-font" class="item-name">$system-font</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$system-font: (
+  &#39;name&#39;: &#39;system&#39;,
+  &#39;stack&#39;: (
+    &#39;system-ui&#39;,
+    &#39;sans-serif&#39;,
+  ),
+  &#39;300&#39;: (
+    &#39;local&#39;: $_system-local,
+  ),
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  
+
+  
+  <div data-item-section="font-specimen">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Font Preview</span>
+        
+          <span class="item-subtitle-supplement"><span >system</span></span>
+        
+      </h3>
+    
+
+    
+
+    
+      
+      
+      
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">font-family: system, system-ui, sans-serif;</code></pre>
+    </div>
+  
+
+    
+
+    
+      <iframe class="render-specimen" srcdoc="
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;fonts&lt;/title&gt;
+
+  &lt;!-- Herman styles and fonts --&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:400,400i,700,700i&quot; rel=&quot;stylesheet&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/webpack/app_styles.min.css&quot; /&gt;
+
+  
+
+  
+    &lt;!-- Local font @font-face CSS --&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+@font-face {
+  font-family: &#39;system&#39;;
+  src: local(&#39;.SFNSText-Light&#39;), local(&#39;.HelveticaNeueDeskInterface-Light&#39;), local(&#39;.LucidaGrandeUI&#39;), local(&#39;Ubuntu Light&#39;), local(&#39;Segoe UI Light&#39;), local(&#39;Roboto-Light&#39;), local(&#39;DroidSans&#39;), local(&#39;Tahoma&#39;);
+  font-weight: 300;
+  font-style: normal;
+}
+
+    &lt;/style&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc font-specimen&quot;&gt;
+  &lt;div data-specimen-face=&quot;300&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      300
+
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: system, system-ui, sans-serif; font-weight: 300; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+    
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/webpack/runtime.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/common.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/app.min.js"></script>
+  
+</body>
+</html>

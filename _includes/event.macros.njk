@@ -1,0 +1,16 @@
+{% macro list(
+  data,
+  title=none
+) %}
+  {% if title %}
+    <h2>{{ title }}</h2>
+  {% endif %}
+  <ol reversed>
+    {% for event in data | reverse %}
+      <li>
+        <strong>{{ event.name }}</strong>
+        {{ event.date | getDate }}
+      </li>
+    {% endfor %}
+  </ol>
+{% endmacro %}

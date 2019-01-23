@@ -1,0 +1,1712 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <title>Ratios &amp; Sizes | Miriam Suzanne Documentation</title>
+
+  <link href="assets/img/favicon.ico" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/webpack/app_styles.min.css" />
+
+  
+
+  
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" hidden>
+  <symbol id="icon-logo" viewBox="0 0 16 16">
+    <path d="M.2 8L0 7.8v-.2C.8 6.9 1.9 5.9 2.7 5l.4.3c-.5.8-1.1 1.6-1.8 2.3 1 1.2 1 1.3 1.7 2.4l-.4.3c-.4-.4-.5-.6-1-1C1 8.6 1.1 8.7.2 8zM13 10c.6-1.1.7-1.1 1.7-2.4-.6-.6-1.3-1.5-1.7-2.3l.3-.3c.8.8 1.8 1.8 2.7 2.6v.2l-.8.7c-.3.3-1.2 1.1-1.8 1.7L13 10z"/><path d="M2.6 13.1H3c.9 0 1.1-.2 1.1-1.4V4.2c0-1.1-.2-1.4-1.1-1.4h-.4v-.6h4.5v.7h-.3c-.9 0-1.1.2-1.1 1.4v3.2h4.6V4.2c0-1.1-.2-1.4-1.1-1.4h-.3v-.6h4.5v.7H13c-.9 0-1.1.2-1.1 1.4v7.5c0 1.1.2 1.4 1.1 1.4h.4v.7H8.9v-.7h.3c.9 0 1.1-.2 1.1-1.4V8.2H5.7v3.5c0 1.1.2 1.4 1.1 1.4h.3v.7H2.6v-.7z"/>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 28">
+    <path d="M24 21v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1V5c0-.547.453-1 1-1h22c.547 0 1 .453 1 1z"/>
+  </symbol>
+</svg>
+
+  <div data-region="app">
+    <header data-region="banner">
+      
+  <button data-nav-toggle data-toggle="button" aria-controls="nav" aria-pressed="false" type="button" data-toggle-synced="false">
+    
+  <svg data-icon="menu" data-icon-size="nav-icon" ><title>menu</title><use xlink:href="#icon-menu" />
+  </svg>
+
+  </button>
+
+
+      <div class="project-title">
+        <a href="index.html" rel="home" class="project-name">Miriam Suzanne</a>
+        
+          <span class="project-version">1.0.0</span>
+        
+      </div>
+    </header>
+
+    <div data-region="container">
+      
+  <nav data-region="nav" data-toggle="target" id="nav" data-target-id="nav" aria-expanded="false" data-auto-closing="false" data-auto-closing-on-any-click="false">
+    <form action="search.html">
+      <input type="text" name="q" placeholder="Search…" required minlength="3">
+    </form>
+
+    <div class="nav-subsection">
+      <h3 class="nav-home">
+        
+        <a href="index.html" data-nav="is-not-active">Miriam Suzanne</a>
+      </h3>
+
+      
+      
+    </div>
+
+    
+    <div class="nav-subsection">
+      <ul>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Design Tokens</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="color.html" data-nav="is-not-active">Colors</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="fonts.html" data-nav="is-not-active">Fonts</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="scale.html" data-nav="is-active">Ratios &amp;<span class="widont">&nbsp;</span>Sizes</a>
+    </li>
+  </ul>
+            </li></ul>
+    </div>
+
+    
+    
+      <div class="nav-subsection">
+        <h3 class="nav-title">
+          External Links
+        </h3>
+
+        <ul>
+          
+            <li class="nav-item">
+              <a href="http://www.11ty.io" data-nav="is-not-active">Eleventy</a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="https://oddbird.net/accoutrement/" data-nav="is-not-active">Accoutrement</a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="https://oddbird.net/herman/" data-nav="is-not-active">Herman</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+
+    
+      <aside class="footer-credit">
+        <a href="http://oddbird.net/herman/" class="footer-icon">
+          
+  <svg data-icon="logo" data-icon-size="footer-logo" ><use xlink:href="#icon-logo" />
+  </svg>
+
+        </a>
+        <span>
+          Documented with
+          <a href="http://oddbird.net/herman/" class="footer-link">
+            Herman
+          </a>
+        </span>
+        <span>
+          by
+          <a href="http://oddbird.net/" class="footer-link">
+            OddBird
+          </a>
+        </span>
+      </aside>
+    
+  </nav>
+
+
+      <main data-region="main">
+        
+  <nav class="breadcrumb">
+    
+    <a href="index.html" >Miriam Suzanne</a> »
+    <strong>Ratios &amp; Sizes</strong>
+  </nav>
+
+
+        <div data-page="scale">
+          
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" >
+  
+    
+  
+  
+  
+  
+
+  
+    <div data-item-section="prose" class="text-block">
+      <h1 id="scale-settings">Scale Settings</h1>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+
+    
+  <div data-item-section="related">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Related</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <a href="http://oddbird.net/accoutrement/docs/scale.html" class="item-name">Accoutrement Scale</a>
+      
+      
+      
+      <span class="item-note">[external]</span>
+    </h4>
+
+    
+  </div>
+
+
+      
+
+      
+    
+  </div>
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--modular-scale">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--modular-scale" class="item-name">$modular-scale</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$modular-scale: (
+  &#39;text-ratio&#39;: 1.6,
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+    
+  <div data-item-section="ratio-preview">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Ratio</span>
+        
+          <span class="item-subtitle-supplement">text-ratio<span class="widont">&nbsp;</span>(1.6)</span>
+        
+      </h3>
+    
+
+    
+      
+  
+  
+
+  <table class="sizes">
+    <tr class="is-hidden">
+      <th class="size-name">Step</th>
+      <th class="size-value">Value</th>
+      <td class="size-viz"></td>
+    </tr>
+
+    
+      
+      
+      
+        
+        
+        
+
+        
+  <tr class="size">
+    <td class="size-name">
+      -3
+    </td>
+    <td class="size-value">
+      <code>
+        0.24
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 1.2207031249999998em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+        
+
+        
+  <tr class="size">
+    <td class="size-name">
+      -2
+    </td>
+    <td class="size-value">
+      <code>
+        0.39
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 1.9531249999999998em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+        
+
+        
+  <tr class="size">
+    <td class="size-name">
+      -1
+    </td>
+    <td class="size-value">
+      <code>
+        0.63
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 3.125em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+        
+
+        
+  <tr class="size ratio-base">
+    <td class="size-name">
+      —
+    </td>
+    <td class="size-value">
+      <code>
+        base
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 5em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+        
+
+        
+  <tr class="size">
+    <td class="size-name">
+      1
+    </td>
+    <td class="size-value">
+      <code>
+        1.6
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 8em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+        
+
+        
+  <tr class="size">
+    <td class="size-name">
+      2
+    </td>
+    <td class="size-value">
+      <code>
+        2.56
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 12.800000000000002em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+        
+
+        
+  <tr class="size">
+    <td class="size-name">
+      3
+    </td>
+    <td class="size-value">
+      <code>
+        4.1
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 20.480000000000004em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+    
+  </table>
+
+    
+  </div>
+
+  
+
+      
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--text-sizes">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--text-sizes" class="item-name">$text-sizes</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$text-sizes: (
+  &#39;root&#39;: 16px,
+  &#39;responsive&#39;: calc(%s + %s)
+    (
+      &#39;%s&#39;: &#39;#root&#39; 0.25vw,
+    ),
+  &#39;large&#39;: 1rem
+    (
+      &#39;text-ratio&#39;: 0.5,
+    ),
+  &#39;xlarge&#39;: calc(%s + %s)
+    (
+      &#39;%s&#39;: &#39;#large&#39; 0.75vw,
+    ),
+  &#39;small&#39;: 1rem
+    (
+      &#39;text-ratio&#39;: -0.5,
+    ),
+  &#39;xsmall&#39;: 1rem
+    (
+      &#39;text-ratio&#39;: -1,
+    ),
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="size-preview">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Size Previews</span>
+        
+      </h3>
+    
+
+    
+    
+
+    
+      
+  <table class="sizes">
+    <tr class="is-hidden">
+      <th class="size-name">Name</th>
+      <th class="size-value">Value</th>
+      <td class="size-viz"></td>
+    </tr>
+
+    
+      
+        
+  <tr class="size">
+    <td class="size-name">
+      root
+    </td>
+    <td class="size-value">
+      <code>
+        16px
+      </code>
+    </td>
+    <td class="size-viz is-text">
+      
+        <span class="size-text" style="font-size: 16px;">
+          
+  
+    <span data-specimen-lorem="title">
+      Pack my box with five dozen liquor&nbsp;jugs.
+    </span>
+  
+
+        </span>
+      
+    </td>
+  </tr>
+
+    
+      
+        
+  <tr class="size">
+    <td class="size-name">
+      responsive
+    </td>
+    <td class="size-value">
+      <code>
+        calc(16px + 0.25vw)
+      </code>
+    </td>
+    <td class="size-viz is-text">
+      
+        <span class="size-text" style="font-size: calc(16px + 0.25vw);">
+          
+  
+    <span data-specimen-lorem="title">
+      Pack my box with five dozen liquor&nbsp;jugs.
+    </span>
+  
+
+        </span>
+      
+    </td>
+  </tr>
+
+    
+      
+        
+  <tr class="size">
+    <td class="size-name">
+      large
+    </td>
+    <td class="size-value">
+      <code>
+        1.2649110641rem
+      </code>
+    </td>
+    <td class="size-viz is-text">
+      
+        <span class="size-text" style="font-size: 1.2649110641rem;">
+          
+  
+    <span data-specimen-lorem="title">
+      Pack my box with five dozen liquor&nbsp;jugs.
+    </span>
+  
+
+        </span>
+      
+    </td>
+  </tr>
+
+    
+      
+        
+  <tr class="size">
+    <td class="size-name">
+      xlarge
+    </td>
+    <td class="size-value">
+      <code>
+        calc(1.2649110641rem + 0.75vw)
+      </code>
+    </td>
+    <td class="size-viz is-text">
+      
+        <span class="size-text" style="font-size: calc(1.2649110641rem + 0.75vw);">
+          
+  
+    <span data-specimen-lorem="title">
+      Pack my box with five dozen liquor&nbsp;jugs.
+    </span>
+  
+
+        </span>
+      
+    </td>
+  </tr>
+
+    
+      
+        
+  <tr class="size">
+    <td class="size-name">
+      small
+    </td>
+    <td class="size-value">
+      <code>
+        0.790569415rem
+      </code>
+    </td>
+    <td class="size-viz is-text">
+      
+        <span class="size-text" style="font-size: 0.790569415rem;">
+          
+  
+    <span data-specimen-lorem="title">
+      Pack my box with five dozen liquor&nbsp;jugs.
+    </span>
+  
+
+        </span>
+      
+    </td>
+  </tr>
+
+    
+      
+        
+  <tr class="size">
+    <td class="size-name">
+      xsmall
+    </td>
+    <td class="size-value">
+      <code>
+        0.625rem
+      </code>
+    </td>
+    <td class="size-viz is-text">
+      
+        <span class="size-text" style="font-size: 0.625rem;">
+          
+  
+    <span data-specimen-lorem="title">
+      Pack my box with five dozen liquor&nbsp;jugs.
+    </span>
+  
+
+        </span>
+      
+    </td>
+  </tr>
+
+    
+  </table>
+
+    
+  
+  </div>
+
+
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--spacing-sizes">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--spacing-sizes" class="item-name">$spacing-sizes</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$spacing-sizes: (
+  &#39;rhythm&#39;: &#39;#root&#39;
+    (
+      &#39;text-ratio&#39;: 1,
+      &#39;convert-units&#39;: &#39;rem&#39;,
+    ),
+  &#39;gutter&#39;: &#39;#rhythm&#39;,
+  &#39;double-gutter&#39;: &#39;#gutter&#39;
+    (
+      &#39;times&#39;: 2,
+    ),
+  &#39;spacer&#39;: calc(%s + %s)
+    (
+      &#39;%s&#39;: &#39;#double-gutter&#39; 4vmin,
+    ),
+  &#39;shim&#39;: &#39;#gutter&#39;
+    (
+      &#39;times&#39;: 0.5,
+    ),
+  &#39;half-shim&#39;: &#39;#shim&#39;
+    (
+      &#39;times&#39;: 0.5,
+    ),
+  &#39;quarter-shim&#39;: &#39;#shim&#39;
+    (
+      &#39;times&#39;: 0.25,
+    ),
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="size-preview">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Size Previews</span>
+        
+      </h3>
+    
+
+    
+    
+
+    
+      
+  
+  
+
+  <table class="sizes">
+    <tr class="is-hidden">
+      <th class="size-name">Name</th>
+      <th class="size-value">Value</th>
+      <td class="size-viz"></td>
+    </tr>
+
+    
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      rhythm, gutter
+    </td>
+    <td class="size-value">
+      <code>
+        1.6rem
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 1.6rem;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      double-gutter
+    </td>
+    <td class="size-value">
+      <code>
+        3.2rem
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 3.2rem;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      spacer
+    </td>
+    <td class="size-value">
+      <code>
+        calc(3.2rem + 4vmin)
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: calc(3.2rem + 4vmin);">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      shim
+    </td>
+    <td class="size-value">
+      <code>
+        0.8rem
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 0.8rem;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      half-shim
+    </td>
+    <td class="size-value">
+      <code>
+        0.4rem
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 0.4rem;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      quarter-shim
+    </td>
+    <td class="size-value">
+      <code>
+        0.2rem
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 0.2rem;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+    
+  </table>
+
+    
+  
+  </div>
+
+
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--component-sizes">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--component-sizes" class="item-name">$component-sizes</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$component-sizes: (
+  &#39;icon&#39;: 1em,
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="size-preview">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Size Previews</span>
+        
+      </h3>
+    
+
+    
+    
+
+    
+      
+  
+  
+
+  <table class="sizes">
+    <tr class="is-hidden">
+      <th class="size-name">Name</th>
+      <th class="size-value">Value</th>
+      <td class="size-viz"></td>
+    </tr>
+
+    
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      icon
+    </td>
+    <td class="size-value">
+      <code>
+        1em
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 1em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+    
+  </table>
+
+    
+  
+  </div>
+
+
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--page-sizes">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--page-sizes" class="item-name">$page-sizes</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$page-sizes: (
+  &#39;page&#39;: 42rem,
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="size-preview">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Size Previews</span>
+        
+      </h3>
+    
+
+    
+    
+
+    
+      
+  
+  
+
+  <table class="sizes is-large">
+    <tr class="is-hidden">
+      <th class="size-name">Name</th>
+      <th class="size-value">Value</th>
+      <td class="size-viz"></td>
+    </tr>
+
+    
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      page
+    </td>
+    <td class="size-value">
+      <code>
+        42rem
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 42rem;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+    
+  </table>
+
+    
+  
+  </div>
+
+
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--break-sizes">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--break-sizes" class="item-name">$break-sizes</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$break-sizes: (
+  &#39;page-break&#39;: &#39;#page&#39;
+    (
+      &#39;times&#39;: 2,
+      &#39;convert-units&#39;: &#39;browser-ems&#39;,
+    ),
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/webpack/runtime.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/common.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/app.min.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,6 @@
+{% if site.feed %}
+<link rel="alternate"
+  href="{{ site.feed.path | url }}"
+  type="application/atom+xml"
+  title="{{ site.title }}">
+{% endif %}

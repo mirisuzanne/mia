@@ -1,0 +1,29 @@
+theme: Herman
+dest: _site/style/
+
+display:
+  access: public
+
+package: ./package.json
+shortcutIcon: ./favicon.ico
+verbose: true
+
+groups:
+  Design Tokens:
+    color: Colors
+    fonts: Fonts
+    scale: Ratios & Sizes
+
+herman:
+  extraLinks:
+    - name: 'Eleventy'
+      url: http://www.11ty.io
+    - name: 'Accoutrement'
+      url: https://oddbird.net/accoutrement/
+    - name: 'Herman'
+      url: https://oddbird.net/herman/
+  fontpath: 'assets/fonts/'
+  sass:
+    includepaths: ['src/scss']
+    includes: ['config/manifest']
+    jsonfile: 'assets/css/json.css'

@@ -1,0 +1,15 @@
+{% import 'utility.macros.njk' as utility %}
+
+<nav>
+  {%- for item in collections._nav -%}
+    {% set title = item.data.nav.title or item.data.title or 'TitleMePlease' %}
+    <a href="{{ item.url | url }}"
+      {{ utility.show_attrs({
+        'data-nav': title | slug,
+        'data-active': (item.url | url == page.url | url)
+      }) }} />
+      {{ title }}
+    </a>
+  {%- endfor -%}
+</nav>
+

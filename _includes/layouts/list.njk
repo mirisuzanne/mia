@@ -1,0 +1,16 @@
+{% extends 'layouts/base.njk' %}
+{% import 'post.macros.njk' as post %}
+
+{% block content %}
+	{{ content | safe }}
+	{% if list_of %}
+		{% if list_of | typeOf == 'object' %}
+			{% for tag in list_of %}
+				{{ tag }}
+				{{ post.list(collections, tag) }}
+			{% endfor %}
+		{% else %}
+			{{ post.list(collections, list_of) }}
+		{% endif %}
+	{% endif %}
+{% endblock %}

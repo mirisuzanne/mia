@@ -1,0 +1,36 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+<!doctype html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+
+		{% set title = renderData.title or title or site.title %}
+    <title>{{ title }}</title>
+    <meta name="description"
+      content="{{ site.description or page.description }}" />
+
+		{% for url in site.styles %}
+			<link rel="stylesheet"
+				href="/assets/css/{{ url }}" />
+		{% endfor %}
+
+    {% include 'site/og.njk' %}
+    {% include 'site/feed.njk' %}
+	</head>
+
+	<body>
+		{% include 'site/nav.njk' %}
+
+		<main {{ utility.attr_if('class', templateClass) }}>
+			{% block content %}
+				{{ content | safe }}
+			{% endblock %}
+		</main>
+
+		{% include 'site/footer.njk' %}
+		<!-- Current page: {{ page.url | url }} -->
+	</body>
+</html>

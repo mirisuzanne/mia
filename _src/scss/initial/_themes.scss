@@ -1,0 +1,27 @@
+// Themes
+// ======
+
+$themes: (
+  'light': $colors,
+  'dark': $dark-theme,
+);
+
+$invert: (
+  'light': $dark-theme,
+  'dark': $colors,
+);
+
+@each $name, $theme in $themes {
+  [data-theme='#{$name}'] {
+    @include colors--($theme);
+
+    [data-theme='invert'] {
+      @include colors--(map-get($invert, $name));
+    }
+  }
+}
+
+[data-theme] {
+  background-color: var-color('background');
+  color: var-color('text');
+}

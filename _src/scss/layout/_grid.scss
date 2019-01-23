@@ -1,0 +1,17 @@
+// Grid Layout
+// ===========
+
+[data-layout='grid'] {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0 auto;
+  max-width: size('page');
+  min-height: 100vh;
+  padding: size('gutter') size('double-gutter');
+}
+
+[data-layout='header'] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: size('gutter');
+}

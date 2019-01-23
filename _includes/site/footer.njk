@@ -1,0 +1,11 @@
+{% import 'utility.macros.njk' as utility %}
+
+<footer>
+  © {% getDate 'year' %}
+  <a href="mailto:{{ site.email }}">
+    {{ site.author }}
+  </a>
+  {% for link in footer.links %}
+    | <a href="{{ link.url | url }}">{{ link.name }}</a>
+  {% endfor %}
+</footer>

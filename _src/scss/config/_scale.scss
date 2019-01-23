@@ -1,0 +1,125 @@
+/// # Scale Settings
+/// @group scale
+/// @link http://oddbird.net/accoutrement/docs/scale.html
+///   Accoutrement Scale
+
+/// # Scale Configuration
+/// @group scale
+/// @link http://oddbird.net/accoutrement-scale/docs/
+///   Accoutrement Scale
+
+$_ratio: get-function('ratio');
+$_size: get-function('size');
+
+// Ratios
+// ------
+/// @group scale
+/// @ratios
+$modular-scale: (
+  'text-ratio': 1.6,
+);
+
+@include add-ratios($modular-scale);
+@include herman-add('ratios', 'modular-scale', $modular-scale, $_ratio);
+
+// Text Sizes
+// ----------
+/// @group scale
+/// @sizes text-sizes {text}
+$text-sizes: (
+  'root': 16px,
+  'responsive': calc(%s + %s)
+    (
+      '%s': '#root' 0.25vw,
+    ),
+  'large': 1rem
+    (
+      'text-ratio': 0.5,
+    ),
+  'xlarge': calc(%s + %s)
+    (
+      '%s': '#large' 0.75vw,
+    ),
+  'small': 1rem
+    (
+      'text-ratio': -0.5,
+    ),
+  'xsmall': 1rem
+    (
+      'text-ratio': -1,
+    ),
+);
+
+@include add-sizes($text-sizes);
+@include herman-add('sizes', 'text-sizes', $text-sizes, $_size);
+
+// Spacing Sizes
+// -------------
+/// @group scale
+/// @sizes spacing-sizes {ruler}
+$spacing-sizes: (
+  'rhythm': '#root'
+    (
+      'text-ratio': 1,
+      'convert-units': 'rem',
+    ),
+  'gutter': '#rhythm',
+  'double-gutter': '#gutter'
+    (
+      'times': 2,
+    ),
+  'spacer': calc(%s + %s)
+    (
+      '%s': '#double-gutter' 4vmin,
+    ),
+  'shim': '#gutter'
+    (
+      'times': 0.5,
+    ),
+  'half-shim': '#shim'
+    (
+      'times': 0.5,
+    ),
+  'quarter-shim': '#shim'
+    (
+      'times': 0.25,
+    ),
+);
+
+@include add-sizes($spacing-sizes);
+@include herman-add('sizes', 'spacing-sizes', $spacing-sizes, $_size);
+
+// Component Sizes
+// ---------------
+/// @group scale
+/// @sizes component-sizes {ruler}
+$component-sizes: (
+  'icon': 1em,
+);
+
+@include add-sizes($component-sizes);
+@include herman-add('sizes', 'component-sizes', $component-sizes, $_size);
+
+// Page Sizes
+// ----------
+/// @group scale
+/// @sizes page-sizes {ruler-large}
+$page-sizes: (
+  'page': 42rem,
+);
+
+@include add-sizes($page-sizes);
+@include herman-add('sizes', 'page-sizes', $page-sizes, $_size);
+
+// Breakpoints
+// -----------
+/// @group scale
+$break-sizes: (
+  'page-break': '#page'
+    (
+      'times': 2,
+      'convert-units': 'browser-ems',
+    ),
+);
+
+@include add-sizes($break-sizes);

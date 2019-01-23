@@ -1,0 +1,97 @@
+/// # Color Configuration
+/// @group color
+/// @link http://oddbird.net/accoutrement/docs/color.html
+///   Accoutrement Color
+
+$_color: get-function('color');
+@include register-function('desaturate');
+
+// Brand Colors
+// ------------
+/// The brand is defined by our primary brand blue,
+/// along with secondary pink and orange base colors.
+/// @group color
+/// @colors
+/// @type Map
+$brand-colors: (
+  '_brand-main': hsl(195, 52%, 31%),
+  '_brand-accent': hsl(330, 100%, 45%)
+    (
+      'shade': 25% #000,
+    ),
+  '_brand-gray': '#_brand-main'
+    (
+      'desaturate': 90%,
+    ),
+);
+
+@include add-colors($brand-colors);
+@include herman-add('colors', 'brand-colors', $brand-colors, $_color);
+
+// Contrast Colors
+// ---------------
+/// Tints and shades of the brand colors.
+/// @group color
+/// @colors
+/// @type Map
+$shade-colors: shades-of($brand-colors, 5);
+
+@include add-colors($shade-colors);
+@include herman-add('colors', 'shade-colors', $shade-colors, $_color);
+
+// Contrast Colors
+// ---------------
+/// The light and dark contrast colors act as
+/// the high and low range of our palette.
+/// These colors should not be dynamic.
+/// @group color
+/// @colors
+/// @type Map
+$contrast-colors: (
+  '_contrast-light': color('#_brand-gray-light-5'),
+  '_contrast-dark': color('#_brand-main-dark-5'),
+);
+
+@include add-colors($contrast-colors);
+@include herman-add('colors', 'contrast-colors', $contrast-colors, $_color);
+
+// Theme Colors
+// ------------
+/// Main theme colors will be set as relative CSS variables –
+/// applying the above colors to more specific use-cases.
+/// **This map should not include any color-adjustments.**
+/// @group color
+/// @colors
+/// @type Map
+$theme-colors: (
+  'background': '#_contrast-light',
+  'text': '#_contrast-dark',
+  'text-light': '#_brand-main-dark-2',
+  'border': '#_brand-gray-0',
+  'border-light': '#_brand-gray-light-1',
+  'action': '#_brand-accent-dark-2',
+  'action-hover': '#_brand-accent-dark-4',
+);
+
+@include add-colors($theme-colors);
+@include herman-add('colors', 'theme-colors', $theme-colors, $_color);
+
+// Inverted Theme
+// --------------
+/// Inverted theme colors for light-on-dark mode.
+/// **This map should not include any color-adjustments.**
+/// @group color
+/// @colors
+/// @type Map
+$invert-colors: (
+  'background': '#_contrast-dark',
+  'text': '#_contrast-light',
+  'text-light': '#_brand-main-light-2',
+  'border': '#_brand-gray-0',
+  'border-light': '#_brand-gray-dark-1',
+  'action': '#_brand-accent-light-3',
+  'action-hover': '#_brand-accent-light-4',
+);
+
+@include herman-add('colors', 'invert-colors', $invert-colors, $_color);
+$dark-theme: map-merge($colors, $invert-colors);

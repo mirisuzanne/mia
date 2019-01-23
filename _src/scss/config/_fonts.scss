@@ -1,0 +1,40 @@
+/// # Font Configuration
+/// @group fonts
+/// @link http://oddbird.net/accoutrement/docs/type.html
+///   Accoutrement Type
+
+// Font Path
+// ---------
+$font-path: '../fonts/';
+
+// System Local
+// ------------
+$_system-local: (
+  '.SFNSText-Light',
+  '.HelveticaNeueDeskInterface-Light',
+  '.LucidaGrandeUI',
+  'Ubuntu Light',
+  'Segoe UI Light',
+  'Roboto-Light',
+  'DroidSans',
+  'Tahoma'
+);
+
+// System Font
+// -----------
+///
+/// @group fonts
+/// @font system
+$system-font: (
+  'name': 'system',
+  'stack': (
+    'system-ui',
+    'sans-serif',
+  ),
+  '300': (
+    'local': $_system-local,
+  ),
+);
+
+@include add-font('system', $system-font);
+@include herman-add('font', 'system', $system-font);
