@@ -1,4 +1,5 @@
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const typogr = require('typogr');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownIt = require('markdown-it')({
   html: true,
@@ -124,10 +125,11 @@ module.exports = eleventyConfig => {
     return getDate(format, date);
   });
 
-  eleventyConfig.addFilter('md', (content, inline = false) => {
-    return inline
+  eleventyConfig.addFilter('md', (content, inline = false, type = true) => {
+    const html = inline
       ? markdownIt.renderInline(content)
       : markdownIt.render(content);
+    return type ? typogr(html).typogrify() : html;
   });
 
   // shortcodes

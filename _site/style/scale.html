@@ -86,7 +86,12 @@
       <a href="scale.html" data-nav="is-active">Ratios &amp;<span class="widont">&nbsp;</span>Sizes</a>
     </li>
   </ul>
-            </li></ul>
+            </li>
+  
+    <li class="nav-item">
+      <a href="config-fonts.html" data-nav="is-not-active">config-fonts</a>
+    </li>
+  </ul>
     </div>
 
     
@@ -658,18 +663,22 @@
       
       
       <pre class="hljs-pre"><code class="lang-scss">$text-sizes: (
-  &#39;root&#39;: 16px,
+  &#39;root&#39;: 18px,
   &#39;responsive&#39;: calc(%s + %s)
     (
-      &#39;%s&#39;: &#39;#root&#39; 0.25vw,
+      &#39;%s&#39;: &#39;#root&#39; 0.5vw,
     ),
   &#39;large&#39;: 1rem
     (
-      &#39;text-ratio&#39;: 0.5,
+      &#39;text-ratio&#39;: 1,
     ),
   &#39;xlarge&#39;: calc(%s + %s)
     (
-      &#39;%s&#39;: &#39;#large&#39; 0.75vw,
+      &#39;%s&#39;: &#39;#large&#39; 1vw,
+    ),
+  &#39;xxlarge&#39;: calc(%s + %s)
+    (
+      &#39;%s&#39;: &#39;#xlarge&#39; 1.5vw,
     ),
   &#39;small&#39;: 1rem
     (
@@ -759,12 +768,12 @@
     </td>
     <td class="size-value">
       <code>
-        16px
+        18px
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: 16px;">
+        <span class="size-text" style="font-size: 18px;">
           
   
     <span data-specimen-lorem="title">
@@ -786,12 +795,12 @@
     </td>
     <td class="size-value">
       <code>
-        calc(16px + 0.25vw)
+        calc(18px + 0.5vw)
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: calc(16px + 0.25vw);">
+        <span class="size-text" style="font-size: calc(18px + 0.5vw);">
           
   
     <span data-specimen-lorem="title">
@@ -813,12 +822,12 @@
     </td>
     <td class="size-value">
       <code>
-        1.2649110641rem
+        1.6rem
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: 1.2649110641rem;">
+        <span class="size-text" style="font-size: 1.6rem;">
           
   
     <span data-specimen-lorem="title">
@@ -840,12 +849,39 @@
     </td>
     <td class="size-value">
       <code>
-        calc(1.2649110641rem + 0.75vw)
+        calc(1.6rem + 1vw)
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: calc(1.2649110641rem + 0.75vw);">
+        <span class="size-text" style="font-size: calc(1.6rem + 1vw);">
+          
+  
+    <span data-specimen-lorem="title">
+      Pack my box with five dozen liquor&nbsp;jugs.
+    </span>
+  
+
+        </span>
+      
+    </td>
+  </tr>
+
+    
+      
+        
+  <tr class="size">
+    <td class="size-name">
+      xxlarge
+    </td>
+    <td class="size-value">
+      <code>
+        calc(calc(1.6rem + 1vw) + 1.5vw)
+      </code>
+    </td>
+    <td class="size-viz is-text">
+      
+        <span class="size-text" style="font-size: calc(calc(1.6rem + 1vw) + 1.5vw);">
           
   
     <span data-specimen-lorem="title">
@@ -1469,6 +1505,10 @@
       
       <pre class="hljs-pre"><code class="lang-scss">$page-sizes: (
   &#39;page&#39;: 42rem,
+  &#39;half&#39;: &#39;#page&#39;
+    (
+      &#39;divide&#39;: 2,
+    ),
 );</code></pre>
     </div>
   
@@ -1560,6 +1600,29 @@
       
         <div class="size-overflow">
           <span class="size-bar" style="width: 42rem;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      half
+    </td>
+    <td class="size-value">
+      <code>
+        21rem
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 21rem;">
             &nbsp;
           </span>
         </div>

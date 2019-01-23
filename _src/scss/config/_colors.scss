@@ -21,7 +21,7 @@ $brand-colors: (
     ),
   '_brand-gray': '#_brand-main'
     (
-      'desaturate': 90%,
+      'desaturate': 30%,
     ),
 );
 
@@ -65,11 +65,12 @@ $contrast-colors: (
 /// @type Map
 $theme-colors: (
   'background': '#_contrast-light',
-  'text': '#_contrast-dark',
+  'text': '#_brand-main-dark-4',
   'text-light': '#_brand-main-dark-2',
   'border': '#_brand-gray-0',
   'border-light': '#_brand-gray-light-1',
   'action': '#_brand-accent-dark-2',
+  'action-underline': '#_brand-accent-light-2',
   'action-hover': '#_brand-accent-dark-4',
 );
 
@@ -85,11 +86,12 @@ $theme-colors: (
 /// @type Map
 $invert-colors: (
   'background': '#_contrast-dark',
-  'text': '#_contrast-light',
+  'text': '#_brand-main-light-4',
   'text-light': '#_brand-main-light-2',
   'border': '#_brand-gray-0',
   'border-light': '#_brand-gray-dark-1',
   'action': '#_brand-accent-light-3',
+  'action-underline': '#_brand-accent-dark-2',
   'action-hover': '#_brand-accent-light-4',
 );
 

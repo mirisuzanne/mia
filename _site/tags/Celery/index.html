@@ -5,10 +5,12 @@
 		<meta name="viewport"
       content="width=device-width, initial-scale=1.0" />
 
-		
     <title>Miriam Suzanne</title>
     <meta name="description"
       content="art &amp; code" />
+
+		<script src="https://use.typekit.net/slx1xnq.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 		
 			<link rel="stylesheet"
@@ -41,26 +43,42 @@
 
 	</head>
 
-	<body>
+	<body data-layout="grid">
 		
 
-<nav>
+<nav data-layout="nav">
     <a href="/"
-      data-nav="artandcode" />
-      art&amp;code
+      data-nav="home"
+
+rel="home"
+ />
+      art<span class="amp">&amp;</span>code
     </a>
     <a href="/biography/"
-      data-nav="biography" />
+      data-nav="biography"
+
+
+ />
       biography
     </a>
     <a href="/contact/"
-      data-nav="contact" />
+      data-nav="contact"
+
+
+ />
       contact
     </a></nav>
 
 
+		<header data-layout="banner">
+  <h1></h1>
+  <span class="subtitle"></span>
+</header>
 
-		<main >
+
+		<main data-layout="main"
+			
+>
 			
 				<h1>Tagged “Celery”</h1>
 <ol reversed>
@@ -72,7 +90,7 @@
 
 		
 
-<footer>
+<footer data-layout="footer">
   © 2019
   <a href="mailto:miriam@oddbird.net">
     Miriam Suzanne

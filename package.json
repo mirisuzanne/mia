@@ -39,7 +39,8 @@
     "sassdoc-theme-herman": "^3.0.2",
     "stylelint": "^9.9.0",
     "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-scss": "^3.4.4"
+    "stylelint-scss": "^3.4.4",
+    "typogr": "^0.6.8"
   },
   "husky": {
     "hooks": {

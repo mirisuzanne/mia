@@ -4,8 +4,7 @@ subtitle: 'web developer, artist, speaker, author, musician, playwright…'
 layout: 'base'
 nav:
   order: 0
-  title: 'art&code'
+  title: 'art<span class="amp">&amp;</span>code'
+  slug: 'home'
+  rel: 'home'
 ---
-
-# {{ title }}
-{{ subtitle }}

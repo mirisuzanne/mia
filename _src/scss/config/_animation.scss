@@ -1,2 +1,10 @@
 // Animation Config
 // ================
+
+$times: (
+  'fast': 200ms,
+);
+
+$changes: (
+  'text-color': text-decoration-color time('fast') ease('_in-out'),
+);

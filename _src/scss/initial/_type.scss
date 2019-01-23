@@ -4,14 +4,19 @@
 @include import-webfonts;
 
 :root {
-  @include font-family('system');
+  @include font-family('body');
   font-size: size('responsive');
   line-height: ratio('text-ratio');
 }
 
+h1 {
+  font-size: size('xxlarge');
+  line-height: 1;
+}
+
 h2 {
   font-size: size('xlarge');
-  line-height: 1.2;
+  line-height: 1;
 }
 
 h3 {
@@ -35,11 +40,16 @@ blockquote {
 
 a {
   #{$link} {
+    @include transition('text-color');
     color: var-color('action');
+    text-decoration-color: var-color('action-underline');
+    text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
   }
 
   #{$focus} {
     color: var-color('action-hover');
+    text-decoration-color: currentColor;
   }
 }
 
@@ -48,4 +58,9 @@ a {
 
 .is-hidden {
   @include is-hidden;
+}
+
+.amp {
+  @include font-family('amp');
+  font-style: italic;
 }

@@ -7,10 +7,12 @@
 		<meta name="viewport"
       content="width=device-width, initial-scale=1.0" />
 
-		{% set title = renderData.title or title or site.title %}
-    <title>{{ title }}</title>
+    <title>{{ title or site.title }}</title>
     <meta name="description"
       content="{{ site.description or page.description }}" />
+
+		<script src="https://use.typekit.net/slx1xnq.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 		{% for url in site.styles %}
 			<link rel="stylesheet"
@@ -21,10 +23,12 @@
     {% include 'site/feed.njk' %}
 	</head>
 
-	<body>
+	<body data-layout="grid">
 		{% include 'site/nav.njk' %}
+		{% include 'site/banner.njk' %}
 
-		<main {{ utility.attr_if('class', templateClass) }}>
+		<main data-layout="main"
+			{{ utility.attr_if('class', templateClass) }}>
 			{% block content %}
 				{{ content | safe }}
 			{% endblock %}

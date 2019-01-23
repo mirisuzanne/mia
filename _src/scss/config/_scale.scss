@@ -27,18 +27,22 @@ $modular-scale: (
 /// @group scale
 /// @sizes text-sizes {text}
 $text-sizes: (
-  'root': 16px,
+  'root': 18px,
   'responsive': calc(%s + %s)
     (
-      '%s': '#root' 0.25vw,
+      '%s': '#root' 0.5vw,
     ),
   'large': 1rem
     (
-      'text-ratio': 0.5,
+      'text-ratio': 1,
     ),
   'xlarge': calc(%s + %s)
     (
-      '%s': '#large' 0.75vw,
+      '%s': '#large' 1vw,
+    ),
+  'xxlarge': calc(%s + %s)
+    (
+      '%s': '#xlarge' 1.5vw,
     ),
   'small': 1rem
     (
@@ -106,6 +110,10 @@ $component-sizes: (
 /// @sizes page-sizes {ruler-large}
 $page-sizes: (
   'page': 42rem,
+  'half': '#page'
+    (
+      'divide': 2,
+    ),
 );
 
 @include add-sizes($page-sizes);
