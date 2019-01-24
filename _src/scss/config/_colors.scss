@@ -48,7 +48,7 @@ $shade-colors: shades-of($brand-colors, 5);
 /// @colors
 /// @type Map
 $contrast-colors: (
-  '_contrast-light': color('#_brand-gray-light-5'),
+  '_contrast-light': color('#_brand-main-light-5'),
   '_contrast-dark': color('#_brand-main-dark-5'),
 );
 
@@ -67,6 +67,8 @@ $theme-colors: (
   'background': '#_contrast-light',
   'text': '#_brand-main-dark-4',
   'text-light': '#_brand-main-dark-2',
+  'text-shadow': #fff,
+  'amp': '#text-light',
   'border': '#_brand-gray-0',
   'border-light': '#_brand-gray-light-1',
   'action': '#_brand-accent-dark-2',
@@ -88,11 +90,13 @@ $invert-colors: (
   'background': '#_contrast-dark',
   'text': '#_brand-main-light-4',
   'text-light': '#_brand-main-light-2',
+  'text-shadow': #000,
+  'amp': '#text-light',
   'border': '#_brand-gray-0',
   'border-light': '#_brand-gray-dark-1',
-  'action': '#_brand-accent-light-3',
-  'action-underline': '#_brand-accent-dark-2',
-  'action-hover': '#_brand-accent-light-4',
+  'action': '#_brand-accent-light-4',
+  'action-underline': '#_brand-accent-0',
+  'action-hover': '#_brand-accent-light-3',
 );
 
 @include herman-add('colors', 'invert-colors', $invert-colors, $_color);

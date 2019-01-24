@@ -5,7 +5,7 @@
 		<meta name="viewport"
       content="width=device-width, initial-scale=1.0" />
 
-    <title>Miriam Suzanne</title>
+    <title> | Miriam Suzanne</title>
     <meta name="description"
       content="art &amp; code" />
 
@@ -47,27 +47,29 @@
 		
 
 <nav data-layout="nav">
-    <a href="/"
-      data-nav="home"
+  <div data-inner="nav">
+      <a href="/"
+        data-nav="home"
 
 rel="home"
  />
-      art<span class="amp">&amp;</span>code
-    </a>
-    <a href="/biography/"
-      data-nav="biography"
+        art<span class="amp">&amp;</span>code
+      </a>
+      <a href="/biography/"
+        data-nav="biography"
 
 
  />
-      biography
-    </a>
-    <a href="/contact/"
-      data-nav="contact"
+        biography
+      </a>
+      <a href="/contact/"
+        data-nav="contact"
 
 
  />
-      contact
-    </a></nav>
+        contact
+      </a></div>
+</nav>
 
 
 		<header data-layout="banner">
@@ -117,16 +119,59 @@ Aug 15, 2018
 		
 
 <footer data-layout="footer">
-  © 2019
-  <a href="mailto:miriam@oddbird.net">
-    Miriam Suzanne
-  </a>
-  
-    | <a href="https://www.11ty.io/">11ty</a>
-  
-    | <a href="/style/">styles</a>
-  
+  <p>
+    Copyright © 2019
+    <a href="mailto:miriam@oddbird.net">
+      Miriam Suzanne
+    </a>
+  </p>
+
+  <p>
+    
+      <a href="https://www.11ty.io/">11ty</a> |
+    
+      <a href="/style/">styles</a> |
+    
+    <button data-btn="toggle-theme">invert</button>
+  </p>
 </footer>
+
+
+<script>
+  const root = document.querySelector("html");
+  const attr = "data-theme";
+  const current = root.getAttribute(attr);
+  const toggle = document.querySelector("[data-btn='toggle-theme']");
+
+  const setTheme = (to) => {
+    localStorage.setItem('theme', to);
+    root.setAttribute(attr, to);
+  }
+
+  const getTheme = () => {
+    const currentTheme = root.getAttribute(attr);
+    const userTheme = localStorage.getItem('theme');
+    return userTheme && userTheme !== 'undefined'
+      ? userTheme
+      : currentTheme;
+  }
+
+  const changeTheme = () => {
+    const from = getTheme();
+    const opts = {
+      "light": "dark",
+      "dark": "light",
+    }
+    const to = opts[from];
+    setTheme(to);
+  }
+
+  document.onload = setTheme(getTheme());
+
+  toggle.addEventListener("click", () => {
+    changeTheme();
+  });
+</script>
 
 		<!-- Current page: /blog/2/ -->
 	</body>

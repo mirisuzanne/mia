@@ -1,0 +1,25 @@
+// Patterns
+// ========
+
+// layouts
+$layouts: (
+  'body-columns': (
+    size('gutter') minmax(0, 1fr) repeat(2, minmax(0, size('half')))
+      minmax(0, 1fr) size('gutter'),
+  ),
+);
+
+@function layout($key) {
+  @return get-token($layouts, $key);
+}
+
+// Borders
+$borders: (
+  'section': (
+    size('section-border') solid var-color('border'),
+  ),
+);
+
+@function border($key) {
+  @return get-token($borders, $key);
+}

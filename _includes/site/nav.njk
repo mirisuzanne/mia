@@ -1,16 +1,18 @@
 {% import 'utility.macros.njk' as utility %}
 
 <nav data-layout="nav">
-  {%- for item in collections._nav -%}
-    {% set title = item.data.nav.title or item.data.title or 'TitleMePlease' %}
-    <a href="{{ item.url | url }}"
-      {{ utility.show_attrs({
-        'data-nav': (item.data.nav.slug or title) | slug,
-        'data-active': (item.url | url == page.url | url),
-        'rel': item.data.nav.rel
-      }) }} />
-      {{ title | md(inline=true) | safe }}
-    </a>
-  {%- endfor -%}
+  <div data-inner="nav">
+    {%- for item in collections._nav -%}
+      {% set title = item.data.nav.title or item.data.title or 'TitleMePlease' %}
+      <a href="{{ item.url | url }}"
+        {{ utility.show_attrs({
+          'data-nav': (item.data.nav.slug or title) | slug,
+          'data-active': (item.url | url == page.url | url),
+          'rel': item.data.nav.rel
+        }) }} />
+        {{ title | md(inline=true) | safe }}
+      </a>
+    {%- endfor -%}
+  </div>
 </nav>
 

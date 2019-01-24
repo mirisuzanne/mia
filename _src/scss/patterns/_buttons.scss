@@ -1,0 +1,14 @@
+// Buttons
+// =======
+
+[data-btn] {
+  background: var-color('action');
+  border-radius: 0.1em;
+  color: var-color('background');
+  padding: 0 size('half-shim');
+
+  #{$focus} {
+    background: var-color('action-hover');
+    color: var-color('background');
+  }
+}

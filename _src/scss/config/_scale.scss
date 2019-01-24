@@ -16,7 +16,7 @@ $_size: get-function('size');
 /// @group scale
 /// @ratios
 $modular-scale: (
-  'text-ratio': 1.6,
+  'text-ratio': 1.4,
 );
 
 @include add-ratios($modular-scale);
@@ -28,22 +28,14 @@ $modular-scale: (
 /// @sizes text-sizes {text}
 $text-sizes: (
   'root': 18px,
-  'responsive': calc(%s + %s)
-    (
-      '%s': '#root' 0.5vw,
-    ),
+  'responsive': 'calc(#root + 0.5vw)',
+  'code': 0.875em,
   'large': 1rem
     (
       'text-ratio': 1,
     ),
-  'xlarge': calc(%s + %s)
-    (
-      '%s': '#large' 1vw,
-    ),
-  'xxlarge': calc(%s + %s)
-    (
-      '%s': '#xlarge' 1.5vw,
-    ),
+  'xlarge': 'calc(#large + 2vw)',
+  'xxlarge': 'calc(#xlarge + 2vw)',
   'small': 1rem
     (
       'text-ratio': -0.5,
@@ -74,7 +66,7 @@ $spacing-sizes: (
     ),
   'spacer': calc(%s + %s)
     (
-      '%s': '#double-gutter' 4vmin,
+      '%s': '#gutter' 4vmin,
     ),
   'shim': '#gutter'
     (
@@ -99,6 +91,7 @@ $spacing-sizes: (
 /// @sizes component-sizes {ruler}
 $component-sizes: (
   'icon': 1em,
+  'section-border': '#half-shim',
 );
 
 @include add-sizes($component-sizes);
@@ -122,12 +115,10 @@ $page-sizes: (
 // Breakpoints
 // -----------
 /// @group scale
-$break-sizes: (
+$breakpoints: (
   'page-break': '#page'
     (
-      'times': 2,
       'convert-units': 'browser-ems',
     ),
+  'nav-medium': '#page-break',
 );
-
-@include add-sizes($break-sizes);

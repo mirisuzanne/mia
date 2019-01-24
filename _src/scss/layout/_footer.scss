@@ -1,0 +1,12 @@
+// Footer Layout
+// =============
+
+[data-layout='footer'] {
+  @include font-family('code');
+  font-size: size('xsmall');
+  padding: size('quarter-shim') size('shim');
+
+  p {
+    margin-bottom: size('half-shim');
+  }
+}

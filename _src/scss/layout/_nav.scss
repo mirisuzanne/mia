@@ -1,0 +1,26 @@
+// Nav Layout
+// ==========
+
+[data-inner='nav'] {
+  display: grid;
+  grid-template: auto / repeat(3, auto) 1fr;
+  margin-top: negative('half-shim');
+}
+
+[data-nav] {
+  @include color--('amp', 'text');
+  @include font-family('code');
+  display: inline-block;
+  border-top: size('half-shim') solid transparent;
+  font-size: size('xsmall');
+  font-style: italic;
+  padding: size('quarter-shim') size('shim');
+
+  &[data-active] {
+    @include color--('amp', 'action');
+    border-color: var-color('action');
+    color: var-color('text');
+    font-style: normal;
+    text-decoration: none;
+  }
+}

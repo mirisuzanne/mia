@@ -86,12 +86,7 @@
       <a href="scale.html" data-nav="is-active">Ratios &amp;<span class="widont">&nbsp;</span>Sizes</a>
     </li>
   </ul>
-            </li>
-  
-    <li class="nav-item">
-      <a href="config-fonts.html" data-nav="is-not-active">config-fonts</a>
-    </li>
-  </ul>
+            </li></ul>
     </div>
 
     
@@ -329,7 +324,7 @@
       
       
       <pre class="hljs-pre"><code class="lang-scss">$modular-scale: (
-  &#39;text-ratio&#39;: 1.6,
+  &#39;text-ratio&#39;: 1.4,
 );</code></pre>
     </div>
   
@@ -387,7 +382,7 @@
       <h3 class="item-subtitle">
         <span class="item-subtitle-main">Ratio</span>
         
-          <span class="item-subtitle-supplement">text-ratio<span class="widont">&nbsp;</span>(1.6)</span>
+          <span class="item-subtitle-supplement">text-ratio<span class="widont">&nbsp;</span>(1.4)</span>
         
       </h3>
     
@@ -419,13 +414,13 @@
     </td>
     <td class="size-value">
       <code>
-        0.24
+        0.36
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 1.2207031249999998em;">
+          <span class="size-bar" style="width: 1.8221574344023328em;">
             &nbsp;
           </span>
         </div>
@@ -445,13 +440,13 @@
     </td>
     <td class="size-value">
       <code>
-        0.39
+        0.51
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 1.9531249999999998em;">
+          <span class="size-bar" style="width: 2.551020408163266em;">
             &nbsp;
           </span>
         </div>
@@ -471,13 +466,13 @@
     </td>
     <td class="size-value">
       <code>
-        0.63
+        0.71
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 3.125em;">
+          <span class="size-bar" style="width: 3.5714285714285716em;">
             &nbsp;
           </span>
         </div>
@@ -523,13 +518,13 @@
     </td>
     <td class="size-value">
       <code>
-        1.6
+        1.4
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 8em;">
+          <span class="size-bar" style="width: 7em;">
             &nbsp;
           </span>
         </div>
@@ -549,13 +544,13 @@
     </td>
     <td class="size-value">
       <code>
-        2.56
+        1.96
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 12.800000000000002em;">
+          <span class="size-bar" style="width: 9.799999999999999em;">
             &nbsp;
           </span>
         </div>
@@ -575,13 +570,13 @@
     </td>
     <td class="size-value">
       <code>
-        4.1
+        2.74
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 20.480000000000004em;">
+          <span class="size-bar" style="width: 13.719999999999997em;">
             &nbsp;
           </span>
         </div>
@@ -664,22 +659,17 @@
       
       <pre class="hljs-pre"><code class="lang-scss">$text-sizes: (
   &#39;root&#39;: 18px,
-  &#39;responsive&#39;: calc(%s + %s)
-    (
-      &#39;%s&#39;: &#39;#root&#39; 0.5vw,
-    ),
+  &#39;responsive&#39;: &#39;calc(#root + 0.5vw)&#39;,
+
+  &#39;code&#39;: 0.875em,
+
   &#39;large&#39;: 1rem
     (
       &#39;text-ratio&#39;: 1,
     ),
-  &#39;xlarge&#39;: calc(%s + %s)
-    (
-      &#39;%s&#39;: &#39;#large&#39; 1vw,
-    ),
-  &#39;xxlarge&#39;: calc(%s + %s)
-    (
-      &#39;%s&#39;: &#39;#xlarge&#39; 1.5vw,
-    ),
+  &#39;xlarge&#39;: &#39;calc(#large + 2vw)&#39;,
+  &#39;xxlarge&#39;: &#39;calc(#xlarge + 2vw)&#39;,
+
   &#39;small&#39;: 1rem
     (
       &#39;text-ratio&#39;: -0.5,
@@ -818,16 +808,43 @@
         
   <tr class="size">
     <td class="size-name">
-      large
+      code
     </td>
     <td class="size-value">
       <code>
-        1.6rem
+        0.875em
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: 1.6rem;">
+        <span class="size-text" style="font-size: 0.875em;">
+          
+  
+    <span data-specimen-lorem="title">
+      Pack my box with five dozen liquor&nbsp;jugs.
+    </span>
+  
+
+        </span>
+      
+    </td>
+  </tr>
+
+    
+      
+        
+  <tr class="size">
+    <td class="size-name">
+      large
+    </td>
+    <td class="size-value">
+      <code>
+        1.4rem
+      </code>
+    </td>
+    <td class="size-viz is-text">
+      
+        <span class="size-text" style="font-size: 1.4rem;">
           
   
     <span data-specimen-lorem="title">
@@ -849,12 +866,12 @@
     </td>
     <td class="size-value">
       <code>
-        calc(1.6rem + 1vw)
+        calc(1.4rem + 2vw)
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: calc(1.6rem + 1vw);">
+        <span class="size-text" style="font-size: calc(1.4rem + 2vw);">
           
   
     <span data-specimen-lorem="title">
@@ -876,12 +893,12 @@
     </td>
     <td class="size-value">
       <code>
-        calc(calc(1.6rem + 1vw) + 1.5vw)
+        calc(calc(1.4rem + 2vw) + 2vw)
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: calc(calc(1.6rem + 1vw) + 1.5vw);">
+        <span class="size-text" style="font-size: calc(calc(1.4rem + 2vw) + 2vw);">
           
   
     <span data-specimen-lorem="title">
@@ -903,12 +920,12 @@
     </td>
     <td class="size-value">
       <code>
-        0.790569415rem
+        0.8451542547rem
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: 0.790569415rem;">
+        <span class="size-text" style="font-size: 0.8451542547rem;">
           
   
     <span data-specimen-lorem="title">
@@ -930,12 +947,12 @@
     </td>
     <td class="size-value">
       <code>
-        0.625rem
+        0.7142857143rem
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: 0.625rem;">
+        <span class="size-text" style="font-size: 0.7142857143rem;">
           
   
     <span data-specimen-lorem="title">
@@ -1032,7 +1049,7 @@
     ),
   &#39;spacer&#39;: calc(%s + %s)
     (
-      &#39;%s&#39;: &#39;#double-gutter&#39; 4vmin,
+      &#39;%s&#39;: &#39;#gutter&#39; 4vmin,
     ),
   &#39;shim&#39;: &#39;#gutter&#39;
     (
@@ -1130,13 +1147,13 @@
     </td>
     <td class="size-value">
       <code>
-        1.6rem
+        1.4rem
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 1.6rem;">
+          <span class="size-bar" style="width: 1.4rem;">
             &nbsp;
           </span>
         </div>
@@ -1153,13 +1170,13 @@
     </td>
     <td class="size-value">
       <code>
-        3.2rem
+        2.8rem
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 3.2rem;">
+          <span class="size-bar" style="width: 2.8rem;">
             &nbsp;
           </span>
         </div>
@@ -1176,13 +1193,13 @@
     </td>
     <td class="size-value">
       <code>
-        calc(3.2rem + 4vmin)
+        calc(1.4rem + 4vmin)
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: calc(3.2rem + 4vmin);">
+          <span class="size-bar" style="width: calc(1.4rem + 4vmin);">
             &nbsp;
           </span>
         </div>
@@ -1199,13 +1216,13 @@
     </td>
     <td class="size-value">
       <code>
-        0.8rem
+        0.7rem
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 0.8rem;">
+          <span class="size-bar" style="width: 0.7rem;">
             &nbsp;
           </span>
         </div>
@@ -1222,13 +1239,13 @@
     </td>
     <td class="size-value">
       <code>
-        0.4rem
+        0.35rem
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 0.4rem;">
+          <span class="size-bar" style="width: 0.35rem;">
             &nbsp;
           </span>
         </div>
@@ -1245,13 +1262,13 @@
     </td>
     <td class="size-value">
       <code>
-        0.2rem
+        0.175rem
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: 0.2rem;">
+          <span class="size-bar" style="width: 0.175rem;">
             &nbsp;
           </span>
         </div>
@@ -1333,6 +1350,7 @@
       
       <pre class="hljs-pre"><code class="lang-scss">$component-sizes: (
   &#39;icon&#39;: 1em,
+  &#39;section-border&#39;: &#39;#half-shim&#39;,
 );</code></pre>
     </div>
   
@@ -1424,6 +1442,29 @@
       
         <div class="size-overflow">
           <span class="size-bar" style="width: 1em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      section-border
+    </td>
+    <td class="size-value">
+      <code>
+        0.35rem
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 0.35rem;">
             &nbsp;
           </span>
         </div>
@@ -1655,7 +1696,7 @@
 
 
 
-<section class="item" id="variable--break-sizes">
+<section class="item" id="variable--breakpoints">
   
     
   
@@ -1673,7 +1714,7 @@
       
 
       
-        <a href="#variable--break-sizes" class="item-name">$break-sizes</a>
+        <a href="#variable--breakpoints" class="item-name">$breakpoints</a>
       
 
       
@@ -1702,12 +1743,12 @@
 
       
       
-      <pre class="hljs-pre"><code class="lang-scss">$break-sizes: (
+      <pre class="hljs-pre"><code class="lang-scss">$breakpoints: (
   &#39;page-break&#39;: &#39;#page&#39;
     (
-      &#39;times&#39;: 2,
       &#39;convert-units&#39;: &#39;browser-ems&#39;,
     ),
+  &#39;nav-medium&#39;: &#39;#page-break&#39;,
 );</code></pre>
     </div>
   

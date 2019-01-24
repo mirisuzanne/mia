@@ -30,13 +30,18 @@ $body-font: (
 // Code Font
 // ---------
 /// A readable monospace font for code previews
-/// @group config-fonts
+/// @group fonts
 /// @font code
-$code: (
+$code-font: (
   'name': 'Dank Mono',
-  'formats': 'woff2' 'woff',
-  'normal': 'dankmono/dankmono-regular-webfont',
-  'italic': 'dankmono/dankmono-italic-webfont',
+  'normal': (
+    'woff2': 'dankmono/dankmono-regular-webfont',
+    'woff': 'dankmono/dankmono-regular-webfont',
+  ),
+  'italic': (
+    'woff2': 'dankmono/dankmono-italic-webfont',
+    'woff': 'dankmono/dankmono-italic-webfont',
+  ),
   'stack': (
     'Consolas',
     'Menlo',
@@ -50,14 +55,14 @@ $code: (
   ),
 );
 
-@include add-font('code', $code);
-@include herman-add('font', 'code', $code);
+@include add-font('code', $code-font);
+@include herman-add('font', 'code', $code-font);
 
 // Ampersand Font
 // --------------
 /// Baskerville Italic provides a nice-looking ampersand
 /// @group fonts
-$amp: (
+$amp-font: (
   'name': 'amp',
   'stack': (
     'freight-text-pro',
@@ -75,5 +80,5 @@ $amp: (
   ),
 );
 
-@include add-font('amp', $amp);
-@include herman-add('font', 'amp', $amp);
+@include add-font('amp', $amp-font);
+@include herman-add('font', 'amp', $amp-font);

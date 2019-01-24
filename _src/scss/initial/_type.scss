@@ -7,6 +7,7 @@
   @include font-family('body');
   font-size: size('responsive');
   line-height: ratio('text-ratio');
+  text-shadow: 0 1px 0 var-color('text-shadow');
 }
 
 h1 {
@@ -40,10 +41,8 @@ blockquote {
 
 a {
   #{$link} {
-    @include transition('text-color');
     color: var-color('action');
     text-decoration-color: var-color('action-underline');
-    text-decoration-skip: ink;
     text-decoration-skip-ink: auto;
   }
 
@@ -62,5 +61,6 @@ a {
 
 .amp {
   @include font-family('amp');
+  color: var-color('amp');
   font-style: italic;
 }
