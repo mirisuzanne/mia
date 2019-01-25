@@ -32,15 +32,13 @@
     "husky": "^1.3.1",
     "lint-staged": "^8.1.0",
     "markdown-it": "^8.4.2",
-    "markdown-it-anchor": "^5.0.2",
     "prettier": "^1.15.3",
     "sass": "^1.16.0",
     "sassdoc": "^2.5.1",
     "sassdoc-theme-herman": "^3.0.2",
     "stylelint": "^9.9.0",
     "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-scss": "^3.4.4",
-    "typogr": "^0.6.8"
+    "stylelint-scss": "^3.4.4"
   },
   "husky": {
     "hooks": {

@@ -1,4 +1,6 @@
 <header data-layout="banner">
-  <h1>{{ maintitle or title }}</h1>
-  <span class="subtitle">{{ subtitle }}</span>
+  <h1>{{ (maintitle or title) | amp | safe }}</h1>
+  {% if subtitle %}
+    <span class="subtitle">{{ subtitle | amp | safe }}</span>
+  {% endif %}
 </header>

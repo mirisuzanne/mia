@@ -3,10 +3,20 @@
 
 // layouts
 $layouts: (
-  'body-columns': (
-    size('gutter') minmax(0, 1fr) repeat(2, minmax(0, size('half')))
-      minmax(0, 1fr) size('gutter'),
+  '_left': [full-start] size('gutter') [left] minmax(0, 1fr),
+  '_main-left': (
+    [main-start] minmax(0, size('quarter')) [half-left]
+      minmax(0, size('quarter')),
   ),
+  '_main-right': (
+    minmax(0, size('quarter')) [half-right] minmax(0, size('quarter'))
+      [main-end],
+  ),
+  '_right': minmax(0, 1fr) [right] size('gutter') [full-end],
+  'start': '#_left' '#_main-left' [midpoint main-end full-end],
+  'end': [midpoint main-start full-start] '#_right' '#_main-right',
+  'main': [full-start] '#_main-left' [midpoint] '#_main-right' [full-end],
+  'full': '#_left' '#_main-left' [midpoint] '#_main-right' '#_right',
 );
 
 @function layout($key) {

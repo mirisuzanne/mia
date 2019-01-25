@@ -29,7 +29,7 @@
 
 		<main data-layout="{{ dataLayout or 'main' }}">
 			{% block content %}
-				{{ content | safe }}
+				{{ content | amp | safe }}
 			{% endblock %}
 		</main>
 

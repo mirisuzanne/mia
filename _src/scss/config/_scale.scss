@@ -107,6 +107,10 @@ $page-sizes: (
     (
       'divide': 2,
     ),
+  'quarter': '#page'
+    (
+      'divide': 4,
+    ),
 );
 
 @include add-sizes($page-sizes);
@@ -122,7 +126,6 @@ $breakpoints: (
     ),
   'wide': '#page-break'
     (
-      'times': 2,
+      'times': 1.5,
     ),
-  'nav-medium': '#page-break',
 );

@@ -1,5 +1,4 @@
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const typogr = require('typogr');
 const markdownIt = require('markdown-it')({
   html: true,
   breaks: false,
@@ -62,6 +61,11 @@ const getDate = (format = null, date = null) => {
   return format ? formatDate(now, format) : now;
 };
 
+const newAmp = s => {
+  const amp = '<span class="amp">&</span>';
+  return s ? s.replace(/&amp;/g, '&').replace(/&/g, amp) : s;
+};
+
 module.exports = eleventyConfig => {
   // plugins
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -104,9 +108,8 @@ module.exports = eleventyConfig => {
   });
 
   // filters
-  eleventyConfig.addFilter('typeOf', val => {
-    return typeof val;
-  });
+  eleventyConfig.addFilter('typeOf', val => typeof val);
+  eleventyConfig.addFilter('amp', val => (val ? newAmp(val) : val));
 
   eleventyConfig.addFilter('isPublic', val => {
     return val !== 'all' && !val.startsWith('_');
@@ -120,23 +123,19 @@ module.exports = eleventyConfig => {
     return getDate(format, date);
   });
 
-  eleventyConfig.addFilter('typogr', val => {
-    return typogr(val).typogrify();
-  });
-
-  eleventyConfig.addFilter('md', (content, inline = false, type = true) => {
+  eleventyConfig.addFilter('md', (content, inline = false) => {
+    content = newAmp(content);
     const html = inline
       ? markdownIt.renderInline(content)
       : markdownIt.render(content);
-    return type ? typogr(html).typogrify() : html;
+    return html;
   });
 
   // shortcodes
-  eleventyConfig.addShortcode('getDate', (format = null) => {
-    return getDate(format);
-  });
+  eleventyConfig.addShortcode('getDate', (format = null) => getDate(format));
 
   eleventyConfig.addPairedShortcode('markdown', (content, inline = null) => {
+    content = newAmp(content);
     return inline
       ? markdownIt.renderInline(content)
       : markdownIt.render(content);
