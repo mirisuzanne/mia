@@ -1,6 +1,10 @@
 // Grid Layout
 // ===========
 
+[data-layout] {
+  grid-column: 3 / 5;
+}
+
 [data-layout='grid'] {
   display: grid;
   grid-row-gap: size('gutter');
@@ -34,6 +38,7 @@
   font-size: size('small');
 }
 
-[data-layout='main'] {
-  grid-column: 1 / -1;
+[data-layout~='main'] {
+  border-top: border('section');
+  padding: size('shim');
 }

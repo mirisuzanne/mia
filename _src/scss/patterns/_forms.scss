@@ -1,0 +1,40 @@
+// Buttons
+// =======
+
+[data-field],
+[data-label],
+[data-input] {
+  display: block;
+}
+
+[data-field] {
+  margin-bottom: size('shim');
+}
+
+[data-label] {
+  @include font-family('code');
+  font-size: size('xsmall');
+  font-style: italic;
+}
+
+[data-input~='text'] {
+  @include font-family('code');
+  border: 1px solid color('border');
+  color: var-color('action');
+  font-size: size('xsmall');
+  padding: size('half-shim');
+  width: 100%;
+}
+
+[data-input~='area'] {
+  min-height: size(
+    'gutter',
+    (
+      'times': 4,
+    )
+  );
+}
+
+[data-actions] {
+  text-align: right;
+}

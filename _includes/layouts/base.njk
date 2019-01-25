@@ -27,8 +27,7 @@
 		{% include 'site/nav.njk' %}
 		{% include 'site/banner.njk' %}
 
-		<main data-layout="main"
-			{{ utility.attr_if('class', templateClass) }}>
+		<main data-layout="{{ dataLayout or 'main' }}">
 			{% block content %}
 				{{ content | safe }}
 			{% endblock %}

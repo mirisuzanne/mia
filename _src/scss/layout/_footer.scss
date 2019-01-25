@@ -1,6 +1,10 @@
 // Footer Layout
 // =============
 
+[data-layout='footer-rule'] {
+  border: none;
+}
+
 [data-layout='footer'] {
   @include font-family('code');
   font-size: size('xsmall');

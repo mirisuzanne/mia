@@ -1,16 +1,10 @@
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const typogr = require('typogr');
-const markdownItAnchor = require('markdown-it-anchor');
 const markdownIt = require('markdown-it')({
   html: true,
   breaks: false,
   linkify: true,
   typographer: true,
-}).use(markdownItAnchor, {
-  permalink: true,
-  permalinkClass: 'heading-link',
-  permalinkSymbol: '#',
-  level: [1, 2, 3, 4],
 });
 
 const formatDate = (date, format) => {
@@ -77,6 +71,7 @@ module.exports = eleventyConfig => {
 
   // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
+  eleventyConfig.addLayoutAlias('contact', 'layouts/contact.njk');
 
   // collections
   eleventyConfig.addCollection('_nav', collection => {
@@ -123,6 +118,10 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addFilter('getDate', (date = null, format = 'short') => {
     return getDate(format, date);
+  });
+
+  eleventyConfig.addFilter('typogr', val => {
+    return typogr(val).typogrify();
   });
 
   eleventyConfig.addFilter('md', (content, inline = false, type = true) => {

@@ -660,16 +660,13 @@
       <pre class="hljs-pre"><code class="lang-scss">$text-sizes: (
   &#39;root&#39;: 18px,
   &#39;responsive&#39;: &#39;calc(#root + 0.5vw)&#39;,
-
   &#39;code&#39;: 0.875em,
-
   &#39;large&#39;: 1rem
     (
       &#39;text-ratio&#39;: 1,
     ),
   &#39;xlarge&#39;: &#39;calc(#large + 2vw)&#39;,
   &#39;xxlarge&#39;: &#39;calc(#xlarge + 2vw)&#39;,
-
   &#39;small&#39;: 1rem
     (
       &#39;text-ratio&#39;: -0.5,
@@ -1747,6 +1744,10 @@
   &#39;page-break&#39;: &#39;#page&#39;
     (
       &#39;convert-units&#39;: &#39;browser-ems&#39;,
+    ),
+  &#39;wide&#39;: &#39;#page-break&#39;
+    (
+      &#39;times&#39;: 2,
     ),
   &#39;nav-medium&#39;: &#39;#page-break&#39;,
 );</code></pre>

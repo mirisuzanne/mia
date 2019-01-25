@@ -78,17 +78,49 @@ data-active
 </header>
 
 
-		<main data-layout="main"
+		<main data-layout="contact main">
 			
->
-			
-				<p>@@@ todo: contact form…</p>
+				
+<div class="content">
+  <p>Leave me a note!
+You can also find me (<code>@mirisuzanne</code>)
+on various
+<a href="https://wheretofind.me/@mirisuzanne">social platforms</a>.</p>
+
+</div>
+
+<form
+  name="contact"
+  method="POST"
+  netlify-honeypot="subject"
+  data-netlify="true">
+  <label data-field="name">
+    <span data-label>Name:</span>
+    <input data-input="text" type="text" name="name" />
+  </label>
+  <label data-field="email">
+    <span data-label>Email:</span>
+    <input data-input="text" type="email" name="email" />
+  </label>
+  <label data-field="message">
+    <span data-label>Message:</span>
+    <textarea data-input="text area" name="message"></textarea>
+  </label>
+  <label hidden>
+    <span>Don't fill out this field:</span>
+    <input name="subject" />
+  </label>
+  <div data-actions>
+    <button data-btn="submit" type="submit">Send</button>
+  </div>
+</form>
 
 			
 		</main>
 
 		
 
+<hr data-layout="footer-rule" />
 <footer data-layout="footer">
   <p>
     Copyright © 2019

@@ -15,13 +15,18 @@ h1 {
   line-height: 1;
 }
 
+h2,
+h3,
+h4 {
+  @include font-family('code');
+}
+
 h2 {
-  font-size: size('xlarge');
-  line-height: 1;
+  font-size: size('large');
 }
 
 h3 {
-  font-size: size('large');
+  font-style: italic;
 }
 
 p {
