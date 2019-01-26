@@ -1,6 +1,5 @@
 ---
-title: 'biography'
-maintitle: 'Biography'
+title: 'Biography'
 layout: 'base'
 hero:
   img: 'headshots/mia-smirk.jpg'

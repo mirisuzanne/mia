@@ -1,4 +1,4 @@
-// Footer Layout
+// Banner Layout
 // =============
 
 [data-layout~='banner'] {
@@ -6,43 +6,44 @@
   font-style: italic;
   grid-column: full;
   margin-bottom: size('gutter');
-  text-align: center;
 }
 
 .banner-content {
+  align-content: center;
+  display: grid;
   grid-area: 1 / 1 / -1 / -1;
-  padding: size('spacer') size('gutter');
+  grid-template: 'icon' auto 'title' auto 'sub' auto / auto;
+  justify-self: center;
+  padding: size('gutter');
+  text-align: center;
+
+  @include above('page-break') {
+    grid-template:
+      'icon title' auto 'icon sub' auto /
+      minmax(size('gutter'), size('spacer')) 1fr;
+    padding: size('spacer') size('gutter');
+    text-align: left;
+  }
+}
+
+.banner-icon {
+  grid-area: icon;
+
+  [data-icon] {
+    @include square('spacer');
+  }
+}
+
+.banner-title {
+  grid-area: title;
 }
 
 .subtitle {
   @include font-family('code');
   color: var-color('text-light');
+  grid-area: sub;
   line-height: 1;
   font-size: size('small');
-}
-
-[data-layout~='hero-content'] {
-  display: grid;
-  grid-template: 'image caption' min-content / minmax(0, 1fr) auto;
-  padding: 0 size('shim');
-}
-
-.hero-image {
-  grid-area: image;
-}
-
-.hero-caption {
-  grid-area: caption;
-  padding: size('half-shim');
-  writing-mode: vertical-rl;
-
-  p {
-    @include font-family('code');
-    background: var-color('background');
-    display: inline;
-    font-size: size('small');
-    font-style: italic;
-  }
 }
 
 // Dots

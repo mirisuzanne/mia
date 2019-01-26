@@ -112,10 +112,9 @@ module.exports = eleventyConfig => {
   // filters
   eleventyConfig.addFilter('typeOf', val => typeof val);
   eleventyConfig.addFilter('amp', val => (val ? newAmp(val) : val));
-
-  eleventyConfig.addFilter('typogr', val => {
-    return val ? typogr(val).typogrify() : val;
-  });
+  eleventyConfig.addFilter('typogr', val =>
+    val ? typogr.typogrify(val) : val,
+  );
 
   eleventyConfig.addFilter('isPublic', val => {
     return val !== 'all' && !val.startsWith('_');
@@ -133,7 +132,7 @@ module.exports = eleventyConfig => {
     const html = inline
       ? markdownIt.renderInline(content)
       : markdownIt.render(content);
-    return typogr(html).typogrify();
+    return typogr.typogrify(html);
   });
 
   // shortcodes
@@ -143,7 +142,7 @@ module.exports = eleventyConfig => {
     const html = inline
       ? markdownIt.renderInline(content)
       : markdownIt.render(content);
-    return typogr(html).typogrify();
+    return typogr.typogrify(html);
   });
 
   // markdown

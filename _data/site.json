@@ -4,7 +4,7 @@
   "description": "{{ pkg.description }}",
   "author": "{{ pkg.author.name }}",
   "email": "{{ pkg.author.email }}",
-  "pictures": "/assets/pictures/",
+  "images": "/assets/images/",
   "feed": {
     "subtitle": "{{ pkg.description }}",
     "filename": "feed.xml",

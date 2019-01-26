@@ -1,8 +1,17 @@
 <header data-layout="banner">
   <div class="banner-content">
-    <h1>{{ (maintitle or title) | typogr | safe }}</h1>
-    {% if subtitle %}
-      <span class="subtitle">{{ subtitle | typogr | safe }}</span>
+    {% if banner.icon %}
+      <div class="banner-icon">
+        {% include banner.icon %}
+      </div>
+    {% endif %}
+
+    <h1 class="banner-title">
+      {{ (banner.title or title) | typogr | safe }}
+    </h1>
+
+    {% if banner.sub %}
+      <span class="subtitle">{{ banner.sub | typogr | safe }}</span>
     {% endif %}
   </div>
 

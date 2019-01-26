@@ -1,14 +1,14 @@
 ---
 title: 'contact'
-maintitle: 'Contact Miriam'
 layout: 'contact'
-hero:
-  img: 'headshots/face.svg'
+banner:
+  title: 'Contact Miriam'
 nav:
   order: 2
 ---
 
 ## Leave me a note!
 
-You can also find `@mirisuzanne`
-on various [platforms](https://wheretofind.me/@mirisuzanne).
+Or find
+[`@mirisuzanne`](https://wheretofind.me/@mirisuzanne)
+on social media.

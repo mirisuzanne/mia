@@ -10,7 +10,7 @@
           'data-active': (item.url | url == page.url | url),
           'rel': item.data.nav.rel
         }) }} />
-        {{ title | md(inline=true) | amp | safe }}
+        {{ title | lower | amp | md(inline=true) | safe }}
       </a>
     {%- endfor -%}
   </div>

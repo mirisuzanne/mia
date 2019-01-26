@@ -1,8 +1,10 @@
 ---
-title: 'art&code'
-maintitle: 'Miriam Suzanne'
-subtitle: 'web developer, artist, speaker, author, musician, playwright…'
+title: 'art & code'
 layout: 'base'
+banner:
+  title: 'Miriam Suzanne'
+  sub: 'web developer, artist, speaker, author, musician, playwright…'
+  icon: 'icons/miriam.svg'
 dataLayout: 'full'
 nav:
   order: 0
@@ -11,4 +13,3 @@ nav:
   rel: 'home'
 ---
 
-hello & WELCOME to 1st "typogr"
