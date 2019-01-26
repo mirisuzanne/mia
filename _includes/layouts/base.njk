@@ -23,13 +23,21 @@
     {% include 'site/feed.njk' %}
 	</head>
 
-	<body data-layout="grid">
+	<body data-layout="grid body">
 		{% include 'site/nav.njk' %}
 		{% include 'site/banner.njk' %}
+		{% include 'site/hero.njk' %}
 
-		<main data-layout="{{ dataLayout or 'main' }}">
+		{% set dataLayout = dataLayout or 'section to-end grid' %}
+		<main data-layout="{{ dataLayout }}">
 			{% block content %}
-				{{ content | amp | safe }}
+				{% if dataInner or ('to-' in dataLayout) %}
+					<div data-layout="{{ dataInner or 'main'}}">
+						{{ content | typogr | safe }}
+					</div>
+				{% else %}
+					{{ content | typogr | safe }}
+				{% endif %}
 			{% endblock %}
 		</main>
 

@@ -1,4 +1,5 @@
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const typogr = require('typogr');
 const markdownIt = require('markdown-it')({
   html: true,
   breaks: false,
@@ -61,6 +62,7 @@ const getDate = (format = null, date = null) => {
   return format ? formatDate(now, format) : now;
 };
 
+// this seems like a dangerous approach…
 const newAmp = s => {
   const amp = '<span class="amp">&</span>';
   return s ? s.replace(/&amp;/g, '&').replace(/&/g, amp) : s;
@@ -111,6 +113,10 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('typeOf', val => typeof val);
   eleventyConfig.addFilter('amp', val => (val ? newAmp(val) : val));
 
+  eleventyConfig.addFilter('typogr', val => {
+    return val ? typogr(val).typogrify() : val;
+  });
+
   eleventyConfig.addFilter('isPublic', val => {
     return val !== 'all' && !val.startsWith('_');
   });
@@ -124,21 +130,20 @@ module.exports = eleventyConfig => {
   });
 
   eleventyConfig.addFilter('md', (content, inline = false) => {
-    content = newAmp(content);
     const html = inline
       ? markdownIt.renderInline(content)
       : markdownIt.render(content);
-    return html;
+    return typogr(html).typogrify();
   });
 
   // shortcodes
   eleventyConfig.addShortcode('getDate', (format = null) => getDate(format));
 
   eleventyConfig.addPairedShortcode('markdown', (content, inline = null) => {
-    content = newAmp(content);
-    return inline
+    const html = inline
       ? markdownIt.renderInline(content)
       : markdownIt.render(content);
+    return typogr(html).typogrify();
   });
 
   // markdown

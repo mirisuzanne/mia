@@ -1,0 +1,16 @@
+{% if hero.img %}
+<figure data-layout="hero to-start section grid">
+  <div data-layout="main hero-content">
+    <img
+      src="{{ site.pictures + hero.img }}"
+      alt="{{ hero.alt or '' }}"
+       class="hero-image"
+      />
+    {% if hero.caption %}
+    <figcaption class="hero-caption">
+      {{ hero.caption | md | safe }}
+    </figcaption>
+    {% endif %}
+  </div>
+</figure>
+{% endif %}

@@ -10,3 +10,5 @@ nav:
   slug: 'home'
   rel: 'home'
 ---
+
+hello & WELCOME to 1st "typogr"

@@ -4,6 +4,7 @@
   "description": "{{ pkg.description }}",
   "author": "{{ pkg.author.name }}",
   "email": "{{ pkg.author.email }}",
+  "pictures": "/assets/pictures/",
   "feed": {
     "subtitle": "{{ pkg.description }}",
     "filename": "feed.xml",

@@ -660,13 +660,12 @@
       <pre class="hljs-pre"><code class="lang-scss">$text-sizes: (
   &#39;root&#39;: 18px,
   &#39;responsive&#39;: &#39;calc(#root + 0.5vw)&#39;,
-  &#39;code&#39;: 0.875em,
-  &#39;large&#39;: 1rem
+  &#39;large-root&#39;: 1rem
     (
       &#39;text-ratio&#39;: 1,
     ),
-  &#39;xlarge&#39;: &#39;calc(#large + 2vw)&#39;,
-  &#39;xxlarge&#39;: &#39;calc(#xlarge + 2vw)&#39;,
+  &#39;large&#39;: &#39;calc(1rem + 0.25vw)&#39;,
+  &#39;xlarge&#39;: &#39;calc(#large-root + 4.5vw)&#39;,
   &#39;small&#39;: 1rem
     (
       &#39;text-ratio&#39;: -0.5,
@@ -675,6 +674,11 @@
     (
       &#39;text-ratio&#39;: -1,
     ),
+
+  &#39;code&#39;: 0.875em,
+  &#39;intro&#39;: &#39;#large&#39;,
+  &#39;h1&#39;: &#39;#xlarge&#39;,
+  &#39;h2&#39;: &#39;#large&#39;,
 );</code></pre>
     </div>
   
@@ -805,34 +809,7 @@
         
   <tr class="size">
     <td class="size-name">
-      code
-    </td>
-    <td class="size-value">
-      <code>
-        0.875em
-      </code>
-    </td>
-    <td class="size-viz is-text">
-      
-        <span class="size-text" style="font-size: 0.875em;">
-          
-  
-    <span data-specimen-lorem="title">
-      Pack my box with five dozen liquor&nbsp;jugs.
-    </span>
-  
-
-        </span>
-      
-    </td>
-  </tr>
-
-    
-      
-        
-  <tr class="size">
-    <td class="size-name">
-      large
+      large-root
     </td>
     <td class="size-value">
       <code>
@@ -859,16 +836,16 @@
         
   <tr class="size">
     <td class="size-name">
-      xlarge
+      large, intro, h2
     </td>
     <td class="size-value">
       <code>
-        calc(1.4rem + 2vw)
+        calc(1rem + 0.25vw)
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: calc(1.4rem + 2vw);">
+        <span class="size-text" style="font-size: calc(1rem + 0.25vw);">
           
   
     <span data-specimen-lorem="title">
@@ -886,16 +863,16 @@
         
   <tr class="size">
     <td class="size-name">
-      xxlarge
+      xlarge, h1
     </td>
     <td class="size-value">
       <code>
-        calc(calc(1.4rem + 2vw) + 2vw)
+        calc(1.4rem + 4.5vw)
       </code>
     </td>
     <td class="size-viz is-text">
       
-        <span class="size-text" style="font-size: calc(calc(1.4rem + 2vw) + 2vw);">
+        <span class="size-text" style="font-size: calc(1.4rem + 4.5vw);">
           
   
     <span data-specimen-lorem="title">
@@ -950,6 +927,33 @@
     <td class="size-viz is-text">
       
         <span class="size-text" style="font-size: 0.7142857143rem;">
+          
+  
+    <span data-specimen-lorem="title">
+      Pack my box with five dozen liquor&nbsp;jugs.
+    </span>
+  
+
+        </span>
+      
+    </td>
+  </tr>
+
+    
+      
+        
+  <tr class="size">
+    <td class="size-name">
+      code
+    </td>
+    <td class="size-value">
+      <code>
+        0.875em
+      </code>
+    </td>
+    <td class="size-viz is-text">
+      
+        <span class="size-text" style="font-size: 0.875em;">
           
   
     <span data-specimen-lorem="title">
@@ -1046,7 +1050,7 @@
     ),
   &#39;spacer&#39;: calc(%s + %s)
     (
-      &#39;%s&#39;: &#39;#gutter&#39; 4vmin,
+      &#39;%s&#39;: &#39;#double-gutter&#39; 6vmin,
     ),
   &#39;shim&#39;: &#39;#gutter&#39;
     (
@@ -1190,13 +1194,13 @@
     </td>
     <td class="size-value">
       <code>
-        calc(1.4rem + 4vmin)
+        calc(2.8rem + 6vmin)
       </code>
     </td>
     <td class="size-viz">
       
         <div class="size-overflow">
-          <span class="size-bar" style="width: calc(1.4rem + 4vmin);">
+          <span class="size-bar" style="width: calc(2.8rem + 6vmin);">
             &nbsp;
           </span>
         </div>

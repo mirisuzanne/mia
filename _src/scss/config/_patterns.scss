@@ -3,20 +3,21 @@
 
 // layouts
 $layouts: (
-  '_left': [full-start] size('gutter') [left] minmax(0, 1fr),
-  '_main-left': (
-    [main-start] minmax(0, size('quarter')) [half-left]
-      minmax(0, size('quarter')),
-  ),
-  '_main-right': (
-    minmax(0, size('quarter')) [half-right] minmax(0, size('quarter'))
-      [main-end],
-  ),
-  '_right': minmax(0, 1fr) [right] size('gutter') [full-end],
-  'start': '#_left' '#_main-left' [midpoint main-end full-end],
-  'end': [midpoint main-start full-start] '#_right' '#_main-right',
-  'main': [full-start] '#_main-left' [midpoint] '#_main-right' [full-end],
-  'full': '#_left' '#_main-left' [midpoint] '#_main-right' '#_right',
+  '_quarter': minmax(0, size('quarter')),
+  '_edge-l': size('gutter') [left] minmax(0, 1fr),
+  '_main-l': '#_quarter' [half-left] '#_quarter',
+  '_left': '#_edge-l' [main-start] '#_main-l',
+  '_main-r': '#_quarter' [half-right] '#_quarter',
+  '_edge-r': minmax(0, 1fr) [right] size('gutter'),
+  '_right': '#_main-r' [main-end] '#_edge-r',
+  '_main': '#_main-l' [midpoint] '#_main-r',
+  '_full': '#_edge-l' [main-start] '#_main' [main-end] '#_edge-r',
+  'start': [full-start] '#_left' [midpoint main-end full-end],
+  'to-start': [full-start] '#_left' [midpoint] '#_main-r' [main-end full-end],
+  'end': [full-start main-start midpoint] '#_right' [full-end],
+  'to-end': [full-start main-start] '#_main-l' [midpoint] '#_right',
+  'main': [full-start main-start] '#_main' [full-end main-end],
+  'full': [full-start] '#_full' [full-end],
 );
 
 @function layout($key) {

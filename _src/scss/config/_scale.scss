@@ -29,13 +29,12 @@ $modular-scale: (
 $text-sizes: (
   'root': 18px,
   'responsive': 'calc(#root + 0.5vw)',
-  'code': 0.875em,
-  'large': 1rem
+  'large-root': 1rem
     (
       'text-ratio': 1,
     ),
-  'xlarge': 'calc(#large + 2vw)',
-  'xxlarge': 'calc(#xlarge + 2vw)',
+  'large': 'calc(1rem + 0.25vw)',
+  'xlarge': 'calc(#large-root + 4.5vw)',
   'small': 1rem
     (
       'text-ratio': -0.5,
@@ -44,6 +43,10 @@ $text-sizes: (
     (
       'text-ratio': -1,
     ),
+  'code': 0.875em,
+  'intro': '#large',
+  'h1': '#xlarge',
+  'h2': '#large',
 );
 
 @include add-sizes($text-sizes);
@@ -66,7 +69,7 @@ $spacing-sizes: (
     ),
   'spacer': calc(%s + %s)
     (
-      '%s': '#gutter' 4vmin,
+      '%s': '#double-gutter' 6vmin,
     ),
   'shim': '#gutter'
     (

@@ -1,10 +1,6 @@
 // Footer Layout
 // =============
 
-[data-layout='footer-rule'] {
-  border: none;
-}
-
 [data-layout='footer'] {
   @include font-family('code');
   font-size: size('xsmall');
@@ -13,4 +9,10 @@
   p {
     margin-bottom: size('half-shim');
   }
+}
+
+.footer-hr {
+  border: none;
+  grid-column: full;
+  margin-top: size('spacer');
 }
