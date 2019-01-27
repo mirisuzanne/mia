@@ -1,9 +1,11 @@
 ---
-title: 'Biography'
-layout: 'base'
+title: Biography
+layout: base
+banner:
+  title: Biography
 hero:
-  img: 'headshots/mia-smirk.jpg'
-  alt: 'Headshot of Mia smirking'
+  img: headshots/mia-smirk.jpg
+  alt: Headshot of Mia smirking
   caption: |
     This face is one of my special skills.
 nav:

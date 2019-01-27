@@ -20,7 +20,7 @@
   @include above('page-break') {
     grid-template:
       'icon title' auto 'icon sub' auto /
-      minmax(size('gutter'), size('spacer')) 1fr;
+      auto 1fr;
     padding: size('spacer') size('gutter');
     text-align: left;
   }

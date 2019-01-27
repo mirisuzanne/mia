@@ -15,7 +15,10 @@
       100% { fill-opacity: 1; }
     }
     @keyframes fade-logo-outline {
-      0% { stroke-width: 1; }
+      0% {
+        stroke-width: 1;
+        stroke-width: var(--mia-svg-stroke-width, 1);
+      }
       100% { stroke-width: 0; }
     }
     g {

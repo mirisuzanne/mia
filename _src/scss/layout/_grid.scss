@@ -37,7 +37,7 @@
 }
 
 [data-layout~='main'] {
-  padding: size('shim');
+  padding: size('gutter') size('shim');
 }
 
 [data-layout~='full'] {

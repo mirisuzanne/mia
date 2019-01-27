@@ -1,15 +1,15 @@
 ---
-title: 'art & code'
-layout: 'base'
+title: art & code
+layout: base
 banner:
-  title: 'Miriam Suzanne'
-  sub: 'web developer, artist, speaker, author, musician, playwright…'
-  icon: 'icons/miriam.svg'
-dataLayout: 'full'
+  title: Miriam Suzanne
+  sub: web developer, artist, speaker, author, musician, playwright…
+  icon: icons/miriam.svg
+dataLayout: full
 nav:
   order: 0
-  title: 'art&code'
-  slug: 'home'
-  rel: 'home'
+  title: art&code
+  slug: home
+  rel: home
 ---
 

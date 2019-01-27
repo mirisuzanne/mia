@@ -1,8 +1,8 @@
 {
   "links": [
     {
-      "name": "11ty",
-      "url": "https://www.11ty.io/"
+      "name": "minifesto",
+      "url": "/why/"
     },
     {
       "name": "styles",
