@@ -3,24 +3,23 @@
 
 // layouts
 $grids: (
-  // area sizes
-    '_space': minmax(0, 1fr),
+  /* area sizes */ '_space': minmax(0, 1fr),
   '_quarter': minmax(0, size('quarter')),
-  // grouped line names '_lines-l': full-start left-start,
+  /* grouped line names */ '_lines-l': full-start left-start,
   '_lines-m': left-end midpoint right-start,
   '_lines-r': right-end full-end,
-  // left side '_edge-l': size('grid-margin') [content-start] '#_space',
+  /* left side  */ '_edge-l': size('grid-margin') [content-start] '#_space',
   '_main-l': '#_quarter' [half-left] '#_quarter',
   '_left': '#_edge-l' [main-start] '#_main-l',
-  // right side '_edge-r': '#_space' [content-end] size('grid-margin'),
+  /* right side */ '_edge-r': '#_space' [content-end] size('grid-margin'),
   '_main-r': '#_quarter' [half-right] '#_quarter',
   '_right': '#_main-r' [main-end] '#_edge-r',
-  // areas '_main': '#_main-l' [ '#_lines-m' ] '#_main-r',
+  /* areas */ '_main': '#_main-l' [ '#_lines-m' ] '#_main-r',
   '_main-sm': '#_main-l' [midpoint] '#_main-r',
   '_full': '#_edge-l' [main-start] '#_main' [main-end] '#_edge-r',
   '_full-sm': '#_edge-l' [main-start right-start] '#_main-sm' [left-end
     main-end] '#_edge-r',
-  // layouts 'full': [ '#_lines-l' ] '#_full' [ '#_lines-r' ],
+  /* layouts */ 'full': [ '#_lines-l' ] '#_full' [ '#_lines-r' ],
   'small': [ '#_lines-l' ] '#_full-sm' [ '#_lines-r' ],
   'main': [ '#_lines-l' main-start] '#_main' [main-end '#_lines-r' ],
   'main-left': [ '#_lines-l' ] '#_left' [ '#_lines-m' ] '#_main-r' [main-end
@@ -31,9 +30,5 @@ $grids: (
 );
 
 @function grid($key) {
-  @return get-token($grids, $key);
-}
-
-@function var-grid($key) {
   @return get-token($grids, $key);
 }
