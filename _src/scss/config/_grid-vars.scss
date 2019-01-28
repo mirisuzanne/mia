@@ -1,0 +1,75 @@
+/// # Grids » CSS Variables
+/// @group grid-vars
+
+// Grid Var Prefix
+// ----------------
+/// Set a prefix for all grid-tokens,
+/// and we'll apply it when setting or calling css variables
+/// based on your grid maps.
+/// Set to `null` or `''` (empty string) for no prefix.
+///
+/// @group grid-vars
+/// @type string
+$grid-var-prefix: 'grid-';
+
+// Grids--
+// --------
+/// Convert any grid-map into CSS variables,
+/// using the global `$grid-var-prefix`.
+///
+/// @group grid-vars
+/// @param {map} $source [$grids] -
+///   Optionally use a custom
+///   map of grids to set as css variables
+/// @output
+///   Custom properties for all public grids in the map
+@mixin grids--($source: $grids) {
+  @include tokens--($source, $grid-var-prefix);
+}
+
+// Grid--
+// ------
+/// Set a single custom property based on a map-color,
+/// with optional alias and fallback
+///
+/// @group grid-vars
+/// @param {*} $grid -
+///   Color name available in the `$source` map,
+///   or alias to use in naming the CSS variable
+/// @param {string | null} $value [null] -
+///   Optional value for the variable,
+///   if different from the given `$grid`
+/// @param {*} $fallback [true] -
+///   The optional fallback value for a `var()` function:
+///   - `true` will generate a fallback based on the token value
+///   - A token name will fallback to the value of that
+///     css-variable and then to the token's calculated value
+///   - Any other fallback will be passed through unchanged
+/// @param {map} $source [$grids] -
+///   Optional map of grids to use as a palette source
+@mixin grid--($grid, $value: null, $fallback: true, $source: $grids) {
+  @include token--($source, $grid, $value, $fallback, $grid-var-prefix);
+}
+
+// Var Color
+// ---------
+/// Access the CSS variable associated with a given token,
+/// along with a fallback value based on the token itself
+///
+/// @group grid-vars
+/// @param {*} $grid -
+///   Color name available in the `$source` map
+/// @param {*} $fallback [true] -
+///   The optional fallback value for a `var()` function:
+///   - `true` will generate a fallback based on the token value
+///   - A token name will fallback to the value of that
+///     css-variable and then to the token's calculated value
+///   - Any other fallback will be passed through unchanged
+/// @param {map} $source -
+///   Optional Accoutrement map of grids to use as source
+/// @return {string} -
+///   CSS variable call, in the format:
+///   `var(--<token>, <fallback>)`
+@function var-grid($grid, $fallback: true, $source: $grids) {
+  @return var-token($source, $grid, $fallback, $grid-var-prefix);
+}

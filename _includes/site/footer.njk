@@ -1,20 +1,24 @@
 {% import 'utility.macros.njk' as utility %}
 
 <hr class="footer-hr" />
-<footer data-layout="footer">
-  <p>
-    Copyright © {% getDate 'year' %}
-    <a href="mailto:{{ site.email }}">
-      {{ site.author }}
-    </a>
-  </p>
+<footer
+  data-section="footer"
+  data-area="right">
+  <div data-content>
+    <p>
+      Copyright © {% getDate 'year' %}
+      <a href="mailto:{{ site.email }}">
+        {{ site.author }}
+      </a>
+    </p>
 
-  <p>
-    {% for link in footer.links %}
-      <a href="{{ link.url | url }}">{{ link.name }}</a> |
-    {% endfor %}
-    <button data-btn="toggle-theme">invert</button>
-  </p>
+    <p>
+      {% for link in footer.links %}
+        <a href="{{ link.url | url }}">{{ link.name }}</a> |
+      {% endfor %}
+      <button data-btn="toggle-theme">invert</button>
+    </p>
+  </div>
 </footer>
 
 

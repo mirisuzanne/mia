@@ -1,10 +1,10 @@
 // Hero Layout
 // ===========
 
-[data-layout~='hero-content'] {
+[data-content~='hero'] {
   display: grid;
   grid-template: 'image caption' min-content / minmax(0, 1fr) auto;
-  padding: 0 size('shim');
+  padding: 0;
 }
 
 .hero-image {

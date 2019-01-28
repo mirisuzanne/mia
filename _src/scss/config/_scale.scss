@@ -95,6 +95,7 @@ $spacing-sizes: (
 $component-sizes: (
   'icon': 1em,
   'section-border': '#half-shim',
+  'grid-margin': size('shim'),
 );
 
 @include add-sizes($component-sizes);

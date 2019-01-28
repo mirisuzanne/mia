@@ -1,0 +1,41 @@
+<h1>mia</h1>
+<p>eleventy source for <a href="http://miriamsuzanne.com">miriamsuzanne.com</a></p>
+<h2>Develop:</h2>
+<p>Install dependencies:</p>
+<pre><code>yarn
+</code></pre>
+<p>Compile and run <a href="http://www.11ty.io">Eleventy</a> server,
+with a watcher for Sass files:</p>
+<pre><code>gulp
+</code></pre>
+<p>The site will be compiled into <code>_site/</code>
+for simple gh-pages deployment,
+and the served site will be available at
+<code>localhost:8080</code> or e.g. <code>mia.hexxie.com:8080</code>.</p>
+<p>You can also run individual commands:</p>
+<pre><code># build the static site
+gulp build
+
+# run the server
+gulp serve
+
+# minify images
+gulp imagemin
+
+# compile sass
+gulp sass
+
+# lint sass
+gulp sasslint
+
+# format sass
+gulp prettier
+
+# compile sass docs
+gulp sassdoc
+
+# watch sass files (lint &amp; docs &amp; compile)
+gulp watch
+</code></pre>
+<p>Sass Docs are compiled into the <code>_site/style/</code> folder,
+which is then available at the URL: <code>/style/</code>.</p>

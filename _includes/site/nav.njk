@@ -1,7 +1,11 @@
 {% import 'utility.macros.njk' as utility %}
 
-<nav data-layout="nav">
-  <div data-inner="nav">
+<nav
+  data-section="nav"
+  data-area="right">
+  <div
+    data-content
+    data-flow="flex">
     {%- for item in collections._nav -%}
       {% set title = item.data.nav.title or item.data.title or 'TitleMePlease' %}
       <a href="{{ item.url | url }}"

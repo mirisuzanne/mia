@@ -5,14 +5,13 @@
 ) %}
   {%- if value -%}
     {{- attr -}}
-    {%- set value = value | string -%}
-    {%- set value = value | url if (attr == 'href') else value -%}
-    {%- if not (value | lower == 'true') -%}
+    {%- if (value | string | lower != 'true') -%}
+      {%- set value = value | string -%}
+      {%- set value = value | url if (attr == 'href') else value -%}
       ="{{ value }}"
     {%- endif -%}
   {%- endif %}
 {% endmacro %}
-
 
 {% macro show_attrs(
   attrs
@@ -21,3 +20,11 @@
     {{- attr_if(attr, value) -}}
   {%- endfor -%}
 {% endmacro %}
+
+{% macro style_if(
+  style
+) -%}
+  {%- if style -%}
+    style="{%- for prop, val in style -%}{{ prop }}: {{ val }};{%- endfor -%}"
+  {%- endif -%}
+{%- endmacro %}

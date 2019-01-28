@@ -1,8 +1,11 @@
 ---
 title: Minifesto
+layout: base
+section:
+  name: minifesto
+  area: main-left
 banner:
   title: Some Kind of Minifesto
-layout: base
 erasure: true
 summary: |
   People are `queer`.

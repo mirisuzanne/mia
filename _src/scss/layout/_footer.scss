@@ -1,18 +1,18 @@
 // Footer Layout
 // =============
 
-[data-layout='footer'] {
-  @include font-family('code');
-  font-size: size('xsmall');
-  padding: size('quarter-shim') size('shim');
-
-  p {
-    margin-bottom: size('half-shim');
-  }
-}
-
 .footer-hr {
   border: none;
   grid-column: full;
   margin-top: size('gutter');
+}
+
+[data-section='footer'] {
+  @include font-family('code');
+  --top: size('quarter-shim');
+  font-size: size('xsmall');
+
+  p {
+    margin-bottom: size('half-shim');
+  }
 }

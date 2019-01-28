@@ -1,6 +1,9 @@
 ---
 title: Biography
 layout: base
+section:
+  name: bio
+  area: main-right
 banner:
   title: Biography
 hero:

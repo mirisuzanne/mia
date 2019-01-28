@@ -1,11 +1,12 @@
 {% if hero.img %}
-<figure data-layout="hero to-start section grid">
-  <div data-layout="main hero-content">
+<figure
+  data-section="hero"
+  data-area="main-left">
+  <div data-content="hero">
     <img
       src="{{ site.images + hero.img }}"
       alt="{{ hero.alt or '' }}"
-       class="hero-image"
-      />
+      class="hero-image" />
     {% if hero.caption %}
     <figcaption class="hero-caption">
       {{ hero.caption | md | safe }}

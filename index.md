@@ -1,11 +1,13 @@
 ---
 title: art & code
 layout: base
+section:
+  name: home
+  area: full
 banner:
   title: Miriam Suzanne
   sub: web developer, artist, speaker, author, musician, playwright…
   icon: icons/miriam.svg
-dataLayout: full
 nav:
   order: 0
   title: art&code

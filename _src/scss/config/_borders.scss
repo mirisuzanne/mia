@@ -1,0 +1,10 @@
+// Borders
+// =======
+
+$borders: (
+  'section': size('section-border') solid var-color('border'),
+);
+
+@function border($key) {
+  @return get-token($borders, $key);
+}

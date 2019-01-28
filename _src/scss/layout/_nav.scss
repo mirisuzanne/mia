@@ -1,10 +1,11 @@
 // Nav Layout
 // ==========
 
-[data-inner='nav'] {
-  display: grid;
-  grid-template: auto / repeat(3, auto) 1fr;
-  margin-top: negative('half-shim');
+[data-section='nav'] {
+  [data-content] {
+    margin-top: negative('half-shim');
+    padding: 0;
+  }
 }
 
 [data-nav] {
