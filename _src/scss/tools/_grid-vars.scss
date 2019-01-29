@@ -1,5 +1,7 @@
 /// # Grids » CSS Variables
-/// @group grid-vars
+/// @group tools-grid-vars
+/// @link https://oddbird.net/accoutrement/docs/core-vars.html
+///   Accoutrement Core: CSS Variables
 
 // Grid Var Prefix
 // ----------------
@@ -8,7 +10,7 @@
 /// based on your grid maps.
 /// Set to `null` or `''` (empty string) for no prefix.
 ///
-/// @group grid-vars
+/// @group tools-grid-vars
 /// @type string
 $grid-var-prefix: 'grid-';
 
@@ -17,7 +19,7 @@ $grid-var-prefix: 'grid-';
 /// Convert any grid-map into CSS variables,
 /// using the global `$grid-var-prefix`.
 ///
-/// @group grid-vars
+/// @group tools-grid-vars
 /// @param {map} $source [$grids] -
 ///   Optionally use a custom
 ///   map of grids to set as css variables
@@ -32,7 +34,7 @@ $grid-var-prefix: 'grid-';
 /// Set a single custom property based on a map-color,
 /// with optional alias and fallback
 ///
-/// @group grid-vars
+/// @group tools-grid-vars
 /// @param {*} $grid -
 ///   Color name available in the `$source` map,
 ///   or alias to use in naming the CSS variable
@@ -56,7 +58,7 @@ $grid-var-prefix: 'grid-';
 /// Access the CSS variable associated with a given token,
 /// along with a fallback value based on the token itself
 ///
-/// @group grid-vars
+/// @group tools-grid-vars
 /// @param {*} $grid -
 ///   Color name available in the `$source` map
 /// @param {*} $fallback [true] -

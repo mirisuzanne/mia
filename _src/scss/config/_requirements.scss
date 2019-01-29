@@ -1,6 +1,10 @@
-// Required Third-Party Dependencies
-// =================================
+// # Sass Dependencies
 
 // Accoutrement…
 @import '../../../node_modules/accoutrement/sass/tools';
+
+// Herman…
 @import '../../../node_modules/sassdoc-theme-herman/scss/utilities';
+
+// Local…
+@import '../tools/manifest';

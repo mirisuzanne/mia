@@ -9,10 +9,17 @@ shortcutIcon: ./favicon.ico
 verbose: true
 
 groups:
+  Tools:
+    tools-borders: Borders
+    tools-grids: Grids
+    tools-grid-vars: CSS Grid Variables
   Design Tokens:
-    color: Colors
-    fonts: Fonts
-    scale: Ratios & Sizes
+    config-animation: Animations
+    config-borders: Borders
+    config-colors: Colors
+    config-grids: Grids
+    config-fonts: Fonts
+    config-scale: Ratios & Sizes
 
 herman:
   extraLinks:

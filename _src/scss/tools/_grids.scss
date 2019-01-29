@@ -1,0 +1,30 @@
+/// # Grid Tools
+/// @group tools-grids
+/// @link https://oddbird.net/accoutrement/docs/core-get.html
+///   Accoutrement Core
+
+// Grids
+// -------
+/// @group tools-grids
+/// @type map
+$grids: () !default;
+
+// Grid [Function]
+// ---------------
+/// @group tools-grids
+/// @param {string} $key -
+///   grid token key
+/// @return {*} -
+///   compiled grid token value
+@function grid($key) {
+  @return get-token($grids, $key);
+}
+
+// Add Grid [Mixin]
+// ----------------
+/// @group tools-grids
+/// @param {map} $map -
+///   grid map partial to merge into $grids global
+@mixin add-grid($map) {
+  $grids: map-merge($grids, $map) !global;
+}

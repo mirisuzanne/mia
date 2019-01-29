@@ -17,7 +17,7 @@ gulp
 ```
 
 The site will be compiled into `_site/`
-for simple gh-pages deployment,
+for netlify deployment,
 and the served site will be available at
 `localhost:8080` or e.g. `mia.hexxie.com:8080`.
 

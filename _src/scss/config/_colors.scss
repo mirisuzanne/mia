@@ -1,5 +1,5 @@
 /// # Color Configuration
-/// @group color
+/// @group config-colors
 /// @link http://oddbird.net/accoutrement/docs/color.html
 ///   Accoutrement Color
 
@@ -11,7 +11,7 @@ $_color: get-function('color');
 // ------------
 /// The brand is defined by our primary brand blue,
 /// along with secondary pink and orange base colors.
-/// @group color
+/// @group config-colors
 /// @colors
 /// @type Map
 $brand-colors: (
@@ -32,7 +32,7 @@ $brand-colors: (
 // Contrast Colors
 // ---------------
 /// Tints and shades of the brand colors.
-/// @group color
+/// @group config-colors
 /// @colors
 /// @type Map
 $shade-colors: shades-of($brand-colors, 5);
@@ -45,7 +45,7 @@ $shade-colors: shades-of($brand-colors, 5);
 /// The light and dark contrast colors act as
 /// the high and low range of our palette.
 /// These colors should not be dynamic.
-/// @group color
+/// @group config-colors
 /// @colors
 /// @type Map
 $contrast-colors: (
@@ -60,7 +60,7 @@ $contrast-colors: (
 // ------------
 /// Main theme colors will be set as relative CSS variables –
 /// applying the above colors to more specific use-cases.
-/// @group color
+/// @group config-colors
 /// @colors
 /// @type Map
 $theme-colors: (
@@ -69,9 +69,9 @@ $theme-colors: (
   'text-light': '#_brand-main-dark-2',
   'text-shadow': #fff,
   'invert-shadow': #000,
-  'amp': '#text-light',
+  'amp': '#_brand-main-dark-2',
   'border': '#_brand-gray-0',
-  'border-light': '#_brand-gray-light-1',
+  'border-light': '#_brand-gray-light-2',
   'action': '#_brand-accent-dark-2',
   'action-underline': '#_brand-accent-light-2',
   'action-hover': '#_brand-accent-dark-4',
@@ -83,7 +83,7 @@ $theme-colors: (
 // Inverted Theme
 // --------------
 /// Inverted theme colors for light-on-dark mode.
-/// @group color
+/// @group config-colors
 /// @colors
 /// @type Map
 $invert-colors: (
@@ -92,9 +92,9 @@ $invert-colors: (
   'text-light': '#_brand-main-light-2',
   'text-shadow': #000,
   'invert-shadow': #fff,
-  'amp': '#text-light',
+  'amp': '#_brand-main-light-2',
   'border': '#_brand-gray-0',
-  'border-light': '#_brand-gray-dark-1',
+  'border-light': '#_brand-gray-dark-2',
   'action': '#_brand-accent'
     (
       'lighten': 45%,

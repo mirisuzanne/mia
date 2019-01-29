@@ -1,10 +1,12 @@
-// Borders
-// =======
+/// # Border Configuration
+/// @group config-borders
+/// @link https://oddbird.net/accoutrement/docs/core-get.html
+///   Accoutrement Core
 
+// Borders
+// -------
+/// @group config-borders
+/// @type map
 $borders: (
   'section': size('section-border') solid var-color('border'),
 );
-
-@function border($key) {
-  @return get-token($borders, $key);
-}

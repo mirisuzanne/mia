@@ -68,30 +68,60 @@
     <div class="nav-subsection">
       <ul>
             <li class="nav-subsection">
+              <h3 class="nav-title">Tools</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="tools-borders.html" data-nav="is-not-active">Borders</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="tools-grids.html" data-nav="is-not-active">Grids</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="tools-grid-vars.html" data-nav="is-not-active">CSS Grid<span class="widont">&nbsp;</span>Variables</a>
+    </li>
+  </ul>
+            </li>
+            <li class="nav-subsection">
               <h3 class="nav-title">Design Tokens</h3>
               <ul>
                 
   
     <li class="nav-item">
-      <a href="color.html" data-nav="is-active">Colors</a>
+      <a href="config-animation.html" data-nav="is-not-active">Animations</a>
     </li>
   
   
     <li class="nav-item">
-      <a href="fonts.html" data-nav="is-not-active">Fonts</a>
+      <a href="config-borders.html" data-nav="is-not-active">Borders</a>
     </li>
   
   
     <li class="nav-item">
-      <a href="scale.html" data-nav="is-not-active">Ratios &amp;<span class="widont">&nbsp;</span>Sizes</a>
+      <a href="config-colors.html" data-nav="is-active">Colors</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="config-grids.html" data-nav="is-not-active">Grids</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="config-fonts.html" data-nav="is-not-active">Fonts</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="config-scale.html" data-nav="is-not-active">Ratios &amp;<span class="widont">&nbsp;</span>Sizes</a>
     </li>
   </ul>
-            </li>
-  
-    <li class="nav-item">
-      <a href="grid-vars.html" data-nav="is-not-active">grid-vars</a>
-    </li>
-  </ul>
+            </li></ul>
     </div>
 
     
@@ -153,7 +183,7 @@
   </nav>
 
 
-        <div data-page="color">
+        <div data-page="config-colors">
           
   
     
@@ -1820,9 +1850,9 @@ These colors should not be<span class="widont">&nbsp;</span>dynamic.</p>
   &#39;text-light&#39;: &#39;#_brand-main-dark-2&#39;,
   &#39;text-shadow&#39;: #fff,
   &#39;invert-shadow&#39;: #000,
-  &#39;amp&#39;: &#39;#text-light&#39;,
+  &#39;amp&#39;: &#39;#_brand-main-dark-2&#39;,
   &#39;border&#39;: &#39;#_brand-gray-0&#39;,
-  &#39;border-light&#39;: &#39;#_brand-gray-light-1&#39;,
+  &#39;border-light&#39;: &#39;#_brand-gray-light-2&#39;,
   &#39;action&#39;: &#39;#_brand-accent-dark-2&#39;,
   &#39;action-underline&#39;: &#39;#_brand-accent-light-2&#39;,
   &#39;action-hover&#39;: &#39;#_brand-accent-dark-4&#39;,
@@ -2088,7 +2118,7 @@ applying the above colors to more specific<span class="widont">&nbsp;</span>use-
         <div class="color-preview">
           <div class="color-swatch">
             <div class="transparency-grid"></div>
-            <div class="color-overlay" style="background-color: #88989e;"></div>
+            <div class="color-overlay" style="background-color: #9dabaf;"></div>
           </div>
           <div class="color-info">
             <strong class="color-name">
@@ -2100,15 +2130,15 @@ applying the above colors to more specific<span class="widont">&nbsp;</span>use-
             
               
                 
-                  <code class="color-value">#88989e</code>
+                  <code class="color-value">#9dabaf</code>
                 
               
                 
-                  <code class="color-value">rgb(136, 152, 158)</code>
+                  <code class="color-value">rgb(157, 171, 175)</code>
                 
               
                 
-                  <code class="color-value">hsl(196, 10%, 58%)</code>
+                  <code class="color-value">hsl(193, 10%, 65%)</code>
                 
               
             
@@ -2282,9 +2312,9 @@ applying the above colors to more specific<span class="widont">&nbsp;</span>use-
   &#39;text-light&#39;: &#39;#_brand-main-light-2&#39;,
   &#39;text-shadow&#39;: #000,
   &#39;invert-shadow&#39;: #fff,
-  &#39;amp&#39;: &#39;#text-light&#39;,
+  &#39;amp&#39;: &#39;#_brand-main-light-2&#39;,
   &#39;border&#39;: &#39;#_brand-gray-0&#39;,
-  &#39;border-light&#39;: &#39;#_brand-gray-dark-1&#39;,
+  &#39;border-light&#39;: &#39;#_brand-gray-dark-2&#39;,
   &#39;action&#39;: &#39;#_brand-accent&#39;
     (
       &#39;lighten&#39;: 45%,
@@ -2438,7 +2468,9 @@ applying the above colors to more specific<span class="widont">&nbsp;</span>use-
           <div class="color-info">
             <strong class="color-name">
               
-                <span class="color-name-option">text-light</span>
+                <span class="color-name-option">text-light,&nbsp;</span>
+              
+                <span class="color-name-option">amp</span>
               
             </strong>
             
@@ -2523,36 +2555,6 @@ applying the above colors to more specific<span class="widont">&nbsp;</span>use-
         <div class="color-preview">
           <div class="color-swatch">
             <div class="transparency-grid"></div>
-            <div class="color-overlay" style="background-color: #326c7f;"></div>
-          </div>
-          <div class="color-info">
-            <strong class="color-name">
-              
-                <span class="color-name-option">amp</span>
-              
-            </strong>
-            
-            
-              
-                
-                  <code class="color-value">#326c7f</code>
-                
-              
-                
-                  <code class="color-value">rgb(50, 108, 127)</code>
-                
-              
-                
-                  <code class="color-value">hsl(195, 44%, 35%)</code>
-                
-              
-            
-          </div>
-        </div>
-      
-        <div class="color-preview">
-          <div class="color-swatch">
-            <div class="transparency-grid"></div>
             <div class="color-overlay" style="background-color: #73868c;"></div>
           </div>
           <div class="color-info">
@@ -2583,7 +2585,7 @@ applying the above colors to more specific<span class="widont">&nbsp;</span>use-
         <div class="color-preview">
           <div class="color-swatch">
             <div class="transparency-grid"></div>
-            <div class="color-overlay" style="background-color: #5e747a;"></div>
+            <div class="color-overlay" style="background-color: #496169;"></div>
           </div>
           <div class="color-info">
             <strong class="color-name">
@@ -2595,15 +2597,15 @@ applying the above colors to more specific<span class="widont">&nbsp;</span>use-
             
               
                 
-                  <code class="color-value">#5e747a</code>
+                  <code class="color-value">#496169</code>
                 
               
                 
-                  <code class="color-value">rgb(94, 116, 122)</code>
+                  <code class="color-value">rgb(73, 97, 105)</code>
                 
               
                 
-                  <code class="color-value">hsl(193, 13%, 42%)</code>
+                  <code class="color-value">hsl(195, 18%, 35%)</code>
                 
               
             

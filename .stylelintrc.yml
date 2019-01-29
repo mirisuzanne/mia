@@ -36,6 +36,7 @@ rules:
   declaration-bang-space-before: always
   font-family-name-quotes: always-unless-keyword
   font-weight-notation: named-where-possible
+  function-calc-no-unspaced-operator: null
   function-max-empty-lines: 1
   function-name-case: lower
   function-url-quotes: always

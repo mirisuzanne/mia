@@ -1,5 +1,5 @@
 /// # Font Configuration
-/// @group fonts
+/// @group config-fonts
 /// @link http://oddbird.net/accoutrement/docs/type.html
 ///   Accoutrement Type
 
@@ -8,7 +8,7 @@ $font-path: '../fonts/';
 // Body Font
 // ---------
 /// Freight Text Pro is the primary font of the OddBird brand.
-/// @group fonts
+/// @group config-fonts
 /// @font body (regular, italic, bold, bold italic)
 ///   <script src="https://use.typekit.net/slx1xnq.js"></script>
 ///   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -30,7 +30,7 @@ $body-font: (
 // Code Font
 // ---------
 /// A readable monospace font for code previews
-/// @group fonts
+/// @group config-fonts
 /// @font code
 $code-font: (
   'name': 'Dank Mono',
@@ -61,7 +61,7 @@ $code-font: (
 // Ampersand Font
 // --------------
 /// Baskerville Italic provides a nice-looking ampersand
-/// @group fonts
+/// @group config-fonts
 $amp-font: (
   'name': 'amp',
   'stack': (

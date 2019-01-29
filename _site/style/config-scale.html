@@ -68,30 +68,60 @@
     <div class="nav-subsection">
       <ul>
             <li class="nav-subsection">
+              <h3 class="nav-title">Tools</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="tools-borders.html" data-nav="is-not-active">Borders</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="tools-grids.html" data-nav="is-not-active">Grids</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="tools-grid-vars.html" data-nav="is-not-active">CSS Grid<span class="widont">&nbsp;</span>Variables</a>
+    </li>
+  </ul>
+            </li>
+            <li class="nav-subsection">
               <h3 class="nav-title">Design Tokens</h3>
               <ul>
                 
   
     <li class="nav-item">
-      <a href="color.html" data-nav="is-not-active">Colors</a>
+      <a href="config-animation.html" data-nav="is-not-active">Animations</a>
     </li>
   
   
     <li class="nav-item">
-      <a href="fonts.html" data-nav="is-not-active">Fonts</a>
+      <a href="config-borders.html" data-nav="is-not-active">Borders</a>
     </li>
   
   
     <li class="nav-item">
-      <a href="scale.html" data-nav="is-active">Ratios &amp;<span class="widont">&nbsp;</span>Sizes</a>
+      <a href="config-colors.html" data-nav="is-not-active">Colors</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="config-grids.html" data-nav="is-not-active">Grids</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="config-fonts.html" data-nav="is-not-active">Fonts</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="config-scale.html" data-nav="is-active">Ratios &amp;<span class="widont">&nbsp;</span>Sizes</a>
     </li>
   </ul>
-            </li>
-  
-    <li class="nav-item">
-      <a href="grid-vars.html" data-nav="is-not-active">grid-vars</a>
-    </li>
-  </ul>
+            </li></ul>
     </div>
 
     
@@ -153,7 +183,7 @@
   </nav>
 
 
-        <div data-page="scale">
+        <div data-page="config-scale">
           
   
     
@@ -178,7 +208,7 @@
 
   
     <div data-item-section="prose" class="text-block">
-      <h1 id="scale-settings">Scale Settings</h1>
+      <h1 id="scale-configuration">Scale Configuration</h1>
 
       
   
@@ -229,7 +259,7 @@
     <h4 class="param-title">
       
       
-        <a href="http://oddbird.net/accoutrement/docs/scale.html" class="item-name">Accoutrement Scale</a>
+        <a href="http://oddbird.net/accoutrement-scale/docs/" class="item-name">Accoutrement Scale</a>
       
       
       
@@ -664,13 +694,13 @@
       
       <pre class="hljs-pre"><code class="lang-scss">$text-sizes: (
   &#39;root&#39;: 18px,
-  &#39;responsive&#39;: &#39;calc(#root + 0.5vw)&#39;,
+  &#39;responsive&#39;: calc(#root + 0.5vw),
   &#39;large-root&#39;: 1rem
     (
       &#39;text-ratio&#39;: 1,
     ),
-  &#39;large&#39;: &#39;calc(1rem + 0.25vw)&#39;,
-  &#39;xlarge&#39;: &#39;calc(#large-root + 4.5vw)&#39;,
+  &#39;large&#39;: calc(1rem + 0.25vw),
+  &#39;xlarge&#39;: calc(#large-root + 4.5vw),
   &#39;small&#39;: 1rem
     (
       &#39;text-ratio&#39;: -0.5,
@@ -1052,10 +1082,7 @@
     (
       &#39;times&#39;: 2,
     ),
-  &#39;spacer&#39;: calc(%s + %s)
-    (
-      &#39;%s&#39;: &#39;#double-gutter&#39; 6vmin,
-    ),
+  &#39;spacer&#39;: calc(#double-gutter + 6vmin),
   &#39;shim&#39;: &#39;#gutter&#39;
     (
       &#39;times&#39;: 0.5,
@@ -1857,6 +1884,87 @@
 
   
   
+        
+  
+  <div data-item-section="size-preview">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Size Previews</span>
+        
+      </h3>
+    
+
+    
+    
+
+    
+      
+  
+  
+
+  <table class="sizes is-large">
+    <tr class="is-hidden">
+      <th class="size-name">Name</th>
+      <th class="size-value">Value</th>
+      <td class="size-viz"></td>
+    </tr>
+
+    
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      page-break
+    </td>
+    <td class="size-value">
+      <code>
+        40.5em
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 40.5em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+        
+        
+  <tr class="size">
+    <td class="size-name">
+      wide
+    </td>
+    <td class="size-value">
+      <code>
+        60.75em
+      </code>
+    </td>
+    <td class="size-viz">
+      
+        <div class="size-overflow">
+          <span class="size-bar" style="width: 60.75em;">
+            &nbsp;
+          </span>
+        </div>
+      
+    </td>
+  </tr>
+
+      
+    
+  </table>
+
+    
+  
+  </div>
+
+
 
 </section>
 

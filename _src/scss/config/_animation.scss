@@ -1,10 +1,24 @@
-// Animation Config
-// ================
+/// # Animation Configuration
+/// @group config-animation
+/// @link https://oddbird.net/accoutrement/docs/animate.html
+///   Accoutrement Animate
 
+// Times
+// -----
+/// @group config-animation
+/// @type map
+/// @link https://oddbird.net/accoutrement/docs/animate-times.html
+///   Animate Times
 $times: (
   'fast': 200ms,
 );
 
+// Changes
+// -------
+/// @group config-animation
+/// @type map
+/// @link https://oddbird.net/accoutrement/docs/animate-change.html
+///   Animate Changes
 $changes: (
   'text-color': text-decoration-color time('fast') ease('_in-out'),
 );

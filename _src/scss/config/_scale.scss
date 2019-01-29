@@ -1,40 +1,36 @@
-/// # Scale Settings
-/// @group scale
-/// @link http://oddbird.net/accoutrement/docs/scale.html
-///   Accoutrement Scale
-
 /// # Scale Configuration
-/// @group scale
+/// @group config-scale
 /// @link http://oddbird.net/accoutrement-scale/docs/
 ///   Accoutrement Scale
 
+// capture the necessary functions for Herman
 $_ratio: get-function('ratio');
 $_size: get-function('size');
+$_break: get-function('break');
 
 // Ratios
 // ------
-/// @group scale
+/// @group config-scale
 /// @ratios
 $modular-scale: (
   'text-ratio': 1.4,
 );
-
 @include add-ratios($modular-scale);
 @include herman-add('ratios', 'modular-scale', $modular-scale, $_ratio);
 
 // Text Sizes
 // ----------
-/// @group scale
-/// @sizes text-sizes {text}
+/// @sizes {text}
+/// @group config-scale
 $text-sizes: (
   'root': 18px,
-  'responsive': 'calc(#root + 0.5vw)',
+  'responsive': calc(#root + 0.5vw),
   'large-root': 1rem
     (
       'text-ratio': 1,
     ),
-  'large': 'calc(1rem + 0.25vw)',
-  'xlarge': 'calc(#large-root + 4.5vw)',
+  'large': calc(1rem + 0.25vw),
+  'xlarge': calc(#large-root + 4.5vw),
   'small': 1rem
     (
       'text-ratio': -0.5,
@@ -48,14 +44,13 @@ $text-sizes: (
   'h1': '#xlarge',
   'h2': '#large',
 );
-
 @include add-sizes($text-sizes);
 @include herman-add('sizes', 'text-sizes', $text-sizes, $_size);
 
 // Spacing Sizes
 // -------------
-/// @group scale
-/// @sizes spacing-sizes {ruler}
+/// @sizes {ruler}
+/// @group config-scale
 $spacing-sizes: (
   'rhythm': '#root'
     (
@@ -67,10 +62,7 @@ $spacing-sizes: (
     (
       'times': 2,
     ),
-  'spacer': calc(%s + %s)
-    (
-      '%s': '#double-gutter' 6vmin,
-    ),
+  'spacer': calc(#double-gutter + 6vmin),
   'shim': '#gutter'
     (
       'times': 0.5,
@@ -84,27 +76,25 @@ $spacing-sizes: (
       'times': 0.25,
     ),
 );
-
 @include add-sizes($spacing-sizes);
 @include herman-add('sizes', 'spacing-sizes', $spacing-sizes, $_size);
 
 // Component Sizes
 // ---------------
-/// @group scale
-/// @sizes component-sizes {ruler}
+/// @sizes {ruler}
+/// @group config-scale
 $component-sizes: (
   'icon': 1em,
   'section-border': '#half-shim',
   'grid-margin': size('shim'),
 );
-
 @include add-sizes($component-sizes);
 @include herman-add('sizes', 'component-sizes', $component-sizes, $_size);
 
 // Page Sizes
 // ----------
-/// @group scale
-/// @sizes page-sizes {ruler-large}
+/// @sizes {ruler-large}
+/// @group config-scale
 $page-sizes: (
   'page': 36rem,
   'half': '#page'
@@ -116,13 +106,13 @@ $page-sizes: (
       'divide': 4,
     ),
 );
-
 @include add-sizes($page-sizes);
 @include herman-add('sizes', 'page-sizes', $page-sizes, $_size);
 
 // Breakpoints
 // -----------
-/// @group scale
+/// @sizes {ruler-large}
+/// @group config-scale
 $breakpoints: (
   'page-break': '#page'
     (
@@ -133,3 +123,4 @@ $breakpoints: (
       'times': 1.5,
     ),
 );
+@include herman-add('sizes', 'breakpoints', $breakpoints, $_break);
