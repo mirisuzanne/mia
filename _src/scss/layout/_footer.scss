@@ -9,7 +9,7 @@
 
 [data-section='footer'] {
   @include font-family('code');
-  --top: size('quarter-shim');
+  --top: #{size('quarter-shim')};
   font-size: size('xsmall');
 
   p {
