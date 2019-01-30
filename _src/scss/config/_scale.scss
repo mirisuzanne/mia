@@ -105,6 +105,10 @@ $page-sizes: (
     (
       'divide': 4,
     ),
+  'calendar': '#page'
+    (
+      'divide': 3,
+    ),
 );
 @include add-sizes($page-sizes);
 @include herman-add('sizes', 'page-sizes', $page-sizes, $_size);

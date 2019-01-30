@@ -1,9 +1,6 @@
 ---
 title: art & code
-layout: base
-section:
-  name: home
-  area: full
+layout: home
 banner:
   title: Miriam Suzanne
   sub: web developer, artist, speaker, author, musician, playwright…

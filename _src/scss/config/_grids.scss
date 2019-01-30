@@ -29,7 +29,8 @@ $grid-lines: (
 /// @group config-grids
 /// @type map
 $grid-left: (
-  '_edge-l': size('grid-margin') [content-start] #_space,
+  '_content-l': [content-start] #_space,
+  '_edge-l': size('grid-margin') #_content-l,
   '_main-l': #_quarter [half-left] #_quarter,
   '_left': #_edge-l [main-start] #_main-l,
 );
@@ -40,7 +41,8 @@ $grid-left: (
 /// @group config-grids
 /// @type map
 $grid-right: (
-  '_edge-r': #_space [content-end] size('grid-margin'),
+  '_content-r': #_space [content-end],
+  '_edge-r': #_content-r size('grid-margin'),
   '_main-r': #_quarter [half-right] #_quarter,
   '_right': #_main-r [main-end] #_edge-r,
 );
@@ -53,6 +55,7 @@ $grid-right: (
 $grid-areas: (
   '_main': #_main-l [#_lines-m] #_main-r,
   '_main-sm': #_main-l [midpoint] #_main-r,
+  '_content': #_content-l [main-start] #_main [main-end] #_content-r,
   '_full': #_edge-l [main-start] #_main [main-end] #_edge-r,
   '_full-sm-main': [main-start right-start] #_main-sm [left-end main-end],
   '_full-sm': #_edge-l #_full-sm-main #_edge-r,
@@ -64,6 +67,7 @@ $grid-areas: (
 /// @group config-grids
 /// @type map
 $grid-layouts: (
+  'content': [#_lines-l] #_content [#_lines-r],
   'full': [#_lines-l] #_full [#_lines-r],
   'small': [#_lines-l] #_full-sm [#_lines-r],
   'main': [#_lines-l main-start] #_main [main-end #_lines-r],

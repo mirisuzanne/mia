@@ -1,5 +1,5 @@
 ---
-author: stacy
+title: CSSDay 2016 Recap
 tags: [_post, CSS, Front-end, Videos, Conferences]
 image:
   src: 'blog/2017/cssday/cssday.jpg'
@@ -8,8 +8,6 @@ summary: |
   geared towards front-end developers who want to dive deeper into advanced
   CSS topics.
 ---
-
-# CSSDay 2016 Recap
 
 `CSS Day 2016` covered a wide range of topics for a one day conference
 including SVG, animation, color theory, design, layout and more. Throughout the

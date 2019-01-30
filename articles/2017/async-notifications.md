@@ -1,5 +1,5 @@
 ---
-author: kit
+title: Django, Background Processes, and Keeping Users in the Loop
 tags: [_post, Celery, Django, Django-Channels, UX, Code]
 image:
   src: 'blog/2017/04/17/async-notifications.jpg'
@@ -8,8 +8,6 @@ summary: |
   that the status of a task has changed? Depending on your front-end client,
   there are a few different approaches you might take.
 ---
-
-# Django, Background Processes, and Keeping Users in the Loop
 
 In my last post, I talked about how a modern web app needs background worker
 processes. One way or another, you'll have some things you need to do that are

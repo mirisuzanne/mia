@@ -1,0 +1,42 @@
+// Calendar
+// ========
+
+[data-calendar='group'] {
+  display: grid;
+  font-size: size('small');
+  grid-template: 'grouper list' auto / auto minmax(0, 1fr);
+  margin-bottom: size('gutter');
+}
+
+[data-calendar='grouper'] {
+  @include font-family('code');
+  font-size: size('xsmall');
+  grid-area: grouper;
+  padding: size('shim') 0;
+  writing-mode: vertical-rl;
+}
+
+[data-calendar='list'] {
+  display: grid;
+  grid-area: list;
+  grid-gap: size('quarter-shim');
+  grid-template-columns: repeat(auto-fill, minmax(size('calendar'), 1fr));
+  list-style: none;
+  padding: 0 size('shim') 0 size('quarter-shim');
+}
+
+[data-calendar='item'] {
+  background: var-color('callout');
+  text-shadow: none;
+  padding: size('quarter-shim') size('half-shim');
+}
+
+[data-item='title'] {
+  font-style: italic;
+}
+
+[data-item='date'] {
+  @include font-family('code');
+  color: var-color('border');
+  font-size: size('xsmall');
+}

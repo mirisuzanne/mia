@@ -7,27 +7,11 @@
   @include font-family('body');
   font-size: size('responsive');
   line-height: ratio('text-ratio');
-  text-shadow: 0 1px 0 var-color('text-shadow');
 }
 
 h1 {
   font-size: size('h1');
   line-height: 1;
-}
-
-h2,
-h3,
-h4 {
-  @include font-family('code');
-  color: var-color('text-light');
-}
-
-h2 {
-  font-size: size('h2');
-}
-
-h3 {
-  font-style: italic;
 }
 
 p {
@@ -74,4 +58,21 @@ a {
 .intro {
   font-size: size('intro');
   font-style: italic;
+}
+
+.md {
+  h2,
+  h3,
+  h4 {
+    @include font-family('code');
+    color: var-color('text-light');
+  }
+
+  h2 {
+    font-size: size('h2');
+  }
+
+  h3 {
+    font-style: italic;
+  }
 }

@@ -1,0 +1,12 @@
+{% extends "layouts/base.njk" %}
+{% import "calendar.macros.njk" as calendar %}
+
+{% block body %}
+  <main
+    data-layout="calendar"
+    data-area="full">
+    {{ calendar.list(
+      data=collections._all_dates
+    ) }}
+  </main>
+{% endblock %}

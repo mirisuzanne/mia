@@ -28,3 +28,14 @@
     style="{%- for prop, val in style -%}{{ prop }}: {{ val }};{%- endfor -%}"
   {%- endif -%}
 {%- endmacro %}
+
+{% macro link_if(
+  content,
+  url=none
+) %}
+  {% if url %}
+    <a href="{{ url | url }}">{{ content }}</a>
+  {% else %}
+    <span>{{ content }}</span>
+  {% endif %}
+{% endmacro %}

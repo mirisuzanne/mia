@@ -1,4 +1,5 @@
 ---
+title: Herman Style Guides
 date: 2018-01-03
 tags: [_post, Herman, Herman1, CSS, Sass, 'Design Systems', Code, 'Style Guides']
 author: miriam
@@ -12,8 +13,6 @@ summary: |
   living style guides & pattern libraries
   in an agile process, and on a budget.
 ---
-
-# Herman Style Guides
 
 I'm always curious how many attendees at a conference
 are working on enterprise projects

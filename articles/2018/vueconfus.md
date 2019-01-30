@@ -1,4 +1,5 @@
 ---
+title: VueConf US Recap
 date: 2018-05-14
 tags: [_post, Vue, Conferences, 'Design Systems', Code, 'Style Guides']
 image:
@@ -11,8 +12,6 @@ summary: |
   since [Sarah Drasner](https://sarahdrasnerdesign.com/)
   first showed me the basics.
 ---
-
-# VueConf US
 
 I enjoyed the conference as much as I enjoy the framework.
 I was particularly impressed with the way core team members

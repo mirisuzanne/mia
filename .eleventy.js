@@ -77,6 +77,7 @@ module.exports = eleventyConfig => {
 
   // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
+  eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');
   eleventyConfig.addLayoutAlias('contact', 'layouts/contact.njk');
 
   // collections
@@ -91,22 +92,34 @@ module.exports = eleventyConfig => {
       });
   });
 
-  eleventyConfig.addCollection('_all_events', collection => {
+  eleventyConfig.addCollection('_all_dates', collection => {
     const events = [];
 
+    // events
     collection
       .getAll()
-      .filter(page => {
-        return 'events' in page.data;
-      })
+      .filter(item => 'dates' in item.data)
       .forEach(page => {
-        page.data.events.forEach(event => {
-          event['data'] = page.data;
+        page.data.dates.forEach(event => {
+          event['page'] = page;
+          event['date'] = event.end || event.start || page.date;
+          event['group'] =
+            event.ongoing || page.data.ongoing
+              ? '_ongoing'
+              : formatDate(event.date, 'year');
           events.push(event);
         });
       });
 
-    return events.sort((a, b) => a.date > b.date);
+    // pages
+    collection.getFilteredByTag('_post').forEach(page => {
+      page['group'] = page.data.ongoing
+        ? 'ongoing'
+        : formatDate(page.date, 'year');
+      events.push(page);
+    });
+
+    return events;
   });
 
   // filters

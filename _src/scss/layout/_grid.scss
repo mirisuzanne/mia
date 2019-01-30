@@ -45,13 +45,17 @@
 }
 
 [data-area='full'] {
-  --area: small;
+  --area: full;
   --grid: #{var-grid('small')};
 
   @include above('page-break') {
-    --area: full;
     --grid: #{var-grid('full')};
   }
+}
+
+[data-area='content'] {
+  --area: content;
+  --grid: #{var-grid('content')};
 }
 
 [data-area='left'] {

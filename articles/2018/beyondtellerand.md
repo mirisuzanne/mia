@@ -1,4 +1,5 @@
 ---
+title: Beyond Tellerand
 date: 2018-05-15
 tags: [_post, Vue, Conferences, 'Design Systems', Code, 'Style Guides']
 image:
@@ -13,8 +14,6 @@ summary: |
   go beyond the web
   to find inspiration from other fields.
 ---
-
-# Beyond Tellerand
 
 Right from the start,
 Beyond Tellerand was unlike other conferences.

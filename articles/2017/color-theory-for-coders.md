@@ -1,5 +1,5 @@
 ---
-author: sondra
+title: Color Theory for Coders
 tagline: 'from Natalya Shelburne'
 tags: [_post, Tips, Color, Design, Recommendations]
 image:
@@ -10,8 +10,6 @@ summary: |
   beautiful, cohesive, and accessible color palette using Sass color functions,
   and teach you why her palettes work so well, all at the same time.
 ---
-
-# Color Theory for Coders
 
 So you write code, but design intrigues you and you'd like to delve deeper.
 Where to start? The sheer number of tools and tutorials is overwhelming. Later
