@@ -1,12 +1,23 @@
 /// # Border Configuration
-/// @group config-borders
+/// @group config-patterns
 /// @link https://oddbird.net/accoutrement/docs/core-get.html
 ///   Accoutrement Core
 
 // Borders
-// -------
-/// @group config-borders
+// --------
+/// @group config-patterns
 /// @type map
+/// @see border
 $borders: (
   'section': size('section-border') solid var-color('border'),
+);
+
+// Shadows
+// -------
+/// @group config-patterns
+/// @type map
+/// @see shadow
+$shadows: (
+  'dark': 0 -1px 0,
+  'light': 0 1px 0,
 );

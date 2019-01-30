@@ -29,25 +29,48 @@
 ) %}
   {% if item.page %}
     {{ event(
-      title=utility.link_if(item.venue, item.page.url),
-      date=item.date
+      title=item.venue,
+      url=item.page.url,
+      date=item.date,
+      hero=item.page.data.hero
     ) }}
   {% else %}
     {% set title = item.data.banner.title if item.data.banner else none %}
     {{ event(
-      title=utility.link_if(title or item.data.title, item.url),
-      date=item.date
+      title=title or item.data.title,
+      url=item.url,
+      date=item.date,
+      hero=item.data.hero
     ) }}
   {% endif %}
 {% endmacro %}
 
 {% macro event(
   title,
-  date
+  url,
+  date,
+  hero=none
 ) %}
   <li
     data-calendar="item">
-    <time data-item="date">{{ date | formatDate('url') }}</time>
-    <h3 data-item="title">{{ title }}</h3>
+    <time data-item="date">
+      {{ date | formatDate('url') }}
+    </time>
+    <h3 data-item="title">
+      {{ utility.link_if(title, url) }}
+    </h3>
   </li>
 {% endmacro %}
+
+{# {% if hero %}
+  <li
+    data-calendar="hero">
+    <a
+      href="{{ url | url }}"
+      style="--image: url(/assets/images/{{ hero.img }})">
+      <span hidden>
+        {{ hero.caption or hero.alt or title }}
+      </span>
+    </a>
+  </li>
+{% endif %} #}

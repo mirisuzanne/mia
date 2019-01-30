@@ -105,7 +105,7 @@ module.exports = eleventyConfig => {
           event['date'] = event.end || event.start || page.date;
           event['group'] =
             event.ongoing || page.data.ongoing
-              ? '_ongoing'
+              ? 'now'
               : formatDate(event.date, 'year');
           events.push(event);
         });
@@ -113,9 +113,7 @@ module.exports = eleventyConfig => {
 
     // pages
     collection.getFilteredByTag('_post').forEach(page => {
-      page['group'] = page.data.ongoing
-        ? 'ongoing'
-        : formatDate(page.date, 'year');
+      page['group'] = page.data.ongoing ? 'now' : formatDate(page.date, 'year');
       events.push(page);
     });
 

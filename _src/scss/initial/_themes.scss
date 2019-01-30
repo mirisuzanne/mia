@@ -2,21 +2,25 @@
 // ======
 
 $themes: (
-  'light': $colors,
-  'dark': $dark-theme,
+  'light': $light-colors,
+  'dark': $dark-colors,
 );
 
 $invert: (
-  'light': $dark-theme,
-  'dark': $colors,
+  'light': 'dark',
+  'dark': 'light',
 );
 
 @each $name, $theme in $themes {
   [data-theme='#{$name}'] {
     @include colors--($theme);
+    @include token--($shadows, 'shadow', $name);
 
     [data-theme='invert'] {
-      @include colors--(map-get($invert, $name));
+      $name: map-get($invert, $name);
+      $theme: map-get($themes, $name);
+      @include colors--($theme);
+      @include token--($shadows, 'shadow', $name);
     }
   }
 }
@@ -24,5 +28,5 @@ $invert: (
 [data-theme] {
   background-color: var-color('background');
   color: var-color('text');
-  text-shadow: 0 1px 0 var-color('text-shadow');
+  text-shadow: var(--shadow, shadow('light')) var-color('text-shadow');
 }

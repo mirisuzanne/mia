@@ -6,6 +6,7 @@
 $_color: get-function('color');
 @include register-function('desaturate');
 @include register-function('lighten');
+@include register-function('rgba', 'alpha');
 
 // Brand Colors
 // ------------
@@ -16,10 +17,7 @@ $_color: get-function('color');
 /// @type Map
 $brand-colors: (
   '_brand-main': hsl(195, 52%, 31%),
-  '_brand-accent': hsl(330, 100%, 45%)
-    (
-      'shade': 25% #000,
-    ),
+  '_brand-accent': hsl(330, 100%, 45%),
   '_brand-gray': '#_brand-main'
     (
       'desaturate': 30%,
@@ -29,84 +27,147 @@ $brand-colors: (
 @include add-colors($brand-colors);
 @include herman-add('colors', 'brand-colors', $brand-colors, $_color);
 
-// Contrast Colors
-// ---------------
-/// Tints and shades of the brand colors.
+// Shade Colors
+// -------------
+/// Tints and shades of the main brand color.
 /// @group config-colors
 /// @colors
 /// @type Map
-$shade-colors: shades-of($brand-colors, 5);
-
-@include add-colors($shade-colors);
-@include herman-add('colors', 'shade-colors', $shade-colors, $_color);
-
-// Contrast Colors
-// ---------------
-/// The light and dark contrast colors act as
-/// the high and low range of our palette.
-/// These colors should not be dynamic.
-/// @group config-colors
-/// @colors
-/// @type Map
-$contrast-colors: (
-  '_contrast-light': color('#_brand-gray-light-5'),
-  '_contrast-dark': color('#_brand-main-dark-5'),
+$main-shades: shades-of(
+  (
+    '_brand-main': color('_brand-main'),
+  ),
+  6
 );
 
-@include add-colors($contrast-colors);
-@include herman-add('colors', 'contrast-colors', $contrast-colors, $_color);
+@include add-colors($main-shades);
+@include herman-add('colors', 'main-shades', $main-shades, $_color);
+
+/// Tints and shades of the accent brand color.
+/// @group config-colors
+/// @colors
+/// @type Map
+$accent-shades: shades-of(
+  (
+    '_brand-accent': color('_brand-accent'),
+  ),
+  6
+);
+
+@include add-colors($accent-shades);
+@include herman-add('colors', 'accent-shades', $accent-shades, $_color);
+
+/// Tints and shades of the gray brand color.
+/// @group config-colors
+/// @colors
+/// @type Map
+$gray-shades: shades-of(
+  (
+    '_brand-gray': color('_brand-gray'),
+  ),
+  6
+);
+
+@include add-colors($gray-shades);
+@include herman-add('colors', 'gray-shades', $gray-shades, $_color);
+
+// Light Theme
+// -----------
+/// These colors form the basis of the light theme
+/// @group config-colors
+/// @colors
+/// @type Map
+$light-theme: (
+  'background': '#_brand-gray-light-6',
+  'callout': '#_brand-gray-light-5',
+  'text-shadow': '#_contrast-light',
+);
+
+@include add-colors($light-theme);
+@include herman-add('colors', 'light-theme', $light-theme, $_color);
+
+// Dark Theme
+// -----------
+/// These colors form the basis of the dark theme
+/// @group config-colors
+/// @colors
+/// @type Map
+$dark-theme: (
+  'background': '#_brand-gray-dark-6',
+  'callout': '#_brand-gray-dark-5',
+  'text-shadow': '#_contrast-dark',
+);
+
+@include herman-add('colors', 'dark-theme', $dark-theme, $_color);
 
 // Theme Colors
 // ------------
-/// Main theme colors will be set as relative CSS variables –
-/// applying the above colors to more specific use-cases.
+/// These colors are calculated in relation to the given theme
 /// @group config-colors
-/// @colors
 /// @type Map
 $theme-colors: (
-  'background': '#_contrast-light',
-  'text': '#_brand-main-dark-4',
-  'text-light': '#_brand-main-dark-2',
-  'text-shadow': #fff,
-  'invert-shadow': #000,
-  'amp': '#_brand-main-dark-2',
-  'border': '#_brand-gray-0',
-  'border-light': '#_brand-gray-light-2',
-  'callout': '#_brand-gray-light-4',
-  'action': '#_brand-accent-dark-2',
-  'action-underline': '#_brand-accent-light-2',
-  'action-hover': '#_brand-accent-dark-4',
+  'text': '#callout'
+    (
+      'contrast': append(map-keys($main-shades), 'aaa'),
+    ),
+  'text-light': '#background'
+    (
+      'contrast': append(map-keys($gray-shades), 'aa'),
+    ),
+  'text-highlight': '#background'
+    (
+      'contrast': append(map-keys($main-shades), 'aa'),
+    ),
+  'border': '#background'
+    (
+      'contrast': append(map-keys($gray-shades), 'aa-large'),
+    ),
+  'action': '#callout'
+    (
+      'contrast': append(map-keys($accent-shades), 'aa'),
+    ),
+  'action-underline': '#action'
+    (
+      'alpha': 0.5,
+    ),
+  'action-hover': '#callout'
+    (
+      'contrast': append(map-keys($accent-shades), 'aaa'),
+    ),
 );
 
 @include add-colors($theme-colors);
-@include herman-add('colors', 'theme-colors', $theme-colors, $_color);
 
-// Inverted Theme
-// --------------
-/// Inverted theme colors for light-on-dark mode.
+// Light Colors
+// -----------
+/// The full color map for implementing the light-theme
 /// @group config-colors
-/// @colors
+/// @colors light
 /// @type Map
-$invert-colors: (
-  'background': '#_contrast-dark',
-  'text': '#_brand-main-light-4',
-  'text-light': '#_brand-main-light-2',
-  'text-shadow': #000,
-  'invert-shadow': #fff,
-  'amp': '#_brand-main-light-2',
-  'border': '#_brand-gray-0',
-  'border-light': '#_brand-gray-dark-2',
-  'callout': '#_brand-gray-dark-4',
-  'action': '#_brand-accent'
-    (
-      'lighten': 45%,
-    ),
-  'action-underline': '#_brand-accent-0',
-  'action-hover': '#action'
-    (
-      'lighten': 5%,
-    ),
+$light-colors: map-merge($colors, $light-theme);
+
+@include herman-add(
+  'colors',
+  'light',
+  map-merge($light-theme, $theme-colors),
+  $_color,
+  null,
+  $light-colors
 );
 
-@include herman-add('colors', 'invert-colors', $invert-colors, $_color);
-$dark-theme: map-merge($colors, $invert-colors);
+// Dark Colors
+// -----------
+/// The full color map for implementing the dark-theme
+/// @group config-colors
+/// @colors dark
+/// @type Map
+$dark-colors: map-merge($colors, $dark-theme);
+
+@include herman-add(
+  'colors',
+  'dark',
+  map-merge($dark-theme, $theme-colors),
+  $_color,
+  null,
+  $dark-colors
+);

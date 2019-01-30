@@ -51,7 +51,8 @@ a {
 
 .amp {
   @include font-family('amp');
-  color: var-color('amp');
+  @include color--('amp', 'text-highlight');
+  color: var-color('amp', 'text-highlight');
   font-style: italic;
 }
 
@@ -65,7 +66,7 @@ a {
   h3,
   h4 {
     @include font-family('code');
-    color: var-color('text-light');
+    color: var-color('text-highlight');
   }
 
   h2 {

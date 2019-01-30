@@ -25,9 +25,16 @@
   padding: 0 size('shim') 0 size('quarter-shim');
 }
 
+[data-calendar='hero'] {
+  display: grid;
+
+  a {
+    background: var(--image) var-color('action') no-repeat scroll center;
+  }
+}
+
 [data-calendar='item'] {
   background: var-color('callout');
-  text-shadow: none;
   padding: size('quarter-shim') size('half-shim');
 }
 
