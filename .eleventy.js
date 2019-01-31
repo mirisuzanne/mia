@@ -42,6 +42,9 @@ const formatDate = (date, format) => {
   const dd = `${d}`.padStart(2, '0');
   const D = days[date.getDay()];
   const yyyy = date.getFullYear();
+  const now = new Date().getFullYear();
+  const md = `${M} ${d}`;
+  const since = now === yyyy ? md : yyyy;
 
   const formats = {
     day: `${D}`,
@@ -53,6 +56,8 @@ const formatDate = (date, format) => {
     url: `${yyyy}/${mm}/${dd}`,
     short: `${M} ${d}, ${yyyy}`,
     long: `${MM} ${d}, ${yyyy}`,
+    md: `${md}`,
+    since: `since ${since}`,
   };
 
   return formats[format];
@@ -65,13 +70,22 @@ const getDate = (format = null, date = null) => {
 
 // Events
 const eventFromData = (page, event) => {
-  const eventDate = event.end || event.start;
-  const pageDate = page.data.end || page.data.start || page.date;
-  const date = eventDate || pageDate;
-  const now = event.now || page.data.now;
-  const group = now ? 'now' : formatDate(date, 'year');
+  const start = event.start || page.data.start || page.date;
 
-  return { page, event, date, group };
+  // set end explicit or start or far future…
+  let end = event.end || page.data.end;
+  if (!end) {
+    end = end === null ? new Date('3000-01-01') : start;
+  }
+
+  // set group…
+  const today = new Date();
+  let group = formatDate(start, 'year');
+  if (end > today) {
+    group = start > today ? 'later' : 'now';
+  }
+
+  return { page, event, start, end, group };
 };
 
 const eventsFromYaml = page => {
@@ -104,7 +118,7 @@ const getEvents = collection => {
       events.push(eventFromData(page, {}));
     });
 
-  return events.sort((a, b) => a.date - b.date);
+  return events.sort((a, b) => a.start - b.start);
 };
 
 // Config

@@ -1,5 +1,5 @@
 ---
-title: Advanced CSS
+title: Advanced CSS Workshop
 layout: base
 banner:
   title: Advanced CSS for Modern Applications
@@ -9,12 +9,11 @@ events:
     url: https://www.generateconf.com/
     adr: San Francisco, CA
     start: 2019-04-24
-    end: 2019-04-25
-  - venue: Smashing Workshop
+  - venue: Smashing Conf
     url: https://www.smashingconf.com/sf-2019/
     adr: San Francisco, CA
-    start: 2019-04-16
-    end: 2019-04-17
+    start: 2019-04-18
+    feature: true
 tags:
   - speaking
   - workshop

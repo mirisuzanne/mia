@@ -79,6 +79,7 @@ $gray-shades: shades-of(
 /// @type Map
 $light-theme: (
   'background': '#_brand-gray-light-6',
+  'feature': '#_brand-accent-dark-5',
   'callout': '#_brand-gray-light-5',
   'text-shadow': '#_contrast-light',
 );
@@ -106,6 +107,10 @@ $dark-theme: (
 /// @group config-colors
 /// @type Map
 $theme-colors: (
+  'overlay': '#background'
+    (
+      'alpha': 0.8,
+    ),
   'text': '#callout'
     (
       'contrast': append(map-keys($main-shades), 'aaa'),
@@ -134,6 +139,7 @@ $theme-colors: (
     (
       'contrast': append(map-keys($accent-shades), 'aaa'),
     ),
+  'feature': '#action-hover',
 );
 
 @include add-colors($theme-colors);

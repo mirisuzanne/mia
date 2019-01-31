@@ -8,15 +8,20 @@
   <section
     data-layout="calendar"
     data-area="full">
+    {% set group_formats = {
+      now: 'since'
+    } %}
     {% for year, segment in years %}
-      {{ group(year, segment) }}
+      {% set date_format = group_formats[year] or 'md' %}
+      {{ group(year, segment, date_format) }}
     {% endfor %}
   </section>
 {% endmacro %}
 
 {% macro group(
   title,
-  segment
+  segment,
+  date_format='md'
 ) %}
   {% if segment | length %}
     <section data-calendar="group">
@@ -25,44 +30,60 @@
         data-theme="invert">
         {{ title }}
       </h2>
-      {{ list(segment) }}
+      {{ list(
+        segment,
+        date_format,
+        reverse=false if (title == 'later') else true
+      ) }}
     </section>
   {% endif %}
 {% endmacro %}
 
 {% macro list(
-  events
+  events,
+  date_format='md',
+  reverse=true
 ) %}
   {% if events | length %}
     <ol
       data-calendar="list"
-      reversed>
-      {% for item in events | reverse %}
-        {{ event(
-          title=item.event.venue or item.page.data.title,
-          url=item.page.url,
-          date=item.date,
-          hero=item.page.data.hero
-        ) }}
+      {{ utility.attr_if('reversed', reverse) }}>
+      {% set events = events | reverse if reverse else events %}
+      {% for item in events %}
+        {{ event(item, date_format) }}
       {% endfor %}
     </ol>
   {% endif %}
 {% endmacro %}
 
 {% macro event(
-  title,
-  url,
-  date,
-  hero=none
+  item,
+  date_format='md'
 ) %}
+  {% set feature = item.event.feature or item.page.data.feature %}
   <li
-    data-calendar="item">
-    <time data-item="date">
-      {{ date | formatDate('url') }}
-    </time>
-    <h3 data-item="title">
-      {{ utility.link_if(title, url) }}
-    </h3>
+    data-calendar="item"
+    {{ utility.attr_if('data-feature', feature) }}>
+    <div data-item="inner">
+      <div data-item="meta">
+        <time data-item="date">
+          {{ item.start | formatDate(date_format) }}
+        </time>
+
+        {% set venue = item.event.venue or item.page.data.venue %}
+        {% set venue_url = item.event.url or item.page.data.url %}
+        {% if venue %}
+          @
+          {{ utility.link_if(venue, venue_url) }}
+        {% endif %}
+      </div>
+
+      {% set title = item.event.title or item.page.data.title %}
+      {% set url = item.page.url %}
+      <h3 data-item="title">
+        {{ utility.link_if(title, url) }}
+      </h3>
+    </div>
   </li>
 {% endmacro %}
 

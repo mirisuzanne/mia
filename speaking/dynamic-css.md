@@ -10,14 +10,20 @@ tags:
   - layout
 slides: https://talks.oddbird.net/dynamic-css/
 events:
+  - venue: Generate New York
+    url: https://www.generateconf.com/
+    adr: San Francisco, CA
+    start: 2019-04-25
   - venue: Smashing Conf
     url: https://www.smashingconf.com/sf-2019/
     adr: San Francisco, CA
     start: 2019-04-16
+    end: 2019-04-17
   - venue: VueConf US
     url: http://vueconf.us/
     adr: Tampa, FL
     start: 2019-03-26
+    end: 2019-03-27
   - venue: Front Range Front-End
     url: https://www.meetup.com/front-range-front-end/events/chtxtpyxpbcb/
     adr: Denver, CO

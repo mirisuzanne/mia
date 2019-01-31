@@ -31,11 +31,19 @@
 
 {% macro link_if(
   content,
-  url=none
+  url=none,
+  class=none
 ) %}
   {% if url %}
-    <a href="{{ url | url }}">{{ content }}</a>
+    <a
+      href="{{ url | url }}"
+      {{ attr_if('class', class) }}>
+      {{ content }}
+    </a>
   {% else %}
-    <span>{{ content }}</span>
+    <span
+      {{ attr_if('class', class) }}>
+      {{ content }}
+    </span>
   {% endif %}
 {% endmacro %}

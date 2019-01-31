@@ -23,10 +23,10 @@
 [data-calendar='list'] {
   display: grid;
   grid-area: list;
-  grid-gap: size('quarter-shim');
+  grid-gap: size('3q-shim');
   grid-template-columns: repeat(auto-fill, minmax(size('calendar'), 1fr));
   list-style: none;
-  padding: 0 size('shim') 0 size('quarter-shim');
+  padding: 0 size('shim') 0 size('half-shim');
 }
 
 [data-calendar='hero'] {
@@ -38,16 +38,48 @@
 }
 
 [data-calendar='item'] {
+  --feature: -0.006turn;
+  display: grid;
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+
+  @for $i from 2 through 4 {
+    &:nth-child(#{$i}n) {
+      $random: random(5) + 2;
+      $random: if(random(2) == 2, 0 - $random, $random);
+      --feature: #{$random / 1000 * 1turn};
+    }
+  }
+
+  &[data-feature] {
+    background: var-color('feature');
+    margin: negative('quarter-shim');
+    padding: size('quarter-shim');
+  }
+}
+
+[data-item='inner'] {
   background: var-color('callout');
-  padding: size('quarter-shim') size('half-shim');
+  padding: size('half-shim') size('3q-shim');
+
+  [data-feature] & {
+    background: var-color('background');
+    border: 1px solid var-color('action');
+    transform: rotate(var(--feature, -0.006turn));
+  }
 }
 
 [data-item='title'] {
   font-style: italic;
 }
 
-[data-item='date'] {
+[data-item='meta'] {
+  @include color--('action', 'text-light');
+  @include color--('action-underline', 'border');
   @include font-family('code');
   color: var-color('border');
   font-size: size('xsmall');
+  overflow: hidden;
+  padding-bottom: size('quarter-shim');
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

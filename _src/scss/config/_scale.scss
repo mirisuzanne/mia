@@ -24,7 +24,7 @@ $modular-scale: (
 /// @group config-scale
 $text-sizes: (
   'root': 18px,
-  'responsive': calc(#root + 0.5vw),
+  'responsive': calc(16px + 0.5vw),
   'large-root': 1rem
     (
       'text-ratio': 1,
@@ -66,6 +66,10 @@ $spacing-sizes: (
   'shim': '#gutter'
     (
       'times': 0.5,
+    ),
+  '3q-shim': '#shim'
+    (
+      'times': 0.75,
     ),
   'half-shim': '#shim'
     (

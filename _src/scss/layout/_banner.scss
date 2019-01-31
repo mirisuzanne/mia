@@ -9,19 +9,20 @@
 }
 
 .banner-content {
+  background: var-color('overlay');
   align-content: center;
   display: grid;
   grid-area: 1 / 1 / -1 / -1;
   grid-template: 'icon' auto 'title' auto 'sub' auto / auto;
   justify-self: center;
-  padding: size('gutter');
+  margin: size('gutter');
   text-align: center;
 
   @include above('page-break') {
     grid-template:
       'icon title' auto 'icon sub' auto /
       auto 1fr;
-    padding: size('spacer') size('gutter');
+    margin: size('spacer') size('gutter');
     text-align: left;
   }
 }

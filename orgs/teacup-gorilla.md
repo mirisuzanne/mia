@@ -1,10 +1,13 @@
 ---
 title: Teacup Gorilla
 layout: base
-date: 2010-03-04
-now: true
+start: 2010-03-04
+end: null
+# calendar: teacup gorilla
 tags:
   - _post
+  - organizations
+  - founder
   - music
   - art
 ---
