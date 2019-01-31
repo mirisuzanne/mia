@@ -4,7 +4,7 @@ layout: base
 banner:
   title: Advanced CSS for Modern Applications
   subtitle: with practical use-cases, tooling, and pitfalls
-dates:
+events:
   - venue: Generate New York
     url: https://www.generateconf.com/
     adr: San Francisco, CA

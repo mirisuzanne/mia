@@ -1,0 +1,80 @@
+{% import "utility.macros.njk" as utility %}
+
+{% macro calendar(
+  all
+) %}
+  {% set years = all | getEvents | groupby('group') | dictsort | reverse %}
+
+  <section
+    data-layout="calendar"
+    data-area="full">
+    {% for year, segment in years %}
+      {{ group(year, segment) }}
+    {% endfor %}
+  </section>
+{% endmacro %}
+
+{% macro group(
+  title,
+  segment
+) %}
+  {% if segment | length %}
+    <section data-calendar="group">
+      <h2
+        data-calendar="grouper"
+        data-theme="invert">
+        {{ title }}
+      </h2>
+      {{ list(segment) }}
+    </section>
+  {% endif %}
+{% endmacro %}
+
+{% macro list(
+  events
+) %}
+  {% if events | length %}
+    <ol
+      data-calendar="list"
+      reversed>
+      {% for item in events | reverse %}
+        {{ event(
+          title=item.event.venue or item.page.data.title,
+          url=item.page.url,
+          date=item.date,
+          hero=item.page.data.hero
+        ) }}
+      {% endfor %}
+    </ol>
+  {% endif %}
+{% endmacro %}
+
+{% macro event(
+  title,
+  url,
+  date,
+  hero=none
+) %}
+  <li
+    data-calendar="item">
+    <time data-item="date">
+      {{ date | formatDate('url') }}
+    </time>
+    <h3 data-item="title">
+      {{ utility.link_if(title, url) }}
+    </h3>
+  </li>
+{% endmacro %}
+
+{# {% if hero %}
+  <li
+    data-calendar="hero">
+    <a
+      href="{{ url | url }}"
+      style="--image: url(/assets/images/{{ hero.img }})">
+      <span hidden>
+        {{ hero.caption or hero.alt or title }}
+      </span>
+    </a>
+  </li>
+{% endif %} #}

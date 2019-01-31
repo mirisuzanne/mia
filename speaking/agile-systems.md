@@ -9,7 +9,7 @@ tags:
   - agile
   - design systems
 slides: https://talks.oddbird.net/agile-systems/
-dates:
+events:
   - venue: Agile Denver
     url: https://www.meetup.com/Agile-Denver2/events/251897187/
     adr: Denver, CO

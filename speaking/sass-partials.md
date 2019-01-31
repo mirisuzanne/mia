@@ -6,7 +6,7 @@ tags:
   - code
   - sass
 slides: http://miriamsuzanne.com/pres/sass-partials/
-dates:
+events:
   - venue: NYCSass Meetup
     url: http://www.meetup.com/nyc-sass/events/146898452/
     start: 2013-11-19

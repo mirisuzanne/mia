@@ -9,7 +9,7 @@ tags:
   - css
   - layout
 slides: https://talks.oddbird.net/dynamic-css/
-dates:
+events:
   - venue: Smashing Conf
     url: https://www.smashingconf.com/sf-2019/
     adr: San Francisco, CA

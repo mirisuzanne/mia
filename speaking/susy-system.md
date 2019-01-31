@@ -8,7 +8,7 @@ tags:
   - css
   - layout
 slides: http://miriamsuzanne.com/pres/susy2/
-dates:
+events:
   - venue: Bmore Sass
     url: http://bmore-sass.com/
     adr: Baltimore, MD

@@ -6,7 +6,7 @@ tags:
   - code
   - sass
 slides: https://www.oddbooksapp.com/book/sassy-toolkits
-dates:
+events:
   - venue: Frontend Zurich
     url: http://frontendconf.ch
     adr: Zurich, Switzerland

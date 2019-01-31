@@ -10,7 +10,7 @@ tags:
   - susy
   - layout
 slides: https://talks.oddbird.net/no-grid-system/
-dates:
+events:
   - venue: Boulder Python
     url: https://www.meetup.com/BoulderPython/events/256868153/
     adr: Boulder, CO

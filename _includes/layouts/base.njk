@@ -1,4 +1,5 @@
 {%- import 'utility.macros.njk' as utility -%}
+{% import "events.macros.njk" as events %}
 
 <!doctype html>
 <html lang="en" data-theme="light">
@@ -32,7 +33,7 @@
 
 		{% block body %}
 			{% if content %}
-				<main
+				<article
 					data-section="{{ section.name or 'content' }}"
 					{{ utility.attr_if('data-area', section.area or true) }}
 					{{ utility.style_if(section.style) }}>
@@ -44,7 +45,13 @@
 							{{ content | typogr | safe }}
 						{% endblock %}
 					</div>
-				</main>
+				</article>
+			{% endif %}
+
+			{% if calendar %}
+				{{ events.calendar(collections[calendar]) }}
+			{% elif events | length %}
+				{{ events.calendar(collections.all | getPage(page)) }}
 			{% endif %}
 		{% endblock %}
 

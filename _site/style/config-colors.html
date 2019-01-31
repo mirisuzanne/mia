@@ -492,7 +492,12 @@ along with secondary pink and orange base<span class="widont">&nbsp;</span>color
 
       
       
-      <pre class="hljs-pre"><code class="lang-scss">$main-shades: shades-of((&#39;_brand-main&#39;: color(&#39;_brand-main&#39;)), 6);</code></pre>
+      <pre class="hljs-pre"><code class="lang-scss">$main-shades: shades-of(
+  (
+    &#39;_brand-main&#39;: color(&#39;_brand-main&#39;),
+  ),
+  6
+);</code></pre>
     </div>
   
 
@@ -1029,7 +1034,12 @@ along with secondary pink and orange base<span class="widont">&nbsp;</span>color
 
       
       
-      <pre class="hljs-pre"><code class="lang-scss">$accent-shades: shades-of((&#39;_brand-accent&#39;: color(&#39;_brand-accent&#39;)), 6);</code></pre>
+      <pre class="hljs-pre"><code class="lang-scss">$accent-shades: shades-of(
+  (
+    &#39;_brand-accent&#39;: color(&#39;_brand-accent&#39;),
+  ),
+  6
+);</code></pre>
     </div>
   
 
@@ -1566,7 +1576,12 @@ along with secondary pink and orange base<span class="widont">&nbsp;</span>color
 
       
       
-      <pre class="hljs-pre"><code class="lang-scss">$gray-shades: shades-of((&#39;_brand-gray&#39;: color(&#39;_brand-gray&#39;)), 6);</code></pre>
+      <pre class="hljs-pre"><code class="lang-scss">$gray-shades: shades-of(
+  (
+    &#39;_brand-gray&#39;: color(&#39;_brand-gray&#39;),
+  ),
+  6
+);</code></pre>
     </div>
   
 
@@ -2588,31 +2603,31 @@ along with secondary pink and orange base<span class="widont">&nbsp;</span>color
       <pre class="hljs-pre"><code class="lang-scss">$theme-colors: (
   &#39;text&#39;: &#39;#callout&#39;
     (
-      &#39;contrast&#39;: append(map-keys($main-shades), &#39;aaa&#39;)
+      &#39;contrast&#39;: append(map-keys($main-shades), &#39;aaa&#39;),
     ),
   &#39;text-light&#39;: &#39;#background&#39;
     (
-      &#39;contrast&#39;: append(map-keys($gray-shades), &#39;aa&#39;)
+      &#39;contrast&#39;: append(map-keys($gray-shades), &#39;aa&#39;),
     ),
-  &#39;text-highlight&#39;:  &#39;#background&#39;
+  &#39;text-highlight&#39;: &#39;#background&#39;
     (
-      &#39;contrast&#39;: append(map-keys($main-shades), &#39;aa&#39;)
+      &#39;contrast&#39;: append(map-keys($main-shades), &#39;aa&#39;),
     ),
   &#39;border&#39;: &#39;#background&#39;
     (
-      &#39;contrast&#39;: append(map-keys($gray-shades), &#39;aa-large&#39;)
+      &#39;contrast&#39;: append(map-keys($gray-shades), &#39;aa-large&#39;),
     ),
   &#39;action&#39;: &#39;#callout&#39;
     (
-      &#39;contrast&#39;: append(map-keys($accent-shades), &#39;aa&#39;)
+      &#39;contrast&#39;: append(map-keys($accent-shades), &#39;aa&#39;),
     ),
   &#39;action-underline&#39;: &#39;#action&#39;
     (
-      &#39;alpha&#39;: 0.5
+      &#39;alpha&#39;: 0.5,
     ),
   &#39;action-hover&#39;: &#39;#callout&#39;
     (
-      &#39;contrast&#39;: append(map-keys($accent-shades), &#39;aaa&#39;)
+      &#39;contrast&#39;: append(map-keys($accent-shades), &#39;aaa&#39;),
     ),
 );</code></pre>
     </div>

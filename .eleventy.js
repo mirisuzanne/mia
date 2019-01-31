@@ -7,6 +7,7 @@ const markdownIt = require('markdown-it')({
   typographer: true,
 });
 
+// Dates
 const formatDate = (date, format) => {
   const months = [
     'January',
@@ -62,12 +63,52 @@ const getDate = (format = null, date = null) => {
   return format ? formatDate(now, format) : now;
 };
 
-// this seems like a dangerous approach…
-const newAmp = s => {
-  const amp = '<span class="amp">&</span>';
-  return s ? s.replace(/&amp;/g, '&').replace(/&/g, amp) : s;
+// Events
+const eventFromData = (page, event) => {
+  const eventDate = event.end || event.start;
+  const pageDate = page.data.end || page.data.start || page.date;
+  const date = eventDate || pageDate;
+  const now = event.now || page.data.now;
+  const group = now ? 'now' : formatDate(date, 'year');
+
+  return { page, event, date, group };
 };
 
+const eventsFromYaml = page => {
+  const events = [];
+
+  page.data.events.forEach(event => {
+    events.push(eventFromData(page, event));
+  });
+
+  return events;
+};
+
+const getEvents = collection => {
+  const events = [];
+  const pages = collection;
+
+  // events
+  collection
+    .filter(item => 'events' in item.data)
+    .forEach(page => {
+      Array.prototype.push.apply(events, eventsFromYaml(page));
+    });
+
+  // pages
+  pages
+    .filter(item => {
+      return item.data.tags ? item.data.tags.includes('_post') : false;
+    })
+    .forEach(page => {
+      events.push(eventFromData(page, {}));
+    });
+
+  return events.sort((a, b) => a.date - b.date);
+};
+
+// Config
+// ------
 module.exports = eleventyConfig => {
   // plugins
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -77,7 +118,6 @@ module.exports = eleventyConfig => {
 
   // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
-  eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');
   eleventyConfig.addLayoutAlias('contact', 'layouts/contact.njk');
 
   // collections
@@ -92,43 +132,32 @@ module.exports = eleventyConfig => {
       });
   });
 
-  eleventyConfig.addCollection('_all_dates', collection => {
-    const events = [];
-
-    // events
-    collection
-      .getAll()
-      .filter(item => 'dates' in item.data)
-      .forEach(page => {
-        page.data.dates.forEach(event => {
-          event['page'] = page;
-          event['date'] = event.end || event.start || page.date;
-          event['group'] =
-            event.ongoing || page.data.ongoing
-              ? 'now'
-              : formatDate(event.date, 'year');
-          events.push(event);
-        });
-      });
-
-    // pages
-    collection.getFilteredByTag('_post').forEach(page => {
-      page['group'] = page.data.ongoing ? 'now' : formatDate(page.date, 'year');
-      events.push(page);
-    });
-
-    return events;
-  });
-
   // filters
   eleventyConfig.addFilter('typeOf', val => typeof val);
-  eleventyConfig.addFilter('amp', val => (val ? newAmp(val) : val));
-  eleventyConfig.addFilter('typogr', val =>
-    val ? typogr.typogrify(val) : val,
-  );
+
+  eleventyConfig.addFilter('amp', val => {
+    const newAmp = s => {
+      const amp = '<span class="amp">&</span>';
+      return s ? s.replace(/&amp;/g, '&').replace(/&/g, amp) : s;
+    };
+
+    return val ? newAmp(val) : val;
+  });
+
+  eleventyConfig.addFilter('typogr', val => {
+    return val ? typogr.typogrify(val) : val;
+  });
 
   eleventyConfig.addFilter('isPublic', val => {
     return val !== 'all' && !val.startsWith('_');
+  });
+
+  eleventyConfig.addFilter('getEvents', pageSet => {
+    return getEvents(pageSet);
+  });
+
+  eleventyConfig.addFilter('getPage', (pageSet, page) => {
+    return pageSet.filter(item => item.inputPath === page.inputPath);
   });
 
   eleventyConfig.addFilter('formatDate', (date, format = 'short') => {

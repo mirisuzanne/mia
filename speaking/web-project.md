@@ -6,7 +6,7 @@ tags:
   - code
   - process
 slides: https://www.oddbooksapp.com/book/web-projects
-dates:
+events:
   - venue: Boost Biz Ed
     url: https://boostbized.com/events/how-to-plan-a-web-project
     adr: Westminster, CO

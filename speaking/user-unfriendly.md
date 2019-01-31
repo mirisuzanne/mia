@@ -13,7 +13,7 @@ tags:
   - process
   - collaboration
 slides: https://www.oddbooksapp.com/book/software-for-humans
-dates:
+events:
   - venue: AIGA Colorado
     url: https://colorado.aiga.org/event/04-26-18-rethinking-ux-design/
     adr: Denver, CO

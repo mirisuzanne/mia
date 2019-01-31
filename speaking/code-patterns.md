@@ -9,7 +9,7 @@ tags:
   - css
   - design systems
 slides: http://oddbooksapp.com/book/pattern-making
-dates:
+events:
   - venue: Refresh Denver
     url: https://www.meetup.com/refreshdenver/events/241230495/?from=ref
     adr: Denver, CO

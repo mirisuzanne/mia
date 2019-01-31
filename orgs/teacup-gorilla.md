@@ -2,7 +2,7 @@
 title: Teacup Gorilla
 layout: base
 date: 2010-03-04
-ongoing: true
+now: true
 tags:
   - _post
   - music

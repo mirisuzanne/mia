@@ -1,6 +1,10 @@
 // Calendar
 // ========
 
+[data-layout='calendar'] {
+  margin: size('gutter') 0;
+}
+
 [data-calendar='group'] {
   display: grid;
   font-size: size('small');

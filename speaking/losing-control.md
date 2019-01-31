@@ -9,7 +9,7 @@ tags:
   - art
   - digital humanities
 slides: https://www.oddbooksapp.com/book/losing-control
-dates:
+events:
   - venue: UVA Scholars’ Lab
     url: http://cal.lib.virginia.edu/event/3088981
     adr: Charlottesville, VA
