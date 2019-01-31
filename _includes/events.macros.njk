@@ -1,20 +1,28 @@
 {% import "utility.macros.njk" as utility %}
 
 {% macro calendar(
-  all
+  all,
+  title=none
 ) %}
   {% set years = all | getEvents | groupby('group') | dictsort | reverse %}
 
   <section
-    data-layout="calendar"
-    data-area="full">
-    {% set group_formats = {
-      now: 'since'
-    } %}
-    {% for year, segment in years %}
-      {% set date_format = group_formats[year] or 'md' %}
-      {{ group(year, segment, date_format) }}
-    {% endfor %}
+    data-area="full"
+    data-flow="grid">
+
+    {{ utility.section_title(title or 'calendar') }}
+
+    <div
+      data-area="full"
+      data-layout="calendar">
+      {% set group_formats = {
+        now: 'since'
+      } %}
+      {% for year, segment in years %}
+        {% set date_format = group_formats[year] or 'md' %}
+        {{ group(year, segment, date_format) }}
+      {% endfor %}
+    </div>
   </section>
 {% endmacro %}
 
@@ -25,11 +33,11 @@
 ) %}
   {% if segment | length %}
     <section data-calendar="group">
-      <h2
+      <h3
         data-calendar="grouper"
         data-theme="invert">
         {{ title }}
-      </h2>
+      </h3>
       {{ list(
         segment,
         date_format,
@@ -80,9 +88,9 @@
 
       {% set title = item.event.title or item.page.data.title %}
       {% set url = item.page.url %}
-      <h3 data-item="title">
+      <h4 data-item="title">
         {{ utility.link_if(title, url) }}
-      </h3>
+      </h4>
     </div>
   </li>
 {% endmacro %}

@@ -1,3 +1,16 @@
+{% macro section_title(
+  title,
+  area='main-left'
+) %}
+  <div
+    data-section="title"
+    data-area="{{ area }}">
+    <h2 data-content>
+      {{ title }}
+    </h2>
+  </div>
+{% endmacro %}
+
 {# Attributes #}
 {% macro attr_if(
   attr,

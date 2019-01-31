@@ -40,6 +40,14 @@ a {
     color: var-color('action-hover');
     text-decoration-color: currentColor;
   }
+
+  &[href*='://'] {
+    @include after('↗') {
+      @include font-family('code');
+      color: var-color('text-light');
+      font-size: size('code');
+    }
+  }
 }
 
 // Special
