@@ -3,7 +3,7 @@ title: Teacup Gorilla
 layout: base
 start: 2010-03-04
 end: null
-# calendar: teacup gorilla
+calendar: teacup gorilla
 tags:
   - _post
   - organizations

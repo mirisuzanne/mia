@@ -38,10 +38,20 @@
     var(--bottom, size('grid-margin')) var(--left, size('grid-margin'));
 }
 
+[data-main] {
+  margin-bottom: size('double-gutter');
+}
+
 [data-section='title'] {
   @include font-family('code');
   --top: 0;
   text-align: right;
+
+  h2 {
+    color: var-color('text-highlight');
+    font-style: italic;
+    font-weight: normal;
+  }
 }
 
 // Areas

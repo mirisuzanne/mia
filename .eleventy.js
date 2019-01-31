@@ -166,7 +166,8 @@ module.exports = eleventyConfig => {
     return val !== 'all' && !val.startsWith('_');
   });
 
-  eleventyConfig.addFilter('getEvents', pageSet => {
+  eleventyConfig.addFilter('getEvents', (pageSet, self = {}) => {
+    pageSet = pageSet.filter(item => item.inputPath !== self.inputPath);
     return getEvents(pageSet);
   });
 

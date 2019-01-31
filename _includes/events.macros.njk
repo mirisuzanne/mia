@@ -1,10 +1,11 @@
 {% import "utility.macros.njk" as utility %}
 
-{% macro calendar(
-  all,
-  title=none
+{% macro section(
+  events,
+  title=none,
+  self=none
 ) %}
-  {% set years = all | getEvents | groupby('group') | dictsort | reverse %}
+  {% set years = events | groupby('group') | dictsort | reverse %}
 
   <section
     data-area="full"
@@ -20,7 +21,7 @@
       } %}
       {% for year, segment in years %}
         {% set date_format = group_formats[year] or 'md' %}
-        {{ group(year, segment, date_format) }}
+        {{ group(year, segment, date_format, self) }}
       {% endfor %}
     </div>
   </section>
@@ -29,7 +30,8 @@
 {% macro group(
   title,
   segment,
-  date_format='md'
+  date_format='md',
+  self=none
 ) %}
   {% if segment | length %}
     <section data-calendar="group">
@@ -41,7 +43,8 @@
       {{ list(
         segment,
         date_format,
-        reverse=false if (title == 'later') else true
+        reverse=false if (title == 'later') else true,
+        self=self
       ) }}
     </section>
   {% endif %}
@@ -50,7 +53,8 @@
 {% macro list(
   events,
   date_format='md',
-  reverse=true
+  reverse=true,
+  self=none
 ) %}
   {% if events | length %}
     <ol
@@ -58,7 +62,7 @@
       {{ utility.attr_if('reversed', reverse) }}>
       {% set events = events | reverse if reverse else events %}
       {% for item in events %}
-        {{ event(item, date_format) }}
+        {{ event(item, date_format, self) }}
       {% endfor %}
     </ol>
   {% endif %}
@@ -66,9 +70,16 @@
 
 {% macro event(
   item,
-  date_format='md'
+  date_format='md',
+  self=none
 ) %}
   {% set feature = item.event.feature or item.page.data.feature %}
+  {% set is_self = true if (item.page.url == self) else false %}
+  {% set venue = item.event.venue or item.page.data.venue %}
+  {% set venue_url = item.event.url or item.page.data.url %}
+  {% set title = item.event.title or item.page.data.title %}
+  {% set url = none if is_self else item.page.url %}
+
   <li
     data-calendar="item"
     {{ utility.attr_if('data-feature', feature) }}>
@@ -78,18 +89,18 @@
           {{ item.start | formatDate(date_format) }}
         </time>
 
-        {% set venue = item.event.venue or item.page.data.venue %}
-        {% set venue_url = item.event.url or item.page.data.url %}
-        {% if venue %}
+        {% if venue and not is_self %}
           @
           {{ utility.link_if(venue, venue_url) }}
         {% endif %}
       </div>
 
-      {% set title = item.event.title or item.page.data.title %}
-      {% set url = item.page.url %}
       <h4 data-item="title">
-        {{ utility.link_if(title, url) }}
+        {% if venue and is_self %}
+          {{ utility.link_if(venue, venue_url) }}
+        {% else %}
+          {{ utility.link_if(title, url) }}
+        {% endif %}
       </h4>
     </div>
   </li>
