@@ -7,7 +7,7 @@
     {% endif %}
 
     <h1 class="banner-title">
-      {{ (banner.title or title) | typogr | safe }}
+      {{ full_title | typogr | safe }}
     </h1>
 
     {% if banner.sub %}

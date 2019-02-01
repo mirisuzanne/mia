@@ -166,6 +166,18 @@ module.exports = eleventyConfig => {
     return val !== 'all' && !val.startsWith('_');
   });
 
+  eleventyConfig.addFilter('sortTags', allTags => {
+    const sorted = {};
+    Object.keys(allTags)
+      .filter(tag => tag !== 'all' && !tag.startsWith('_'))
+      .sort((a, b) => allTags[a].length - allTags[b].length)
+      .reverse()
+      .forEach(tag => {
+        sorted[tag] = allTags[tag];
+      });
+    return sorted;
+  });
+
   eleventyConfig.addFilter('getEvents', (pageSet, self = {}) => {
     pageSet = pageSet.filter(item => item.inputPath !== self.inputPath);
     return getEvents(pageSet);

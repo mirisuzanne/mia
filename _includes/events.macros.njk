@@ -2,7 +2,8 @@
 
 {% macro section(
   events,
-  title=none,
+  title='calendar',
+  filter=none,
   self=none
 ) %}
   {% set years = events | groupby('group') | dictsort | reverse %}
@@ -11,7 +12,12 @@
     data-area="full"
     data-flow="grid">
 
-    {{ utility.section_title(title or 'calendar') }}
+    {% if filter %}
+      {% set filters = utility.tag_filters(filter) %}
+      {{ utility.section_title('filter by…', filters) }}
+    {% else %}
+      {{ utility.section_title(title) }}
+    {% endif %}
 
     <div
       data-area="full"

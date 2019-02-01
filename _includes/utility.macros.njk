@@ -1,14 +1,46 @@
 {% macro section_title(
   title,
+  more=none,
   area='main-left'
 ) %}
   <header
     data-section="title"
     data-area="{{ area }}">
-    <h2 data-content>
-      {{ title }}
-    </h2>
+    <div data-content>
+      <h2 data-title="title">
+        {{ title | safe }}
+      </h2>
+
+      {% if more %}
+        {{ more | safe }}
+      {% endif %}
+    </div>
   </header>
+{% endmacro %}
+
+{% macro tag_link(
+  tag,
+  class=none
+) %}
+  {% set url %}/tags/{{ tag | slug }}/{% endset %}
+  {{ link_if(
+    tag | string,
+    url | string,
+    class
+  ) }}
+{% endmacro %}
+
+{% macro tag_filters(
+  all_tags
+) %}
+  {% if all_tags %}
+    {% for tag, data in all_tags | sortTags %}
+      {% if loop.index < 6 %}
+        {{ tag_link(tag) }}
+      {% endif %}
+    {% endfor %}
+    ({{ link_if('more', '/tags/') }})
+  {% endif %}
 {% endmacro %}
 
 {# Attributes #}
@@ -46,17 +78,17 @@
   content,
   url=none,
   class=none
-) %}
-  {% if url %}
+) -%}
+  {%- if url -%}
     <a
       href="{{ url | url }}"
       {{ attr_if('class', class) }}>
-      {{ content }}
+      {{- content | safe -}}
     </a>
-  {% else %}
+  {%- else -%}
     <span
       {{ attr_if('class', class) }}>
-      {{ content }}
+      {{- content | safe -}}
     </span>
-  {% endif %}
-{% endmacro %}
+  {%- endif -%}
+{%- endmacro %}

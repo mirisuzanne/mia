@@ -1,4 +1,6 @@
 {%- import 'utility.macros.njk' as utility -%}
+{%- set meta_title = renderData.title or title -%}
+{%- set full_title = banner.title or meta_title -%}
 
 <!doctype html>
 <html lang="en" data-theme="light">
@@ -7,7 +9,7 @@
 		<meta name="viewport"
       content="width=device-width, initial-scale=1.0" />
 
-    <title>{{ [title, site.title] | join(' | ') or site.title }}</title>
+    <title>{{ [meta_title, site.title] | join(' | ') }}</title>
     <meta name="description"
       content="{{ site.description or description }}" />
 

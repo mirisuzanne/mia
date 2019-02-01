@@ -1,8 +1,11 @@
+{% import "utility.macros.njk" as utility %}
 {% import "events.macros.njk" as event_macros %}
 
-{% if calendar %}
-  {% set pages = collections[calendar] %}
-  {% set title %}related to {{ calendar }}…{% endset %}
+{% set get_calendar = renderData.calendar or calendar %}
+
+{% if get_calendar %}
+  {% set pages = collections[get_calendar] %}
+  {% set title %}all the {{ utility.tag_link(get_calendar) }}…{% endset %}
 
   {% if pages %}
     {{ event_macros.section(
@@ -20,7 +23,7 @@
 {% else %}
   {{ event_macros.section(
     collections.all | getEvents,
-    title='everything…',
+    filter=collections,
     self=page.url
   ) }}
 {% endif %}
