@@ -1,18 +1,29 @@
-// Calendar
-// ========
+// Cards
+// =====
 
-[data-layout='calendar'] {
+[data-layout='card-groups'] {
   margin: size('gutter') 0;
 }
 
-[data-calendar='group'] {
+[data-layout='cards'] {
   display: grid;
   font-size: size('small');
+  grid-gap: size('3q-shim');
+  grid-template-columns: var-grid('cards');
+  list-style: none;
+  padding: 0 size('shim') 0 size('half-shim');
+}
+
+// Groups
+// ------
+
+[data-cards='group'] {
+  display: grid;
   grid-template: 'grouper list' auto / auto minmax(0, 1fr);
   margin-bottom: size('gutter');
 }
 
-[data-calendar='grouper'] {
+[data-cards='grouper'] {
   @include font-family('code');
   font-size: size('xsmall');
   grid-area: grouper;
@@ -20,24 +31,10 @@
   writing-mode: vertical-rl;
 }
 
-[data-calendar='list'] {
-  display: grid;
-  grid-area: list;
-  grid-gap: size('3q-shim');
-  grid-template-columns: repeat(auto-fill, minmax(size('calendar'), 1fr));
-  list-style: none;
-  padding: 0 size('shim') 0 size('half-shim');
-}
+// i=Items
+// -----
 
-[data-calendar='hero'] {
-  display: grid;
-
-  a {
-    background: var(--image) var-color('action') no-repeat scroll center;
-  }
-}
-
-[data-calendar='item'] {
+[data-card='item'] {
   --feature: -0.006turn;
   display: grid;
   grid-template: minmax(0, 1fr) / minmax(0, 1fr);
@@ -57,7 +54,7 @@
   }
 }
 
-[data-item='inner'] {
+[data-card='inner'] {
   background: var-color('callout');
   padding: size('half-shim') size('3q-shim');
 
@@ -68,11 +65,14 @@
   }
 }
 
-[data-item='title'] {
+// Content
+// -------
+
+[data-card='title'] {
   font-style: italic;
 }
 
-[data-item='meta'] {
+[data-card='meta'] {
   @include color--('action', 'text-light');
   @include color--('action-underline', 'border');
   @include font-family('code');

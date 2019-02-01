@@ -75,5 +75,6 @@ $grid-layouts: (
   'main-right': [#_lines-l main-start] #_main-l [#_lines-m] #_right,
   'left': [#_lines-l] #_left [#_lines-m main-end #_lines-r],
   'right': [#_lines-l main-start #_lines-m] #_right [#_lines-r],
+  'cards': repeat(auto-fill, minmax(size('calendar'), 1fr)),
 );
 @include add-grid($grid-layouts);

@@ -1,0 +1,59 @@
+{% import "utility.macros.njk" as utility %}
+
+{% macro section(
+  tag_counts,
+  title='all yer tags:'
+) %}
+  {{ utility.section_title(title) }}
+
+  <div
+    data-area="full"
+    data-layout="card-groups">
+    {% for count, segment in tag_counts | groupby('count') %}
+      {{ group(count, segment) }}
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro group(
+  title,
+  segment
+) %}
+  {% if segment | length %}
+    <section data-cards="group">
+      <h3
+        data-cards="grouper"
+        data-theme="invert">
+        {{ title }}
+      </h3>
+      {{ list(segment) }}
+    </section>
+  {% endif %}
+{% endmacro %}
+
+{% macro list(
+  tags
+) %}
+  {% if tags | length %}
+    <ol
+      data-layout="cards">
+      {% for tag in tags %}
+        {{ show_tag(tag) }}
+      {% endfor %}
+    </ol>
+  {% endif %}
+{% endmacro %}
+
+{% macro show_tag(
+  tag
+) %}
+  {% set feature = false %}
+
+  <li data-card="item">
+    <div data-card="inner">
+      <h2 data-card="title">
+        {{ utility.tag_link(tag.name) }}
+      </h2>
+    </div>
+  </li>
+{% endmacro %}

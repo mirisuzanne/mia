@@ -1,7 +1,7 @@
 ---
 title: Color Theory for Coders
 tagline: 'from Natalya Shelburne'
-tags: [_post, Tips, Color, Design, Recommendations]
+tags: [_post, tips, color, design, recommendations]
 image:
   src: 'blog/2017/color-theory/decision-tree.jpg'
 summary: |

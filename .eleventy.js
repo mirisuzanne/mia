@@ -53,6 +53,7 @@ const formatDate = (date, format) => {
     'month-name': `${MM}`,
     year: `${yyyy}`,
     numeric: `${mm}/${dd}/${yyyy}`,
+    iso: `${yyyy}-${mm}-${dd}`,
     url: `${yyyy}/${mm}/${dd}`,
     short: `${M} ${d}, ${yyyy}`,
     long: `${MM} ${d}, ${yyyy}`,
@@ -133,6 +134,7 @@ module.exports = eleventyConfig => {
   // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
   eleventyConfig.addLayoutAlias('contact', 'layouts/contact.njk');
+  eleventyConfig.addLayoutAlias('tags', 'layouts/tags.njk');
 
   // collections
   eleventyConfig.addCollection('_nav', collection => {
@@ -168,6 +170,7 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addFilter('sortTags', allTags => {
     const sorted = {};
+
     Object.keys(allTags)
       .filter(tag => tag !== 'all' && !tag.startsWith('_'))
       .sort((a, b) => allTags[a].length - allTags[b].length)
@@ -175,6 +178,26 @@ module.exports = eleventyConfig => {
       .forEach(tag => {
         sorted[tag] = allTags[tag];
       });
+
+    return sorted;
+  });
+
+  eleventyConfig.addFilter('groupTags', allTags => {
+    const sorted = [];
+
+    Object.keys(allTags)
+      .filter(tag => tag !== 'all' && !tag.startsWith('_'))
+      .forEach(tag => {
+        const data = allTags[tag];
+        const count = data.length;
+        const tagObj = {
+          name: tag,
+          data,
+          count,
+        };
+        sorted.push(tagObj);
+      });
+
     return sorted;
   });
 

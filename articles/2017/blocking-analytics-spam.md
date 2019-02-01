@@ -2,13 +2,13 @@
 title: Blocking Analytics Spam
 tags: [
   _post,
-  Spam,
-  DevOps,
-  'Build Tools',
-  'Front-end',
-  JavaScript,
-  Analytics,
-  Code
+  spam,
+  devops,
+  'build tools',
+  'front-end',
+  javascript,
+  analytics,
+  code
   ]
 image:
   src: 'blog/2017/ga-spam/spam-traffic.jpg'

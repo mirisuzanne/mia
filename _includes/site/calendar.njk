@@ -5,7 +5,10 @@
 
 {% if get_calendar %}
   {% set pages = collections[get_calendar] %}
-  {% set title %}all the {{ utility.tag_link(get_calendar) }}…{% endset %}
+  {% set title %}
+    all the
+    {{ utility.tag_link(get_calendar) }}…
+  {% endset %}
 
   {% if pages %}
     {{ event_macros.section(

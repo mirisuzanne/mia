@@ -1,7 +1,7 @@
 ---
 title: Herman Style Guides
 date: 2018-01-03
-tags: [_post, Herman, Herman1, CSS, Sass, 'Design Systems', Code, 'Style Guides']
+tags: [_post, herman, herman1, css, sass, 'design systems', code, 'style guides']
 author: miriam
 image:
   src: 'blog/2017/herman-intro/header.jpg'

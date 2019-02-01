@@ -21,7 +21,7 @@
 
     <div
       data-area="full"
-      data-layout="calendar">
+      data-layout="card-groups">
       {% set group_formats = {
         now: 'since'
       } %}
@@ -40,9 +40,9 @@
   self=none
 ) %}
   {% if segment | length %}
-    <section data-calendar="group">
+    <section data-cards="group">
       <h3
-        data-calendar="grouper"
+        data-cards="grouper"
         data-theme="invert">
         {{ title }}
       </h3>
@@ -64,7 +64,7 @@
 ) %}
   {% if events | length %}
     <ol
-      data-calendar="list"
+      data-layout="cards"
       {{ utility.attr_if('reversed', reverse) }}>
       {% set events = events | reverse if reverse else events %}
       {% for item in events %}
@@ -87,11 +87,11 @@
   {% set url = none if is_self else item.page.url %}
 
   <li
-    data-calendar="item"
+    data-card="item"
     {{ utility.attr_if('data-feature', feature) }}>
-    <div data-item="inner">
-      <div data-item="meta">
-        <time data-item="date">
+    <div data-card="inner">
+      <div data-card="meta">
+        <time datetime="{{ item.start | formatDate('iso') }}">
           {{ item.start | formatDate(date_format) }}
         </time>
 
@@ -101,7 +101,7 @@
         {% endif %}
       </div>
 
-      <h4 data-item="title">
+      <h4 data-card="title">
         {% if venue and is_self %}
           {{ utility.link_if(venue, venue_url) }}
         {% else %}
@@ -111,16 +111,3 @@
     </div>
   </li>
 {% endmacro %}
-
-{# {% if hero %}
-  <li
-    data-calendar="hero">
-    <a
-      href="{{ url | url }}"
-      style="--image: url(/assets/images/{{ hero.img }})">
-      <span hidden>
-        {{ hero.caption or hero.alt or title }}
-      </span>
-    </a>
-  </li>
-{% endif %} #}

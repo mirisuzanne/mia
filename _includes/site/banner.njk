@@ -1,3 +1,5 @@
+{% import "utility.macros.njk" as utility %}
+
 <header data-layout="banner">
   <div class="banner-content">
     {% if banner.icon %}
@@ -10,8 +12,13 @@
       {{ full_title | typogr | safe }}
     </h1>
 
-    {% if banner.sub %}
-      <span class="subtitle">{{ banner.sub | typogr | safe }}</span>
+    {% if banner.sub or banner.tags %}
+      <span class="subtitle">
+        {{ banner.sub | typogr | safe }}
+        {% if banner.tags %}
+          ({{ utility.link_if(banner.tags, '/tags/') }})
+        {% endif %}
+      </span>
     {% endif %}
   </div>
 
