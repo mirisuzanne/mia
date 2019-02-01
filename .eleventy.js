@@ -34,15 +34,15 @@ const formatDate = (date, format) => {
     'Saturday',
   ];
 
-  const m0 = date.getMonth();
+  const m0 = date.getUTCMonth();
   const mm = `${m0 + 1}`.padStart(2, '0');
   const MM = months[m0];
   const M = MM.slice(0, 3);
-  const d = date.getDate();
+  const d = date.getUTCDate();
   const dd = `${d}`.padStart(2, '0');
-  const D = days[date.getDay()];
-  const yyyy = date.getFullYear();
-  const now = new Date().getFullYear();
+  const D = days[date.getUTCDay()];
+  const yyyy = date.getUTCFullYear();
+  const now = new Date().getUTCFullYear();
   const md = `${M} ${d}`;
   const since = now === yyyy ? md : yyyy;
 
