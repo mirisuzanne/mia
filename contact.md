@@ -4,7 +4,7 @@ layout: contact
 banner:
   title: Contact Miriam
 nav:
-  order: 2
+  order: 11
 ---
 
 ## Leave me a note!

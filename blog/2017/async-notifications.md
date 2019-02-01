@@ -1,6 +1,6 @@
 ---
 title: Django, Background Processes, and Keeping Users in the Loop
-tags: [_post, celery, django, django-channels, ux, code]
+tags: [_post, _blog, celery, django, django-channels, ux, code]
 image:
   src: 'blog/2017/04/17/async-notifications.jpg'
 summary: |

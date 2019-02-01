@@ -1,7 +1,7 @@
 {% import "utility.macros.njk" as utility %}
 
 {% macro section(
-  tag_counts,
+  tags,
   title='all yer tags:'
 ) %}
   {{ utility.section_title(title) }}
@@ -9,8 +9,8 @@
   <div
     data-area="full"
     data-layout="card-groups">
-    {% for count, segment in tag_counts | groupby('count') %}
-      {{ group(count, segment) }}
+    {% for segment in tags | groupTags %}
+      {{ group(segment.count, segment.tags) }}
     {% endfor %}
   </div>
 {% endmacro %}
@@ -51,9 +51,20 @@
 
   <li data-card="item">
     <div data-card="inner">
+      <div data-card="meta">
+        {{ tag_meta(tag.data) }}
+      </div>
       <h2 data-card="title">
-        {{ utility.tag_link(tag.name) }}
+        {{ utility.tag_link(tag.tag) }}
       </h2>
     </div>
   </li>
+{% endmacro %}
+
+{% macro tag_meta(
+  data
+) %}
+  e.g.
+  {% set page = data | first %}
+  {{ utility.link_if(page.data.title, page.url) }}
 {% endmacro %}

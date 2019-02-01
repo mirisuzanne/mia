@@ -183,6 +183,7 @@ module.exports = eleventyConfig => {
   });
 
   eleventyConfig.addFilter('groupTags', allTags => {
+    const grouped = {};
     const sorted = [];
 
     Object.keys(allTags)
@@ -190,12 +191,22 @@ module.exports = eleventyConfig => {
       .forEach(tag => {
         const data = allTags[tag];
         const count = data.length;
-        const tagObj = {
-          name: tag,
-          data,
+        tag = { tag, data };
+        if (grouped[count]) {
+          grouped[count].push(tag);
+        } else {
+          grouped[count] = [tag];
+        }
+      });
+
+    Object.keys(grouped)
+      .sort((a, b) => a - b)
+      .reverse()
+      .forEach(count => {
+        sorted.push({
           count,
-        };
-        sorted.push(tagObj);
+          tags: grouped[count],
+        });
       });
 
     return sorted;

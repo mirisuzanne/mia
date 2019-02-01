@@ -11,7 +11,7 @@
       <a href="{{ item.url | url }}"
         {{ utility.show_attrs({
           'data-nav': (item.data.nav.slug or title) | slug,
-          'data-active': (item.url | url == page.url | url),
+          'data-active': (item.inputPath == page.inputPath),
           'rel': item.data.nav.rel
         }) }} />
         {{ title | lower | amp | md(inline=true) | safe }}

@@ -4,15 +4,13 @@ layout: base
 section:
   name: bio
   area: main-right
-banner:
-  title: Biography
 hero:
   img: headshots/mia-smirk.jpg
   alt: Headshot of Mia smirking
   caption: |
     This face is one of my special skills.
 nav:
-  order: 1
+  order: 10
 ---
 
 ## art & ...

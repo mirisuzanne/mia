@@ -1,6 +1,6 @@
 ---
 title: CSSDay 2016 Recap
-tags: [_post, css, front-end, videos, conferences]
+tags: [_post, _blog, css, front-end, videos, conferences]
 image:
   src: 'blog/2017/cssday/cssday.jpg'
 summary: |

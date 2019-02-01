@@ -1,12 +1,15 @@
 ---
 permalink: 'blog/{{ [pagination.pageNumber + 1, "/"]|join if (pagination.pageNumber > 0) else "" }}index.html'
+nav:
+  title: blog
+  order: 2
 pagination:
-  data: collections._post
+  data: collections._blog
   size: 3
 templateEngineOverride: njk
+renderData:
+  title: Articles {% if pagination.pageNumber %}[page {{ pagination.pageNumber }}]{% endif %}
 ---
-
-<h1>blog page {{ pagination.pageNumber }}</h1>
 
 <ol>
 {%- for item in pagination.items %}

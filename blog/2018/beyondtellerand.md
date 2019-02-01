@@ -1,7 +1,7 @@
 ---
 title: Beyond Tellerand
 date: 2018-05-15
-tags: [_post, vue, conferences, 'design systems', code, 'style guides']
+tags: [_post, _blog, vue, conferences, 'design systems', code, 'style guides']
 hero:
   img: 2018/vue-invaders.jpg
   caption: Vue Invaders!

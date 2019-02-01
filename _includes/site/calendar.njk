@@ -3,7 +3,13 @@
 
 {% set get_calendar = renderData.calendar or calendar %}
 
-{% if get_calendar %}
+{% if get_calendar == 'all' %}
+  {{ event_macros.section(
+    collections.all | getEvents,
+    filter=collections,
+    self=page.url
+  ) }}
+{% elif get_calendar %}
   {% set pages = collections[get_calendar] %}
   {% set title %}
     all the
@@ -21,12 +27,6 @@
   {{ event_macros.section(
     collections.all | getPage(page) | getEvents,
     title='calendar…',
-    self=page.url
-  ) }}
-{% else %}
-  {{ event_macros.section(
-    collections.all | getEvents,
-    filter=collections,
     self=page.url
   ) }}
 {% endif %}

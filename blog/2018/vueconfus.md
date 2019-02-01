@@ -1,7 +1,7 @@
 ---
 title: VueConf US Recap
 date: 2018-05-14
-tags: [_post, vue, conferences, 'design systems', code, 'style guides']
+tags: [_post, _blog, vue, conferences, 'design systems', code, 'style guides']
 image:
   src: 'blog/2018/vueconf.jpg'
 tagline: |
