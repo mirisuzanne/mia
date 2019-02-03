@@ -4,14 +4,14 @@ date: 2012-10-01
 banner:
   title: Collaboration, Queer Art, and a Multi-Media Novel
   sub: an interview with Boulder Writers' Workshop
+venue: Boulder Writers’ Workshop
+url: http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel/
 tags:
+  - _calendar
   - blog
   - writing
   - interview
   - art
-events:
-  - venue: Boulder Writers’ Workshop
-    url: http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel/
 ---
 
 > Collaboration doesn't have to be a social activity.
