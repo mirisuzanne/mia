@@ -1,0 +1,421 @@
+public: yes
+tags: ['writing']
+image:
+  - src: '2017/model-falcon.jpg'
+summary: |
+  I'm still reeling from this year of insults, 
+  a traumatizing campaign turned traumatic election.
+  I'm not sad about a contest lost,
+  but what those results mean
+  for real people around me.
+  2016 is over,
+  but 2017 is going to be even harder.
+
+
+****************************
+Justice [Under Construction]
+****************************
+
+I've had a good year
+in many ways,
+and so has `the world generally`_.
+Transition has been `scary`_,
+and `confusing`_,
+but also wonderful and rewarding.
+
+.. _the world generally: https://www.washingtonpost.com/opinions/why-2016-was-actually-one-of-the-best-years-on-record/2016/12/30/bc12701e-ce0a-11e6-a87f-b917067331bb_story.html?utm_term=.27a8e97254b7
+.. _scary: /2016/08/17/trans
+.. _confusing: /2016/12/24/clarifications
+
+But over the last few months,
+I've watched my friends
+(and the Internet)
+cycle through denial, anger, depression,
+and a million other painful emotions —
+often turning on each other
+out of fear or misunderstanding.
+I've been through a similar cycle of my own — 
+constantly distracted,
+making phone calls,
+updating my legal documentation,
+struggling to get work done,
+building little toy models
+to calm myself,
+sending donations,
+hugging friends,
+and breaking into tears
+reading article after article.
+
+I've tried to write this post
+at least 20 different times,
+and I still can't get it right.
+There is no right to get.
+
+Like many of us,
+I live at an intersection of worlds —
+female, white, transgender,
+able-bodied, lesbian/pan-sexual,
+neurotypical, etc — 
+not sure if I'm the primary problem
+or a primary target.
+Probably both.
+I'm tired,
+and I don't know how to be useful.
+How effective is art?
+Am I in personal danger?
+How useful is my writing?
+How complicit am I in which problems,
+and how do I fight back?
+How can my experiences, my love,
+my donations, my company, phone-calls,
+or protests help anyone?
+
+I want to be strong,
+but I'm not.
+I want to be effective,
+but I don't know what that means,
+and I'm pretty sure it's a myth of our culture.
+
+
+Personal & Political
+====================
+
+There are several tensions
+pulling me in different directions.
+Zooming in,
+I see individuals hurting —
+scared like me.
+I know how to be a friend.
+I can reach inward,
+and care for my community.
+I can listen to what's needed day-to-day,
+and be there for the people around me.
+I see you, and I love you.
+
+Zooming out,
+I get overwhelmed by the scale of our problems — 
+the ways `neoliberal`_ capitalism,
+misogyny, ableism, and white-supremacy
+take physical form
+to destroy lives in the most mundane ways.
+Our representative democracy doesn't represent us all,
+and never has.
+The best we can hope for
+is a few simple rights doled out selectively,
+or not taken away —
+rights we should have by default.
+
+.. _neoliberal: https://www.theguardian.com/commentisfree/2016/nov/09/rise-of-the-davos-class-sealed-americas-fate
+
+We don't want better jobs,
+we want to stop selling our bodies and lives
+to corporations for their profit.
+We don't want to hug police officers,
+we want to end the police state.
+We don't want access to marriage
+on hetero terms,
+we want to redefine "family"
+for ourselves.
+We don't want legal weed for white entrepreneurs,
+we want the `prisons emptied`_
+and the war-on-drugs annulled.
+We don't want the DAPL re-routed,
+we want full sovereignty
+and reparations for native tribes, 
+and an end to environmental destruction.
+
+.. _prisons emptied: http://newjimcrow.com/
+
+The status quo was bad enough,
+how are we supposed to deal with Trump?
+
+
+Known Unknowns
+==============
+
+No one knows exactly `what will happen next`_,
+but the threats against marginalized people
+(and the environment)
+are clear.
+We understand the direction,
+if not all the details.
+
+.. _what will happen next: http://www.nytimes.com/interactive/2016/11/21/us/politics/what-trump-wants-to-do-in-his-first-100-days-and-how-difficult-each-will-be.html?smid=tw-nytimes&smtyp=cur&_r=0
+
+We know our government is designed to resist change,
+and maybe that will work in our favor now. 
+But we also know how easily our institutions
+are corrupted by money and fear.
+Who will fight beside us?
+How bad will things get?
+
+The unknowns don't make this transition less terrifying, 
+and the fact that *things were bad already*
+is no consolation.
+There's a lot to do,
+and a lot of people that need our help.
+
+
+Queering the Revolution
+=======================
+
+I see a temptation to grasp for simple explanations,
+with simple sides,
+and even simpler solutions.
+But simplifications are what got us here — 
+a distraction,
+not a plan for change.
+It's time to embrace
+the complexity of human rights,
+human systems,
+and human identities.
+Not to be stopped by wishy-washy complacency,
+but to fight for *all the people*,
+no matter how messy that gets.
+We need movements for intersectional empowerment,
+when it would be easier to throw our fringes
+under the bus.
+We need to challenge all our assumptions
+about what is "normal"
+in this queer and unusual world.
+
+Listening is radical,
+emotions are radical,
+silence can be radical,
+and efficiency
+is not the definition of your value.
+Speaking up can also be radical,
+along with rational thought,
+action,
+and visible results.
+Progress comes in cycles of action and reflection,
+mourning and anger,
+give and take,
+analysis and emotion.
+Don't get stuck in one place.
+Keep cycling.
+Keep showing up.
+
+There will always be arguments
+about what tactics are better,
+more effective,
+or *enough*.
+Change will require
+all of us doing what we can, 
+finding new ways to define *action*,
+and new ways of acting.
+That will look different
+for different people.
+The bigger and more diverse the movement,
+the better.
+
+I know it's annoying,
+but we need anarchists *and* `politicians`_.
+
+.. _politicians: http://www.sheshouldrun.org/
+
+We need to accept that no question is either or.
+Individuals are not
+either privileged or marginalized
+with a simple on/off switch,
+but shades of intersectional
+identity and experience.
+Resistance doesn't have to be either violent or polite,
+when confrontational nonviolence
+has `the only reliable track-record`_.
+
+.. _the only reliable track-record: https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/21/people-are-in-the-streets-protesting-donald-trump-but-when-does-protest-actually-work/?utm_term=.1d9c0a0f5fe8
+
+We must both acknowledge
+our collective and individual racism,
+while we more `clearly distinguish`_ between
+ignorance, complacency, prejudice,
+and active white supremacy.
+All bigotry is real,
+no matter the intentions,
+but different forms of bigotry
+call for different forms of resistance.
+
+.. _clearly distinguish: https://medium.com/@juliaserano/prejudice-political-correctness-and-the-normalization-of-donald-trump-28c563154e48#.eev3frwt1
+
+We can learn to dissect and identify
+all the subtle micro-aggressions
+of the `kyriarchy`_,
+and identify where ideas become *problematic*,
+while also understanding
+that a barrage of `facts`_ and "callouts"
+will `never bring about`_
+the change we need.
+We can recognize that personalized education
+on privilege and oppression
+is not our responsibility as minorities,
+but may be our primary responsibility
+as activists.
+
+.. _kyriarchy: https://en.wikipedia.org/wiki/Kyriarchy
+.. _facts: http://www.vox.com/policy-and-politics/2016/11/16/13426448/trump-psychology-fact-checking-lies
+.. _never bring about: http://www.vox.com/identities/2016/11/15/13595508/racism-trump-research-study
+
+We can acknowledge that
+general education is essential in the abstract,
+but degrees and certifications are often
+an excuse for new hierarchies,
+moral requirements,
+money, power, and exclusion.
+
+Our bubbles separate us,
+but also keep us safe.
+Self-care is essential,
+and a clever cover for complacency.
+Real America is rural and urban,
+and infinitely diverse.
+Action is essential,
+and a clever cover for insecurity.
+Incremental progress leaves people behind,
+while revolutions often kill the most vulnerable.
+We have to be political and empathetic,
+listening and fighting.
+Move fast and slow,
+think personal and systemic.
+Respect our feelings
+enough to act on them,
+and respect our actions
+enough to feel them.
+Soul-searching won't end oppression,
+but it's an important part of our work.
+
+We have to be human,
+in systems that are larger than ourselves.
+
+Alok Vaid-Menon sums it up well
+in their recent `new years resolution`_:
+
+  1. stop using politics to legitimize my feelings
+  2. affirm people for being needy & vulnerable in public
+  3. recognize everyone else's complexity as much as i do my own
+  4. admit when i operate from a place of hurt & loneliness
+  5. believe in all of our infinite capacity for transformation
+  6. provide care as much as i provide critique
+  7. respect limitations & constraints
+  8. honor silence as a form of presence
+  9. feel & love, militantly
+  10. refuse the dismissal of art & interdependence & magic
+  11. find immensity in what they call insignificant
+
+.. _new years resolution: https://www.facebook.com/AlokVaidMenon/posts/1636504483312005
+
+And a few of my own:
+
+1. accept that my experiences are not universal
+2. embrace a lack of answers and fear of uselessness
+3. show up with my entire self, broken and scared and opinionated
+
+
+Notes on Showing Up
+===================
+
+*Some incomplete notes to myself,
+for being present
+in a time of struggle.*
+
+Find and join the efforts already under way.
+Find marginalized people
+already building movements,
+and support them.
+Don't take over,
+or dictate the terms,
+or concern-troll and tone-police the movement.
+Find ways to stay involved
+over the long-haul — 
+pace yourself but take risks,
+and keep showing up.
+
+- Check in with people who are scared or in danger.
+  Take care of each other.
+  There's emotional work to be done.
+  This is difficult and important.
+  Don't let anyone downplay
+  emotional experience and expression —
+  listening, laughing,
+  and having fun together.
+- Focus on
+  `bringing new people into the movement`_,
+  and `creating a new culture`_.
+  Let marginalized groups set the priorities,
+  and help to amplify their voices.
+  Do outreach.
+- Understand and study `privilege`_.
+- Donate time and money
+  to `organizations`_
+  focused on
+  women, people of color,
+  immigrants, queers, Muslims,
+  disabled people, `indigenous people`_
+  and our global climate.
+- Support the
+  `Movement For Black Lives`_
+  and
+  `Campaign Zero`_.
+  Get involved with
+  `SURJ`_.
+- Donate to `high-poverty schools`_,
+  and establish long-term plans for
+  charitable and political giving.
+- Follow these helpful
+  `guides for calling your elected officials`_
+  and learn how to affect
+  political change.
+
+.. _bringing new people into the movement: http://www.surjaction.org/
+.. _creating a new culture: http://www.theestablishment.co/2016/11/11/we-have-to-create-a-culture-that-wont-vote-for-trump/
+.. _privilege: http://code.ucsd.edu/~pcosman/Backpack.pdf
+.. _organizations: http://togetherlist.com/
+.. _indigenous people: http://sacredstonecamp.org/blog/2016/12/31/standing-rock-to-the-world-10-indigenous-and-environmental-struggles-you-can-support-in-2017
+.. _Movement For Black Lives: https://policy.m4bl.org/
+.. _Campaign Zero: http://www.joincampaignzero.org/#vision
+.. _SURJ: http://www.surjaction.org/
+.. _high-poverty schools: https://www.donorschoose.org
+.. _guides for calling your elected officials: https://docs.google.com/spreadsheets/u/1/d/174f0WBSVNSdcQ5_S6rWPGB3pNCsruyyM_ZRQ6QUhGmo/htmlview
+
+Fight for diversity in your own industry,
+company, and organizations —
+in who you hire and what you build.
+Create a better training pipeline,
+improve your hiring funnel,
+write a code of conduct,
+address harassment
+and micro-aggressions in the workplace,
+and keep an eye on retention rates.
+There's not one single problem,
+and it will never be fully resolved.
+
+The long arc of the universe bends
+wherever we bend it.
+
+Learn to bring
+`family and friends`_
+into the movement.
+It's `a skill`_ that takes practice — 
+emotional labor that
+`can't be done by listing the facts`_.
+Outreach requires vulnerability,
+discomfort,
+and a lot of patience.
+
+.. _family and friends: https://docs.google.com/document/d/1bC0nyqFNx6VhBgNZDB0Oan1aa0i_UtuWeBLnOPWrJ5M/preview
+.. _a skill: http://www.vox.com/2016/11/23/13708996/argue-better-science
+.. _`can't be done by listing the facts`: http://www.vox.com/2014/4/6/5556462/brain-dead-how-politics-makes-us-stupid
+
+Build a practice of sustainable and ongoing action.
+Keep looking for new ways to show up,
+and leave your ego at home.
+Welcome to 2017.
+
+Stay strong.
+Stay weak.
+Stay present.
+Keep dreaming,
+and get real.
+Keep crying, keep laughing, keep fighting.
+
+Take care of each other.

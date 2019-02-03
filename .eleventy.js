@@ -113,13 +113,31 @@ const getEvents = collection => {
   // pages
   pages
     .filter(item => {
-      return item.data.tags ? item.data.tags.includes('_post') : false;
+      return item.data.tags ? item.data.tags.includes('_calendar') : false;
     })
     .forEach(page => {
       events.push(eventFromData(page, {}));
     });
 
   return events.sort((a, b) => a.start - b.start);
+};
+
+// Sort Tags
+const sortTags = (allTags, count) => {
+  const sorted = {};
+  const tags = Object.keys(allTags);
+  count = count && count > 0 ? count : tags.length + 5;
+
+  tags
+    .filter(tag => tag !== 'all' && !tag.startsWith('_'))
+    .sort((a, b) => allTags[a].length - allTags[b].length)
+    .reverse()
+    .slice(0, count)
+    .forEach(tag => {
+      sorted[tag] = allTags[tag];
+    });
+
+  return sorted;
 };
 
 // Config
@@ -135,18 +153,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
   eleventyConfig.addLayoutAlias('contact', 'layouts/contact.njk');
   eleventyConfig.addLayoutAlias('tags', 'layouts/tags.njk');
-
-  // collections
-  eleventyConfig.addCollection('_nav', collection => {
-    return collection
-      .getAll()
-      .filter(item => {
-        return 'nav' in item.data;
-      })
-      .sort((a, b) => {
-        return a.data.nav.order > b.data.nav.order;
-      });
-  });
 
   // filters
   eleventyConfig.addFilter('typeOf', val => typeof val);
@@ -168,29 +174,20 @@ module.exports = eleventyConfig => {
     return val !== 'all' && !val.startsWith('_');
   });
 
-  eleventyConfig.addFilter('sortTags', allTags => {
-    const sorted = {};
-
-    Object.keys(allTags)
-      .filter(tag => tag !== 'all' && !tag.startsWith('_'))
-      .sort((a, b) => allTags[a].length - allTags[b].length)
-      .reverse()
-      .forEach(tag => {
-        sorted[tag] = allTags[tag];
-      });
-
-    return sorted;
+  eleventyConfig.addFilter('sortTags', (allTags, count = 6) => {
+    return sortTags(allTags, count);
   });
 
-  eleventyConfig.addFilter('groupTags', allTags => {
+  eleventyConfig.addFilter('groupTags', (allTags, top = 6) => {
+    const all = sortTags(allTags);
     const grouped = {};
     const sorted = [];
 
-    Object.keys(allTags)
+    Object.keys(all)
       .filter(tag => tag !== 'all' && !tag.startsWith('_'))
-      .forEach(tag => {
-        const data = allTags[tag];
-        const count = data.length;
+      .forEach((tag, i) => {
+        const data = all[tag];
+        const count = i < top ? 'top' : data.length;
         tag = { tag, data };
         if (grouped[count]) {
           grouped[count].push(tag);
@@ -218,7 +215,9 @@ module.exports = eleventyConfig => {
   });
 
   eleventyConfig.addFilter('getPage', (pageSet, page) => {
-    return pageSet.filter(item => item.inputPath === page.inputPath);
+    const pagePath = typeof page === 'string' ? page : page.url;
+
+    return pageSet.filter(item => item.url === pagePath);
   });
 
   eleventyConfig.addFilter('formatDate', (date, format = 'short') => {

@@ -6,7 +6,8 @@
 {% if get_calendar == 'all' %}
   {{ event_macros.section(
     collections.all | getEvents,
-    filter=collections,
+    title='filter by...',
+    more=utility.tag_filters(collections),
     self=page.url
   ) }}
 {% elif get_calendar %}

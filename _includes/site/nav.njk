@@ -6,13 +6,14 @@
   <div
     data-content
     data-flow="flex">
-    {%- for item in collections._nav -%}
-      {% set title = item.data.nav.title or item.data.title or 'TitleMePlease' %}
-      <a href="{{ item.url | url }}"
+    {%- for title, url in site.nav -%}
+      {%- set slug = 'home' if (url == '/') else title | slug -%}
+      {%- set rel = 'home' if (url == '/') else none -%}
+      <a href="{{ url | url }}"
         {{ utility.show_attrs({
-          'data-nav': (item.data.nav.slug or title) | slug,
-          'data-active': (item.inputPath == page.inputPath),
-          'rel': item.data.nav.rel
+          'data-nav': slug,
+          'data-active': (url == page.url),
+          'rel': rel
         }) }} />
         {{ title | lower | amp | md(inline=true) | safe }}
       </a>

@@ -9,11 +9,11 @@
     data-area="{{ area }}">
     <div data-content>
       <h2 data-title="title">
-        {{ title | safe }}
+        {{ title | typogr | safe }}
       </h2>
 
       {% if more %}
-        {{ more | safe }}
+        {{ more | typogr | safe }}
       {% endif %}
     </div>
   </header>
@@ -36,7 +36,7 @@
   all_tags
 ) %}
   {% if all_tags %}
-    {% for tag, data in all_tags | sortTags %}
+    {% for tag, data in all_tags | sortTags(6) %}
       {% if loop.index < 6 %}
         {{ tag_link(tag) }}
       {% endif %}

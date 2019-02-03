@@ -9,8 +9,6 @@ hero:
   alt: Headshot of Mia smirking
   caption: |
     This face is one of my special skills.
-nav:
-  order: 10
 ---
 
 ## art & ...

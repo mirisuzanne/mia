@@ -1,18 +1,15 @@
 {% import "utility.macros.njk" as utility %}
+{% import "cards.macros.njk" as cards %}
 
 {% macro section(
   tags,
   title='all yer tags:'
 ) %}
-  {{ utility.section_title(title) }}
-
-  <div
-    data-area="full"
-    data-layout="card-groups">
-    {% for segment in tags | groupTags %}
+  {% call cards.section(title) %}
+    {% for segment in tags | groupTags(6) %}
       {{ group(segment.count, segment.tags) }}
     {% endfor %}
-  </div>
+  {% endcall %}
 {% endmacro %}
 
 {% macro group(
@@ -20,14 +17,9 @@
   segment
 ) %}
   {% if segment | length %}
-    <section data-cards="group">
-      <h3
-        data-cards="grouper"
-        data-theme="invert">
-        {{ title }}
-      </h3>
+    {% call cards.group(title) %}
       {{ list(segment) }}
-    </section>
+    {% endcall %}
   {% endif %}
 {% endmacro %}
 
@@ -35,12 +27,11 @@
   tags
 ) %}
   {% if tags | length %}
-    <ol
-      data-layout="cards">
+    {% call cards.list(reverse) %}
       {% for tag in tags %}
         {{ show_tag(tag) }}
       {% endfor %}
-    </ol>
+    {% endcall %}
   {% endif %}
 {% endmacro %}
 
@@ -49,16 +40,10 @@
 ) %}
   {% set feature = false %}
 
-  <li data-card="item">
-    <div data-card="inner">
-      <div data-card="meta">
-        {{ tag_meta(tag.data) }}
-      </div>
-      <h2 data-card="title">
-        {{ utility.tag_link(tag.tag) }}
-      </h2>
-    </div>
-  </li>
+  {% call cards.item(feature) %}
+    {{ cards.meta(tag_meta(tag.data)) }}
+    {{ cards.main(utility.tag_link(tag.tag)) }}
+  {% endcall %}
 {% endmacro %}
 
 {% macro tag_meta(

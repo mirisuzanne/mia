@@ -5,7 +5,7 @@ start: 2008-04-15
 end: null
 calendar: code
 tags:
-  - _post
+  - _calendar
   - organizations
   - founder
   - code

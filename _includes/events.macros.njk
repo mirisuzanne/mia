@@ -1,36 +1,21 @@
 {% import "utility.macros.njk" as utility %}
+{% import "cards.macros.njk" as cards %}
 
 {% macro section(
   events,
   title='calendar',
-  filter=none,
+  more=none,
   self=none
 ) %}
   {% set years = events | groupby('group') | dictsort | reverse %}
 
-  <section
-    data-area="full"
-    data-flow="grid">
-
-    {% if filter %}
-      {% set filters = utility.tag_filters(filter) %}
-      {{ utility.section_title('filter by…', filters) }}
-    {% else %}
-      {{ utility.section_title(title) }}
-    {% endif %}
-
-    <div
-      data-area="full"
-      data-layout="card-groups">
-      {% set group_formats = {
-        now: 'since'
-      } %}
-      {% for year, segment in years %}
-        {% set date_format = group_formats[year] or 'md' %}
-        {{ group(year, segment, date_format, self) }}
-      {% endfor %}
-    </div>
-  </section>
+  {% call cards.section(title, more) %}
+    {% set group_formats = {now: 'since'} %}
+    {% for year, segment in years %}
+      {% set date_format = group_formats[year] or 'md' %}
+      {{ group(year, segment, date_format, self) }}
+    {% endfor %}
+  {% endcall %}
 {% endmacro %}
 
 {% macro group(
@@ -40,19 +25,14 @@
   self=none
 ) %}
   {% if segment | length %}
-    <section data-cards="group">
-      <h3
-        data-cards="grouper"
-        data-theme="invert">
-        {{ title }}
-      </h3>
+    {% call cards.group(title) %}
       {{ list(
         segment,
         date_format,
         reverse=false if (title == 'later') else true,
         self=self
       ) }}
-    </section>
+    {% endcall %}
   {% endif %}
 {% endmacro %}
 
@@ -63,14 +43,12 @@
   self=none
 ) %}
   {% if events | length %}
-    <ol
-      data-layout="cards"
-      {{ utility.attr_if('reversed', reverse) }}>
+    {% call cards.list(reverse) %}
       {% set events = events | reverse if reverse else events %}
       {% for item in events %}
         {{ event(item, date_format, self) }}
       {% endfor %}
-    </ol>
+    {% endcall %}
   {% endif %}
 {% endmacro %}
 
@@ -81,33 +59,40 @@
 ) %}
   {% set feature = item.event.feature or item.page.data.feature %}
   {% set is_self = true if (item.page.url == self) else false %}
-  {% set venue = item.event.venue or item.page.data.venue %}
+
+  {% set venue_name = item.event.venue or item.page.data.venue %}
   {% set venue_url = item.event.url or item.page.data.url %}
-  {% set title = item.event.title or item.page.data.title %}
+  {% set venue = utility.link_if(venue_name, venue_url) if venue_name else none %}
+
+  {% set title_name = item.event.title or item.page.data.title %}
   {% set url = none if is_self else item.page.url %}
+  {% set title = utility.link_if(title_name, url) %}
 
-  <li
-    data-card="item"
-    {{ utility.attr_if('data-feature', feature) }}>
-    <div data-card="inner">
-      <div data-card="meta">
-        <time datetime="{{ item.start | formatDate('iso') }}">
-          {{ item.start | formatDate(date_format) }}
-        </time>
+  {% set venue = venue if (venue and not is_self) else none %}
+  {% set title = venue if (venue and is_self) else title %}
 
-        {% if venue and not is_self %}
-          @
-          {{ utility.link_if(venue, venue_url) }}
-        {% endif %}
-      </div>
+  {% set info = meta(
+    start=item.start,
+    date_format=date_format,
+    venue=venue
+  ) %}
 
-      <h4 data-card="title">
-        {% if venue and is_self %}
-          {{ utility.link_if(venue, venue_url) }}
-        {% else %}
-          {{ utility.link_if(title, url) }}
-        {% endif %}
-      </h4>
-    </div>
-  </li>
+  {% call cards.item(feature) %}
+    {{ cards.meta(info) }}
+    {{ cards.main(title) }}
+  {% endcall %}
+{% endmacro %}
+
+{% macro meta(
+  start,
+  date_format='md',
+  venue=none
+) %}
+  <time datetime="{{ start | formatDate('iso') }}">
+    {{ start | formatDate(date_format) }}
+  </time>
+
+  {% if venue and not is_self %}
+    @ {{ venue }}
+  {% endif %}
 {% endmacro %}

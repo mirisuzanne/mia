@@ -15,5 +15,11 @@
   "styles": [
     "screen.css",
     "prism.css"
-  ]
+  ],
+  "nav": {
+    "art&code": "/",
+    "blog": "/tags/blog/",
+    "biography": "/who/",
+    "contact": "/contact/"
+  }
 }
