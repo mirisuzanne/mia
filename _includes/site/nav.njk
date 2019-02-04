@@ -15,9 +15,7 @@
           'data-nav': slug,
           'data-active': (url == page.url),
           'rel': rel
-        }) }} />
-        {{ title | lower | amp | md(inline=true) | safe }}
-      </a>
+        }) }} />{{ title | lower | amp | md(inline=true) | safe }}</a>
     {%- endfor -%}
   </div>
 </nav>

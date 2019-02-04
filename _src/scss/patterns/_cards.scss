@@ -17,10 +17,22 @@
 // Groups
 // ------
 
-[data-cards='group'] {
+[data-card-group] {
   display: grid;
   grid-template: 'grouper list' auto / auto minmax(0, 1fr);
   margin-bottom: size('gutter');
+}
+
+[data-card-group='coming'] {
+  &:not(:last-child) {
+    @include after('— & & & —') {
+      @include font-family('amp');
+      color: var-color('border');
+      grid-column: 1 / -1;
+      margin: size('gutter') auto 0;
+      text-align: center;
+    }
+  }
 }
 
 [data-cards='grouper'] {

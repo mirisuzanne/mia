@@ -83,7 +83,7 @@ const eventFromData = (page, event) => {
   const today = new Date();
   let group = formatDate(start, 'year');
   if (end > today) {
-    group = start > today ? 'later' : 'now';
+    group = start > today ? 'coming' : 'now';
   }
 
   return { page, event, start, end, group };

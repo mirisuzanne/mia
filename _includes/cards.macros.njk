@@ -27,7 +27,7 @@
   {% set content = content if (content != none) else caller() %}
 
   <section
-    data-cards="group">
+    data-card-group="{{ title | slug }}">
     <h3
       data-cards="grouper"
       data-theme="invert">
