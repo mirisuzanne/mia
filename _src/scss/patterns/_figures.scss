@@ -1,0 +1,38 @@
+// Icons
+// =======
+
+.ratio {
+  position: relative;
+
+  @include before('') {
+    display: inline-block;
+    height: 0;
+    padding-top: calc(100% / var(--ratio));
+    width: 1px;
+  }
+
+  iframe {
+    @include position(0 0 0 0);
+    @include square(100%);
+  }
+}
+
+[data-pattern='figure'] {
+  background: var-color('callout');
+  // border: 1px solid var-color('border');
+  // border-width: 1px 0;
+  margin: size('gutter') negative('shim');
+  padding: size('shim');
+}
+
+[data-figure='content'] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+}
+
+[data-figure='caption'] {
+  @include font-family('code');
+  font-size: size('xsmall');
+  font-style: italic;
+  margin-top: size('half-shim');
+}

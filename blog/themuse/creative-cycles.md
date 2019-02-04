@@ -1,5 +1,9 @@
 ---
 title: Creative Modes and Cycles
+banner:
+  sub: |
+    Part 3 in the ongoing
+    [Fuck the Muse](/2012/10/16/muse-intro/) series
 date: 2012-11-08
 calendar: fuck the muse
 tags:
@@ -10,6 +14,7 @@ tags:
   - writing
   - process
 ---
+{% import "content.macros.njk" as content %}
 
 Cycles have become the core of my creative process.
 Thinking in cycles means I always know
@@ -17,9 +22,6 @@ where I am and where I'm going,
 even when I feel overwhelmed by the size of a project.
 If I'm stuck, it's time for a new mindset.
 If my last move was to zig, my next move is to zag.
-
-[This is *part 3* in the ongoing
-[Fuck the Muse](/2012/10/16/muse-intro/) series.]
 
 In his 1991 [lecture on creativity][creativity],
 John Cleese describes two modes of operating:
@@ -33,11 +35,15 @@ cultivate the open mode of operating.
 > but once we come up with a solution,
 > we must then switch to the closed mode to implement it.
 
-[creativity]: https://www.youtube.com/watch?v=VShmtsLhkQg
+[creativity]: https://vimeo.com/176474304
 
-<figure>
-<iframe width="640" height="480" src="https://www.youtube.com/embed/f9rtmxJrKwc" frameborder="0" allowfullscreen></iframe>
-</figure>
+{% call content.fig(ratio=640/483) %}
+<iframe
+  src="https://player.vimeo.com/video/176474304"
+  width="640" height="483"
+  frameborder="0"
+  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{% endcall %}
 
 
 ## Your Brain at Work
@@ -57,9 +63,12 @@ on the [Divided Brain][Divided Brain]:
 [Divided Brain]: https://www.youtube.com/watch?v=dFs9WO2B8uI
 [RSA]: http://www.thersa.org/
 
-<figure>
-<iframe width="521" height="293" src="https://www.youtube.com/embed/dFs9WO2B8uI" frameborder="0" allowfullscreen></iframe>
-</figure>
+{% call content.fig(ratio=521/293) %}
+<iframe
+  src="https://www.youtube.com/embed/dFs9WO2B8uI"
+  width="521" height="293"
+  frameborder="0" allowfullscreen></iframe>
+{% endcall %}
 
 
 ## Working in Cycles
@@ -72,10 +81,9 @@ You have to know when to set down your hammer
 and pick up a chainsaw.
 That's where cycles become useful.
 
-<figure>
-<img src="{{ site.images }}cycle-diagram.jpg" alt="Is your approach working? Keep doing it, or try something else." />
-<figcaption>How to everything.</figcaption>
-</figure>
+{% call content.fig('How to everything.') %}
+![Is your approach working? Keep doing it, or try something else.]({{ site.images }}cycle-diagram.jpg)
+{% endcall %}
 
 Cycling through different modes has become
 the core of my creative process.
@@ -111,9 +119,12 @@ Often, an obstacle to the open mind
 can be overcome with a closed mind,
 and vice versa.
 
-<figure>
-<iframe width="520" height="390" src="https://www.youtube.com/embed/iZhEcRrMA-M" frameborder="0" allowfullscreen></iframe>
-</figure>
+{% call content.fig(ratio=520/390) %}
+<iframe
+  src="https://www.youtube.com/embed/iZhEcRrMA-M"
+  width="520" height="390"
+  frameborder="0" allowfullscreen></iframe>
+{% endcall %}
 
 If I've been looking at the details,
 I step back and look at the project from a distance.
@@ -148,9 +159,12 @@ Getting new ideas into your head is part of the work.
 
 ## Stay Agile
 
-<figure>
-<iframe width="520" height="390" src="https://www.youtube.com/embed/K2P86C-1x3o" frameborder="0" allowfullscreen></iframe>
-</figure>
+{% call content.fig(ratio=520/390) %}
+<iframe
+  src="https://www.youtube.com/embed/K2P86C-1x3o"
+  width="520" height="390"
+  frameborder="0" allowfullscreen></iframe>
+{% endcall %}
 
 No one technique is going to get you the whole way there.
 Practice changing directions quickly.

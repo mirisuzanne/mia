@@ -1,0 +1,30 @@
+{% import "utility.macros.njk" as utility %}
+
+{% macro fig(
+  caption=none,
+  content=none,
+  ratio=none
+) -%}
+<figure data-pattern="figure">
+{%- set content = content if (content != none) else caller() -%}
+{%- set content = content | md('inline') | typogr | safe -%}
+<div data-figure="content">{{ fig_content(content, ratio) }}</div>
+{%- if caption -%}
+<figcaption data-figure="caption">{{ caption | md('inline') | typogr | safe }}</figcaption>
+{%- endif -%}
+</figure>
+{%- endmacro %}
+
+{% macro fig_content(
+  content,
+  ratio=none
+) -%}
+{%- if ratio -%}
+{%- set ratio = ['--ratio:', ';'] | join(ratio) if ratio else none -%}
+<div
+  class="ratio"
+  {{ utility.attr_if('style', ratio) }}>{{ content }}</div>
+{%- else -%}
+{{ content }}
+{%- endif -%}
+{%- endmacro %}

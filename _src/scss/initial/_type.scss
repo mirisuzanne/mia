@@ -13,18 +13,6 @@ h1 {
   font-size: size('h1');
 }
 
-p {
-  margin-bottom: size('gutter');
-}
-
-blockquote {
-  margin-bottom: size('gutter');
-
-  p:last-of-type {
-    margin-bottom: size('half-shim');
-  }
-}
-
 // Links
 // -----
 
@@ -82,5 +70,12 @@ a {
 
   h3 {
     font-style: italic;
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol {
+    margin-bottom: size('gutter');
   }
 }

@@ -9,12 +9,12 @@
     {% endif %}
 
     <h1 class="banner-title">
-      {{ full_title | typogr | safe }}
+      {{ full_title | md('inline') | typogr | safe }}
     </h1>
 
     {% if banner.sub or banner.tags %}
       <span class="subtitle">
-        {{ banner.sub | typogr | safe }}
+        {{ banner.sub | md('inline') | typogr | safe }}
         {% if banner.tags %}
           ({{ utility.link_if(banner.tags, '/tags/') }})
         {% endif %}
