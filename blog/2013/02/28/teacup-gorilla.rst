@@ -69,7 +69,7 @@ and we have big plans.
 
   <figure>
   <div class="video">
-    <iframe src="http://www.youtube.com/embed/HI8oU9xUqy8" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/HI8oU9xUqy8" frameborder="0" allowfullscreen></iframe>
   </div>
   <figcaption>
     Reggie is cute, but he is not us. Petite? Yes. Deadly? Hard to say.
@@ -80,7 +80,7 @@ and we have big plans.
 
   <figure>
     <div class="video">
-      <iframe src="http://player.vimeo.com/video/39468690?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      <iframe src="https://player.vimeo.com/video/39468690?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
     <figcaption>
       Into the Green Green Mud, Chapter 12,

@@ -33,13 +33,13 @@ a wide range of projects and clients.
 ## ... & code
 
 Miriam is a
-co-founder at [OddBird](http://oddbird.net),
+co-founder at [OddBird](https://oddbird.net),
 with 15+ years experience as a project manager,
 user-experience designer,
 and front-end architect.
 She is the creator of
-[Susy](http://oddbird.net/susy),
-[True](http://oddbird.net/true),
+[Susy](https://oddbird.net/susy),
+[True](https://oddbird.net/true),
 and other popular open source tools --
 author of SitePoint’s
 [Jump Start Sass](http://shop.oreilly.com/product/9780994182678.do),

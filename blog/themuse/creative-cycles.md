@@ -32,10 +32,10 @@ cultivate the open mode of operating.
 > but once we come up with a solution,
 > we must then switch to the closed mode to implement it.
 
-[creativity]: http://www.youtube.com/watch?v=VShmtsLhkQg
+[creativity]: https://www.youtube.com/watch?v=VShmtsLhkQg
 
 <figure>
-<iframe width="640" height="480" src="http://www.youtube.com/embed/f9rtmxJrKwc" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/f9rtmxJrKwc" frameborder="0" allowfullscreen></iframe>
 </figure>
 
 
@@ -53,11 +53,11 @@ on the [Divided Brain][Divided Brain]:
 > Let me make it very clear,
 > for imagination you need both hemispheres.
 
-[Divided Brain]: http://www.youtube.com/watch?v=dFs9WO2B8uI
+[Divided Brain]: https://www.youtube.com/watch?v=dFs9WO2B8uI
 [RSA]: http://www.thersa.org/
 
 <figure>
-<iframe width="521" height="293" src="http://www.youtube.com/embed/dFs9WO2B8uI" frameborder="0" allowfullscreen></iframe>
+<iframe width="521" height="293" src="https://www.youtube.com/embed/dFs9WO2B8uI" frameborder="0" allowfullscreen></iframe>
 </figure>
 
 
@@ -111,7 +111,7 @@ can be overcome with a closed mind,
 and vice versa.
 
 <figure>
-<iframe width="520" height="390" src="http://www.youtube.com/embed/iZhEcRrMA-M" frameborder="0" allowfullscreen></iframe>
+<iframe width="520" height="390" src="https://www.youtube.com/embed/iZhEcRrMA-M" frameborder="0" allowfullscreen></iframe>
 </figure>
 
 If I've been looking at the details,
@@ -148,7 +148,7 @@ Getting new ideas into your head is part of the work.
 ## Stay Agile
 
 <figure>
-<iframe width="520" height="390" src="http://www.youtube.com/embed/K2P86C-1x3o" frameborder="0" allowfullscreen></iframe>
+<iframe width="520" height="390" src="https://www.youtube.com/embed/K2P86C-1x3o" frameborder="0" allowfullscreen></iframe>
 </figure>
 
 No one technique is going to get you the whole way there.

@@ -8,7 +8,7 @@ tags:
   - code
   - css
   - design systems
-slides: http://oddbooksapp.com/book/pattern-making
+slides: https://oddbooksapp.com/book/pattern-making
 events:
   - venue: Refresh Denver
     url: https://www.meetup.com/refreshdenver/events/241230495/?from=ref
@@ -43,7 +43,7 @@ events:
   - venue: DublinCSS
     url: http://www.meetup.com/DublinCSS/events/230011902/
     start: 2016-05-19
-    slides: http://oddbooksapp.com/book/sass-patterns
+    slides: https://oddbooksapp.com/book/sass-patterns
   - venue: Clarity
     url: http://clarityconf.com/
     adr: San Francisco, CA

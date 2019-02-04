@@ -40,14 +40,14 @@ events:
     url: https://2018.jsconf.us/
     adr: Carlsbad, CA
     start: 2018-08-21
-    slides: http://talks.oddbird.net/dynamic-css/jsconfus18/
+    slides: https://talks.oddbird.net/dynamic-css/jsconfus18/
     video: https://www.youtube.com/watch?v=uwgBz748t-g
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/uwgBz748t-g" frameborder="0" allowfullscreen></iframe>
   - venue: CSSConf Argentina
     url: https://cssconfar.com/
     adr: Buenos Aires, Argentina
     start: 2018-08-18
-    slides: http://talks.oddbird.net/dynamic-css/cssconfar18/
+    slides: https://talks.oddbird.net/dynamic-css/cssconfar18/
 ---
 
 **CSS has come a long way since the browser wars** of the late 90s.

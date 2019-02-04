@@ -14,7 +14,7 @@ events:
     adr: Milwaukee, WI
     start: 2012-09-27
     end: 2012-09-29
-    video: http://youtu.be/FnHsQRUQ1x8?t=1h11m11s
+    video: https://youtu.be/FnHsQRUQ1x8?t=1h11m11s
     note: ELO juried elit performance
     with:
       - Jeremy Douglass

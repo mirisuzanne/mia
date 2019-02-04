@@ -10,7 +10,7 @@ tags:
   - writing
 calendar: fuck the muse
 events:
-  - url: http://www.theoperatingsystem.org/word-tech-ericmeyer-field-notes/
+  - url: https://www.theoperatingsystem.org/word-tech-ericmeyer-field-notes/
     venue: 'The Operating System'
 ---
 
