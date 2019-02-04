@@ -8,7 +8,6 @@ venue: Boulder Writers’ Workshop
 url: http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel/
 tags:
   - _calendar
-  - blog
   - writing
   - interview
   - art

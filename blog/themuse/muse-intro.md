@@ -4,7 +4,8 @@ date: 2012-10-16
 banner:
   sub: the art of creative process
 tags:
-  - blog
+  - _calendar
+  - article
   - fuck the muse
   - art
   - writing

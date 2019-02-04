@@ -3,7 +3,12 @@ title: Starting from a Seed
 banner:
   sub: What's the driving force behind this project?
 date: 2012-12-13
-tags: [minifesto, fuck the muse, art, writing, process]
+tags:
+  - article
+  - fuck the muse
+  - art
+  - writing
+  - process
 series: 'fuck the muse'
 ---
 
@@ -22,7 +27,7 @@ the "seed" of a project.
 ## A Range of Specimen
 
 <figure>
-<img src="/static/pictures/seed/specimen.jpg" alt=""/>
+<img src="{{ site.images }}seed/specimen.jpg" alt=""/>
 </figure>
 
 There are many ways to find,
@@ -39,7 +44,7 @@ starting with a question and related hypothesis.
 3. Construct a *hypothesis*
 
 <figure>
-<img src="/static/pictures/seed/golden-circle.jpg" alt=""/>
+<img src="{{ site.images }}seed/golden-circle.jpg" alt=""/>
 </figure>
 
 `Simon Sinek`_ starts his projects with
@@ -63,7 +68,7 @@ but it helps to know more-or-less what you need
 in order to move forward.
 
 <figure>
-<img src="/static/pictures/seed/flies.jpg" alt=""/>
+<img src="{{ site.images }}seed/flies.jpg" alt=""/>
 </figure>
 
 My seeds usually start with a single idea
@@ -143,11 +148,11 @@ then learn to repeat it.
 .. |science| raw:: html
 
   <figure>
-    <img src="/static/pictures/seed/science.jpg" alt=""/>
+    <img src="{{ site.images }}seed/science.jpg" alt=""/>
   </figure>
 
 .. |herm| raw:: html
 
   <figure class="gallery">
-    <img src="/static/pictures/seed/herm.jpg" alt=""/>
+    <img src="{{ site.images }}seed/herm.jpg" alt=""/>
   </figure>

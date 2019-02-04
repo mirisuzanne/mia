@@ -2,7 +2,8 @@
 title: Sass Striped Backgrounds
 date: 2012-07-20
 tags:
-  - blog
+  - _calendar
+  - tutorial
   - sass
   - code
 ---

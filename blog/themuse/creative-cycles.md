@@ -3,7 +3,8 @@ title: Creative Modes and Cycles
 date: 2012-11-08
 calendar: fuck the muse
 tags:
-  - blog
+  - _calendar
+  - article
   - fuck the muse
   - art
   - writing
@@ -72,7 +73,7 @@ and pick up a chainsaw.
 That's where cycles become useful.
 
 <figure>
-<img src="/static/pictures/cycle-diagram.jpg" alt="Is your approach working? Keep doing it, or try something else." />
+<img src="{{ site.images }}cycle-diagram.jpg" alt="Is your approach working? Keep doing it, or try something else." />
 <figcaption>How to everything.</figcaption>
 </figure>
 

@@ -2,7 +2,6 @@
 title: Kitten Karlyle Portrait [nsfw]
 date: 2012-10-18
 tags:
-  - blog
   - _calendar
   - art
   - visual
@@ -11,8 +10,8 @@ tags:
 
 <figure class="gallery">
 
-<img src="/static/pictures/portraits/Kitten-Icon.png" alt="" />
-<img src="/static/pictures/portraits/Kitten-Full.png" alt="" />
+<img src="{{ site.images }}portraits/Kitten-Icon.png" alt="" />
+<img src="{{ site.images }}portraits/Kitten-Full.png" alt="" />
 
 <figcaption>
 

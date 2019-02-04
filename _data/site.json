@@ -18,8 +18,8 @@
   ],
   "nav": {
     "art&code": "/",
-    "blog": "/tags/blog/",
-    "biography": "/who/",
+    "articles": "/tags/article/",
+    "bio": "/who/",
     "contact": "/contact/"
   }
 }

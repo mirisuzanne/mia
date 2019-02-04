@@ -2,7 +2,6 @@
 title: Dan & Sondra Portrait
 date: 2012-11-20
 tags:
-  - blog
   - _calendar
   - art
   - visual
@@ -20,8 +19,8 @@ that will be announced very soon.
 I can't wait!
 
 <figure>
-<img src="/static/pictures/portraits/DanSondra-BW.png" alt="">
-<img src="/static/pictures/portraits/DanSondra-Full.png" alt="">
+<img src="{{ site.images }}portraits/DanSondra-BW.png" alt="">
+<img src="{{ site.images }}portraits/DanSondra-Full.png" alt="">
 <figcaption>
 
 Dan Eisenstat & Sondra Eby, a sketchy couple.

@@ -5,6 +5,7 @@
   data-area="right">
   <div
     data-content
+    data-area="content"
     data-flow="flex">
     {%- for title, url in site.nav -%}
       {%- set slug = 'home' if (url == '/') else title | slug -%}

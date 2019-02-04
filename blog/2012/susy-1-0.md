@@ -2,7 +2,7 @@
 title: Susy 1.0 Release
 date: 2012-08-14
 tags:
-  - blog
+  - _calendar
   - susy
   - code
   - sass

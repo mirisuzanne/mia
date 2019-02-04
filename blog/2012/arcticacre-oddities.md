@@ -4,7 +4,7 @@ date: 2012-07-24
 banner:
   sub: the art of Jason Nelson
 tags:
-  - blog
+  - _calendar
   - inspiration
 image:
   - src: '2012/i-made-this.jpg'

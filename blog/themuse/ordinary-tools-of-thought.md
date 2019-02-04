@@ -2,10 +2,12 @@
 title: Ordinary Tools of Thought
 date: 2012-10-23
 tags:
-  - blog
+  - _calendar
+  - article
   - fuck the muse
   - art
   - writing
+  - process
 calendar: fuck the muse
 ---
 
