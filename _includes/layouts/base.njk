@@ -46,7 +46,7 @@
 						<div
 							{{ utility.attr_if('data-content', section.content or true) }}
 							{{ utility.attr_if('data-flow', section.flow) }}
-							class="md">
+							data-typeset>
 							{% block content %}
 								{{ content | typogr | safe }}
 							{% endblock %}

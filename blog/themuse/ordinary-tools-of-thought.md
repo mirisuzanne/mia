@@ -1,5 +1,7 @@
 ---
 title: Ordinary Tools of Thought
+banner:
+  sub: Part 2 of [Fuck the Muse](/tags/fuck-the-muse/)
 date: 2012-10-23
 tags:
   - _calendar
@@ -18,14 +20,11 @@ form the foundation of all creative process.
 He refers to these techniques as the
 "Elements of Creativity"…
 
-[This is *part 2* in the ongoing
-[Fuck the Muse](/2012/10/16/muse-intro/) series.]
-
 > Creativity isn't magic.
 > It happens by applying ordinary tools of thought
 > to existing materials.
-
----Kirby Ferguson
+>
+> ---Kirby Ferguson
 
 It seems I can't dive straight into
 the [five steps of creative process][5-steps] —
@@ -63,14 +62,6 @@ I can wait.
 I'm serious.
 Consider it homework.
 
-(She remains a moment motionless,
-then goes out.
-Sh comes back immediately,
-goes to window right,
-takes up the ladder and carries it out.
-Pause.)
-
-
 ## Spark & Slip
 
 Douglas Hofstadter,
@@ -105,8 +96,8 @@ into new ideas.
 > So it is with every new thing.
 > Progress happens when all the factors that make for it are ready,
 > and then it is inevitable.
-
----Henry Ford
+>
+> ---Henry Ford
 
 Art is no different.
 Like inventors and scientists,

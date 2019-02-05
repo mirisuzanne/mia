@@ -105,7 +105,7 @@ const getEvents = collection => {
 
   // events
   collection
-    .filter(item => 'events' in item.data)
+    .filter(item => 'events' in item.data && item.data.draft !== true)
     .forEach(page => {
       Array.prototype.push.apply(events, eventsFromYaml(page));
     });
@@ -113,7 +113,10 @@ const getEvents = collection => {
   // pages
   pages
     .filter(item => {
-      return item.data.tags ? item.data.tags.includes('_calendar') : false;
+      const isEvent = item.data.tags
+        ? item.data.tags.includes('_calendar')
+        : false;
+      return isEvent && item.data.draft !== true;
     })
     .forEach(page => {
       events.push(eventFromData(page, {}));

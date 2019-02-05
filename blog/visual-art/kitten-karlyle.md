@@ -1,23 +1,18 @@
 ---
 title: Kitten Karlyle Portrait [nsfw]
+banner:
+  sub: Portraits for my friend Kitten Karlyle
 date: 2012-10-18
 tags:
   - _calendar
   - art
   - visual
   - portrait
+calendar: portrait
 ---
+{% import "content.macros.njk" as content %}
 
-<figure class="gallery">
-
+{% call content.fig() %}
 <img src="{{ site.images }}portraits/Kitten-Icon.png" alt="" />
 <img src="{{ site.images }}portraits/Kitten-Full.png" alt="" />
-
-<figcaption>
-
-Kitten Karlyle, close-up and in full. Follow her sex-positive blog,
-<a href="http://dirty-words-blog.blogspot.com/">Dirty Words</a>.
-
-</figcaption>
-
-</figure>
+{% endcall %}

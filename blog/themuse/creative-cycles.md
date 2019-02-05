@@ -1,9 +1,7 @@
 ---
 title: Creative Modes and Cycles
 banner:
-  sub: |
-    Part 3 in the ongoing
-    [Fuck the Muse](/2012/10/16/muse-intro/) series
+  sub: Part 3 of [Fuck the Muse](/tags/fuck-the-muse/)
 date: 2012-11-08
 calendar: fuck the muse
 tags:
@@ -82,7 +80,7 @@ and pick up a chainsaw.
 That's where cycles become useful.
 
 {% call content.fig('How to everything.') %}
-![Is your approach working? Keep doing it, or try something else.]({{ site.images }}cycle-diagram.jpg)
+<img src="{{ site.images }}cycle-diagram.jpg" alt="Is your approach working? Keep doing it, or try something else." />
 {% endcall %}
 
 Cycling through different modes has become

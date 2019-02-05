@@ -40,7 +40,7 @@ a {
 // Special
 // -------
 
-.is-hidden {
+[data-hidden] {
   @include is-hidden;
 }
 
@@ -49,33 +49,4 @@ a {
   @include color--('amp', 'text-highlight');
   color: var-color('amp', 'text-highlight');
   font-style: italic;
-}
-
-.intro {
-  font-size: size('intro');
-  font-style: italic;
-}
-
-.md {
-  h2,
-  h3,
-  h4 {
-    @include font-family('code');
-    color: var-color('text-highlight');
-  }
-
-  h2 {
-    font-size: size('h2');
-  }
-
-  h3 {
-    font-style: italic;
-  }
-
-  p,
-  blockquote,
-  ul,
-  ol {
-    margin-bottom: size('gutter');
-  }
 }

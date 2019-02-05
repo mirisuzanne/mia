@@ -2,12 +2,13 @@
 title: Fuck The Muse
 date: 2012-10-16
 banner:
-  sub: the art of creative process
+  sub: Part 1 of [Fuck the Muse](/tags/fuck-the-muse/)
 tags:
   - article
   - fuck the muse
   - art
   - writing
+  - process
 calendar: fuck the muse
 events:
   - url: https://www.theoperatingsystem.org/word-tech-ericmeyer-field-notes/

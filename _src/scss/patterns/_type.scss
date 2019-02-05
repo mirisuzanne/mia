@@ -1,0 +1,43 @@
+// Buttons
+// =======
+
+.intro {
+  font-size: size('intro');
+  font-style: italic;
+}
+
+[data-typeset] {
+  margin: size('gutter') 0;
+
+  h2,
+  h3,
+  h4 {
+    @include font-family('code');
+    color: var-color('text-highlight');
+    margin: size('double-gutter') 0 size('shim');
+  }
+
+  h2 {
+    font-size: size('h2');
+  }
+
+  h3 {
+    font-style: italic;
+  }
+
+  p,
+  ul,
+  ol {
+    margin-bottom: size('gutter');
+  }
+
+  li {
+    margin-bottom: size('half-shim');
+  }
+
+  blockquote {
+    @include font-family('code');
+    font-style: italic;
+    margin: size('gutter');
+  }
+}

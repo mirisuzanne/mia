@@ -19,10 +19,8 @@
 
 [data-pattern='figure'] {
   background: var-color('callout');
-  // border: 1px solid var-color('border');
-  // border-width: 1px 0;
-  margin: size('gutter') negative('shim');
-  padding: size('shim');
+  margin: size('gutter') negative('gutter');
+  padding: size('shim') size('gutter');
 }
 
 [data-figure='content'] {
@@ -33,6 +31,5 @@
 [data-figure='caption'] {
   @include font-family('code');
   font-size: size('xsmall');
-  font-style: italic;
   margin-top: size('half-shim');
 }
