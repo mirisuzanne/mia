@@ -3,7 +3,8 @@ title: Creative Modes and Cycles
 banner:
   sub: Part 3 of [Fuck the Muse](/tags/fuck-the-muse/)
 date: 2012-11-08
-calendar: fuck the muse
+venue: 'The Operating System'
+url: http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-3-creative-modes-and-cycles/
 tags:
   - _calendar
   - article
@@ -11,6 +12,7 @@ tags:
   - art
   - writing
   - process
+calendar: fuck the muse
 ---
 {% import "content.macros.njk" as content %}
 

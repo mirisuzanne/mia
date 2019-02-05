@@ -68,18 +68,18 @@
   {% set url = none if is_self else item.page.url %}
   {% set title = utility.link_if(title_name, url) %}
 
-  {% set venue = venue if (venue and not is_self) else none %}
-  {% set title = venue if (venue and is_self) else title %}
+  {% set top = venue if (venue and not is_self) else none %}
+  {% set main = venue if (venue and is_self) else title %}
 
   {% set info = meta(
     start=item.start,
     date_format=date_format,
-    venue=venue
+    venue=top
   ) %}
 
   {% call cards.item(feature) %}
     {{ cards.meta(info) }}
-    {{ cards.main(title) }}
+    {{ cards.main(main) }}
   {% endcall %}
 {% endmacro %}
 

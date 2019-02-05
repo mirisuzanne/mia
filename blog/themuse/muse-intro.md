@@ -3,16 +3,17 @@ title: Fuck The Muse
 date: 2012-10-16
 banner:
   sub: Part 1 of [Fuck the Muse](/tags/fuck-the-muse/)
+feature: true
+venue: 'The Operating System'
+url: http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-creativity-mini-series-lesson-1/
 tags:
+  - _calendar
   - article
   - fuck the muse
   - art
   - writing
   - process
 calendar: fuck the muse
-events:
-  - url: https://www.theoperatingsystem.org/word-tech-ericmeyer-field-notes/
-    venue: 'The Operating System'
 ---
 
 I’ve been told that you can’t teach creativity, but I disagree.

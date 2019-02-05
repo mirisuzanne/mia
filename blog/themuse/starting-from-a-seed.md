@@ -3,6 +3,8 @@ title: Starting from a Seed
 banner:
   sub: Part 4 of [Fuck the Muse](/tags/fuck-the-muse/)
 date: 2012-12-13
+venue: 'The Operating System'
+url: http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-4-starting-from-a-seed/
 tags:
   - _calendar
   - article

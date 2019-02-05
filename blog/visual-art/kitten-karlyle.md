@@ -1,5 +1,5 @@
 ---
-title: Kitten Karlyle Portrait [nsfw]
+title: Portrait of Kitten Karlyle [nsfw]
 banner:
   sub: Portraits for my friend Kitten Karlyle
 date: 2012-10-18
@@ -7,7 +7,7 @@ tags:
   - _calendar
   - art
   - visual
-  - portrait
+  - visual
 calendar: portrait
 ---
 {% import "content.macros.njk" as content %}

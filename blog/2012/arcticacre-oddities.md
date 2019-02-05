@@ -3,16 +3,14 @@ title: Oddities and Curious Lands
 date: 2012-07-24
 banner:
   sub: the art of Jason Nelson
+hero:
+  img: 2012/i-made-this.jpg
+  alt: I made this, you play this, we are enemies
+venue: Secret Technology
+url: http://www.secrettechnology.com/
 tags:
   - _calendar
   - inspiration
-image:
-  - src: '2012/i-made-this.jpg'
-summary: |
-  The beautiful digital art,
-  inexplicable games,
-  and "stunningly harmful" songs
-  of Jason Nelson.
 ---
 
 In case you are ever bored,
@@ -21,8 +19,7 @@ on the internet.
 Several of those things were made by
 [Jason Nelson](http://www.secrettechnology.com/).
 
-You might start with the
-[games](http://www.arcticacre.com/)
+You might start with the games
 ("i made this, you play this, we are enemies" shown above),
 then perhaps some
 "[Stunningly Harmful Songs](http://www.secrettechnology.com/songs/harmsong1.html)...

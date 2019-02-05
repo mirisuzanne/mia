@@ -1,24 +1,14 @@
 ---
-title: Dan & Sondra Portrait
+title: Portrait of Sondra & Dan
 date: 2012-11-20
 tags:
   - _calendar
   - art
   - visual
   - portrait
-calendar: portrait
+calendar: visual
 ---
 {% import "content.macros.njk" as content %}
-
-Dan & Sondra are the other 2/3 of [Teacup Gorilla][tg],
-and have been a great help with the novel.
-Sondra has been helping me edit the images,
-while Dan is writing the music.
-In the meantime,
-they have moved downtown
-and started a very exciting art/business venture
-that will be announced very soon.
-I can't wait!
 
 {% call content.fig(
   caption="Dan Eisenstat & Sondra Eby, a sketchy couple"
