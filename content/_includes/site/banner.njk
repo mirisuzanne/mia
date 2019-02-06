@@ -1,0 +1,34 @@
+{% import "utility.macros.njk" as utility %}
+
+<header data-layout="banner">
+  <div class="banner-content">
+    {% if icon %}
+      <div class="banner-icon">
+        {% include icon %}
+      </div>
+    {% endif %}
+
+    <h1 class="banner-title">
+      {{ full_title | md('inline') | typogr | safe }}
+    </h1>
+
+    {% if sub %}
+      <span class="subtitle">
+        {{ sub | md('inline') | typogr | safe }}
+      </span>
+    {% endif %}
+  </div>
+
+  <div
+    class="banner-fancy"
+    role="presentation" >
+    {% for i in range(1, 25) -%}
+      {% set col = range(1, 80) | random %}
+      {% set row = range(1, 40) | random %}
+      {% set scale = range(1, 25) | random / 10 %}
+      {% set opacity = (range(1, 30) | random + 10) / 100 %}
+      <span data-dot="{{ range(0, 5) | random }}"
+        style="--area: {{ col }} / {{ row }}; --scale: {{ scale }}; --opacity: {{ opacity }};"></span>
+    {%- endfor %}
+  </div>
+</header>

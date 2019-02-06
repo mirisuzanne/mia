@@ -150,7 +150,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
   // pass-through
-  eleventyConfig.addPassthroughCopy('assets');
+  eleventyConfig.addPassthroughCopy('content/assets');
 
   // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
@@ -253,5 +253,8 @@ module.exports = eleventyConfig => {
 
   return {
     markdownTemplateEngine: 'njk',
+    dir: {
+      input: 'content',
+    },
   };
 };

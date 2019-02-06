@@ -1,0 +1,66 @@
+{%- import 'utility.macros.njk' as utility -%}
+{%- set meta_title = renderData.title or title -%}
+{%- set full_title = banner or meta_title -%}
+
+<!doctype html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+
+    <title>{{ [meta_title, site.title] | join(' | ') }}</title>
+    <meta name="description"
+      content="{{ site.description or description }}" />
+
+		<script src="https://use.typekit.net/slx1xnq.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		{% for url in site.styles %}
+			<link rel="stylesheet"
+				href="/assets/css/{{ url }}" />
+		{% endfor %}
+
+    {% include 'site/og.njk' %}
+    {% include 'site/feed.njk' %}
+	</head>
+
+	<body
+		data-layout="body"
+		data-area="full"
+		data-flow="grid">
+		{% include 'site/nav.njk' %}
+		{% include 'site/banner.njk' %}
+		{% include 'site/hero.njk' %}
+
+		<main
+			data-area="full"
+			data-flow="grid">
+			{% block main %}
+				{% if content %}
+					<div
+						data-main
+						data-section="{{ section.name or 'content' }}"
+						{{ utility.attr_if('data-area', section.area or true) }}
+						{{ utility.style_if(section.style) }}>
+						<div
+							{{ utility.attr_if('data-content', section.content or true) }}
+							{{ utility.attr_if('data-flow', section.flow) }}
+							data-typeset>
+							{% block content %}
+								{{ content | typogr | safe }}
+							{% endblock %}
+						</div>
+					</div>
+				{% endif %}
+			{% endblock %}
+		</main>
+
+		{% block calendar %}
+			{% include 'site/calendar.njk' %}
+		{% endblock %}
+
+		{% include 'site/footer.njk' %}
+		<!-- Current page: {{ page.url | url }} -->
+	</body>
+</html>

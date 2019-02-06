@@ -40,4 +40,8 @@
     font-style: italic;
     margin: size('gutter');
   }
+
+  > :first-child {
+    margin-top: 0;
+  }
 }

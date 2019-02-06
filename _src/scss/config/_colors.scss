@@ -111,7 +111,7 @@ $theme-colors: (
     (
       'alpha': 0.8,
     ),
-  'text': '#callout'
+  'text': '#background'
     (
       'contrast': append(map-keys($main-shades), 'aaa'),
     ),

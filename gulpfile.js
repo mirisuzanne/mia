@@ -22,9 +22,9 @@ sass.compiler = require('sass');
 
 const paths = {
   SASS_DIR: './_src/scss/',
-  CSS_DIR: './assets/css/',
+  CSS_DIR: './content/assets/css/',
   IMG_SRC_DIR: './_src/images/',
-  IMG_DEST_DIR: './assets/images/',
+  IMG_DEST_DIR: './content/assets/images/',
   OUTPUT_DIR: './_site/',
   IGNORE: ['!**/.#*', '!**/flycheck_*'],
   init: function() {
