@@ -4,13 +4,16 @@ banner: The Obsolete Book
 sub: |
   in a Post-Obsolete World,
   as Represented by a Post-Obsolete Book About Dance
-date: 2012-06-09
+venue: post-obsolete.com
+url: http://post-obsolete.com
+date: 2015-11-25
 tags:
+  - _calendar
   - writing
   - art
   - theater
   - code
-  - published work
+  - published
   - digital humanities
 events:
   - venue: ELO Conference
@@ -52,7 +55,7 @@ events:
     url: https://www.facebook.com/events/415657695136519/permalink/417120971656858/
     start: 2012-07-21
   - venue: Naropa Summer Writing Program
-    start: 2012-06-01
+    start: 2012-06-09
     feature: true
 press:
   - quote: I was impressed by the purest form of outrageous creation.
