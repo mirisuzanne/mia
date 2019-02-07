@@ -4,6 +4,17 @@ sub: Part 3 of [Fuck the Muse](/tags/fuck-the-muse/)
 venue: The Operating System
 url: https://medium.com/the-operating-system/coco-process-course-eric-meyers-fuck-the-muse-lesson-3-creative-modes-and-cycles-984e501058e1
 date: 2012-11-08
+cleese:
+  - iframe: https://player.vimeo.com/video/176474304
+    width: 640
+    height: 483
+divided:
+  - iframe: https://www.youtube.com/embed/dFs9WO2B8uI
+    width: 521
+    height: 293
+cycle:
+  - img: cycle-diagram.jpg
+    alt: Is your approach working? Keep doing it, or try something else.
 ---
 {% import "content.macros.njk" as content %}
 
@@ -28,14 +39,10 @@ cultivate the open mode of operating.
 
 [creativity]: https://vimeo.com/176474304
 
-{% call content.fig(ratio=640/483) %}
-<iframe
-  src="https://player.vimeo.com/video/176474304"
-  width="640" height="483"
-  frameborder="0"
-  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-{% endcall %}
-
+{{ content.fig(
+  data=cleese,
+  caption='John Cleese is full of dad jokes'
+) }}
 
 ## Your Brain at Work
 
@@ -54,13 +61,10 @@ on the [Divided Brain][Divided Brain]:
 [Divided Brain]: https://www.youtube.com/watch?v=dFs9WO2B8uI
 [RSA]: http://www.thersa.org/
 
-{% call content.fig(ratio=521/293) %}
-<iframe
-  src="https://www.youtube.com/embed/dFs9WO2B8uI"
-  width="521" height="293"
-  frameborder="0" allowfullscreen></iframe>
-{% endcall %}
-
+{{ content.fig(
+  data=divided,
+  caption='Both sides of your brain, together at last'
+) }}
 
 ## Working in Cycles
 
@@ -72,9 +76,10 @@ You have to know when to set down your hammer
 and pick up a chainsaw.
 That's where cycles become useful.
 
-{% call content.fig('How to everything.') %}
-<img src="{{ site.images }}cycle-diagram.jpg" alt="Is your approach working? Keep doing it, or try something else." />
-{% endcall %}
+{{ content.fig(
+  data=cycle,
+  caption='How to everything'
+) }}
 
 Cycling through different modes has become
 the core of my creative process.
@@ -110,12 +115,16 @@ Often, an obstacle to the open mind
 can be overcome with a closed mind,
 and vice versa.
 
-{% call content.fig(ratio=520/390) %}
-<iframe
-  src="https://www.youtube.com/embed/iZhEcRrMA-M"
-  width="520" height="390"
-  frameborder="0" allowfullscreen></iframe>
-{% endcall %}
+{{ content.fig(
+  data=[
+    {
+      iframe: 'https://www.youtube.com/embed/iZhEcRrMA-M',
+      width: '520',
+      height: '390'
+    }
+  ],
+  caption='Let Elmo explain distance to you'
+) }}
 
 If I've been looking at the details,
 I step back and look at the project from a distance.
@@ -150,12 +159,16 @@ Getting new ideas into your head is part of the work.
 
 ## Stay Agile
 
-{% call content.fig(ratio=520/390) %}
-<iframe
-  src="https://www.youtube.com/embed/K2P86C-1x3o"
-  width="520" height="390"
-  frameborder="0" allowfullscreen></iframe>
-{% endcall %}
+{{ content.fig(
+  data=[
+    {
+      iframe: 'https://www.youtube.com/embed/K2P86C-1x3o',
+      width: '520',
+      height: '390'
+    }
+  ],
+  caption='And now for a callback framed as a diversion'
+) }}
 
 No one technique is going to get you the whole way there.
 Practice changing directions quickly.

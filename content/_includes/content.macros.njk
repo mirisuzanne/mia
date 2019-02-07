@@ -1,30 +1,51 @@
 {% import "utility.macros.njk" as utility %}
 
 {% macro fig(
-  caption=none,
-  content=none,
-  ratio=none
+  data=none,
+  caption=none
 ) -%}
+{%- set content = data_content(data) if data else caller() | md('inline') -%}
 <figure data-pattern="figure">
-{%- set content = content if (content != none) else caller() -%}
-{%- set content = content | md('inline') | typogr | safe -%}
-<div data-figure="content">{{ fig_content(content, ratio) }}</div>
+<div data-figure="content">
+{{ content | safe }}
+</div>
 {%- if caption -%}
-<figcaption data-figure="caption">{{ caption | md('inline') | typogr | safe }}</figcaption>
+<figcaption data-figure="caption">
+{{ caption | md('inline') | safe }}
+</figcaption>
 {%- endif -%}
 </figure>
 {%- endmacro %}
 
-{% macro fig_content(
-  content,
-  ratio=none
+
+{% macro data_content(
+  data
 ) -%}
-{%- if ratio -%}
-{%- set ratio = ['--ratio:', ';'] | join(ratio) if ratio else none -%}
+{%- for item in data -%}
+{%- if item.img -%}
+{%- set src = item.img if ('://' in item.img) else ('/assets/images/' + item.img) -%}
+{%- set style = ['--width:', item.width, ';'] | join if item.width else none -%}
+<img src="{{ src }}" alt="{{ item.alt }}" {{ utility.attr_if('style', style) }}/>
+{%- elif item.iframe -%}
+{%- call ratio(item) -%}
+<iframe src="{{ item.iframe }}" {{ utility.attr_if('width', item.width) }} {{ utility.attr_if('height', item.height) }}
+  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{%- endcall -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endmacro %}
+
+
+{% macro ratio(
+  item
+) -%}
+{%- if item.width and item.height -%}
 <div
   class="ratio"
-  {{ utility.attr_if('style', ratio) }}>{{ content }}</div>
+  style="--ratio:{{ item.width / item.height }};">
+{{ caller() }}
+</div>
 {%- else -%}
-{{ content }}
+{{ caller() }}
 {%- endif -%}
 {%- endmacro %}

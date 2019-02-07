@@ -20,7 +20,7 @@ but I think you can do even better:
 and leave the drafting for later.*
 
 <figure>
-  <img src="/static/pictures/curious/bullshit.jpg" alt=""/>
+  <img src="/assets/images/curious/bullshit.jpg" alt=""/>
   <figcaption>
   I often refer to this as the fertilizer or "bullshit" stage.
   </figcaption>
@@ -64,7 +64,7 @@ Based on their answers, I ended up with these lists:
 [book]: /2013/01/22/contour/
 
 <figure>
- <img src="/static/pictures/contour/final.png" alt=""/>
+ <img src="/assets/images/contour/final.png" alt=""/>
  <figcaption>
  Final cover design for <em>The Posture of Contour</em>.
  </figcaption>
@@ -109,7 +109,7 @@ you have enough to get started.
 ## Sparking Curiosity
 
 <figure>
-  <img src="/static/pictures/curious/bodies.jpg" alt=""/>
+  <img src="/assets/images/curious/bodies.jpg" alt=""/>
   <figcaption>
   Bodies. A diagram.
   </figcaption>

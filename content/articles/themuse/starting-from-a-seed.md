@@ -34,7 +34,7 @@ starting with a question and related hypothesis.
 2. Do *background research*
 3. Construct a *hypothesis*
 
-{% call content.fig("Simon Sinek's 'golden circle'") %}
+{% call content.fig(caption="Simon Sinek's 'golden circle'") %}
 <img src="{{ site.images }}seed/golden-circle.jpg" alt="'why' in the center circle, then 'what', and 'how' in larger circles"/>
 {% endcall %}
 
@@ -88,7 +88,7 @@ started with a quote I found on the internet:
 
 [hetero]: http://books.google.com/books?id=S8BB1K361SUC&lpg=PP1&pg=PA15#v=onepage&q&f=false
 
-{% call content.fig('Out-of-body studies are super weird, yall') %}
+{% call content.fig(caption='Out-of-body studies are super weird, yall') %}
 <img src="{{ site.images }}seed/science.jpg" alt="one person sitting with a VR set, while another pokes at a camera"/>
 {% endcall %}
 
@@ -110,7 +110,7 @@ the other pieces fell into place.
 [wiki]: http://en.wikipedia.org/
 [tattered]: http://tatteredcover.com/
 
-{% call content.fig('Hermaphroditus depicted as a herm (statue with carved genitals on un-carved block legs)') %}
+{% call content.fig(caption='Hermaphroditus depicted as a herm (statue with carved genitals on un-carved block legs)') %}
 <img src="{{ site.images }}seed/herm.jpg" alt="statue of hermaphroditus lifting her dress" style="--width: auto"/>
 {% endcall %}
 

@@ -39,7 +39,7 @@ Exploring levels of distance from object to abstraction,
 using blind contour, layering, tracing, negative space, etc.
 {% endset %}
 
-{% call content.fig(caption) %}
+{% call content.fig(caption=caption) %}
   <img src="{{ site.images }}contour/contours-coal.jpg" alt="Partial charcoal contours traced from a map">
   <img src="{{ site.images }}contour/contours.png" alt="Red arrow contours of map negative space">
   <img src="{{ site.images }}contour/circles.png" alt="Red arrow negative-space contours of a coffee stain">
@@ -59,7 +59,7 @@ In the end,
 James decided on the abstract jawbone pattern in red arrows.
 
 {% call content.fig(
-  'What was once a diagram of the tongue, teeth, and bottom jaw.'
+  caption='What was once a diagram of the tongue, teeth, and bottom jaw.'
 ) %}
   <img src="{{ site.images }}contour/final.png" alt="">
 {% endcall %}

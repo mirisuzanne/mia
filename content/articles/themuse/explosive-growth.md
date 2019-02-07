@@ -4,14 +4,19 @@ sub: Part 6 of [Fuck the Muse](/tags/fuck-the-muse/)
 venue: The Operating System
 url: https://medium.com/the-operating-system/coco-process-course-eric-meyers-fuck-the-muse-lesson-6-explosive-growth-b5e6652af1e1
 date: 2013-02-14
+hoarding:
+  - img: explosion/hoarding.jpg
+cutup:
+  - img: explosion/cutup.jpg
 ---
+{% import "content.macros.njk" as content %}
 
 It's always useful to remember where you are
 in the overall creative process.
 Here's a refresher:
 
-1. `Define the Seed`_: *What's the idea, question, or hypothesis?*
-2. `Explore`_: *Reasearch, gather, and create the materials.*
+1. [Define][seed]: *What's the idea, question, or hypothesis?*
+2. [Explore][explore]: *Reasearch, gather, and create the materials.*
 3. Organize: *Outline the structure, or impose one.*
 4. Draft: *Compile a complete first draft.*
 5. Revise: *Consider, critique, and edit as needed.*
@@ -19,44 +24,45 @@ Here's a refresher:
 We're still following up on Step 2,
 which we started last week
 by compiling our curiosity shopping lists.
-We need to push out from our `seed`_ in every direction,
+We need to push out from our [seed][seed] in every direction,
 and the list is there to help guide us.
 
 Now it's time to go shopping.
 
-.. _seed: /2012/12/13/starting-from-a-seed/
-.. _Define the Seed: /2012/12/13/starting-from-a-seed/
-.. _Explore: /2013/02/07/get-curious/
+[seed]: /2012/12/13/starting-from-a-seed/
+[explore]: /2013/02/07/get-curious/
 
-Surround Yourself with Material
--------------------------------
+## Surround Yourself with Material
 
-|hoarding|
+{{ content.fig(
+  data=hoarding,
+  caption="It's time to get your hoarding on"
+) }}
 
 The goal of this phase is to collect all the material
 you might possibly need to create your piece.
 It doesn't matter what genre or medium you will use at the end,
 right now you want everything.
-You are building your `shitty pile of shit`_
+You are building your [shitty pile of shit][shit]
 that will get organized into a draft down the road.
 
-  Get your facts first, and then you can distort them as much as you please.
-
-  *— Mark Twain*
+> Get your facts first,
+> and then you can distort them as much as you please.
+>
+> ---Mark Twain
 
 You need to fill your head (and your notebook) with possibilities.
 You need to start understanding the world you are creating —
 not by thinking about it, but by surrounding yourself with it.
 Your creative mind works
-by `copying, transforming, & combining`_ —
+by [copying, transforming, & combining][elements] —
 so the more ideas you put into your head,
 the more you can get out when it's time.
 
-.. _shitty pile of shit: /2013/02/07/get-curious/
-.. _copying, transforming, & combining: /2012/10/23/ordinary-tools-of-thought/
+[shit]: /2013/02/07/get-curious/
+[elements]: /2012/10/23/ordinary-tools-of-thought/
 
-Research » Steal » Create
--------------------------
+## Research » Steal » Create
 
 The first instinct of most artists is to sit down with a blank paper
 and stare at it until the muse strikes.
@@ -75,20 +81,22 @@ or just take notes.
 When ideas start to merge and you are inspired to say something,
 then say it.
 
-|cutup|
+{{ content.fig(
+  data=cutup,
+  caption='Cut it up. You can put it back together later'
+) }}
 
-Ebb and flow with the `cycles`_ of research, theft, and creation.
+Ebb and flow with the [cycles][cycles] of research, theft, and creation.
 Let your inspiration drive you back and forth
 between exploring what's there, and creating what isn't.
 If research isn't working, make shit up.
 If you can't think of anything to make,
-`find something to steal`_.
+[find something to steal][steal].
 
-.. _cycles: /2012/11/08/creative-cycles
-.. _find something to steal: http://www.austinkleon.com/steal/
+[cycles]: /2012/11/08/creative-cycles
+[steal]: http://www.austinkleon.com/steal/
 
-For Example
------------
+## For Example
 
 Following up on my list from last week,
 I spent time reading about Hermaphroditus & Mother Clapp.
@@ -100,16 +108,15 @@ and wrote about my own memories of body and sexual experience.
 I even pulled from old email conversations
 that seemed relevant.
 
-I used `NaNoWriMo`_ to get through this phase
+I used [NaNoWriMo][NaNoWriMo] to get through this phase
 with a massive pile of 50,000 shitty words,
 along with a number of images and songs.
 Some are stolen, and some are my own,
 but all of them will be useful when I come back to start drafting.
 
-.. _NaNoWriMo: http://www.nanowrimo.org/
+[NaNoWriMo]: http://www.nanowrimo.org/
 
-Checking it Twice
------------------
+## Checking it Twice
 
 Look back at your list.
 focus on researching the "things that will inspire you,"
@@ -123,32 +130,3 @@ There are several interesting tools you can use
 to help push you along when you get stuck —
 both as a solo artist and in collaborative settings.
 I'll go into more detail on some of those next week.
-
-The Series
-----------
-
-1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
-2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
-3. `Creative Modes and Cycles </2012/11/08/creative-cycles>`_
-4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
-5. `Get Curious </2013/02/07/get-curious/>`_
-6. `Explosive Growth </2013/02/14/explosive-growth/>`_
-7. `(re)Thinking on Your Feet </2013/03/29/rethinking-on-your-feet/>`_
-
-.. |hoarding| raw:: html
-
-  <figure>
-    <img src="/static/pictures/explosion/hoarding.jpg" alt=""/>
-    <figcaption>
-      It's time to get your hoarding on.
-    </figcaption>
-  </figure>
-
-.. |cutup| raw:: html
-
-  <figure>
-    <img src="/static/pictures/explosion/cutup.jpg" alt=""/>
-    <figcaption>
-      Cut it up. You can put it back together later.
-    </figcaption>
-  </figure>
