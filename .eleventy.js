@@ -212,15 +212,27 @@ module.exports = eleventyConfig => {
     return sorted;
   });
 
-  eleventyConfig.addFilter('getEvents', (pageSet, self = {}) => {
-    pageSet = pageSet.filter(item => item.inputPath !== self.inputPath);
+  eleventyConfig.addFilter('getEvents', pageSet => {
     return getEvents(pageSet);
   });
 
   eleventyConfig.addFilter('getPage', (pageSet, page) => {
     const pagePath = typeof page === 'string' ? page : page.url;
-
     return pageSet.filter(item => item.url === pagePath);
+  });
+
+  eleventyConfig.addFilter('getSeries', (pageSet, page) => {
+    pageSet = pageSet || {};
+    const pageIndex = pageSet.findIndex(item => item.url === page.url);
+
+    if (pageIndex !== -1) {
+      return {
+        prev: pageSet[pageIndex - 1] || null,
+        next: pageSet[pageIndex + 1] || null,
+      };
+    } else {
+      return null;
+    }
   });
 
   eleventyConfig.addFilter('formatDate', (date, format = 'short') => {

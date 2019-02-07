@@ -94,3 +94,20 @@
     </span>
   {%- endif -%}
 {%- endmacro %}
+
+{% macro prev_next(to, is) %}
+  {% if to %}
+    <div
+      data-section="series-{{ is }}"
+      data-area="{{ 'left' if (is == 'prev') else 'right'}}"
+      data-flow="grid">
+      <div
+        data-area="main"
+        data-content>
+        {{ is }}:
+        {{ link_if(to.data.title, to.url) }}
+      </div>
+    </div>
+  {% endif %}
+{% endmacro %}
+
