@@ -4,14 +4,14 @@
   data=none,
   caption=none
 ) -%}
-{%- set content = data_content(data) if data else caller() | md('inline') -%}
+{%- set content = data_content(data) if data else caller() | mdInline -%}
 <figure data-pattern="figure">
 <div data-figure="content">
 {{ content | safe }}
 </div>
 {%- if caption -%}
 <figcaption data-figure="caption">
-{{ caption | md('inline') | safe }}
+{{ caption | mdInline | safe }}
 </figcaption>
 {%- endif -%}
 </figure>

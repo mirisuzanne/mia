@@ -9,12 +9,12 @@
     {% endif %}
 
     <h1 class="banner-title" data-bright>
-      {{ full_title | md('inline') | typogr | safe }}
+      {{ full_title | mdInline | typogr | safe }}
     </h1>
 
     {% if sub %}
       <span class="subtitle">
-        {{ sub | md('inline') | typogr | safe }}
+        {{ sub | mdInline | typogr | safe }}
       </span>
     {% endif %}
   </div>

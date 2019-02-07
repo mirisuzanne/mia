@@ -88,8 +88,8 @@
   date_format='md',
   venue=none
 ) %}
-  <time datetime="{{ start | formatDate('iso') }}">
-    {{ start | formatDate(date_format) }}
+  <time datetime="{{ start | getDate('iso') }}">
+    {{ start | getDate(date_format) }}
   </time>
 
   {% if venue and not is_self %}

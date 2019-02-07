@@ -1,73 +1,12 @@
-const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const time = require('./_src/js/time');
+const hljs = require('@11ty/eleventy-plugin-syntaxhighlight');
 const typogr = require('typogr');
-const markdownIt = require('markdown-it')({
+const mdIt = require('markdown-it')({
   html: true,
   breaks: false,
   linkify: true,
   typographer: true,
 });
-
-// Dates
-const formatDate = (date, format) => {
-  const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
-
-  const days = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ];
-
-  const m0 = date.getUTCMonth();
-  const mm = `${m0 + 1}`.padStart(2, '0');
-  const MM = months[m0];
-  const M = MM.slice(0, 3);
-  const d = date.getUTCDate();
-  const dd = `${d}`.padStart(2, '0');
-  const D = days[date.getUTCDay()];
-  const yyyy = date.getUTCFullYear();
-  const now = new Date().getUTCFullYear();
-  const md = `${M} ${d}`;
-  const since = now === yyyy ? md : yyyy;
-
-  const formats = {
-    day: `${D}`,
-    date: `${d}`,
-    month: `${mm}`,
-    'month-name': `${MM}`,
-    year: `${yyyy}`,
-    numeric: `${mm}/${dd}/${yyyy}`,
-    iso: `${yyyy}-${mm}-${dd}`,
-    url: `${yyyy}/${mm}/${dd}`,
-    short: `${M} ${d}, ${yyyy}`,
-    long: `${MM} ${d}, ${yyyy}`,
-    md: `${md}`,
-    since: `since ${since}`,
-  };
-
-  return formats[format];
-};
-
-const getDate = (format = null, date = null) => {
-  const now = date ? new Date(date) : new Date();
-  return format ? formatDate(now, format) : now;
-};
 
 // Events
 const eventFromData = (page, event) => {
@@ -80,10 +19,9 @@ const eventFromData = (page, event) => {
   }
 
   // set group…
-  const today = new Date();
-  let group = formatDate(start, 'year');
-  if (end > today) {
-    group = start > today ? 'coming' : 'now';
+  let group = time.getDate(start, 'year');
+  if (end > time.now) {
+    group = start > time.now ? 'coming' : 'now';
   }
 
   return { page, event, start, end, group };
@@ -147,7 +85,7 @@ const sortTags = (allTags, count) => {
 // ------
 module.exports = eleventyConfig => {
   // plugins
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.addPlugin(hljs);
 
   // pass-through
   eleventyConfig.addPassthroughCopy('content/assets');
@@ -235,33 +173,28 @@ module.exports = eleventyConfig => {
     }
   });
 
-  eleventyConfig.addFilter('formatDate', (date, format = 'short') => {
-    return formatDate(date, format);
+  eleventyConfig.addFilter('getDate', (date, format = 'short') => {
+    return time.getDate(date, format);
   });
 
-  eleventyConfig.addFilter('getDate', (date = null, format = 'short') => {
-    return getDate(format, date);
+  eleventyConfig.addFilter('md', content => {
+    return typogr.typogrify(mdIt.render(content));
   });
 
-  eleventyConfig.addFilter('md', (content, inline = false) => {
-    const html = inline
-      ? markdownIt.renderInline(content)
-      : markdownIt.render(content);
-    return typogr.typogrify(html);
+  eleventyConfig.addFilter('mdInline', content => {
+    return typogr.typogrify(mdIt.renderInline(content));
   });
 
   // shortcodes
-  eleventyConfig.addShortcode('getDate', (format = null) => getDate(format));
+  eleventyConfig.addShortcode('getDate', format => time.getDate(format));
 
-  eleventyConfig.addPairedShortcode('markdown', (content, inline = null) => {
-    const html = inline
-      ? markdownIt.renderInline(content)
-      : markdownIt.render(content);
+  eleventyConfig.addPairedShortcode('markdown', (content, inline) => {
+    const html = inline ? mdIt.renderInline(content) : mdIt.render(content);
     return typogr.typogrify(html);
   });
 
   // markdown
-  eleventyConfig.setLibrary('md', markdownIt);
+  eleventyConfig.setLibrary('md', mdIt);
 
   return {
     markdownTemplateEngine: 'njk',
