@@ -1,3 +1,5 @@
+'use strict';
+
 const now = new Date();
 
 const months = [
@@ -62,8 +64,7 @@ const formatDate = (date, format) => {
 };
 
 const getDate = (date, format) => {
-  date = typeof date === 'string' ? new Date(date) : date || new Date();
-
+  date = typeof date === 'string' ? new Date(date) : date || now;
   return format ? formatDate(date, format) : date;
 };
 

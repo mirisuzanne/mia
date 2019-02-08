@@ -1,15 +1,15 @@
 {% import "utility.macros.njk" as utility %}
 
-{% if series %}
-  {% set to = collections[series] | getSeries(page) %}
-  {% if to %}
-    <nav
-      data-series="{{ series | slug }}"
-      data-area="full"
-      data-flow="grid">
-      {{ utility.prev_next(to.prev, 'prev') }}
-      &nbsp;{# forces a new grid row… #}
-      {{ utility.prev_next(to.next, 'next') }}
-    </nav>
-  {% endif %}
+{% set more = collections[series] %}
+{% set to = page | seriesNav(more) %}
+
+{% if to.prev or to.next %}
+  <nav
+    data-series="{{ series | slug }}"
+    data-area="full"
+    data-flow="grid">
+    {{ utility.prev_next(to.prev, 'prev') }}
+    &nbsp;<!-- forces a new grid row… -->
+    {{ utility.prev_next(to.next, 'next') }}
+  </nav>
 {% endif %}
