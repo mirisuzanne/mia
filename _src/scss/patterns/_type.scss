@@ -49,17 +49,7 @@
 [data-bright] {
   color: var-color('text-highlight');
 
-  /* stylelint-disable */
-  @supports (-webkit-background-clip: text) {
-    background: linear-gradient(
-      to left,
-      var-color('text-highlight'),
-      var-color('action')
-    );
-    background-clip: text;
-    box-decoration-break: clone;
-    color: transparent;
-    text-shadow: none;
+  @include fancy-text {
+    background: pattern('bright');
   }
-  /* stylelint-enable */
 }

@@ -32,7 +32,7 @@ module.exports = eleventyConfig => {
   // shortcodes
   eleventyConfig.addPairedShortcode('md', type.render);
   eleventyConfig.addPairedShortcode('mdInline', type.inline);
-  eleventyConfig.addShortcode('now', format => {
+  eleventyConfig.addShortcode('getDate', format => {
     return `${time.getDate(time.now, format)}`;
   });
 
