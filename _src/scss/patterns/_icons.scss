@@ -6,3 +6,7 @@
   --mia-svg-stroke-width: 3;
   fill: currentColor;
 }
+
+[data-mia='eyes'] {
+  fill: var-color('mia-eyes');
+}

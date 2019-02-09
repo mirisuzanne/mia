@@ -57,5 +57,8 @@
         "git add"
       ]
     }
+  },
+  "dependencies": {
+    "markdown-it-mark": "^2.0.0"
   }
 }

@@ -46,6 +46,7 @@
 						<div
 							{{ utility.attr_if('data-content', section.content or true) }}
 							{{ utility.attr_if('data-flow', section.flow) }}
+							{{ utility.attr_if('data-erase', 'off' if erasure else none) }}
 							data-typeset>
 							{% block content %}
 								{{ content | typogr | safe }}
@@ -63,6 +64,25 @@
 		{% endblock %}
 
 		{% include 'site/footer.njk' %}
+
+		<script type="text/javascript">
+			const erase = document.querySelector("[data-erase]");
+			const eraseBtn = document.querySelector("[data-toggle='erase']");
+
+			const toggleErase = () => {
+				const states = {
+					off: 'on',
+					on: 'off',
+				};
+				const current = erase.getAttribute('data-erase');
+				erase.setAttribute('data-erase', states[current]);
+			}
+
+			eraseBtn.addEventListener("click", () => {
+				toggleErase();
+			});
+		</script>
+
 		<!-- Current page: {{ page.url | url }} -->
 	</body>
 </html>

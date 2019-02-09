@@ -82,6 +82,8 @@ $light-theme: (
   'feature': '#_brand-accent-dark-5',
   'callout': '#_brand-gray-light-5',
   'text-shadow': '#_contrast-light',
+  'contrast': '#_contrast-dark',
+  'mia-eyes': currentColor,
 );
 
 @include add-colors($light-theme);
@@ -97,6 +99,8 @@ $dark-theme: (
   'background': '#_brand-gray-dark-6',
   'callout': '#_brand-gray-dark-5',
   'text-shadow': '#_contrast-dark',
+  'contrast': '#_contrast-light',
+  'mia-eyes': '#background',
 );
 
 @include herman-add('colors', 'dark-theme', $dark-theme, $_color);

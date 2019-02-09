@@ -26,7 +26,7 @@
   const root = document.querySelector("html");
   const attr = "data-theme";
   const current = root.getAttribute(attr);
-  const toggle = document.querySelector("[data-btn='toggle-theme']");
+  const themeToggle = document.querySelector("[data-btn='toggle-theme']");
 
   const setTheme = (to) => {
     localStorage.setItem('theme', to);
@@ -53,7 +53,7 @@
 
   document.onload = setTheme(getTheme());
 
-  toggle.addEventListener("click", () => {
+  themeToggle.addEventListener("click", () => {
     changeTheme();
   });
 </script>

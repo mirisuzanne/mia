@@ -38,3 +38,8 @@
   font-size: size('xsmall');
   margin-top: size('half-shim');
 }
+
+[data-place] {
+  height: var(--height, auto);
+  width: var(--width, 100%);
+}

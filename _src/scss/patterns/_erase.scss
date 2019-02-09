@@ -1,0 +1,29 @@
+// Erase
+// =====
+
+[data-erase='on'] {
+  color: transparent;
+  text-shadow: none;
+
+  mark,
+  [href] {
+    color: var-color('text');
+  }
+}
+
+[data-erase] {
+  mark {
+    background: none;
+  }
+
+  [data-toggle='erase'] {
+    background: var-color('callout');
+    color: var-color('text');
+    display: inline-block;
+
+    #{$focus} {
+      background: var-color('action-hover');
+      color: var-color('background');
+    }
+  }
+}

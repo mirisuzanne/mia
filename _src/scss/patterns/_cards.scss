@@ -37,9 +37,13 @@
 
 [data-cards='grouper'] {
   @include font-family('code');
+  background: var-color('contrast')
+    linear-gradient(to top, var-color('action-hover'), transparent 80%);
+  color: var-color('background');
   font-size: size('xsmall');
   grid-area: grouper;
   padding: size('shim') 0;
+  text-shadow: none;
   writing-mode: vertical-rl;
 }
 

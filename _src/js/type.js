@@ -6,7 +6,7 @@ const mdown = require('markdown-it')({
   breaks: false,
   linkify: true,
   typographer: true,
-});
+}).use(require('markdown-it-mark'));
 
 const amp = s => {
   const r = '<span class="amp">&</span>';

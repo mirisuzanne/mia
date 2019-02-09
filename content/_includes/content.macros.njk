@@ -1,10 +1,33 @@
 {% import "utility.macros.njk" as utility %}
 
+{#
+  Intro
+  -----
+#}
+{% macro intro(
+  content=none
+) -%}
+{%- set content = content if (content != none) else caller() -%}
+<div class='intro'>{{ content | md | safe }}</div>
+{%- endmacro %}
+
+{#
+  Erase
+  -----
+#}
+{%- macro erase(
+  content
+) -%}<button data-toggle="erase">{{ content | mdInline | safe }}</button>{%- endmacro -%}
+
+{#
+  Figures
+  -------
+#}
 {% macro fig(
   data=none,
   caption=none
 ) -%}
-{%- set content = data_content(data) if data else caller() | mdInline -%}
+{%- set content = _fig_content(data) if data else caller() | mdInline -%}
 <figure data-pattern="figure">
 <div data-figure="content">
 {{ content | safe }}
@@ -17,8 +40,44 @@
 </figure>
 {%- endmacro %}
 
+{#
+  Ratios
+  ------
+#}
+{% macro ratio(
+  width=none,
+  height=none
+) -%}
+{%- if width and height -%}
+<div
+  class="ratio"
+  style="--ratio:{{ width / height }};">
+{{ caller() }}
+</div>
+{%- else -%}
+{{ caller() }}
+{%- endif -%}
+{%- endmacro %}
 
-{% macro data_content(
+{#
+  Placement
+  ---------
+#}
+{% macro place(
+  width,
+  height=none
+) -%}
+{%- set width = ['--width:', width, ';'] | join if width else '' -%}
+{%- set height = ['--height:', height, ';'] | join if height else '' -%}
+{%- set style = [width, height] | join if (width or height) else none -%}
+<div data-place {{ utility.attr_if('style', style) }}>{{ caller() }}</div>
+{%- endmacro %}
+
+{#
+  Private
+  -------
+#}
+{% macro _fig_content(
   data
 ) -%}
 {%- for item in data -%}
@@ -27,7 +86,7 @@
 {%- set style = ['--width:', item.width, ';'] | join if item.width else none -%}
 <img src="{{ src }}" alt="{{ item.alt }}" {{ utility.attr_if('style', style) }}/>
 {%- elif item.iframe -%}
-{%- call ratio(item) -%}
+{%- call ratio(item.width, item.height) -%}
 <iframe src="{{ item.iframe }}" {{ utility.attr_if('width', item.width) }} {{ utility.attr_if('height', item.height) }}
   frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 {%- endcall -%}
@@ -36,16 +95,3 @@
 {%- endmacro %}
 
 
-{% macro ratio(
-  item
-) -%}
-{%- if item.width and item.height -%}
-<div
-  class="ratio"
-  style="--ratio:{{ item.width / item.height }};">
-{{ caller() }}
-</div>
-{%- else -%}
-{{ caller() }}
-{%- endif -%}
-{%- endmacro %}
