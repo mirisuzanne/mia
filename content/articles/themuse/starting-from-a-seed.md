@@ -4,6 +4,20 @@ sub: Part 4 of [Fuck the Muse](/tags/fuck-the-muse/)
 venue: The Operating System
 url: http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-4-starting-from-a-seed/
 date: 2012-12-13
+specimen:
+  - img: muse/seed/specimen.jpg
+    alt: pinned insects
+circle:
+  - img: muse/seed/golden-circle.jpg
+    alt: |
+      *why* in the center circle, then *what*, and *how* in larger circles
+science:
+  - img: muse/seed/science.jpg
+    alt: one person sitting with a VR set, while another pokes at a camera
+herm:
+  - img: muse/seed/herm.jpg
+    alt: statue of hermaphroditus lifting her dress
+    width: auto
 ---
 {% import "content.macros.njk" as content %}
 
@@ -17,9 +31,10 @@ the "seed" of a project.
 
 ## A Range of Specimen
 
-{% call content.fig() %}
-<img src="{{ site.images }}seed/specimen.jpg" alt=""/>
-{% endcall %}
+{{ content.fig(
+  data=specimen,
+  caption='what do we have against these cute little insects?'
+) }}
 
 There are many ways to find,
 define, and refine your seed.
@@ -34,9 +49,10 @@ starting with a question and related hypothesis.
 2. Do *background research*
 3. Construct a *hypothesis*
 
-{% call content.fig(caption="Simon Sinek's 'golden circle'") %}
-<img src="{{ site.images }}seed/golden-circle.jpg" alt="'why' in the center circle, then 'what', and 'how' in larger circles"/>
-{% endcall %}
+{{ content.fig(
+  data=circle,
+  caption="Simon Sinek's *golden circle*"
+) }}
 
 [Simon Sinek][sinek] starts his projects with
 "why" then "how" and finally "what" -
@@ -57,10 +73,6 @@ These are all variations on finding a seed.
 It doesn't have to be a formal process,
 but it helps to know more-or-less what you need
 in order to move forward.
-
-{% call content.fig() %}
-<img src="{{ site.images }}seed/flies.jpg" alt=""/>
-{% endcall %}
 
 My seeds usually start with a single idea
 floating around in my mind
@@ -88,9 +100,10 @@ started with a quote I found on the internet:
 
 [hetero]: http://books.google.com/books?id=S8BB1K361SUC&lpg=PP1&pg=PA15#v=onepage&q&f=false
 
-{% call content.fig(caption='Out-of-body studies are super weird, yall') %}
-<img src="{{ site.images }}seed/science.jpg" alt="one person sitting with a VR set, while another pokes at a camera"/>
-{% endcall %}
+{{ content.fig(
+  data=science,
+  caption='Out-of-body studies are super weird, yall'
+) }}
 
 I combined that with an article
 describing the [science of out-of-body experience][body].
@@ -110,9 +123,10 @@ the other pieces fell into place.
 [wiki]: http://en.wikipedia.org/
 [tattered]: http://tatteredcover.com/
 
-{% call content.fig(caption='Hermaphroditus depicted as a herm (statue with carved genitals on un-carved block legs)') %}
-<img src="{{ site.images }}seed/herm.jpg" alt="statue of hermaphroditus lifting her dress" style="--width: auto"/>
-{% endcall %}
+{{ content.fig(
+  data=herm,
+  caption='a herm (named for Hermes) is a statue with carved genitals on un-carved block legs'
+) }}
 
 The fragmented & unreliable nature of memory inspired a *structure*:
 note cards, each written as a fragment of memory,

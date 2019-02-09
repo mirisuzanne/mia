@@ -5,9 +5,9 @@ venue: The Operating System
 url: https://medium.com/the-operating-system/coco-process-course-eric-meyers-fuck-the-muse-lesson-6-explosive-growth-b5e6652af1e1
 date: 2013-02-14
 hoarding:
-  - img: explosion/hoarding.jpg
+  - img: muse/explosion/hoarding.jpg
 cutup:
-  - img: explosion/cutup.jpg
+  - img: muse/explosion/cutup.jpg
 ---
 {% import "content.macros.njk" as content %}
 

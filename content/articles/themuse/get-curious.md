@@ -4,7 +4,17 @@ sub: Part 5 of [Fuck the Muse](/tags/fuck-the-muse/)
 venue: The Operating System
 url: https://medium.com/the-operating-system/coco-process-course-eric-meyers-fuck-the-muse-lesson-5-get-curious-pt-1-b30284155182
 date: 2013-02-07
+bull:
+  - img: muse/curious/bullshit.jpg
+    alt: the rear end of a steer
+posture:
+  - img: contour/final.png
+    alt: The Posture of Contour by James Belflower
+bodies:
+  - img: muse/curious/bodies.jpg
+    alt: Collage of labeled animal diagrams
 ---
+{% import "content.macros.njk" as content %}
 
 Now that you have [a seed worth exploring][seed],
 you are ready for step 2 of the creative process.
@@ -19,12 +29,10 @@ but I think you can do even better:
 *Write shitty piles of shit,
 and leave the drafting for later.*
 
-<figure>
-  <img src="/assets/images/curious/bullshit.jpg" alt=""/>
-  <figcaption>
-  I often refer to this as the fertilizer or "bullshit" stage.
-  </figcaption>
-</figure>
+{{ content.fig(
+  data=bull,
+  caption='I often refer to this as the fertilizer or *bullshit* stage.'
+) }}
 
 Drafting is an organizational problem.
 You can't organize ideas you don't have.
@@ -51,6 +59,11 @@ images, and aesthetics I am working with.
 I want to soak up inspirations,
 and understand my constraints.
 
+{{ content.fig(
+  data=posture,
+  caption='Final cover design for *The Posture of Contour*'
+) }}
+
 I start with three questions:
 
 1. What already exists?
@@ -63,17 +76,10 @@ Based on their answers, I ended up with these lists:
 
 [book]: /2013/01/22/contour/
 
-<figure>
- <img src="/assets/images/contour/final.png" alt=""/>
- <figcaption>
- Final cover design for <em>The Posture of Contour</em>.
- </figcaption>
-</figure>
-
 **What already exists?**
 
 - Dimensions: 5.5" x 8.5"
-- `SpringGun Press`_ wordmarks
+- [SpringGun Press][springgun] wordmarks
 - ISBN & bar code (on white background)
 - Title: The Posture of Contour
 - Subtitle: A Public Primer
@@ -91,7 +97,7 @@ Based on their answers, I ended up with these lists:
 - Processes of abstraction & representation
 - Mouths, hands, & black spots
 - Collage
-- Cover art for "`Network`_" by Jena Osman
+- Cover art for [*Network*][network] by Jena Osman
 - Richard Serra drawings
 - Franz Kline
 - Paul Sharits colors
@@ -103,19 +109,17 @@ That's not always the case,
 but if you have a seed,
 you have enough to get started.
 
-.. _SpringGun Press: http://www.springgunpress.com/
-.. _Network: http://www.fenceportal.org/?page_id=422
+[springgun]: http://www.springgunpress.com/
+[network]: http://www.fenceportal.org/?page_id=422
 
 ## Sparking Curiosity
 
-<figure>
-  <img src="/assets/images/curious/bodies.jpg" alt=""/>
-  <figcaption>
-  Bodies. A diagram.
-  </figcaption>
-</figure>
+{{ content.fig(
+  data=bodies,
+  caption='Bodies. A diagram.'
+) }}
 
-The `seed I developed in phase 1`_
+The [seed I developed in phase 1][seed]
 can be used directly to start a list of materials
 in phase 2. Unlike the cover art,
 this project has no pre-existing material that I am required to use.
@@ -150,8 +154,6 @@ but I do have plenty of inspiration to draw from:
 It's OK that this list isn't complete,
 it's enough to make me curious,
 and enough to point me in the right direction.
-
-.. _seed I developed in phase 1: /2012/12/13/starting-from-a-seed/
 
 ## Coming Soon
 

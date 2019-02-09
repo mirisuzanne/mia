@@ -13,8 +13,16 @@ divided:
     width: 521
     height: 293
 cycle:
-  - img: cycle-diagram.jpg
+  - img: muse/cycle-diagram.jpg
     alt: Is your approach working? Keep doing it, or try something else.
+elmo:
+  - iframe: https://www.youtube.com/embed/iZhEcRrMA-M
+    width: 520
+    height: 390
+different:
+  - iframe: https://www.youtube.com/embed/K2P86C-1x3o
+    width: 520
+    height: 390
 ---
 {% import "content.macros.njk" as content %}
 
@@ -116,13 +124,7 @@ can be overcome with a closed mind,
 and vice versa.
 
 {{ content.fig(
-  data=[
-    {
-      iframe: 'https://www.youtube.com/embed/iZhEcRrMA-M',
-      width: '520',
-      height: '390'
-    }
-  ],
+  data=elmo,
   caption='Let Elmo explain distance to you'
 ) }}
 
@@ -160,13 +162,7 @@ Getting new ideas into your head is part of the work.
 ## Stay Agile
 
 {{ content.fig(
-  data=[
-    {
-      iframe: 'https://www.youtube.com/embed/K2P86C-1x3o',
-      width: '520',
-      height: '390'
-    }
-  ],
+  data=different,
   caption='And now for a callback framed as a diversion'
 ) }}
 
