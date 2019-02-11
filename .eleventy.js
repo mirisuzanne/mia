@@ -21,6 +21,10 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('getDate', time.getDate);
   eleventyConfig.addFilter('sortTags', tags.sortTags);
   eleventyConfig.addFilter('groupTags', tags.groupTags);
+  eleventyConfig.addFilter('matchTags', tags.matchTags);
+  eleventyConfig.addFilter('inTopTagCount', count => {
+    return typeof count === 'number' && count <= tags.topCount;
+  });
   eleventyConfig.addFilter('getPage', pages.fromCollection);
   eleventyConfig.addFilter('seriesNav', pages.seriesNav);
   eleventyConfig.addFilter('getEvents', events.fromCollection);

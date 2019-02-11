@@ -46,6 +46,11 @@
   }
 }
 
+mark {
+  background: var-color('callout');
+  color: var-color('text');
+}
+
 [data-bright] {
   color: var-color('text-highlight');
 

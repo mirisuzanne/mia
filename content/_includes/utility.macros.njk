@@ -33,12 +33,14 @@
 {% endmacro %}
 
 {% macro tag_filters(
-  all_tags
+  collections,
+  sort=false
 ) %}
-  {% if all_tags %}
-    {% for tag, data in all_tags | sortTags(6) %}
-      {% if loop.index < 6 %}
-        {{ tag_link(tag) }}
+  {% if collections %}
+    {% set all_tags = collections | sortTags if sort else collections %}
+    {% for tag, data in all_tags %}
+      {% if loop.index | inTopTagCount %}
+        {{ tag_link(tag, loop.index) }}
       {% endif %}
     {% endfor %}
     ({{ link_if('more', '/tags/') }})

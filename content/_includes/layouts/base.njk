@@ -75,12 +75,16 @@
 					on: 'off',
 				};
 				const current = erase.getAttribute('data-erase');
-				erase.setAttribute('data-erase', states[current]);
+				const setTo = states[current];
+				erase.setAttribute('data-erase', setTo);
+				eraseBtn.setAttribute('data-active', setTo === 'on');
 			}
 
-			eraseBtn.addEventListener("click", () => {
-				toggleErase();
-			});
+			if (eraseBtn) {
+				eraseBtn.addEventListener("click", () => {
+					toggleErase();
+				});
+			}
 		</script>
 
 		<!-- Current page: {{ page.url | url }} -->

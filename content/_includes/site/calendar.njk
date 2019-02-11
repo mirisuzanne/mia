@@ -7,8 +7,8 @@
   {{ event_macros.section(
     collections.all | getEvents,
     title='filter by...',
-    more=utility.tag_filters(collections),
-    self=page.url
+    self=page.url,
+    top_tags=collections | sortTags
   ) }}
 {% elif get_calendar %}
   {% set pages = collections[get_calendar] %}

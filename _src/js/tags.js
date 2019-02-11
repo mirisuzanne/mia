@@ -1,13 +1,24 @@
 'use strict';
 
-const topTags = 6;
+const topCount = 6;
 const isPublic = tag => tag !== 'all' && !tag.startsWith('_');
 
-const sortTags = (collecions, count = topTags) => {
+const matchTags = (allTags, findTags) => {
+  const match = {};
+  findTags = findTags || [];
+
+  Object.keys(allTags).forEach((tag, i) => {
+    match[tag] = findTags.includes(tag);
+  });
+
+  return match;
+};
+
+const sortTags = (collecions, count = topCount) => {
   const sorted = {};
   const tags = Object.keys(collecions);
 
-  count = count && count > 0 ? count + 1 : tags.length + 1;
+  count = count || tags.length + 1;
 
   tags
     .filter(tag => isPublic(tag))
@@ -21,7 +32,7 @@ const sortTags = (collecions, count = topTags) => {
   return sorted;
 };
 
-const groupTags = (collecions, top = topTags) => {
+const groupTags = (collecions, top = topCount) => {
   const tags = sortTags(collecions);
   const grouped = {};
   const sorted = [];
@@ -53,7 +64,9 @@ const groupTags = (collecions, top = topTags) => {
 };
 
 module.exports = {
+  topCount,
   isPublic,
   sortTags,
   groupTags,
+  matchTags,
 };

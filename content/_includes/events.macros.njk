@@ -4,10 +4,11 @@
 {% macro section(
   events,
   title='calendar',
-  more=none,
-  self=none
+  self=none,
+  top_tags=none
 ) %}
   {% set years = events | groupby('group') | dictsort | reverse %}
+  {% set more = utility.tag_filters(top_tags) if top_tags else none %}
 
   {% call cards.section(title, more) %}
     {% set group_formats = {now: 'since'} %}
@@ -71,28 +72,28 @@
   {% set top = venue if (venue and not is_self) else none %}
   {% set main = venue if (venue and is_self) else title %}
 
-  {% set info = meta(
-    start=item.start,
-    date_format=date_format,
-    venue=top
-  ) %}
-
   {% call cards.item(feature) %}
-    {{ cards.meta(info) }}
+    {{ info(
+      start=item.start,
+      date_format=date_format,
+      venue=top
+    ) }}
     {{ cards.main(main) }}
   {% endcall %}
 {% endmacro %}
 
-{% macro meta(
+{% macro info(
   start,
   date_format='md',
   venue=none
 ) %}
-  <time datetime="{{ start | getDate('iso') }}">
-    {{ start | getDate(date_format) }}
-  </time>
-
-  {% if venue and not is_self %}
-    @ {{ venue }}
-  {% endif %}
+  {% set item %}
+    <time datetime="{{ start | getDate('iso') }}">
+      {{ start | getDate(date_format) }}
+    </time>
+    {% if venue and not is_self %}
+      @ {{ venue }}
+    {% endif %}
+  {% endset %}
+  {{ cards.meta(item) }}
 {% endmacro %}
