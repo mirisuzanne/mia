@@ -29,13 +29,13 @@
 ) -%}
 {%- set content = _fig_content(data) if data else caller() | mdInline -%}
 <figure data-pattern="figure">
-<div data-figure="content">
-{{ content | safe }}
-</div>
+<div data-figure="content">{#
+#}{{ content | safe }}{#
+#}</div>
 {%- if caption -%}
-<figcaption data-figure="caption">
-{{ caption | mdInline | safe }}
-</figcaption>
+<figcaption data-figure="caption">{#
+#}{{ caption | mdInline | safe }}{#
+#}</figcaption>
 {%- endif -%}
 </figure>
 {%- endmacro %}
@@ -52,9 +52,9 @@
 {%- if width and height -%}
 <div
   class="ratio"
-  style="--ratio:{{ width / height }};{{ span }}">
-{{ caller() }}
-</div>
+  style="--ratio:{{ width / height }};{{ span }}">{#
+#}{{ caller() }}{#
+#}</div>
 {%- else -%}
 {{ caller() }}
 {%- endif -%}
@@ -86,14 +86,12 @@
 {%- if item.img -%}
 {%- set src = item.img if ('://' in item.img) else ('/assets/images/' + item.img) -%}
 {%- set width = ['--width:', item.width, ';'] | join if item.width else '' -%}
-{%- set style = (width + span) if (width or span) else none -%}
-<img src="{{ src }}" alt="{{ item.alt }}" {{ utility.attr_if('style', style) }}/>
-{%- elif item.iframe -%}
-{%- call ratio(item.width, item.height, span) -%}
-<iframe src="{{ item.iframe }}" {{ utility.attr_if('width', item.width) }} {{ utility.attr_if('height', item.height) }}
-  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-{%- endcall -%}
-{%- endif -%}
+{%- set style = (width + span) if (width or span) else none -%}{#
+#}<img src="{{ src }}" alt="{{ item.alt }}" {{ utility.attr_if('style', style) }}/>{#
+#}{%- elif item.iframe -%}
+{%- call ratio(item.width, item.height, span) -%}{#
+#}<iframe src="{{ item.iframe }}" {{ utility.attr_if('width', item.width) }} {{ utility.attr_if('height', item.height) }} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{%- endcall -%}{#
+#}{%- endif -%}
 {%- endfor -%}
 {%- endmacro %}
 

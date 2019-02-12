@@ -1,6 +1,9 @@
 ---
 title: The Post-Obsolete Book
 banner: The Obsolete Book
+hero:
+  img: elo14/dancesex.jpg
+  caption: Say "ooooooooo" while you dance
 sub: |
   in a Post-Obsolete World,
   as Represented by a Post-Obsolete Book About Dance
@@ -20,6 +23,7 @@ events:
     url: http://conference.eliterature.org/archive/2014
     start: 2014-06-19
     video: https://youtu.be/yt37eIen7JU
+    press: http://www.huffingtonpost.com/illya-szilak/
   - venue: Brakhage Center Media Arts
     url: http://www.colorado.edu/brakhagecenter/2013/08/10/bc-luncheon-series-welcomes-eric-meyer-october-7th
     start: 2013-10-07
@@ -63,9 +67,28 @@ press:
     source: Boulder Writer’s Workshop
     url: http://www.boulderwritersworkshop.com/2013/04/17/post-obsolete-a-bww-salon/
     date: 2013-04-17
+media:
+  - iframe: https://www.youtube.com/embed/yt37eIen7JU
+    width: 800
+    height: 450
+    span: 1 / -1
+    credit:
+      name: Kathi Inman Berens
+      url: http://kathiiberens.com/
+  - iframe: https://player.vimeo.com/video/86628115?title=0&byline=0&portrait=0&color=ff0080
+  - img: elo14/dance.jpg
+summary: |
+  An archival rhizome ecology in ten parts,
+  and a reflection on the obsolescence of obsolescence --
+  documented on the cloud,
+  and open-sourced as a defense against post-post-obsolescence.
 ---
+{% import "content.macros.njk" as content %}
 
-A [performable website][post-obsolete]
+{{ content.intro(summary) }}
+
+The Post-Obsolete Book is
+a [performable website][post-obsolete]
 in the spirit (and tutelage)
 of [Michelle Ellsworth][michelle] --
 with text-to-speech voice-over,
@@ -88,6 +111,11 @@ Thank you Mr. Leech.
 [post-obsolete]: http://www.post-obsolete.com
 [michelle]: http://michelleellsworth.com/
 [bane]: http://www.myspace.com/widowsbane
+
+{{ content.fig(
+  data=media,
+  caption="Production video and photos"
+) }}
 
 The piece
 requires a few props:

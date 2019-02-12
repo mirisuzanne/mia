@@ -1,3 +1,4 @@
+date: 2014-07-26
 public: yes
 tags: ['art', 'music', 'teacup gorilla']
 summary: |

@@ -6,15 +6,18 @@ tags:
   - art
   - visual
   - portrait
+gallery:
+  - img: portraits/DanSondra-BW.png
+    alt: Black and white sketch
+  - img: portraits/DanSondra-Full.png
+    alt: Digitally colored version
 ---
 {% import "content.macros.njk" as content %}
 
-{% call content.fig(
+{{ content.fig(
+  data=gallery,
   caption="Dan Eisenstat & Sondra Eby, a sketchy couple"
-) %}
-<img src="{{ site.images }}portraits/DanSondra-BW.png" alt="">
-<img src="{{ site.images }}portraits/DanSondra-Full.png" alt="">
-{% endcall %}
+) }}
 
 I began this portrait in the same manner
 as the [Kitten Karlyle][kk] illustration,

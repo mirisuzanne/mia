@@ -6,10 +6,15 @@ tags:
   - art
   - visual
   - portrait
+gallery:
+  - img: portraits/Kitten-Icon.png
+    alt: Close-up face sketch
+  - img: portraits/Kitten-Full.png
+    alt: Nude bust sketch
 ---
 {% import "content.macros.njk" as content %}
 
-{% call content.fig() %}
-<img src="{{ site.images }}portraits/Kitten-Icon.png" alt="" />
-<img src="{{ site.images }}portraits/Kitten-Full.png" alt="" />
-{% endcall %}
+{{ content.fig(
+  data=gallery,
+  caption='My good friend, Kitten Karlyle'
+) }}

@@ -6,7 +6,7 @@ section:
   name: minifesto
   area: main-left
 erasure: true
-intro: |
+summary: |
   People are ==queer==.
   People are edge cases.
   We fall between meanings,
@@ -14,7 +14,7 @@ intro: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.intro(intro) }}
+{{ content.intro(summary) }}
 
 That, to me, is beautiful.
 All of us stumbling
