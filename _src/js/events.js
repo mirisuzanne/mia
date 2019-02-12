@@ -20,8 +20,12 @@ const buildEvent = (page, event = {}) => {
 
   // set group…
   let group = time.getDate(start, 'year');
-  if (end > time.now) {
-    group = start > time.now ? 'coming' : 'now';
+  const end_iso = time.getDate(end, 'iso');
+  const start_iso = time.getDate(start, 'iso');
+  const now_iso = time.getDate(time.now, 'iso');
+
+  if (end_iso >= now_iso) {
+    group = start_iso > now_iso ? 'coming' : 'now';
   }
 
   return { page, event, start, end, group };

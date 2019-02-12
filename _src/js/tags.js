@@ -33,7 +33,7 @@ const sortTags = (collecions, count = topCount) => {
 };
 
 const groupTags = (collecions, top = topCount) => {
-  const tags = sortTags(collecions);
+  const tags = sortTags(collecions, null);
   const grouped = {};
   const sorted = [];
 
