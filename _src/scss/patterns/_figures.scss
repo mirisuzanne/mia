@@ -28,7 +28,8 @@
   grid-gap: size('shim');
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
 
-  img {
+  [style] {
+    grid-column: var(--span, initial);
     width: var(--width, 100%);
   }
 }

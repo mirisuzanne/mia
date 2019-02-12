@@ -46,12 +46,13 @@
 #}
 {% macro ratio(
   width=none,
-  height=none
+  height=none,
+  span=none
 ) -%}
 {%- if width and height -%}
 <div
   class="ratio"
-  style="--ratio:{{ width / height }};">
+  style="--ratio:{{ width / height }};{{ span }}">
 {{ caller() }}
 </div>
 {%- else -%}
@@ -81,12 +82,14 @@
   data
 ) -%}
 {%- for item in data -%}
+{%- set span = ['--span:', item.span, ';'] | join if item.span else '' -%}
 {%- if item.img -%}
 {%- set src = item.img if ('://' in item.img) else ('/assets/images/' + item.img) -%}
-{%- set style = ['--width:', item.width, ';'] | join if item.width else none -%}
+{%- set width = ['--width:', item.width, ';'] | join if item.width else '' -%}
+{%- set style = (width + span) if (width or span) else none -%}
 <img src="{{ src }}" alt="{{ item.alt }}" {{ utility.attr_if('style', style) }}/>
 {%- elif item.iframe -%}
-{%- call ratio(item.width, item.height) -%}
+{%- call ratio(item.width, item.height, span) -%}
 <iframe src="{{ item.iframe }}" {{ utility.attr_if('width', item.width) }} {{ utility.attr_if('height', item.height) }}
   frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 {%- endcall -%}
