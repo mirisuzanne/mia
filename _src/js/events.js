@@ -59,8 +59,17 @@ const fromCollection = collection => {
       }
     });
 
-  events.sort((a, b) => a.start - b.start);
-  return utils.groupBy(events, 'group');
+  const groups = utils.groupBy(events, 'group');
+  const sorted = [];
+
+  Object.keys(groups)
+    .sort((a, b) => a - b)
+    .forEach(group => {
+      const data = groups[group].sort((a, b) => a.start - b.start);
+      sorted.push({ group, data });
+    });
+
+  return sorted.reverse();
 };
 
 module.exports = {

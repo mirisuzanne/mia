@@ -11,9 +11,9 @@
 
   {% call cards.section(title, more) %}
     {% set group_formats = {now: 'since'} %}
-    {% for year, segment in events | dictsort | reverse %}
-      {% set date_format = group_formats[year] or 'md' %}
-      {{ group(year, segment, date_format, self) }}
+    {% for segment in events %}
+      {% set date_format = group_formats[segment.group] or 'md' %}
+      {{ group(segment.group, segment.data, date_format, self) }}
     {% endfor %}
   {% endcall %}
 {% endmacro %}
