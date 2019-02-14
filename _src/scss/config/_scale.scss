@@ -111,7 +111,7 @@ $page-sizes: (
     ),
   'calendar': '#page'
     (
-      'divide': 3,
+      'divide': 2.5,
     ),
 );
 @include add-sizes($page-sizes);

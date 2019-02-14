@@ -8,7 +8,7 @@
 [data-layout='cards'] {
   display: grid;
   font-size: size('small');
-  grid-gap: size('3q-shim');
+  grid-gap: size('half-shim');
   grid-template-columns: var-grid('cards');
   list-style: none;
   padding: 0 size('shim') 0 size('half-shim');

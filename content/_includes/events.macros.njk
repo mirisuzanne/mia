@@ -7,12 +7,11 @@
   self=none,
   top_tags=none
 ) %}
-  {% set years = events | groupby('group') | dictsort | reverse %}
   {% set more = utility.tag_filters(top_tags) if top_tags else none %}
 
   {% call cards.section(title, more) %}
     {% set group_formats = {now: 'since'} %}
-    {% for year, segment in years %}
+    {% for year, segment in events | dictsort | reverse %}
       {% set date_format = group_formats[year] or 'md' %}
       {{ group(year, segment, date_format, self) }}
     {% endfor %}

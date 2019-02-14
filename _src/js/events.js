@@ -2,6 +2,7 @@
 
 const pages = require('./pages');
 const time = require('./time');
+const utils = require('./utils');
 
 const isPublic = event => event.draft !== true;
 
@@ -10,7 +11,7 @@ const isEvent = page =>
   page.data.tags ? page.data.tags.includes('_calendar') : false;
 
 const buildEvent = (page, event = {}) => {
-  const start = event.start || page.data.start || page.date;
+  const start = event.start || event.date || page.data.start || page.date;
 
   // set end explicit or start or far future…
   let end = event.end || page.data.end;
@@ -58,7 +59,8 @@ const fromCollection = collection => {
       }
     });
 
-  return events.sort((a, b) => a.start - b.start);
+  events.sort((a, b) => a.start - b.start);
+  return utils.groupBy(events, 'group');
 };
 
 module.exports = {
