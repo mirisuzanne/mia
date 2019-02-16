@@ -11,10 +11,11 @@ const isEvent = page =>
   page.data.tags ? page.data.tags.includes('_calendar') : false;
 
 const buildEvent = (page, event = {}) => {
-  const start = event.start || event.date || page.data.start || page.date;
+  const eventStart = event.start || event.date;
+  const start = eventStart || page.data.start || page.date;
 
   // set end explicit or start or far future…
-  let end = event.end || page.data.end;
+  let end = eventStart ? event.end : page.data.end;
   if (!end) {
     end = end === null ? new Date('3000-01-01') : start;
   }
