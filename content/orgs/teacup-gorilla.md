@@ -9,18 +9,17 @@ end: null
 calendar: music
 tags:
   - _calendar
-  - organizations
-  - founder
+  - _organizations
   - music
   - art
 events:
-  - venue: FACEMAN's 100 Year Storm
+  - title: FACEMAN's 100 Year Storm
     url: http://www.theorientaltheater.com/event/260005/facemans-100-year-storm-
     date: 2016-11-18
-  - venue: Underground Music Showcase
+  - title: Underground Music Showcase
     url: http://theums.com/
     date: 2016-07-25
-  - venue: Underground Music Showcase
+  - title: Underground Music Showcase
     url: http://theums.com/
     date: 2015-07-25
 quotes:

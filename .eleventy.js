@@ -1,5 +1,6 @@
 const hljs = require('@11ty/eleventy-plugin-syntaxhighlight');
 
+const utils = require('./_src/js/utils');
 const events = require('./_src/js/events');
 const pages = require('./_src/js/pages');
 const tags = require('./_src/js/tags');
@@ -18,7 +19,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('tags', 'layouts/tags.njk');
 
   // filters
+  eleventyConfig.addFilter('typeCheck', utils.typeCheck);
   eleventyConfig.addFilter('getDate', time.getDate);
+  eleventyConfig.addFilter('publicTags', tags.publicTags);
   eleventyConfig.addFilter('sortTags', tags.sortTags);
   eleventyConfig.addFilter('groupTags', tags.groupTags);
   eleventyConfig.addFilter('matchTags', tags.matchTags);

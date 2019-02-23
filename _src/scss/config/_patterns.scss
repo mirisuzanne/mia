@@ -44,3 +44,17 @@ $patterns: (
   }
   /* stylelint-enable */
 }
+
+@mixin divider {
+  @include font-family('amp');
+  color: var-color('text-highlight');
+  font-style: italic;
+  margin: size('spacer') 0;
+  text-align: center;
+
+  @include before('~ & & & ~') {
+    @include fancy-text {
+      background: pattern('bright');
+    }
+  }
+}

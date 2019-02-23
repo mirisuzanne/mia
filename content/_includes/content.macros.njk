@@ -62,7 +62,7 @@
   height=none,
   span=none
 ) -%}
-{%- if width and height -%}
+{%- if width | typeCheck('number') and height | typeCheck('number') -%}
 <div
   class="ratio"
   style="--ratio:{{ width / height }};{{ span }}">{#

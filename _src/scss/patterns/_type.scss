@@ -39,10 +39,22 @@
     @include font-family('code');
     font-style: italic;
     margin: size('gutter');
+
+    em,
+    i {
+      font-style: normal;
+    }
   }
 
   > :first-child {
     margin-top: 0;
+  }
+}
+
+hr {
+  &[data-divider],
+  [data-typeset] & {
+    @include divider;
   }
 }
 

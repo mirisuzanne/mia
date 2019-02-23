@@ -23,14 +23,23 @@
 {% macro tag_link(
   tag,
   class=none
-) %}
-  {% set url %}/tags/{{ tag | slug }}/{% endset %}
+) -%}
+  {%- set url -%}/tags/{{ tag | slug }}/{%- endset -%}
   {{ link_if(
     tag | string,
     url | string,
     class
   ) }}
-{% endmacro %}
+{%- endmacro %}
+
+{% macro tag_list(
+  tags,
+  separator=', '
+) -%}
+{%- for tag in tags | publicTags -%}
+  {{ tag_link(tag) }}{%-if not loop.last %}{{ separator }}{% endif -%}
+{%- endfor -%}
+{%- endmacro -%}
 
 {% macro tag_filters(
   collections,

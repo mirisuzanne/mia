@@ -10,10 +10,6 @@ hero:
 tags:
   - _calendar
   - inspiration
-  - art
-  - visual
-  - writing
-  - digital humanities
 ---
 
 In case you are ever bored,

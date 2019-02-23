@@ -3,6 +3,7 @@ title: PROPHETIA VETITUM MUNDI
 venue: Screw Tooth & Buntport Theater
 start: 2014-8-8
 end: 2014-8-9
+feature: true
 hero:
   img: prophetia/installation.jpg
   caption: The full sci-fi art installation at Buntport Theater

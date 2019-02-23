@@ -14,6 +14,9 @@
     {% for segment in events %}
       {% set date_format = group_formats[segment.group] or 'md' %}
       {{ group(segment.group, segment.data, date_format, self) }}
+      {% if (segment.group == 'coming') and not loop.last %}
+        <hr data-divider>
+      {% endif %}
     {% endfor %}
   {% endcall %}
 {% endmacro %}
@@ -68,14 +71,15 @@
   {% set url = none if is_self else item.page.url %}
   {% set title = utility.link_if(title_name, url) %}
 
-  {% set top = venue if (venue and not is_self) else none %}
-  {% set main = venue if (venue and is_self) else title %}
+  {% set top = ['@ ', venue] | join if (venue and not is_self) else none %}
+  {% set main = ['@ ', venue] | join if (venue and is_self) else title %}
 
   {% call cards.item(feature) %}
     {{ info(
       start=item.start,
       date_format=date_format,
-      venue=top
+      venue=top,
+      tags=item.page.data.tags | publicTags
     ) }}
     {{ cards.main(main) }}
   {% endcall %}
@@ -84,14 +88,17 @@
 {% macro info(
   start,
   date_format='md',
-  venue=none
+  venue=none,
+  tags=none
 ) %}
   {% set item %}
     <time datetime="{{ start | getDate('iso') }}">
       {{ start | getDate(date_format) }}
     </time>
-    {% if venue and not is_self %}
-      @ {{ venue }}
+    {% if venue %}
+      {{ venue | safe }}
+    {% elif tags %}
+      » {{ utility.tag_list(tags, '/') }}
     {% endif %}
   {% endset %}
   {{ cards.meta(item) }}

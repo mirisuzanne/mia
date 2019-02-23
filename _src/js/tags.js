@@ -2,6 +2,7 @@
 
 const topCount = 6;
 const isPublic = tag => tag !== 'all' && !tag.startsWith('_');
+const publicTags = tags => tags.filter(tag => isPublic(tag));
 
 const matchTags = (allTags, findTags) => {
   const match = {};
@@ -66,6 +67,7 @@ const groupTags = (collecions, top = topCount) => {
 module.exports = {
   topCount,
   isPublic,
+  publicTags,
   sortTags,
   groupTags,
   matchTags,

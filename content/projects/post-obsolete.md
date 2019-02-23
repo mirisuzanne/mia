@@ -15,9 +15,8 @@ tags:
   - writing
   - art
   - theater
-  - code
   - published
-  - digital humanities
+  - elit
 events:
   - venue: ELO Conference
     url: http://conference.eliterature.org/archive/2014

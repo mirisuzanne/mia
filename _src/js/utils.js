@@ -11,6 +11,12 @@ const groupBy = (objectArray, property) => {
   }, {});
 };
 
+const typeCheck = (val, is) => {
+  const type = typeof val;
+  return is ? type === is : type;
+};
+
 module.exports = {
   groupBy,
+  typeCheck,
 };

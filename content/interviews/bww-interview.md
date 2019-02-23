@@ -1,7 +1,9 @@
 ---
 title: Collaboration & Queer Art
 banner: Collaboration, Queer Art, and a Multi-Media Novel
-sub: an interview with Boulder Writers' Workshop
+sub: |
+  an interview with
+  [Boulder Writers' Workshop](http://boulderwritersworkshop.com/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel/)
 venue: Boulder Writers’ Workshop
 url: http://boulderwritersworkshop.com/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel/
 date: 2012-10-01

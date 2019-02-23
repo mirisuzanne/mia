@@ -4,8 +4,7 @@ start: 2009-08-14
 end: null
 tags:
   - _calendar
-  - organizations
-  - founder
+  - _organizations
   - theater
   - art
   - writing

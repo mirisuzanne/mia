@@ -3,6 +3,7 @@ title: Cover Art for The Posture of Contour
 venue: SpringGun Press
 url: http://www.springgunpress.com/posture/
 date: 2013-01-22
+feature: true
 tags:
   - _calendar
   - book design
