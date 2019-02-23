@@ -69,7 +69,7 @@
 
   {% set title_name = item.event.title or item.page.data.title %}
   {% set url = none if is_self else item.page.url %}
-  {% set title = utility.link_if(title_name, url) %}
+  {% set title = utility.link_if(title_name | mdInline, url) %}
 
   {% set top = ['@ ', venue] | join if (venue and not is_self) else none %}
   {% set main = ['@ ', venue] | join if (venue and is_self) else title %}

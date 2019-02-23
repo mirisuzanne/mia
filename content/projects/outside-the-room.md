@@ -1,20 +1,19 @@
 ---
 title: Outside The Room
-hero:
-  img: art/theater/outsidetheroom.jpg
 sub: |
   Grapefruit Lab adapts Kafka
   for a series of DCPA "Bite Size" productions
+venue: Denver Center for the Performing Arts
+url: https://www.denvercenter.org/tickets-events/bite-size/
+date: 2018-10-23
+end: 2018-11-18
+hero:
+  img: art/theater/outsidetheroom.jpg
 tags:
   - art
   - theater
   - grapefruit lab
 calendar: theater
-events:
-  - venue: Denver Center for the Performing Arts
-    url: https://www.denvercenter.org/tickets-events/bite-size/
-    start: 2018-10-23
-    end: 2018-11-18
 video:
   - iframe: https://www.youtube.com/embed/aBBnSi5MJ8o
     width: 560

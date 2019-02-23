@@ -104,6 +104,8 @@
 #}{%- elif item.iframe -%}
 {%- call ratio(item.width, item.height, span) -%}{#
 #}<iframe src="{{ item.iframe }}" {{ utility.attr_if('width', item.width) }} {{ utility.attr_if('height', item.height) }} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{%- endcall -%}{#
+#}{%- elif item.audio -%}{#
+#}<audio src="{{ item.audio }}" style="--width: 100%;" controls>{#
 #}{%- endif -%}
 {%- endfor -%}
 {%- endmacro %}

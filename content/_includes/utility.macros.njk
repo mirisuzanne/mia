@@ -116,7 +116,7 @@
         data-area="main"
         data-content>
         {{ is }}:
-        {{ link_if(to.data.title, to.url) }}
+        {{ link_if(to.data.title | mdInline, to.url) }}
       </div>
     </div>
   {% endif %}

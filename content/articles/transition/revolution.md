@@ -4,6 +4,7 @@ sub: An Apology to the Revolution
 date: 2018-08-01
 venue: Journal of Mennonite Writing
 url: https://mennonitewriting.org/journal/10/3/rejecting-maleness-apology-revolution/#all
+feature: true
 summary: |
   The **Journal of Mennonite Writing**
   asked me to submit
