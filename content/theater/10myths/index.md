@@ -1,8 +1,10 @@
 ---
+feature: true
 title: 10 Myths on the Proper Application of Beauty Projects
 sub: |
   Award-winning stage adaptation of
   [Riding SideSaddle*](http://ridingsidesaddle.com)
+  weaving myth with everyday ritual
 hero:
   img: art/theater/10myths.jpg
 venue: Buntport Theater
@@ -13,7 +15,10 @@ tags:
   - _calendar
   - theater
   - art
+  - writing
   - riding sidesaddle
+  - teacup gorilla
+  - music
   - buntport
 press:
   - text: |
@@ -87,6 +92,13 @@ gallery:
     span:  full
   - img: /art/theater/10myths/herman-sam-narrator.jpg
   - img: /art/theater/10myths/jenny-herman.jpg
+award:
+  caption: |
+    DCPA
+    [True West Award](https://www.denvercenter.org/news-center/2016-true-west-award-miriam-suzanne/),
+    2016
+  fig:
+    - img: writing/sidesaddle/true-west-award.jpg
 actions:
   - name: read the script
     url: scripts/10myths/
@@ -104,7 +116,13 @@ summary: |
 
 {{ content.intro(summary) }}
 
+[Read the script »][script]
+
+[script]: script/
+
 ------
+
+{{ content.fig(award.fig, award.caption) }}
 
 {{ content.quotes(press) }}
 

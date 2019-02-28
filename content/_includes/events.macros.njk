@@ -62,6 +62,7 @@
 ) %}
   {% set feature = item.event.feature or item.page.data.feature %}
   {% set is_self = true if (item.page.url == self) else false %}
+  {% set no_title = true if (is_self and item.page.data.events) else false %}
 
   {% set venue_name = item.event.venue or item.page.data.venue %}
   {% set venue_url = item.event.url or item.page.data.url %}
@@ -71,8 +72,8 @@
   {% set url = none if is_self else item.page.url %}
   {% set title = utility.link_if(title_name | mdInline, url) %}
 
-  {% set top = ['@ ', venue] | join if (venue and not is_self) else none %}
-  {% set main = ['@ ', venue] | join if (venue and is_self) else title %}
+  {% set top = ['@ ', venue] | join if (venue and not no_title) else none %}
+  {% set main = ['@ ', venue] | join if (venue and no_title) else title %}
 
   {% call cards.item(feature) %}
     {{ info(

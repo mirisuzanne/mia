@@ -1,31 +1,23 @@
-public: true
-is: script
-image:
-  - src: 'art/theater/10myths.jpg'
-brag: |
-  This play weaves myth and storytelling with every day rituals
-summary: |
-  An adaptation of Riding SideSaddle*,
-  by Buntport Theater, Teacup Gorilla, and myself.
-
-
-Script: 10 Myths on the Proper Application of Beauty Products
-=============================================================
-
-**Cast:**
-
-- Narrator
-- Herman
-- Sam
-- Jenny
-- Jolene
-- Edward
-- The Band…
-
-------
-
-.. image:: /static/pictures/art/theater/10myths/teacup.jpg
-  :class: extend-small
+---
+title: 10 Myths... [script]
+banner: 10 Myths on the Proper Application of Beauty Products [script]
+sub: |
+  Award-winning stage adaptation of
+  [Riding SideSaddle*](http://ridingsidesaddle.com),
+  weaving myth with everyday ritual
+date: 2016-03-26
+tags:
+  - _calendar
+  - theater
+  - art
+  - writing
+  - riding sidesaddle
+  - buntport
+  - teacup gorilla
+  - script
+hero:
+  img: art/theater/10myths.jpg
+---
 
 *[Lights up. A bathroom surrounded by emptiness. Sam is in the bathroom --
 alive and alone. There's a band in the bathtub.
@@ -33,6 +25,8 @@ Everyone else in the emptiness, doing their thing.
 Jenny and Jolene are dancing together, Herman doing his nails,
 Edward cleaning, the Narrator watching.
 Time can pass slowly outside the bathroom]*
+
+![](/assets/images/art/theater/10myths/teacup.jpg)
 
 **Sam:**
 Make-up tutorial number 37:
@@ -123,7 +117,7 @@ There. See. All gone.
 
 ------
 
-.. image:: /static/pictures/art/theater/10myths/jenny-film.jpg
+![](/assets/images/art/theater/10myths/jenny-film.jpg)
 
 *[Sam is dead in her chair.
 Someone takes a tape out of a box, puts it in the VCR and presses play.
@@ -472,8 +466,7 @@ turning it off and going to do their own thing. Time changes]*
 
 ------
 
-.. image:: /static/pictures/art/theater/10myths/dressing.jpg
-  :class: extend-small
+![](/assets/images/art/theater/10myths/dressing.jpg)
 
 *[Sam stands up --
 alive and alone again --
@@ -804,8 +797,7 @@ I'd like to take a bath! How is anyone supposed to deal with this?
 
 ------
 
-.. image:: /static/pictures/art/theater/10myths/herman-sam-narrator.jpg
-  :class: extend-small
+![](/assets/images/art/theater/10myths/herman-sam-narrator.jpg)
 
 *[Herman merges into Sam. Everyone else continues what they were doing.
 Jenny and Jolene enter and groom in the mirror]*
@@ -1444,8 +1436,7 @@ But goddamnit, that still looks like me.
 
 ------
 
-.. image:: /static/pictures/art/theater/10myths/jenny-herman.jpg
-  :class: extend-small
+![](/assets/images/art/theater/10myths/jenny-herman.jpg)
 
 *[Sam separates from Herman and sits down, dead in her chair.
 Everyone goes to watch TV and eat. Herman stays, looking in the mirror]*
@@ -1519,7 +1510,7 @@ I mucus you. I scab you.
 
 ------
 
-.. image:: /static/pictures/art/theater/10myths/narrator-edward.jpg
+![](/assets/images/art/theater/10myths/narrator-edward.jpg)
 
 *[Narrator enters. Sam is still dead]*
 
@@ -1585,8 +1576,7 @@ I don't know… fuck it if it's that kind of day.
 
 ------
 
-.. image:: /static/pictures/art/theater/10myths/jenny-others.jpg
-  :class: extend-small
+![](/assets/images/art/theater/10myths/jenny-others.jpg)
 
 *[Sam is alone. People do what they do. Edward enters]*
 
@@ -1991,8 +1981,7 @@ All gone.
 
 ------
 
-.. image:: /static/pictures/art/theater/10myths/herman-sam.jpg
-  :class: extend-small
+![](/assets/images/art/theater/10myths/herman-sam.jpg)
 
 *[Sam merges into Herman. They enter the bathroom quickly, as one]*
 
@@ -2137,8 +2126,7 @@ Good. We should get back out there. *[holding up her arm]* Last check.
 
 ------
 
-.. image:: /static/pictures/art/theater/10myths/herman-sam-others.jpg
-  :class: extend-small
+![](/assets/images/art/theater/10myths/herman-sam-others.jpg)
 
 *[Herman/Sam are merged. Everyone does their own thing. Jenny enters.
 She is being a bit cagey and secretive, checking the door.

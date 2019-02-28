@@ -1,4 +1,8 @@
 {
   "layout": "base",
-  "calendar": "theater"
+  "calendar": "theater",
+  "tags": [
+    "theater",
+    "art"
+  ]
 }

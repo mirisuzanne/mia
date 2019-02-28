@@ -1,5 +1,6 @@
 {
   "layout": "base",
   "permalink": "/{{ page.date | getDate('url') }}/{{ page.fileSlug }}/index.html",
-  "calendar": "article"
+  "calendar": "_article",
+  "series": "_article"
 }
