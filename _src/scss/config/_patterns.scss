@@ -9,7 +9,8 @@
 /// @type map
 /// @see border
 $borders: (
-  'section': size('section-border') solid var-color('border'),
+  'section': size('border') solid var-color('border'),
+  'quote': size('border') solid var-color('border'),
 );
 
 // Shadows

@@ -10,7 +10,7 @@ gallery:
     url: http://hellolandlines.com/
   - img: ums/14-27/landlines.jpg
     url: http://hellolandlines.com/
-    span: 1 / -1
+    span: full
   - img: ums/14-27/porlolo.jpg
     url: http://porlolo.wordpress.com/
   - img: ums/14-27/porlolo2.jpg
@@ -19,7 +19,7 @@ gallery:
   - img: ums/14-27/dansondra.jpg
   - img: ums/14-27/kittycrimes.jpg
     url: http://www.soundcloud.com/kittycrimes
-    span: 1 / -1
+    span: full
   - img: ums/14-27/kitty.jpg
     url: http://www.soundcloud.com/kittycrimes
   - img: ums/14-27/emeraldsiam.jpg
@@ -29,7 +29,7 @@ gallery:
   - img: ums/14-27/robinkim.jpg
   - img: ums/14-27/goragora.jpg
     url: http://goragora.org/
-    span: 1 / -1
+    span: full
   - img: ums/14-27/gora.jpg
   - img: ums/14-27/blondredhead.jpg
     url: http://blonde-redhead.com/

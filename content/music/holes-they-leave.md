@@ -9,8 +9,10 @@ hero:
 calendar: music
 tags:
   - _calendar
-  - music
   - art
+  - music
+  - audio
+  - shop
 quotes:
   - text: |
       [The Holes They Leave][holes] occupies a middle place

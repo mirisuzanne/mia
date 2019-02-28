@@ -14,12 +14,12 @@ gallery:
     url: http://www.iancookemusic.com/
   - img: ums/14-25/dave-devine.jpg
     url: http://davedevine.com/relay
-    span: 1 / -1
+    span: full
   - img: ums/14-25/us.jpg
   - img: ums/14-25/planning.jpg
   - img: ums/14-25/dragondeer.jpg
     url: http://dragondeer.com/
-    span: 1 / -1
+    span: full
   - img: ums/14-25/mako.jpg
     url: http://mako1972.weebly.com/
   - img: ums/14-25/saturn.jpg
@@ -29,7 +29,7 @@ gallery:
     url: http://accordion-crimes.blogspot.com/
   - img: ums/14-25/truth.jpg
     url: http://thetruthandspectacle.com/
-    span: 1 / -1
+    span: full
 ---
 {% import "content.macros.njk" as content %}
 

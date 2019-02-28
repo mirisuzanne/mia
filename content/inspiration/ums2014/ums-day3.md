@@ -14,20 +14,20 @@ gallery:
     url: http://echobeds.tumblr.com/
   - img: ums/14-26/abandin-pictures.jpg
     url: http://abandinpictures.com/
-    span: 1 / -1
+    span: full
   - img: ums/14-26/abandin-2.jpg
     url: http://abandinpictures.com/
   - img: ums/14-26/natalie-tate.jpg
     url: http://natalietatemusic.com/
   - img: ums/14-26/shady-elders.jpg
     url: http://www.holyunderground.com/artists/shadyelders/
-    span: 1 / -1
+    span: full
   - img: ums/14-26/ross.jpg
   - img: ums/14-26/casey-james.jpg
     url: http://caseyjamesprestwood.com/
   - img: ums/14-26/jen-korte.jpg
     url: http://www.jkandtheloss.com/
-    span: 1 / -1
+    span: full
   - img: ums/14-26/tvgirl.jpg
     url: http://tvgirl.bandcamp.com/
   - img: ums/14-26/raven-writing.jpg

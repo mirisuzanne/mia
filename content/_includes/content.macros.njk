@@ -16,12 +16,40 @@
   -----
 #}
 {% macro quote(
-  quote
+  data
 ) -%}
-> {{ quote.text }}
+> {{ data.text | trim }}
 >
-> ---{{ quote.credit }}, [{{ quote.source }}]({{ quote.url }})
+> ---{{ cite(data) }}
 {%- endmacro %}
+
+
+{% macro cite(
+  data
+) -%}
+{%- if data.credit and data.source and data.url -%}
+{{ data.credit }}, [{{ data.source }}]({{ data.url }})
+{%- elif data.credit and data.source -%}
+{{ data.credit }}, {{ data.source }}
+{%- elif data.credit and data.url -%}
+[{{ data.credit }}]({{ data.url }})
+{%- elif data.source and data.url -%}
+[{{ data.credit }}]({{ data.url }})
+{%- else -%}
+{{ data.credit or data.source or data.url }}
+{%- endif -%}
+{%- endmacro %}
+
+
+{% macro quotes(
+  data
+) %}
+{% for item in data %}
+{% if item.text %}
+{{ quote(item) }}
+{% endif %}
+{% endfor %}
+{% endmacro %}
 
 
 {#

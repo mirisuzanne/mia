@@ -2,25 +2,12 @@
 // ===========
 
 [data-content~='hero'] {
-  display: grid;
-  grid-template: 'image caption' min-content / minmax(0, 1fr) auto;
   padding: 0;
 }
 
-.hero-image {
-  grid-area: image;
-}
-
 .hero-caption {
-  grid-area: caption;
-  padding: size('half-shim');
-  writing-mode: vertical-rl;
-
-  p {
-    @include font-family('code');
-    background: var-color('background');
-    display: inline;
-    font-size: size('small');
-    font-style: italic;
-  }
+  @include font-family('code');
+  font-size: size('xsmall');
+  font-style: italic;
+  padding: size('quarter-shim') size('quarter-shim') size('half-shim');
 }

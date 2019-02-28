@@ -70,7 +70,7 @@ media:
   - iframe: https://www.youtube.com/embed/yt37eIen7JU
     width: 800
     height: 450
-    span: 1 / -1
+    span: full
     credit:
       name: Kathi Inman Berens
       url: http://kathiiberens.com/

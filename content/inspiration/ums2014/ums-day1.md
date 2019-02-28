@@ -13,7 +13,7 @@ gallery:
   - img: ums/14-24/pan-astral.jpg
     alt: Pan Astral
     url: http://www.panastral.com/
-    span: 1 / -1
+    span: full
 ---
 {% import "content.macros.njk" as content %}
 

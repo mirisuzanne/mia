@@ -37,12 +37,18 @@
 
   blockquote {
     @include font-family('code');
+    border-left: border('quote');
     font-style: italic;
-    margin: size('gutter');
+    margin: size('gutter') 0 size('gutter') negative('border');
+    padding: size('shim');
 
     em,
     i {
       font-style: normal;
+    }
+
+    :last-child {
+      margin-bottom: 0;
     }
   }
 

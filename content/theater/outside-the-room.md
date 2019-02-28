@@ -10,10 +10,10 @@ end: 2018-11-18
 hero:
   img: art/theater/outsidetheroom.jpg
 tags:
+  - _calendar
   - art
   - theater
   - grapefruit lab
-calendar: theater
 video:
   - iframe: https://www.youtube.com/embed/aBBnSi5MJ8o
     width: 560

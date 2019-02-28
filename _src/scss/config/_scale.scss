@@ -24,13 +24,13 @@ $modular-scale: (
 /// @group config-scale
 $text-sizes: (
   'root': 18px,
-  'responsive': calc(16px + 0.5vw),
+  'responsive': 'calc(16px + 0.5vw)',
   'large-root': 1rem
     (
       'text-ratio': 1,
     ),
-  'large': calc(1rem + 0.5vw),
-  'xlarge': calc(#large-root + 4.5vw),
+  'large': 'calc(1rem + 0.5vw)',
+  'xlarge': 'calc(#large-root + 4.5vw)',
   'small': 1rem
     (
       'text-ratio': -0.5,
@@ -62,7 +62,7 @@ $spacing-sizes: (
     (
       'times': 2,
     ),
-  'spacer': calc(#double-gutter + 6vmin),
+  'spacer': 'calc(#double-gutter + 6vmin)',
   'shim': '#gutter'
     (
       'times': 0.5,
@@ -89,7 +89,7 @@ $spacing-sizes: (
 /// @group config-scale
 $component-sizes: (
   'icon': 1em,
-  'section-border': '#half-shim',
+  'border': '#half-shim',
   'grid-margin': size('shim'),
 );
 @include add-sizes($component-sizes);

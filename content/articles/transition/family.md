@@ -1,18 +1,18 @@
-public: yes
-tags: ['transition', 'writing']
-series: 'transition'
-tagline: 'Choosing Vulnerability, Choosing Each Other'
-image:
-  - src: '2018/pose.jpg'
-    caption: |
-      House mother Blanca
-      (`Mj Rodriguez <https://www.imdb.com/name/nm5049751/?ref_=tt_ov_st_sm>`_)
-      comforting her chosen daughter Angel
-      (`Indya Moore <https://www.imdb.com/name/nm8360867/>`_)
-      in an episode of Pose.
+---
+title: Chosen Family (Thank You)
+sub: Choosing vulnerability, choosing each other
+date: 2018-07-19
+hero:
+  img: 2018/pose.jpg
+  caption: |
+    House mother Blanca
+    ([Mj Rodriguez](https://www.imdb.com/name/nm5049751/?ref_=tt_ov_st_sm))
+    comforting her chosen daughter Angel
+    ([Indya Moore](https://www.imdb.com/name/nm8360867/))
+    in an episode of Pose.
 summary: |
   Yesterday,
-  I shared an `article about my impending surgery`_,
+  I shared an [article about my impending surgery][surgery],
   and a request for help --
   both social and financial --
   as I go through this.
@@ -22,12 +22,11 @@ summary: |
   I can't thank you enough,
   but I'll keep trying.
 
-  .. _article about my impending surgery: /2018/07/17/surgery
+  [surgery]: /2018/07/17/surgery
+---
+{% import "content.macros.njk" as content %}
 
-
-*************************
-Chosen Family (Thank You)
-*************************
+{{ content.intro(summary) }}
 
 Wow, you all are so wonderful and generous.
 Thank you so much.
@@ -53,7 +52,7 @@ I want to talk about you,
 ------
 
 
-I've been watching `Pose`_ on FX,
+I've been watching [Pose][pose] on FX,
 and thinking about the power of finding your chosen people --
 rebuilding family out of trauma, on our own terms.
 I think about the years that "family" felt distant for me,
@@ -61,7 +60,7 @@ even dangerous.
 I put up every wall I had,
 and moved to Denver.
 
-.. _Pose: https://www.nytimes.com/2018/06/01/arts/television/pose-review-fx-ryan-murphy.html
+[pose]: https://www.nytimes.com/2018/06/01/arts/television/pose-review-fx-ryan-murphy.html
 
 I still don't know how we got here from there.
 My favorite part of transition has been
@@ -95,28 +94,19 @@ The card I’ve always want to lean into,
 and build my life around
 (though I fail regularly):
 
-  When I die they will say she kissed us all she could.
-  What more could we ask?
-  And I will say,
-  through a video I recorded this morning,
-  I’m sorry that I didn’t kiss you more.
+> When I die they will say she kissed us all she could.
+> What more could we ask?
+> And I will say,
+> through a video I recorded this morning,
+> I’m sorry that I didn’t kiss you more.
+>
+> ---[Riding SideSaddle*][sidesaddle] (a novel about chosen family)
 
-  ---`Riding SideSaddle*`_ (a novel about chosen family)
+[sidesaddle]: /writing/ridingsidesaddle/
 
-*Much love and gratitude*, |br|
+*Much love and gratitude*, \
 ❤️ Mia
-
-.. _`Riding SideSaddle*`: /writing/ridingsidesaddle/
-.. |br| raw:: html
-
-  <br />
-
 
 ------
 
-
-|gofundme|
-
-.. |gofundme| raw:: html
-
-  <iframe class='gfm-media-widget' image='1' coinfo='1' width='100%' height='100%' frameborder='0' id='mias-medical-upgrade'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
+<iframe class='gfm-media-widget' image='1' coinfo='1' width='100%' height='100%' frameborder='0' id='mias-medical-upgrade'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
