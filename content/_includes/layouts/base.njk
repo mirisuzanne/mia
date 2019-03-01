@@ -1,9 +1,11 @@
 {%- import 'utility.macros.njk' as utility -%}
-{%- set meta_title = renderData.title or title -%}
-{%- set full_title = banner or meta_title -%}
-
 <!doctype html>
 <html lang="en" data-theme="light">
+	{%- set meta_title = renderData.title or title -%}
+	{%- set desc = sub or summary or content or none -%}
+	{%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') if desc else desc -%}
+	{%- set meta_desc = description or desc or site.description -%}
+	{%- set full_title = banner or meta_title -%}
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport"
@@ -11,7 +13,7 @@
 
     <title>{{ [meta_title, site.title] | join(' | ') }}</title>
     <meta name="description"
-      content="{{ site.description or description }}" />
+      content="{{ meta_desc }}" />
 
 		<script src="https://use.typekit.net/slx1xnq.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>

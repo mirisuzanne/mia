@@ -50,7 +50,7 @@ quotes:
     credit: Tim Wenger
     source: Colorado Music Buzz
     url: http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/
-intro: |
+summary: |
   Teacup Gorilla inhabits the venues of Denver, CO
   with dark indie-rock soundscapes and evocative poetry --
   often compared to early Modest Mouse,
@@ -59,7 +59,7 @@ intro: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.intro(intro) }}
+{{ content.intro(summary) }}
 
 {{ content.quote(quotes[0]) }}
 

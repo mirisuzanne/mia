@@ -5,6 +5,17 @@
   "author": "{{ pkg.author.name }}",
   "email": "{{ pkg.author.email }}",
   "images": "/assets/images/",
+  "nav": {
+    "art&code": "/",
+    "bio": "/who/",
+    "contact": "/contact/",
+    "shop": "http://art.miriamsuzanne.com/"
+  },
+  "og": {
+    "locale": "en_US",
+    "type": "website",
+    "img": "writing/sidesaddle/neck.jpg"
+  },
   "feed": {
     "subtitle": "{{ pkg.description }}",
     "filename": "feed.xml",
@@ -15,11 +26,5 @@
   "styles": [
     "screen.css",
     "prism.css"
-  ],
-  "nav": {
-    "art&code": "/",
-    "bio": "/who/",
-    "contact": "/contact/",
-    "shop": "http://art.miriamsuzanne.com/"
-  }
+  ]
 }
