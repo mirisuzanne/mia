@@ -64,6 +64,10 @@ const groupTags = (collecions, top = topCount) => {
   return sorted;
 };
 
+const displayName = tag => {
+  return tag.startsWith('_') ? tag.slice(1) : tag;
+};
+
 module.exports = {
   topCount,
   isPublic,
@@ -71,4 +75,5 @@ module.exports = {
   sortTags,
   groupTags,
   matchTags,
+  displayName,
 };

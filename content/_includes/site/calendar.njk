@@ -13,8 +13,8 @@
 {% elif get_calendar %}
   {% set pages = collections[get_calendar] %}
   {% set title %}
-    all of
-    {{ utility.tag_link(get_calendar) }}…
+    more in
+    '{{ utility.tag_link(get_calendar) }}'…
   {% endset %}
 
   {% if pages %}

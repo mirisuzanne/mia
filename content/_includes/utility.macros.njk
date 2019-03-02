@@ -26,7 +26,7 @@
 ) -%}
   {%- set url -%}/tags/{{ tag | slug }}/{%- endset -%}
   {{ link_if(
-    tag | string,
+    tag | displayName,
     url | string,
     class
   ) }}

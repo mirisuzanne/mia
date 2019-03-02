@@ -25,6 +25,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('sortTags', tags.sortTags);
   eleventyConfig.addFilter('groupTags', tags.groupTags);
   eleventyConfig.addFilter('matchTags', tags.matchTags);
+  eleventyConfig.addFilter('displayName', tags.displayName);
   eleventyConfig.addFilter('inTopTagCount', count => {
     return typeof count === 'number' && count <= tags.topCount;
   });
