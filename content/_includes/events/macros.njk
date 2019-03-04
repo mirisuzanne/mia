@@ -1,0 +1,106 @@
+{% import "utility.macros.njk" as utility %}
+{% import "cards.macros.njk" as cards %}
+
+{% macro section(
+  title,
+  events,
+  all,
+  self
+) %}
+  {% call cards.section(title) %}
+    {% for segment in events %}
+      {{ group(
+        title=segment.group,
+        events=segment.data,
+        all=all,
+        self=self
+      ) }}
+    {% endfor %}
+  {% endcall %}
+{% endmacro %}
+
+{% macro group(
+  title,
+  events,
+  all,
+  self
+) %}
+  {% set is_future = (title == 'coming') %}
+
+  {% call cards.group(title) %}
+    {{ list(
+      events=events,
+      reverse=not is_future,
+      all=all,
+      self=self
+    ) }}
+  {% endcall %}
+
+  {% if is_future and not loop.last %}
+    <hr data-divider>
+  {% endif %}
+{% endmacro %}
+
+{% macro list(
+  events,
+  reverse,
+  all,
+  self
+) %}
+  {% call cards.list(reverse) %}
+    {% set events = events | reverse if reverse else events %}
+    {% for item in events %}
+      {{ event(
+        item=item,
+        all=all,
+        self=self
+      ) }}
+    {% endfor %}
+  {% endcall %}
+{% endmacro %}
+
+{% macro event(
+  item,
+  all,
+  self
+) %}
+  {% set feature = item.event.feature or item.page.data.feature %}
+  {% set tags = item.page.data.tags | publicTags %}
+  {% set date_format = 'since' if (item.group == 'coming') else 'md' %}
+  {% set is_self = (item.page.url == self) %}
+  {% set no_title = (is_self and item.page.data.events) %}
+
+  {# Venue Link #}
+  {%- set venue_name = item.event.venue or item.page.data.venue -%}
+  {%- set venue_url = item.event.url or item.page.data.url -%}
+  {%- set venue = utility.link_if(venue_name, venue_url) if venue_name else none -%}
+  {%- set venue = ['@', venue] | join(' ') if venue else none -%}
+
+  {# Title Link #}
+  {%- set title_name = item.event.title or item.page.data.title -%}
+  {%- set not_me = ('inspiration' in tags) -%}
+  {%- set url = none if is_self else item.page.url -%}
+  {%- set title = utility.link_if(title_name | mdInline, url) -%}
+  {%- set title = ['See Also:', title] | join(' ') if not_me else title -%}
+
+  {# Info #}
+  {% set info %}
+    <time datetime="{{ item.start | getDate('iso') }}">
+      {{ item.start | getDate(date_format) }}
+    </time>
+    {% if (venue and not no_title) %}
+      {{ venue | safe }}
+    {% elif tags %}
+      » {{ utility.tag_list(tags, all, '/') }}
+    {% endif %}
+  {% endset %}
+
+  {# Main #}
+  {% set main = venue if (venue and no_title) else title %}
+
+  {# Output #}
+  {% call cards.item(feature) %}
+    {{ cards.meta(info) }}
+    {{ cards.main(main) }}
+  {% endcall %}
+{% endmacro %}

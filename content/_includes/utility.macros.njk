@@ -22,39 +22,24 @@
 {# Tags #}
 {% macro tag_link(
   tag,
-  class=none
+  all
 ) -%}
-  {%- set url -%}/tags/{{ tag | slug }}/{%- endset -%}
   {{ link_if(
     tag | displayName,
-    url | string,
+    tag | tagLink(all),
     class
   ) }}
 {%- endmacro %}
 
 {% macro tag_list(
   tags,
+  all,
   separator=', '
 ) -%}
 {%- for tag in tags | publicTags -%}
-  {{ tag_link(tag) }}{%-if not loop.last %}{{ separator }}{% endif -%}
+  {{ tag_link(tag, all) }}{%-if not loop.last %}{{ separator }}{% endif -%}
 {%- endfor -%}
 {%- endmacro -%}
-
-{% macro tag_filters(
-  collections,
-  sort=false
-) %}
-  {% if collections %}
-    {% set all_tags = collections | sortTags if sort else collections %}
-    {% for tag, data in all_tags %}
-      {% if loop.index | inTopTagCount %}
-        {{ tag_link(tag, loop.index) }}
-      {% endif %}
-    {% endfor %}
-    ({{ link_if('more', '/tags/') }})
-  {% endif %}
-{% endmacro %}
 
 {# Attributes #}
 {% macro attr_if(

@@ -5,10 +5,11 @@ const time = require('./time');
 const utils = require('./utils');
 
 const isPublic = event => event.draft !== true;
-
 const hasEvents = page => page.data.events;
-const isEvent = page =>
-  page.data.tags ? page.data.tags.includes('_calendar') : false;
+
+const isEvent = page => {
+  return page.data.tags ? page.data.tags.includes('_calendar') : false;
+};
 
 const buildEvent = (page, event = {}) => {
   const eventStart = event.start || event.date;

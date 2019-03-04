@@ -1,5 +1,5 @@
 ---
-title: Oddities and Curious Lands
+title: Oddities & Curious Lands
 sub: the art of Jason Nelson
 venue: Secret Technology
 url: http://www.secrettechnology.com/

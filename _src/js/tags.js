@@ -1,8 +1,10 @@
 'use strict';
 
+const utils = require('./utils');
+
 const topCount = 6;
 const isPublic = tag => tag !== 'all' && !tag.startsWith('_');
-const publicTags = tags => tags.filter(tag => isPublic(tag));
+const publicTags = tags => (tags ? tags.filter(tag => isPublic(tag)) : tags);
 
 const matchTags = (allTags, findTags) => {
   const match = {};
@@ -68,6 +70,12 @@ const displayName = tag => {
   return tag.startsWith('_') ? tag.slice(1) : tag;
 };
 
+const tagLink = (tag, collection) => {
+  const index = collection.filter(page => page.data.index === tag);
+  const slug = utils.slugify(tag);
+  return index[0] ? index[0].url : `/tags/${slug}/`;
+};
+
 module.exports = {
   topCount,
   isPublic,
@@ -76,4 +84,5 @@ module.exports = {
   groupTags,
   matchTags,
   displayName,
+  tagLink,
 };

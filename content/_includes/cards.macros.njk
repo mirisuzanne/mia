@@ -2,7 +2,6 @@
 
 {% macro section(
   title,
-  more=none,
   content=none
 ) %}
   {% set content = content if (content != none) else caller() %}
@@ -10,7 +9,7 @@
   <section
     data-area="full"
     data-flow="grid">
-    {{ utility.section_title(title, more) }}
+    {{ title | safe }}
 
     <div
       data-area="full"

@@ -8,8 +8,7 @@ tags:
   - theater
   - art
   - writing
-  - grapefruit lab
-calendar: theater
+index: grapefruit lab
 ---
 
 > Grapefruit is a hybrid of lemon and orange.

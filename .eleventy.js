@@ -20,12 +20,14 @@ module.exports = eleventyConfig => {
 
   // filters
   eleventyConfig.addFilter('typeCheck', utils.typeCheck);
+  eleventyConfig.addFilter('objectKeys', utils.objectKeys);
   eleventyConfig.addFilter('getDate', time.getDate);
   eleventyConfig.addFilter('publicTags', tags.publicTags);
   eleventyConfig.addFilter('sortTags', tags.sortTags);
   eleventyConfig.addFilter('groupTags', tags.groupTags);
   eleventyConfig.addFilter('matchTags', tags.matchTags);
   eleventyConfig.addFilter('displayName', tags.displayName);
+  eleventyConfig.addFilter('tagLink', tags.tagLink);
   eleventyConfig.addFilter('inTopTagCount', count => {
     return typeof count === 'number' && count <= tags.topCount;
   });

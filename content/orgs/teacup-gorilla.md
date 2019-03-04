@@ -6,14 +6,12 @@ hero:
 url: https://teacupgorilla.com/
 start: 2010-03-04
 end: null
-calendar: music
-tag_index: teacup gorilla
+index: teacup gorilla
 tags:
   - _calendar
   - _organizations
   - music
   - art
-  - teacup gorilla
 events:
   - title: FACEMAN's 100 Year Storm
     url: http://www.theorientaltheater.com/event/260005/facemans-100-year-storm-

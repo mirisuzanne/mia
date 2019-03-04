@@ -2,47 +2,60 @@
 {% import "cards.macros.njk" as cards %}
 
 {% macro section(
-  tags,
-  title='all yer tags:'
+  tags
 ) %}
+  {% set title = utility.section_title('all yer tags:') %}
   {% call cards.section(title) %}
     {% for segment in tags | groupTags(6) %}
-      {{ group(segment.count, segment.tags) }}
+      {{ group(
+        title=segment.count,
+        segment=segment.tags,
+        all=tags.all
+      ) }}
     {% endfor %}
   {% endcall %}
 {% endmacro %}
 
 {% macro group(
   title,
-  segment
+  segment,
+  all
 ) %}
   {% if segment | length %}
     {% call cards.group(title) %}
-      {{ list(segment) }}
+      {{ list(
+        tags=segment,
+        all=all
+      ) }}
     {% endcall %}
   {% endif %}
 {% endmacro %}
 
 {% macro list(
-  tags
+  tags,
+  all
 ) %}
   {% if tags | length %}
     {% call cards.list(reverse) %}
       {% for tag in tags %}
-        {{ show_tag(tag) }}
+        {{ show_tag(
+          tag=tag,
+          all=all
+        ) }}
       {% endfor %}
     {% endcall %}
   {% endif %}
 {% endmacro %}
 
 {% macro show_tag(
-  tag
+  tag,
+  all
 ) %}
   {% set feature = false %}
 
   {% call cards.item(feature) %}
     {{ cards.meta(tag_meta(tag.data)) }}
-    {{ cards.main(utility.tag_link(tag.tag)) }}
+    {{ cards.main(utility.tag_link(tag.tag, all)) }}
   {% endcall %}
 {% endmacro %}
 
