@@ -2673,18 +2673,8 @@ The lights go out]*
 
 ------
 
-**The End**
-
-.. callmacro:: content/macros.j2#btn
-  :url: '/art/theater/10myths/'
-
-  About the production
-
-------
-
 This work is licensed under a Creative Commons
-`Attribution-NonCommercial-ShareAlike 4.0 International
-License <http://creativecommons.org/licenses/by-nc-sa/4.0/>`_.
+*Attribution-NonCommercial-ShareAlike 4.0 International License*.
 You are free to:
 
 - **Share:**
@@ -2706,5 +2696,5 @@ Under the following conditions:
   under the same license as the original.
 
 Any of the above conditions can be waived with my permission.
-See the `full license <http://creativecommons.org/licenses/by-nc-sa/4.0/>`_
+See the [full license](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 for legal details.

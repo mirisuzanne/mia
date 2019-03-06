@@ -1,41 +1,22 @@
-public: true
-is: script
-image:
-  - src: 'art/theater/jane.jpg'
-brag: |
-  We are merely telling the [queer] story.
-summary: |
-  A queer adaptation of the classic novel,
-  created by Grapefruit Lab,
-  Teacup Gorilla, and myself.
+---
+title: JANE/EYRE [script]
+sub: A [queer adaptation](../) of the classic novel
+date: 2018-03-03
+hero:
+  img: /art/theater/jane/DSC_0362.jpg
+tags:
+  - _calendar
+  - theater
+  - art
+  - writing
+  - music
+  - grapefruit lab
+  - teacup gorilla
+---
 
+## Gateshead Hall
 
-Script: JANE/EYRE
-=================
-
-**Cast:**
-
-- *Currer Bell* (Charlotte Brontë)
-
-  - *Mr Brocklehurst* / *Mr Mason* / *Woman* (shadows & vocal effects)
-  - *St John Rivers* (live)
-
-- *Narrator* (Jane as author)
-- *Jane* (in-the-moment)
-- *Mrs Reed* / *Helen* / *Mr Rochester* / *Diana*
-- *The Band…*
-
-------
-
-.. contents:: **Acts & Scenes:**
-
-------
-
-Gateshead Hall
---------------
-
-Preface
-~~~~~~~
+### Preface
 
 *[Charlotte/Bell appears in silence.
 She turns on some lights and fiddles in the space.
@@ -131,8 +112,7 @@ Excuse me. Music?
 
 ------
 
-Patriarchy & Oppression
-~~~~~~~~~~~~~~~~~~~~~~~
+### Patriarchy & Oppression
 
 *[Music: Jane’s theme.
 Transparency: “Gateshead Hall: Oppression & Shame…”
@@ -152,20 +132,20 @@ and drawing the red moreen curtain nearly close.
 
 *[Transparency: Images of birds…]*
 
-| **Song:** *Bird Book (Jane's Theme)*…
-|
-| Where the Northern Ocean - a tempest in exile
-| Boils round the naked, murky, melancholy isles
-| Of farthest Thule; along the Atlantic sea
-| Pours in among the stormy, shattered shells of Hebrides.
-|
-| The vast sweep of the Arctic Zone
-| And there, in regions vast forlorn
-| Of dreary space, that reservoir
-| That lonesome reservoir of frost and snow,
-| where forms and fields of glaciers grow
-| They glaze in Alpine heights, they go
-| They swallow back the sea
+> **Song:** *Bird Book (Jane's Theme)*…
+>
+> Where the Northern Ocean - a tempest in exile \
+> Boils round the naked, murky, melancholy isles \
+> Of farthest Thule; along the Atlantic sea \
+> Pours in among the stormy, shattered shells of Hebrides.
+>
+> The vast sweep of the Arctic Zone \
+> And there, in regions vast forlorn \
+> Of dreary space, that reservoir \
+> That lonesome reservoir of frost and snow, \
+> where forms and fields of glaciers grow \
+> They glaze in Alpine heights, they go \
+> They swallow back the sea
 
 *[Transparency: “Gateshead Hall: Oppression & Shame…”]*
 
@@ -219,8 +199,7 @@ In fact, we’re already in the middle of Chapter 2.
 
 ------
 
-\*The Red Room
-~~~~~~~~~~~~~~
+### *The Red Room
 
 *[Jane is hidden somewhere out of site,
 and we only see her on camera. Music: Haunting sounds.
@@ -253,22 +232,21 @@ Of Mr. Reed’s ghost I am.
 *[Bell uses her hand and the camera flash to create ghostly effects.
 Jane begins to panic. Jane faints. Silence, and then…]*
 
-| **Song:** *Orphan Child (Gateshead Theme)*…
-|
-| My feet they are sore, and my limbs they are weary;
-| Long is the way, and the mountains are wild;
-| Soon will the twilight close moonless and dreary
-| Over the path of the poor orphan child.
-|
-| Why did they send me so far and so lonely,
-| Up where the moors spread and grey rocks are piled?
-| Men are hard-hearted, and kind angels only
-| Watch o’er the steps of a poor orphan child.
+> **Song:** *Orphan Child (Gateshead Theme)*…
+>
+> My feet they are sore, and my limbs they are weary; \
+> Long is the way, and the mountains are wild; \
+> Soon will the twilight close moonless and dreary \
+> Over the path of the poor orphan child.
+>
+> Why did they send me so far and so lonely, \
+> Up where the moors spread and grey rocks are piled? \
+> Men are hard-hearted, and kind angels only \
+> Watch o’er the steps of a poor orphan child.
 
 ------
 
-Shame is Passed On
-~~~~~~~~~~~~~~~~~~
+### Shame is Passed On
 
 *[Music: Frost flowers.
 Transparency: “Gateshead Hall: Shame is Passed On…”]*
@@ -364,11 +342,9 @@ Even for me, life has its gleams of sunshine.
 
 ------
 
-Lowood Institution
-------------------
+## Lowood Institution
 
-Shame is Not Passed On
-~~~~~~~~~~~~~~~~~~~~~~
+### Shame is Not Passed On
 
 *[Music: A blaring alarm, then Lowood theme in full force.
 Transparency: “Lowood School.”
@@ -472,8 +448,7 @@ and respectful as any that ever animated my heart.
 
 ------
 
-Typhoid, Intimacy, and Death
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Typhoid, Intimacy, and Death
 
 *[Music: Lowood reprise. Then Helen’s theme, in a minor key.
 Transparency: “Lowood School: Typhoid, Intimacy, and Death…”]*
@@ -570,8 +545,7 @@ We’re mourning Helen now, not your sister.
 
 ------
 
-A New Servitude
-~~~~~~~~~~~~~~~
+### A New Servitude
 
 *[Music: Jane’s Theme…]*
 
@@ -641,11 +615,9 @@ at Thornfield hall, near Millcote.
 
 ------
 
-Thornfield Hall
----------------
+## Thornfield Hall
 
-\*Friendly, but Haunted
-~~~~~~~~~~~~~~~~~~~~~~~
+### *Friendly, but Haunted
 
 *[Music: Thornfield theme…]*
 
@@ -704,8 +676,7 @@ perhaps Grace Poole: she sews in one of these rooms.
 
 ------
 
-Par Parenthèse
-~~~~~~~~~~~~~~
+### Par Parenthèse
 
 *[Music: Jane’s theme. Transparency: “Par Parenthèse…”]*
 
@@ -762,8 +733,7 @@ Well said, Jane! I wrote that.
 
 ------
 
-Rochester Needs Help
-~~~~~~~~~~~~~~~~~~~~
+### Rochester Needs Help
 
 **Narrator:**
 One afternoon in January,
@@ -773,23 +743,23 @@ The distance, two miles, would be a pleasant winter afternoon walk.
 
 *[Transparency: Flowers, leaves, and berries…]*
 
-| **Song:** *Walking in Winter*…
-|
-| The ground was hard, the air was still
-| My road, it climbed a solitary hill
-| I walked on stone - about a mile from Thornfield
-| I heard the clang of a distant storm peal
-| …
+> **Song:** *Walking in Winter*…
+>
+> The ground was hard, the air was still \
+> My road, it climbed a solitary hill \
+> I walked on stone - about a mile from Thornfield \
+> I heard the clang of a distant storm peal \
+> …
 
 **Narrator:**
 *[mid-song]* I lingered till the sun went down amongst the trees,
 and sank crimson and clear behind them.
 
-| …
-| And where in summer you’d spy a rose
-| And watch the sparrows come and go
-| And then, as though sent as a plague
-| Autumn came and the leaves were slain
+> … \
+> And where in summer you’d spy a rose \
+> And watch the sparrows come and go \
+> And then, as though sent as a plague \
+> Autumn came and the leaves were slain
 
 *[The song is interrupted by a rude noise:
 a metallic slide, and a clattering tumble…]*
@@ -858,8 +828,7 @@ Thank you; now make haste.
 
 ------
 
-A Peculiar Mind
-~~~~~~~~~~~~~~~
+### A Peculiar Mind
 
 *[Music: Thornfield theme.
 Transparency: “Thornfield Hall: Hit Me With Your Best Shot…”]*
@@ -912,25 +881,25 @@ and first, I must premise that they are nothing wonderful.
 
 *[Transparency: abstract watercolors, manipulated live…]*
 
-| **Song:** *Peculiar Paintings*…
-|
-| Clouds low and livid, rolling over a swollen sea:
-| as brilliant as my pencil could impart.
-| A drowned corpse glances through the green water;
-| one fair arm the only limb visible,
-| whence the bracelet has been washed or torn.
-|
-| The pinnacle of an iceberg pierces a polar sky:
-| a muster of northern lights rear their dim lances.
-| Throwing these into distance, a colossal head,
-| inclined towards the iceberg, and resting against it.
-|
-| Two thin hands, joined under the forehead,
-| draw up a sable veil.
-| A brow quite bloodless, white as bone,
-| an eye hollow and fixed,
-| blank of meaning but for the glassiness of despair
-| (and low, that eye, it  just seemed to stare)
+> **Song:** *Peculiar Paintings*…
+>
+> Clouds low and livid, rolling over a swollen sea: \
+> as brilliant as my pencil could impart. \
+> A drowned corpse glances through the green water; \
+> one fair arm the only limb visible, \
+> whence the bracelet has been washed or torn.
+>
+> The pinnacle of an iceberg pierces a polar sky: \
+> a muster of northern lights rear their dim lances. \
+> Throwing these into distance, a colossal head, \
+> inclined towards the iceberg, and resting against it.
+>
+> Two thin hands, joined under the forehead, \
+> draw up a sable veil. \
+> A brow quite bloodless, white as bone, \
+> an eye hollow and fixed, \
+> blank of meaning but for the glassiness of despair \
+> (and low, that eye, it just seemed to stare)
 
 **Rochester:**
 The drawings are, for a school-girl, peculiar, elfish.
@@ -1033,8 +1002,7 @@ was balanced by unjust severity to many others.
 
 ------
 
-\*Fire Attack
-~~~~~~~~~~~~~
+### *Fire Attack
 
 *[The projector is turned off.
 Jane is about to extinguish her candle,
@@ -1096,8 +1064,7 @@ Just so. Grace Poole--you have guessed it.
 
 ------
 
-Jealousy
-~~~~~~~~
+### Jealousy
 
 *[Music: Jane’s theme. Transparency: “Thornfield Hall: Fire Away…”]*
 
@@ -1167,8 +1134,7 @@ on this indigent and insignificant plebeian?
 
 ------
 
-Charades
-~~~~~~~~
+### Charades
 
 **Narrator:**
 It had been a mild, serene spring day,
@@ -1187,20 +1153,20 @@ both to my picture and Mrs. Fairfax’s description.
 
 *[Transparency: Song lyrics, for audience sing-along…]*
 
-| **Song:** *Hit Me With Your Best Shot (Pat Benatar)…*
-|
-| Well you're a real tough cookie with a long history
-| Of breaking little hearts like the one in me
-| That's okay, let's see how you do it
-| Put up you dukes, let's get down to it
-|
-| *[Chorus x2…]:*
-|
-| Hit me with your best shot
-| Why don’t you hit me with your best shot
-| Hit me with your best shot
-| Fire away!
-| …
+> **Song:** *Hit Me With Your Best Shot (Pat Benatar)…*
+>
+> Well you're a real tough cookie with a long history \
+> Of breaking little hearts like the one in me \
+> That's okay, let's see how you do it \
+> Put up you dukes, let's get down to it
+>
+> *[Chorus x2…]:*
+>
+> Hit me with your best shot \
+> Why don’t you hit me with your best shot \
+> Hit me with your best shot \
+> Fire away! \
+> …
 
 **Narrator:**
 Coffee was handed, and there was life everywhere; movement all day long.
@@ -1228,11 +1194,11 @@ _Bell and Rochester act out a marriage, with lots of flirting.
 The band guesses, and eventually gets it right: bride!
 Everyone sings another chorus of the song._
 
-| …
-| Hit me with your best shot
-| Why don’t you hit me with your best shot
-| Hit me with your best shot
-| Fire away!
+> … \
+> Hit me with your best shot \
+> Why don’t you hit me with your best shot \
+> Hit me with your best shot \
+> Fire away!
 
 **Bell:**
 Mr Rochester is called away to Millcote again on business.
@@ -1256,8 +1222,7 @@ who scorned to touch me with the hem of her robes.
 
 ------
 
-\*Fortune Teller & Biting Attack
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### *Fortune Teller & Biting Attack
 
 *[Transparency: “Thornfield Hall: Fortune Teller & Biting Attack…”]*
 
@@ -1308,32 +1273,32 @@ some day, in a little house rented by myself.
 **Jane:**
 I don’t care about it, mother; you may please yourself.
 
-| **Song:** *Fortune Teller…*
-|
-| The flame it flickers in the eye;
-| the eye it shines like dew;
-| it looks so soft and full of feeling;
-| And it’s looking right at you
-|
-| The mouth delights in fits of laughter;
-| mad thoughts I conceive;
-| Mobile as a thorny fox
-| And silent as the sea
-|
-| I am no enemy to fortune, at least that’s what I say
-| ‘I can live alone, if self-respect should make me live that way
-| Earthquake shock and screaming bellows startle up the fire
-| That smolders in my belly like some scorched desire
-|
-| There’s treasure born within me,
-| which might keep me alive
-| When all delights are kept beyond me
-| I’m crooked as a scythe
-|
-| My passions rage with fury,
-| heathens that they are;
-| The dark desires I imagine
-| Twinkle like the stars
+> **Song:** *Fortune Teller…*
+>
+> The flame it flickers in the eye; \
+> the eye it shines like dew; \
+> it looks so soft and full of feeling; \
+> And it’s looking right at you
+>
+> The mouth delights in fits of laughter; \
+> mad thoughts I conceive; \
+> Mobile as a thorny fox \
+> And silent as the sea
+>
+> I am no enemy to fortune, at least that’s what I say \
+> ‘I can live alone, if self-respect should make me live that way \
+> Earthquake shock and screaming bellows startle up the fire \
+> That smolders in my belly like some scorched desire
+>
+> There’s treasure born within me, \
+> which might keep me alive \
+> When all delights are kept beyond me \
+> I’m crooked as a scythe
+>
+> My passions rage with fury, \
+> heathens that they are; \
+> The dark desires I imagine \
+> Twinkle like the stars
 
 **Rochester:**
 Well, Jane, do you know me?
@@ -1399,11 +1364,9 @@ Let her be taken care of; let her be treated as tenderly as may be.
 
 ------
 
-Gateshead Hall
---------------
+## Gateshead Hall
 
-Forgiveness & Death
-~~~~~~~~~~~~~~~~~~~
+### Forgiveness & Death
 
 *[Music: Gateshead theme. Transparency:
 “Gateshead Hall: Forgiveness & Death…”]*
@@ -1475,11 +1438,9 @@ Mrs. Reed dies, if that’s important.
 
 ------
 
-Thornfield Hall
----------------
+## Thornfield Hall
 
-Tricky Proposal
-~~~~~~~~~~~~~~~
+### Tricky Proposal
 
 **Narrator:**
 Mr. Rochester had given me but one week’s leave of absence:
@@ -1603,28 +1564,28 @@ a machine without feelings --
 and can bear to have my bread snatched from my lips,
 and my drop of living water dashed from my cup?
 
-| **Song:** *Jane’s Feelings…*
-|
-| Do you think I’ll stay to be nothing to you?
-| Do you think I'm an automaton?
-| and can bear to have my bread snatched from my lips,
-| and suffer all indignation
-| …
+> **Song:** *Jane’s Feelings…*
+>
+> Do you think I’ll stay to be nothing to you? \
+> Do you think I'm an automaton? \
+> and can bear to have my bread snatched from my lips, \
+> and suffer all indignation \
+> …
 
 **Jane:**
 *[mid-song]* Do you think, because I am poor,
 obscure, plain, and little, I am soulless and heartless?
 
-| …
-| You think I’m poor; I have no heart
-| You think I’m plain; I’ve got no soul
-| You think I’m small, obscure and strange
-| A captive loose, a fraction whole
-|
-| I am not speaking now with my tongue.
-| I am not speaking now with my flesh
-| my spirit calls out to your ghost
-| Equal as we are, and nothing less
+> …
+> You think I’m poor; I have no heart \
+> You think I’m plain; I’ve got no soul \
+> You think I’m small, obscure and strange \
+> A captive loose, a fraction whole
+>
+> I am not speaking now with my tongue. \
+> I am not speaking now with my flesh \
+> my spirit calls out to your ghost \
+> Equal as we are, and nothing less
 
 **Jane:**
 I am not talking to you now through the medium of custom,
@@ -1679,8 +1640,7 @@ Did that all happen under a tree? If so, the tree is destroyed in a storm.
 
 ------
 
-Shit Gets Real
-~~~~~~~~~~~~~~
+### Shit Gets Real
 
 **Rochester:**
 You blushed, and now you are white, Jane: what is that for?
@@ -1726,22 +1686,22 @@ I suppose your love will effervesce in six months. Or less.
 I had observed in books written by men,
 that period assigned as the farthest to which a husband’s ardour extends.
 
-| **Song:** *Rochester's Love*…
-|
-| The truest love that ever heart
-| Felt at its kindled core,
-| Did through each vein, in quickened start,
-| The tide of being pour.
-|
-| Her coming was my hope each day,
-| Her parting was my pain;
-| The chance that did her steps delay
-| Was ice in every vein.
-|
-| I have at last my nameless bliss.
-| As I love -- loved am I!
-| My love has sworn, with sealing kiss,
-| With me to live -- to die;
+> **Song:** *Rochester's Love*…
+>
+> The truest love that ever heart \
+> Felt at its kindled core, \
+> Did through each vein, in quickened start, \
+> The tide of being pour.
+>
+> Her coming was my hope each day, \
+> Her parting was my pain; \
+> The chance that did her steps delay \
+> Was ice in every vein.
+>
+> I have at last my nameless bliss. \
+> As I love -- loved am I! \
+> My love has sworn, with sealing kiss, \
+> With me to live -- to die;
 
 **Narrator:**
 I had no intention of dying with him --
@@ -1752,8 +1712,7 @@ Yet after all, my future husband is becoming my entire world.
 
 ------
 
-\*Ripping The Veil
-~~~~~~~~~~~~~~~~~~
+### *Ripping The Veil
 
 **Bell:**
 Let’s skip ahead to the wedding day. Or the night before? I’m not sure.
@@ -1807,8 +1766,7 @@ if it’s not the vapors then it’s bicycle face… Seriously, look it up.
 
 ------
 
-Interrupted Wedding
-~~~~~~~~~~~~~~~~~~~
+### Interrupted Wedding
 
 **Bell:**
 Now, it is certainly the wedding day.
@@ -1846,8 +1804,7 @@ follow!
 
 ------
 
-\*Bertha Revealed
-~~~~~~~~~~~~~~~~~
+### *Bertha Revealed
 
 **Rochester:**
 You know this place, Mason. She bit and stabbed you here.
@@ -1966,8 +1923,7 @@ I do indeed, sir.
 
 ------
 
-Wandering The Wilderness, Destitute
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Wandering The Wilderness, Destitute
 
 *[Music: Wandering…]*
 
@@ -2064,8 +2020,7 @@ but my living flesh shuddered.
 Moor House
 ----------
 
-Family & Independence
-~~~~~~~~~~~~~~~~~~~~~
+### Family & Independence
 
 **Bell:**
 Come now, Jane. Let’s try that house on the horizon.
@@ -2221,8 +2176,7 @@ I like Moor House, and I will attach myself for life to Diana.
 
 ------
 
-\*Failed Proposal & Cry For Help
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### *Failed Proposal & Cry For Help
 
 **Narrator:**
 As our mutual happiness settled into a quieter character,
@@ -2298,35 +2252,35 @@ And with that answer he left me. I would much rather he had knocked me down.
 
 *[Jane and Diana have a moment together, a farewell for now…]*
 
-| **Song:** *Destruction of Thornfield*…
-|
-| There was a lady -- a lunatic, kept in the house
-| she was kept in confinement, pacing madly about
-| it was no one but her that started the blaze
-| when Mrs. Poole slept in that  bed where she lay
-| That mad lady drunk on water and gin
-| She crept like a witch in her devilish skin
-|
-| On this perilous night, filled with flickering danger
-| she made her way into the governess’s chamber
-| She drifted in silence as though already dead
-| and there in the darkness she kindled the bed
-| Then, through the smoke, in a blistering panic
-| Poor Rochester raced up the stairs to the attic
-|
-| A woman stood upon  the roof, a silhouette against the flames
-| …
+> **Song:** *Destruction of Thornfield*…
+>
+> There was a lady -- a lunatic, kept in the house \
+> she was kept in confinement, pacing madly about \
+> it was no one but her that started the blaze \
+> when Mrs. Poole slept in that  bed where she lay \
+> That mad lady drunk on water and gin \
+> She crept like a witch in her devilish skin
+>
+> On this perilous night, filled with flickering danger \
+> she made her way into the governess’s chamber \
+> She drifted in silence as though already dead \
+> and there in the darkness she kindled the bed \
+> Then, through the smoke, in a blistering panic \
+> Poor Rochester raced up the stairs to the attic
+>
+> A woman stood upon  the roof, a silhouette against the flames \
+> …
 
 **Rochester:**
 *[mid-song]* Bertha! Bertha!
 
-| …
-| Rochester ascended as if somehow fire-proof
-| we heard him call ‘Bertha!’ as he got to the roof
-| We saw him approach her, but she yelled and gave flight,
-| and smashed upon the pavement on that terrible night
-| dead as the stones onto which her blood splattered
-| and the fragments of her bones and her brains lay all scattered
+> … \
+> Rochester ascended as if somehow fire-proof \
+> we heard him call ‘Bertha!’ as he got to the roof \
+> We saw him approach her, but she yelled and gave flight, \
+> and smashed upon the pavement on that terrible night \
+> dead as the stones onto which her blood splattered \
+> and the fragments of her bones and her brains lay all scattered
 
 *[As the song plays, we see (but Jane does not)
 Bell/Bertha set fire to the house.
@@ -2341,11 +2295,9 @@ Jane! Jane! Jane!
 
 ------
 
-Thornfield Hall
----------------
+## Thornfield Hall
 
-Problematic
-~~~~~~~~~~~
+### Problematic
 
 *[Jane turns the projector back on.
 Transparency: “Thornfield Ruin: Problematic…”]*
@@ -2399,8 +2351,7 @@ I don’t know.
 
 ------
 
-Flipped Proposal
-~~~~~~~~~~~~~~~~
+### Flipped Proposal
 
 *[Music: Thornfield theme…]*
 
@@ -2620,8 +2571,7 @@ It is nearly four o’clock in the afternoon, sir. Don’t you feel hungry?
 
 ------
 
-Epilogue
-~~~~~~~~
+### Epilogue
 
 *[Jane returns.
 Jane and Narrator stand looking at each other in silence,
@@ -2638,18 +2588,8 @@ Transparency: “The End [sic]…”]*
 
 ------
 
-**The End**
-
-.. callmacro:: content/macros.j2#btn
-  :url: '/art/theater/jane-eyre/'
-
-  About the production
-
-------
-
 This work is licensed under a Creative Commons
-`Attribution-NonCommercial-ShareAlike 4.0 International
-License <http://creativecommons.org/licenses/by-nc-sa/4.0/>`_.
+*Attribution-NonCommercial-ShareAlike 4.0 International License*.
 You are free to:
 
 - **Share:**
@@ -2671,5 +2611,5 @@ Under the following conditions:
   under the same license as the original.
 
 Any of the above conditions can be waived with my permission.
-See the `full license <http://creativecommons.org/licenses/by-nc-sa/4.0/>`_
+See the [full license](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 for legal details.

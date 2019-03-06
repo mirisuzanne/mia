@@ -116,9 +116,7 @@ summary: |
 
 {{ content.intro(summary) }}
 
-[Read the script »][script]
-
-[script]: script/
+[Read the script »](script/)
 
 ------
 
