@@ -4,27 +4,29 @@ sub: Co-Founder -- Denver, CO
 url: https://www.grapefruitlab.com/
 start: 2009-08-14
 end: null
+index: grapefruit lab
 tags:
   - _calendar
-  - orgs
+  - _orgs
   - theater
   - art
-  - writing
-  - grapefruit lab
-index: grapefruit lab
 events:
   - title: Missa Populi
     date: 2010-03-01
-    role: writer & director
     venue: The Packing House Center for the Arts
-    with:
-      - name: Teacup Gorilla
-        url: http://teacupgorilla.com
+    tags:
+      - teacup gorilla
+      - grapefruit lab
+      - writing
+      - directing
   - title: A Murder One Less
     date: 2009-08-01
     venue: Boulder International Fringe Festival
     url: http://www.boulderfringe.com/
-    role: lighting design
+    tags:
+      - grapefruit lab
+      - directing
+      - lighting
 ---
 
 > Grapefruit is a hybrid of lemon and orange.

@@ -1,14 +1,15 @@
 ---
 title: OddBird
+sub: Co-Founder, Project Manager, and UX Engineer
 start: 2008-04-15
 end: null
+index: oddbird
 tags:
   - _calendar
-  - orgs
+  - _orgs
   - code
   - web
   - oddbird
-calendar: code
 ---
 
 Custom web app design & development

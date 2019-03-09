@@ -31,9 +31,13 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('inTopTagCount', count => {
     return typeof count === 'number' && count <= tags.topCount;
   });
+
   eleventyConfig.addFilter('getPage', pages.fromCollection);
   eleventyConfig.addFilter('seriesNav', pages.seriesNav);
+
   eleventyConfig.addFilter('getEvents', events.fromCollection);
+  eleventyConfig.addFilter('groupName', group => events.groupNames[group]);
+
   eleventyConfig.addFilter('amp', type.amp);
   eleventyConfig.addFilter('typogr', type.set);
   eleventyConfig.addFilter('md', type.render);

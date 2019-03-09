@@ -19,19 +19,16 @@
     self=page.url
   ) }}
 {% elif get_calendar %}
-  {% set pages = collections[get_calendar] %}
-  {% if pages %}
-    {% set title %}
-      more in '{{ get_calendar }}'…
-    {% endset %}
+  {% set title %}
+    more in '{{ get_calendar }}'…
+  {% endset %}
 
-    {{ event_macros.section(
-      title=utility.section_title(title),
-      events=pages | getEvents,
-      all=collections.all,
-      self=page.url
-    ) }}
-  {% endif %}
+  {{ event_macros.section(
+    title=utility.section_title(title),
+    events=collections.all | getEvents(get_calendar),
+    all=collections.all,
+    self=page.url
+  ) }}
 {% elif events %}
   {{ event_macros.section(
     title=utility.section_title('as seen at…'),

@@ -12,6 +12,8 @@ tags:
   - theater
   - art
   - writing
+  - directing
+  - lighting
   - music
   - grapefruit lab
   - teacup gorilla

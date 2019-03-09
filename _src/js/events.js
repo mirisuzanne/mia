@@ -9,7 +9,9 @@ const hasEvents = page => page.data.events;
 
 const groupNames = {
   4000: 'now',
+  now: 4000,
   3000: 'soon',
+  soon: 3000,
 };
 
 const isEvent = page => {
@@ -38,7 +40,12 @@ const buildEvent = (page, event = {}) => {
     date = start;
   }
 
-  return { page, event, start, end, date, group };
+  // concat tags
+  const pageTags = page.data.tags || [];
+  const eventTags = event.tags || [];
+  const tags = pageTags.concat(eventTags);
+
+  return { page, event, start, end, date, group, tags };
 };
 
 const fromYAML = page => {
@@ -53,8 +60,8 @@ const fromYAML = page => {
   return events;
 };
 
-const fromCollection = collection => {
-  const events = [];
+const fromCollection = (collection, only) => {
+  let events = [];
 
   collection
     .filter(page => pages.isPublic(page))
@@ -67,6 +74,10 @@ const fromCollection = collection => {
         events.push(buildEvent(page));
       }
     });
+
+  if (only) {
+    events = events.filter(event => event.tags.includes(only));
+  }
 
   const groups = utils.groupBy(events, 'group');
   const sorted = [];
@@ -87,4 +98,5 @@ module.exports = {
   isEvent,
   hasEvents,
   fromCollection,
+  groupNames,
 };

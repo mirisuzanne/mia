@@ -25,7 +25,12 @@
   all,
   self
 ) %}
-  {% set is_future = (title == 'soon') %}
+  {% set is_future = title | groupName %}
+  {% set this_year = (title == none | getDate('year')) %}
+
+  {% if this_year and not loop.first %}
+    <hr data-divider>
+  {% endif %}
 
   {% call cards.group(title) %}
     {{ list(
@@ -35,10 +40,6 @@
       self=self
     ) }}
   {% endcall %}
-
-  {% if is_future and not loop.last %}
-    <hr data-divider>
-  {% endif %}
 {% endmacro %}
 
 {% macro list(
@@ -65,8 +66,8 @@
   self
 ) %}
   {% set feature = item.event.feature or item.page.data.feature %}
-  {% set tags = item.page.data.tags | publicTags %}
-  {% set date_format = 'since' if (item.group == 4000) else 'md' %}
+  {% set tags = item.tags | publicTags %}
+  {% set date_format = 'since' if (item.group | groupName == 'now') else 'md' %}
   {% set is_self = (item.page.url == self) %}
   {% set no_title = (is_self and not item.event.title) %}
 

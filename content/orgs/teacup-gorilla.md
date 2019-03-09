@@ -9,7 +9,7 @@ end: null
 index: teacup gorilla
 tags:
   - _calendar
-  - orgs
+  - _orgs
   - music
   - art
 events:
