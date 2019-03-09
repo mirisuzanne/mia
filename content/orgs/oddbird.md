@@ -4,7 +4,7 @@ start: 2008-04-15
 end: null
 tags:
   - _calendar
-  - _organizations
+  - orgs
   - code
   - web
   - oddbird

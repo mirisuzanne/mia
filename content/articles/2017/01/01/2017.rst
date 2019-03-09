@@ -369,7 +369,7 @@ and keep showing up.
 .. _bringing new people into the movement: http://www.surjaction.org/
 .. _creating a new culture: http://www.theestablishment.co/2016/11/11/we-have-to-create-a-culture-that-wont-vote-for-trump/
 .. _privilege: http://code.ucsd.edu/~pcosman/Backpack.pdf
-.. _organizations: http://togetherlist.com/
+.. orgs: http://togetherlist.com/
 .. _indigenous people: http://sacredstonecamp.org/blog/2016/12/31/standing-rock-to-the-world-10-indigenous-and-environmental-struggles-you-can-support-in-2017
 .. _Movement For Black Lives: https://policy.m4bl.org/
 .. _Campaign Zero: http://www.joincampaignzero.org/#vision

@@ -7,6 +7,11 @@ const utils = require('./utils');
 const isPublic = event => event.draft !== true;
 const hasEvents = page => page.data.events;
 
+const groupNames = {
+  4000: 'now',
+  3000: 'soon',
+};
+
 const isEvent = page => {
   return page.data.tags ? page.data.tags.includes('_calendar') : false;
 };
@@ -22,16 +27,18 @@ const buildEvent = (page, event = {}) => {
   }
 
   // set group…
-  let group = time.getDate(start, 'year');
   const end_iso = time.getDate(end, 'iso');
   const start_iso = time.getDate(start, 'iso');
   const now_iso = time.getDate(time.now, 'iso');
+  let date = end;
+  let group = time.getDate(date, 'year');
 
   if (end_iso >= now_iso) {
-    group = start_iso > now_iso ? 'coming' : 'now';
+    group = start_iso > now_iso ? 3000 : 4000;
+    date = start;
   }
 
-  return { page, event, start, end, group };
+  return { page, event, start, end, date, group };
 };
 
 const fromYAML = page => {
@@ -67,7 +74,8 @@ const fromCollection = collection => {
   Object.keys(groups)
     .sort((a, b) => a - b)
     .forEach(group => {
-      const data = groups[group].sort((a, b) => a.start - b.start);
+      const data = groups[group].sort((a, b) => a.date - b.date);
+      group = groupNames[group] || group;
       sorted.push({ group, data });
     });
 

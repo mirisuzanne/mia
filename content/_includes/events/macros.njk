@@ -25,7 +25,7 @@
   all,
   self
 ) %}
-  {% set is_future = (title == 'coming') %}
+  {% set is_future = (title == 'soon') %}
 
   {% call cards.group(title) %}
     {{ list(
@@ -66,9 +66,9 @@
 ) %}
   {% set feature = item.event.feature or item.page.data.feature %}
   {% set tags = item.page.data.tags | publicTags %}
-  {% set date_format = 'since' if (item.group == 'coming') else 'md' %}
+  {% set date_format = 'since' if (item.group == 4000) else 'md' %}
   {% set is_self = (item.page.url == self) %}
-  {% set no_title = (is_self and item.page.data.events) %}
+  {% set no_title = (is_self and not item.event.title) %}
 
   {# Venue Link #}
   {%- set venue_name = item.event.venue or item.page.data.venue -%}
@@ -85,8 +85,14 @@
 
   {# Info #}
   {% set info %}
-    <time datetime="{{ item.start | getDate('iso') }}">
-      {{ item.start | getDate(date_format) }}
+    <time datetime="{{ item.date | getDate('iso') }}">
+      {% set start = item.start | getDate('year') %}
+      {% set end = item.end | getDate('year') %}
+      {% if (date_format == 'since') or (start == end) %}
+        {{ item.date | getDate(date_format) }}
+      {% else %}
+        {{ start }}—{{ end }}
+      {% endif %}
     </time>
     {% if (venue and not no_title) %}
       {{ venue | safe }}
