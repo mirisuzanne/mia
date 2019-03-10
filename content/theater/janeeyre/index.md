@@ -1,4 +1,5 @@
 ---
+feature: true
 title: JANE/EYRE
 sub: A queer adaptation of the classic novel, with music…
 hero:

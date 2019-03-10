@@ -63,7 +63,7 @@ events:
     start: 2017-06-14
     slides: https://oddbooksapp.com/release/543aea12-2264-4794-867d-d01fbf3a79c9
     title: Practical Layouts, Past & Future
-quotes:
+press:
   - text: |
       Amazing talk by Miriam Suzanne at the Beyond Tellerand conference
       about the benefits of using plain CSS

@@ -20,7 +20,7 @@ events:
     press:
       - title: Lights, No Cameras, Plenty of Action
         credit: Jeremy D. Bonfiglio
-        source: South Bend Tribune
+        venue: South Bend Tribune
         url: http://articles.southbendtribune.com/2007-04-20/news/26771959_1_kung-fu-michelle-milne-lab-work
         date: 2007-04-20
   - title: Fear/Falling
@@ -37,7 +37,7 @@ events:
       - directing
     press:
       - credit: Andrew S. Hughes
-        source: South Bend Tribune
+        venue: South Bend Tribune
         url: http://articles.southbendtribune.com/2006-09-17/news/26981141_1_danny-and-roberta-dance-characters
         date: 2006-09-17
   - title: Hello and Goodbye
@@ -49,7 +49,7 @@ events:
     press:
       - quote: Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.
         credit: Jack Walton
-        source: South Bend Tribune
+        venue: South Bend Tribune
         url: http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
         date: 2006-01-29
   - title: Sadomasochism

@@ -30,7 +30,7 @@ events:
     adr: Denver, CO
     slides: https://www.oddbooksapp.com/book/design-systems-10m
     start: 2018-03-21
-quotes:
+press:
   - text: |
       Every time I hear Miriam talk, I learn a ton and laugh a ton…
       Watch this talk when it’s published!

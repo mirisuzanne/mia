@@ -63,7 +63,7 @@ events:
 press:
   - quote: I was impressed by the purest form of outrageous creation.
     credit: Judy Rose
-    source: Boulder Writer’s Workshop
+    venue: Boulder Writer’s Workshop
     url: http://www.boulderwritersworkshop.com/2013/04/17/post-obsolete-a-bww-salon/
     date: 2013-04-17
 media:

@@ -26,7 +26,7 @@ press:
       assumed queerness from start to finish,
       while giving the characters free reign over their identities.
     credit: John Moore
-    source: 2016 True West Award
+    venue: 2016 True West Award
     slug: truewest
     url: https://www.denvercenter.org/2016-true-west-award-miriam-suzanne/
   - text: |
@@ -35,47 +35,47 @@ press:
       and their spiritual and psychological consequences;
       the usual categories of "male" and "female" are just too simplistic.
     credit: Juliet Wittman
-    source: Westword
+    venue: Westword
     url: http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439
     date: 2016-03-09
   - text: |
       Definitely a production worth writing about,
       talking about, and going to see.
     credit: Berlin Sylvestre
-    source: Out Front
+    venue: Out Front
     url: http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/
     date: 2016-03-07
   - text: |
       An oddly satisfying dark comedy,
       a meditation on bodies, humanity, love and loss.
     credit: Joanne Ostrow
-    source: The Denver Post
+    venue: The Denver Post
     url: http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying
     date: 2016-03-07
   - text: |
       The soul of the piece lies in the gender-blending love and acceptance
       that flows like water through these relationships.
     credit: Tracy Shaffer
-    source: Huffington Post
+    venue: Huffington Post
     url: http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html
     date: 2016-03-07
-  - source: North Denver Tribune
+  - venue: North Denver Tribune
     url: http://www.northdenvertribune.com/2016/03/buntports-10-myths-a-mashup-of-myth-gender-loss-and-music/
     credit: Craig Williamson
     date: 2016-03-17
-  - source: Colorado Drama
+  - venue: Colorado Drama
     url: http://coloradodrama.com/10_myths.html
     credit: Bob Bows
     date: 2016-03-17
-  - source: 5280
+  - venue: 5280
     url: http://www.5280.com/digital/2016/03/hinging-myth
     credit: Gina Gresko
     date: 2016-03-04
-  - source: Met Media
+  - venue: Met Media
     url: http://mymetmedia.com/the-metropolitan/features/long-time-friends-provide-one-kind-shows/
     credit: Keenan McCall
     date: 2016-03-05
-  - source: Westword
+  - venue: Westword
     url: http://www.westword.com/event/10-myths-on-the-proper-application-of-beauty-products-7582171
     credit: Luke Leavitt
     date: 2016-03-04

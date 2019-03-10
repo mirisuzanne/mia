@@ -27,16 +27,19 @@
 {% macro cite(
   data
 ) -%}
-{%- if data.credit and data.source and data.url -%}
-{{ data.credit }}, [{{ data.source }}]({{ data.url }})
-{%- elif data.credit and data.source -%}
-{{ data.credit }}, {{ data.source }}
+{%- set where -%}
+{{ data.venue }}{% if data.venue and data.title %}: {% endif %}{{ data.title }}
+{%- endset -%}
+{%- if data.credit and where and data.url -%}
+{{ data.credit }}, [{{ where }}]({{ data.url }})
+{%- elif data.credit and where -%}
+{{ data.credit }}, {{ where }}
 {%- elif data.credit and data.url -%}
 [{{ data.credit }}]({{ data.url }})
-{%- elif data.source and data.url -%}
+{%- elif where and data.url -%}
 [{{ data.credit }}]({{ data.url }})
 {%- else -%}
-{{ data.credit or data.source or data.url }}
+{{ data.credit or where or data.url }}
 {%- endif -%}
 {%- endmacro %}
 

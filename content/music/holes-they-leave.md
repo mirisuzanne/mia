@@ -14,14 +14,14 @@ tags:
   - music
   - audio
   - shop
-quotes:
+press:
   - text: |
       [The Holes They Leave][holes] occupies a middle place
       that immediately brings solace to the weary ear.
 
       [holes]: http://teacupgorilla.bandcamp.com/album/the-holes-they-leave
     credit: Darren Thornberry
-    source: Stubborn Sounds
+    venue: Stubborn Sounds
     url: https://stubbornsounds.wordpress.com/2015/07/07/teacup-gorilla-the-holes-they-leave-in-review/
 ---
 {% import "content.macros.njk" as content %}
