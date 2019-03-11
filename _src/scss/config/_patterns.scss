@@ -10,7 +10,7 @@
 /// @see border
 $borders: (
   'section': size('border') solid var-color('border'),
-  'quote': size('border') solid var-color('border'),
+  'quote': size('border') solid var-color('callout'),
 );
 
 // Shadows

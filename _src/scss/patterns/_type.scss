@@ -50,6 +50,11 @@
     :last-child {
       margin-bottom: 0;
     }
+
+    cite {
+      font-size: size('small');
+      font-style: normal;
+    }
   }
 
   > :first-child {
