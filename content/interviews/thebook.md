@@ -1,6 +1,5 @@
 ---
 title: 'Essential Knowledge: The Book'
-sub: Defining an object we think we know intimately.
 date: 2018-07-16
 url: https://t-h-e-b-o-o-k.com/miriam-suzanne/
 venue: t-h-e-b-o-o-k.com

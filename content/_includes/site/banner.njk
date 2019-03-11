@@ -12,9 +12,15 @@
       {{ full_title | mdInline | typogr | safe }}
     </h1>
 
-    {% if sub %}
+    {% set go_to = utility.link_if(venue or 'the interwebz', url) if url else none %}
+
+    {% if sub or go_to %}
       <span class="subtitle">
-        {{ sub | mdInline | typogr | safe }}
+        {% if sub %}
+          {{ sub | mdInline | typogr | safe }}
+        {% elif go_to %}
+          check it out on {{ go_to }}
+        {% endif %}
       </span>
     {% endif %}
   </div>
