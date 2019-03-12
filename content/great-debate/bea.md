@@ -13,7 +13,7 @@ Hi, I'm here to tell you about Bea Arthur--
 
 Specifically, Season 6, episode 23 --
 Night at a Round Table.
-Let's meet the proagonist, our hero
+Let's meet the protagonist, our hero
 
 ![](/assets/images/debate/bea/bea.003.jpeg)
 

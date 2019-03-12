@@ -24,6 +24,7 @@ summary: |
 
   [surgery]: /2018/07/17/surgery
 ---
+
 {% import "content.macros.njk" as content %}
 
 {{ content.intro(summary) }}

@@ -1,5 +1,4 @@
 ---
-feature: true
 title: 10 Myths on the Proper Application of Beauty Projects
 sub: |
   Award-winning stage adaptation of
@@ -7,12 +6,7 @@ sub: |
   weaving myth with everyday ritual
 hero:
   img: art/theater/10myths.jpg
-venue: Buntport Theater
-url: http://buntport.com/archive/10myths.htm
-date: 2016-03-04
-end: 2016-03-26
 tags:
-  - _calendar
   - theater
   - art
   - writing
@@ -20,6 +14,17 @@ tags:
   - teacup gorilla
   - music
   - buntport
+  - published
+events:
+  - title: 'Adaptation: SideSaddle/Myths'
+    venue: Denver Quarterly v51.2
+    url: https://www.du.edu/denverquarterly/past/index.html
+    date: 2017-01-10
+  - venue: Buntport Theater
+    url: http://buntport.com/archive/10myths.htm
+    date: 2016-03-04
+    end: 2016-03-26
+    feature: true
 press:
   - text: |
       Suzanne wanted to tell a story that
