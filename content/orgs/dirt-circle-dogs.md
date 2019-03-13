@@ -13,15 +13,6 @@ tags:
   - _orgs
   - music
   - art
-events:
-  - title: Kingdom Come [album]
-    venue: CD Baby
-    url: http://www.cdbaby.com/cd/dirtcircledogs
-    date: 2009-05-19
-    tags:
-      - published
-      - audio
-      - dirt circle dogs
 press:
   - text: |
       An earthy and soulful collaboration…
@@ -29,14 +20,6 @@ press:
       collides with the haunted remains of the heart.
     credit: Jonathan Bitz
     venue: Denver Syntax
-  - text: |
-      Eisenstat sings that there is “No voice on the radio,”
-      and perhaps, for now, that’s true.
-      Kingdom, though, is certainly worth a private listen at home.
-    credit: Cat Carroll
-    venue: Onion AV Club
-    date: 2009-08-14
-    # url: /misc/dcd-onion-review/
 ---
 
 {% import "content.macros.njk" as content %}

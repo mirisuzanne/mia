@@ -13,6 +13,7 @@ tags:
   - art
   - music
   - audio
+  - teacup gorilla
   - shop
 press:
   - text: |
