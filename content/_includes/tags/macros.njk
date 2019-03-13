@@ -4,11 +4,12 @@
 {% macro section(
   tags
 ) %}
-  {% set title = utility.section_title('all yer tags:') %}
-  {% call cards.section(title) %}
-    {% for segment in tags | groupTags(6) %}
+  {% call cards.section(
+    title=utility.section_title('by popular demand…')
+  ) %}
+    {% for segment in tags | groupTags %}
       {{ group(
-        title=segment.count,
+        title=segment.group,
         segment=segment.tags,
         all=tags.all
       ) }}
@@ -64,5 +65,8 @@
 ) %}
   e.g.
   {% set page = data | first %}
-  {{ utility.link_if(page.data.title, page.url) }}
+  {{ utility.link_if(
+    page.data.title | mdInline,
+    page.url
+  ) }}
 {% endmacro %}

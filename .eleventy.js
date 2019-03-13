@@ -35,7 +35,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('getPage', pages.fromCollection);
   eleventyConfig.addFilter('seriesNav', pages.seriesNav);
 
-  eleventyConfig.addFilter('getEvents', events.fromCollection);
+  eleventyConfig.addFilter('getEvents', events.get);
   eleventyConfig.addFilter('groupName', group => events.groupNames[group]);
 
   eleventyConfig.addFilter('amp', type.amp);

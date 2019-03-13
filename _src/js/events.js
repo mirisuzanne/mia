@@ -60,7 +60,7 @@ const fromYAML = page => {
   return events;
 };
 
-const fromCollection = (collection, only) => {
+const fromCollection = collection => {
   let events = [];
 
   collection
@@ -70,15 +70,15 @@ const fromCollection = (collection, only) => {
         Array.prototype.push.apply(events, fromYAML(page));
       }
 
-      if (isEvent(page)) {
+      if (isEvent(page) && pages.isPublic(page)) {
         events.push(buildEvent(page));
       }
     });
 
-  if (only) {
-    events = events.filter(event => event.tags.includes(only));
-  }
+  return events;
+};
 
+const byGroup = events => {
   const groups = utils.groupBy(events, 'group');
   const sorted = [];
 
@@ -93,10 +93,26 @@ const fromCollection = (collection, only) => {
   return sorted.reverse();
 };
 
+const get = (collection, only, group = true) => {
+  let events = fromCollection(collection);
+
+  if (only) {
+    events = events.filter(event => event.tags.includes(only));
+  }
+
+  if (group) {
+    events = byGroup(events);
+  }
+
+  return events;
+};
+
 module.exports = {
   isPublic,
   isEvent,
   hasEvents,
   fromCollection,
+  byGroup,
+  get,
   groupNames,
 };

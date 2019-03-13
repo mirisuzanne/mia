@@ -1,6 +1,7 @@
 'use strict';
 
 const utils = require('./utils');
+const events = require('./events');
 
 const topCount = 6;
 const isPublic = tag => tag !== 'all' && !tag.startsWith('_');
@@ -17,53 +18,53 @@ const matchTags = (allTags, findTags) => {
   return match;
 };
 
-const sortTags = (collecions, count = topCount) => {
-  const sorted = {};
-  const tags = Object.keys(collecions);
+const tagData = collections => {
+  const tags = Object.keys(collections);
 
-  count = count || tags.length + 1;
-
-  tags
+  return tags
     .filter(tag => isPublic(tag))
-    .sort((a, b) => collecions[a].length - collecions[b].length)
-    .reverse()
-    .slice(0, count)
-    .forEach(tag => {
-      sorted[tag] = collecions[tag];
-    });
-
-  return sorted;
+    .map(tag => {
+      const tagEvents = events.get(collections.all, tag, false);
+      return {
+        tag,
+        data: collections[tag],
+        events: tagEvents,
+        count: tagEvents.length,
+      };
+    })
+    .filter(item => item.count !== 0)
+    .sort((a, b) => b.count - a.count);
 };
 
-const groupTags = (collecions, top = topCount) => {
-  const tags = sortTags(collecions, null);
+const sortTags = (collections, top = topCount) => {
+  return tagData(collections)
+    .slice(0, top || collections.length)
+    .map(item => item.tag);
+};
+
+const groupTags = (collections, top = topCount) => {
   const grouped = {};
   const sorted = [];
 
   // group by popularity
-  Object.keys(tags).forEach((tag, i) => {
-    const data = tags[tag];
-    const count = i < top ? 'top' : data.length;
-    tag = { tag, data };
-    if (grouped[count]) {
-      grouped[count].push(tag);
+  tagData(collections).forEach((item, i) => {
+    const group = i < top ? 'top' : item.count;
+    if (grouped[group]) {
+      grouped[group].push(item);
     } else {
-      grouped[count] = [tag];
+      grouped[group] = [item];
     }
   });
 
   // sort the groups
-  Object.keys(grouped)
-    .sort((a, b) => a - b)
-    .reverse()
-    .forEach(count => {
-      sorted.push({
-        count,
-        tags: grouped[count],
-      });
+  Object.keys(grouped).forEach(group => {
+    sorted.push({
+      group,
+      tags: grouped[group],
     });
+  });
 
-  return sorted;
+  return sorted.reverse();
 };
 
 const displayName = tag => {

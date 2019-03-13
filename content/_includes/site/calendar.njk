@@ -6,7 +6,7 @@
 {% if get_calendar == 'all' %}
   {% set filters %}
     {{ utility.tag_list(
-      collections | sortTags | objectKeys,
+      collections | sortTags,
       collections.all
     ) }}
     ({{ utility.link_if('more', '/tags/') }})
