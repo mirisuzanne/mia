@@ -6,7 +6,9 @@ const mdown = require('markdown-it')({
   breaks: false,
   linkify: true,
   typographer: true,
-}).use(require('markdown-it-mark'));
+})
+  .use(require('markdown-it-mark'))
+  .use(require('markdown-it-footnote'));
 
 const amp = s => {
   const r = '<span class="amp">&</span>';

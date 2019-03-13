@@ -14,14 +14,24 @@ tags:
   - art
 events:
   - title: FACEMAN's 100 Year Storm
+    venue: The Oriental Theater
     url: http://www.theorientaltheater.com/event/260005/facemans-100-year-storm-
     date: 2016-11-18
   - title: Underground Music Showcase
+    venue: Illegal Pete's
     url: http://theums.com/
     date: 2016-07-25
   - title: Underground Music Showcase
+    venue: The Historian
     url: http://theums.com/
     date: 2015-07-25
+  - title: Teacup Gorilla @ Bouldering Poets
+    venue: 303 Vodka
+    url: http://boulderingpoets.wordpress.com/
+    date: 2013-03-22
+    tags:
+      - writing
+      - reading
 press:
   - text: |
       Teacup Gorilla's amiable creative approach,

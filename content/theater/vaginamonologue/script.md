@@ -1,21 +1,20 @@
-public: yes
-image:
-  - src: 'art/theater/vm/vm.jpg'
-brag: |
-  I was asked to write
-  a more modern trans Vagina Monologue
-summary: |
-  Unofficial, autobiographical,
-  trans-femme Vagina Monologue
-  written for the 2018
-  `It Grows Wild`_ production.
-
-  .. _It Grows Wild: https://www.facebook.com/itgrowswild/
-
-
-**************************
-Script: My Body, My Gender
-**************************
+---
+title: My Body, My Gender [script]
+sub: |
+  Why Is No One Talking About
+  [The Mouthfeel](https://www.youtube.com/watch?v=j1dJ8whOM8E)?
+date: 2018-11-05
+hero:
+  img: art/theater/vm/vm.jpg
+series: transition
+tags:
+  - _calendar
+  - theater
+  - art
+  - writing
+  - script
+  - transition
+---
 
 We have a story in my family.
 My brother is young,
@@ -42,8 +41,8 @@ with my vagina wrapped in bandages.
 There’s a man at the foot of my bed,
 a stranger.
 
-| -- *Congratulations! How does it feel? You're finally Miriam!*
-| -- I What? That’s… what? I’ve *been* Miriam.
+--- *Congratulations! How does it feel? You're finally Miriam!* \
+--- I What? That’s… what? I’ve *been* Miriam.
 
 I've had a recognizable vulva for 8 weeks,
 but that’s really none of your business,
@@ -106,9 +105,9 @@ or go outside,
 or be alive in public.
 *Think of the women and children.*
 
-| Not me.
-| Not us.
-| The *other* women, and the *other* children.
+Not me. \
+Not us. \
+The *other* women, and the *other* children.
 
 ------
 

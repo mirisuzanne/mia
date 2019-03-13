@@ -6,6 +6,8 @@ sub: |
   [Riding SideSaddle*](http://ridingsidesaddle.com),
   weaving myth with everyday ritual
 date: 2016-03-26
+hero:
+  img: art/theater/10myths.jpg
 tags:
   - _calendar
   - theater
@@ -15,8 +17,6 @@ tags:
   - buntport
   - teacup gorilla
   - script
-hero:
-  img: art/theater/10myths.jpg
 ---
 
 *[Lights up. A bathroom surrounded by emptiness. Sam is in the bathroom --

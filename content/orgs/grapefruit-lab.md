@@ -11,14 +11,6 @@ tags:
   - theater
   - art
 events:
-  - title: Missa Populi
-    date: 2010-03-01
-    venue: The Packing House Center for the Arts
-    tags:
-      - teacup gorilla
-      - grapefruit lab
-      - writing
-      - directing
   - title: A Murder One Less
     date: 2009-08-01
     venue: Boulder International Fringe Festival

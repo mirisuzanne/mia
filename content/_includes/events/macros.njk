@@ -65,7 +65,6 @@
   all,
   self
 ) %}
-  {% set feature = item.event.feature or item.page.data.feature %}
   {% set tags = item.tags | publicTags %}
   {% set date_format = 'since' if (item.group | groupName == 'now') else 'md' %}
   {% set is_self = (item.page.url == self) %}
@@ -106,7 +105,7 @@
   {% set main = venue if (venue and no_title) else title %}
 
   {# Output #}
-  {% call cards.item(feature) %}
+  {% call cards.item(item.feature) %}
     {{ cards.meta(info) }}
     {{ cards.main(main) }}
   {% endcall %}

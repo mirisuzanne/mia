@@ -1,0 +1,7 @@
+// Footnotes
+// =========
+
+.footnotes {
+  @include font-family('code');
+  font-size: size('small');
+}

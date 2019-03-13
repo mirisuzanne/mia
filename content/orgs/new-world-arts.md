@@ -1,4 +1,5 @@
 ---
+feature: true
 title: New World Arts
 sub: Artistic Director -- Goshen, IN
 url: https://web.archive.org/web/20100810193456/http://newworldarts.org/events/history.php

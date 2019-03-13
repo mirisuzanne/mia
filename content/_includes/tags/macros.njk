@@ -52,9 +52,7 @@
   tag,
   all
 ) %}
-  {% set feature = false %}
-
-  {% call cards.item(feature) %}
+  {% call cards.item() %}
     {{ cards.meta(tag_meta(tag.data)) }}
     {{ cards.main(utility.tag_link(tag.tag, all)) }}
   {% endcall %}

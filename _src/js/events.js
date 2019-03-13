@@ -18,12 +18,12 @@ const isEvent = page => {
   return page.data.tags ? page.data.tags.includes('_calendar') : false;
 };
 
-const buildEvent = (page, event = {}) => {
-  const eventStart = event.start || event.date;
+const buildEvent = (page, event) => {
+  const eventStart = event ? event.start || event.date : null;
   const start = eventStart || page.data.start || page.date;
+  let end = eventStart ? event.end : page.data.end;
 
   // set end explicit or start or far future…
-  let end = eventStart ? event.end : page.data.end;
   if (!end) {
     end = end === null ? new Date('3000-01-01') : start;
   }
@@ -32,20 +32,22 @@ const buildEvent = (page, event = {}) => {
   const end_iso = time.getDate(end, 'iso');
   const start_iso = time.getDate(start, 'iso');
   const now_iso = time.getDate(time.now, 'iso');
-  let date = end;
+  let date = start;
   let group = time.getDate(date, 'year');
 
   if (end_iso >= now_iso) {
     group = start_iso > now_iso ? 3000 : 4000;
-    date = start;
   }
 
   // concat tags
   const pageTags = page.data.tags || [];
-  const eventTags = event.tags || [];
+  const eventTags = event ? event.tags || [] : [];
   const tags = pageTags.concat(eventTags);
 
-  return { page, event, start, end, date, group, tags };
+  // feature
+  const feature = event ? event.feature : page.data.feature;
+
+  return { page, event, start, end, date, group, tags, feature };
 };
 
 const fromYAML = page => {
