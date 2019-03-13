@@ -5,7 +5,7 @@ tags:
   - _calendar
   - transition
   - interview
-  - film
+  - video
 hero:
   img: 2017/america-heard.jpg
 film:

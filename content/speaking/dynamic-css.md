@@ -7,6 +7,7 @@ tags:
   - code
   - css
   - layout
+  - video
 events:
   - venue: Generate New York
     url: https://www.generateconf.com/
@@ -33,20 +34,33 @@ events:
     start: 2018-09-06
     slides: https://talks.oddbird.net/dynamic-css/fullstack18/
     video: https://youtu.be/9fTUeLsR2Hc
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/9fTUeLsR2Hc" frameborder="0" allowfullscreen></iframe>
+    embed: &fsfest
+      iframe: https://www.youtube.com/embed/9fTUeLsR2Hc
+      width: 560
+      height: 315
   - venue: JSConf US
     url: https://2018.jsconf.us/
     adr: Carlsbad, CA
     start: 2018-08-21
     slides: https://talks.oddbird.net/dynamic-css/jsconfus18/
     video: https://www.youtube.com/watch?v=uwgBz748t-g
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/uwgBz748t-g" frameborder="0" allowfullscreen></iframe>
+    embed: &jsconf
+      iframe: https://www.youtube.com/embed/uwgBz748t-g
+      width: 560
+      height: 315
   - venue: CSSConf Argentina
     url: https://cssconfar.com/
     adr: Buenos Aires, Argentina
     start: 2018-08-18
     slides: https://talks.oddbird.net/dynamic-css/cssconfar18/
+media:
+  - span: full
+    <<: *fsfest
+  - span: full
+    <<: *jsconf
 ---
+
+{% import "content.macros.njk" as content %}
 
 **CSS has come a long way since the browser wars** of the late 90s.
 What used to be a struggle,
@@ -59,3 +73,10 @@ without all the invasive Javascript.
 - Basics for understanding Custom Properties & `Calc()`.
 - Practical examples and use-cases for data-infused design.
 - Integrating with CSS Grids to build layouts on-the-fly.
+
+------
+
+{{ content.fig(
+  data=media,
+  caption='Conference videos…'
+) }}
