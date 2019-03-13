@@ -7,7 +7,7 @@ start: 2007-08-14
 end: 2010-01-14
 hero:
   img: art/music/dcd.png
-calendar: false
+index: dirt circle dogs
 tags:
   - _calendar
   - _orgs
@@ -21,6 +21,7 @@ events:
     tags:
       - published
       - audio
+      - dirt circle dogs
 press:
   - text: |
       An earthy and soulful collaboration…
