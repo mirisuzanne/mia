@@ -6,13 +6,12 @@ tags:
   - speaking
   - workshop
   - code
-  - css
 events:
-  - venue: Generate New York
+  - venue: Generate Workshops
     url: https://www.generateconf.com/
     adr: San Francisco, CA
     start: 2019-04-24
-  - venue: Smashing Conf
+  - venue: Smashing Workshops
     url: https://www.smashingconf.com/sf-2019/
     adr: San Francisco, CA
     start: 2019-04-18

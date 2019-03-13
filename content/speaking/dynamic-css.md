@@ -5,7 +5,6 @@ slides: https://talks.oddbird.net/dynamic-css/
 tags:
   - speaking
   - code
-  - css
   - layout
   - video
 events:

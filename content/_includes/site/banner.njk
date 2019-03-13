@@ -19,7 +19,7 @@
         {% if sub %}
           {{ sub | mdInline | typogr | safe }}
         {% elif go_to %}
-          check it out on {{ go_to }}
+          @ {{ go_to }}
         {% endif %}
       </span>
     {% endif %}

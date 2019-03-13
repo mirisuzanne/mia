@@ -1,7 +1,9 @@
 ---
 feature: true
-title: New World Arts
-sub: Artistic Director -- Goshen, IN
+title: Artistic Director
+banner: New World Arts
+sub: Artistic Director (2003-2007), Technical Director (2001-2003)
+venue: New World Arts
 url: https://web.archive.org/web/20100810193456/http://newworldarts.org/events/history.php
 start: 2001-01-01
 end: 2007-08-14

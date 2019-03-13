@@ -1,4 +1,5 @@
 ---
+feature: true
 title: Missa Populi [script]
 sub: |
   This ain’t grace, this all fucked, this old thing…

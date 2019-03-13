@@ -5,7 +5,6 @@ tags:
   - speaking
   - code
   - susy
-  - css
   - layout
 events:
   - venue: Bmore Sass

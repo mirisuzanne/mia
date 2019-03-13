@@ -6,7 +6,6 @@ hero:
 tags:
   - speaking
   - code
-  - css
   - susy
   - layout
 events:

@@ -68,13 +68,19 @@
   {% set tags = item.tags | publicTags %}
   {% set date_format = 'since' if (item.group | groupName == 'now') else 'md' %}
   {% set is_self = (item.page.url == self) %}
-  {% set no_title = (is_self and not item.event.title) %}
+  {% set self_title = (is_self and not item.event.title) %}
 
   {# Venue Link #}
   {%- set venue_name = item.event.venue or item.page.data.venue -%}
-  {%- set venue_url = item.event.url or item.page.data.url -%}
+  {%- set venue_adr = item.event.adr or item.page.data.adr -%}
+  {%- set venue_adr -%}
+  {%- if venue_adr -%}
+    <small class="adr"> | {{ venue_adr }}</small>
+  {%- endif -%}
+  {%- endset -%}
+  {%- set venue_url = item.event.url or item.page.data.url or item.page.url -%}
   {%- set venue = utility.link_if(venue_name, venue_url) if venue_name else none -%}
-  {%- set venue = ['@', venue] | join(' ') if venue else none -%}
+  {%- set venue = ['@', venue, venue_adr] | join(' ') if venue else none -%}
 
   {# Title Link #}
   {%- set title_name = item.event.title or item.page.data.title -%}
@@ -82,6 +88,14 @@
   {%- set url = none if is_self else item.page.url -%}
   {%- set title = utility.link_if(title_name | mdInline, url) -%}
   {%- set title = ['See Also:', title] | join(' ') if not_me else title -%}
+
+  {# Venue & Title Arrangement #}
+  {% set venue_title = item.event.venue_title or item.page.data.venue_title %}
+  {% set flip_title = venue_title or self_title %}
+  {% set main = venue if (venue and flip_title) else title %}
+  {% set top = venue if (venue and not flip_title) else none %}
+  {% set top = title if (not top) and (not self_title) else top %}
+  {% set top = none if (top == main) else top %}
 
   {# Info #}
   {% set info %}
@@ -94,15 +108,12 @@
         {{ start }}—{{ end }}
       {% endif %}
     </time>
-    {% if (venue and not no_title) %}
-      {{ venue | safe }}
+    {% if top %}
+      {{ top | safe }}
     {% elif tags %}
       » {{ utility.tag_list(tags, all, '/') }}
     {% endif %}
   {% endset %}
-
-  {# Main #}
-  {% set main = venue if (venue and no_title) else title %}
 
   {# Output #}
   {% call cards.item(item.feature) %}

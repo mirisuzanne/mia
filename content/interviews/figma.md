@@ -9,7 +9,6 @@ tags:
   - _calendar
   - design
   - interview
-  - css
   - code
 ---
 

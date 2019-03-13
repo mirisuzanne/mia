@@ -5,7 +5,6 @@ slides: https://oddbooksapp.com/book/pattern-making
 tags:
   - speaking
   - code
-  - css
   - design systems
 events:
   - venue: Refresh Denver
