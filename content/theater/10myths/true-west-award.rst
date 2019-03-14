@@ -1,4 +1,4 @@
-public: yes
+date: 2016-12-18
 tags: ['press', 'award', 'riding sidesaddle*', 'teacup gorilla', 'art', 'writing', 'theater']
 series: 'riding sidesaddle*'
 image:

@@ -1,4 +1,4 @@
-public: yes
+date: 2016-08-18
 tags: ['sass', 'code']
 slug: 'sitepoint-qa'
 image:

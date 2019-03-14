@@ -1,4 +1,4 @@
-public: yes
+date: 2016-10-13
 tags: ['interview', 'code']
 slug: 'versioning'
 image:

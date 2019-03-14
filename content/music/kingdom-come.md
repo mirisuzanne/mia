@@ -22,7 +22,7 @@ press:
     credit: Cat Carroll
     venue: Onion AV Club
     date: 2009-08-14
-    # url: /misc/dcd-onion-review/
+    url: https://web.archive.org/web/20090817020255/http://denver.decider.com/articles/dirt-circle-dogs%2c31559/
 album:
   - iframe: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/728697027&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=false&show_reposts=false&show_teaser=true
     width: 100%

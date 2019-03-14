@@ -1,4 +1,4 @@
-public: yes
+date: 2015-06-16
 tags: ['interview', 'writing', 'riding sidesaddle*']
 series: 'riding sidesaddle*'
 elsewhere:

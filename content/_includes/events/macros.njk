@@ -9,6 +9,10 @@
 ) %}
   {% call cards.section(title) %}
     {% for segment in events %}
+      {% if (segment.group == none | getDate('year')) and not loop.first %}
+        <hr data-divider>
+      {% endif %}
+
       {{ group(
         title=segment.group,
         events=segment.data,
@@ -26,12 +30,6 @@
   self
 ) %}
   {% set is_future = title | groupName %}
-  {% set this_year = (title == none | getDate('year')) %}
-
-  {% if this_year and not loop.first %}
-    <hr data-divider>
-  {% endif %}
-
   {% call cards.group(title) %}
     {{ list(
       events=events,
@@ -86,7 +84,7 @@
   {%- set title_name = item.event.title or item.page.data.title -%}
   {%- set not_me = ('inspiration' in tags) -%}
   {%- set url = none if is_self else item.page.url -%}
-  {%- set title = utility.link_if(title_name | mdInline, url) -%}
+  {%- set title = utility.link_if(title_name | mdInline, url or venue_url) -%}
   {%- set title = ['See Also:', title] | join(' ') if not_me else title -%}
 
   {# Venue & Title Arrangement #}

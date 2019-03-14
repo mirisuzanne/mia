@@ -1,4 +1,4 @@
-public: yes
+date: 2016-12-09
 tags: ['speaking', 'writing', 'riding sidesaddle*']
 series: 'riding sidesaddle*'
 image:

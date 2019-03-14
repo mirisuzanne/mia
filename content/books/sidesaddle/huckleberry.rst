@@ -1,4 +1,4 @@
-public: yes
+date: 2015-10-10
 tags: ['writing', 'art', 'riding sidesaddle*']
 series: 'riding sidesaddle*'
 image:

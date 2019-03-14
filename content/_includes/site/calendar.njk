@@ -31,7 +31,7 @@
   ) }}
 {% elif events %}
   {{ event_macros.section(
-    title=utility.section_title('as seen at…'),
+    title=utility.section_title('including…'),
     events=collections.all | getPage(page) | getEvents,
     all=collections.all,
     self=page.url

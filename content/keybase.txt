@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/mirisuzanne
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://miriamsuzanne.com
+  * I am mirisuzanne (https://keybase.io/mirisuzanne) on keybase.
+  * I have a public key ASDy1Aq3brRg-SQESIfxYVSZukrpm74DBAzJEG94KrT54wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f2d40ab76eb460f924044887f1615499ba4ae99bbe03040cc9106f782ab4f9e30a",
+      "host": "keybase.io",
+      "kid": "0120f2d40ab76eb460f924044887f1615499ba4ae99bbe03040cc9106f782ab4f9e30a",
+      "uid": "cc5cedcea9aad3a7a281b0c87ccf7f19",
+      "username": "mirisuzanne"
+    },
+    "merkle_root": {
+      "ctime": 1522165542,
+      "hash": "90dfad2e8ae2877a9b1329a1822efb57a7188c13fa0befa9e29be54972ea4c9ffaaca75cc6e507316602c046785805acce0233b558f3da375336a515957196ac",
+      "hash_meta": "c785793fcc93ba4aae6b88c87cd61e33201b375f8c18ce43dbf8b534fa63df4e",
+      "seqno": 2295553
+    },
+    "service": {
+      "hostname": "miriamsuzanne.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.45"
+  },
+  "ctime": 1522165556,
+  "expire_in": 504576000,
+  "prev": "43093b54fb78631a0a7034ef8b37a041ed86c5d73fe222a6b3eaca9f4e7f5fd2",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg8tQKt260YPkkBEiH8WFUmbpK6Zu+AwQMyRBveCq0+eMKp3BheWxvYWTFA0t7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZjJkNDBhYjc2ZWI0NjBmOTI0MDQ0ODg3ZjE2MTU0OTliYTRhZTk5YmJlMDMwNDBjYzkxMDZmNzgyYWI0ZjllMzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZjJkNDBhYjc2ZWI0NjBmOTI0MDQ0ODg3ZjE2MTU0OTliYTRhZTk5YmJlMDMwNDBjYzkxMDZmNzgyYWI0ZjllMzBhIiwidWlkIjoiY2M1Y2VkY2VhOWFhZDNhN2EyODFiMGM4N2NjZjdmMTkiLCJ1c2VybmFtZSI6Im1pcmlzdXphbm5lIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTIyMTY1NTQyLCJoYXNoIjoiOTBkZmFkMmU4YWUyODc3YTliMTMyOWExODIyZWZiNTdhNzE4OGMxM2ZhMGJlZmE5ZTI5YmU1NDk3MmVhNGM5ZmZhYWNhNzVjYzZlNTA3MzE2NjAyYzA0Njc4NTgwNWFjY2UwMjMzYjU1OGYzZGEzNzUzMzZhNTE1OTU3MTk2YWMiLCJoYXNoX21ldGEiOiJjNzg1NzkzZmNjOTNiYTRhYWU2Yjg4Yzg3Y2Q2MWUzMzIwMWIzNzVmOGMxOGNlNDNkYmY4YjUzNGZhNjNkZjRlIiwic2Vxbm8iOjIyOTU1NTN9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoibWlyaWFtc3V6YW5uZS5jb20iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjQ1In0sImN0aW1lIjoxNTIyMTY1NTU2LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjQzMDkzYjU0ZmI3ODYzMWEwYTcwMzRlZjhiMzdhMDQxZWQ4NmM1ZDczZmUyMjJhNmIzZWFjYTlmNGU3ZjVmZDIiLCJzZXFubyI6OSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxECEn1UXdtQbYttiAW7Y6hPcFmsVDVrvlP9GXm+Jo61yIroCgl3WAwNwKEMj8p72phK4Msei93iB/Je4g6VhaGwCqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg6iQS+rXJA519ErJxncHieiGuqX/GHXGlyKfqs+5JieujdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mirisuzanne
+
+==================================================================

@@ -1,9 +1,7 @@
 ---
 feature: true
-title: Artistic Director
-banner: New World Arts
+title: New World Arts
 sub: Artistic Director (2003-2007), Technical Director (2001-2003)
-venue: New World Arts
 url: https://web.archive.org/web/20100810193456/http://newworldarts.org/events/history.php
 start: 2001-01-01
 end: 2007-08-14
@@ -15,6 +13,7 @@ tags:
   - art
 events:
   - title: Bigger Guns III
+    venue: New World Arts
     start: 2007-04-20
     end: 2007-04-28
     tags:
@@ -27,12 +26,14 @@ events:
         url: http://articles.southbendtribune.com/2007-04-20/news/26771959_1_kung-fu-michelle-milne-lab-work
         date: 2007-04-20
   - title: Fear/Falling
+    venue: New World Arts
     start: 2006-10-20
     end: 2006-10-29
     tags:
       - new world
       - directing
   - title: Danny and the Deep Blue Sea
+    venue: New World Arts
     start: 2006-09-15
     end: 2006-09-24
     tags:
@@ -44,6 +45,7 @@ events:
         url: http://articles.southbendtribune.com/2006-09-17/news/26981141_1_danny-and-roberta-dance-characters
         date: 2006-09-17
   - title: Hello and Goodbye
+    venue: New World Arts
     start: 2006-11-25
     end: 2006-12-04
     tags:
@@ -56,12 +58,14 @@ events:
         url: http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
         date: 2006-01-29
   - title: Sadomasochism
+    venue: New World Arts
     date: 2005-09-13
     tags:
       - new world
       - writing
       - directing
   - title: In a Time of War
+    venue: New World Arts
     start: 2004-04-29
     end: 2004-05-01
     tags:
@@ -69,12 +73,14 @@ events:
       - writing
     awards: <b>International Peace Play Contest</b>: Runner Up
   - title: Criminal Hearts
+    venue: New World Arts
     start: 2004-10-14
     end: 2004-10-24
     tags:
       - new world
       - directing
   - title: Every Other Day
+    venue: New World Arts
     start: 2004-09-09
     end: 2004-09-18
     tags:
@@ -82,17 +88,20 @@ events:
       - writing
     summary: Directed by Michael Natoli
   - title: A Lie of the Mind
+    venue: New World Arts
     date: 2002-03-02
     tags:
       - new world
       - lighting
   - title: The House of Yes
+    venue: New World Arts
     date: 2001-06-08
     tags:
       - new world
       - lighting
       - asst directing
   - title: Danny and the Deep Blue Sea
+    venue: New World Arts
     date: 2001-02-04
     tags:
       - new world
