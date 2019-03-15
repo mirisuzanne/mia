@@ -11,6 +11,7 @@ tags:
   - _calendar
   - theater
   - art
+  - writing
   - teacup gorilla
   - music
   - directing

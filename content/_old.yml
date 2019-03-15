@@ -4,6 +4,7 @@
 
 #   # - title: 'True: Sass Unit Tests'
 #   #   url: 'http://oddbird.net/true'
+#   #   datetime: ['2013', '06', '06']
 #   #   with:
 #   #     - name: 'OddBird'
 #   #       url: 'http://oddbird.net'
@@ -34,32 +35,7 @@
 #         url: 'http://teacupgorilla.com'
 
 
-#   - name: 'Show Your Work & Share Your Toys'
-#     url: '/pres/show-yr-work/'
-#     type: ['speaking']
-#     role: 'speaking'
-#     summary: 'a case-study in building and sharing open-source Sass'
-#     venue:
-#       - name: 'CampSass'
-#         url: 'http://campsass.com/'
-#         datetime: ['2014', '04', '19']
-#       - name: 'SassConf'
-#         url: 'http://sassconf.com/'
-#         datetime: ['2013', '10', '11']
-#         video: 'https://vimeo.com/channels/sassconf2013/86306775'
-
-
 #   ### 2013 -------------------------------------
-
-
-#   - name: 'Organizing Sass Partials'
-#     url: '/pres/sass-partials/index.html'
-#     datetime: ['2013', '11', '19']
-#     type: ['speaking']
-#     role: 'speaking'
-#     venue:
-#       - name: 'NYC Sass & Compass Meetup'
-#         url: 'http://www.meetup.com/nyc-sass/events/146898452/'
 
 
 #   - name: 'Bad Shadow Affair'
@@ -146,16 +122,6 @@
 #       - name: 'Colorado University'
 
 
-#   - name: 'True: Sass Unit Tests'
-#     url: 'http://oddbird.net/true'
-#     datetime: ['2013', '06', '06']
-#     type: ['software']
-#     role: 'creator'
-#     with:
-#       - name: 'OddBird'
-#         url: 'http://oddbird.net'
-
-
 #   - name: 'Bouldering Poets'
 #     url: 'https://boulderingpoets.wordpress.com/2013/04/01/march-photos/'
 #     datetime: ['2013', '03', '22']
@@ -164,32 +130,6 @@
 #     with:
 #       name: 'Teacup Gorilla'
 #       url: 'http://teacupgorilla.com'
-
-
-#   - name: 'Fuck The Muse'
-#     datetime: ['2013', '03', '29']
-#     type: ['publication']
-#     summary: 'a series of articles on creative process'
-#     with:
-#       - name: 'The Operating System'
-#         url: 'http://theoperatingsystem.org/'
-#     notes:
-#       - name: 'Introduction'
-#         url: 'http://www.theoperatingsystem.org/word-tech-ericmeyer-field-notes/'
-#       - name: "Lesson 1: Fuck the Muse"
-#         url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-creativity-mini-series-lesson-1/'
-#       - name: 'Lesson 2: Ordinary Tools of Thought'
-#         url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-2-ordinary-tools-of-thought/'
-#       - name: 'Lesson 3: Creative Modes and Cycles'
-#         url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-3-creative-modes-and-cycles/'
-#       - name: 'Lesson 4: Starting from a Seed'
-#         url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-4-starting-from-a-seed/'
-#       - name: 'Lesson 5: Get Curious'
-#         url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-4-starting-from-a-seed/'
-#       - name: 'Lesson 6: Explosive Growth'
-#         url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-6-explosive-growth/'
-#       - name: 'Lesson 7: (Re)Thinking on Your Feet'
-#         url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-7-rethinking-on-your-feet/'
 
 
 #   ### 2012 -------------------------------------
@@ -249,19 +189,6 @@
 #       name: 'Illiterate Magazine'
 #       # url: 'http://www.illiteratemagazine.com'
 
-#   - name: 'Missa Populi'
-#     datetime: ['2010', '03', null]
-#     type: ['performance']
-#     role: 'writer & director'
-#     venue:
-#       - name: 'The Packing House Center for the Arts'
-#     org:
-#       name: 'Vicious Trap'
-#       url: 'http://vicioustrap.com'
-#     with:
-#       - name: 'Teacup Gorilla'
-#         url: 'http://teacupgorilla.com'
-
 #   - name: 'Roller Skating With My Cousin'
 #     url: 'http://lida.org/?p=48'
 #     datetime: ['2010', '01', null]
@@ -275,47 +202,6 @@
 
 
 #   ### 2009 -------------------------------------
-
-#   - name: 'A Murder One Less'
-#     datetime: ['2009', '08', null]
-#     role: 'lighting design'
-#     type: ['performance']
-#     venue:
-#       - name: 'Boulder International Fringe Festival'
-#         url: 'http://www.boulderfringe.com/'
-#     org:
-#       name: 'Vicious Trap'
-#       url: 'http://vicioustrap.com'
-
-#   - name: 'Susy'
-#     url: 'http://susy.oddbird.net'
-#     datetime: ['2009', '07', '13']
-#     summary: 'power tools for web layout.'
-#     type: ['software']
-#     with:
-#       - name: 'OddBird'
-#         url: 'http://oddbird.net/'
-#     press:
-#       - text: 'If you’re interested in reading Sass poetry, be sure to look at Susy’s source code!'
-#         credit: 'Hugo Giraudel'
-#         source: 'SitePoint'
-#         url: 'http://www.sitepoint.com/my-favorite-sass-tools/'
-#         datetime: ['2014', '04', '22']
-
-#   - name: 'Kingdom Come'
-#     url: 'http://www.cdbaby.com/cd/dirtcircledogs'
-#     datetime: ['2009', null, null]
-#     role: 'musician'
-#     type: ['album']
-#     org:
-#       name: 'Dirt Circle Dogs'
-#       url: 'http://dirtcircledogs.com'
-#     press:
-#       - text: 'Eisenstat sings that there is “No voice on the radio,” and perhaps, for now, that’s true. Kingdom, though, is certainly worth a private listen at home.'
-#         credit: 'Cat Carroll'
-#         source: 'Onion AV Club'
-#         url: '/misc/dcd-onion-review/'
-#         datetime: ['2009', '08', '14']
 
 #   - name: 'Rain /of Terror'
 #     url: 'http://lida.org/?p=312'
@@ -389,72 +275,6 @@
 #     # press:
 #     #   - source: '@@@'
 
-#   - name: 'Bigger Guns III'
-#     datetime: ['2007', '04', null]
-#     role: 'co-creator & director'
-#     type: ['performance']
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
-#     press:
-#       - title: 'Lights, No Cameras, Plenty of Action'
-#         credit: 'Jeremy D. Bonfiglio'
-#         source: 'South Bend Tribune'
-#         url: "http://articles.southbendtribune.com/2007-04-20/news/26771959_1_kung-fu-michelle-milne-lab-work"
-#         datetime: ['2007', '04', '20']
-
-
-#   ### 2006 -------------------------------------
-
-#   - name: 'Fear/Falling'
-#     datetime: ['2006', null, null]
-#     role: 'director'
-#     type: ['performance']
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
-#     # press:
-#     #   - source: '@@@'
-
-#   - name: 'Danny and the Deep Blue Sea'
-#     datetime: ['2006', null, null]
-#     role: 'director'
-#     type: ['performance']
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
-#     press:
-#       - credit: 'Andrew S. Hughes'
-#         source: 'South Bend Tribune'
-#         url: 'http://articles.southbendtribune.com/2006-09-17/news/26981141_1_danny-and-roberta-dance-characters'
-#         datetime: ['2006', '09', '17']
-
-#   - name: 'Hello and Goodbye'
-#     datetime: ['2006', null, null]
-#     role: 'director'
-#     type: ['performance']
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
-#     press:
-#       - text: 'Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.'
-#         credit: 'Jack Walton'
-#         source: 'South Bend Tribune'
-#         url: 'http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard'
-#         datetime: ['2006', '01', '29']
-
-
-#   ### 2005 -------------------------------------
-
-#   - name: 'Sadomasochism'
-#     datetime: ['2005', null, null]
-#     role: 'writer & director'
-#     type: ['performance']
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
-
-
 #   ### 2004 -------------------------------------
 
 #   - name: 'In a Time of War'
@@ -467,15 +287,6 @@
 #     notes:
 #       - name: '<b>International Peace Play Contest</b>: Runner Up'
 
-#   - name: 'Every Other Day'
-#     datetime: ['2004', null, null]
-#     role: 'playwright'
-#     type: ['performance']
-#     summary: 'Directed by Michael Natoli'
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
-
 #   - name: 'Every Other Day (chapbook)'
 #     datetime: ['2004', null, null]
 #     role: 'playwright'
@@ -485,15 +296,6 @@
 #       name: 'Pinchpenny Press'
 #     notes:
 #       - name: '<b>Kennedy Center ACTF</b>: [finalist] Best One-Act Play'
-
-#   - name: 'Criminal Hearts'
-#     datetime: ['2004', null, null]
-#     role: 'director'
-#     type: ['performance']
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
-
 
 #   ### 2003 -------------------------------------
 
@@ -516,34 +318,7 @@
 #       url: 'https://www.osfashland.org/'
 
 
-#   ### 2002 -------------------------------------
-
-#   - name: 'A Lie of the Mind'
-#     datetime: ['2002', null, null]
-#     role: 'lighting design'
-#     type: ['performance']
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
-
-
 #   ### 2001 -------------------------------------
-
-#   - name: 'The House of Yes'
-#     datetime: ['2001', null, null]
-#     role: 'lighting design & assistant director'
-#     type: ['performance']
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
-
-#   - name: 'Danny and the Deep Blue Sea'
-#     datetime: ['2001', null, null]
-#     role: 'lighting design'
-#     type: ['performance']
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
 
 #   - name: 'Another Round'
 #     datetime: ['2001', null, null]
@@ -555,36 +330,6 @@
 
 
 # # Interviews
-# interviews:
-#   - name: 'Transitions'
-#     url: 'https://vimeo.com/198228746'
-#     datetime: ['2017', '01', '19']
-#     org:
-#       name: 'America Heard'
-#       url: 'https://americaheard.com/'
-
-#   - name: 'An Interview with Miriam Suzanne'
-#     url: 'https://css-tricks.com/interview-miriam-suzanne/'
-#     datetime: ['2016', '10', '15']
-#     org:
-#       contact: 'Chris Coyier'
-#       name: 'CSS Tricks'
-#       url: 'https://css-tricks.com/'
-
-#   - name: 'SitePoint Live Q&A on Susy and Web Toolkits'
-#     url: 'https://www.sitepoint.com/how-to-choose-the-right-css-toolkits-and-frameworks/'
-#     datetime: ['2016', '08', '18']
-#     org:
-#       name: 'SitePoint'
-#       url: 'https://www.sitepoint.com/community/t/live-q-a-miriam-suzanne-on-susy-and-the-need-for-toolkits-on-18th-aug-2pm-pst/232664'
-
-#   - name: 'On Riding SideSaddle*'
-#     url: 'http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/'
-#     datetime: ['2015', '06', '01']
-#     org:
-#       contact: 'Ryo Yamaguchi'
-#       name: 'Michigan Quarterly Review'
-#       url: 'http://www.michiganquarterlyreview.com/'
 
 #   # - name: 'Road to SassConf'
 #   #   url: 'https://www.youtube.com/watch?v=jkVgp-GfQXc'
@@ -618,41 +363,8 @@
 #       name: 'Media Archeology Lab'
 #       url: 'http://mediaarchaeologylab.com/'
 
-#   - name: 'Collaboration, Queer Art, and the Multi-Media Novel'
-#     url: 'http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel'
-#     datetime: ['2012', '08', '31']
-#     org:
-#       contact: 'Richard Wall'
-#       name: 'Boulder Writers Workshop'
-#       url: 'http://www.boulderwritersworkshop.org/'
-
 
 # # Associations
-# orgs:
-#   - name: 'OddBird LLC'
-#     url: 'http://oddbird.net'
-#     years: ['2008', null]
-#     role: 'founding partner'
-#     summary: 'custom web applications for clients, and tools for web developers'
-
-#   - name: 'Teacup Gorilla'
-#     url: 'http://teacupgorilla.com'
-#     years: ['2010', null]
-#     role: 'bass & vocals'
-#     summary: 'dark indie-rock soundscapes and evocative poetry'
-
-#   - name: 'Grapefruit Lab'
-#     url: 'http://grapefruitlab.com'
-#     years: ['2009', '2017']
-#     role: 'co-sucker'
-#     summary: 'a theater & performance collaboration/scapegoat'
-
-#   - name: 'Vicious Trap'
-#     url: 'http://vicioustrap.com'
-#     years: ['2009', '2017']
-#     role: 'co-sucker'
-#     summary: 'a theater & performance collaboration/scapegoat'
-
 #   - name: 'Boulder Writers’ Workshop'
 #     url: 'http://boulderwritersworkshop.org'
 #     years: ['2011', '2013']
@@ -675,95 +387,3 @@
 #     years: ['2008', '2010']
 #     role: 'technical director'
 #     summary: 'theatre'
-
-#   - name: 'Dirt Circle Dogs'
-#     url: 'http://www.cdbaby.com/cd/dirtcircledogs'
-#     years: ['2007', '2010']
-#     role: 'bass & guitar'
-#     summary: 'bright/dark indie-rock'
-
-#   - name: 'New World Arts'
-#     url: 'http://newworldarts.org'
-#     years: ['2001', '2007']
-#     role: 'artistic & technical director'
-#     summary: 'alternative theater ensemble'
-
-
-# # education
-# education:
-#   - name: 'Naropa Summer Writing Program'
-#     years: ['2012', '2012']
-#     summary: 'Studied writing and performance with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall'
-
-#   - name: 'Oregon Shakespeare Festival'
-#     years: ['2003', '2003']
-#     summary: 'Stage management intern for Antony and Cleopatra, directed by Penny Metropolis'
-
-#   - name: 'Goshen College'
-#     years: ['2001', '2006']
-#     summary: 'Studied theater, writing, and visual art'
-
-
-# message
-message:
-  - type: 'warning'
-    content: |
-      Under construction…
-
-# navigation
-nav:
-  - title: 'home'
-    slug: 'home'
-    url: '/'
-  - title: 'writing'
-    slug: 'writing'
-    url: '/writing/'
-  - title: 'speaking'
-    slug: 'speaking'
-    url: '/speaking/'
-  - title: 'web development'
-    slug: 'work'
-    url: '/work/'
-  - title: 'art'
-    slug: 'art'
-    url: '/art/'
-  - title: 'about'
-    slug: 'who'
-    url: '/who/'
-  - title: 'contact'
-    slug: 'contact'
-    url: '/contact/'
-
-
-# site
-author: 'Miriam Suzanne'
-email: 'miriam@miriamsuzanne.com'
-description: 'The art and code of Miriam Suzanne.'
-
-copyright:
-  - name: 'Miriam Eric Suzanne'
-    year: '2018'
-    url: '/contact/'
-
-
-# settings
-active_modules: [
-  blog,
-  current,
-  denormalize_config,
-  jinja_macros,
-  pages,
-  rst,
-  tags,
-  typogrify,
-  uniqify,
-  urls,
-  wrap
-  ]
-canonical_url: 'http://www.miriamsuzanne.com/'
-output_folder: '../gh-pages'
-rst_writer: html5writer
-template_path: '../templates'
-modules:
-  blog:
-    index_url: '/'

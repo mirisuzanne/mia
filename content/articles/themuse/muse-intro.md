@@ -1,10 +1,11 @@
 ---
 feature: true
 title: Fuck The Muse
-sub: Part 1 of [Fuck the Muse](/tags/fuck-the-muse/)
+sub: a series of articles on creative process
 venue: The Operating System
 url: http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-creativity-mini-series-lesson-1/
 date: 2012-10-16
+index: fuck the muse
 ---
 
 I’ve been told that you can’t teach creativity, but I disagree.

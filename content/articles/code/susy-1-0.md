@@ -6,7 +6,6 @@ tags:
   - _article
   - susy
   - code
-  - sass
 ---
 
 Susy 1.0 has officially launched!

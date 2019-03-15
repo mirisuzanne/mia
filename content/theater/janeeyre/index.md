@@ -12,8 +12,9 @@ tags:
   - _calendar
   - theater
   - art
-  - writing
   - directing
+  - writing
+  - acting
   - lighting
   - music
   - grapefruit lab

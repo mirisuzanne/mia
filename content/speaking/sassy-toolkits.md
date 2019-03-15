@@ -1,10 +1,10 @@
 ---
 title: Sassy Toolkits
+sub: a case-study in building and sharing open-source Sass
 url: https://www.oddbooksapp.com/book/sassy-toolkits
 tags:
   - speaking
   - code
-  - sass
 events:
   - venue: Frontend Zurich
     url: http://frontendconf.ch

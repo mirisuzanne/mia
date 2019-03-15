@@ -1,6 +1,6 @@
 ---
 title: Ordinary Tools of Thought
-sub: Part 2 of [Fuck the Muse](/tags/fuck-the-muse/)
+sub: Part 2 of [Fuck the Muse](/2012/10/16/muse-intro/)
 venue: The Operating System
 url: http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-2-ordinary-tools-of-thought/
 date: 2012-10-23

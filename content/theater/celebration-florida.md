@@ -11,7 +11,7 @@ tags:
   - _calendar
   - art
   - theater
-  - actor
+  - acting
 calendar: theater
 video:
   - iframe: https://www.youtube.com/embed/FDbrHv-zLGU

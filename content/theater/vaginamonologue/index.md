@@ -19,6 +19,8 @@ events:
 tags:
   - theater
   - art
+  - writing
+  - acting
 summary: |
   I was invited to write and perform
   my own Vagina Monologue

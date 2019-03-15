@@ -5,7 +5,6 @@ tags:
   - _calendar
   - _article
   - tutorial
-  - sass
   - code
 ---
 

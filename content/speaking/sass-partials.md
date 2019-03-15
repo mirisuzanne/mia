@@ -4,7 +4,6 @@ slides: http://miriamsuzanne.com/pres/sass-partials/
 tags:
   - speaking
   - code
-  - sass
 events:
   - venue: NYCSass Meetup
     url: https://www.meetup.com/nyc-sass/events/146898452/

@@ -52,7 +52,10 @@ events:
       - new world
       - directing
     press:
-      - text: Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.
+      - text: |
+          Rarely does one encounter a production
+          undertaken with such a tremendous amount
+          of care and consideration.
         credit: Jack Walton
         venue: South Bend Tribune
         url: http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
@@ -71,7 +74,8 @@ events:
     tags:
       - new world
       - writing
-    awards: <b>International Peace Play Contest</b>: Runner Up
+    awards: '**International Peace Play Contest**: Runner Up'
+    summary: Directed by Michael Natoli
   - title: Criminal Hearts
     venue: New World Arts
     start: 2004-10-14
@@ -99,7 +103,7 @@ events:
     tags:
       - new world
       - lighting
-      - asst directing
+      - assistant directing
   - title: Danny and the Deep Blue Sea
     venue: New World Arts
     date: 2001-02-04
