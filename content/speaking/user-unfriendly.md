@@ -12,6 +12,11 @@ tags:
   - process
   - collaboration
 events:
+  - venue: Agile Denver
+    url: https://www.meetup.com/Agile-Denver2/events/258957862/
+    adr: Denver, CO
+    start: 2019-03-18
+    # slides:
   - venue: AIGA Colorado
     url: https://colorado.aiga.org/event/04-26-18-rethinking-ux-design/
     adr: Denver, CO
