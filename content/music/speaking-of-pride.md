@@ -2,25 +2,21 @@
 title: Speaking of Pride
 sub: Minimalist music with fragments of memoir
 date: 2018-06-09
+adr: Denver, CO
 url: http://playgroundensemble.org/2018/05/speaking-of-pride/
 tags:
   - music
   - writing
   - transition
   - video
-with:
-  - name: Playground Ensemble
-    url: http://playgroundensemble.org/
 events:
   - venue: Invisible City
     date: 2018-06-14
-    adr: Denver, CO
+    feature: true
   - venue: GLBT Community Center
     date: 2018-06-13
-    adr: Denver, CO
   - venue: Denver Public Library
     date: 2018-06-09
-    adr: Denver, CO
 video:
   - iframe: https://www.youtube.com/embed/-u_vwCiwp0M
     width: 560

@@ -17,14 +17,17 @@ tags:
   - shop
 press:
   - text: |
-      [The Holes They Leave][holes] occupies a middle place
+      The Holes They Leave occupies a middle place
       that immediately brings solace to the weary ear.
-
-      [holes]: http://teacupgorilla.bandcamp.com/album/the-holes-they-leave
     credit: Darren Thornberry
     venue: Stubborn Sounds
     url: https://stubbornsounds.wordpress.com/2015/07/07/teacup-gorilla-the-holes-they-leave-in-review/
+audio:
+  - iframe: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/118973549&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
+    width: 100%
+    height: 450
 ---
+
 {% import "content.macros.njk" as content %}
 
 In the summer of 2015,
@@ -32,9 +35,12 @@ In the summer of 2015,
 in conjunction with [Riding SideSaddle*][sidesaddle]
 and a tour across the midwest.
 
+[Buy the album](http://teacupgorilla.bandcamp.com/album/the-holes-they-leave)
+
 [tg]: /orgs/teacup-gorilla/
 [sidesaddle]: /projects/ridingsidesaddle/
 
-{% call content.fig(caption='Stream or buy on bandcamp, itunes, spotify, or wherever you do that sort of thing') %}
-<iframe style="border: 0; width: 700px; height: 308px; margin: 0 auto;" src="https://bandcamp.com/EmbeddedPlayer/album=1383025660/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="http://teacupgorilla.bandcamp.com/album/the-holes-they-leave">The Holes They Leave by Teacup Gorilla</a></iframe>
-{% endcall %}
+{{ content.fig(
+  audio,
+  caption='Stream or buy on bandcamp, itunes, spotify, etc…'
+) }}

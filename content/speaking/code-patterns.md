@@ -22,6 +22,8 @@ events:
     adr: New York, NY
     start: 2017-01-12
     slides: https://oddbooksapp.com/release/e063d143-df07-4392-a6f3-3ae53e7fa2ca
+    tags:
+      - _resistance tour
   - venue: CSSDay.io
     url: http://cssday.io/
     adr: Chandler, AZ

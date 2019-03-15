@@ -3,7 +3,7 @@ title: 10 Myths... [script]
 banner: 10 Myths on the Proper Application of Beauty Products [script]
 sub: |
   Award-winning stage adaptation of
-  [Riding SideSaddle*](http://ridingsidesaddle.com),
+  [Riding SideSaddle*](/books/sidesaddle/),
   weaving myth with everyday ritual
 date: 2016-03-26
 hero:

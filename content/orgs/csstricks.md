@@ -22,6 +22,7 @@ events:
     url: https://css-tricks.com/css-charts-grid-custom-properties/
     venue: CSS Tricks
     date: 2017-08-11
+    feature: true
     tags:
       - article
   - title: Fun with Viewport Units

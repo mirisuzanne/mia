@@ -1,6 +1,6 @@
 ---
 title: Sassy Toolkits
-slides: https://www.oddbooksapp.com/book/sassy-toolkits
+url: https://www.oddbooksapp.com/book/sassy-toolkits
 tags:
   - speaking
   - code
@@ -15,12 +15,14 @@ events:
     url: http://denver.wordcamp.org/2015/
     adr: Denver, CO
     start: 2015-06-13
-  - venue: Camp Sass
+  - title: Show Your Work & Share Your Toys
+    venue: Camp Sass
     url: http://campsass.com/2014/
     adr: San Francisco, CA
     start: 2014-04-19
     slides: http://miriamsuzanne.com/pres/show-yr-work/
-  - venue: SassConf 2013
+  - title: Show Your Work & Share Your Toys
+    venue: SassConf 2013
     url: http://sassconf.com/2013/
     adr: New York, NY
     start: 2013-10-12

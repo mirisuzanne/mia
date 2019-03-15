@@ -13,7 +13,7 @@ section:
 
 ## art & ...
 
-Miriam is the author of [Riding SideSaddle*](http://ridingsidesaddle.com)
+Miriam is the author of [Riding SideSaddle*](/books/sidesaddle/)
 and [The Post-Obsolete Book](http://miriamsuzanne.com/post-obsolete)
 (both published by SpringGun Press),
 and *Every Other Day* (Pinchpenny Press).

@@ -52,7 +52,7 @@ events:
       - new world
       - directing
     press:
-      - quote: Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.
+      - text: Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.
         credit: Jack Walton
         venue: South Bend Tribune
         url: http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard

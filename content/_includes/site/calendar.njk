@@ -20,7 +20,7 @@
   ) }}
 {% elif get_calendar %}
   {% set title %}
-    more in '{{ get_calendar }}'…
+    more in '{{ get_calendar | displayName }}'…
   {% endset %}
 
   {{ event_macros.section(

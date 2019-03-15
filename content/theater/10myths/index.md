@@ -3,7 +3,7 @@ feature: true
 title: 10 Myths on the Proper Application of Beauty Projects
 sub: |
   Award-winning stage adaptation of
-  [Riding SideSaddle*](http://ridingsidesaddle.com)
+  [Riding SideSaddle*](/books/sidesaddle/)
   weaving myth with everyday ritual
 hero:
   img: art/theater/10myths.jpg
@@ -19,6 +19,12 @@ tags:
   - teacup gorilla
   - music
   - buntport
+events:
+  - title: 2016 True West Award
+    venue: Denver Center for the Performing Arts
+    url: https://www.denvercenter.org/news-center/2016-true-west-award-miriam-suzanne/
+    date: 2016-12-18
+    feature: true
 press:
   - text: |
       Suzanne wanted to tell a story that
@@ -27,7 +33,7 @@ press:
     credit: John Moore
     venue: 2016 True West Award
     slug: truewest
-    url: https://www.denvercenter.org/2016-true-west-award-miriam-suzanne/
+    url: https://www.denvercenter.org/news-center/2016-true-west-award-miriam-suzanne/
   - text: |
       The play makes us think about the dizzying variety
       of possible physical variations to human genitalia
@@ -107,7 +113,7 @@ summary: |
   created with [Buntport Theater][buntport]
   and [Teacup Gorilla][teacup].
 
-  [sidesaddle]: http://ridingsidesaddle.com
+  [sidesaddle]: /books/sidesaddle/
   [buntport]: http://buntport.com
   [teacup]: http://teacupgorilla.com
 ---

@@ -1,4 +1,5 @@
 ---
+feature: true
 title: Outside The Room
 sub: |
   Grapefruit Lab adapts Kafka

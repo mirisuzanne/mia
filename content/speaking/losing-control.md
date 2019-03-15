@@ -12,6 +12,8 @@ events:
     url: http://cal.lib.virginia.edu/event/3088981
     adr: Charlottesville, VA
     start: 2017-01-23
+    tags:
+      - _resistance tour
 ---
 
 **As creators, it’s tempting to grab and consolidate our power**,

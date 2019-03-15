@@ -1,4 +1,5 @@
 ---
+feature: true
 title: The Post-Obsolete Book
 banner: The Obsolete Book
 hero:
@@ -9,7 +10,7 @@ sub: |
   as Represented by a Post-Obsolete Book About Dance
 venue: post-obsolete.com
 url: http://post-obsolete.com
-date: 2015-11-25
+date: 2012-07-08
 tags:
   - _calendar
   - writing
@@ -65,11 +66,19 @@ events:
     start: 2012-07-21
     venue_title: true
 press:
-  - quote: I was impressed by the purest form of outrageous creation.
+  - text: I was impressed by the purest form of outrageous creation.
     credit: Judy Rose
     venue: Boulder Writer’s Workshop
     url: http://www.boulderwritersworkshop.com/2013/04/17/post-obsolete-a-bww-salon/
     date: 2013-04-17
+  - text: |
+      Follow your bliss, Mia.
+      Take no prisoners.
+      We're already dead.
+      What the fuck do we want with money?
+    credit: Mortimer Leech
+    venue: The Widow’s Bane
+    url: https://www.facebook.com/thewidowsbane/
 media:
   - iframe: https://www.youtube.com/embed/yt37eIen7JU
     width: 800
@@ -102,18 +111,15 @@ whiskey,
 handouts,
 and music by [The Widow's Bane][bane].
 
-> Follow your bliss, Mia.
-> Take no prisoners.
-> We're already dead.
-> What the fuck do we want with money?
->
-> ---Mortimer Leech
-
-Thank you Mr. Leech.
-
 [post-obsolete]: http://www.post-obsolete.com
 [michelle]: http://michelleellsworth.com/
-[bane]: http://www.myspace.com/widowsbane
+[bane]: https://www.facebook.com/thewidowsbane/
+
+---
+
+{{ content.quotes(press) }}
+
+---
 
 {{ content.fig(
   data=media,
