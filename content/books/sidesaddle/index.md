@@ -15,6 +15,7 @@ tags:
   - art
   - writing
   - published
+  - book
   - shop
 events:
   - title: SideSaddle Reading

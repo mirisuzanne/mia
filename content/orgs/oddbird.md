@@ -10,7 +10,6 @@ tags:
   - _calendar
   - _orgs
   - code
-  - web
   - oddbird
 ---
 

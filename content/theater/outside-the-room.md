@@ -16,7 +16,7 @@ tags:
   - _calendar
   - art
   - theater
-  - diecting
+  - directing
   - grapefruit lab
 video:
   - iframe: https://www.youtube.com/embed/aBBnSi5MJ8o

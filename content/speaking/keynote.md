@@ -5,7 +5,6 @@ hero:
 tags:
   - speaking
   - code
-  - keynote
 events:
   - venue: Design 4 Drupal
     url: https://design4drupal.org/

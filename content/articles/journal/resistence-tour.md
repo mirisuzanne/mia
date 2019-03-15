@@ -11,6 +11,7 @@ tags:
   - writing
   - riding sidesaddle
   - art
+  - journal
   - code
 events:
   - date: 2017-01-13

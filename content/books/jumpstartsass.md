@@ -12,7 +12,7 @@ date: 2016-03-22
 tags:
   - _calendar
   - writing
-  - books
+  - book
   - code
   - published
 press:

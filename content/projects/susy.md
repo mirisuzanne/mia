@@ -18,6 +18,7 @@ tags:
   - _calendar
   - code
   - susy
+  - oddbird
 events:
   - title: Learning Susy [book]
     venue: Zell Liew

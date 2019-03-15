@@ -6,7 +6,6 @@ tags:
   - speaking
   - code
   - art
-  - digital humanities
 events:
   - venue: UVA Scholars’ Lab
     url: http://cal.lib.virginia.edu/event/3088981
