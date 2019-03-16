@@ -6,13 +6,14 @@ hero:
 index: _resistance tour
 tags:
   - _calendar
-  - _article
+  - _post
   - speaking
   - writing
   - riding sidesaddle
   - art
   - journal
   - code
+  - tour
 events:
   - date: 2017-01-13
     adr: Brooklyn, NY

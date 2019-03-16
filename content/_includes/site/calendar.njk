@@ -6,8 +6,8 @@
 {% if get_calendar == 'all' %}
   {% set filters %}
     {{ utility.tag_list(
-      collections | sortTags,
-      collections.all
+      collections | getTags,
+      collections
     ) }}
     ({{ utility.link_if('more', '/tags/') }})
   {% endset %}
@@ -15,7 +15,7 @@
   {{ event_macros.section(
     title=utility.section_title('filter by...', filters),
     events=collections.all | getEvents,
-    all=collections.all,
+    all=collections,
     self=page.url
   ) }}
 {% elif get_calendar %}
@@ -26,14 +26,14 @@
   {{ event_macros.section(
     title=utility.section_title(title),
     events=collections.all | getEvents(get_calendar),
-    all=collections.all,
+    all=collections,
     self=page.url
   ) }}
 {% elif events %}
   {{ event_macros.section(
     title=utility.section_title('including…'),
     events=collections.all | getPage(page) | getEvents,
-    all=collections.all,
+    all=collections,
     self=page.url
   ) }}
 {% endif %}

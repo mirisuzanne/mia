@@ -23,7 +23,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('objectKeys', utils.objectKeys);
   eleventyConfig.addFilter('getDate', time.getDate);
   eleventyConfig.addFilter('publicTags', tags.publicTags);
-  eleventyConfig.addFilter('sortTags', tags.sortTags);
+  eleventyConfig.addFilter('getTags', tags.getTags);
   eleventyConfig.addFilter('groupTags', tags.groupTags);
   eleventyConfig.addFilter('matchTags', tags.matchTags);
   eleventyConfig.addFilter('displayName', tags.displayName);

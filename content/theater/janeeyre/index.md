@@ -14,7 +14,7 @@ tags:
   - art
   - director
   - writing
-  - acting
+  - actor
   - lighting design
   - music
   - grapefruit lab

@@ -29,9 +29,16 @@ const slugify = text => {
     .replace(/-+$/, ''); // Trim - from end of text
 };
 
+const unique = array => {
+  return array.filter((value, index, self) => {
+    return self.indexOf(value) === index;
+  });
+};
+
 module.exports = {
   groupBy,
   typeCheck,
   objectKeys,
   slugify,
+  unique,
 };

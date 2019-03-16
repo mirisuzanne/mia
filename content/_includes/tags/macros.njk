@@ -2,12 +2,12 @@
 {% import "cards.macros.njk" as cards %}
 
 {% macro section(
-  tags
+  all
 ) %}
   {% call cards.section(
     title=utility.section_title('by popular demand…')
   ) %}
-    {% for segment in tags | groupTags %}
+    {% for segment in all | groupTags %}
       {%- set title -%}
         {%- if segment.group != 'top' -%}~{%- endif -%}
         {{ segment.group }}
@@ -15,7 +15,7 @@
       {{ group(
         title=title,
         segment=segment.tags,
-        all=tags.all
+        all=all
       ) }}
     {% endfor %}
   {% endcall %}
@@ -57,7 +57,7 @@
   all
 ) %}
   {% call cards.item() %}
-    {{ cards.meta(tag_meta(tag.data)) }}
+    {{ cards.meta(tag_meta(tag.events)) }}
     {{ cards.main(utility.tag_link(tag.tag, all)) }}
   {% endcall %}
 {% endmacro %}
@@ -66,9 +66,10 @@
   data
 ) %}
   e.g.
-  {% set page = data | first %}
+  {% set item = data | first %}
+  {% set title = item.event.title or item.page.data.title %}
   {{ utility.link_if(
-    page.data.title | mdInline,
-    page.url
+    title | mdInline,
+    item.page.url
   ) }}
 {% endmacro %}

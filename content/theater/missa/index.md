@@ -15,6 +15,7 @@ tags:
   - teacup gorilla
   - music
   - director
+  - creator
 gallery:
   - img: /art/theater/missa/missa407.jpg
   - img: /art/theater/missa/missa543.jpg

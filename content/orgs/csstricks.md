@@ -24,19 +24,19 @@ events:
     date: 2017-08-11
     feature: true
     tags:
-      - article
+      - _post
   - title: Fun with Viewport Units
     url: https://css-tricks.com/fun-viewport-units/
     venue: CSS Tricks
     date: 2017-06-05
     tags:
-      - article
+      - _post
   - title: Loops in CSS Preprocessors
     url: https://css-tricks.com/loops-css-preprocessors/
     venue: CSS Tricks
     date: 2016-12-02
     tags:
-      - article
+      - _post
   - title: An Interview with Miriam Suzanne
     url: https://css-tricks.com/interview-miriam-suzanne/
     venue: CSS Tricks

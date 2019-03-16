@@ -42,7 +42,7 @@ const buildEvent = (page, event) => {
   // concat tags
   const pageTags = page.data.tags || [];
   const eventTags = event ? event.tags || [] : [];
-  const tags = pageTags.concat(eventTags);
+  const tags = utils.unique([...pageTags, ...eventTags]);
 
   // feature
   const feature = event ? event.feature : page.data.feature;

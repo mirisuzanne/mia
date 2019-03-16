@@ -3,7 +3,7 @@ title: Susy 1.0 Release
 date: 2012-08-14
 tags:
   - _calendar
-  - _article
+  - _post
   - susy
   - code
 ---

@@ -19,15 +19,18 @@ const matchTags = (allTags, findTags) => {
 };
 
 const tagData = collections => {
-  const tags = Object.keys(collections);
+  const eventTags = events
+    .get(collections.all, false, false)
+    .map(e => e.tags)
+    .reduce((all, one) => [...all, ...one]);
 
-  return tags
+  return utils
+    .unique(eventTags)
     .filter(tag => isPublic(tag))
     .map(tag => {
       const tagEvents = events.get(collections.all, tag, false);
       return {
         tag,
-        data: collections[tag],
         events: tagEvents,
         count: tagEvents.length,
       };
@@ -36,7 +39,7 @@ const tagData = collections => {
     .sort((a, b) => b.count - a.count);
 };
 
-const sortTags = (collections, top = topCount) => {
+const getTags = (collections, top = topCount) => {
   return tagData(collections)
     .slice(0, top || collections.length)
     .map(item => item.tag);
@@ -71,17 +74,27 @@ const displayName = tag => {
   return tag.startsWith('_') ? tag.slice(1) : tag;
 };
 
-const tagLink = (tag, collection) => {
-  const index = collection.filter(page => page.data.index === tag);
-  const slug = utils.slugify(tag);
-  return index[0] ? index[0].url : `/tags/${slug}/`;
+const tagLink = (tag, collections) => {
+  const pages = collections.all.filter(page => page.data.index === tag);
+
+  const extra = collections.all
+    .map(page => page.data.extraTags || [])
+    .reduce((all, tags) => [...all, ...tags])
+    .includes(tag);
+
+  const index = pages.length ? pages[0].url : null;
+
+  const fallback =
+    extra || collections[tag] ? `/tags/${utils.slugify(tag)}/` : null;
+
+  return index || fallback;
 };
 
 module.exports = {
   topCount,
   isPublic,
   publicTags,
-  sortTags,
+  getTags,
   groupTags,
   matchTags,
   displayName,

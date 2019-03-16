@@ -20,7 +20,7 @@ tags:
   - theater
   - art
   - writing
-  - acting
+  - actor
 summary: |
   I was invited to write and perform
   my own Vagina Monologue
