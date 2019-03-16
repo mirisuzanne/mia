@@ -48,7 +48,7 @@ const groupTags = (collections, top = topCount) => {
 
   // group by popularity
   tagData(collections).forEach((item, i) => {
-    const group = i < top ? 'top' : item.count;
+    const group = i < top ? 'top' : Math.ceil(item.count / 5) * 5;
     if (grouped[group]) {
       grouped[group].push(item);
     } else {

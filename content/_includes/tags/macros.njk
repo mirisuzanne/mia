@@ -8,8 +8,12 @@
     title=utility.section_title('by popular demand…')
   ) %}
     {% for segment in tags | groupTags %}
+      {%- set title -%}
+        {%- if segment.group != 'top' -%}~{%- endif -%}
+        {{ segment.group }}
+      {%- endset -%}
       {{ group(
-        title=segment.group,
+        title=title,
         segment=segment.tags,
         all=tags.all
       ) }}

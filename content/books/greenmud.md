@@ -6,7 +6,6 @@ venue: greengreenmud.com
 url: http://greengreenmud.com/
 tags:
   - _calendar
-  - into the green green mud
   - art
   - writing
   - design

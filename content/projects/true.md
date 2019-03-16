@@ -9,11 +9,11 @@ url: http://oddbird.net/true/
 date: 2013-06-06
 hero:
   img: projects/true.jpg
-index: 'true'
+series: open source
 tags:
   - _calendar
   - code
-  - 'true'
+  - open source
   - oddbird
 press:
   - text: OMG I just love this tool way too&nbsp;much.

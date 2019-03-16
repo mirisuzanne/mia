@@ -4,7 +4,6 @@ date: 2012-07-20
 tags:
   - _calendar
   - _article
-  - tutorial
   - code
 ---
 

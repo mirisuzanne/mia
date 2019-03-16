@@ -13,11 +13,13 @@ url: http://oddbird.net/susy/
 date: 2009-07-13
 hero:
   img: projects/susy.png
+series: open source
 index: susy
 tags:
   - _calendar
   - code
   - susy
+  - open source
   - oddbird
 events:
   - title: Learning Susy [book]

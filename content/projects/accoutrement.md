@@ -7,11 +7,11 @@ url: http://oddbird.net/accoutrement/
 date: 2014-10-30
 hero:
   img: projects/accoutrement.jpg
-index: accoutrement
+series: open source
 tags:
   - _calendar
   - code
-  - accoutrement
+  - open source
   - oddbird
 summary: |
   **Design systems must be

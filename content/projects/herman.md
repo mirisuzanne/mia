@@ -7,11 +7,11 @@ url: http://oddbird.net/herman/
 date: 2015-11-18
 hero:
   img: projects/herman.jpg
-index: herman
+series: open source
 tags:
   - _calendar
   - code
-  - herman
+  - open source
   - oddbird
 press:
   - text: |
