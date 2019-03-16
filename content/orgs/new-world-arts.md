@@ -10,6 +10,9 @@ tags:
   - _calendar
   - _orgs
   - theater
+  - artistic director
+  - technical director
+  - new world
   - art
 events:
   - title: Bigger Guns III
@@ -17,8 +20,7 @@ events:
     start: 2007-04-20
     end: 2007-04-28
     tags:
-      - new world
-      - directing
+      - director
     press:
       - title: Lights, No Cameras, Plenty of Action
         credit: Jeremy D. Bonfiglio
@@ -30,15 +32,13 @@ events:
     start: 2006-10-20
     end: 2006-10-29
     tags:
-      - new world
-      - directing
+      - director
   - title: Danny and the Deep Blue Sea
     venue: New World Arts
     start: 2006-09-15
     end: 2006-09-24
     tags:
-      - new world
-      - directing
+      - director
     press:
       - credit: Andrew S. Hughes
         venue: South Bend Tribune
@@ -49,8 +49,7 @@ events:
     start: 2006-11-25
     end: 2006-12-04
     tags:
-      - new world
-      - directing
+      - director
     press:
       - text: |
           Rarely does one encounter a production
@@ -64,15 +63,13 @@ events:
     venue: New World Arts
     date: 2005-09-13
     tags:
-      - new world
       - writing
-      - directing
+      - director
   - title: In a Time of War
     venue: New World Arts
     start: 2004-04-29
     end: 2004-05-01
     tags:
-      - new world
       - writing
     awards: '**International Peace Play Contest**: Runner Up'
     summary: Directed by Michael Natoli
@@ -81,35 +78,30 @@ events:
     start: 2004-10-14
     end: 2004-10-24
     tags:
-      - new world
-      - directing
+      - director
   - title: Every Other Day
     venue: New World Arts
     start: 2004-09-09
     end: 2004-09-18
     tags:
-      - new world
       - writing
     summary: Directed by Michael Natoli
   - title: A Lie of the Mind
     venue: New World Arts
     date: 2002-03-02
     tags:
-      - new world
-      - lighting
+      - lighting design
   - title: The House of Yes
     venue: New World Arts
     date: 2001-06-08
     tags:
-      - new world
-      - lighting
-      - assistant directing
+      - lighting design
+      - assistant director
   - title: Danny and the Deep Blue Sea
     venue: New World Arts
     date: 2001-02-04
     tags:
-      - new world
-      - lighting
+      - lighting design
 ---
 
 Founded in 1998 as New World Players,

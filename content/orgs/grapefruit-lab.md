@@ -17,8 +17,8 @@ events:
     url: http://www.boulderfringe.com/
     tags:
       - grapefruit lab
-      - directing
-      - lighting
+      - director
+      - lighting design
 ---
 
 > Grapefruit is a hybrid of lemon and orange.

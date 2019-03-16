@@ -225,7 +225,7 @@ Bono danced with the stars, suddenly ==Lavern Cox== is everywhere, Caitlin
 Jenner made transition a reality TV experience, and now *you're reading
 my blog*.
 
-New media comes out every year highlighting trans characters — but most
+New media comes out every year highlighting design trans characters — but most
 of them are written, directed, and acted by straight white men,
 reinforcing stereotypes more than ==reality==. When a new show or movie
 comes out, we're often more scared than excited.

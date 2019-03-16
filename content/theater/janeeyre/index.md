@@ -12,10 +12,10 @@ tags:
   - _calendar
   - theater
   - art
-  - directing
+  - director
   - writing
   - acting
-  - lighting
+  - lighting design
   - music
   - grapefruit lab
   - teacup gorilla

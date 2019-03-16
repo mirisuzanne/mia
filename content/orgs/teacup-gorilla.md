@@ -25,10 +25,17 @@ events:
     venue: The Historian
     url: http://theums.com/
     date: 2015-07-25
-  - title: Teacup Gorilla @ Bouldering Poets
-    venue: 303 Vodka
-    url: http://boulderingpoets.wordpress.com/
+  - venue: Bouldering Poets Anniversary
+    url: http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/
+    date: 2014-05-17
+    venue_title: true
+    tags:
+      - writing
+      - reading
+  - venue: Bouldering Poets
+    url: https://boulderingpoets.wordpress.com/2013/04/01/march-photos/
     date: 2013-03-22
+    venue_title: true
     tags:
       - writing
       - reading
@@ -74,6 +81,7 @@ summary: |
   Explosions in the Sky,
   or the Velvet Underground.
 ---
+
 {% import "content.macros.njk" as content %}
 
 {{ content.intro(summary) }}

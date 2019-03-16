@@ -1,6 +1,6 @@
 ---
 feature: true
-title: Susy [layout toolkit]
+title: 'Susy: layout toolkit'
 sub: |
   Popular
   **CSS layout framework** –
@@ -12,7 +12,7 @@ venue: OddBird
 url: http://oddbird.net/susy/
 date: 2009-07-13
 hero:
-  img: projects/susy.svg
+  img: projects/susy.png
 index: susy
 tags:
   - _calendar
@@ -74,6 +74,11 @@ summary: |
 {{ content.intro(summary) }}
 
 [Check it out »]({{ url }})
+
+
+------
+
+{{ content.quotes(press) }}
 
 ------
 

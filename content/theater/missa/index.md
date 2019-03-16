@@ -14,7 +14,7 @@ tags:
   - writing
   - teacup gorilla
   - music
-  - directing
+  - director
 gallery:
   - img: /art/theater/missa/missa407.jpg
   - img: /art/theater/missa/missa543.jpg

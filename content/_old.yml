@@ -1,40 +1,4 @@
 ---
-# features
-# --------
-
-#   # - title: 'True: Sass Unit Tests'
-#   #   url: 'http://oddbird.net/true'
-#   #   datetime: ['2013', '06', '06']
-#   #   with:
-#   #     - name: 'OddBird'
-#   #       url: 'http://oddbird.net'
-#   #   press:
-#   #     - text: 'OMG I just love this tool way too&nbsp;much.'
-#   #       credit: 'Hugo Giraudel'
-#   #       source: 'Sass Developer'
-#   #       url: 'http://hugogiraudel.com/'
-#   #   actions:
-#   #     - text: 'start testing'
-#   #       url: 'http://oddbird.net/true'
-#   #     - text: 'hire OddBird'
-#   #       url: 'http://oddbird.net/'
-
-# # History
-# # -------
-
-#   - name: 'Bouldering Poets: Two Year Anniversary'
-#     url: 'http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/'
-#     datetime: ['2014', '05', '17']
-#     type: ['performance']
-#     role: 'poet/musician'
-#     venue:
-#       - name: 'Bouldering Poets'
-#         url: 'http://boulderingpoets.wordpress.com/'
-#     with:
-#       - name: 'Teacup Gorilla'
-#         url: 'http://teacupgorilla.com'
-
-
 #   ### 2013 -------------------------------------
 
 
@@ -122,16 +86,6 @@
 #       - name: 'Colorado University'
 
 
-#   - name: 'Bouldering Poets'
-#     url: 'https://boulderingpoets.wordpress.com/2013/04/01/march-photos/'
-#     datetime: ['2013', '03', '22']
-#     type: ['performance']
-#     role: 'poet/musician'
-#     with:
-#       name: 'Teacup Gorilla'
-#       url: 'http://teacupgorilla.com'
-
-
 #   ### 2012 -------------------------------------
 
 
@@ -144,24 +98,6 @@
 #       - name: 'HTML5 Denver Users Group'
 #         url: 'http://www.meetup.com/HTML5-Denver-Users-Group/events/56361842/'
 
-
-#   - name: 'Into The Green Green Mud'
-#     url: 'http://www.greengreenmud.com/'
-#     datetime: ['2012', '01', null]
-#     role: 'author/artist/developer'
-#     type: ['publication']
-#     summary: 'a multimedia novel, still under construction...'
-#     with:
-#       - name: 'Teacup Gorilla'
-#         url: 'http://teacupgorilla.com'
-#       - name: 'OddBird'
-#         url: 'http://oddbird.com'
-#     press:
-#       - text: 'This virtuoso creation by a talented young poet, writer, artist, typographer, programmer, and musician is a taste of things to come as new generations of digital media and code literate creators come of age.'
-#         credit: 'Leonardo Flores'
-#         source: 'I ♥ E-Poetry'
-#         url: 'http://iloveepoetry.com/?p=2571'
-#         datetime: ['2013', '05', '02']
 
 
 #   ### 2011 -------------------------------------
@@ -189,58 +125,7 @@
 #       name: 'Illiterate Magazine'
 #       # url: 'http://www.illiteratemagazine.com'
 
-#   - name: 'Roller Skating With My Cousin'
-#     url: 'http://lida.org/?p=48'
-#     datetime: ['2010', '01', null]
-#     type: ['performance']
-#     role: 'ensemble member'
-#     org:
-#       name: 'The LIDA Project'
-#       url: 'http://lida.org'
-#     # press:
-#     #   - source: '@@@'
-
-
-#   ### 2009 -------------------------------------
-
-#   - name: 'Rain /of Terror'
-#     url: 'http://lida.org/?p=312'
-#     datetime: ['2009', '02', null]
-#     role: 'lighting design'
-#     type: ['performance']
-#     org:
-#       name: 'The LIDA Project'
-#       url: 'http://lida.org'
-#     notes:
-#       - name: '<b>Denver Post Ovation Award</b>: [nomination] Best Lighting Design'
-#         url: 'http://www.denverpost.com/theater/ci_13971871'
-#     # press:
-#     #   - source: '@@@'
-
-
 #   ### 2008 -------------------------------------
-
-#   - name: 'Untitled #39'
-#     datetime: ['2008', null, null]
-#     role: 'co-creator & performer'
-#     type: ['performance']
-#     summary: 'Site-specific performance devised for the Dresden Dolls lobby pre-show'
-#     org:
-#       name: 'The LIDA Project'
-#       url: 'http://lida.org'
-#     with:
-#       - name: 'Dresden Dolls'
-#         url: 'http://www.dresdendolls.com/'
-
-#   - name: 'The Resistible Rise of Arturo Ui'
-#     datetime: ['2008', null, null]
-#     role: 'technical director'
-#     type: ['performance']
-#     org:
-#       name: 'Countdown to Zero'
-#       url: 'http://countdowntozero.org/'
-#     # press:
-#     #   - source: '@@@'
 
 #   - name: 'Dar al-Harb'
 #     datetime: ['2008', null, null]
@@ -252,28 +137,6 @@
 #     # press:
 #     #   - source: '@@@'
 
-#   - name: 'The Anonymous Mr. W.'
-#     datetime: ['2008', null, null]
-#     role: 'assistant director'
-#     type: ['performance']
-#     org:
-#       name: 'The LIDA Project'
-#       url: 'http://lida.org'
-#     # press:
-#     #   - source: '@@@'
-
-
-#   ### 2007 -------------------------------------
-
-#   - name: 'My Name Is Rachel Corrie'
-#     datetime: ['2007', null, null]
-#     role: 'tour manager & technical director'
-#     type: ['performance']
-#     org:
-#       name: 'Countdown to Zero'
-#       url: 'http://countdowntozero.org/'
-#     # press:
-#     #   - source: '@@@'
 
 #   ### 2004 -------------------------------------
 
@@ -375,15 +238,3 @@
 #     years: ['2010', '2012']
 #     role: 'bass player'
 #     summary: 'blues rock with soul'
-
-#   - name: 'The LIDA Project'
-#     url: 'http://lida.org'
-#     years: ['2008', '2010']
-#     role: 'technical director'
-#     summary: 'experimental multi-media performance collaboration'
-
-#   - name: 'Countdown to Zero'
-#     url: 'http://countdowntozero.org'
-#     years: ['2008', '2010']
-#     role: 'technical director'
-#     summary: 'theatre'
