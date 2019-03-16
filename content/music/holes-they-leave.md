@@ -12,6 +12,7 @@ tags:
   - _calendar
   - art
   - music
+  - album
   - audio
   - teacup gorilla
   - shop

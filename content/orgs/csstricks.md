@@ -41,6 +41,7 @@ events:
     url: https://css-tricks.com/interview-miriam-suzanne/
     venue: CSS Tricks
     date: 2016-10-15
+    feature: true
     tags:
       - interview
 hero:

@@ -11,5 +11,4 @@ renderData:
   calendar: '{{ tag }}'
 extraTags:
   - assistant director
-  - reading
 ---

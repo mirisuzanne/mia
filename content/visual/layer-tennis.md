@@ -1,5 +1,5 @@
 ---
-title: Stratified Design
+title: PRINT! vol. 3
 venue: The Operating System
 url: http://www.theoperatingsystem.org/layer-tennis-live-stream-print-vol-3-ole/
 date: 2013-04-18

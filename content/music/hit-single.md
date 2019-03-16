@@ -11,6 +11,7 @@ tags:
   - art
   - music
   - audio
+  - album
   - dirt circle dogs
   - published
 album:

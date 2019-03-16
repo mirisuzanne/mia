@@ -3,35 +3,39 @@
 
 {% set get_calendar = index or renderData.calendar or calendar or series %}
 
-{% if get_calendar == 'all' %}
-  {% set filters %}
-    {{ utility.tag_list(
-      collections | getTags,
-      collections
-    ) }}
-    ({{ utility.link_if('more', '/tags/') }})
-  {% endset %}
+{% set more %}
+  ({{ utility.link_if('all', '/tags/') }})
+{% endset %}
 
+{% set top_filters %}
+  {{ utility.tag_list(
+    collections | getTags,
+    collections
+  ) }}
+  {{ more | safe }}
+{% endset %}
+
+{% if get_calendar == 'all' %}
   {{ event_macros.section(
-    title=utility.section_title('filter by...', filters),
+    title=utility.section_title('filter by...', top_filters),
     events=collections.all | getEvents,
     all=collections,
     self=page.url
   ) }}
 {% elif get_calendar %}
   {% set title %}
-    more in '{{ get_calendar | displayName }}'…
+    showing '{{ get_calendar | displayName }}'…
   {% endset %}
 
   {{ event_macros.section(
-    title=utility.section_title(title),
+    title=utility.section_title(title, more),
     events=collections.all | getEvents(get_calendar),
     all=collections,
     self=page.url
   ) }}
 {% elif events %}
   {{ event_macros.section(
-    title=utility.section_title('including…'),
+    title=utility.section_title('including…', more),
     events=collections.all | getPage(page) | getEvents,
     all=collections,
     self=page.url

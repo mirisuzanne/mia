@@ -11,6 +11,7 @@ sub: |
 venue: post-obsolete.com
 url: http://post-obsolete.com
 date: 2012-07-08
+index: post-obsolete
 tags:
   - _calendar
   - writing
@@ -18,6 +19,7 @@ tags:
   - theater
   - published
   - elit
+  - post-obsolete
 events:
   - venue: ELO Conference
     url: http://conference.eliterature.org/archive/2014
@@ -25,15 +27,21 @@ events:
     video: https://youtu.be/yt37eIen7JU
     press: http://www.huffingtonpost.com/illya-szilak/
     venue_title: true
+    tags:
+      - reading
   - venue: Brakhage Center Media Arts
     url: http://www.colorado.edu/brakhagecenter/2013/08/10/bc-luncheon-series-welcomes-eric-meyer-october-7th
     start: 2013-10-07
     video: https://vimeo.com/86628115
     venue_title: true
+    tags:
+      - reading
   - venue: Media Archeology Lab | &Now Festival
     url: http://mediaarchaeologylab.com/past-artist-in-residence/eric-meyer-2/
     start: 2013-09-28
     venue_title: true
+    tags:
+      - reading
   - venue: SpringGun Journal, Issue 8
     url: http://www.springgunpress.com/issue-8-2013/eric-meyer/
     start: 2013-09-01
@@ -42,6 +50,8 @@ events:
     url: http://www.boulderwritersworkshop.com/2013/04/17/post-obsolete-a-bww-salon/
     start: 2013-04-17
     venue_title: true
+    tags:
+      - reading
   - venue: SLSA 2012 – Electronic Literature and the Nonhuman
     url: http://www.litsciarts.org/slsa12/
     adr: Milwaukee, WI
@@ -50,6 +60,8 @@ events:
     video: https://youtu.be/FnHsQRUQ1x8?t=1h11m11s
     note: ELO juried elit performance
     venue_title: true
+    tags:
+      - reading
     with:
       - Jeremy Douglass
       - Katherine Hayles
@@ -79,6 +91,11 @@ press:
     credit: Mortimer Leech
     venue: The Widow’s Bane
     url: https://www.facebook.com/thewidowsbane/
+  - title: Ideas, Process, Obsolescence, and the Iterative
+    date: 2015-11-15
+    credit: Mél Hogan
+    venue: Media Archeology Blog
+    url: http://mediaarchaeologylab.com/blog/miriam-suzanne-ideas-process-obsolescence-iterative-interview-mel-hogan/
 media:
   - iframe: https://www.youtube.com/embed/yt37eIen7JU
     width: 800
@@ -129,10 +146,9 @@ and music by [The Widow's Bane][bane].
 The piece
 requires a few props:
 
-- overhead projector
+- overhead projector & transparencies
+- digital audio/video
 - party hats
 - noise makers
-- an old book about dance
-- 10-page printed handouts
-- tweed jacket
-- whiskey
+- an old book (about dance)
+- 10-page printed powerpoint handouts

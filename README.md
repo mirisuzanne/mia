@@ -1,5 +1,5 @@
 # mia
-eleventy source for miriam.codes
+eleventy source for miriamsuzanne.com
 
 ## Develop:
 

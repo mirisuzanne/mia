@@ -12,22 +12,6 @@
 #         url: 'http://teacupgorilla.com'
 
 
-#   - name: 'PRINT! vol. 3'
-#     url: 'https://squareup.com/store/the-operating-system/item/the-operating-system-print-vol'
-#     datetime: ['2013', '10', '17']
-#     role: 'artist/poet'
-#     summery: 'cover art and exerpts from Riding SideSaddle*'
-#     type: ['publication', 'art']
-#     with:
-#       - name: 'Aaron Liechty'
-#         url: 'http://aaronliechty.tumblr.com'
-#       - name: 'The Operating System'
-#         url: 'http://theoperatingsystem.org/'
-#     notes:
-#       - name: 'Layer-tennis design process'
-#         url: 'http://www.theoperatingsystem.org/layer-tennis-live-stream-print-vol-3-ole/'
-
-
 #   - name: 'Art is for People'
 #     url: '/art-is-for-people/'
 #     datetime: ['2013', '10', '07']
@@ -58,22 +42,6 @@
 #     venue:
 #       - name: '<i>&</i>Now Festival'
 #         url: 'http://andnowfestival.com/'
-
-
-#   - name: 'Artist in Residence'
-#     url: 'http://mediaarchaeologylab.com/past-artist-in-residence/eric-meyer-2/'
-#     datetime: ['2013', '09', '01']
-#     type: ['art', 'performance']
-#     role: 'digital artist'
-#     venue:
-#       - name: 'Media Archeology Lab'
-#         url: 'http://mediaarchaeologylab.com'
-#     press:
-#       - name: 'Ideas, Process, Obsolescence, and the Iterative'
-#         credit: 'Mél Hogan'
-#         source: 'Media Archeology Blog'
-#         url: 'http://mediaarchaeologylab.com/blog/miriam-suzanne-ideas-process-obsolescence-iterative-interview-mel-hogan/'
-#         datetime: ['2015', '11', '15']
 
 
 #   - name: 'Intro to Digital Media for Humanities'
@@ -233,8 +201,3 @@
 #     years: ['2011', '2013']
 #     role: 'professional member'
 #     summary: 'literary salon & professional organization'
-
-#   - name: 'Raven Jane'
-#     years: ['2010', '2012']
-#     role: 'bass player'
-#     summary: 'blues rock with soul'
