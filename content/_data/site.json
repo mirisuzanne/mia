@@ -23,8 +23,5 @@
     "url": "{{ pkg.homepage }}/feed/feed.xml",
     "id": "{{ pkg.homepage }}"
   },
-  "styles": [
-    "screen.css",
-    "prism.css"
-  ]
+  "styles": ["screen.css"]
 }
