@@ -12,6 +12,8 @@ module.exports = eleventyConfig => {
 
   // pass-through
   eleventyConfig.addPassthroughCopy('content/assets');
+  eleventyConfig.addPassthroughCopy('content/keybase.txt');
+  eleventyConfig.addPassthroughCopy('content/robots.txt');
 
   // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
