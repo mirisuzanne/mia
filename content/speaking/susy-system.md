@@ -1,7 +1,7 @@
 ---
 title: Your Own Damn [Susy] System
 sub: an introduction to the Susy layout toolkit
-url: http://miriamsuzanne.com/pres/susy2/
+url: http://mirisuzanne.github.io/pres/susy2/
 tags:
   - speaking
   - code

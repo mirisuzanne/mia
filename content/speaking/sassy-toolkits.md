@@ -20,13 +20,13 @@ events:
     url: http://campsass.com/2014/
     adr: San Francisco, CA
     start: 2014-04-19
-    slides: http://miriamsuzanne.com/pres/show-yr-work/
+    slides: http://mirisuzanne.github.io/pres/show-yr-work/
   - title: Show Your Work & Share Your Toys
     venue: SassConf 2013
     url: http://sassconf.com/2013/
     adr: New York, NY
     start: 2013-10-12
-    slides: http://miriamsuzanne.com/pres/show-yr-work/
+    slides: http://mirisuzanne.github.io/pres/show-yr-work/
     video: https://vimeo.com/channels/sassconf2013/86306775
 ---
 

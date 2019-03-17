@@ -13,14 +13,14 @@ section:
 
 ## art & ...
 
-Miriam is the author of [Riding SideSaddle*](/books/sidesaddle/)
-and [The Post-Obsolete Book](http://miriamsuzanne.com/post-obsolete)
+Miriam is the author of [Riding SideSaddle\*](/books/sidesaddle/)
+and [The Post-Obsolete Book](http://post-obsolete.com)
 (both published by SpringGun Press),
-and *Every Other Day* (Pinchpenny Press).
+and _Every Other Day_ (Pinchpenny Press).
 She received a 2017 **True West Award** for the stage adaptation
-*10 Myths on the Proper Application of Beauty Products*
+_10 Myths on the Proper Application of Beauty Products_
 with Buntport Theater,
-and **Audience Choice Award** for *Daffodil MF*
+and **Audience Choice Award** for _Daffodil MF_
 at the Goshen ShortFilmFest05.
 Formerly Artistic Director of **New World Arts**,
 and Technical Director of **The LIDA Project**/**Countdown to Zero**,

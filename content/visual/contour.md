@@ -1,6 +1,6 @@
 ---
 feature: true
-title: The Posture of Contour
+title: The Posture of Contour [cover art]
 sub: by [James Belflower](http://www.pw.org/content/james_belflower)
 venue: SpringGun Press
 url: http://www.springgunpress.com/posture/
@@ -48,7 +48,7 @@ final:
 The editors at
 [SpringGun Press][springgun] asked me
 to design cover art
-for *The Posture of Contour*,
+for _The Posture of Contour_,
 a new book by
 [James Belflower][james].
 I used the opportunity to get my mind out of an all-digital space,
@@ -56,7 +56,6 @@ and spent most of my time with pen, paper, and oil pastel.
 
 [springgun]: http://www.springgunpress.com/
 [james]: http://www.pw.org/content/james_belflower
-
 
 ## Sketches
 
