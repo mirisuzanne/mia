@@ -14,7 +14,7 @@
   "og": {
     "locale": "en_US",
     "type": "website",
-    "img": "writing/sidesaddle/neck.jpg"
+    "img": "headshots/mia-smirk.jpg"
   },
   "feed": {
     "subtitle": "{{ pkg.description }}",
