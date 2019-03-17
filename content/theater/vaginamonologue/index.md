@@ -66,7 +66,7 @@ and somehow still results in a [singular narrative][narrative]. [^2]
 But that story is not my story,
 so we agreed that I should write a new one.
 Here it is,
-my rouge monologue --
+my rogue monologue --
 performed as part of the
 brilliant production
 by [It Grows Wild][igw] theater company.

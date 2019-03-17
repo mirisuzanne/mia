@@ -1,0 +1,24 @@
+/// # Color-Stripe Tools
+/// @group tools-stripes
+
+// Stripes
+// -------
+/// Returns a striped gradient
+/// for use anywhere gradients are accepted.
+/// @group tools-stripes
+/// @param {angle} $position -
+///   The starting position or angle of the gradient.
+/// @param {arglist} $colors -
+///   A list of all the colors to be used.
+@function stripes($position, $colors...) {
+  $gradient: append((), $position, comma);
+  $width: 100% / length($colors);
+
+  @for $i from 1 through length($colors) {
+    $color: nth($colors, $i);
+    $new: (var-color($color) ($width * ($i - 1)) ($width * $i));
+    $gradient: append($gradient, $new, comma);
+  }
+
+  @return linear-gradient($gradient);
+}

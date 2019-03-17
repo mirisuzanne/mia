@@ -13,6 +13,7 @@ groups:
     tools-grids: Grids
     tools-grid-vars: CSS Grid Variables
     tools-patterns: Patterns
+    tools-stripes: Stripes
   Design Tokens:
     config-animation: Animations
     config-colors: Colors

@@ -144,6 +144,9 @@ $theme-colors: (
       'contrast': append(map-keys($accent-shades), 'aaa'),
     ),
   'feature': '#action-hover',
+  'trans-blue': '#text-highlight',
+  'trans-pink': '#action',
+  'trans-white': '#_brand-gray-light-6',
 );
 
 @include add-colors($theme-colors);

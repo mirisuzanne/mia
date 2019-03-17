@@ -7,8 +7,21 @@
 
 [data-layout='body'] {
   grid-template-rows: auto 1fr;
-  padding: size('gutter') 0;
+  padding-top: size('gutter');
   min-height: 100vh;
+
+  @include after('') {
+    background-image: stripes(
+      95deg,
+      'trans-blue',
+      'trans-pink',
+      'trans-white',
+      'trans-pink',
+      'trans-blue'
+    );
+    grid-column: full;
+    min-height: size('gutter');
+  }
 }
 
 // Sections
