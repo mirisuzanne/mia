@@ -1,5 +1,12 @@
 # mia
-eleventy source for miriamsuzanne.com
+
+This site is built using:
+
+- HTML, of course
+- CSS w/ a load of Grids & Variables
+- Eleventy JS w/ Markdown & Nunjucks
+- Sass w/ OddBird's Accoutrement & Herman
+- A lot of ideas from a lot of cool people
 
 ## Develop:
 
