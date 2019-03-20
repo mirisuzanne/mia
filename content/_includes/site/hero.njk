@@ -8,7 +8,7 @@
       alt="{{ hero.alt or '' }}"
       class="hero-image" />
     {% if hero.caption %}
-    <figcaption class="hero-caption">
+    <figcaption class="hero-caption" data-theme="invert">
       {{ hero.caption | md | safe }}
     </figcaption>
     {% endif %}
