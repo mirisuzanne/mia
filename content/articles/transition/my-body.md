@@ -113,7 +113,7 @@ I think maybe ==changing my name==
 will help,
 but it doesn't much.
 
-I tell N— how I'm feeling.
+I tell Nat how I'm feeling.
 *That's because you're not on hormones yet*.
 I believe her,
 ==but there's a== waiting ==list.==

@@ -64,7 +64,7 @@
   self
 ) %}
   {% set tags = item.tags | publicTags %}
-  {% set date_format = 'since' if (item.group | groupName == 'now') else 'md' %}
+  {% set date_format = 'since' if (item.group | groupName == 'orgs') else 'md' %}
   {% set is_self = (item.page.url == self) %}
   {% set self_title = (is_self and not item.event.title) %}
 

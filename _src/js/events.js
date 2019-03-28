@@ -8,8 +8,10 @@ const isPublic = event => event.draft !== true;
 const hasEvents = page => page.data.events;
 
 const groupNames = {
-  4000: 'now',
-  now: 4000,
+  5000: 'now',
+  now: 5000,
+  4000: 'orgs',
+  orgs: 4000,
   3000: 'soon',
   soon: 3000,
 };
@@ -23,9 +25,9 @@ const buildEvent = (page, event) => {
   const start = eventStart || page.data.start || page.date;
   let end = eventStart ? event.end : page.data.end;
 
-  // set end explicit or start or far future…
+  // set end for far future…
   if (!end) {
-    end = end === null ? new Date('3000-01-01') : start;
+    end = end === null ? new Date(`${groupNames['orgs']}-01-01`) : start;
   }
 
   // set group…
@@ -36,7 +38,12 @@ const buildEvent = (page, event) => {
   let group = time.getDate(date, 'year');
 
   if (end_iso >= now_iso) {
-    group = start_iso > now_iso ? 3000 : 4000;
+    const endYear = `${time.getDate(end, 'year')}`;
+    if (groupNames[endYear]) {
+      group = endYear;
+    } else {
+      group = start_iso > now_iso ? groupNames['soon'] : groupNames['now'];
+    }
   }
 
   // concat tags
