@@ -42,7 +42,6 @@ $theme-colors: (
     (
       'contrast': append(map-keys($accent-shades), 'aaa'),
     ),
-  'feature': '#action-hover',
   'trans-blue': '#text-highlight',
   'trans-pink': '#action',
   'trans-white': '#_brand-gray-light-6',
@@ -59,7 +58,7 @@ $theme-colors: (
 $light-theme: (
   'background': '#_brand-gray-light-6',
   'callout': '#_brand-gray-light-5',
-  'text-shadow': '#_contrast-light',
+  'shadow': '#_contrast-light',
   'contrast': '#_contrast-dark',
   'feature': '#_brand-accent-dark-5',
   'mia-eyes': currentColor,
@@ -92,7 +91,8 @@ $light-colors: map-merge($colors, $light-theme);
 $dark-theme: (
   'background': '#_brand-gray-dark-6',
   'callout': '#_brand-gray-dark-5',
-  'text-shadow': '#_contrast-dark',
+  'feature': '#action-hover',
+  'shadow': '#_contrast-dark',
   'contrast': '#_contrast-light',
   'mia-eyes': '#background',
 );
@@ -122,7 +122,8 @@ $dark-colors: map-merge($colors, $dark-theme);
 $contrast-theme: (
   'background': '#_contrast-dark',
   'callout': '#background',
-  'text-shadow': '#background',
+  'feature': '#action-hover',
+  'shadow': '#background',
   'contrast': '#_contrast-light',
   'mia-eyes': '#background',
   'text': '#contrast',

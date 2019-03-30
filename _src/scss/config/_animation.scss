@@ -11,6 +11,7 @@
 ///   Animate Times
 $times: (
   'fast': 200ms,
+  'relaxed': 500ms,
 );
 
 // Changes
@@ -20,5 +21,11 @@ $times: (
 /// @link https://oddbird.net/accoutrement/docs/animate-change.html
 ///   Animate Changes
 $changes: (
-  'text-color': text-decoration-color time('fast') ease('_in-out'),
+  'img-filter': filter time('relaxed') ease('_in-out'),
+  'hero-rotate': transform time('relaxed') ease('_in-out-back'),
+  'hero': (
+    '#img-filter',
+    '#hero-rotate',
+  ),
+  'theme': all time('relaxed') ease('_in-out'),
 );

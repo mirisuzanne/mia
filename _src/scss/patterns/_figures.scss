@@ -1,6 +1,15 @@
 // Icons
 // =======
 
+img {
+  @include transition('img-filter');
+  filter: brightness(var(--img-bright, 100%));
+
+  &:hover {
+    --img-bright: 100%;
+  }
+}
+
 .ratio {
   position: relative;
 
