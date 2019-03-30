@@ -17,7 +17,6 @@ module.exports = eleventyConfig => {
 
   // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
-  eleventyConfig.addLayoutAlias('contact', 'layouts/contact.njk');
   eleventyConfig.addLayoutAlias('tags', 'layouts/tags.njk');
 
   // filters
