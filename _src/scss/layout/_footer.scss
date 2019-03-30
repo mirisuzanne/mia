@@ -16,3 +16,21 @@
     margin-bottom: size('half-shim');
   }
 }
+
+[data-layout='flag'] {
+  --angle: 5deg;
+  background-image: stripes(
+    var(--angle, 5deg),
+    'trans-blue',
+    'trans-pink',
+    'trans-white',
+    'trans-pink',
+    'trans-blue'
+  );
+  grid-column: full;
+  min-height: 90vh;
+
+  @include above('page-break') {
+    --angle: 95deg;
+  }
+}

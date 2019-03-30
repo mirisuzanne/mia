@@ -1,0 +1,152 @@
+/// # Color Configuration
+/// @group config-themes
+/// @link https://oddbird.net/accoutrement/docs/color.html
+///   Accoutrement Color
+
+// Theme Colors
+// ------------
+/// These colors are calculated in relation to the given theme
+/// @group config-themes
+/// @colors
+/// @type Map
+$theme-colors: (
+  'overlay': '#background'
+    (
+      'alpha': 0.8,
+    ),
+  'text': '#background'
+    (
+      'contrast': append(map-keys($main-shades), 'aaa'),
+    ),
+  'text-light': '#background'
+    (
+      'contrast': append(map-keys($gray-shades), 'aa'),
+    ),
+  'text-highlight': '#background'
+    (
+      'contrast': append(map-keys($main-shades), 'aa'),
+    ),
+  'border': '#background'
+    (
+      'contrast': append(map-keys($gray-shades), 'aa-large'),
+    ),
+  'action': '#callout'
+    (
+      'contrast': append(map-keys($accent-shades), 'aa'),
+    ),
+  'action-underline': '#action'
+    (
+      'alpha': 0.5,
+    ),
+  'action-hover': '#callout'
+    (
+      'contrast': append(map-keys($accent-shades), 'aaa'),
+    ),
+  'feature': '#action-hover',
+  'trans-blue': '#text-highlight',
+  'trans-pink': '#action',
+  'trans-white': '#_brand-gray-light-6',
+);
+
+@include add-colors($theme-colors);
+
+// Light Theme
+// -----------
+/// These colors form the basis of the light theme
+/// @group config-themes
+/// @type Map
+$light-theme: (
+  'background': '#_brand-gray-light-6',
+  'callout': '#_brand-gray-light-5',
+  'text-shadow': '#_contrast-light',
+  'contrast': '#_contrast-dark',
+  'feature': '#_brand-accent-dark-5',
+  'mia-eyes': currentColor,
+);
+
+@include add-colors($light-theme);
+
+// Light Colors
+// -----------
+/// The full color map for implementing the light-theme
+/// @group config-themes
+/// @colors light
+/// @type Map
+$light-colors: map-merge($colors, $light-theme);
+
+@include herman-add(
+  'colors',
+  'light',
+  map-merge($theme-colors, $light-theme),
+  $_color,
+  null,
+  $light-colors
+);
+
+// Dark Theme
+// -----------
+/// These colors form the basis of the dark theme
+/// @group config-themes
+/// @type Map
+$dark-theme: (
+  'background': '#_brand-gray-dark-6',
+  'callout': '#_brand-gray-dark-5',
+  'text-shadow': '#_contrast-dark',
+  'contrast': '#_contrast-light',
+  'mia-eyes': '#background',
+);
+
+// Dark Colors
+// -----------
+/// The full color map for implementing the dark-theme
+/// @group config-themes
+/// @colors dark
+/// @type Map
+$dark-colors: map-merge($colors, $dark-theme);
+
+@include herman-add(
+  'colors',
+  'dark',
+  map-merge($theme-colors, $dark-theme),
+  $_color,
+  null,
+  $dark-colors
+);
+
+// Contrast Theme
+// --------------
+/// These colors form the basis of the contrast theme
+/// @group config-themes
+/// @type Map
+$contrast-theme: (
+  'background': black,
+  'callout': '#_contrast-dark',
+  'text-shadow': black,
+  'contrast': white,
+  'mia-eyes': '#background',
+  'text': '#contrast',
+  'text-light': '#text',
+  'text-highlight': '#_brand-main-light-5',
+  'border': '#text',
+  'action': '#_brand-accent-light-5',
+  'action-underline': '#_contrast',
+  'action-hover': '#_brand-accent-light-6',
+  'trans-blue': '#_brand-main-light-4',
+);
+
+// Contrast Colors
+// ---------------
+/// The full color map for implementing the contrast-theme
+/// @group config-themes
+/// @colors contrast
+/// @type Map
+$contrast-colors: map-merge($colors, $contrast-theme);
+
+@include herman-add(
+  'colors',
+  'contrast',
+  map-merge($theme-colors, $contrast-theme),
+  $_color,
+  null,
+  $contrast-colors
+);

@@ -1,0 +1,8 @@
+// Body Layout
+// ===========
+
+[data-layout='body'] {
+  grid-template-rows: auto 1fr;
+  padding-top: size('gutter');
+  min-height: 100vh;
+}

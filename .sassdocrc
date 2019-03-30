@@ -16,7 +16,8 @@ groups:
     tools-stripes: Stripes
   Design Tokens:
     config-animation: Animations
-    config-colors: Colors
+    config-colors: Brand Colors
+    config-themes: Theme Colors
     config-grids: Grids
     config-fonts: Fonts
     config-scale: Ratios & Sizes

@@ -4,13 +4,16 @@
 $themes: (
   'light': $light-colors,
   'dark': $dark-colors,
+  'contrast': $contrast-colors,
 );
 
 $invert: (
   'light': 'dark',
   'dark': 'light',
+  'contrast': 'contrast',
 );
 
+// Set theme variables
 @each $name, $theme in $themes {
   [data-theme='#{$name}'] {
     @include colors--($theme);
@@ -25,8 +28,33 @@ $invert: (
   }
 }
 
+// Set theme defaults
 [data-theme] {
   background-color: var-color('background');
   color: var-color('text');
   text-shadow: var(--shadow, shadow('light')) var-color('text-shadow');
 }
+
+// Fade dark-theme images
+[data-theme='dark'] {
+  img {
+    opacity: 0.75;
+    transition: opacity 0.5s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+/* stylelint-disable */
+.color-theme-in-transition {
+  &,
+  *,
+  ::before,
+  ::after {
+    transition: all 500ms !important;
+    transition-delay: 0 !important;
+  }
+}
+/* stylelint-enable */
