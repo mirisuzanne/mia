@@ -54,6 +54,7 @@ $theme-colors: (
 // -----------
 /// These colors form the basis of the light theme
 /// @group config-themes
+/// @colors light
 /// @type Map
 $light-theme: (
   'background': '#_brand-gray-light-6',
@@ -70,7 +71,6 @@ $light-theme: (
 // -----------
 /// The full color map for implementing the light-theme
 /// @group config-themes
-/// @colors light
 /// @type Map
 $light-colors: map-merge($colors, $light-theme);
 
@@ -87,6 +87,7 @@ $light-colors: map-merge($colors, $light-theme);
 // -----------
 /// These colors form the basis of the dark theme
 /// @group config-themes
+/// @colors dark
 /// @type Map
 $dark-theme: (
   'background': '#_brand-gray-dark-6',
@@ -100,7 +101,6 @@ $dark-theme: (
 // -----------
 /// The full color map for implementing the dark-theme
 /// @group config-themes
-/// @colors dark
 /// @type Map
 $dark-colors: map-merge($colors, $dark-theme);
 
@@ -117,19 +117,20 @@ $dark-colors: map-merge($colors, $dark-theme);
 // --------------
 /// These colors form the basis of the contrast theme
 /// @group config-themes
+/// @colors contrast
 /// @type Map
 $contrast-theme: (
-  'background': black,
-  'callout': '#_contrast-dark',
-  'text-shadow': black,
-  'contrast': white,
+  'background': '#_contrast-dark',
+  'callout': '#background',
+  'text-shadow': '#background',
+  'contrast': '#_contrast-light',
   'mia-eyes': '#background',
   'text': '#contrast',
   'text-light': '#text',
   'text-highlight': '#_brand-main-light-5',
   'border': '#text',
   'action': '#_brand-accent-light-5',
-  'action-underline': '#_contrast',
+  'action-underline': '#contrast',
   'action-hover': '#_brand-accent-light-6',
   'trans-blue': '#_brand-main-light-4',
 );
@@ -138,7 +139,6 @@ $contrast-theme: (
 // ---------------
 /// The full color map for implementing the contrast-theme
 /// @group config-themes
-/// @colors contrast
 /// @type Map
 $contrast-colors: map-merge($colors, $contrast-theme);
 
