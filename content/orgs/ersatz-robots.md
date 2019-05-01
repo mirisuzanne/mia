@@ -1,18 +1,25 @@
 ---
-title: Ersatz Robots Only Show
-sub: The first & final show for a Denver trans-femme super-group
+title: Ersatz Robots
+sub: Denver trans-femme 90's-alt sad-and-peppy super-group
+url: https://www.facebook.com/ersatzrobots/
+start: 2018-06-24
+end: null
 hero:
-  img: art/music/ersatz3kings.jpg
-  alt: A free celebration & remembrance show for Brittany Strummer
-date: 2019-05-02
-venue: 3 Kings Tavern
-url: https://www.facebook.com/events/420883858658162/
+  img: art/music/ersatz.jpg
+  alt: Galen Nissa, Miriam, Josie, and Gwyn
+events:
+  - title: Ersatz Robots Only Show
+    date: 2019-05-02
+    venue: 3 Kings Tavern
+    url: https://www.facebook.com/events/420883858658162/
 calendar: music
 tags:
   - _calendar
+  - _orgs
   - art
   - music
 ---
+{% import "content.macros.njk" as content %}
 
 [Ersatz Robots](https://ersatzrobots.bandcamp.com) is a band,
 and not really a group of robots at all.
@@ -22,6 +29,14 @@ including 90s indie rock,
 80s alternative,
 punk, and emo --
 but only the good emo, we promise.
+
+{{ content.fig(
+  data=[{
+    img: 'art/music/ersatz3kings.jpg',
+    alt: 'Brittany Strummer memorial show at 3 Kings Tavern – May 2, 2019'
+  }],
+  caption='Join us for our [one-and-only show](https://www.facebook.com/events/420883858658162/)'
+) }}
 
 Founded by Galen Nissa Mitchell,
 the Robots have come together for a single show
