@@ -13,16 +13,20 @@ events:
     adr: San Francisco, CA
     start: 2019-04-24
     end: 2019-04-25
+    slides: https://talks.oddbird.net/dynamic-css/generate19/
   - venue: Smashing Conf
     url: https://www.smashingconf.com/sf-2019/
     adr: San Francisco, CA
     start: 2019-04-16
     end: 2019-04-17
+    slides: https://talks.oddbird.net/dynamic-css/smashingsf19/
+    video: https://vimeo.com/331571593
   - venue: VueConf US
     url: http://vueconf.us/
     adr: Tampa, FL
     start: 2019-03-26
     end: 2019-03-27
+    slides: https://talks.oddbird.net/dynamic-css/vueconf19/
   - venue: Front Range Front-End
     url: https://www.meetup.com/front-range-front-end/events/chtxtpyxpbcb/
     adr: Denver, CO

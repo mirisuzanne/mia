@@ -13,6 +13,11 @@ tags:
   - music
   - art
 events:
+  - title: PRF BBQ Denver
+    date: 2019-04-28
+    url: https://www.facebook.com/events/2191187377812554/
+    venue: The Bakery
+    venue_url: https://thebakerydenver.com
   - title: FACEMAN's 100 Year Storm
     venue: The Oriental Theater
     url: http://www.theorientaltheater.com/event/260005/facemans-100-year-storm-
@@ -86,6 +91,13 @@ summary: |
 
 {{ content.intro(summary) }}
 
+{% set ep = collections.all | getPage('/2015/07/09/holes-they-leave/') | first %}
+
+{{ content.fig(
+  data=ep.data.audio,
+  caption='The Holes They Leave EP'
+) }}
+
 We also enjoy collaborating across media
 with theaters, writers, dancers, and other artists.
 
@@ -104,7 +116,25 @@ with theaters, writers, dancers, and other artists.
 
 ---
 
+{% set darkplain = collections.all | getPage('/2019/04/14/dark-plain-live/') | first %}
+
+{{ content.fig(
+  data=darkplain.data.video,
+  caption='A Dark Plain at Seventh Circle Session'
+) }}
+
+---
+
 {{ content.quotes(press) }}
+
+---
+
+{% set justlike = collections.all | getPage('/2017/02/13/just-like-that/') | first %}
+
+{{ content.fig(
+  data=justlike.data.video,
+  caption='Just Like That official music video'
+) }}
 
 ---
 
