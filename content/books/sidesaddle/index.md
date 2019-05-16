@@ -14,7 +14,6 @@ tags:
   - riding sidesaddle
   - art
   - writing
-  - published
   - book
   - shop
 events:

@@ -5,12 +5,6 @@ hero:
 tags:
   - speaking
   - code
-events:
-  - venue: Design 4 Drupal
-    url: https://design4drupal.org/
-    adr: Boston, MA
-    start: 2019-06-26
-    feature: true
 ---
 
 [Invite me](/contact/)

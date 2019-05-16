@@ -8,7 +8,6 @@ tags:
   - music
   - teacup gorilla
   - video
-  - published
 video:
   - iframe: https://www.youtube.com/embed/pZutQD4GCi4
     width: 560

@@ -7,11 +7,11 @@ tags:
   - workshop
   - code
 events:
-  - venue: Generate Workshops
+  - venue: Generate New York
     url: https://www.generateconf.com/
     adr: San Francisco, CA
     start: 2019-04-24
-  - venue: Smashing Workshops
+  - venue: Smashing Conf
     url: https://www.smashingconf.com/sf-2019/
     adr: San Francisco, CA
     start: 2019-04-18

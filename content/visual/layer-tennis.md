@@ -9,8 +9,7 @@ tags:
   - _calendar
   - art
   - process
-  - visual
-  - published
+  - visualß
 gallery:
   - img: tennis/volley1.jpg
   - img: tennis/volley2.jpg

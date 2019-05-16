@@ -10,7 +10,6 @@ tags:
   - writing
   - theater
   - buntport
-  - published
 image:
   - src: 2017/denver-quarterly.jpg
 ---

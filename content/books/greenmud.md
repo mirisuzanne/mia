@@ -11,7 +11,6 @@ tags:
   - design
   - code
   - elit
-  - published
   - book
 hero:
   img: greenmud/cover.jpg

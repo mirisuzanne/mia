@@ -46,7 +46,7 @@
   all,
   self
 ) %}
-  {% call cards.list(reverse) %}
+  <div data-layout="cards">
     {% set events = events | reverse if reverse else events %}
     {% for item in events %}
       {{ event(
@@ -55,7 +55,7 @@
         self=self
       ) }}
     {% endfor %}
-  {% endcall %}
+  </div>
 {% endmacro %}
 
 {% macro event(
@@ -66,19 +66,13 @@
   {% set tags = item.tags | publicTags %}
   {% set date_format = 'since' if (item.group | groupName == 'orgs') else 'md' %}
   {% set is_self = (item.page.url == self) %}
-  {% set self_title = (is_self and not item.event.title) %}
 
   {# Venue Link #}
   {%- set venue_name = item.event.venue or item.page.data.venue -%}
   {%- set venue_adr = item.event.adr or item.page.data.adr -%}
-  {%- set venue_adr -%}
-  {%- if venue_adr -%}
-    <small class="adr"> | {{ venue_adr }}</small>
-  {%- endif -%}
-  {%- endset -%}
   {%- set venue_url = item.event.url or item.page.data.url or item.page.url -%}
   {%- set venue = utility.link_if(venue_name, venue_url) if venue_name else none -%}
-  {%- set venue = ['@', venue, venue_adr] | join(' ') if venue else none -%}
+  {%- set venue = ['@', venue] | join(' ') if venue else none -%}
 
   {# Title Link #}
   {%- set title_name = item.event.title or item.page.data.title -%}
@@ -87,35 +81,39 @@
   {%- set title = utility.link_if(title_name | mdInline, url or venue_url) -%}
   {%- set title = ['See Also:', title] | join(' ') if not_me else title -%}
 
-  {# Venue & Title Arrangement #}
-  {% set venue_title = item.event.venue_title or item.page.data.venue_title %}
-  {% set flip_title = venue_title or self_title %}
-  {% set main = venue if (venue and flip_title) else title %}
-  {% set top = venue if (venue and not flip_title) else none %}
-  {% set top = title if (not top) and (not self_title) else top %}
-  {% set top = none if (top == main) else top %}
-
-  {# Info #}
-  {% set info %}
-    <time datetime="{{ item.date | getDate('iso') }}">
-      {% set start = item.start | getDate('year') %}
-      {% set end = item.end | getDate('year') %}
-      {% if (date_format == 'since') or (start == end) %}
-        {{ item.date | getDate(date_format) }}
-      {% else %}
-        {{ start }}—{{ end }}
-      {% endif %}
-    </time>
-    {% if top %}
-      {{ top | safe }}
-    {% elif tags %}
-      » {{ utility.tag_list(tags, all, '/') }}
-    {% endif %}
-  {% endset %}
+  {%- set title -%}
+    {{ title | safe }}
+    {{ venue | safe }}
+  {%- endset -%}
 
   {# Output #}
-  {% call cards.item(item.feature) %}
-    {{ cards.meta(info) }}
-    {{ cards.main(main) }}
-  {% endcall %}
+  <section
+    data-card="item"
+    {{ utility.attr_if('data-feature', item.feature) }}
+  >
+  <div data-card="inner">
+    <h4 data-card="title">{{ title | typogr | safe }}</h4>
+
+    <div data-card="meta">
+      <time datetime="{{ item.date | getDate('iso') }}">
+        {% set start = item.start | getDate('year') %}
+        {% set end = item.end | getDate('year') %}
+        {% if (date_format == 'since') or (start == end) %}
+          {{ item.date | getDate(date_format) }}
+        {% else %}
+          {{ start }}—{{ end }}
+        {% endif %}
+      </time>
+
+      {%- if venue_adr -%}
+        | {{ venue_adr }}
+      {%- endif -%}
+
+      {% if tags %}
+        {% if venue_adr %}»{% else %}|{% endif %}
+        {{ utility.tag_list(tags | sort, all) }}
+      {%- endif -%}
+    </div>
+  </div>
+  </section>
 {% endmacro %}

@@ -9,7 +9,6 @@ tags:
   - _orgs
   - writing
   - code
-  - published
 events:
   - title: '#153: Getting Started with CSS Grid'
     url: https://css-tricks.com/video-screencasts/153-getting-started-with-css-grid/

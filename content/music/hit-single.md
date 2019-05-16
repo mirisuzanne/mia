@@ -13,7 +13,6 @@ tags:
   - audio
   - album
   - dirt circle dogs
-  - published
 album:
   - iframe: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1738&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=false&show_reposts=false&show_teaser=true
     width: 100%

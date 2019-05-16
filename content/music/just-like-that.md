@@ -11,7 +11,6 @@ tags:
   - music
   - teacup gorilla
   - video
-  - published
 video:
   - iframe: https://player.vimeo.com/video/203945682
     width: 640

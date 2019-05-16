@@ -14,7 +14,6 @@ tags:
   - album
   - audio
   - dirt circle dogs
-  - published
 press:
   - text: |
       Eisenstat sings that there is “No voice on the radio,”

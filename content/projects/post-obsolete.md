@@ -17,9 +17,7 @@ tags:
   - writing
   - art
   - theater
-  - published
   - elit
-  - post-obsolete
 events:
   - venue: ELO Conference
     url: http://conference.eliterature.org/archive/2014
@@ -29,6 +27,7 @@ events:
     venue_title: true
     tags:
       - reading
+      - post-obsolete
   - venue: Brakhage Center Media Arts
     url: http://www.colorado.edu/brakhagecenter/2013/08/10/bc-luncheon-series-welcomes-eric-meyer-october-7th
     start: 2013-10-07
@@ -36,12 +35,14 @@ events:
     venue_title: true
     tags:
       - reading
+      - post-obsolete
   - venue: Media Archeology Lab | &Now Festival
     url: http://mediaarchaeologylab.com/past-artist-in-residence/eric-meyer-2/
     start: 2013-09-28
     venue_title: true
     tags:
       - reading
+      - post-obsolete
   - venue: SpringGun Journal, Issue 8
     url: http://www.springgunpress.com/issue-8-2013/eric-meyer/
     start: 2013-09-01
@@ -52,6 +53,7 @@ events:
     venue_title: true
     tags:
       - reading
+      - post-obsolete
   - venue: SLSA 2012 – Electronic Literature and the Nonhuman
     url: http://www.litsciarts.org/slsa12/
     adr: Milwaukee, WI
@@ -62,6 +64,7 @@ events:
     venue_title: true
     tags:
       - reading
+      - post-obsolete
     with:
       - Jeremy Douglass
       - Katherine Hayles

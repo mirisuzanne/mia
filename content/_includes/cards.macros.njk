@@ -29,57 +29,8 @@
     data-card-group="{{ title | slug }}">
     <h3
       data-cards="grouper">
-      {{ title }}
+      <span>{{ title }}</span>
     </h3>
     {{ content }}
   </section>
-{% endmacro %}
-
-{% macro list(
-  reverse=false,
-  content=none
-) %}
-  {% set content = content if (content != none) else caller() %}
-
-  <ol
-    data-layout="cards"
-    {{ utility.attr_if('reversed', reverse) }}>
-    {{ content }}
-  </ol>
-{% endmacro %}
-
-{% macro item(
-  feature=false,
-  content=none
-) %}
-  {% set content = content if (content != none) else caller() %}
-
-  <li
-    data-card="item"
-    {{ utility.attr_if('data-feature', feature) }}>
-    <div data-card="inner">
-      {{ content }}
-    </div>
-  </li>
-{% endmacro %}
-
-{% macro meta(
-  content=none
-) %}
-  {% set content = content if (content != none) else caller() %}
-
-  <div
-    data-card="meta">
-    {{ content | safe }}
-  </div>
-{% endmacro %}
-
-{% macro main(
-  name,
-  url=none
-) %}
-  <h4
-    data-card="title">
-    {{ utility.link_if(name, url) }}
-  </h4>
 {% endmacro %}

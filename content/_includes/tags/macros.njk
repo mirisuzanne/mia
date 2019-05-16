@@ -41,14 +41,14 @@
   all
 ) %}
   {% if tags | length %}
-    {% call cards.list(reverse) %}
+    <div data-layout="cards">
       {% for tag in tags %}
         {{ show_tag(
           tag=tag,
           all=all
         ) }}
       {% endfor %}
-    {% endcall %}
+    </div>
   {% endif %}
 {% endmacro %}
 
@@ -56,10 +56,20 @@
   tag,
   all
 ) %}
-  {% call cards.item() %}
-    {{ cards.meta(tag_meta(tag.events)) }}
-    {{ cards.main(utility.tag_link(tag.tag, all)) }}
-  {% endcall %}
+  <section
+    data-card="item"
+    {{ utility.attr_if('data-feature', item.feature) }}
+  >
+  <div data-card="inner">
+    <h4 data-card="title">
+      {{ utility.tag_link(tag.tag, all) }}
+    </h4>
+
+    <div data-card="meta">
+      {{ tag_meta(tag.events) }}
+    </div>
+  </div>
+  </section>
 {% endmacro %}
 
 {% macro tag_meta(

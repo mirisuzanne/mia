@@ -6,12 +6,12 @@
 }
 
 [data-layout='cards'] {
+  align-items: start;
   display: grid;
   font-size: size('small');
-  grid-gap: size('half-shim');
-  grid-template-columns: var-grid('cards');
-  list-style: none;
-  padding: 0 size('shim') 0 size('half-shim');
+  grid-gap: size('gutter');
+  grid-template-columns: repeat(auto-fill, minmax(size('calendar'), 1fr));
+  margin: 0 size('gutter');
 }
 
 // Groups
@@ -20,7 +20,7 @@
 [data-card-group] {
   display: grid;
   grid-template: 'grouper list' auto / auto minmax(0, 1fr);
-  margin-bottom: size('gutter');
+  margin-bottom: size('spacer');
 }
 
 [data-cards='grouper'] {
@@ -33,38 +33,37 @@
   padding: size('shim') 0;
   text-shadow: none;
   writing-mode: vertical-rl;
+
+  span {
+    position: sticky;
+    top: size('shim');
+  }
 }
 
-// i=Items
+// Items
 // -----
 
 [data-card='item'] {
   --feature: -0.006turn;
-  display: grid;
-  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
 
   @for $i from 2 through 4 {
     &:nth-child(#{$i}n) {
-      $random: random(5) + 2;
-      $random: if(random(2) == 2, 0 - $random, $random);
-      --feature: #{$random / 1000 * 1turn};
+      --feature: #{if(random(2) == 2, 0.006turn, null)};
     }
   }
 
   &[data-feature] {
     background: pattern('feature');
-    margin: negative('quarter-shim');
+    margin: negative('half-shim');
     padding: size('quarter-shim');
   }
 }
 
 [data-card='inner'] {
-  background: var-color('callout');
-  padding: size('half-shim') size('3q-shim');
-
   [data-feature] & {
     background: var-color('background');
     border: 1px solid var-color('action');
+    padding: size('shim');
     transform: rotate(var(--feature, -0.006turn));
   }
 }
@@ -82,8 +81,8 @@
   @include font-family('code');
   color: var-color('border');
   font-size: size('xsmall');
-  overflow: hidden;
-  padding-bottom: size('quarter-shim');
-  text-overflow: ellipsis;
-  white-space: nowrap;
+
+  a {
+    font-style: italic;
+  }
 }
