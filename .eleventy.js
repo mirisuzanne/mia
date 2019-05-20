@@ -19,6 +19,18 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
   eleventyConfig.addLayoutAlias('tags', 'layouts/tags.njk');
 
+  // collections
+  eleventyConfig.addCollection('orgs', collection => {
+    return collection
+      .getAll()
+      .filter(item => {
+        return item.data.org && !item.data.end;
+      })
+      .sort((a, b) => {
+        return a.data.start - b.data.start;
+      });
+  });
+
   // filters
   eleventyConfig.addFilter('typeCheck', utils.typeCheck);
   eleventyConfig.addFilter('objectKeys', utils.objectKeys);
@@ -26,7 +38,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('publicTags', tags.publicTags);
   eleventyConfig.addFilter('getTags', tags.getTags);
   eleventyConfig.addFilter('groupTags', tags.groupTags);
-  eleventyConfig.addFilter('matchTags', tags.matchTags);
+  eleventyConfig.addFilter('hasTag', tags.hasTag);
+  eleventyConfig.addFilter('withTag', tags.withTag);
   eleventyConfig.addFilter('displayName', tags.displayName);
   eleventyConfig.addFilter('tagLink', tags.tagLink);
   eleventyConfig.addFilter('inTopTagCount', count => {

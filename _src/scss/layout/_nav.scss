@@ -1,26 +1,33 @@
 // Nav Layout
 // ==========
 
-[data-section='nav'] {
-  [data-content] {
-    margin-top: negative('half-shim');
-    padding: 0;
+[data-area='nav'] {
+  @include above('page-break') {
+    align-content: start;
+    display: grid;
+    grid-area: nav;
+    grid-row-end: span 3;
+    grid-template: none;
+    justify-items: end;
+    margin-left: size('grid-margin');
   }
 }
 
 [data-nav] {
   @include color--('amp', 'text');
   @include font-family('code');
-  display: inline-block;
-  border-top: size('half-shim') solid transparent;
   font-size: size('xsmall');
   font-style: italic;
-  padding: size('quarter-shim') size('shim');
+  padding: size('quarter-shim') size('grid-margin');
+  text-align: right;
+
+  &[data-current] {
+    background: #{var-color('callout')};
+  }
 
   &[data-active] {
-    @include color--('amp', 'action');
-    border-color: var-color('action');
-    color: var-color('text');
+    background: #{var-color('action-hover')};
+    color: var-contrast('action-hover');
     font-style: normal;
     text-decoration: none;
   }

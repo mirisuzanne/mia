@@ -6,8 +6,6 @@ start: 2009-08-14
 end: null
 index: grapefruit lab
 tags:
-  - _calendar
-  - _orgs
   - theater
   - art
 events:

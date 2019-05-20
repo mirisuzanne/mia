@@ -4,49 +4,41 @@
 [data-layout~='banner'] {
   display: grid;
   font-style: italic;
-  grid-column: full;
+  grid-area: banner / content;
   margin-bottom: size('gutter');
-  overflow-x: hidden;
 }
 
 .banner-content {
-  background: var-color('overlay');
-  align-content: center;
+  align-self: center;
   display: grid;
+  grid:
+    [title-start] auto [sub-start] auto [title-end sub-end]
+    / [title-start sub-start] auto [title-end sub-end];
   grid-area: 1 / 1 / -1 / -1;
-  grid-template: 'icon' auto 'title' auto 'sub' auto / auto;
   justify-self: center;
-  margin: size('gutter');
+  margin: size('shim');
   text-align: center;
+  transform: rotate(-13deg);
 
   @include above('page-break') {
-    grid-template:
-      'icon title' auto 'icon sub' auto /
-      auto 1fr;
-    margin: size('spacer') size('gutter');
-    text-align: left;
-  }
-}
-
-.banner-icon {
-  grid-area: icon;
-
-  [data-icon] {
-    @include square('spacer');
+    margin: size('spacer') size('shim');
   }
 }
 
 .banner-title {
+  background: var-color('overlay');
   color: var-color('text-highlight');
   grid-area: title;
+  line-height: 0.9;
+  padding: size('gutter') size('gutter') size('gutter') size('shim');
 }
 
 .subtitle {
   @include font-family('code');
+  background: var-color('overlay');
   color: var-color('text-light');
-  grid-area: sub;
-  line-height: 1;
   font-size: size('small');
+  grid-area: sub;
 }
 
 // Dots

@@ -7,15 +7,12 @@ const topCount = 6;
 const isPublic = tag => tag !== 'all' && !tag.startsWith('_');
 const publicTags = tags => (tags ? tags.filter(tag => isPublic(tag)) : tags);
 
-const matchTags = (allTags, findTags) => {
-  const match = {};
-  findTags = findTags || [];
+const hasTag = (page, tag) => {
+  return page.data.tags ? page.data.tags.includes(tag) : false;
+};
 
-  Object.keys(allTags).forEach((tag, i) => {
-    match[tag] = findTags.includes(tag);
-  });
-
-  return match;
+const withTag = (collection, tag) => {
+  return collection.filter(page => hasTag(page, tag));
 };
 
 const tagData = collections => {
@@ -96,7 +93,8 @@ module.exports = {
   publicTags,
   getTags,
   groupTags,
-  matchTags,
+  hasTag,
+  withTag,
   displayName,
   tagLink,
 };

@@ -1,0 +1,18 @@
+// Orgs
+// ====
+
+[data-orgs='section'] {
+  margin-bottom: size('spacer');
+}
+
+[data-meta] {
+  @include color--('action', 'text-light');
+  @include color--('action-underline', 'border');
+  @include font-family('code');
+  color: var-color('border');
+  font-size: size('xsmall');
+
+  a {
+    font-style: italic;
+  }
+}

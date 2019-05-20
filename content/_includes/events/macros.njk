@@ -1,27 +1,109 @@
 {% import "utility.macros.njk" as utility %}
 {% import "cards.macros.njk" as cards %}
 
+
+{% macro get_calendar(
+  events_group,
+  collections,
+  page
+) %}
+  {{ show_orgs(events_group, collections) }}
+
+  {% set title = 'events…' %}
+  {% set events = collections.all | getPage(page) | getEvents %}
+
+  {% if events_group == 'all' %}
+    {% set title = 'all events…' %}
+    {% set events = collections.all | getEvents %}
+  {% elif events_group %}
+    {% set title %}
+      events tagged '{{ events_group | displayName }}'…
+    {% endset %}
+    {% set events = collections.all | getEvents(events_group) %}
+  {% endif %}
+
+  {% if events %}
+    {{ section(
+      title=title,
+      events=events,
+      all=collections,
+      self=page.url
+    ) }}
+  {% endif %}
+{% endmacro %}
+
+
+{% macro show_orgs(
+  events_group,
+  collections
+) %}
+  {% if events_group %}
+    {% set orgs = collections.orgs %}
+    {% set orgs = orgs if (events_group == 'all') else orgs | withTag(events_group) %}
+
+    {% if orgs | length %}
+      <section
+        data-orgs="section"
+        data-area="main-left"
+        data-flow="grid">
+        {{ utility.section_title(
+          title='orgs…',
+          area='main'
+        ) }}
+        {% for item in orgs %}
+          <article
+            data-orgs="item"
+            data-area>
+            <time
+              data-meta="orgs"
+              datetime="{{ item.data.start | getDate('iso') }}">
+              {{ item.data.start | getDate('yyyy') }} =>
+            </time>
+            <h3 data-title="orgs">
+              {{ utility.link_if(item.data.title, item.url) }}
+            </h3>
+          </article>
+        {% endfor %}
+      </section>
+    {% endif %}
+  {% endif %}
+{% endmacro %}
+
+
 {% macro section(
   title,
   events,
   all,
   self
 ) %}
-  {% call cards.section(title) %}
-    {% for segment in events %}
-      {% if (segment.group == none | getDate('year')) and not loop.first %}
-        <hr data-divider>
-      {% endif %}
-
-      {{ group(
-        title=segment.group,
-        events=segment.data,
-        all=all,
-        self=self
-      ) }}
-    {% endfor %}
-  {% endcall %}
+  {{ cards.section(
+    title,
+    content=groups(events, all, self)
+  ) }}
 {% endmacro %}
+
+
+{% macro groups(
+  events,
+  all,
+  self
+) %}
+  {% set this_year = none | getDate('year') %}
+
+  {% for segment in events %}
+    {% if (segment.group == this_year) and not loop.first %}
+      <hr data-divider>
+    {% endif %}
+
+    {{ group(
+      title=segment.group,
+      events=segment.data,
+      all=all,
+      self=self
+    ) }}
+  {% endfor %}
+{% endmacro %}
+
 
 {% macro group(
   title,
@@ -30,90 +112,98 @@
   self
 ) %}
   {% set is_future = title | groupName %}
-  {% call cards.group(title) %}
-    {{ list(
-      events=events,
-      reverse=not is_future,
-      all=all,
-      self=self
-    ) }}
-  {% endcall %}
+  {% set events = events | reverse if (not is_future) else events %}
+
+  {{ cards.group(
+    title=title,
+    content=list(events, all, self)
+  ) }}
 {% endmacro %}
+
 
 {% macro list(
   events,
-  reverse,
   all,
   self
 ) %}
-  <div data-layout="cards">
-    {% set events = events | reverse if reverse else events %}
-    {% for item in events %}
-      {{ event(
-        item=item,
-        all=all,
-        self=self
-      ) }}
-    {% endfor %}
-  </div>
+  {% for item in events %}
+    {{ event(item, all, self) }}
+  {% endfor %}
 {% endmacro %}
+
 
 {% macro event(
   item,
   all,
   self
 ) %}
-  {% set tags = item.tags | publicTags %}
-  {% set date_format = 'since' if (item.group | groupName == 'orgs') else 'md' %}
-  {% set is_self = (item.page.url == self) %}
+  {%- set tags = item.tags | publicTags -%}
+  {%- set not_me = ('inspiration' in tags) -%}
+  {%- set is_self = (item.page.url == self) -%}
 
+  {{ cards.event(
+    title=title(item, is_self, not_me),
+    meta=meta(item, tags, all),
+    feature=item.feature
+  ) }}
+{% endmacro %}
+
+
+{% macro title(
+  item,
+  is_self=false,
+  not_me=false
+) %}
   {# Venue Link #}
   {%- set venue_name = item.event.venue or item.page.data.venue -%}
-  {%- set venue_adr = item.event.adr or item.page.data.adr -%}
   {%- set venue_url = item.event.url or item.page.data.url or item.page.url -%}
   {%- set venue = utility.link_if(venue_name, venue_url) if venue_name else none -%}
   {%- set venue = ['@', venue] | join(' ') if venue else none -%}
 
   {# Title Link #}
   {%- set title_name = item.event.title or item.page.data.title -%}
-  {%- set not_me = ('inspiration' in tags) -%}
   {%- set url = none if is_self else item.page.url -%}
   {%- set title = utility.link_if(title_name | mdInline, url or venue_url) -%}
   {%- set title = ['See Also:', title] | join(' ') if not_me else title -%}
 
-  {%- set title -%}
-    {{ title | safe }}
-    {{ venue | safe }}
-  {%- endset -%}
+  {{ title | safe }}
+  {{ venue | safe }}
+{% endmacro %}
 
-  {# Output #}
-  <section
-    data-card="item"
-    {{ utility.attr_if('data-feature', item.feature) }}
-  >
-  <div data-card="inner">
-    <h4 data-card="title">{{ title | typogr | safe }}</h4>
 
-    <div data-card="meta">
-      <time datetime="{{ item.date | getDate('iso') }}">
-        {% set start = item.start | getDate('year') %}
-        {% set end = item.end | getDate('year') %}
-        {% if (date_format == 'since') or (start == end) %}
-          {{ item.date | getDate(date_format) }}
-        {% else %}
-          {{ start }}—{{ end }}
-        {% endif %}
-      </time>
+{% macro meta(
+  item,
+  tags,
+  all
+) %}
+  {%- set date_format = 'since' if (item.group | groupName == 'ongoing') else 'md' -%}
+  {%- set venue_adr = item.event.adr or item.page.data.adr -%}
 
-      {%- if venue_adr -%}
-        | {{ venue_adr }}
-      {%- endif -%}
+  {{ datetime(item, date_format) }}
 
-      {% if tags %}
-        {% if venue_adr %}»{% else %}|{% endif %}
-        {{ utility.tag_list(tags | sort, all) }}
-      {%- endif -%}
-    </div>
-  </div>
-  </section>
+  {% if venue_adr %}
+    | {{ venue_adr }}
+  {% endif %}
+
+  {% if tags %}
+    {% if venue_adr %}»{% else %}|{% endif %}
+    {{ utility.tag_list(tags | sort, all) }}
+  {% endif %}
+{% endmacro %}
+
+
+{% macro datetime(
+  item,
+  format
+) %}
+  {%- set start = item.start | getDate('year') -%}
+  {%- set end = item.end | getDate('year') -%}
+
+  <time datetime="{{ item.date | getDate('iso') }}">
+    {% if (format == 'since') or (start == end) %}
+      {{ item.date | getDate(format) }}
+    {% else %}
+      {{ start }}—{{ end }}
+    {% endif %}
+  </time>
 {% endmacro %}

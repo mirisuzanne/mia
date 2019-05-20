@@ -8,8 +8,6 @@ start: 2010-03-04
 end: null
 index: teacup gorilla
 tags:
-  - _calendar
-  - _orgs
   - art
   - music
 events:

@@ -1,22 +1,40 @@
 {% import 'utility.macros.njk' as utility %}
 
-<nav
-  data-section="nav"
-  data-area="right">
-  <div
-    data-content
-    data-area="content"
-    data-flow="flex">
-    {%- for title, url in site.nav -%}
-      {%- set slug = 'home' if (url == '/') else title | slug -%}
-      {%- set rel = 'home' if (url == '/') else none -%}
-      <a href="{{ url | url }}"
-        {{ utility.show_attrs({
-          'data-nav': slug,
-          'data-active': (url == page.url),
-          'rel': rel
-        }) }} />{{ title | lower | amp | mdInline | safe }}</a>
-    {%- endfor -%}
-  </div>
-</nav>
+<nav data-area="nav">
+  <a
+    href="/"
+    rel="home"
+    data-nav="home"
+    {{ utility.attr_if('data-active', (page.url == '/')) }}>
+    home
+  </a>
 
+  {%- for tag in collections | getTags(null) -%}
+    {% set title = tag | displayName %}
+    {% set url = tag | tagLink(collections) %}
+    {% set active = (page.url == url) %}
+    {% set current = collections.all | getPage(page) | first %}
+    {% set current = current | hasTag(tag) if current else false %}
+
+    {% set attrs = {
+      'data-nav': tag | slug,
+      'data-current': current,
+      'data-active': active
+    } %}
+
+    {% if (loop.index < 7) or current %}
+      <a
+        href="{{ url | url }}"
+        {{ utility.show_attrs(attrs) }}>
+        {{ title }}
+      </a>
+    {% endif %}
+  {%- endfor -%}
+
+  <a
+    href="/tags/"
+    data-nav="tags"
+    {{ utility.attr_if('data-active', (page.url == '/tags/')) }}>
+    tags…
+  </a>
+</nav>

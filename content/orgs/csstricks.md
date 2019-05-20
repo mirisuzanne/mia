@@ -5,8 +5,6 @@ url: 'https://css-tricks.com/author/miriam/'
 start: 2016-10-15
 end: null
 tags:
-  - _calendar
-  - _orgs
   - writing
   - code
 events:

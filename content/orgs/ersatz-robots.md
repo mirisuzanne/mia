@@ -14,8 +14,6 @@ events:
     url: https://www.facebook.com/events/420883858658162/
 calendar: music
 tags:
-  - _calendar
-  - _orgs
   - art
   - music
 ---

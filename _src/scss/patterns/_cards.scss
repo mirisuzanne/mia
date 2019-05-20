@@ -9,7 +9,7 @@
   align-items: start;
   display: grid;
   font-size: size('small');
-  grid-gap: size('gutter');
+  grid-gap: size('gutter-plus');
   grid-template-columns: repeat(auto-fill, minmax(size('calendar'), 1fr));
   margin: 0 size('gutter');
 }
@@ -73,16 +73,4 @@
 
 [data-card='title'] {
   font-style: italic;
-}
-
-[data-card='meta'] {
-  @include color--('action', 'text-light');
-  @include color--('action-underline', 'border');
-  @include font-family('code');
-  color: var-color('border');
-  font-size: size('xsmall');
-
-  a {
-    font-style: italic;
-  }
 }

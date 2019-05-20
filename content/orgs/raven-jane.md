@@ -9,7 +9,6 @@ hero:
 index: raven jane
 tags:
   - _calendar
-  - _orgs
   - music
   - art
   - raven jane

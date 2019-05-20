@@ -11,7 +11,10 @@
   "license": "UNLICENSED",
   "private": true,
   "main": "_site/index.html",
-  "repository": "git@github.com:mirisuzanne/mia.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mirisuzanne/mia.git"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.7.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.1",

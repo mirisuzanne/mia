@@ -8,7 +8,6 @@ end: 2007-08-14
 index: new world
 tags:
   - _calendar
-  - _orgs
   - theater
   - artistic director
   - technical director

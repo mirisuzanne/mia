@@ -6,4 +6,3 @@ sub: web developer, artist, speaker, author, musician, playwright…
 icon: icons/miriam.svg
 calendar: all
 ---
-

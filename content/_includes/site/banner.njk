@@ -2,12 +2,6 @@
 
 <header data-layout="banner">
   <div class="banner-content">
-    {% if icon %}
-      <div class="banner-icon">
-        {% include icon %}
-      </div>
-    {% endif %}
-
     <h1 class="banner-title" data-bright>
       {{ full_title | mdInline | typogr | safe }}
     </h1>

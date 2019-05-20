@@ -7,8 +7,6 @@ hero:
   img: elsewhere/oddlogo.svg
 index: oddbird
 tags:
-  - _calendar
-  - _orgs
   - code
   - speaking
 ---

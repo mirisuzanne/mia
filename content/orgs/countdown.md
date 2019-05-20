@@ -7,7 +7,6 @@ end: 2010-01-14
 index: countdown to zero
 tags:
   - _calendar
-  - _orgs
   - theater
   - art
   - ensemble member
