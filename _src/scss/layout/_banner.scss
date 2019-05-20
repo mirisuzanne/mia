@@ -4,17 +4,40 @@
 [data-layout~='banner'] {
   display: grid;
   font-style: italic;
-  grid-area: banner / content;
+  grid: 'icon .' auto 'head head' 1fr / auto 1fr;
+  grid-area: banner / full;
   margin-bottom: size('gutter');
+
+  &:not([data-home]) {
+    --mia-svg-animate: none;
+  }
+}
+
+.banner-home {
+  #{$link} {
+    background: var-color('action');
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    color: var-color('background');
+    grid-area: icon;
+    padding: size('shim') size('double-gutter') size('double-gutter') 0;
+  }
+
+  #{$focus} {
+    background: var-color('action-hover');
+  }
+
+  [data-icon] {
+    @include square('spacer');
+    --mia-svg-stroke: currentColor;
+    --mia-svg-stroke-width: 2;
+    transform: translateX(size('half-shim'));
+  }
 }
 
 .banner-content {
   align-self: center;
   display: grid;
-  grid:
-    [title-start] auto [sub-start] auto [title-end sub-end]
-    / [title-start sub-start] auto [title-end sub-end];
-  grid-area: 1 / 1 / -1 / -1;
+  grid-area: icon / head / head;
   justify-self: center;
   margin: size('shim');
   text-align: center;
@@ -28,8 +51,8 @@
 .banner-title {
   background: var-color('overlay');
   color: var-color('text-highlight');
-  grid-area: title;
   line-height: 0.9;
+  margin-bottom: negative('gutter-plus');
   padding: size('gutter') size('gutter') size('gutter') size('shim');
 }
 
@@ -38,7 +61,6 @@
   background: var-color('overlay');
   color: var-color('text-light');
   font-size: size('small');
-  grid-area: sub;
 }
 
 // Dots

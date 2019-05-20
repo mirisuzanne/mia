@@ -36,7 +36,7 @@
 
   &[data-active] {
     background: #{var-color('action-hover')};
-    color: var-contrast('action-hover');
+    color: var-color('background');
     font-style: normal;
     justify-self: stretch;
     text-decoration: none;
