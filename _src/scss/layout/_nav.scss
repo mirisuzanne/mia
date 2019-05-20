@@ -3,19 +3,28 @@
 
 [data-area='nav'] {
   @include above('page-break') {
-    align-content: start;
-    display: grid;
     grid-area: nav;
     grid-row-end: span 3;
-    grid-template: none;
-    justify-items: end;
     margin-left: size('grid-margin');
   }
 }
 
+[data-inner='nav'] {
+  margin-bottom: size('gutter');
+  position: sticky;
+  text-align: center;
+  top: size('shim');
+
+  @include above('page-break') {
+    align-content: start;
+    display: grid;
+    justify-items: end;
+  }
+}
+
 [data-nav] {
-  @include color--('amp', 'text');
   @include font-family('code');
+  display: inline-block;
   font-size: size('xsmall');
   font-style: italic;
   padding: size('quarter-shim') size('grid-margin');
@@ -29,6 +38,8 @@
     background: #{var-color('action-hover')};
     color: var-contrast('action-hover');
     font-style: normal;
+    justify-self: stretch;
     text-decoration: none;
+    text-shadow: none;
   }
 }

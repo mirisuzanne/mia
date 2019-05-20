@@ -89,6 +89,10 @@
   --grid: #{var-grid('main-right')};
 }
 
+[data-area='type'] {
+  --area: half-left / right-end;
+}
+
 // Flows
 // -----
 

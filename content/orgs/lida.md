@@ -10,7 +10,7 @@ tags:
   - theater
   - art
   - technical director
-  - ensemble member
+  - ensemble
   - LIDA
 events:
   - title: Roller Skating With My Cousin

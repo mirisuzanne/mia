@@ -1,6 +1,6 @@
 ---
 title: Countdown to Zero
-sub: Company Member / Technical Director -- Denver, CO
+sub: Technical Director -- political theatre collective
 url: http://countdowntozero.org/
 start: 2007-09-20
 end: 2010-01-14
@@ -9,9 +9,9 @@ tags:
   - _calendar
   - theater
   - art
-  - ensemble member
+  - ensemble
   - technical director
-  - countdown to zero
+  - countdown
 events:
   - title: The Resistible Rise of Arturo Ui
     venue: Countdown to Zero

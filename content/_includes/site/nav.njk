@@ -1,40 +1,11 @@
 {% import 'utility.macros.njk' as utility %}
+{% import 'site/macros.njk' as show %}
 
 <nav data-area="nav">
-  <a
-    href="/"
-    rel="home"
-    data-nav="home"
-    {{ utility.attr_if('data-active', (page.url == '/')) }}>
-    home
-  </a>
+  <div data-inner="nav">
+    {% set page = collections.all | getPage(page) | first or page %}
 
-  {%- for tag in collections | getTags(null) -%}
-    {% set title = tag | displayName %}
-    {% set url = tag | tagLink(collections) %}
-    {% set active = (page.url == url) %}
-    {% set current = collections.all | getPage(page) | first %}
-    {% set current = current | hasTag(tag) if current else false %}
-
-    {% set attrs = {
-      'data-nav': tag | slug,
-      'data-current': current,
-      'data-active': active
-    } %}
-
-    {% if (loop.index < 7) or current %}
-      <a
-        href="{{ url | url }}"
-        {{ utility.show_attrs(attrs) }}>
-        {{ title }}
-      </a>
-    {% endif %}
-  {%- endfor -%}
-
-  <a
-    href="/tags/"
-    data-nav="tags"
-    {{ utility.attr_if('data-active', (page.url == '/tags/')) }}>
-    tags…
-  </a>
+    {{ show.site_nav(site.nav, page) }}
+    {{ show.tag_nav(collections, page) }}
+  </div>
 </nav>

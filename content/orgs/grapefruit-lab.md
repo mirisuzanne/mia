@@ -1,6 +1,6 @@
 ---
 title: Grapefruit Lab
-sub: Co-Founder -- Denver, CO
+sub: Co-Founder -- multimedia performance ensemble
 url: https://www.grapefruitlab.com/
 start: 2009-08-14
 end: null

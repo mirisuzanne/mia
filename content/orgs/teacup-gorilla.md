@@ -1,6 +1,6 @@
 ---
 title: Teacup Gorilla
-sub: dark indie soundscapes with evocative poetry
+sub: Bass & Vocals -- dark indie soundscapes with evocative poetry
 hero:
   img: art/music/video-meta.jpg
 url: https://teacupgorilla.com/

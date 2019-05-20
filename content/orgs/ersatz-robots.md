@@ -1,6 +1,6 @@
 ---
 title: Ersatz Robots
-sub: Denver trans-femme 90's-alt sad-and-peppy super-group
+sub: Bass -- trans-femme 90's-alt sad-girl rock
 url: https://www.facebook.com/ersatzrobots/
 start: 2018-06-24
 end: null

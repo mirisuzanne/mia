@@ -7,20 +7,29 @@
   collections,
   page
 ) %}
-  {{ show_orgs(events_group, collections) }}
-
   {% set title = 'events…' %}
+  {% set org_title = 'orgs…' %}
   {% set events = collections.all | getPage(page) | getEvents %}
 
   {% if events_group == 'all' %}
     {% set title = 'all events…' %}
     {% set events = collections.all | getEvents %}
   {% elif events_group %}
+    {% set tag_name = events_group | displayName %}
     {% set title %}
-      events tagged '{{ events_group | displayName }}'…
+      events tagged '{{ tag_name }}'…
+    {% endset %}
+    {% set org_title %}
+      orgs tagged '{{ tag_name }}'…
     {% endset %}
     {% set events = collections.all | getEvents(events_group) %}
   {% endif %}
+
+  {{ show_orgs(
+    org_title,
+    events_group,
+    collections
+  ) }}
 
   {% if events %}
     {{ section(
@@ -34,6 +43,7 @@
 
 
 {% macro show_orgs(
+  title,
   events_group,
   collections
 ) %}
@@ -47,21 +57,28 @@
         data-area="main-left"
         data-flow="grid">
         {{ utility.section_title(
-          title='orgs…',
-          area='main'
+          title=title,
+          area='type'
         ) }}
         {% for item in orgs %}
+          {% set title = item.data.banner or item.data.renderData.title or item.data.title %}
           <article
             data-orgs="item"
-            data-area>
+            data-area="main"
+            data-flow="grid">
             <time
               data-meta="orgs"
               datetime="{{ item.data.start | getDate('iso') }}">
-              {{ item.data.start | getDate('yyyy') }} =>
+              {{ item.data.start | getDate('yyyy') }}->
             </time>
             <h3 data-title="orgs">
-              {{ utility.link_if(item.data.title, item.url) }}
+              {{ utility.link_if(title, item.url) }}
             </h3>
+            {% if item.data.sub %}
+              <p data-meta="org-sub">
+                {{ item.data.sub | mdInline | typogr | safe }}
+              </p>
+            {% endif %}
           </article>
         {% endfor %}
       </section>

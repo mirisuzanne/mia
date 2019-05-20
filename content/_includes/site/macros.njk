@@ -36,3 +36,59 @@
     </div>
   </div>
 {% endmacro %}
+
+
+{% macro site_nav(
+  items,
+  page
+) %}
+  {% for name, url in items %}
+    {{ nav_link(name, url, page) }}
+  {% endfor %}
+{% endmacro %}
+
+
+{% macro tag_nav(
+  collections,
+  page
+) %}
+  {% for tag in collections | getTags(null) %}
+    {% set current = page | hasTag(tag) if page.data else none %}
+    {% set url = tag | tagLink(collections) %}
+    {% if (loop.index < 7) or current or (page.url == url) %}
+      {{ nav_link(
+        name=tag | displayName,
+        url=url,
+        page=page,
+        current=current
+      ) }}
+    {% endif %}
+  {% endfor %}
+
+  {{ nav_link(
+    name='tags…',
+    url='/tags/',
+    page=page
+  ) }}
+{% endmacro %}
+
+
+{% macro nav_link(
+  name,
+  url,
+  page,
+  current=none
+) %}
+  {% set attrs = {
+    'data-nav': name | slug,
+    'data-current': current,
+    'data-active': (page.url == url),
+    'role': ('home' if url == '/' else none)
+  } %}
+
+  <a
+    href="{{ url | url }}"
+    {{ utility.show_attrs(attrs) }}>
+    {{ name }}
+  </a>
+{% endmacro %}
