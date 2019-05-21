@@ -93,10 +93,12 @@
   all,
   self
 ) %}
-  {{ cards.section(
-    title,
-    content=groups(events, all, self)
-  ) }}
+  {% if events | length %}
+    {{ cards.section(
+      title,
+      content=groups(events, all, self)
+    ) }}
+  {% endif %}
 {% endmacro %}
 
 

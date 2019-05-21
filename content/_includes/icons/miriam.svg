@@ -28,7 +28,7 @@
       stroke: var(--mia-svg-stroke, currentColor);
     }
     [data-mia='eyes'] {
-      animation: fill-logo 4s 3s 1 both;
+      animation: var(--mia-svg-animate, fill-logo 4s 3s 1 both);
       fill: var(--mia-svg-eyes, var(--mia-svg-fill, currentColor));
     }
     [data-mia='face'] {
