@@ -61,7 +61,7 @@ $light-theme: (
   'shadow': '#_contrast-light',
   'contrast': '#_contrast-dark',
   'feature': '#_brand-accent-dark-5',
-  'mia-eyes': currentColor,
+  'mia-eyes': '#action',
 );
 
 @include add-colors($light-theme);
@@ -94,7 +94,7 @@ $dark-theme: (
   'feature': '#action-hover',
   'shadow': '#_contrast-dark',
   'contrast': '#_contrast-light',
-  'mia-eyes': '#action',
+  'mia-eyes': '#text',
 );
 
 // Dark Colors
@@ -125,7 +125,7 @@ $contrast-theme: (
   'feature': '#action-hover',
   'shadow': '#background',
   'contrast': '#_contrast-light',
-  'mia-eyes': '#action',
+  'mia-eyes': '#text',
   'text': '#contrast',
   'text-light': '#text',
   'text-highlight': '#_brand-main-light-5',

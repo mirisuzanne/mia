@@ -16,21 +16,19 @@
 .banner-home {
   #{$link} {
     background: var-color('action');
-    clip-path: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(
+      0 0,
+      calc(100% - #{size('gutter')}) 0,
+      100% calc(100% - #{size('gutter')}),
+      0 100%
+    );
     color: var-color('background');
     grid-area: icon;
-    padding: size('shim') size('double-gutter') size('double-gutter') 0;
+    padding: size('shim') size('shim') size('gutter') 0;
   }
 
   #{$focus} {
     background: var-color('action-hover');
-  }
-
-  [data-icon] {
-    @include square('spacer');
-    --mia-svg-stroke: currentColor;
-    --mia-svg-stroke-width: 2;
-    transform: translateX(size('half-shim'));
   }
 }
 

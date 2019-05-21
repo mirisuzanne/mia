@@ -5,6 +5,8 @@
   fill: currentColor;
 }
 
-[data-mia='eyes'] {
-  fill: var-color('mia-eyes');
+[data-icon='miriam'] {
+  @include square('spacer');
+  --mia-svg-eyes: #{var-color('mia-eyes')};
+  --mia-svg-stroke-width: 2;
 }
