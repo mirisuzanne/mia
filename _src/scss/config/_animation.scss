@@ -28,4 +28,10 @@ $changes: (
     '#hero-rotate',
   ),
   'theme': all time('relaxed') ease('_in-out'),
+  'clip-path': clip-path time('relaxed') ease('_in-out-back'),
+  'background': background-color time('relaxed') ease('_in-out'),
+  'home-icon': (
+    '#clip-path',
+    '#background',
+  ),
 );

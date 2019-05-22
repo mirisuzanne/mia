@@ -14,10 +14,16 @@
   border: border('hero');
   grid-column: 1;
   grid-row: 1 / -1;
+  transform: rotate(-6deg);
+
+  &:hover {
+    transform: rotate(-1.5deg);
+  }
 }
 
 .hero-caption {
   @include font-family('code');
+  background: var-color('overlay');
   font-size: size('xsmall');
   font-style: italic;
   grid-column: 1;

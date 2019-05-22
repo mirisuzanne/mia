@@ -15,19 +15,22 @@
 
 .banner-home {
   #{$link} {
+    @include transition('home-icon');
+    --offset: calc(100% - #{size('gutter')});
+    --top: var(--offset) 0;
+    --angle: 100% var(--offset);
+    --left: 0 100%;
     background: var-color('action');
-    clip-path: polygon(
-      0 0,
-      calc(100% - #{size('gutter')}) 0,
-      100% calc(100% - #{size('gutter')}),
-      0 100%
-    );
+    clip-path: polygon(0 0, var(--top), var(--angle), var(--left));
     color: var-color('background');
     grid-area: icon;
     padding: size('shim') size('shim') size('gutter') 0;
   }
 
   #{$focus} {
+    --top: 100% 0;
+    --angle: var(--offset) 100%;
+    --left: 0 var(--offset);
     background: var-color('action-hover');
   }
 }
