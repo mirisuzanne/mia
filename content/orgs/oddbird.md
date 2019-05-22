@@ -1,14 +1,12 @@
 ---
 title: OddBird
-sub: Co-Founder, Project Manager, and UX Engineer
+sub: Co-Founder -- web software for humans
 start: 2008-04-15
 end: null
 hero:
   img: elsewhere/oddlogo.svg
 index: oddbird
 tags:
-  - _calendar
-  - _orgs
   - code
   - speaking
 ---

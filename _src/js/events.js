@@ -10,8 +10,8 @@ const hasEvents = page => page.data.events;
 const groupNames = {
   5000: 'now',
   now: 5000,
-  4000: 'orgs',
-  orgs: 4000,
+  4000: 'ongoing',
+  ongoing: 4000,
   3000: 'soon',
   soon: 3000,
 };
@@ -27,7 +27,7 @@ const buildEvent = (page, event) => {
 
   // set end for far future…
   if (!end) {
-    end = end === null ? new Date(`${groupNames['orgs']}-01-01`) : start;
+    end = end === null ? new Date(`${groupNames['ongoing']}-01-01`) : start;
   }
 
   // set group…

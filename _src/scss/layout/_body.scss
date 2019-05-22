@@ -2,7 +2,7 @@
 // ===========
 
 [data-layout='body'] {
-  grid-template-rows: auto 1fr;
-  padding-top: size('gutter');
+  grid-template-rows: [banner-start] minmax(75vmin, auto) [banner-end nav-start] auto [nav-end];
   min-height: 100vh;
+  overflow-x: hidden;
 }

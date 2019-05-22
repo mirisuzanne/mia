@@ -14,8 +14,9 @@
 /// @group config-grids
 /// @type map
 $grid-sizes: (
-  '_space': minmax(0, 1fr),
   '_quarter': minmax(0, size('quarter')),
+  '_fr-l': minmax(0, 6fr),
+  '_fr-r': 1fr,
 );
 @include add-grid($grid-sizes);
 
@@ -26,7 +27,7 @@ $grid-sizes: (
 $grid-lines: (
   '_lines-l': full-start left-start,
   '_lines-m': left-end midpoint right-start,
-  '_lines-r': right-end full-end,
+  '_lines-r': right-end full-end nav-end,
 );
 @include add-grid($grid-lines);
 
@@ -35,7 +36,7 @@ $grid-lines: (
 /// @group config-grids
 /// @type map
 $grid-left: (
-  '_content-l': [content-start] #_space,
+  '_content-l': [content-start] #_fr-l,
   '_edge-l': size('grid-margin') #_content-l,
   '_main-l': #_quarter [half-left] #_quarter,
   '_left': #_edge-l [main-start] #_main-l,
@@ -47,10 +48,10 @@ $grid-left: (
 /// @group config-grids
 /// @type map
 $grid-right: (
-  '_content-r': #_space [content-end],
+  '_content-r': auto [content-end],
   '_edge-r': #_content-r size('grid-margin'),
   '_main-r': #_quarter [half-right] #_quarter,
-  '_right': #_main-r [main-end] #_edge-r,
+  '_right': #_main-r [main-end] #_fr-r [nav-start] #_edge-r,
 );
 @include add-grid($grid-right);
 
@@ -61,9 +62,10 @@ $grid-right: (
 $grid-areas: (
   '_main': #_main-l [#_lines-m] #_main-r,
   '_main-sm': #_main-l [midpoint] #_main-r,
-  '_content': #_content-l [main-start] #_main [main-end] #_content-r,
-  '_full': #_edge-l [main-start] #_main [main-end] #_edge-r,
-  '_full-sm-main': [main-start right-start] #_main-sm [left-end main-end],
+  '_content': #_content-l [main-start] #_main [main-end] #_fr-r [nav-start] #_content-r,
+  '_full': #_edge-l [main-start] #_main [main-end] #_fr-r [nav-start] #_edge-r,
+  '_full-sm-main': [main-start right-start] #_main-sm [left-end main-end] #_fr-r
+    [nav-start],
   '_full-sm': #_edge-l #_full-sm-main #_edge-r,
 );
 @include add-grid($grid-areas);

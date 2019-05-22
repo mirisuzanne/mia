@@ -1,12 +1,10 @@
 ---
 title: CSS Tricks
-sub: Staff writer…
+sub: Staff Writer -- blog for people who make websites
 url: 'https://css-tricks.com/author/miriam/'
 start: 2016-10-15
 end: null
 tags:
-  - _calendar
-  - _orgs
   - writing
   - code
 events:

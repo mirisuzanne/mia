@@ -7,11 +7,10 @@ end: 2010-03-01
 index: LIDA
 tags:
   - _calendar
-  - _orgs
   - theater
   - art
   - technical director
-  - ensemble member
+  - ensemble
   - LIDA
 events:
   - title: Roller Skating With My Cousin

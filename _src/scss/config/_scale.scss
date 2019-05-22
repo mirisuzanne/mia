@@ -30,7 +30,7 @@ $text-sizes: (
       'text-ratio': 1,
     ),
   'large': 'calc(1rem + 0.5vw)',
-  'xlarge': 'calc(#large-root + 4.5vw)',
+  'xlarge': 'calc(#large-root + 9vw)',
   'small': 1rem
     (
       'text-ratio': -0.5,
@@ -61,6 +61,10 @@ $spacing-sizes: (
   'double-gutter': '#gutter'
     (
       'times': 2,
+    ),
+  'gutter-plus': '#gutter'
+    (
+      'times': 1.5,
     ),
   'spacer': 'calc(#double-gutter + 6vmin)',
   'shim': '#gutter'

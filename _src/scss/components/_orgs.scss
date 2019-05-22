@@ -1,0 +1,38 @@
+// Orgs
+// ====
+
+[data-orgs='section'] {
+  grid-row-gap: size('gutter');
+  margin-bottom: size('spacer');
+}
+
+[data-orgs='item'] {
+  align-items: baseline;
+  grid-column-gap: size('shim');
+}
+
+[data-meta] {
+  @include color--('action', 'text-light');
+  @include color--('action-underline', 'border');
+  @include font-family('code');
+  color: var-color('border');
+  font-size: size('xsmall');
+
+  a {
+    font-style: italic;
+  }
+}
+
+[data-meta='orgs'] {
+  text-align: right;
+  grid-row-end: span 2;
+}
+
+[data-title='orgs'],
+[data-meta='org-sub'] {
+  grid-column-end: span 3;
+}
+
+[data-meta='org-sub'] {
+  font-style: italic;
+}

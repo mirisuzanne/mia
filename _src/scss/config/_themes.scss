@@ -61,7 +61,7 @@ $light-theme: (
   'shadow': '#_contrast-light',
   'contrast': '#_contrast-dark',
   'feature': '#_brand-accent-dark-5',
-  'mia-eyes': currentColor,
+  'mia-eyes': '#action',
 );
 
 @include add-colors($light-theme);

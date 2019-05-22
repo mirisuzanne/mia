@@ -1,9 +1,11 @@
 {% extends "layouts/base.njk" %}
 {% import "tags/macros.njk" as tag %}
+{% import 'site/macros.njk' as show %}
 
 {% block main %}
-  {{ tag.section(
-    all=collections
+	{{ show.main(
+    tag.section(collections),
+    page=false
   ) }}
 {% endblock %}
 

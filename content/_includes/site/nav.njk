@@ -1,22 +1,11 @@
 {% import 'utility.macros.njk' as utility %}
+{% import 'site/macros.njk' as show %}
 
-<nav
-  data-section="nav"
-  data-area="right">
-  <div
-    data-content
-    data-area="content"
-    data-flow="flex">
-    {%- for title, url in site.nav -%}
-      {%- set slug = 'home' if (url == '/') else title | slug -%}
-      {%- set rel = 'home' if (url == '/') else none -%}
-      <a href="{{ url | url }}"
-        {{ utility.show_attrs({
-          'data-nav': slug,
-          'data-active': (url == page.url),
-          'rel': rel
-        }) }} />{{ title | lower | amp | mdInline | safe }}</a>
-    {%- endfor -%}
+<nav data-area="nav">
+  <div data-inner="nav">
+    {% set page = collections.all | getPage(page) | first or page %}
+
+    {{ show.site_nav(site.nav, page) }}
+    {{ show.tag_nav(collections, page) }}
   </div>
 </nav>
-

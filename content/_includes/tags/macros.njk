@@ -4,14 +4,13 @@
 {% macro section(
   all
 ) %}
-  {% call cards.section(
-    title=utility.section_title('by popular demand…')
-  ) %}
+  {% call cards.section('all the tags…') %}
     {% for segment in all | groupTags %}
       {%- set title -%}
         {%- if segment.group != 'top' -%}~{%- endif -%}
         {{ segment.group }}
       {%- endset -%}
+
       {{ group(
         title=title,
         segment=segment.tags,
@@ -21,56 +20,44 @@
   {% endcall %}
 {% endmacro %}
 
+
 {% macro group(
   title,
   segment,
   all
 ) %}
   {% if segment | length %}
-    {% call cards.group(title) %}
-      {{ list(
-        tags=segment,
-        all=all
-      ) }}
-    {% endcall %}
+    {{ cards.group(
+      title=title,
+      content=list(segment, all)
+    ) }}
   {% endif %}
 {% endmacro %}
+
 
 {% macro list(
   tags,
   all
 ) %}
-  {% if tags | length %}
-    <div data-layout="cards">
-      {% for tag in tags %}
-        {{ show_tag(
-          tag=tag,
-          all=all
-        ) }}
-      {% endfor %}
-    </div>
-  {% endif %}
+  {% for tag in tags %}
+    {{ show_tag(
+      tag=tag,
+      all=all
+    ) }}
+  {% endfor %}
 {% endmacro %}
+
 
 {% macro show_tag(
   tag,
   all
 ) %}
-  <section
-    data-card="item"
-    {{ utility.attr_if('data-feature', item.feature) }}
-  >
-  <div data-card="inner">
-    <h4 data-card="title">
-      {{ utility.tag_link(tag.tag, all) }}
-    </h4>
-
-    <div data-card="meta">
-      {{ tag_meta(tag.events) }}
-    </div>
-  </div>
-  </section>
+  {{ cards.event(
+    title=utility.tag_link(tag.tag, all),
+    meta=tag_meta(tag.events)
+  ) }}
 {% endmacro %}
+
 
 {% macro tag_meta(
   data

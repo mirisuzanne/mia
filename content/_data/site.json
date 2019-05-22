@@ -5,11 +5,11 @@
   "author": "{{ pkg.author.name }}",
   "email": "{{ pkg.author.email }}",
   "images": "/assets/images/",
+  "icon": "icons/miriam.svg",
   "nav": {
-    "art&code": "/",
-    "bio": "/who/",
-    "contact": "/contact/",
-    "shop": "http://art.miriamsuzanne.com/"
+    "home": "/",
+    "about": "/who/",
+    "contact": "/contact/"
   },
   "og": {
     "locale": "en_US",

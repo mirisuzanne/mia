@@ -35,18 +35,25 @@
   margin-bottom: size('double-gutter');
 }
 
-[data-section='title'] {
+.section-header {
   @include font-family('code');
-  --top: 0;
   font-size: size('small');
   text-align: right;
 }
 
-[data-title='title'] {
+.section-title {
+  align-items: baseline;
   color: var-color('text-highlight');
-  display: inline-block;
+  display: flex;
   font-style: italic;
   font-weight: normal;
+
+  @include before('') {
+    background: var-color('border');
+    flex: 1;
+    height: size('border');
+    margin-right: size('shim');
+  }
 }
 
 // Areas
@@ -87,6 +94,10 @@
 [data-area='main-right'] {
   --area: main-start / right-end;
   --grid: #{var-grid('main-right')};
+}
+
+[data-area='type'] {
+  --area: half-left / right-end;
 }
 
 // Flows

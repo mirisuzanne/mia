@@ -7,12 +7,12 @@
   {% set content = content if (content != none) else caller() %}
 
   <section
-    data-area="full"
+    data-area="main-left"
     data-flow="grid">
-    {{ title | safe }}
+    {{ utility.section_title(title) }}
 
     <div
-      data-area="full"
+      data-area="main-left"
       data-layout="card-groups">
       {{ content }}
     </div>
@@ -31,6 +31,33 @@
       data-cards="grouper">
       <span>{{ title }}</span>
     </h3>
-    {{ content }}
+    <div data-layout="cards">
+      {{ content }}
+    </div>
   </section>
+{% endmacro %}
+
+{% macro event(
+  title,
+  meta,
+  feature
+) %}
+<article
+  data-card="item"
+  {{ utility.attr_if('data-feature', feature) }}
+>
+  <div data-card="inner">
+    {% if title %}
+      <h4 data-card="title">
+        {{ title | typogr | safe }}
+      </h4>
+    {% endif %}
+
+    {% if meta %}
+      <div data-meta="card">
+        {{ meta | safe }}
+      </div>
+    {% endif %}
+  </div>
+</article>
 {% endmacro %}

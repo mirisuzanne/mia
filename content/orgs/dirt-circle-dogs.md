@@ -10,7 +10,6 @@ hero:
 index: dirt circle dogs
 tags:
   - _calendar
-  - _orgs
   - music
   - art
 press:

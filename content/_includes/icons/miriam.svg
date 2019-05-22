@@ -1,8 +1,8 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 346.2 454.8"
-  width="350px"
-  height="455px"
+  width="200px"
+  height="260px"
   data-icon="miriam"
   >
   <style>
@@ -21,13 +21,18 @@
       }
       100% { stroke-width: 0; }
     }
+    :root {
+      fill: currentColor;
+      fill: var(--mia-svg-fill, currentColor);
+      stroke: currentColor;
+      stroke: var(--mia-svg-stroke, currentColor);
+    }
     [data-mia='eyes'] {
-      animation: fill-logo 4s 3s 1 both;
+      animation: var(--mia-svg-animate, fill-logo 4s 3s 1 both);
+      fill: var(--mia-svg-eyes, var(--mia-svg-fill, currentColor));
     }
     [data-mia='face'] {
-      animation: draw-logo 4s 1 both, fill-logo 4s 3s 1 both, fade-logo-outline 3s 3s 1 both;
-      stroke: #b32356;
-      stroke: var(--mia-svg-stroke, #b32356);
+      animation: var(--mia-svg-animate, draw-logo 4s 1 both, fill-logo 4s 3s 1 both, fade-logo-outline 3s 3s 1 both);
       stroke-dasharray: 800;
     }
   </style>

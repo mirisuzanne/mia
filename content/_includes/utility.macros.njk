@@ -5,17 +5,17 @@
   area='main-left'
 ) %}
   <header
-    data-section="title"
+    class="section-header"
     data-area="{{ area }}">
-    <div data-content>
-      <h2 data-title="title">
-        {{ title | typogr | safe }}
-      </h2>
+    <h2 class="section-title">
+      {{ title | typogr | safe }}
+    </h2>
 
-      {% if more %}
+    {% if more %}
+      <div data-content>
         {{ more | typogr | safe }}
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
   </header>
 {% endmacro %}
 

@@ -1,43 +1,16 @@
-{% import "utility.macros.njk" as utility %}
-{% import "events/macros.njk" as event_macros %}
+{% import "events/macros.njk" as cal %}
 
-{% set get_calendar = index or renderData.calendar or calendar or series %}
+{% set calendar = cal.get_calendar(
+  events_group=index or renderData.calendar or calendar or series,
+  collections=collections,
+  page=page
+) %}
 
-{% set more %}
-  ({{ utility.link_if('all', '/tags/') }})
-{% endset %}
-
-{% set top_filters %}
-  {{ utility.tag_list(
-    collections | getTags,
-    collections
-  ) }}
-  {{ more | safe }}
-{% endset %}
-
-{% if get_calendar == 'all' %}
-  {{ event_macros.section(
-    title=utility.section_title('filter by...', top_filters),
-    events=collections.all | getEvents,
-    all=collections,
-    self=page.url
-  ) }}
-{% elif get_calendar %}
-  {% set title %}
-    showing '{{ get_calendar | displayName }}'…
-  {% endset %}
-
-  {{ event_macros.section(
-    title=utility.section_title(title, more),
-    events=collections.all | getEvents(get_calendar),
-    all=collections,
-    self=page.url
-  ) }}
-{% elif events %}
-  {{ event_macros.section(
-    title=utility.section_title('including…', more),
-    events=collections.all | getPage(page) | getEvents,
-    all=collections,
-    self=page.url
+{% if content %}
+  {{ calendar }}
+{% else %}
+  {{ show.main(
+    content=calendar,
+    page=false
   ) }}
 {% endif %}
