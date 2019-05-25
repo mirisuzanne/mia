@@ -1,0 +1,18 @@
+<form
+  action="https://www.google.co.uk/search"
+  method="get"
+  data-form="search">
+  <input type="hidden" name="q" id="q" value="site:{{ pkg.homepage }}">
+  <label
+    data-field="search"
+    for="search-str">
+    <span data-hidden>Search</span>
+    <input  data-input="text" type="text" name="q" id="search-str">
+  </label>
+  <button
+    data-btn="submit flush"
+    data-offsite
+    type="submit">
+    Search
+  </button>
+</form>

@@ -1,0 +1,21 @@
+---
+permalink: search.json
+---
+{"search" : [
+{%- for item in collections.all | getPublic -%}
+  {%- set text -%}
+    {{ item.data.title }}
+    {{ item.data.sub }}
+    {{ item.templateContent }}
+    {% for event in item.data.events %}
+      {{ event.title }}
+      {{ event.venue }}
+    {% endfor %}
+  {%- endset -%}
+  {
+    "url" : "{{ item.url }}",
+    "title" : "{{ item.data.title }}",
+    "text" : "{{ text | striptags | replace('"', "'") | replace("¯\\_(ツ)_/¯", "[shrug]") | squash | escape }}"
+  }{% if not loop.last %},{% else %}{%- endif -%}
+{%- endfor -%}
+]}

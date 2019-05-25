@@ -8,7 +8,7 @@
 }
 
 [data-field] {
-  margin-bottom: size('shim');
+  margin-bottom: var(--field-margin, size('shim'));
 }
 
 [data-label] {
@@ -24,6 +24,10 @@
   font-size: size('xsmall');
   padding: size('half-shim');
   width: 100%;
+
+  &:focus {
+    background-color: color('overlay');
+  }
 }
 
 [data-input~='area'] {

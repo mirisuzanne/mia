@@ -8,6 +8,8 @@
     <span data-hidden>home</span>
   </a>
 
+  {% include "site/search.njk" %}
+
   <div class="banner-content">
     <h1 class="banner-title" data-bright>
       {{ full_title | mdInline | typogr | safe }}

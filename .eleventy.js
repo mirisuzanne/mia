@@ -34,7 +34,10 @@ module.exports = eleventyConfig => {
   // filters
   eleventyConfig.addFilter('typeCheck', utils.typeCheck);
   eleventyConfig.addFilter('objectKeys', utils.objectKeys);
+  eleventyConfig.addFilter('squash', utils.squash);
+
   eleventyConfig.addFilter('getDate', time.getDate);
+
   eleventyConfig.addFilter('publicTags', tags.publicTags);
   eleventyConfig.addFilter('getTags', tags.getTags);
   eleventyConfig.addFilter('groupTags', tags.groupTags);
@@ -47,6 +50,7 @@ module.exports = eleventyConfig => {
   });
 
   eleventyConfig.addFilter('getPage', pages.fromCollection);
+  eleventyConfig.addFilter('getPublic', pages.getPublic);
   eleventyConfig.addFilter('seriesNav', pages.seriesNav);
 
   eleventyConfig.addFilter('getEvents', events.get);

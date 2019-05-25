@@ -16,6 +16,15 @@ h1 {
 // Links
 // -----
 
+@mixin offsite {
+  @include after('↗') {
+    @include font-family('code');
+    color: var-color('text-light');
+    font-size: size('code');
+    @content;
+  }
+}
+
 a {
   #{$link} {
     color: var-color('action');
@@ -29,11 +38,7 @@ a {
   }
 
   &[href*='://'] {
-    @include after('↗') {
-      @include font-family('code');
-      color: var-color('text-light');
-      font-size: size('code');
-    }
+    @include offsite;
   }
 }
 
@@ -42,6 +47,13 @@ a {
 
 [data-hidden] {
   @include is-hidden;
+}
+
+[data-offsite] {
+  @include offsite {
+    color: inherit;
+    opacity: 0.5;
+  }
 }
 
 .amp {

@@ -2,6 +2,10 @@
 
 const isPublic = page => page.data.draft !== true;
 
+const getPublic = collection => {
+  return collection.filter(page => isPublic(page));
+};
+
 const fromCollection = (collection, page) => {
   const pageURL = typeof page === 'string' ? page : page.url;
   return collection.filter(page => page.url === pageURL);
@@ -23,6 +27,7 @@ const seriesNav = (page, collection) => {
 
 module.exports = {
   isPublic,
+  getPublic,
   fromCollection,
   seriesNav,
 };

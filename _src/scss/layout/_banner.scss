@@ -4,7 +4,7 @@
 [data-layout~='banner'] {
   display: grid;
   font-style: italic;
-  grid: 'icon .' auto 'head head' 1fr / auto 1fr;
+  grid: 'icon . search' auto 'icon hw hw' auto 'head head head' 1fr / auto 1fr auto;
   grid-area: banner / full;
   margin-bottom: size('gutter');
 
@@ -12,6 +12,9 @@
     --mia-svg-animate: none;
   }
 }
+
+// Home
+// ----
 
 .banner-home {
   #{$link} {
@@ -35,10 +38,24 @@
   }
 }
 
+// Search
+// ------
+
+[data-form='search'] {
+  --field-margin: 0;
+  align-self: start;
+  display: flex;
+  grid-area: search;
+  padding: size('shim') size('gutter');
+}
+
+// Main
+// ----
+
 .banner-content {
   align-self: center;
   display: grid;
-  grid-area: icon / head / head;
+  grid-area: hw / head / head;
   justify-self: center;
   margin: size('shim');
   text-align: center;
@@ -65,7 +82,7 @@
 }
 
 // Dots
-// ====
+// ----
 
 .banner-fancy {
   align-items: center;

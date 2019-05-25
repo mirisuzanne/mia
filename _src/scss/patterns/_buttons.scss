@@ -6,9 +6,14 @@
   border-radius: 0.1em;
   color: var-color('background');
   padding: 0 size('half-shim');
+  white-space: nowrap;
 
   #{$focus} {
     background: var-color('action-hover');
     color: var-color('background');
   }
+}
+
+[data-btn~='flush'] {
+  border-radius: 0 0.1em 0.1em 0;
 }
