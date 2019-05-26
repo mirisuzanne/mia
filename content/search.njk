@@ -3,21 +3,27 @@ permalink: search.json
 ---
 {"search" : [
 {%- for item in collections.all | getPublic -%}
-  {%- set text -%}
-    {{ item.data.title }}
+  {%- set meta -%}
     {{ item.data.banner }}
     {{ item.data.sub }}
+    {{ item.data.venue }}
     {{ item.data.tags }}
-    {{ item.templateContent }}
+  {%- endset -%}
+  {%- set events -%}
     {% for event in item.data.events %}
       {{ event.title }}
-      {{ event.venue }}
+      {{ event.venue }}¸
+      {{ event.adr }}¸
     {% endfor %}
   {%- endset -%}
-  {
-    "url" : "{{ item.url }}",
-    "title" : "{{ item.data.title }}",
-    "text" : "{{ text | striptags | replace('"', "'") | replace("¯\\_(ツ)_/¯", "[shrug]") | squash }}"
-  }{% if not loop.last %},{% else %}{%- endif -%}
+  {%- set json = {
+    url: item.url,
+    title: item.data.title,
+    meta: meta,
+    events: events,
+    content: text
+  } -%}
+  {{ json | jsonString | safe }}
+  {%- if not loop.last -%},{%- else -%}{%- endif -%}
 {%- endfor -%}
 ]}

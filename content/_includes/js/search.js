@@ -6,7 +6,6 @@ const search = () => {
   var searchForm = document.querySelector('[data-form~="search"]');
 
   searchBtn.remove();
-  searchForm.removeAttribute('action');
 
   // clear the current results
   const clearResults = () => {
@@ -23,25 +22,31 @@ const search = () => {
 
   // search and display
   const find = str => {
-    str = str.toLowerCase();
+    let idx = lunr(function() {
+      this.ref('url');
+      this.field('title');
+      this.field('meta');
+      this.field('events');
+      this.field('content');
 
-    // look for matches in the search JSON
-    var results = [];
-    for (var item in searchIndex) {
-      var found = searchIndex[item].text.indexOf(str);
-      if (found != -1) {
-        results.push(searchIndex[item]);
-      }
-    }
-    results.sort((a, b) => a.title.localeCompare(b.title));
+      searchIndex.forEach(doc => {
+        this.add(doc);
+      }, this);
+    });
+
+    results = idx.search(str);
 
     // build and insert the new result entries
     clearResults();
     for (var item in results) {
+      item = results[item];
+      const post = searchIndex.filter(page => {
+        return page.url === item.ref;
+      })[0];
       var listItem = document.createElement('li');
       var link = document.createElement('a');
-      link.textContent = decodeHtml(results[item].title || '@@@');
-      link.setAttribute('href', results[item].url);
+      link.textContent = decodeHtml(post.title);
+      link.setAttribute('href', post.url);
       listItem.appendChild(link);
       resultsUI.appendChild(listItem);
     }
