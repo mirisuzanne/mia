@@ -57,10 +57,10 @@
 .search-results {
   @include position(absolute 100% size('shim') null null);
   background-color: var-color('background');
+  border-radius: size('quarter-shim');
   box-shadow: 0 0 size('half-shim') var-color('border');
   max-height: 80vh;
   max-width: calc(100vw - #{size('gutter')});
-  min-height: size('gutter') * 10;
   overflow-x: auto;
   width: 35ch;
   z-index: 10;

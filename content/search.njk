@@ -5,7 +5,9 @@ permalink: search.json
 {%- for item in collections.all | getPublic -%}
   {%- set text -%}
     {{ item.data.title }}
+    {{ item.data.banner }}
     {{ item.data.sub }}
+    {{ item.data.tags }}
     {{ item.templateContent }}
     {% for event in item.data.events %}
       {{ event.title }}

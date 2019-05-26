@@ -33,19 +33,17 @@ const search = () => {
         results.push(searchIndex[item]);
       }
     }
+    results.sort((a, b) => a.title.localeCompare(b.title));
 
     // build and insert the new result entries
     clearResults();
     for (var item in results) {
-      var title = results[item].title;
-      if (title) {
-        var listItem = document.createElement('li');
-        var link = document.createElement('a');
-        link.textContent = decodeHtml(title);
-        link.setAttribute('href', results[item].url);
-        listItem.appendChild(link);
-        resultsUI.appendChild(listItem);
-      }
+      var listItem = document.createElement('li');
+      var link = document.createElement('a');
+      link.textContent = decodeHtml(results[item].title || '@@@');
+      link.setAttribute('href', results[item].url);
+      listItem.appendChild(link);
+      resultsUI.appendChild(listItem);
     }
   };
 

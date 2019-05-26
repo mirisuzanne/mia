@@ -23,12 +23,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('orgs', collection => {
     return collection
       .getAll()
-      .filter(item => {
-        return item.data.org && !item.data.end;
-      })
-      .sort((a, b) => {
-        return a.data.start - b.data.start;
-      });
+      .filter(item => item.data.org && !item.data.end)
+      .sort((a, b) => a.data.start - b.data.start);
   });
 
   // filters
@@ -52,6 +48,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('getPage', pages.fromCollection);
   eleventyConfig.addFilter('getPublic', pages.getPublic);
   eleventyConfig.addFilter('seriesNav', pages.seriesNav);
+  eleventyConfig.addFilter('titleSort', pages.titleSort);
 
   eleventyConfig.addFilter('getEvents', events.get);
   eleventyConfig.addFilter('groupName', group => events.groupNames[group]);
