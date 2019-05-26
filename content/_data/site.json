@@ -16,12 +16,6 @@
     "type": "website",
     "img": "headshots/mia-smirk.jpg"
   },
-  "feed": {
-    "subtitle": "{{ pkg.description }}",
-    "filename": "feed.xml",
-    "path": "/feed/feed.xml",
-    "url": "{{ pkg.homepage }}/feed/feed.xml",
-    "id": "{{ pkg.homepage }}"
-  },
+  "feed": "feed.xml",
   "styles": ["screen.css"]
 }

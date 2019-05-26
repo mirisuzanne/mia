@@ -18,6 +18,7 @@ module.exports = eleventyConfig => {
   // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
   eleventyConfig.addLayoutAlias('tags', 'layouts/tags.njk');
+  eleventyConfig.addLayoutAlias('rss', 'layouts/rss.njk');
 
   // collections
   eleventyConfig.addCollection('orgs', collection => {
@@ -34,7 +35,11 @@ module.exports = eleventyConfig => {
   // filters
   eleventyConfig.addFilter('typeCheck', utils.typeCheck);
   eleventyConfig.addFilter('objectKeys', utils.objectKeys);
+
   eleventyConfig.addFilter('getDate', time.getDate);
+  eleventyConfig.addFilter('rssDate', time.rssDate);
+  eleventyConfig.addFilter('rssLatest', time.rssLatest);
+
   eleventyConfig.addFilter('publicTags', tags.publicTags);
   eleventyConfig.addFilter('getTags', tags.getTags);
   eleventyConfig.addFilter('groupTags', tags.groupTags);

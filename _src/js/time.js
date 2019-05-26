@@ -38,6 +38,7 @@ const formatDate = (date, format) => {
   const yyyy = date.getUTCFullYear();
   const md = `${M} ${d}`;
   const since = now.getUTCFullYear() === yyyy ? md : yyyy;
+  const iso = `${yyyy}-${mm}-${dd}`;
 
   const formats = {
     dd,
@@ -52,12 +53,13 @@ const formatDate = (date, format) => {
     date: d,
     month: MM,
     year: yyyy,
+    iso: iso,
     slash: `${mm}/${dd}/${yyyy}`,
-    iso: `${yyyy}-${mm}-${dd}`,
     url: `${yyyy}/${mm}/${dd}`,
     short: `${M} ${d}, ${yyyy}`,
     long: `${MM} ${d}, ${yyyy}`,
     since: `since ${since}`,
+    rfc: `${iso}T12:00:00-06:00`,
   };
 
   return formats[format];
@@ -68,4 +70,19 @@ const getDate = (date, format) => {
   return format ? formatDate(date, format) : date;
 };
 
-module.exports = { now, getDate };
+const rssDate = page => {
+  const date = page.data ? page.data.start || page.date : page.date;
+  return getDate(date, 'rfc');
+};
+
+const rssLatest = collection => {
+  collection.sort((a, b) => rssDate(a) - rssDate(b));
+  return rssDate(collection[0]);
+};
+
+module.exports = {
+  now,
+  getDate,
+  rssDate,
+  rssLatest,
+};
