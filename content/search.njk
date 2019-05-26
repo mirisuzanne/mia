@@ -15,7 +15,7 @@ permalink: search.json
   {
     "url" : "{{ item.url }}",
     "title" : "{{ item.data.title }}",
-    "text" : "{{ text | striptags | replace('"', "'") | replace("¯\\_(ツ)_/¯", "[shrug]") | squash | escape }}"
+    "text" : "{{ text | striptags | replace('"', "'") | replace("¯\\_(ツ)_/¯", "[shrug]") | squash }}"
   }{% if not loop.last %},{% else %}{%- endif -%}
 {%- endfor -%}
 ]}

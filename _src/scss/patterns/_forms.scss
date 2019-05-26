@@ -26,7 +26,8 @@
   width: 100%;
 
   &:focus {
-    background-color: color('overlay');
+    background-color: var-color('overlay');
+    border-color: var-color('action-hover');
   }
 }
 

@@ -41,12 +41,45 @@
 // Search
 // ------
 
+[data-layout='search'] {
+  align-self: start;
+  font-size: size('small');
+  grid-area: search;
+  padding: size('shim');
+  position: relative;
+}
+
 [data-form='search'] {
   --field-margin: 0;
-  align-self: start;
   display: flex;
-  grid-area: search;
-  padding: size('shim') size('gutter');
+}
+
+.search-results {
+  @include position(absolute 100% size('shim') null null);
+  background-color: var-color('background');
+  box-shadow: 0 0 size('half-shim') var-color('border');
+  max-height: 80vh;
+  max-width: calc(100vw - #{size('gutter')});
+  min-height: size('gutter') * 10;
+  overflow-x: auto;
+  width: 35ch;
+  z-index: 10;
+
+  &:empty {
+    display: none;
+  }
+
+  [href] {
+    display: block;
+    overflow: hidden;
+    padding: size('quarter-shim') size('shim');
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    #{$focus} {
+      background-color: var-color('callout');
+    }
+  }
 }
 
 // Main
