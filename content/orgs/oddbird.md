@@ -9,6 +9,7 @@ index: oddbird
 tags:
   - code
   - speaking
+  - oddbird
 ---
 
 Custom web app design & development

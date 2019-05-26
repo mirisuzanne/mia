@@ -12,6 +12,7 @@ tags:
   - _calendar
   - music
   - art
+  - dirt circle dogs
 press:
   - text: |
       An earthy and soulful collaboration…
