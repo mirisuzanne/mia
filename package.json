@@ -8,6 +8,9 @@
     "name": "Miriam Suzanne",
     "email": "miriam@oddbird.net"
   },
+  "contributors": [
+    "Jonny Gerig Meyer <jonny@oddbird.net>"
+  ],
   "license": "UNLICENSED",
   "private": true,
   "main": "_site/index.html",
