@@ -13,7 +13,7 @@
   }
 }
 
-[data-btn='toggle-theme'] {
+[data-btn~='toggle-theme'] {
   grid-area: theme;
   margin: size('grid-margin');
 }

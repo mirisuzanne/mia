@@ -46,10 +46,9 @@
 [data-card='item'] {
   --feature: -0.006turn;
 
-  @for $i from 2 through 4 {
-    &:nth-child(#{$i}n) {
-      --feature: #{if(random(2) == 2, 0.006turn, null)};
-    }
+  &:nth-child(3n),
+  &:nth-last-child(7n-3) {
+    --feature: 0.006turn;
   }
 
   &[data-feature] {
