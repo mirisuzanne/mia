@@ -8,7 +8,7 @@ const theme = () => {
   const root = document.querySelector('html');
   const attr = 'data-theme';
   const transClass = 'theme-change';
-  const themeToggle = document.querySelector('[data-btn="toggle-theme"]');
+  const themeToggle = document.querySelector('[data-btn~="toggle-theme"]');
 
   const setTheme = to => {
     if (to) {
