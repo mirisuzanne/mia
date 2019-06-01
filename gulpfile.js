@@ -66,20 +66,46 @@ gulp.task('imagemin', () =>
     .pipe(gulp.dest(paths.IMG_DEST_DIR)),
 );
 
+const sassTask = opts => {
+  const options = { sourcemap: false, minify: false, ...opts };
+  if (!options.src) {
+    return Promise.reject('No source for Sass compilation');
+  }
+  let stream = gulp.src(options.src);
+  if (options.sourcemap) {
+    stream = stream.pipe(sourcemaps.init());
+  }
+  stream = stream.pipe(sass({ fiber: Fiber })).pipe(
+    autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false,
+    }),
+  );
+  if (options.minify) {
+    stream = stream.pipe(cleanCSS());
+  }
+  if (options.sourcemap) {
+    stream = stream.pipe(
+      sourcemaps.write(options.sourcemap === 'inline' ? undefined : '.'),
+    );
+  }
+  return stream.pipe(gulp.dest(paths.CSS_DIR));
+};
+
 gulp.task('sass', () => {
-  return gulp
-    .src(paths.SASS_DIR + '**/*.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass({ fiber: Fiber }))
-    .pipe(
-      autoprefixer({
-        browsers: ['last 2 versions'],
-        cascade: false,
-      }),
-    )
-    .pipe(cleanCSS())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.CSS_DIR));
+  return sassTask({ src: paths.SASS_DIR + 'screen.scss', sourcemap: 'inline' });
+});
+
+gulp.task('sass-prod', () => {
+  return sassTask({
+    src: paths.SASS_DIR + 'screen.scss',
+    sourcemap: true,
+    minify: true,
+  });
+});
+
+gulp.task('sassdoc-sass', () => {
+  return sassTask({ src: paths.SASS_DIR + 'json.scss' });
 });
 
 const onError = function(err) {
@@ -125,7 +151,7 @@ gulp.task('prettier', () => prettierTask(paths.SASS));
 
 gulp.task(
   'sassdoc',
-  gulp.series('sass', () => {
+  gulp.series('sassdoc-sass', () => {
     const stream = sassdoc();
 
     gulp.src(paths.SASS).pipe(stream);
@@ -135,8 +161,7 @@ gulp.task(
 );
 
 gulp.task('watch', cb => {
-  gulp.watch(paths.SASS, gulp.parallel(['sasslint', 'sassdoc']));
-  gulp.watch(paths.IMG_SRC_DIR, gulp.parallel('imagemin'));
+  gulp.watch(paths.SASS, gulp.parallel(['sasslint', 'sass']));
 
   // lint all scss when rules change
   gulp.watch('**/.stylelintrc.yml', gulp.parallel('sasslint-nofail'));
@@ -144,13 +169,26 @@ gulp.task('watch', cb => {
   cb();
 });
 
-gulp.task('build-assets', gulp.parallel('imagemin', 'sassdoc'));
+gulp.task('sassdoc-watch', cb => {
+  gulp.watch(paths.SASS, gulp.parallel(['sasslint', 'sass', 'sassdoc']));
+
+  // lint all scss when rules change
+  gulp.watch('**/.stylelintrc.yml', gulp.parallel('sasslint-nofail'));
+
+  cb();
+});
+
+gulp.task('build-assets', gulp.parallel('imagemin', 'sassdoc', 'sass'));
+gulp.task(
+  'build-assets-prod',
+  gulp.parallel('imagemin', 'sassdoc', 'sass-prod'),
+);
 
 gulp.task('build-clean', () => del([`${paths.OUTPUT_DIR}**`]));
 
 gulp.task(
   'build',
-  gulp.series(gulp.parallel('build-assets', 'build-clean'), cb =>
+  gulp.series(gulp.parallel('build-assets-prod', 'build-clean'), cb =>
     spawnTask('yarn', ['eleventy'], cb),
   ),
 );

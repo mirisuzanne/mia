@@ -31,7 +31,7 @@ and the served site will be available at
 You can also run individual commands:
 
 ```
-# build the static site
+# build the static site for production
 gulp build
 
 # run the server
@@ -52,8 +52,11 @@ gulp prettier
 # compile sass docs
 gulp sassdoc
 
-# watch sass files (lint & docs & compile)
+# watch sass files (lint & compile)
 gulp watch
+
+# watch sass files (docs & lint & compile)
+gulp sassdoc-watch
 ```
 
 Sass Docs are compiled into the `_site/style/` folder,

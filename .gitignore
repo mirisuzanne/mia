@@ -1,4 +1,6 @@
 _site
+content/assets/css
+content/assets/images
 
 # Logs
 logs

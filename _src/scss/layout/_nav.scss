@@ -16,6 +16,7 @@
   position: sticky;
   text-align: center;
   top: size('shim');
+  z-index: 10;
 
   @include above('page-break') {
     align-content: start;
