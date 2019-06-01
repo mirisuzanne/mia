@@ -22,8 +22,8 @@
   border: 1px solid var-color('border');
   color: var-color('action');
   font-size: size('xsmall');
-  padding: size('half-shim');
-  width: 100%;
+  padding: var(--field-padding, size('half-shim'));
+  width: var(--field-width, 100%);
 
   &:focus {
     background-color: var-color('overlay');
@@ -42,4 +42,8 @@
 
 [data-actions] {
   text-align: right;
+}
+
+::placeholder {
+  font-style: italic;
 }

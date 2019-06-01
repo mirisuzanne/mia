@@ -1,41 +1,47 @@
 const search = () => {
-  const resultsUI = document.querySelector('.search-results');
+  const resultsDropdown = document.querySelector('.search-results');
+  const resultsList = document.querySelector('[data-navlist="search"]');
   const searchInput = document.querySelector('#search-str');
   const searchBtn = document.querySelector('[data-btn~="search"]');
   let searchIdx, searchJson;
 
-  searchBtn.remove();
-
   // clear the current results
-  const clearResults = () => {
-    while (resultsUI.firstChild) {
-      resultsUI.removeChild(resultsUI.firstChild);
+  const clearResults = hide => {
+    if (hide) {
+      resultsDropdown.setAttribute('aria-expanded', false);
+    }
+
+    while (resultsList.firstChild) {
+      resultsList.removeChild(resultsList.firstChild);
     }
   };
 
   const decodeHtml = html => {
-    var txt = document.createElement('textarea');
+    const txt = document.createElement('textarea');
     txt.innerHTML = html;
     return txt.value;
   };
 
   // search and display
   const find = str => {
-    results = searchIdx.search(str).sort((a, b) => a.score < b.score);
+    results = searchIdx.search(str);
 
     // build and insert the new result entries
-    clearResults();
-    for (var item in results) {
+    clearResults(!results.length);
+    if (results.length) {
+      resultsDropdown.setAttribute('aria-expanded', true);
+    }
+
+    for (let item in results) {
       item = results[item];
       const post = searchJson.filter(page => {
         return page.url === item.ref;
       })[0];
-      var listItem = document.createElement('li');
-      var link = document.createElement('a');
-      link.textContent = decodeHtml(post.title);
+      const link = document.createElement('a');
       link.setAttribute('href', post.url);
-      listItem.appendChild(link);
-      resultsUI.appendChild(listItem);
+      link.setAttribute('data-nav', 'searchs');
+      link.textContent = decodeHtml(post.title);
+      resultsList.appendChild(link);
     }
   };
 
@@ -52,7 +58,7 @@ const search = () => {
           searchIdx = lunr(function() {
             this.ref('url');
             this.field('title', { boost: 20 });
-            this.field('meta', { boost: 10 });
+            this.field('meta');
             this.field('events');
             this.field('content');
 
@@ -66,22 +72,22 @@ const search = () => {
 
   // listen for input changes
   searchInput.addEventListener('input', () => {
-    var str = searchInput.value;
+    let str = searchInput.value;
     if (str.length > 1) {
-      str = str.includes('~') ? str : `${str}~2`;
+      str = str.includes('~') ? str : `${str}~1`;
       find(str);
     } else {
-      clearResults();
+      clearResults(true);
     }
   });
 
   searchBtn.addEventListener('click', event => {
     event.preventDefault();
-    var str = searchInput.value;
+    const str = searchInput.value;
     if (str.length > 2) {
       find(str);
     } else {
-      clearResults();
+      clearResults(true);
     }
   });
 };

@@ -4,13 +4,18 @@
 [data-layout~='banner'] {
   display: grid;
   font-style: italic;
-  grid: 'icon . search' auto 'icon hw hw' auto 'head head head' 1fr / auto 1fr auto;
+  grid: 'icon . theme' auto 'icon hw hw' auto 'head head head' 1fr / auto 1fr auto;
   grid-area: banner / full;
   margin-bottom: size('gutter');
 
   &:not([data-home]) {
     --mia-svg-animate: none;
   }
+}
+
+[data-btn='toggle-theme'] {
+  grid-area: theme;
+  margin: size('grid-margin');
 }
 
 // Home
@@ -35,50 +40,6 @@
     --angle: var(--offset) 100%;
     --left: 0 var(--offset);
     background: var-color('action-hover');
-  }
-}
-
-// Search
-// ------
-
-[data-layout='search'] {
-  align-self: start;
-  font-size: size('small');
-  grid-area: search;
-  padding: size('shim');
-  position: relative;
-}
-
-[data-form='search'] {
-  --field-margin: 0;
-  display: flex;
-}
-
-.search-results {
-  @include position(absolute 100% size('shim') null null);
-  background-color: var-color('background');
-  border-radius: size('quarter-shim');
-  box-shadow: 0 0 size('half-shim') var-color('border');
-  max-height: 80vh;
-  max-width: calc(100vw - #{size('gutter')});
-  overflow-x: auto;
-  width: 35ch;
-  z-index: 10;
-
-  &:empty {
-    display: none;
-  }
-
-  [href] {
-    display: block;
-    overflow: hidden;
-    padding: size('quarter-shim') size('shim');
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
-    #{$focus} {
-      background-color: var-color('callout');
-    }
   }
 }
 
@@ -111,6 +72,7 @@
   @include font-family('code');
   background: var-color('overlay');
   color: var-color('text-light');
+  justify-self: center;
   font-size: size('small');
 }
 

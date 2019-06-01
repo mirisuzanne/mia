@@ -1,27 +1,33 @@
-<nav data-layout="search">
-  <form
-    action="https://www.google.co.uk/search"
-    method="get"
-    data-form="search">
-    <input type="hidden" name="q" id="q" value="site:{{ pkg.homepage }}">
-    <label
-      data-field="search"
-      for="search-str">
-      <span data-hidden>Search</span>
-      <input
-        data-input="text"
-        type="text"
-        name="q"
-        placeholder="Search…"
-        autocomplete="off"
-        id="search-str">
-    </label>
-    <button
-      data-btn="search flush"
-      data-offsite
-      type="submit">
-      Search
-    </button>
-  </form>
-  <ol class="search-results"></ol>
-</nav>
+<form
+  action="https://www.google.co.uk/search"
+  method="get"
+  data-form="search">
+  <input type="hidden" name="q" id="q" value="site:{{ pkg.homepage }}">
+  <label
+    data-field="search"
+    for="search-str">
+    <span data-hidden>Search</span>
+    <input
+      data-input="text"
+      type="text"
+      name="q"
+      placeholder="Search…"
+      autocomplete="off"
+      id="search-str">
+  </label>
+  <button
+    data-btn="search flush"
+    data-offsite
+    data-hidden
+    type="submit">
+    Search
+  </button>
+</form>
+<div
+  class="search-results"
+  data-dropdown="left"
+  aria-expanded="false">
+  <div
+    data-dropdown-content
+    data-navlist="search"></div>
+</div>
