@@ -16,6 +16,7 @@
 [data-btn~='toggle-theme'] {
   grid-area: theme;
   margin: size('grid-margin');
+  z-index: 2;
 }
 
 // Home
@@ -50,6 +51,7 @@
   align-self: center;
   display: grid;
   grid-area: hw / head / head;
+  justify-content: center;
   justify-self: center;
   margin: size('shim');
   text-align: center;
@@ -72,7 +74,6 @@
   @include font-family('code');
   background: var-color('overlay');
   color: var-color('text-light');
-  justify-self: center;
   font-size: size('small');
 }
 
