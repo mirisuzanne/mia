@@ -10,7 +10,7 @@
     <name>{{ site.author }}</name>
     <email>{{ site.email }}</email>
   </author>
-  {%- for post in collections._post %}
+  {%- for post in collections._post | getPublic %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ site.url }}{{ post.url }}"/>

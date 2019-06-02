@@ -2,13 +2,29 @@
 // =======
 
 [data-btn] {
-  background: var-color('action');
+  --btn-bg: #{var-color('action')};
+  --btn-color: #{var-color('background')};
+  --btn-hover: #{var-color('action-hover')};
+  --btn-hover-color: var(--btn-color);
+  background: var(--btn-bg);
   border-radius: 0.1em;
-  color: var-color('background');
+  color: var(--btn-color);
   padding: 0 size('half-shim');
+  white-space: nowrap;
 
   #{$focus} {
-    background: var-color('action-hover');
-    color: var-color('background');
+    background: var(--btn-hover);
+    color: var(--btn-hover-color);
   }
+}
+
+[data-btn~='flush'] {
+  border-radius: 0 0.1em 0.1em 0;
+}
+
+[data-btn~='fade'] {
+  --btn-bg: #{var-color('callout')};
+  --btn-color: #{var-color('action')};
+  --btn-hover: #{var-color('action-hover')};
+  --btn-hover-color: #{var-color('background')};
 }

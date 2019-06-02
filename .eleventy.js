@@ -15,26 +15,18 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('content/keybase.txt');
   eleventyConfig.addPassthroughCopy('content/robots.txt');
 
-  // layouts
-  eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
-  eleventyConfig.addLayoutAlias('tags', 'layouts/tags.njk');
-  eleventyConfig.addLayoutAlias('rss', 'layouts/rss.njk');
-
   // collections
   eleventyConfig.addCollection('orgs', collection => {
     return collection
       .getAll()
-      .filter(item => {
-        return item.data.org && !item.data.end;
-      })
-      .sort((a, b) => {
-        return a.data.start - b.data.start;
-      });
+      .filter(item => item.data.org && !item.data.end)
+      .sort((a, b) => a.data.start - b.data.start);
   });
 
   // filters
   eleventyConfig.addFilter('typeCheck', utils.typeCheck);
   eleventyConfig.addFilter('objectKeys', utils.objectKeys);
+  eleventyConfig.addFilter('jsonString', utils.jsonString);
 
   eleventyConfig.addFilter('getDate', time.getDate);
   eleventyConfig.addFilter('rssDate', time.rssDate);
@@ -52,7 +44,9 @@ module.exports = eleventyConfig => {
   });
 
   eleventyConfig.addFilter('getPage', pages.fromCollection);
+  eleventyConfig.addFilter('getPublic', pages.getPublic);
   eleventyConfig.addFilter('seriesNav', pages.seriesNav);
+  eleventyConfig.addFilter('titleSort', pages.titleSort);
 
   eleventyConfig.addFilter('getEvents', events.get);
   eleventyConfig.addFilter('groupName', group => events.groupNames[group]);
@@ -77,6 +71,8 @@ module.exports = eleventyConfig => {
     markdownTemplateEngine: 'njk',
     dir: {
       input: 'content',
+      includes: '_includes',
+      layouts: '_layouts',
     },
   };
 };

@@ -10,6 +10,7 @@ index: teacup gorilla
 tags:
   - art
   - music
+  - teacup gorilla
 events:
   - title: PRF BBQ Denver
     date: 2019-04-28

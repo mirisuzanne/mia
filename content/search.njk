@@ -1,0 +1,26 @@
+---
+permalink: search.json
+eleventyExcludeFromCollections: true
+---
+{"search" : [
+{%- for item in collections.all | getPublic -%}
+  {%- set meta -%}
+    {{ item.data.banner }} {{ item.data.sub }}
+    {{ item.data.venue }} {{ item.data.tags }}
+  {%- endset -%}
+  {%- set events -%}
+    {%- for event in item.data.events -%}
+      {{ event.title }} {{ event.venue }} {{ event.adr }}
+    {%- endfor -%}
+  {%- endset -%}
+  {%- set json = {
+    url: item.url,
+    title: item.data.title,
+    meta: meta,
+    events: events,
+    content: item.templateContent | striptags
+  } -%}
+  {{ json | jsonString | safe }}
+  {%- if not loop.last -%},{%- else -%}{%- endif -%}
+{%- endfor -%}
+]}

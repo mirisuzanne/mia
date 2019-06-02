@@ -2,10 +2,13 @@
 // ==========
 
 [data-area='nav'] {
+  position: relative;
+  margin: size('gutter') 0;
+
   @include above('page-break') {
     grid-area: nav;
     grid-row-end: span 3;
-    margin-left: size('grid-margin');
+    margin: 0 0 0 size('grid-margin');
   }
 }
 
@@ -14,6 +17,7 @@
   position: sticky;
   text-align: center;
   top: size('shim');
+  z-index: 10;
 
   @include above('page-break') {
     align-content: start;
@@ -41,5 +45,33 @@
     justify-self: stretch;
     text-decoration: none;
     text-shadow: none;
+  }
+}
+
+// Search
+// ------
+
+[data-form='search'] {
+  --field-padding: #{size('quarter-shim') size('half-shim')};
+  --field-margin: #{size('half-shim')};
+
+  @include above('page-break') {
+    --field-width: 8em;
+    display: flex;
+    padding-right: size('half-shim');
+  }
+}
+
+.search-results {
+  --t: #{size('guttter')};
+}
+
+[data-navlist='search'] {
+  display: grid;
+
+  [href] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

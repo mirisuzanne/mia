@@ -1,6 +1,14 @@
 'use strict';
 
-const isPublic = page => page.data.draft !== true;
+const isPublic = page => {
+  const live = page.data.draft !== true;
+  const title = page.data && page.data.title;
+  return live && title;
+};
+
+const getPublic = collection => {
+  return collection.filter(page => isPublic(page));
+};
 
 const fromCollection = (collection, page) => {
   const pageURL = typeof page === 'string' ? page : page.url;
@@ -21,8 +29,14 @@ const seriesNav = (page, collection) => {
   }
 };
 
+const titleSort = collection => {
+  return collection.sort((a, b) => a.data.title - b.data.title);
+};
+
 module.exports = {
   isPublic,
+  getPublic,
   fromCollection,
   seriesNav,
+  titleSort,
 };

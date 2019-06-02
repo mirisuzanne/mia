@@ -3,8 +3,9 @@
 
 <nav data-area="nav">
   <div data-inner="nav">
-    {% set page = collections.all | getPage(page) | first or page %}
+    {% include "site/search.njk" %}
 
+    {% set page = collections.all | getPage(page) | first or page %}
     {{ show.site_nav(site.nav, page) }}
     {{ show.tag_nav(collections, page) }}
   </div>

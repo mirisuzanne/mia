@@ -35,10 +35,15 @@ const unique = array => {
   });
 };
 
+const jsonString = item => {
+  return JSON.stringify(item);
+};
+
 module.exports = {
   groupBy,
   typeCheck,
   objectKeys,
   slugify,
   unique,
+  jsonString,
 };

@@ -8,13 +8,13 @@ index: grapefruit lab
 tags:
   - theater
   - art
+  - grapefruit lab
 events:
   - title: A Murder One Less
     date: 2009-08-01
     venue: Boulder International Fringe Festival
     url: http://www.boulderfringe.com/
     tags:
-      - grapefruit lab
       - director
       - lighting design
 ---
