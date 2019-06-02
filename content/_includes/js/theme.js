@@ -25,20 +25,12 @@ const theme = () => {
     return userTheme || mqTest('dark') || mqTest('light');
   };
 
-  const transTheme = on => {
-    return on
-      ? root.classList.add(transClass)
-      : root.classList.remove(transClass);
-  };
-
   const changeTheme = () => {
     const from = getTheme() || root.getAttribute(attr);
     const to = opts[from];
 
     localStorage.setItem('theme', to);
-    transTheme(true);
     setTheme(to);
-    window.setTimeout(() => transTheme(false), 1000);
   };
 
   const initTheme = init => {

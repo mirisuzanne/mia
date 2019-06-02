@@ -22,15 +22,3 @@ $themes: (
   color: var-color('text');
   text-shadow: var(--shadow, shadow('light')) var-color('shadow');
 }
-
-/* stylelint-disable */
-.theme-change {
-  &,
-  *,
-  ::before,
-  ::after {
-    transition: change('theme') !important;
-    transition-delay: 0 !important;
-  }
-}
-/* stylelint-enable */

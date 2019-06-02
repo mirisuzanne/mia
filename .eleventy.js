@@ -15,11 +15,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('content/keybase.txt');
   eleventyConfig.addPassthroughCopy('content/robots.txt');
 
-  // layouts
-  eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
-  eleventyConfig.addLayoutAlias('tags', 'layouts/tags.njk');
-  eleventyConfig.addLayoutAlias('rss', 'layouts/rss.njk');
-
   // collections
   eleventyConfig.addCollection('orgs', collection => {
     return collection
@@ -76,6 +71,8 @@ module.exports = eleventyConfig => {
     markdownTemplateEngine: 'njk',
     dir: {
       input: 'content',
+      includes: '_includes',
+      layouts: '_layouts',
     },
   };
 };
