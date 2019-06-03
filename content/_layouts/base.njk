@@ -37,16 +37,12 @@
 		{% include 'site/nav.njk' %}
 		{% include 'site/hero.njk' %}
 
-    {% block main %}
+    {% if content and not hide_content %}
       {{ show.main(content, section, erasure) }}
-    {% endblock %}
+    {% endif %}
 
 		{% include 'site/series.njk' %}
-
-		{% block calendar %}
-      {% include 'site/calendar.njk' %}
-		{% endblock %}
-
+		{% include 'site/calendar.njk' %}
 		{% include 'site/footer.njk' %}
 
 		<script type="text/javascript" src="https://unpkg.com/lunr/lunr.js"></script>

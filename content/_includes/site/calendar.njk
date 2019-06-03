@@ -1,6 +1,10 @@
 {% import "events/macros.njk" as cal %}
+{% import "tags/macros.njk" as tag %}
+{% import 'site/macros.njk' as show %}
 
-{% set calendar = cal.get_calendar(
+{% set taglist = tag.section(collections) if show_tags else none %}
+
+{% set calendar = taglist or cal.get_calendar(
   events_group=index or renderData.calendar or calendar or series,
   collections=collections,
   page=page
