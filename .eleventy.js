@@ -1,11 +1,11 @@
 const hljs = require('@11ty/eleventy-plugin-syntaxhighlight');
 
-const utils = require('./_src/js/utils');
-const events = require('./_src/js/events');
-const pages = require('./_src/js/pages');
-const tags = require('./_src/js/tags');
-const time = require('./_src/js/time');
-const type = require('./_src/js/type');
+const utils = require('./_src/filters/utils');
+const events = require('./_src/filters/events');
+const pages = require('./_src/filters/pages');
+const tags = require('./_src/filters/tags');
+const time = require('./_src/filters/time');
+const type = require('./_src/filters/type');
 
 module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(hljs);
