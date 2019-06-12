@@ -4,10 +4,3 @@
 [data-icon] {
   fill: currentColor;
 }
-
-[data-icon='miriam'] {
-  @include square('spacer');
-  --mia-svg-eyes: #{var-color('mia-eyes')};
-  --mia-svg-stroke-width: 2;
-  --mia-svg-stroke: currentColor;
-}

@@ -24,6 +24,10 @@
 // ----
 
 .banner-home {
+  --mia-svg-eyes: #{var-color('mia-eyes')};
+  --mia-svg-stroke-width: 2;
+  --mia-svg-stroke: #{var-color('background')};
+
   #{$link} {
     @include transition('home-icon');
     --offset: calc(100% - #{size('gutter')});
@@ -43,6 +47,10 @@
     --left: 0 var(--offset);
     background: var-color('action-hover');
   }
+}
+
+[data-icon='miriam'] {
+  @include square('spacer');
 }
 
 // Main
