@@ -13,9 +13,10 @@
   }
 }
 
-[data-btn~='toggle-theme'] {
+.toggle-theme {
+  --field-padding: #{size('quarter-shim')};
   grid-area: theme;
-  margin: size('grid-margin');
+  padding: size('grid-margin');
   z-index: 2;
 }
 
@@ -68,6 +69,10 @@
   line-height: 0.9;
   margin-bottom: negative('gutter-plus');
   padding: size('gutter') size('gutter') size('gutter') size('shim');
+
+  span {
+    display: inline-block;
+  }
 }
 
 .subtitle {

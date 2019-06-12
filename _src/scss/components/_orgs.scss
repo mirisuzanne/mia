@@ -15,7 +15,7 @@
   @include color--('action', 'text-light');
   @include color--('action-underline', 'border');
   @include font-family('code');
-  color: var-color('border');
+  color: var-color('text-light');
   font-size: size('xsmall');
 
   a {
