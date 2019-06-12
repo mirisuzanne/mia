@@ -3,6 +3,7 @@
 'use strict';
 
 const Fiber = require('fibers');
+const autoprefixer = require('gulp-autoprefixer');
 const beeper = require('beeper');
 const chalk = require('chalk');
 const cleanCSS = require('gulp-clean-css');
@@ -74,7 +75,11 @@ const sassTask = opts => {
   if (options.sourcemap) {
     stream = stream.pipe(sourcemaps.init());
   }
-  stream = stream.pipe(sass({ fiber: Fiber }));
+  stream = stream.pipe(sass({ fiber: Fiber })).pipe(
+    autoprefixer({
+      cascade: false,
+    }),
+  );
   if (options.minify) {
     stream = stream.pipe(cleanCSS());
   }

@@ -10,6 +10,10 @@
 /// @colors
 /// @type Map
 $theme-colors: (
+  'contrast': '#background'
+    (
+      'contrast': map-keys($gray-shades),
+    ),
   'overlay': '#background'
     (
       'alpha': 0.8,
@@ -22,25 +26,21 @@ $theme-colors: (
     (
       'contrast': append(map-keys($gray-shades), 4.5),
     ),
-  'text-highlight': '#background'
+  'text-highlight': '#callout'
     (
-      'contrast': append(map-keys($main-shades), 4.5),
-    ),
-  'border': '#background'
-    (
-      'contrast': append(map-keys($gray-shades), 3),
+      'contrast': append(map-keys($main-shades), 7),
     ),
   'action': '#callout'
     (
-      'contrast': append(map-keys($accent-shades), 4.5),
-    ),
-  'action-underline': '#action'
-    (
-      'alpha': 0.5,
+      'contrast': append(map-keys($accent-shades), 5),
     ),
   'action-hover': '#callout'
     (
       'contrast': append(map-keys($accent-shades), 7),
+    ),
+  'action-underline': '#action'
+    (
+      'alpha': 0.5,
     ),
   'trans-blue': '#_brand-main-light-4',
   'trans-pink': '#_brand-accent-light-4',
@@ -57,10 +57,10 @@ $theme-colors: (
 /// @type Map
 $light-theme: (
   'background': '#_brand-gray-light-10',
-  'callout': '#_brand-gray-light-7',
+  'callout': '#_brand-gray-light-9',
+  'border': '#_brand-gray-light-7',
   'shadow': '#_contrast-light',
-  'contrast': '#_contrast-dark',
-  'feature': '#_brand-accent-dark-7',
+  'feature': '#action-hover',
   'mia-eyes': '#action',
 );
 
@@ -90,10 +90,10 @@ $light-colors: map-merge($colors, $light-theme);
 /// @type Map
 $dark-theme: (
   'background': '#_brand-gray-dark-10',
-  'callout': '#_brand-gray-dark-7',
+  'callout': '#_brand-gray-dark-9',
+  'border': '#_brand-gray-dark-7',
   'feature': '#action-hover',
   'shadow': '#_contrast-dark',
-  'contrast': '#_contrast-light',
   'mia-eyes': '#background',
 );
 
@@ -121,18 +121,17 @@ $dark-colors: map-merge($colors, $dark-theme);
 /// @type Map
 $contrast-theme: (
   'background': '#_contrast-dark',
-  'callout': '#background',
+  'callout': '#_brand-gray-dark-10',
+  'border': '#_brand-gray-dark-8',
   'feature': '#action-hover',
   'shadow': '#background',
-  'contrast': '#_contrast-light',
   'mia-eyes': '#background',
   'text': '#contrast',
   'text-light': '#text',
-  'text-highlight': '#_brand-main-light-7',
-  'border': '#text',
-  'action': '#_brand-accent-light-7',
-  'action-underline': '#contrast',
-  'action-hover': '#_brand-accent-light-10',
+  'text-highlight': '#_brand-main-light-9',
+  'action': '#_brand-accent-light-8',
+  'action-underline': '#action',
+  'action-hover': '#_brand-accent-light-9',
 );
 
 // Contrast Colors

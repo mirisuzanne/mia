@@ -39,7 +39,7 @@ $patterns: (
 
 @mixin fancy-text {
   /* stylelint-disable */
-  @supports (-webkit-background-clip: text) {
+  @supports (background-clip: text) {
     @content;
     background-clip: text;
     box-decoration-break: clone;

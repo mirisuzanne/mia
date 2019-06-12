@@ -68,10 +68,10 @@
   color: var-color('text-highlight');
   line-height: 0.9;
   margin-bottom: negative('gutter-plus');
-  padding: size('gutter') size('gutter') size('gutter') size('shim');
 
   span {
     display: inline-block;
+    padding: size('gutter') size('gutter') size('gutter') size('shim');
   }
 }
 
