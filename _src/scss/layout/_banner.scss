@@ -13,9 +13,10 @@
   }
 }
 
-[data-btn~='toggle-theme'] {
+.toggle-theme {
+  --field-padding: #{size('quarter-shim')};
   grid-area: theme;
-  margin: size('grid-margin');
+  padding: size('grid-margin');
   z-index: 2;
 }
 
@@ -23,6 +24,10 @@
 // ----
 
 .banner-home {
+  --mia-svg-eyes: #{var-color('mia-eyes')};
+  --mia-svg-stroke-width: 2;
+  --mia-svg-stroke: #{var-color('background')};
+
   #{$link} {
     @include transition('home-icon');
     --offset: calc(100% - #{size('gutter')});
@@ -42,6 +47,10 @@
     --left: 0 var(--offset);
     background: var-color('action-hover');
   }
+}
+
+[data-icon='miriam'] {
+  @include square('spacer');
 }
 
 // Main
@@ -67,7 +76,11 @@
   color: var-color('text-highlight');
   line-height: 0.9;
   margin-bottom: negative('gutter-plus');
-  padding: size('gutter') size('gutter') size('gutter') size('shim');
+
+  span {
+    display: inline-block;
+    padding: size('gutter') size('gutter') size('gutter') size('shim');
+  }
 }
 
 .subtitle {

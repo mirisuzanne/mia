@@ -15,12 +15,12 @@ $code-block-padding: size('shim');
 $code-inline-padding: 0 size('quarter-shim');
 $code-border-radius: size('quarter-shim');
 
-$code-border: 1px solid var-color('border');
+$code-border: none;
 $code-background: var-color('callout');
 $code-color: var-color('text');
 $code-color-fade: var-color('text-light');
 $code-text-shadow: 0 1px 0 var-color('shadow');
-$code-box-shadow: 1px 1px 0.3em -0.1em var-color('text') inset;
+$code-box-shadow: none;
 
 // prism tokens
 //

@@ -54,8 +54,10 @@
 [data-form='search'] {
   --field-padding: #{size('quarter-shim') size('half-shim')};
   --field-margin: #{size('half-shim')};
+  font-size: size('xsmall');
 
   @include above('page-break') {
+    --field-margin: 0;
     --field-width: 8em;
     display: flex;
     padding-right: size('half-shim');

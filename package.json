@@ -38,6 +38,8 @@
     "husky": "^2.3.0",
     "lint-staged": "^8.1.7",
     "markdown-it": "^8.4.2",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-mark": "^2.0.0",
     "prettier": "^1.17.1",
     "sass": "^1.20.3",
     "sassdoc": "^2.7.0",
@@ -63,9 +65,5 @@
         "git add"
       ]
     }
-  },
-  "dependencies": {
-    "markdown-it-footnote": "^3.0.1",
-    "markdown-it-mark": "^2.0.0"
   }
 }

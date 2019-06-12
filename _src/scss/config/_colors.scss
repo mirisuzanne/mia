@@ -37,7 +37,7 @@ $main-shades: shades-of(
   (
     '_brand-main': color('_brand-main'),
   ),
-  6
+  10
 );
 
 @include add-colors($main-shades);
@@ -51,7 +51,7 @@ $accent-shades: shades-of(
   (
     '_brand-accent': color('_brand-accent'),
   ),
-  6
+  10
 );
 
 @include add-colors($accent-shades);
@@ -65,7 +65,7 @@ $gray-shades: shades-of(
   (
     '_brand-gray': color('_brand-gray'),
   ),
-  6
+  10
 );
 
 @include add-colors($gray-shades);
