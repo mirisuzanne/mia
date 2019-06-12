@@ -1,10 +1,4 @@
 const theme = () => {
-  const opts = {
-    light: 'dark',
-    dark: 'contrast',
-    contrast: 'light',
-  };
-
   const root = document.querySelector('html');
   const attr = 'data-theme';
   const themeToggle = document.getElementById('toggle-theme');
@@ -32,6 +26,7 @@ const theme = () => {
 
   const initTheme = init => {
     if (init) {
+      themeToggle.value = init;
       setTheme(init);
     }
   };
