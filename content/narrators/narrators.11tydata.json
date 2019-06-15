@@ -1,0 +1,16 @@
+{
+  "layout": "base",
+  "permalink": "/{{ page.date | getDate('url') }}/{{ page.fileSlug }}/index.html",
+  "sub": "A live storytelling show and podcast featuring true stories on a monthly theme",
+  "venue": "The Narrators",
+  "url": "https://thenarrators.org/",
+  "hero": {
+    "img": "narrators/default.jpg"
+  },
+  "series": "narrators",
+  "tags": [
+    "_calendar",
+    "speaking",
+    "narrators"
+  ]
+}

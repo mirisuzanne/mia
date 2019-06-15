@@ -76,7 +76,7 @@
             </h3>
             {% if item.data.sub %}
               <p data-meta="org-sub">
-                {{ item.data.sub | mdInline | typogr | safe }}
+                {{ item.data.sub | mdInline | safe }}
               </p>
             {% endif %}
           </article>
@@ -182,7 +182,8 @@
   {# Title Link #}
   {%- set title_name = item.event.title or item.page.data.title -%}
   {%- set url = none if is_self else item.page.url -%}
-  {%- set title = utility.link_if(title_name | mdInline, url or venue_url) -%}
+  {%- set url = (url or venue_url) if (not venue) else url -%}
+  {%- set title = utility.link_if(title_name | mdInline, url) -%}
   {%- set title = ['See Also:', title] | join(' ') if not_me else title -%}
 
   {{ title | safe }}
