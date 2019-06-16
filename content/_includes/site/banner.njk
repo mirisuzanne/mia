@@ -22,7 +22,9 @@
 
   <div class="banner-content">
     <h1 class="banner-title">
-      <span data-bright>{{ full_title | mdInline | typogr | safe }}</span>
+      <span class="banner-title-text" data-bright>
+        {{ full_title | mdInline | safe }}
+      </span>
     </h1>
 
     {% set go_to = utility.link_if(venue or 'the interwebz', url) if url else none %}
@@ -30,7 +32,7 @@
     {% if sub or go_to %}
       <span class="subtitle">
         {% if sub %}
-          {{ sub | mdInline | typogr | safe }}
+          {{ sub | mdInline | safe }}
         {% elif go_to %}
           @ {{ go_to }}
         {% endif %}

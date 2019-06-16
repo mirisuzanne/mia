@@ -76,11 +76,11 @@
   color: var-color('text-highlight');
   line-height: 0.9;
   margin-bottom: negative('gutter-plus');
+}
 
-  span {
-    display: inline-block;
-    padding: size('gutter') size('gutter') size('gutter') size('shim');
-  }
+.banner-title-text {
+  display: inline-block;
+  padding: size('gutter') size('gutter') size('gutter') size('shim');
 }
 
 .subtitle {

@@ -60,6 +60,7 @@
     --field-margin: 0;
     --field-width: 8em;
     display: flex;
+    margin-bottom: size('quarter-shim');
     padding-right: size('half-shim');
   }
 }

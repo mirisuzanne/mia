@@ -1,5 +1,5 @@
 ---
-title: Let's Faint for Each Other
+title: Let's Faint for Each Other ["Guts"]
 sub: |
   Erin Rollman talks about my surgery
   on [The Narrators](https://thenarrators.org/174-erin-rollman-lets-faint-for-each-other/)
@@ -13,6 +13,7 @@ tags:
   - _calendar
   - transition
   - inspiration
+  - narrators
   - audio
 track:
   - audio: https://media.blubrry.com/narratorspodcast/p/thenarrators.org/wp-content/uploads/174-Narrators-Erin-Rollman.mp3?_=1

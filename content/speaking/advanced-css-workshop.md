@@ -7,6 +7,11 @@ tags:
   - workshop
   - code
 events:
+  - venue: Webconf.asia
+    url: https://2019.webconf.asia/
+    adr: Hong Kong
+    start: 2019-11-20
+    end: 2019-11-21
   - venue: Generate New York
     url: https://www.generateconf.com/
     adr: San Francisco, CA
