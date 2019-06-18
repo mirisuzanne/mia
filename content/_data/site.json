@@ -17,8 +17,8 @@
     "img": "headshots/mia-smirk.jpg"
   },
   "themes": {
-    "light": "light",
     "dark": "dark",
+    "light": "light",
     "contrast": "contrast"
   },
   "feed": "feed.xml",

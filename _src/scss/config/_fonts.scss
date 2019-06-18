@@ -58,6 +58,40 @@ $code-font: (
 @include add-font('code', $code-font);
 @include herman-add('font', 'code', $code-font);
 
+// Midnight Font
+// -------------
+/// A readable monospace font for code previews
+/// @group config-fonts
+/// @font midnight
+$midnight-font: (
+  'name': 'Blackout Midnight',
+  'normal': (
+    'woff2': 'blackout/blackout_midnight-webfont',
+    'woff': 'blackout/blackout_midnight-webfont',
+  ),
+  'stack': font-family('body'),
+);
+
+@include add-font('midnight', $midnight-font);
+@include herman-add('font', 'midnight', $midnight-font);
+
+// Sunrise Font
+// ------------
+/// A readable monospace font for code previews
+/// @group config-fonts
+/// @font sunrise
+$sunrise-font: (
+  'name': 'Blackout Sunrise',
+  'normal': (
+    'woff2': 'blackout/blackout_sunrise-webfont',
+    'woff': 'blackout/blackout_sunrise-webfont',
+  ),
+  'stack': font-family('body'),
+);
+
+@include add-font('sunrise', $sunrise-font);
+@include herman-add('font', 'sunrise', $sunrise-font);
+
 // Ampersand Font
 // --------------
 /// Baskerville Italic provides a nice-looking ampersand

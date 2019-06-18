@@ -1,6 +1,6 @@
 ---
 title: Translating the Past ["Framed"]
-date: 2019-06-16
+date: 2019-06-19
 hero:
   img: narrators/framed.png
 url: https://www.facebook.com/events/342356676462227/

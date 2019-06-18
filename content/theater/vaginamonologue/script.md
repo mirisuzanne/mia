@@ -46,7 +46,7 @@ a stranger.
 --- I What? That’s… what? I’ve _been_ Miriam.
 
 I've had a recognizable vulva for 8 weeks,
-but that’s really none of your business,
+but that’s none of your business,
 and not why I’m here.
 I've used the name Miriam since 2015,
 and started hormone replacement a few months later.
