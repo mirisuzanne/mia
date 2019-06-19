@@ -22,7 +22,7 @@
 .banner-content {
   align-self: center;
   display: grid;
-  grid: 'title' auto 'sub' auto / 100%;
+  grid: 'title title' auto 'sub sub' auto / auto auto;
   grid-area: head;
   justify-content: center;
   justify-self: center;
