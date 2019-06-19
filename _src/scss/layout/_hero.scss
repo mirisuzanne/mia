@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: minmax(auto, 1fr);
   grid-template-rows: auto auto;
+  justify-content: center;
   padding: 0;
 }
 
