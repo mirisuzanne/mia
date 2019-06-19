@@ -3,7 +3,7 @@
 
 [data-layout~='banner'] {
   display: grid;
-  grid: 'theme' auto 'head' 1fr / minmax(0, 1fr) auto;
+  grid: 'theme' auto 'head' 1fr / auto;
   grid-area: banner / full;
   margin-bottom: size('gutter');
 }
