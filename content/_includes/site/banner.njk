@@ -5,11 +5,11 @@
 
   <div class="toggle-theme">
     <select data-input="text" name="themes" id="toggle-theme">
-      {% for theme, name in site.themes %}
+      {% for theme in site.themes %}
         <option
           value="{{ theme }}"
           {{ utility.attr_if('selected', loop.first) }}>
-          {{ name }}
+          {{ theme }}
         </option>
       {% endfor %}
     </select>

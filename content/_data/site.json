@@ -16,11 +16,11 @@
     "type": "website",
     "img": "headshots/mia-smirk.jpg"
   },
-  "themes": {
-    "dark": "dark",
-    "light": "light",
-    "contrast": "contrast"
-  },
+  "themes": [
+    "dark",
+    "light",
+    "contrast"
+  ],
   "feed": "feed.xml",
   "styles": ["screen.css"]
 }
