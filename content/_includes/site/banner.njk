@@ -1,30 +1,23 @@
 {% import "utility.macros.njk" as utility %}
 
 <header
-  data-layout="banner"
-  {{ utility.attr_if('data-home', page.url == '/') }}>
-  <a href="/" class="banner-home" rel="home">
-    {% include site.icon %}
-    <span data-hidden>home</span>
-  </a>
+  data-layout="banner">
 
   <div class="toggle-theme">
     <select data-input="text" name="themes" id="toggle-theme">
-      {% for theme, name in site.themes %}
+      {% for theme in site.themes %}
         <option
           value="{{ theme }}"
           {{ utility.attr_if('selected', loop.first) }}>
-          {{ name }}
+          {{ theme }}
         </option>
       {% endfor %}
     </select>
   </div>
 
   <div class="banner-content">
-    <h1 class="banner-title">
-      <span class="banner-title-text" data-bright>
-        {{ full_title | mdInline | safe }}
-      </span>
+    <h1 class="banner-title" data-bright>
+      {{ full_title | mdInline(false) | safe }}
     </h1>
 
     {% set go_to = utility.link_if(venue or 'the interwebz', url) if url else none %}

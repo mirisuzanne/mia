@@ -3,54 +3,17 @@
 
 [data-layout~='banner'] {
   display: grid;
-  font-style: italic;
-  grid: 'icon . theme' auto 'icon hw hw' auto 'head head head' 1fr / auto 1fr auto;
+  grid: 'theme theme' auto 'head head' 1fr / auto auto;
   grid-area: banner / full;
   margin-bottom: size('gutter');
-
-  &:not([data-home]) {
-    --mia-svg-animate: none;
-  }
 }
 
 .toggle-theme {
   --field-padding: #{size('quarter-shim')};
   grid-area: theme;
+  justify-self: end;
   padding: size('grid-margin');
   z-index: 2;
-}
-
-// Home
-// ----
-
-.banner-home {
-  --mia-svg-eyes: #{var-color('mia-eyes')};
-  --mia-svg-stroke-width: 2;
-  --mia-svg-stroke: #{var-color('background')};
-
-  #{$link} {
-    @include transition('home-icon');
-    --offset: calc(100% - #{size('gutter')});
-    --top: var(--offset) 0;
-    --angle: 100% var(--offset);
-    --left: 0 100%;
-    background: var-color('action');
-    clip-path: polygon(0 0, var(--top), var(--angle), var(--left));
-    color: var-color('background');
-    grid-area: icon;
-    padding: size('shim') size('shim') size('gutter') 0;
-  }
-
-  #{$focus} {
-    --top: 100% 0;
-    --angle: var(--offset) 100%;
-    --left: 0 var(--offset);
-    background: var-color('action-hover');
-  }
-}
-
-[data-icon='miriam'] {
-  @include square('spacer');
 }
 
 // Main
@@ -59,35 +22,39 @@
 .banner-content {
   align-self: center;
   display: grid;
-  grid-area: hw / head / head;
+  grid: 'title title' auto 'sub sub' auto / auto auto;
+  grid-area: head;
   justify-content: center;
   justify-self: center;
-  margin: size('shim');
+  padding: size('shim');
   text-align: center;
   transform: rotate(-13deg);
 
   @include above('page-break') {
-    margin: size('spacer') size('shim');
+    padding: size('spacer') size('shim');
   }
 }
 
 .banner-title {
-  background: var-color('overlay');
-  color: var-color('text-highlight');
-  line-height: 0.9;
-  margin-bottom: negative('gutter-plus');
-}
+  @include font-family('sunrise');
+  grid-area: title / title / sub;
+  line-height: 0.74;
+  padding-top: size('shim');
+  text-transform: uppercase; // fixes Blackout kerning…
 
-.banner-title-text {
-  display: inline-block;
-  padding: size('gutter') size('gutter') size('gutter') size('shim');
+  &::first-line {
+    @include font-family('midnight');
+  }
 }
 
 .subtitle {
   @include font-family('code');
   background: var-color('overlay');
   color: var-color('text-light');
+  grid-area: sub;
   font-size: size('small');
+  font-style: italic;
+  justify-self: center;
 }
 
 // Dots
