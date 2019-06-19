@@ -40,6 +40,7 @@
   grid-area: title / title / sub;
   line-height: 0.74;
   padding-top: size('shim');
+  text-transform: uppercase; // fixes Blackout kerning…
 
   &::first-line {
     @include font-family('midnight');

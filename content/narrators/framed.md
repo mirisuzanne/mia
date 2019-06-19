@@ -1,5 +1,5 @@
 ---
-title: Translating the Past ["Framed"]
+title: Framed -- Born To Become This Way
 date: 2019-06-19
 hero:
   img: narrators/framed.png
@@ -10,6 +10,7 @@ tags:
   - transition
   - speaking
   - narrators
+  - writing
 ---
 
-I'll be storytelling on the topic of "framed"
+I'll be story-telling on the topic of "framed"
