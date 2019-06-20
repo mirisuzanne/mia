@@ -11,6 +11,11 @@ tags:
   - speaking
   - narrators
 ---
+{% import "content.macros.njk" as content %}
+
+{{ content.intro(group_summary) }}
+
+---
 
 I used exerpts from
 [Body & Gender Fragments](/2017/03/01/my-body/)

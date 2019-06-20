@@ -1,5 +1,5 @@
 ---
-title: Let's Faint for Each Other ["Guts"]
+title: Guts -- Let's Faint for Each Other
 sub: |
   Erin Rollman talks about my surgery
   on [The Narrators](https://thenarrators.org/174-erin-rollman-lets-faint-for-each-other/)
