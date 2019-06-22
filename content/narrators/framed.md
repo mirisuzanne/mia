@@ -6,6 +6,14 @@ erasure: true
 date: 2019-06-19
 hero:
   img: narrators/thoreau.jpg
+  alt: |
+    Post Tribune, 12/20/99
+    'Teen son lives like Thorea, says dad'
+    by Marshall V. King
+    (The Elkhart Truth)
+  caption: |
+    I still haven't managed to
+    suck out all the marrow of life.
 url: https://www.facebook.com/events/342356676462227/
 series: transition
 tags:
@@ -23,48 +31,48 @@ tags:
 ---
 
 Last week,
-my dad sent me ==a== newspaper ==clipping==
+my dad sent me a newspaper ==clipping==
 from the South Bend (Indiana) Post-Tribune --
 December 20, 1999.
 There's ==a photo== of me at 17,
 a senior in high school,
-leaning ==against== a mountain bike.
+leaning against a mountain bike.
 I'm wearing baggy jeans,
 socks,
 and Birkenstock.
-Because it's ==the 90s==
-and I'm into ==fashion.==
+Because it's the 90s
+and I'm into fashion.
 
-To quote ==the caption,==
+To quote the caption,
 I ==had been== *living rustically* since September,
-when I moved into a ==small== cabin
+when I moved into ==a small== cabin
 at the edge of my parents farm,
 along the Elkhart River.
-*==An experiment== in simple living*
-==according to== the article.
+*An ==experiment== in simple living*
+according to the article.
 That’s true.
-I had a hand pump over ==the sink,==
+I had a hand pump over the sink,
 a wood stove for heat,
 an outhouse,
 some oil lamps,
 ==and a typewriter== for my homework.
 
 I read a lot of Thích Nhất Hạnh in that cabin,
-and wrote some ==truly mediocre== poetry.
+and wrote ==some truly mediocre== poetry.
 What a writer ==friend== refered to recently as
-*poemy ==poems,== about stones*.
+*poemy poems, about stones*.
 
-The article also says I had
+The article also ==says I had==
 *==aspirations towards== a monastic life after high school*.
-==I don’t remember== serious monastic plans ==exactly,==
+I don’t remember serious monastic plans exactly,
 but now I'm a software developer,
-and a musician ==living in a loft==
+and a musician living in a loft
 just off South Broadway.
-==It’s not== rustic or monastic.
+It’s not rustic or monastic.
 When I want to write ==mediocre poetry now,==
 I walk down to the Bardo coffee house
 and listen to ==Lizzo== on my Airpods.
-What ==happened?==
+What happened?
 
 Here's the headline from the article:
 *Teen son lives like Thoreau, says dad*.
@@ -72,43 +80,44 @@ Here's the headline from the article:
 *Teen son*.
 I couldn't read the rest of the article.
 I went back to watching Project Runway.
-==I don’t want to spoil anything,==
+==I don’t want to spoil== anything,
 but Bishme is great,
 and Garo’s a total hack.
 
-So ==I've been thinking== a lot about change.
+So I've been thinking a lot about change.
 {{ content.erase('Big change') }}.
 Identity change.
 I was raised Mennonite,
-but at some point ==that== label stopped making sense.
-==I was== raised ==a== boy, too,
-but that didn't ==stick.==
-I was also married, once -- that’s another story.
+but at some point that label stopped making sense.
+I was raised a boy, too,
+but that didn't stick.
+I was also married, once --
+that’s another story.
 But I remember talking to my aunt during the divorce.
 This was 2004, maybe 2005.
-We're sitting around ==her kitchen table== late at night,
-and she ==says==
+We're sitting ==around her kitchen table== late at night,
+and she says
 *You can start dating again
 once your ex doesn't come up in daily conversation --
-once the stories you tell ==don't involve her==.*
+once the stories you tell don't involve her.*
 
 ==It's not a perfect== rule --
-date when you ==fucking want== to --
+date when you fucking want to --
 but I still love something about that:
 using our internal narrative as a guide.
 Not in some spiritual sense, but very practically.
-==My identity is== a story that I tell to myself,
-and to ==you,==
-and I can change the way ==I tell that story,==
+My ==identity== is a story that I tell to myself,
+and to you,
+and I can change the way I tell that story,
 but it takes time to write that new material.
 Or to *live* that new material.
 
 ==In this case,==
 material without my ex wife --
 which is awkward,
-‘cause here I am ==15 years later,==
+‘cause here I am 15 years later,
 standing on stage,
-==talking about her.==
+talking about her.
 
 Sorry Erin!
 I guess ==I’m not ready== to date yet!
@@ -123,7 +132,7 @@ so I tell it over and over ==for months.==
 And it’s clear,
 every time,
 that ==I’m being cross-examined.==
-==I've done something bad,==
+I've done something bad,
 and I have to defend my actions.
 ==And== I can do that.
 I can tell that story,
@@ -133,12 +142,12 @@ Why do ==I need to== explain myself to you?
 *It was bad and I left.
 Trust me.*
 
-And I ==think about smaller== changes, too.
+And I ==think about== smaller changes, too.
 I remember moving to Denver --
 driving in on 76 for the first time.
 This is August 2017 now,
-and I remember the ==sun setting over== the mountains due west,
-and storm clouds rolling in from ==the southwest== --
+and I remember ==the sun== setting over the mountains due west,
+and storm clouds rolling in from the southwest --
 lightning ==flashing behind a city== skyline.
 
 The scale of it!
@@ -158,13 +167,13 @@ just to feel invisible -- part of a crowd.
 ==Someone else might== frame this as a move from the peaceful woods
 to the bustling city,
 but my ==experience== was the opposite.
-Being *unknown* gave me room to think,
+==Being *unknown*== gave me room to think,
 and space to change --
-emotional space ==the cabin== couldn't provide.
+emotional space the cabin couldn't provide.
 
 And then I would meet people,
 and they’d ask where I'm from,
-and they’d mean ==*before Denver*,==
+and they’d mean *before Denver*,
 and I guess Indiana?
 ==But it felt== wrong, like the wrong question.
 Not because Indiana is bad --
@@ -173,7 +182,7 @@ but because, I don’t know,
 I was ==eager for my narrative== home
 to catch up with my experience ==of home.==
 
-==And a year later==
+And a year later
 I was on the road back through the Midwest,
 touring a theater production with new friends.
 ==And every night,==
@@ -200,35 +209,35 @@ Yester-me!
 She’s a whole different person!*
 And ==again,== coming out --
 this is 2015 now --
-I’m asked ==to explain and defend== my actions.
+I’m asked to explain and defend my actions.
 
 And again:
 Why do I need ==to explain myself== to you?
-*It was ==bad, and I left==. Trust me.*
+*It was bad, and I left. Trust me.*
 
 This frame matches the content.
 
 And the story we expect to hear --
 want to hear --
-is that _born-this-way_ narrative.
-_Trapped in the wrong body_,
+is that *born-this-way* narrative.
+*Trapped in the wrong body*,
 whatever that means.
 ==This body== is mine.
-It just ==needed some estrogen== up in there,
+It just needed some estrogen up in there,
 that’s all.
-==Anyway,== I remember being ==that boy== in that cabin,
+Anyway, I remember being that boy in that cabin,
 talking to the South Bend Post-Tribune
 about simple living and monastic life.
-I ==was that titular teen== son.
+I was that titular teen son.
 
 But I do also remember --
 all along --
-how much I _wasn't a boy_
-when ==I lived in that cabin,==
+how much I *wasn't a boy*
+when I ==lived in that cabin,==
 and talked to that reporter.
 I mean, obviously:
-it was _me_ in the cabin,
-and I’m _not a boy_.
+it was *me* in the cabin,
+and I’m *not a boy*.
 We grow.
 We change.
 We have ==to tell a new story,==
@@ -239,11 +248,11 @@ Not ==straight, straight,== but ==straight.== You know.
 
 I wasn't *born this way*,
 I grew into it --
-like every child grows into their adult narrative.
+like ==every child== grows into their adult narrative.
 I chose it.
-==I== looked at my options,
-and ==chose estrogen,==
-and I’m proud of that choice.
+I looked at my options,
+and ==chose estrogen,
+and== I’m proud of that choice.
 It’s ok to have choice.
 Choice is a good thing.
 ==I’m tired of== the narrative that my queerness is ok
@@ -253,9 +262,9 @@ If you want estrogen,
 ==you== can have it ==too.==
 
 All of that is true, and also.
-Also I _was_ born with _all of this_ inside of me.
+Also I *was* born with *all of this* inside of me.
 Born to grow into this desire, this choice.
-_Born to choose this way._
+*Born to choose this way.*
 Because biology and choice aren’t at odds,
 they’re both part of life -- being alive.
 ==Life isn’t== static, it moves and changes.
@@ -270,12 +279,12 @@ One boy who will grow into a woman.
 Anyway,
 I got Erin to read the article out-loud to me --
 translate it so ==I could hear myself== in the story.
-"Teen _daughter_ lives like Thoreau, says dad.
-_Miriam_ needs space and quiet,
-and _she’s_ got that now."
-And it's interesting to ==read that --==
+"Teen *daughter* lives like Thoreau, says dad.
+*Miriam* needs space and quiet,
+and *she’s* got that now."
+And it's interesting to read that --
 or hear it --
-==knowing== what I know:
+knowing what I know:
 about myself,
 about my loud father,
 about being introverted,
@@ -283,23 +292,23 @@ and an activist,
 a writer,
 caring about the world --
 what I’ve done with those feelings,
-==those beliefs.
-Not letting them go,==
+those beliefs.
+==Not letting them go,==
 but letting them grow with me,
 to become who I am now.
 
 And, well yester-me, fuck.
 The world hasn’t gotten better.
 Shit’s bad, and you’ll have to keep fighting.
-But ==you’ll be glad to know:
-you get to be a girl,==
+But ==you’ll be glad to know:==
+==you get to be== a girl,
 you love it,
 you’re not from Indiana anymore,
 and you finally --
-after many failed u-haul-lesbian relationships --
+after ==many failed u-haul-lesbian== relationships --
 you finally live on your own,
 not entirely monastic,
-==surrounded by friends,==
-with a wonderful partner ==just down the hall==.
+surrounded by ==friends,==
+with a wonderful partner just down the hall.
 
 If I'm still allowed to date ==after this.==

@@ -16,7 +16,12 @@
     <link href="{{ site.url }}{{ post.url }}"/>
     <updated>{{ post | rssDate }}</updated>
     <id>{{ site.url }}{{ post.url }}</id>
-    <content type="html">{{ post.templateContent }}</content>
+    <content type="html">
+      {% if post.data.hero %}
+        &lt;img src=&quot;{{ post.data.hero.img }}&quot; alt=&quot;{{ post.data.hero.alt }}&quot;&gt;
+      {% endif %}
+      {{ post.templateContent }}
+    </content>
   </entry>
   {%- endfor %}
 </feed>
