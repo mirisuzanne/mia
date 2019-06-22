@@ -18,7 +18,7 @@
     <id>{{ site.url }}{{ post.url }}</id>
     <content type="html">
       {% if post.data.hero %}
-        &lt;img src=&quot;{{ post.data.hero.img }}&quot; alt=&quot;{{ post.data.hero.alt }}&quot;&gt;
+        &lt;img src=&quot;{{ site.url + site.images + post.data.hero.img }}&quot; alt=&quot;{{ post.data.hero.alt }}&quot;&gt;
       {% endif %}
       {{ post.templateContent }}
     </content>
