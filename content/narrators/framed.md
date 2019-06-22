@@ -164,7 +164,8 @@ A home I'd never been to?
 
 I would sometimes walk down 16th street at night
 just to feel invisible -- part of a crowd.
-==Someone else might== frame this as a move from the peaceful woods
+==Someone else might== frame this
+as a move from the peaceful woods
 to the bustling city,
 but my ==experience== was the opposite.
 ==Being *unknown*== gave me room to think,
@@ -186,9 +187,10 @@ And a year later
 I was on the road back through the Midwest,
 touring a theater production with new friends.
 ==And every night,==
-after the show audience members would ask where we came from.
+after the show,
+audience members would ask where we came from.
 I was so happy.
-I'm from Denver!
+*I'm from Denver!*
 I mean, it’s super silly --
 ==this gentrified mess of a city==.
 Shrooms are legal, but being homeless is a crime.
