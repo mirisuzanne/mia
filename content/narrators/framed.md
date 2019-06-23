@@ -7,8 +7,8 @@ date: 2019-06-19
 hero:
   img: narrators/thoreau.jpg
   alt: |
-    Post Tribune, 12/20/99
-    'Teen son lives like Thorea, says dad'
+    Post-Tribune, 12/20/99
+    'Teen son lives like Thoreau, says dad'
     by Marshall V. King
     (The Elkhart Truth)
   caption: |
@@ -32,7 +32,7 @@ tags:
 
 Last week,
 my dad sent me a newspaper ==clipping==
-from the South Bend (Indiana) Post-Tribune --
+from the Gary (Indiana) Post-Tribune --
 December 20, 1999.
 There's ==a photo== of me at 17,
 a senior in high school,
@@ -273,7 +273,7 @@ they’re both part of life -- being alive.
 As it moves, we tell new stories.
 We take ==a snapshot,==
 we add ==a caption,==
-and we publish it in the South Bend Post Tribune.
+and we publish it in the Gary Post-Tribune.
 ==One moment in== time.
 One boy who’s also ==a girl.==
 One boy who will grow into a woman.
