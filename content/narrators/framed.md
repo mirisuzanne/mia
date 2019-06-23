@@ -102,7 +102,7 @@ once your ex doesn't come up in daily conversation --
 once the stories you tell don't involve her.*
 
 ==It's not a perfect== rule --
-date when you fucking want to --
+date whenever you want to --
 but I still love something about that:
 using our internal narrative as a guide.
 Not in some spiritual sense, but very practically.
