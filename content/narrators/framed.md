@@ -59,7 +59,7 @@ some oil lamps,
 
 I read a lot of Thích Nhất Hạnh in that cabin,
 and wrote ==some truly mediocre== poetry.
-What a writer ==friend== refered to recently as
+What a writer ==friend== referred to recently as
 *poemy poems, about stones*.
 
 The article also ==says I had==
@@ -213,10 +213,7 @@ And ==again,== coming out --
 this is 2015 now --
 I’m asked to explain and defend my actions.
 
-And again:
-Why do I need ==to explain myself== to you?
 *It was bad, and I left. Trust me.*
-
 This frame matches the content.
 
 And the story we expect to hear --
