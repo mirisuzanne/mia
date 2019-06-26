@@ -145,7 +145,7 @@ Trust me.*
 And I ==think about== smaller changes, too.
 I remember moving to Denver --
 driving in on 76 for the first time.
-This is August 2017 now,
+This is August 2007 now,
 and I remember ==the sun== setting over the mountains due west,
 and storm clouds rolling in from the southwest --
 lightning ==flashing behind a city== skyline.
