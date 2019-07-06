@@ -10,6 +10,7 @@ hero:
 tags:
   - _calendar
   - _post
+  - _elsewhere
   - code
   - writing
   - smashing magazine

@@ -7,8 +7,8 @@ url: https://www.bardocoffee.com/
 date: 2019-07-05
 end: 2019-08-01
 hero:
-  img: writing/sidesaddle/herm.jpg
-  alt: not clear to me, a body (with hermaphroditus lifting their skirt)
+  img: art/shows/bardo.jpg
+  alt: Art on the walls of Bardo Coffee
 tags:
   - _calendar
   - art
