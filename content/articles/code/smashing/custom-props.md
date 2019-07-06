@@ -24,10 +24,3 @@ summary: |
   custom properties can provide new ways
   to balance context and isolation in CSS patterns and components.
 ---
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-[read the article on Smashing Magazine »][read]
-
-[read]: https://www.smashingmagazine.com/2019/07/css-custom-properties-cascade/

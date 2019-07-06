@@ -25,10 +25,6 @@ summary: |
   [surgery]: /2018/07/17/surgery
 ---
 
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
 Wow, you all are so wonderful and generous.
 Thank you so much.
 I am entirely floored by this outpouring of support and love

@@ -12,7 +12,7 @@
   {% set events = collections.all | getPage(page) | getEvents %}
 
   {% if events_group == 'all' %}
-    {% set title = 'all events…' %}
+    {% set title = 'events…' %}
     {% set events = collections.all | getEvents %}
   {% elif events_group %}
     {% set tag_name = events_group | displayName %}
@@ -93,6 +93,7 @@
   all,
   self
 ) %}
+  {% set title = [events | countEvents, title] | join(' ') %}
   {% if events | length %}
     {{ cards.section(
       title,

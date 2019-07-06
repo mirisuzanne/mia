@@ -10,12 +10,7 @@ summary: |
   *I was born, a body.*
   Without my body, I don't exist.
 ---
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-------
 
 Some ==bodies have freckles,==
 while some are six-foot-four and near-sighted.

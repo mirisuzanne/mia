@@ -31,8 +31,6 @@ summary: |
 
 {% import "content.macros.njk" as content %}
 
-{{ content.intro(summary) }}
-
 {{ content.fig(
   data=video,
   caption='Fragments @ Invisible City (by Mirriam & Nathan Hall)'

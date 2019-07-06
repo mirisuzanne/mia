@@ -61,7 +61,3 @@ summary: |
   based on a unique long-form collaborative process
   for devising new work.
 ---
-
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}

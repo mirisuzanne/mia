@@ -6,6 +6,7 @@ tags:
   - speaking
   - code
   - design systems
+  - video
 events:
   - venue: Refresh Denver
     url: https://www.meetup.com/refreshdenver/events/241230495/?from=ref
@@ -29,12 +30,18 @@ events:
     adr: Chandler, AZ
     start: 2016-12-03
     slides: https://oddbooksapp.com/release/1f08a0cb-198f-4c5f-ac85-93e55daa471d
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/lK_akjzOUY0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    embed: &cssday
+      iframe: https://www.youtube.com/embed/lK_akjzOUY0
+      width: 560
+      height: 315
   - venue: CascadiaFest
     url: http://2016.cascadiafest.org/
     start: 2016-08-03
     slides: https://oddbooksapp.com/release/3964dd55-982a-4171-a46b-6dd0354eac27
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/cVZreFHgLFw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    embed: &cascadia
+      iframe: https://www.youtube.com/embed/cVZreFHgLFw
+      width: 560
+      height: 315
   - venue: CSS Summit
     url: http://environmentsforhumans.com/2016/css-summit/
     start: 2016-07-26
@@ -48,12 +55,22 @@ events:
     adr: San Francisco, CA
     start: 2016-03-31
     slides: https://oddbooksapp.com/release/ab1987b6-7d5f-42e4-b0ff-e7312cb345f6
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/b4vSy1e1ai8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    embed: &clarity
+      iframe: https://www.youtube.com/embed/b4vSy1e1ai8
+      width: 560
+      height: 315
+summary: |
+  **Style Guides & Pattern Libraries are great tools**
+  for documenting the relationships between code and design,
+  but beautiful docs are only half the battle.
+media:
+  - span: full
+    <<: *cssday
+  - <<: *cascadia
+  - <<: *clarity
 ---
+{% import "content.macros.njk" as content %}
 
-**Style Guides & Pattern Libraries are great tools**
-for documenting the relationships between code and design,
-but beautiful docs are only half the battle.
 Behind the scenes those patterns have to live in our code,
 and make life easier for developers.
 Let's talk about how we build patterns in code,
@@ -64,3 +81,10 @@ without extensive maintenance.
 - Using pre-processors for pattern-making in CSS and HTML.
 - Designing and integrating toolkits that force pattern-making.
 - Examples of what we've done, where we've failed, and where we're headed.
+
+------
+
+{{ content.fig(
+  data=media,
+  caption='Conference videos…'
+) }}

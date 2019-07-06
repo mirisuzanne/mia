@@ -5,7 +5,7 @@ sub: |
   Popular
   Sass unit-testing framework
 venue: OddBird
-url: http://oddbird.net/true/
+url: https://oddbird.net/true/
 date: 2013-06-06
 hero:
   img: projects/true.jpg
@@ -26,12 +26,7 @@ summary: |
   Advanced features are available
   with our test-runner integration and Mocha.
 ---
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-[Check it out »]({{ url }})
 
 ------
 

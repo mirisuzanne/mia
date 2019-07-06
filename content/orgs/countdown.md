@@ -37,7 +37,3 @@ summary: |
   (10 counting down to zero)
   at which time the collective will disband.
 ---
-
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}

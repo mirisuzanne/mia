@@ -43,8 +43,18 @@
 		{% include 'site/nav.njk' %}
 		{% include 'site/hero.njk' %}
 
-    {% if content and not hide_content %}
-      {{ show.main(content, section, erasure) }}
+    {% if (content or summary) and not hide_content %}
+			{% set elsewhere = {
+				'venue': venue,
+				'url': url
+			} if elsewhere else none %}
+      {{ show.main(
+				content=content,
+				intro=summary,
+				section=section,
+				erasure=erasure,
+				elsewhere=elsewhere
+			) }}
     {% endif %}
 
 		{% include 'site/series.njk' %}

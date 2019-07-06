@@ -9,7 +9,7 @@ sub: |
   **Esquire UK**,
   and more.
 venue: OddBird
-url: http://oddbird.net/susy/
+url: https://oddbird.net/susy/
 date: 2009-07-13
 hero:
   img: projects/susy.png
@@ -50,7 +50,7 @@ press:
     venue: SitePoint
     url: http://www.sitepoint.com/my-favorite-sass-tools/
   - text: |
-      **Susy** & **Zendesk** have been getting along magically…
+      Susy & Zendesk have been getting along magically…
       It's precisely what you need and nothing more.
     credit: Stephany Varga
     venue: Zendesk Creative Collection
@@ -70,13 +70,7 @@ summary: |
   Susy has become one of the
   most popular layout frameworks on the web.
 ---
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-[Check it out »]({{ url }})
-
 
 ------
 

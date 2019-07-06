@@ -11,20 +11,28 @@ tags:
   - design
   - process
   - collaboration
+  - video
 events:
   - venue: Design 4 Drupal [keynote]
     url: https://design4drupal.org/
     adr: Boston, MA
     start: 2019-06-26
-  - venue: Open Source Conference [keynote]
+    slides: https://talks.oddbird.net/user-unfriendly/design4drupal19
+    video: https://drupal.tv/external-video/2019-06-28/user-unfriendly-practical-guide-losing-control
+    embed: &drupal
+      iframe: https://www.youtube.com/embed/2MkQBQb43gE
+      width: 560
+      height: 315
+  - venue: Open Source Conference
     url: https://www.comcastlabsconnect.com/open-source-2019
     adr: Denver, CO
     start: 2019-06-20
+    slides: https://talks.oddbird.net/user-unfriendly/opensource19
   - venue: Agile Denver
     url: https://www.meetup.com/Agile-Denver2/events/258957862/
     adr: Denver, CO
     start: 2019-03-18
-    # slides:
+    slides: https://talks.oddbird.net/user-unfriendly/agiledenver19
   - venue: AIGA Colorado
     url: https://colorado.aiga.org/event/04-26-18-rethinking-ux-design/
     adr: Denver, CO
@@ -44,11 +52,23 @@ events:
     adr: Austin, TX
     start: 2015-11-11
     slides: https://www.oddbooksapp.com/book/user-unfriendly
+press:
+  - text: |
+      Thought provoking talk on rethinking who the user is
+      and who we are writing for as developers.
+      Wow! Made me think.
+    credit: Nithya Ruff
+    title: Leader of Comcast Open Source Office
+    url: https://twitter.com/nithyaruff/status/1141803102376550402
+summary: |
+  A project-manager’s reflections on human-centered problem-solving,
+  client communication,
+  and user feedback in agile web development.
+media:
+  - span: full
+    <<: *drupal
 ---
-
-A project-manager’s reflections on human-centered problem-solving,
-client communication,
-and user feedback in agile web development.
+{% import "content.macros.njk" as content %}
 
 The web is more than a technology platform,
 it was created with a mission statement.
@@ -65,3 +85,14 @@ and designing for edge-cases with integrated teams.
 - Understanding (and seeking-out) user-feedback, without sacrificing vision
 - How we integrate developers and designers in tight feedback cycles
 - How we talk to clients about design choices
+
+------
+
+{{ content.quotes(press) }}
+
+------
+
+{{ content.fig(
+  data=media,
+  caption='Conference videos…'
+) }}

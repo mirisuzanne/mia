@@ -87,6 +87,11 @@ const fromCollection = collection => {
   return events;
 };
 
+const count = groups => {
+  const eventsPer = groups.map(g => g.data.length);
+  return eventsPer.reduce((all, group) => all + group);
+};
+
 const byGroup = events => {
   const groups = utils.groupBy(events, 'group');
   const sorted = [];
@@ -123,5 +128,6 @@ module.exports = {
   fromCollection,
   byGroup,
   get,
+  count,
   groupNames,
 };

@@ -26,10 +26,6 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.intro(summary) }}
-
--------
-
 ## Grandma, I was wrong
 
 Early August, 2015 --

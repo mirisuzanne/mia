@@ -36,10 +36,7 @@ summary: |
   broken and battered,
   but surviving together.
 ---
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
 
 [Read the script »](script/)
 

@@ -12,12 +12,6 @@ summary: |
   so they won’t see me crying.
 ---
 
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-------
-
 Gender is strange and elusive.
 Sometime we attach it to genitals,
 and sometimes we attach it to boats.
