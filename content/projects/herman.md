@@ -3,7 +3,7 @@ title: 'Herman: design docs'
 sub: |
   Automate design-system documentation directly from your Sass
 venue: OddBird
-url: http://oddbird.net/herman/
+url: https://oddbird.net/herman/
 date: 2015-11-18
 hero:
   img: projects/herman.jpg

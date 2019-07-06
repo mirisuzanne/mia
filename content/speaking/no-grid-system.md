@@ -88,7 +88,7 @@ summary: |
   how they work,
   and practical tips to avoid using them.
 
-  [susy]: http://oddbird.net/susy/
+  [susy]: https://oddbird.net/susy/
 media:
   - span: full
     <<: *bt

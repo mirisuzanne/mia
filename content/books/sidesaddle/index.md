@@ -170,8 +170,8 @@ Riding SideSaddle* is an
 [open source text](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 published by
 [SpringGun Press](http://springgunpress.com),
-[released online](http://oddbooksapp.com/book/ridingsidesaddle)
-by [OddBird](http://oddbird.net/),
+[released online](https://oddbooksapp.com/book/ridingsidesaddle)
+by [OddBird](https://oddbird.net/),
 and [adapted for the stage](/theater/10myths/)
 by [Buntport Theater](http://buntport.com/) and
 [Teacup Gorilla](http://teacupgorilla.com/).

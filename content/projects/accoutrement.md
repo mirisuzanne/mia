@@ -3,7 +3,7 @@ title: 'Accoutrement: design utils'
 sub: |
   Open-source tools for mainaining design system "tokens" in Sass
 venue: OddBird
-url: http://oddbird.net/accoutrement/
+url: https://oddbird.net/accoutrement/
 date: 2014-10-30
 hero:
   img: projects/accoutrement.jpg

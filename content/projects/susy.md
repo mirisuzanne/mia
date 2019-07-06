@@ -9,7 +9,7 @@ sub: |
   **Esquire UK**,
   and more.
 venue: OddBird
-url: http://oddbird.net/susy/
+url: https://oddbird.net/susy/
 date: 2009-07-13
 hero:
   img: projects/susy.png
