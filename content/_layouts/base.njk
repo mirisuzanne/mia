@@ -17,7 +17,7 @@
     <meta name="description"
       content="{{ meta_desc }}" />
 
-		{% set elsewhere = '_elsewhere' in tags %}
+		{% set elsewhere = '_elsewhere' in (tags or []) %}
 		{% set full_url = (site.url + page.url) %}
 		{% set canon = url if elsewhere else full_url %}
 		<link rel="canonical"
