@@ -15,7 +15,6 @@ tags:
   - album
   - audio
   - teacup gorilla
-  - shop
 press:
   - text: |
       The Holes They Leave occupies a middle place

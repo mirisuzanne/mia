@@ -16,11 +16,6 @@ summary: |
   *In a world without rigid gender roles,
   would anyone need to be trans?*
 ---
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-------
 
 Thanksgiving with friends and strangers.
 I still wear a beard, but my nails are iridescent.

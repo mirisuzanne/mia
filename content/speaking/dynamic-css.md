@@ -2,6 +2,8 @@
 title: Dynamic CSS
 sub: Layouts and beyond
 slides: https://talks.oddbird.net/dynamic-css/
+hero:
+  img: talks/miriam.jpg
 tags:
   - speaking
   - code
@@ -47,6 +49,7 @@ events:
     adr: Denver, CO
     start: 2018-11-01
     slides: https://talks.oddbird.net/dynamic-css/frontrange18/
+    video: https://www.vuemastery.com/conferences/vueconf-us-2019/dynamic-css-with-vue/
   - venue: Full Stack Fest
     url: https://2018.fullstackfest.com/
     adr: Barcelona, Spain
@@ -72,13 +75,45 @@ events:
     adr: Buenos Aires, Argentina
     start: 2018-08-18
     slides: https://talks.oddbird.net/dynamic-css/cssconfar18/
+press:
+  - text: |
+      Some pretty mind-bendingly cool uses for CSS custom props
+      from @MiriSuzanne --
+      color, layout & animation all in css
+      and only using JS to feed data.
+    credit: Jason Pamental
+    title: Invited Expert on the W3C
+    url: https://twitter.com/jpamental/status/1118585546803036160
+  - text: |
+      Well that was awesome!!!
+      “If you think CSS is a dumb language,
+      you’re a dumb language — CSS IS AWESOME!”
+      @MiriSuzanne thank you so much for the amazing talk!
+    credit: Nour Saud
+    title: Software Engineer
+    url: https://twitter.com/Nour_ASoud/status/1118588349994823681
+  - text: |
+      Miriam has always been nothing but spot-on,
+      professional, funny, while also being extremely knowledgeable,
+      smart, polite and always on time.
+    credit: Vitaly Friedman
+    title: Founder of Smashing Magazine & Conference
+    url: https://www.smashingmagazine.com/events/
+  - text: |
+      So stoked @mirisuzanne is @vueconfus !!!
+      look at how cool CSS is ~ and all the squishy things it does.
+    credit: Ngan Hoang
+    title: Principal Designer at Prefect.io
+    url: https://twitter.com/itsngansense/status/1111001282528063488
+summary: |
+  Don't let the declarative syntax fool you --
+  CSS is a powerful and dynamic programming language.
 media:
   - span: full
     <<: *fsfest
   - span: full
     <<: *jsconf
 ---
-
 {% import "content.macros.njk" as content %}
 
 **CSS has come a long way since the browser wars** of the late 90s.
@@ -92,6 +127,10 @@ without all the invasive Javascript.
 - Basics for understanding Custom Properties & `Calc()`.
 - Practical examples and use-cases for data-infused design.
 - Integrating with CSS Grids to build layouts on-the-fly.
+
+------
+
+{{ content.quotes(press) }}
 
 ------
 

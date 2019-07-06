@@ -2,12 +2,13 @@
 title: Don't Use My Grid System
 slides: https://talks.oddbird.net/no-grid-system/
 hero:
-  img: pages/devconf-best.jpg
+  img: talks/devconf-best.jpg
 tags:
   - speaking
   - code
   - susy
   - layout
+  - video
 events:
   - venue: Boulder Python
     url: https://www.meetup.com/BoulderPython/events/256868153/
@@ -24,14 +25,20 @@ events:
     start: 2018-05-07
     slides: https://oddbooksapp.com/release/ce37ef91-8bd8-43e2-932a-66931b4b25ce
     video: https://vimeo.com/268576559
-    embed: <iframe src="https://player.vimeo.com/video/268576559" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+    embed: &bt
+      iframe: https://player.vimeo.com/video/268576559
+      width: 640
+      height: 360
   - venue: Clarity
     url: https://www.clarityconf.com/2017
     adr: San Francisco, CA
     start: 2017-11-28
     slides: https://oddbooksapp.com/release/ae641b90-8efa-4b1e-8da8-16940edf420d
     video: https://youtu.be/Prc_V-j6yS4
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Prc_V-j6yS4?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    embed: &clarity
+      iframe: https://www.youtube.com/embed/Prc_V-j6yS4
+      width: 560
+      height: 315
   - venue: CSS Dev Conf
     url: http://2017.cssdevconf.com/
     adr: New Orleans, LA
@@ -43,7 +50,10 @@ events:
     start: 2017-08-14
     slides: https://www.oddbooksapp.com/book/djangocon-layout
     video: https://youtu.be/mDRfFEcj3-Q
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/mDRfFEcj3-Q" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    embed: &django
+      iframe: https://www.youtube.com/embed/mDRfFEcj3-Q
+      width: 560
+      height: 315
   - venue: Women Who Code Fort Collins
     url: https://www.meetup.com/Women-Who-Code-Fort-Collins/events/242033627/
     adr: Fort Collins, CO
@@ -68,16 +78,25 @@ press:
       about the benefits of using plain CSS
       instead of heavy library for your grid!
       Very useful and inspiring. Thanks!
-    name: Sami Stein
-    role: Frontend Developer at XING
+    credit: Sami Stein
+    title: Frontend Developer at XING
     url: https://twitter.com/frontend_cat/status/993799732018532352
----
+summary: |
+  Explore the history of web layout
+  with the creator of [Susy][susy] --
+  why grid systems exist,
+  how they work,
+  and practical tips to avoid using them.
 
-Explore the history of web layout
-with the creator of [Susy][susy] --
-why grid systems exist,
-how they work,
-and practical tips to avoid using them.
+  [susy]: http://oddbird.net/susy/
+media:
+  - span: full
+    <<: *bt
+  - <<: *clarity
+  - <<: *django
+---
+{% import "content.macros.njk" as content %}
+
 For those few cases where a grid really is required,
 we'll talk about the best ways to roll your own,
 so you're not relying on a bloated library to make decisions for you.
@@ -89,4 +108,13 @@ and how to get started with only a few lines of code.
 - How to make grid-math simple, and lose the grid-system.
 - How to make grid-systems work for you when you need them.
 
-[susy]: http://oddbird.net/susy/
+------
+
+{{ content.quotes(press) }}
+
+------
+
+{{ content.fig(
+  data=media,
+  caption='Conference videos…'
+) }}

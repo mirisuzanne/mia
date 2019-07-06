@@ -10,6 +10,7 @@ hero:
 series: open source
 tags:
   - _calendar
+  - _elsewhere
   - code
   - open source
   - oddbird
@@ -23,9 +24,3 @@ summary: |
   [Herman](../herman/),
   the OddBird pattern-library generator.
 ---
-
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-[Check it out »]({{ url }})

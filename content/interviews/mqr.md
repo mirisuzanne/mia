@@ -9,6 +9,8 @@ hero:
   caption: A novel on 250 note-cards
 tags:
   - _calendar
+  - _post
+  - _elsewhere
   - interview
   - art
   - writing
@@ -18,10 +20,6 @@ summary: |
   [Ryo Yamaguchi](http://plotsandoaths.com/)
   at **Michigan Quarterly Review**.
 ---
-
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
 
 > Riding SideSaddle* is not like most things you’ve read.
 > On the surface it startles with its three-dimensionality —

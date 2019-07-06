@@ -15,7 +15,6 @@ tags:
   - art
   - writing
   - book
-  - shop
 events:
   - title: SideSaddle Reading
     venue: A Leon Affair
@@ -107,10 +106,7 @@ summary: |
   Inspired by Margaret Clap,
   and the many myths of Hermaphroditus.
 ---
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
 
 [Buy the book](http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/)
 or

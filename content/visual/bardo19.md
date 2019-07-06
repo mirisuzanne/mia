@@ -14,7 +14,6 @@ tags:
   - art
   - riding sidesaddle
   - visual
-  - shop
 gallery:
   caption: Diptych commisioned by Kelcie Glick...
   art:
@@ -35,8 +34,6 @@ summary: |
   for this show.
 ---
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
 
 {{ content.fig(
   data=gallery.art,

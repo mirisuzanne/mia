@@ -85,10 +85,7 @@ summary: |
   Explosions in the Sky,
   or the Velvet Underground.
 ---
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
 
 {% set ep = collections.all | getPage('/2015/07/09/holes-they-leave/') | first %}
 

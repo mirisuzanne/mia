@@ -7,6 +7,8 @@ url: http://boulderwritersworkshop.com/2012/08/31/eric-meyer-discusses-collabora
 date: 2012-10-01
 tags:
   - _calendar
+  - _post
+  - _elsewhere
   - writing
   - interview
   - art

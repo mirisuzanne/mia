@@ -117,8 +117,6 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.intro(summary) }}
-
 The Post-Obsolete Book is
 a [performable website][post-obsolete]
 in the spirit (and tutelage)

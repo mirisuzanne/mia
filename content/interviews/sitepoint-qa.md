@@ -7,6 +7,8 @@ hero:
   img: 2016/QandA.png
 tags:
   - _calendar
+  - _post
+  - _elsewhere
   - interview
   - code
   - susy

@@ -5,6 +5,8 @@ venue: Media Archeology Blog
 url: http://mediaarchaeologylab.com/blog/miriam-suzanne-ideas-process-obsolescence-iterative-interview-mel-hogan/
 tags:
   - _calendar
+  - _post
+  - _elsewhere
   - interview
   - art
   - writing
@@ -18,12 +20,6 @@ summary: |
   at [the Media Archeology Lab](/projects/mal-residence/).
 ---
 
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-------
-
 > We often use “experimental” in art and design
 > to talk about things that are strange or new,
 > but experimental process is a well-defined set of steps
@@ -33,5 +29,5 @@ summary: |
 > but the structures translate pretty well for creative work,
 > and I use roughly the same techniques
 > in theatre, writing, design, or music.
-
-[Read the interview][{{ url }}]
+>
+> ---Miriam

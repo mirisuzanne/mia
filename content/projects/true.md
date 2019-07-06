@@ -26,12 +26,7 @@ summary: |
   Advanced features are available
   with our test-runner integration and Mocha.
 ---
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-[Check it out »]({{ url }})
 
 ------
 
