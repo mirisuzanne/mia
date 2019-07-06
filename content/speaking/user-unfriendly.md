@@ -16,7 +16,6 @@ events:
     url: https://design4drupal.org/
     adr: Boston, MA
     start: 2019-06-26
-    feature: true
   - venue: Open Source Conference [keynote]
     url: https://www.comcastlabsconnect.com/open-source-2019
     adr: Denver, CO

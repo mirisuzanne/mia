@@ -13,6 +13,16 @@ events:
     adr: Hong Kong
     start: 2019-11-22
     end: 2019-11-23
+  - venue: Smashing Conf NY
+    url: https://smashingconf.com/ny-2019/
+    start: 2019-10-15
+    end: 2019-10-16
+    adr: New York, NY
+  - venue: Develop Denver
+    url: https://developdenver.org/
+    start: 2019-08-15
+    end: 2019-08-16
+    adr: Denver, CO
   - venue: Generate New York
     url: https://www.generateconf.com/
     adr: San Francisco, CA

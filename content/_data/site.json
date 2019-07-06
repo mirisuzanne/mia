@@ -8,6 +8,7 @@
   "icon": "icons/miriam.svg",
   "nav": {
     "home": "/",
+    "shop": "https://art.miriamsuzanne.com",
     "about": "/who/",
     "contact": "/contact/"
   },
