@@ -2,19 +2,6 @@
 
 <header
   data-layout="banner">
-
-  <div class="toggle-theme">
-    <select data-input="text" name="themes" id="toggle-theme">
-      {% for theme in site.themes %}
-        <option
-          value="{{ theme }}"
-          {{ utility.attr_if('selected', loop.first) }}>
-          {{ theme }}
-        </option>
-      {% endfor %}
-    </select>
-  </div>
-
   <div class="banner-content">
     <h1 class="banner-title" data-bright>
       {{ full_title | mdInline(false) | safe }}

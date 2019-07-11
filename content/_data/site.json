@@ -19,8 +19,7 @@
   },
   "themes": [
     "dark",
-    "light",
-    "contrast"
+    "light"
   ],
   "feed": "feed.xml",
   "styles": ["screen.css"]

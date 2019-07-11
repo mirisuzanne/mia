@@ -1,24 +1,467 @@
 // Themes
 // ======
 
-$themes: (
-  'light': $light-colors,
-  'dark': $dark-colors,
-  'contrast': $contrast-colors,
-);
+/* primary hue */
+/* - optionally set `--h-user-prime` in JS */
+[data-theme] {
+  --h-prime: var(--h-user-prime, 330);
+  --h-accent: var(--h-user-accent, 195);
 
-// Set theme variables
-@each $name, $theme in $themes {
-  [data-theme='#{$name}'] {
-    @include colors--($theme);
-    --img-bright: #{if(($name == 'dark'), 75%, null)};
-    --shadow: #{shadow($name)};
+  /* initial lightness and saturation values */
+  --l: 50%;
+  --s: 80%;
+
+  /* offset lightness and saturation by various amounts */
+  --off-sm: 17%;
+  --off-md: 30%;
+  --off-lg: 43%;
+  --fade: 0.75;
+}
+
+/* presets */
+[data-theme='mia-pink'] {
+  --h-prime: 330;
+  --h-accent: 195;
+  --user-theme: none;
+}
+
+[data-theme='mia-blue'] {
+  --h-prime: 195;
+  --h-accent: 330;
+  --user-theme: none;
+}
+
+[data-theme='monochrome'] {
+  --h-accent: var(--h-prime);
+}
+
+[data-theme='complement'] {
+  --h-accent: var(--h-complement);
+}
+
+[data-theme='triad'] {
+  --h-accent: var(--h-triad);
+}
+
+[data-theme='adjacent'] {
+  --h-accent: var(--h-adjacent);
+}
+
+[data-theme='black'] {
+  --s: 0%;
+  --off-sm: var(--off-lg);
+  --off-md: var(--off-lg);
+  --off-sm: var(--off-lg);
+  --off-md: var(--off-lg);
+  --user-theme: none;
+}
+
+[data-mode] {
+  --invert: calc(-1 * var(--mode));
+
+  /* options for setting different color palettes */
+  --h-complement: calc(var(--h-prime) + (180 * var(--mode)));
+  --h-triad: calc(var(--h-prime) + (120 * var(--mode)));
+  --h-adjacent: calc(var(--h-prime) + (60 * var(--mode)));
+
+  /* full contrast colors, foreground and background */
+  --bg-full: hsl(0, 0%, calc(100% * var(--mode)));
+  --fg-full: hsl(0, 0%, calc(100% * var(--invert)));
+
+  /* generate lightness values */
+  --l-fg-sm: calc(var(--l) - var(--off-sm) * var(--mode));
+  --l-fg-md: calc(var(--l) - var(--off-md) * var(--mode));
+  --l-fg-lg: calc(var(--l) - var(--off-lg) * var(--mode));
+
+  --l-bg-sm: calc(var(--l) + var(--off-sm) * var(--mode));
+  --l-bg-md: calc(var(--l) + var(--off-md) * var(--mode));
+  --l-bg-lg: calc(var(--l) + var(--off-lg) * var(--mode));
+
+  /* generate saturation values */
+  --s-fg-sm: calc(var(--s) - var(--off-sm));
+  --s-fg-md: calc(var(--s) - var(--off-md));
+  --s-fg-lg: calc(var(--s) - var(--off-lg));
+
+  --s-bg-sm: calc(var(--s) - 20% - var(--off-sm));
+  --s-bg-md: calc(var(--s) - 20% - var(--off-md));
+  --s-bg-lg: calc(var(--s) - 20% - var(--off-lg));
+
+  /* generate the prime color palette */
+  --prime: hsl(var(--h-prime), var(--s), var(--l));
+  --prime-fade: hsla(var(--h-prime), var(--s-fg-lg), var(--l), var(--fade));
+  --prime-fg-sm: hsl(var(--h-prime), var(--s-fg-sm), var(--l-fg-sm));
+  --prime-fg-sm-fade: hsla(
+    var(--h-prime),
+    var(--s-fg-lg),
+    var(--l-fg-sm),
+    var(--fade)
+  );
+  --prime-fg-md: hsl(var(--h-prime), var(--s-fg-md), var(--l-fg-md));
+  --prime-fg-md-fade: hsla(
+    var(--h-prime),
+    var(--s-fg-lg),
+    var(--l-fg-md),
+    var(--fade)
+  );
+  --prime-fg-lg: hsl(var(--h-prime), var(--s-fg-lg), var(--l-fg-lg));
+  --prime-fg-lg-fade: hsla(
+    var(--h-prime),
+    var(--s-fg-lg),
+    var(--l-fg-lg),
+    var(--fade)
+  );
+
+  --prime-bg-sm: hsl(var(--h-prime), var(--s-bg-sm), var(--l-bg-sm));
+  --prime-bg-sm-fade: hsla(
+    var(--h-prime),
+    var(--s-bg-lg),
+    var(--l-bg-sm),
+    var(--fade)
+  );
+  --prime-bg-md: hsl(var(--h-prime), var(--s-bg-md), var(--l-bg-md));
+  --prime-bg-md-fade: hsla(
+    var(--h-prime),
+    var(--s-bg-lg),
+    var(--l-bg-md),
+    var(--fade)
+  );
+  --prime-bg-lg: hsl(var(--h-prime), var(--s-bg-lg), var(--l-bg-lg));
+  --prime-bg-lg-fade: hsla(
+    var(--h-prime),
+    var(--s-bg-lg),
+    var(--l-bg-lg),
+    var(--fade)
+  );
+
+  /* generate the accent color palette */
+  --accent: hsl(var(--h-accent), var(--s), var(--l));
+  --accent-fade: hsla(var(--h-accent), var(--s-fg-lg), var(--l), var(--fade));
+  --accent-fg-sm: hsl(var(--h-accent), var(--s-fg-sm), var(--l-fg-sm));
+  --accent-fg-sm-fade: hsla(
+    var(--h-accent),
+    var(--s-fg-lg),
+    var(--l-fg-sm),
+    var(--fade)
+  );
+  --accent-fg-md: hsl(var(--h-accent), var(--s-fg-md), var(--l-fg-md));
+  --accent-fg-md-fade: hsla(
+    var(--h-accent),
+    var(--s-fg-lg),
+    var(--l-fg-md),
+    var(--fade)
+  );
+  --accent-fg-lg: hsl(var(--h-accent), var(--s-fg-lg), var(--l-fg-lg));
+  --accent-fg-lg-fade: hsla(
+    var(--h-accent),
+    var(--s-fg-lg),
+    var(--l-fg-lg),
+    var(--fade)
+  );
+
+  --accent-bg-sm: hsl(var(--h-accent), var(--s-bg-sm), var(--l-bg-sm));
+  --accent-bg-sm-fade: hsla(
+    var(--h-accent),
+    var(--s-bg-lg),
+    var(--l-bg-sm),
+    var(--fade)
+  );
+  --accent-bg-md: hsl(var(--h-accent), var(--s-bg-md), var(--l-bg-md));
+  --accent-bg-md-fade: hsla(
+    var(--h-accent),
+    var(--s-bg-lg),
+    var(--l-bg-md),
+    var(--fade)
+  );
+  --accent-bg-lg: hsl(var(--h-accent), var(--s-bg-lg), var(--l-bg-lg));
+  --accent-bg-lg-fade: hsla(
+    var(--h-accent),
+    var(--s-bg-lg),
+    var(--l-bg-lg),
+    var(--fade)
+  );
+
+  /* generate the complement color palette */
+  --complement: hsl(var(--h-complement), var(--s), var(--l));
+  --complement-fade: hsla(
+    var(--h-complement),
+    var(--s-fg-lg),
+    var(--l),
+    var(--fade)
+  );
+  --complement-fg-sm: hsl(var(--h-complement), var(--s-fg-sm), var(--l-fg-sm));
+  --complement-fg-sm-fade: hsla(
+    var(--h-complement),
+    var(--s-fg-lg),
+    var(--l-fg-sm),
+    var(--fade)
+  );
+  --complement-fg-md: hsl(var(--h-complement), var(--s-fg-md), var(--l-fg-md));
+  --complement-fg-md-fade: hsla(
+    var(--h-complement),
+    var(--s-fg-lg),
+    var(--l-fg-md),
+    var(--fade)
+  );
+  --complement-fg-lg: hsl(var(--h-complement), var(--s-fg-lg), var(--l-fg-lg));
+  --complement-fg-lg-fade: hsla(
+    var(--h-complement),
+    var(--s-fg-lg),
+    var(--l-fg-lg),
+    var(--fade)
+  );
+
+  --complement-bg-sm: hsl(var(--h-complement), var(--s-bg-sm), var(--l-bg-sm));
+  --complement-bg-sm-fade: hsla(
+    var(--h-complement),
+    var(--s-bg-lg),
+    var(--l-bg-sm),
+    var(--fade)
+  );
+  --complement-bg-md: hsl(var(--h-complement), var(--s-bg-md), var(--l-bg-md));
+  --complement-bg-md-fade: hsla(
+    var(--h-complement),
+    var(--s-bg-lg),
+    var(--l-bg-md),
+    var(--fade)
+  );
+  --complement-bg-lg: hsl(var(--h-complement), var(--s-bg-lg), var(--l-bg-lg));
+  --complement-bg-lg-fade: hsla(
+    var(--h-complement),
+    var(--s-bg-lg),
+    var(--l-bg-lg),
+    var(--fade)
+  );
+
+  /* generate the triad color palette */
+  --triad: hsl(var(--h-triad), var(--s), var(--l));
+  --triad-fade: hsla(var(--h-triad), var(--s-fg-lg), var(--l), var(--fade));
+  --triad-fg-sm: hsl(var(--h-triad), var(--s-fg-sm), var(--l-fg-sm));
+  --triad-fg-sm-fade: hsla(
+    var(--h-triad),
+    var(--s-fg-lg),
+    var(--l-fg-sm),
+    var(--fade)
+  );
+  --triad-fg-md: hsl(var(--h-triad), var(--s-fg-md), var(--l-fg-md));
+  --triad-fg-md-fade: hsla(
+    var(--h-triad),
+    var(--s-fg-lg),
+    var(--l-fg-md),
+    var(--fade)
+  );
+  --triad-fg-lg: hsl(var(--h-triad), var(--s-fg-lg), var(--l-fg-lg));
+  --triad-fg-lg-fade: hsla(
+    var(--h-triad),
+    var(--s-fg-lg),
+    var(--l-fg-lg),
+    var(--fade)
+  );
+
+  --triad-bg-sm: hsl(var(--h-triad), var(--s-bg-sm), var(--l-bg-sm));
+  --triad-bg-sm-fade: hsla(
+    var(--h-triad),
+    var(--s-bg-lg),
+    var(--l-bg-sm),
+    var(--fade)
+  );
+  --triad-bg-md: hsl(var(--h-triad), var(--s-bg-md), var(--l-bg-md));
+  --triad-bg-md-fade: hsla(
+    var(--h-triad),
+    var(--s-bg-lg),
+    var(--l-bg-md),
+    var(--fade)
+  );
+  --triad-bg-lg: hsl(var(--h-triad), var(--s-bg-lg), var(--l-bg-lg));
+  --triad-bg-lg-fade: hsla(
+    var(--h-triad),
+    var(--s-bg-lg),
+    var(--l-bg-lg),
+    var(--fade)
+  );
+
+  /* generate the adjacent color palette */
+  --adjacent: hsl(var(--h-adjacent), var(--s), var(--l));
+  --adjacent-fade: hsla(
+    var(--h-adjacent),
+    var(--s-fg-lg),
+    var(--l),
+    var(--fade)
+  );
+  --adjacent-fg-sm: hsl(var(--h-adjacent), var(--s-fg-sm), var(--l-fg-sm));
+  --adjacent-fg-sm-fade: hsla(
+    var(--h-adjacent),
+    var(--s-fg-lg),
+    var(--l-fg-sm),
+    var(--fade)
+  );
+  --adjacent-fg-md: hsl(var(--h-adjacent), var(--s-fg-md), var(--l-fg-md));
+  --adjacent-fg-md-fade: hsla(
+    var(--h-adjacent),
+    var(--s-fg-lg),
+    var(--l-fg-md),
+    var(--fade)
+  );
+  --adjacent-fg-lg: hsl(var(--h-adjacent), var(--s-fg-lg), var(--l-fg-lg));
+  --adjacent-fg-lg-fade: hsla(
+    var(--h-adjacent),
+    var(--s-fg-lg),
+    var(--l-fg-lg),
+    var(--fade)
+  );
+
+  --adjacent-bg-sm: hsl(var(--h-adjacent), var(--s-bg-sm), var(--l-bg-sm));
+  --adjacent-bg-sm-fade: hsla(
+    var(--h-adjacent),
+    var(--s-bg-lg),
+    var(--l-bg-sm),
+    var(--fade)
+  );
+  --adjacent-bg-md: hsl(var(--h-adjacent), var(--s-bg-md), var(--l-bg-md));
+  --adjacent-bg-md-fade: hsla(
+    var(--h-adjacent),
+    var(--s-bg-lg),
+    var(--l-bg-md),
+    var(--fade)
+  );
+  --adjacent-bg-lg: hsl(var(--h-adjacent), var(--s-bg-lg), var(--l-bg-lg));
+  --adjacent-bg-lg-fade: hsla(
+    var(--h-adjacent),
+    var(--s-bg-lg),
+    var(--l-bg-lg),
+    var(--fade)
+  );
+
+  /* flip the shadow based on the mode */
+  --shadow-offset: calc(1px * var(--mode));
+
+  /* color props set directly by the theme */
+  background: var(--accent-bg-lg);
+  color: var(--prime-fg-lg);
+  text-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--bg-full);
+}
+
+/* light bg / dark fg */
+[data-mode='light'] {
+  --mode: 1;
+  --rev: -1;
+}
+
+/* dark bg / light fg */
+[data-mode='dark'] {
+  --mode: -1;
+  --rev: 1;
+}
+
+/* invert fg/bg */
+[data-mode='invert'] {
+  --mode: var(--rev);
+}
+
+/* some UI elements… */
+a {
+  --link-color: var(--prime-fg-md);
+  --link-underline: var(--prime-fg-md);
+  color: var(--link-color);
+  text-decoration-color: var(--link-underline);
+  text-decoration-skip-ink: auto;
+}
+
+a:hover,
+a:focus,
+a:active {
+  --link-color: var(--prime-fg-lg);
+  --link-underline: var(--prime);
+}
+
+button {
+  --button-background: var(--accent-fg-md);
+  --button-color: var(--accent-bg-lg);
+  --button-border: var(--accent-fg-lg-fade);
+  background: var(--button-background);
+  border: 2px solid var(--button-border);
+  color: var(--button-color);
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+}
+
+button:hover,
+button:focus {
+  --button-background: var(--accent-fg-lg);
+  --button-border: var(--accent-fg-lg);
+}
+
+button:active {
+  --button-background: var(--prime-bg-md);
+  --button-color: var(--prime-fg-md);
+}
+
+@supports (background-clip: text) {
+  h1 {
+    background: linear-gradient(
+      to bottom right,
+      var(--prime-fg-sm),
+      var(--accent-fg-sm)
+    );
+    background-clip: text;
+    box-decoration-break: clone;
+    color: transparent;
+    text-shadow: none;
   }
 }
 
-// Set theme defaults
-[data-theme] {
-  background-color: var-color('background');
-  color: var-color('text');
-  text-shadow: var(--shadow, shadow('light')) var-color('shadow');
+/* stylelint-disable */
+
+/* range input */
+@mixin range-track {
+  &::-webkit-slider-runnable-track {
+    @content;
+  }
+  &::-moz-range-track {
+    @content;
+  }
+  &::-ms-track {
+    @content;
+  }
 }
+
+@mixin range-thumb {
+  &::-webkit-slider-thumb {
+    @content;
+  }
+  &::-moz-range-thumb {
+    @content;
+  }
+  &::-ms-thumb {
+    @content;
+  }
+}
+
+$rainbow: ();
+@for $hue from 1 through 36 {
+  $rainbow: append($rainbow, hsl($hue * 10, 80%, 40%), comma);
+}
+
+[type='range'] {
+  -webkit-appearance: none;
+  background: transparent;
+  height: 0.75em;
+
+  @include range-track {
+    height: 0.25em;
+    cursor: pointer;
+    background: linear-gradient(to right, $rainbow);
+    border-radius: 1em;
+    border: 0;
+  }
+
+  @include range-thumb {
+    border: 1px solid var(--accent-fg-sm);
+    height: 0.75em;
+    width: 0.75em;
+    border-radius: 50%;
+    background: var(--prime);
+    cursor: pointer;
+  }
+}
+
+/* stylelint-enable */

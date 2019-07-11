@@ -58,31 +58,13 @@ $spacing-sizes: (
       'convert-units': 'rem',
     ),
   'gutter': '#rhythm',
-  'double-gutter': '#gutter'
-    (
-      'times': 2,
-    ),
-  'gutter-plus': '#gutter'
-    (
-      'times': 1.5,
-    ),
-  'spacer': 'calc(#double-gutter + 6vmin)',
-  'shim': '#gutter'
-    (
-      'times': 0.5,
-    ),
-  '3q-shim': '#shim'
-    (
-      'times': 0.75,
-    ),
-  'half-shim': '#shim'
-    (
-      'times': 0.5,
-    ),
-  'quarter-shim': '#shim'
-    (
-      'times': 0.25,
-    ),
+  'double-gutter': 'calc(var(--size-gutter) * 2)',
+  'gutter-plus': 'calc(var(--size-gutter) * 1.5)',
+  'spacer': 'calc(var(--size-gutter) * 2 + 6vmin)',
+  'shim': 'calc(var(--size-gutter) * 0.5)',
+  '3q-shim': 'calc(var(--size-gutter) * 0.75)',
+  'half-shim': 'calc(var(--size-gutter) * 0.25)',
+  'quarter-shim': 'calc(var(--size-gutter) * 0.125)',
 );
 @include add-sizes($spacing-sizes);
 @include herman-add('sizes', 'spacing-sizes', $spacing-sizes, $_size);
@@ -94,7 +76,7 @@ $spacing-sizes: (
 $component-sizes: (
   'icon': 1em,
   'border': '#half-shim',
-  'grid-margin': size('shim'),
+  'grid-margin': '#shim',
 );
 @include add-sizes($component-sizes);
 @include herman-add('sizes', 'component-sizes', $component-sizes, $_size);

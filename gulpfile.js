@@ -177,11 +177,8 @@ gulp.task('sassdoc-watch', cb => {
   cb();
 });
 
-gulp.task('build-assets', gulp.parallel('imagemin', 'sassdoc', 'sass'));
-gulp.task(
-  'build-assets-prod',
-  gulp.parallel('imagemin', 'sassdoc', 'sass-prod'),
-);
+gulp.task('build-assets', gulp.parallel('imagemin', 'sass'));
+gulp.task('build-assets-prod', gulp.parallel('imagemin', 'sass-prod'));
 
 gulp.task('build-clean', () => del([`${paths.OUTPUT_DIR}**`]));
 

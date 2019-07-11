@@ -19,7 +19,7 @@ h1 {
 @mixin offsite {
   @include after('↗') {
     @include font-family('code');
-    color: var-color('text-light');
+    // color: var-color('text-light');
     font-size: size('code');
     @content;
   }
@@ -27,13 +27,13 @@ h1 {
 
 a {
   #{$link} {
-    color: var-color('action');
-    text-decoration-color: var-color('action-underline');
+    // color: var-color('action');
+    // text-decoration-color: var-color('action-underline');
     text-decoration-skip-ink: auto;
   }
 
   #{$focus} {
-    color: var-color('action-hover');
+    // color: var-color('action-hover');
     text-decoration-color: currentColor;
   }
 
@@ -58,7 +58,7 @@ a {
 
 .amp {
   @include font-family('amp');
-  @include color--('amp', 'text-highlight');
-  color: var-color('amp', 'text-highlight');
+  // @include color--('amp', 'text-highlight');
+  // color: var-color('amp', 'text-highlight');
   font-style: italic;
 }
