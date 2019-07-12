@@ -19,7 +19,7 @@ const tagData = collections => {
   const eventTags = events
     .get(collections.all, false, false)
     .map(e => e.tags)
-    .reduce((all, one) => [...all, ...one]);
+    .reduce((all, one) => [...all, ...one], []);
 
   return utils
     .unique(eventTags)
@@ -76,7 +76,7 @@ const tagLink = (tag, collections) => {
 
   const extra = collections.all
     .map(page => page.data.extraTags || [])
-    .reduce((all, tags) => [...all, ...tags])
+    .reduce((all, tags) => [...all, ...tags], [])
     .includes(tag);
 
   const index = pages.length ? pages[0].url : null;

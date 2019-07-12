@@ -89,7 +89,7 @@ const fromCollection = collection => {
 
 const count = groups => {
   const eventsPer = groups.map(g => g.data.length);
-  return eventsPer.reduce((all, group) => all + group);
+  return eventsPer.reduce((all, group) => all + group, 0);
 };
 
 const byGroup = events => {
