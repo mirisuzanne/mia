@@ -62,13 +62,7 @@
 		{% include 'site/footer.njk' %}
 
 		<script type="text/javascript" src="https://unpkg.com/lunr/lunr.js"></script>
-		<script type="text/javascript">
-			{% if erasure %}
-				{% include "js/erase.js" %}
-			{% endif %}
-			{% include "js/search.js" %}
-			{% include "js/theme.js" %}
-		</script>
+		<script type="text/javascript" src="/assets/js/scripts.js"></script>
 
 		<!-- Current page: {{ page.url | url }} -->
 	</body>
