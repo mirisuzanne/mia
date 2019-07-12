@@ -1,13 +1,6 @@
-const opts = {
-  light: 'dark',
-  dark: 'contrast',
-  contrast: 'light',
-};
-
 const root = document.querySelector('html');
 const attr = 'data-theme';
-const transClass = 'theme-change';
-const themeToggle = document.querySelector('[data-btn~="toggle-theme"]');
+const themeToggle = document.getElementById('toggle-theme');
 
 const setTheme = to => {
   if (to) {
@@ -25,20 +18,19 @@ const getTheme = () => {
 };
 
 const changeTheme = () => {
-  const from = getTheme() || root.getAttribute(attr);
-  const to = opts[from];
-
-  localStorage.setItem('theme', to);
+  const to = themeToggle.value;
   setTheme(to);
+  localStorage.setItem('theme', to);
 };
 
 const initTheme = init => {
   if (init) {
+    themeToggle.value = init;
     setTheme(init);
   }
 };
 
 document.onload = initTheme(getTheme());
-themeToggle.addEventListener('click', () => {
+themeToggle.addEventListener('input', () => {
   changeTheme();
 });

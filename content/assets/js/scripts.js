@@ -78,15 +78,9 @@ searchInput.addEventListener('focus', () => {
     const t = searchInput.value;
     t.length > 2 ? find(t) : clearResults(!0);
   });
-const opts = {
-    light: 'dark',
-    dark: 'contrast',
-    contrast: 'light',
-  },
-  root = document.querySelector('html'),
+const root = document.querySelector('html'),
   attr = 'data-theme',
-  transClass = 'theme-change',
-  themeToggle = document.querySelector('[data-btn~="toggle-theme"]'),
+  themeToggle = document.getElementById('toggle-theme'),
   setTheme = e => {
     e && root.setAttribute(attr, e);
   },
@@ -100,15 +94,14 @@ const opts = {
     return localStorage.getItem('theme') || e('dark') || e('light');
   },
   changeTheme = () => {
-    const e = getTheme() || root.getAttribute(attr),
-      t = opts[e];
-    localStorage.setItem('theme', t), setTheme(t);
+    const e = themeToggle.value;
+    setTheme(e), localStorage.setItem('theme', e);
   },
   initTheme = e => {
-    e && setTheme(e);
+    e && ((themeToggle.value = e), setTheme(e));
   };
 
 (document.onload = initTheme(getTheme())),
-  themeToggle.addEventListener('click', () => {
+  themeToggle.addEventListener('input', () => {
     changeTheme();
   });
