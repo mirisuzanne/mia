@@ -4,10 +4,13 @@
 
 const Fiber = require('fibers');
 const autoprefixer = require('gulp-autoprefixer');
+const babel = require('gulp-babel');
 const beeper = require('beeper');
 const chalk = require('chalk');
 const cleanCSS = require('gulp-clean-css');
+const concat = require('gulp-concat');
 const del = require('del');
+const eslint = require('gulp-eslint');
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const log = require('fancy-log');
@@ -17,11 +20,14 @@ const sassdoc = require('sassdoc');
 const sasslint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
 const { spawn } = require('child_process');
+const terser = require('gulp-terser');
 
 sass.compiler = require('sass');
 
 const paths = {
   SASS_DIR: './_src/scss/',
+  JS_SRC_DIR: './_src/js/',
+  JS_DEST_DIR: './content/assets/js/',
   CSS_DIR: './content/assets/css/',
   IMG_SRC_DIR: './_src/images/',
   IMG_DEST_DIR: './content/assets/images/',
@@ -29,6 +35,7 @@ const paths = {
   IGNORE: ['!**/.#*', '!**/flycheck_*'],
   init: function() {
     this.SASS = [this.SASS_DIR + '**/*.scss'].concat(this.IGNORE);
+    this.JS = [this.JS_SRC_DIR + '**/*.js'].concat(this.IGNORE);
     return this;
   },
 }.init();
@@ -90,6 +97,15 @@ const sassTask = opts => {
   }
   return stream.pipe(gulp.dest(paths.CSS_DIR));
 };
+
+gulp.task('js', () => {
+  return gulp
+    .src(paths.JS)
+    .pipe(terser())
+    .pipe(babel())
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest(paths.JS_DEST_DIR));
+});
 
 gulp.task('sass', () => {
   return sassTask({ src: paths.SASS_DIR + 'screen.scss', sourcemap: 'inline' });
@@ -161,6 +177,7 @@ gulp.task(
 
 gulp.task('watch', cb => {
   gulp.watch(paths.SASS, gulp.parallel(['sasslint', 'sass']));
+  gulp.watch(paths.JS, gulp.parallel('js'));
 
   // lint all scss when rules change
   gulp.watch('**/.stylelintrc.yml', gulp.parallel('sasslint-nofail'));
@@ -177,8 +194,8 @@ gulp.task('sassdoc-watch', cb => {
   cb();
 });
 
-gulp.task('build-assets', gulp.parallel('imagemin', 'sass'));
-gulp.task('build-assets-prod', gulp.parallel('imagemin', 'sass-prod'));
+gulp.task('build-assets', gulp.parallel('imagemin', 'js', 'sass'));
+gulp.task('build-assets-prod', gulp.parallel('imagemin', 'js', 'sass-prod'));
 
 gulp.task('build-clean', () => del([`${paths.OUTPUT_DIR}**`]));
 
