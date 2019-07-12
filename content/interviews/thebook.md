@@ -5,6 +5,8 @@ url: https://t-h-e-b-o-o-k.com/miriam-suzanne/
 venue: t-h-e-b-o-o-k.com
 tags:
   - _calendar
+  - _post
+  - _elsewhere
   - writing
   - interview
   - art

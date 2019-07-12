@@ -16,11 +16,6 @@ summary: |
   *In a world without rigid gender roles,
   would anyone need to be trans?*
 ---
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-------
 
 Thanksgiving with friends and strangers.
 I still wear a beard, but my nails are iridescent.
@@ -74,8 +69,8 @@ firefighter, artist, acrobat, scientist, and ninja.
 Which one of those is my gender?
 
 On the playground, I play tiger-family with the other girls.
-We lay in the grass at the far end of the field, t
-alking about our tiger lives.
+We lay in the grass at the far end of the field,
+talking about our tiger lives.
 This is short-lived, before the boys set me straight.
 Boys are allowed to spend the night, and they do.
 We play Double Dragon, and I learn that “joystick” is a euphemism.
@@ -168,7 +163,7 @@ It only makes the pain worse. The closer I am, the farther I feel.
 Mom writes:
 
 ---I saw your profile picture in high heels.
-Have you been exploring bisexulity? \
+Have you been exploring bisexuality? \
 ---*No. I’m exploring my gender. I can’t find it.*
 
 I report in, as my understanding develops:

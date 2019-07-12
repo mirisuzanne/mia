@@ -12,7 +12,6 @@ tags:
   - _calendar
   - art
   - visual
-  - shop
 gallery:
   - img: prophetia/st01.jpg
     url: http://art.miriamsuzanne.com/item/the-monster-print

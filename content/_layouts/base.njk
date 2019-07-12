@@ -2,7 +2,7 @@
 {%- import 'site/macros.njk' as show -%}
 {%- import 'events/macros.njk' as cal -%}
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="{{ site.themes[0] }}">
 	{%- set meta_title = renderData.title or title -%}
 	{%- set desc = sub or summary or content or none -%}
 	{%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') if desc else desc -%}
@@ -16,6 +16,12 @@
     <title>{{ [meta_title, site.title] | join(' | ') }}</title>
     <meta name="description"
       content="{{ meta_desc }}" />
+
+		{% set elsewhere = '_elsewhere' in (tags or []) %}
+		{% set full_url = (site.url + page.url) %}
+		{% set canon = url if elsewhere else full_url %}
+		<link rel="canonical"
+			href="{{ canon | url }}">
 
 		<script src="https://use.typekit.net/slx1xnq.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -37,8 +43,18 @@
 		{% include 'site/nav.njk' %}
 		{% include 'site/hero.njk' %}
 
-    {% if content and not hide_content %}
-      {{ show.main(content, section, erasure) }}
+    {% if (content or summary) and not hide_content %}
+			{% set elsewhere = {
+				'venue': venue,
+				'url': url
+			} if elsewhere else none %}
+      {{ show.main(
+				content=content,
+				intro=summary,
+				section=section,
+				erasure=erasure,
+				elsewhere=elsewhere
+			) }}
     {% endif %}
 
 		{% include 'site/series.njk' %}

@@ -23,10 +23,6 @@ summary: |
   [The Post-Obsolete Book](../post-obsolete/).
 ---
 
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
 The piece requires a few props:
 
 - overhead projector & transparencies

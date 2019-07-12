@@ -18,10 +18,6 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.intro(summary) }}
-
-------
-
 *These answers are very much my own.
 I am not attempting to speak for anyone else.
 If you don't know how to relate to another trans person,

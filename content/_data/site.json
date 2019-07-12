@@ -8,6 +8,7 @@
   "icon": "icons/miriam.svg",
   "nav": {
     "home": "/",
+    "shop": "https://art.miriamsuzanne.com",
     "about": "/who/",
     "contact": "/contact/"
   },
@@ -16,6 +17,11 @@
     "type": "website",
     "img": "headshots/mia-smirk.jpg"
   },
+  "themes": [
+    "dark",
+    "light",
+    "contrast"
+  ],
   "feed": "feed.xml",
   "styles": ["screen.css"]
 }

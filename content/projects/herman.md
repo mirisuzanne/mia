@@ -3,13 +3,14 @@ title: 'Herman: design docs'
 sub: |
   Automate design-system documentation directly from your Sass
 venue: OddBird
-url: http://oddbird.net/herman/
+url: https://oddbird.net/herman/
 date: 2015-11-18
 hero:
   img: projects/herman.jpg
 series: open source
 tags:
   - _calendar
+  - _elsewhere
   - code
   - open source
   - oddbird
@@ -31,13 +32,6 @@ summary: |
   and your UX consistent --
   as you iterate on patterns and scale over time.
 ---
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-[Check it out »]({{ url }})
-
-------
 
 {{ content.quotes(press) }}

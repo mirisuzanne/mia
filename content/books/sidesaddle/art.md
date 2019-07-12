@@ -9,7 +9,6 @@ tags:
   - art
   - riding sidesaddle
   - visual
-  - shop
 events:
   - venue: Buntport Theater
     adr: Denver, CO
@@ -54,9 +53,6 @@ summary: |
   [Riding SideSaddle*](../) has gone vertical --
   all 250 cards displayed in a gallery show.
 ---
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
 
 {{ content.fig(gallery.images, gallery.caption) }}

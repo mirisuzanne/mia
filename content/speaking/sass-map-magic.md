@@ -4,13 +4,17 @@ slides: https://www.oddbooksapp.com/book/sass-map-magic
 tags:
   - speaking
   - code
+  - video
 events:
   - venue: CSSConf 2016
     url: https://2016.cssconf.com/
     adr: Boston, MA
     start: 2016-09-26
     slides: https://oddbooksapp.com/release/b71e6e5d-e956-42ff-a4dd-b70bf3b13a2a
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/MdwtoFt2LOI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    embed: &cssconf
+      iframe: https://www.youtube.com/embed/MdwtoFt2LOI
+      width: 560
+      height: 315
   - venue: CSS Summit
     url: http://environmentsforhumans.com/2015/css-summit/
     adr: Online
@@ -27,11 +31,16 @@ events:
     url: http://www.blendconf.com/
     start: 2014-09-12
     video: http://teamtreehouse.com/library/sass-map-magic
+summary: |
+  **Maps are a powerful data type in Sass** —
+  perfect for managing color and scale palettes,
+  framework configuration, data storage, and more.
+media:
+  - span: full
+    <<: *cssconf
 ---
+{% import "content.macros.njk" as content %}
 
-**Maps are a powerful data type in Sass** —
-perfect for managing color and scale palettes,
-framework configuration, data storage, and more.
 We'll find ways to integrate maps into any project
 before we push them to their limits.
 
@@ -41,3 +50,10 @@ before we push them to their limits.
 - The main problems with maps, and how we work around them.
 - Automating pattern libraries and style guides based on maps.
 - Fun with maps for data-storage, and natural-language syntax.
+
+------
+
+{{ content.fig(
+  data=media,
+  caption='Conference videos…'
+) }}

@@ -14,8 +14,6 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.intro(summary) }}
-
 That, to me, is beautiful.
 All of us stumbling
 through this wreckage ==and rubble together==,

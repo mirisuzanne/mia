@@ -28,8 +28,9 @@
   data
 ) -%}
 {%- set where -%}
-{{ data.venue }}{% if data.venue and data.title %}: {% endif %}{{ data.title }}
+{{ data.venue | safe }}{% if data.venue and data.title %}: {% endif %}{{ data.title | safe }}
 {%- endset -%}
+{%- set where = where if (data.venue or data.title) else none -%}
 {%- if data.credit and where and data.url -%}
 {{ data.credit }}, [{{ where }}]({{ data.url }})
 {%- elif data.credit and where -%}
@@ -136,7 +137,7 @@
 {%- call ratio(item.width, item.height, span) -%}{#
 #}<iframe src="{{ item.iframe }}" {{ utility.attr_if('width', item.width) }} {{ utility.attr_if('height', item.height) }} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{%- endcall -%}{#
 #}{%- elif item.audio -%}{#
-#}<audio src="{{ item.audio }}" style="--width: 100%;" controls>{#
+#}<audio src="{{ item.audio }}" style="--width: 100%;{{ span }}" controls>{{ item.audio | mdInline }}</audio>{#
 #}{%- endif -%}
 {%- endfor -%}
 {%- endmacro %}

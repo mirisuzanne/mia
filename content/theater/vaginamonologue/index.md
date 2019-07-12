@@ -28,11 +28,7 @@ summary: |
 
   [igw]: https://www.itgrowswild.com/
 ---
-
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
 
 [Read the script »](script/)
 

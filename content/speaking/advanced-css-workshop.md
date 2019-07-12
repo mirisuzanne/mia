@@ -7,6 +7,11 @@ tags:
   - workshop
   - code
 events:
+  - venue: Webconf.asia
+    url: https://2019.webconf.asia/
+    adr: Hong Kong
+    start: 2019-11-20
+    end: 2019-11-21
   - venue: Generate New York
     url: https://www.generateconf.com/
     adr: San Francisco, CA
@@ -16,11 +21,21 @@ events:
     adr: San Francisco, CA
     start: 2019-04-18
     feature: true
+press:
+  - text: |
+      A fantastic speaker, with wonderful teaching skills,
+      and highly praised by attendees of the conference
+      and the workshop alike.
+    credit: Vitaly Friedman
+    title: Founder of Smashing Magazine & Conference
+    url: https://www.smashingmagazine.com/events/
+summary: |
+  From building beautiful sites
+  to maintaining complex design systems across applications,
+  CSS is the web-language of design.
 ---
+{% import "content.macros.njk" as content %}
 
-From building beautiful sites
-to maintaining complex design systems across applications,
-CSS is the web-language of design.
 Like all web languages,
 **Cascading Style Sheets have come a long way
 since their early inception** --
@@ -38,7 +53,13 @@ passing data between JS and CSS,
 and combining modern techniques to solve real,
 everyday interface problems.
 
-In this workshop, you’ll learn:
+------
+
+{{ content.quotes(press) }}
+
+------
+
+## In this workshop, you’ll learn:
 
 - Modern CSS Features:
   custom properties (variables), calc, grids, flexbox, writing modes,

@@ -3,13 +3,14 @@ title: 'Accoutrement: design utils'
 sub: |
   Open-source tools for mainaining design system "tokens" in Sass
 venue: OddBird
-url: http://oddbird.net/accoutrement/
+url: https://oddbird.net/accoutrement/
 date: 2014-10-30
 hero:
   img: projects/accoutrement.jpg
 series: open source
 tags:
   - _calendar
+  - _elsewhere
   - code
   - open source
   - oddbird
@@ -23,9 +24,3 @@ summary: |
   [Herman](../herman/),
   the OddBird pattern-library generator.
 ---
-
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
-[Check it out »]({{ url }})

@@ -79,10 +79,6 @@ summary: |
   and go on a mixed-media resistance tour...
 ---
 
-{% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
-
 I'll be:
 
 - reading from my queer-as-fuck novel [Riding SideSaddle*][sidesaddle],

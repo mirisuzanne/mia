@@ -118,10 +118,7 @@ summary: |
   [buntport]: http://buntport.com
   [teacup]: http://teacupgorilla.com
 ---
-
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(summary) }}
 
 [Read the script »](script/)
 

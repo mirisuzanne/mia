@@ -16,8 +16,12 @@ const amp = s => {
 };
 
 const set = content => (content ? typogr.typogrify(content) : content);
-const render = content => set(mdown.render(content));
-const inline = content => set(mdown.renderInline(content));
+const render = (content, type = true) => {
+  return type ? set(mdown.render(content)) : mdown.render(content);
+};
+const inline = (content, type = true) => {
+  return type ? set(mdown.renderInline(content)) : mdown.renderInline(content);
+};
 
 module.exports = {
   mdown,

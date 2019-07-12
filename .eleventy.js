@@ -49,6 +49,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('titleSort', pages.titleSort);
 
   eleventyConfig.addFilter('getEvents', events.get);
+  eleventyConfig.addFilter('countEvents', events.count);
   eleventyConfig.addFilter('groupName', group => events.groupNames[group]);
 
   eleventyConfig.addFilter('amp', type.amp);

@@ -10,7 +10,7 @@
 /// @see border
 $borders: (
   '_base': size('border') solid,
-  'hero': 1px solid var-color('feature'),
+  'hero': '#_base' var-color('feature'),
   'section': '#_base' var-color('border'),
   'quote': '#_base' var-color('callout'),
 );
@@ -39,7 +39,7 @@ $patterns: (
 
 @mixin fancy-text {
   /* stylelint-disable */
-  @supports (-webkit-background-clip: text) {
+  @supports (background-clip: text) {
     @content;
     background-clip: text;
     box-decoration-break: clone;

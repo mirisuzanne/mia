@@ -24,7 +24,7 @@ $modular-scale: (
 /// @group config-scale
 $text-sizes: (
   'root': 18px,
-  'responsive': 'calc(16px + 0.5vw)',
+  'responsive': 'calc(100% + 0.5vw)',
   'large-root': 1rem
     (
       'text-ratio': 1,
