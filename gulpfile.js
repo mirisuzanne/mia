@@ -26,7 +26,7 @@ sass.compiler = require('sass');
 
 const paths = {
   SASS_DIR: './_src/scss/',
-  JS_sRC_DIR: './_src/js/',
+  JS_SRC_DIR: './_src/js/',
   JS_DEST_DIR: './content/assets/js/',
   CSS_DIR: './content/assets/css/',
   IMG_SRC_DIR: './_src/images/',
@@ -35,7 +35,7 @@ const paths = {
   IGNORE: ['!**/.#*', '!**/flycheck_*'],
   init: function() {
     this.SASS = [this.SASS_DIR + '**/*.scss'].concat(this.IGNORE);
-    this.JS = [this.JS_sRC_DIR + '**/*.js'].concat(this.IGNORE);
+    this.JS = [this.JS_SRC_DIR + '**/*.js'].concat(this.IGNORE);
     return this;
   },
 }.init();
@@ -195,7 +195,7 @@ gulp.task('sassdoc-watch', cb => {
   cb();
 });
 
-gulp.task('build-assets', gulp.parallel('imagemin', 'js', 'sassdoc', 'sass'));
+gulp.task('build-assets', gulp.parallel('imagemin', 'js', 'sass'));
 gulp.task(
   'build-assets-prod',
   gulp.parallel('imagemin', 'js', 'sassdoc', 'sass-prod'),
