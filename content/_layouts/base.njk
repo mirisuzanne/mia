@@ -2,12 +2,13 @@
 {%- import 'site/macros.njk' as show -%}
 {%- import 'events/macros.njk' as cal -%}
 <!doctype html>
-<html lang="en" data-theme="mia-pink" data-mode="dark">
+<html lang="en" data-theme="mia-pink" data-mode="light">
 	{%- set meta_title = renderData.title or title -%}
 	{%- set desc = sub or summary or content or none -%}
 	{%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') if desc else desc -%}
 	{%- set meta_desc = description or desc or site.description -%}
-	{%- set full_title = banner or meta_title -%}
+	{%- set full_title = renderData.banner or banner or meta_title -%}
+	{%- set full_title = show.tag_title(collections) if (full_title == 'show_tags') else full_title | mdInline(false) -%}
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport"
@@ -39,9 +40,9 @@
 		data-layout="body"
 		data-area="full"
 		data-flow="grid">
+		{% include 'site/nav.njk' %}
 		{% include 'site/menu.njk' %}
 		{% include 'site/banner.njk' %}
-		{% include 'site/nav.njk' %}
 		{% include 'site/hero.njk' %}
 
     {% if (content or summary) and not hide_content %}

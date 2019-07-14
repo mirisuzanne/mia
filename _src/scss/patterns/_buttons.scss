@@ -1,30 +1,32 @@
 // Buttons
 // =======
 
-[data-btn] {
-  --btn-bg: #{var-color('action')};
-  --btn-color: #{var-color('background')};
-  --btn-hover: #{var-color('action-hover')};
-  --btn-hover-color: var(--btn-color);
-  background: var(--btn-bg);
-  border-radius: 0.1em;
-  color: var(--btn-color);
-  padding: 0 size('half-shim');
-  white-space: nowrap;
+button {
+  --button-background: var(--prime-fg-sm);
+  --button-color: var(--prime-bg-lg);
+  --button-border: var(--prime-bg-md);
+  @include font-family('midnight');
+  background: var(--button-background);
+  border-radius: var(--half-shim);
+  border: var(--quarter-shim) solid var(--button-border);
+  color: var(--button-color);
+  cursor: pointer;
+  font-size: var(--font-small);
+  padding: var(--half-shim) var(--shim) var(--quarter-shim);
 
-  #{$focus} {
-    background: var(--btn-hover);
-    color: var(--btn-hover-color);
+  &:hover,
+  &:focus {
+    --button-background: var(--prime-fg-md);
+    --button-border: var(--accent);
+  }
+
+  &:active {
+    --button-background: var(--accent-bg-md);
+    --button-color: var(--accent-fg-md);
+    --button-border: var(--accent-fg-lg);
   }
 }
 
 [data-btn~='flush'] {
   border-radius: 0 0.1em 0.1em 0;
-}
-
-[data-btn~='fade'] {
-  --btn-bg: #{var-color('callout')};
-  --btn-color: #{var-color('action')};
-  --btn-hover: #{var-color('action-hover')};
-  --btn-hover-color: #{var-color('background')};
 }

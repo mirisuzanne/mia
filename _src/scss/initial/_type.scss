@@ -5,19 +5,23 @@
 
 html {
   --gutter: 0.5rem;
+  --shim: calc(var(--gutter) / 2);
+  --half-shim: calc(var(--shim) / 2);
+  --quarter-shim: calc(var(--shim) / 4);
 
   --link-color: var(--prime-fg-md);
   --link-underline: var(--prime-fg-sm);
   --link-hover-color: var(--prime-fg-lg);
   --link-hover-underline: var(--prime);
 
-  @include font-family('body');
+  --font-small: 0.75rem;
+
+  @include font-family('code');
   line-height: 1.4;
   font-size: calc(1em + 0.5vw);
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  padding: var(--gutter);
 
   @media (min-width: 35em) {
     --gutter: 1rem;
@@ -56,14 +60,12 @@ a {
 // --------
 
 h1,
-h2,
-h3 {
-  @include font-family('sunrise');
-  line-height: 1;
+h2 {
+  @include font-family('midnight');
   text-transform: uppercase;
 
   &::first-line {
-    @include font-family('midnight');
+    @include font-family('two-am');
   }
 
   @supports (background-clip: text) {
@@ -81,34 +83,13 @@ h3 {
 }
 
 h1 {
-  font-size: calc(1rem + 10vw);
-  line-height: 0.9;
-  margin: 0 0 2em;
-  text-align: center;
-  transform: rotate(-10deg);
+  // it grows on you…
+  --h1-padding-right: calc(15vw - 40px);
+  font-size: calc(1rem + 8vw);
+  line-height: 0.85;
+  margin: 0;
+  padding: 0.25em var(--h1-padding-right) 0.25em 0;
 }
-
-// button {
-//   --button-background: var(--accent-fg-md);
-//   --button-color: var(--accent-bg-lg);
-//   --button-border: var(--accent-fg-lg-fade);
-//   background: var(--button-background);
-//   border: 2px solid var(--button-border);
-//   color: var(--button-color);
-//   cursor: pointer;
-//   padding: 0.25em 0.5em;
-// }
-
-// button:hover,
-// button:focus {
-//   --button-background: var(--accent-fg-lg);
-//   --button-border: var(--accent-fg-lg);
-// }
-
-// button:active {
-//   --button-background: var(--prime-bg-md);
-//   --button-color: var(--prime-fg-md);
-// }
 
 /* stylelint-disable */
 
@@ -180,10 +161,3 @@ $rainbow: ();
 [data-offsite] {
   @include offsite;
 }
-
-// .amp {
-//   @include font-family('amp');
-//   // @include color--('amp', 'text-highlight');
-//   // color: var-color('amp', 'text-highlight');
-//   font-style: italic;
-// }

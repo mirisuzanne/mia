@@ -10,8 +10,6 @@ tags:
   - _post
   - _elsewhere
   - interview
-  - audio
-  - video
   - podcast
   - code
 summary: |

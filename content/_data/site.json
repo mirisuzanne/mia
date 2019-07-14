@@ -7,9 +7,7 @@
   "images": "/assets/images/",
   "icon": "icons/miriam.svg",
   "nav": {
-    "home": "/",
-    "shop": "https://art.miriamsuzanne.com",
-    "about": "/who/",
+    "Miriam Suzanne": "/",
     "contact": "/contact/"
   },
   "og": {
@@ -17,10 +15,19 @@
     "type": "website",
     "img": "headshots/mia-smirk.jpg"
   },
-  "themes": [
-    "dark",
-    "light"
-  ],
+  "themes": {
+    "preset": {
+      "mia-pink": "default pink",
+      "mia-blue": "default blue",
+      "black": "black & white"
+    },
+    "custom": {
+      "complement": "complement",
+      "adjacent": "adjacent",
+      "triad": "triad",
+      "monochrome": "monochrome"
+    }
+  },
   "feed": "feed.xml",
   "styles": ["screen.css"]
 }

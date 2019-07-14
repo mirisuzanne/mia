@@ -6,7 +6,6 @@ tags:
   - speaking
   - code
   - design systems
-  - video
 events:
   - venue: Refresh Denver
     url: https://www.meetup.com/refreshdenver/events/241230495/?from=ref

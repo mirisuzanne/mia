@@ -8,7 +8,7 @@ tags:
   - code
   - susy
   - layout
-  - video
+  - recorded
 events:
   - venue: Boulder Python
     url: https://www.meetup.com/BoulderPython/events/256868153/

@@ -4,7 +4,8 @@
 {% macro section(
   all
 ) %}
-  {% call cards.section('all the tags…') %}
+  {% set section_title = [all | getTags(null) | list | length, 'tags'] | join(' ') %}
+  {% call cards.section(section_title) %}
     {% for segment in all | groupTags %}
       {%- set title -%}
         {%- if segment.group != 'top' -%}~{%- endif -%}

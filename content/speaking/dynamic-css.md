@@ -8,7 +8,6 @@ tags:
   - speaking
   - code
   - layout
-  - video
 events:
   - venue: Webconf.asia
     url: https://2019.webconf.asia/

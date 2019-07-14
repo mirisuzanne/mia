@@ -7,6 +7,7 @@ end: null
 index: grapefruit lab
 tags:
   - theater
+  - writing
   - art
   - grapefruit lab
 events:

@@ -10,6 +10,7 @@ index: teacup gorilla
 tags:
   - art
   - music
+  - writing
   - teacup gorilla
 events:
   - title: PRF BBQ Denver

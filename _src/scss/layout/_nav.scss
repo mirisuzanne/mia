@@ -1,80 +1,52 @@
 // Nav Layout
 // ==========
 
-[data-area='nav'] {
-  position: relative;
-  margin: size('gutter') 0;
-
-  @include above('page-break') {
-    grid-area: nav;
-    grid-row-end: span 3;
-    margin: 0 0 0 size('grid-margin');
-  }
+[data-nav='site'] {
+  margin: 0;
+  padding: var(--shim);
 }
 
-[data-inner='nav'] {
-  margin-bottom: size('gutter');
-  position: sticky;
-  text-align: center;
-  top: size('shim');
-  z-index: 10;
+.nav-item {
+  display: inline-block;
 
-  @include above('page-break') {
-    align-content: start;
-    display: grid;
-    justify-items: end;
+  & + & {
+    @include before(' | ');
   }
 }
 
 [data-nav] {
-  @include font-family('code');
-  display: inline-block;
-  font-size: size('xsmall');
-  font-style: italic;
-  padding: size('quarter-shim') size('grid-margin');
-  text-align: right;
-
-  &[data-current] {
-    background: #{var-color('callout')};
-  }
-
   &[data-active] {
-    background: #{var-color('action-hover')};
-    color: var-color('background');
-    font-style: normal;
-    justify-self: stretch;
-    text-decoration: none;
-    text-shadow: none;
+    font-style: italic;
   }
 }
 
 // Search
 // ------
 
-[data-form='search'] {
-  --field-padding: #{size('quarter-shim') size('half-shim')};
-  --field-margin: #{size('half-shim')};
-  font-size: size('xsmall');
+// [data-form='search'] {
+//   --field-padding: #{size('quarter-shim') size('half-shim')};
+//   --field-margin: #{size('half-shim')};
+//   font-size: size('xsmall');
 
-  @include above('page-break') {
-    --field-margin: 0;
-    --field-width: 8em;
-    display: flex;
-    margin-bottom: size('quarter-shim');
-    padding-right: size('half-shim');
-  }
-}
+//   @include above('page-break') {
+//     --field-margin: 0;
+//     --field-width: 8em;
+//     display: flex;
+//     margin-bottom: size('quarter-shim');
+//     padding-right: size('half-shim');
+//   }
+// }
 
-.search-results {
-  --t: #{size('guttter')};
-}
+// .search-results {
+//   --t: #{size('guttter')};
+// }
 
-[data-navlist='search'] {
-  display: grid;
+// [data-navlist='search'] {
+//   display: grid;
 
-  [href] {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
+//   [href] {
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+//   }
+// }

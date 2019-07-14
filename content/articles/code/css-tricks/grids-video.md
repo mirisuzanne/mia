@@ -10,7 +10,7 @@ tags:
   - _elsewhere
   - code
   - css tricks
-  - video
+  - screencast
 video:
   caption: |
     Exploring CSS Grids with Geoff Graham

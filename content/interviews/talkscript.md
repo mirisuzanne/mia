@@ -9,7 +9,6 @@ tags:
   - _elsewhere
   - interview
   - code
-  - audio
   - podcast
 summary: |
   On Episode 18,

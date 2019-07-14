@@ -8,40 +8,38 @@
 }
 
 [data-field] {
-  margin-bottom: var(--field-margin, size('shim'));
+  margin-bottom: var(--field-margin, var(--shim));
 }
 
 [data-label] {
-  @include font-family('code');
-  font-size: size('xsmall');
+  font-size: var(--font-small);
   font-style: italic;
 }
 
+[data-input] {
+  --input-bg: var(--accent-bg-md-fade);
+  --input-border: var(--accent-bg-sm-fade);
+  --input-color: var(--prime-fg-lg-fade);
+  background-color: var(--input-bg);
+  border: var(--quarter-shim) solid var(--input-border);
+  color: var(--input-color);
+  font: inherit;
+}
+
 [data-input~='text'] {
-  @include font-family('code');
-  border: 1px solid var-color('border');
-  color: var-color('action');
-  font-size: size('xsmall');
-  padding: var(--field-padding, size('half-shim'));
+  font-size: var(--font-small);
+  padding: var(--field-padding, var(--half-shim));
   width: var(--field-width, 100%);
 
   &:focus {
-    background-color: var-color('overlay');
-    border-color: var-color('action-hover');
+    --input-bg: var(--accent-bg-lg-fade);
+    --input-border: var(--accent);
+    --input-color: var(--prime-fg-lg);
   }
 }
 
 [data-input~='area'] {
-  min-height: size(
-    'gutter',
-    (
-      'times': 4,
-    )
-  );
-}
-
-[data-actions] {
-  text-align: right;
+  min-height: calc(var(--gutter) * 4);
 }
 
 ::placeholder {

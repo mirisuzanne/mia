@@ -7,7 +7,7 @@ tags:
   - code
   - agile
   - design systems
-  - video
+  - recorded
 events:
   - venue: Agile Alliance
     url: https://www.agilealliance.org/agile2019/program/

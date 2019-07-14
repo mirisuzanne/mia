@@ -8,19 +8,19 @@
   page
 ) %}
   {% set title = 'events…' %}
-  {% set org_title = 'orgs…' %}
+  {% set org_title = 'orgs' %}
   {% set events = collections.all | getPage(page) | getEvents %}
 
   {% if events_group == 'all' %}
-    {% set title = 'events…' %}
+    {% set title = 'episodes' %}
     {% set events = collections.all | getEvents %}
   {% elif events_group %}
     {% set tag_name = events_group | displayName %}
     {% set title %}
-      events tagged '{{ tag_name }}'…
+      '{{ tag_name }}' episodes
     {% endset %}
     {% set org_title %}
-      orgs tagged '{{ tag_name }}'…
+      '{{ tag_name }}' orgs
     {% endset %}
     {% set events = collections.all | getEvents(events_group) %}
   {% endif %}

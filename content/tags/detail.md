@@ -1,6 +1,6 @@
 ---
 layout: base
-sub: and nothing else... ([see all tags](/tags/))
+sub: '[see all tags](/tags/)'
 pagination:
   data: collections
   size: 1
@@ -8,6 +8,7 @@ pagination:
 permalink: /tags/{{ tag | slug }}/
 renderData:
   title: 'Just {{ tag }}'
+  banner: 'Just {{ tag }} and Nothing Else'
   calendar: '{{ tag }}'
 eleventyExcludeFromCollections: true
 hide_content: true
