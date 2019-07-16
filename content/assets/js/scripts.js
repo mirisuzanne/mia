@@ -13,8 +13,8 @@ eraseBtn &&
   eraseBtn.addEventListener('click', () => {
     toggleErase();
   });
-const resultsDropdown = document.querySelector('.search-results'),
-  resultsList = document.querySelector('[data-navlist="search"]'),
+const resultsDropdown = document.querySelector('[data-navlist="search"]'),
+  resultsList = resultsDropdown,
   searchInput = document.querySelector('#search-str'),
   searchBtn = document.querySelector('[data-btn~="search"]');
 let searchIdx, searchJson;
@@ -39,13 +39,12 @@ const clearResults = e => {
     for (let e in results) {
       e = results[e];
       const t = searchJson.filter(t => t.url === e.ref)[0],
-        s = document.createElement('a');
-      s.setAttribute('href', t.url),
-        s.setAttribute('data-nav', 'searchs'),
-        (s.textContent = decodeHtml(t.title)),
-        resultsList.appendChild(s);
+        s = document.createElement('li');
+      (s.innerHTML = linkTemplate(t).trim()), resultsList.appendChild(s);
     }
-  };
+  },
+  linkTemplate = e =>
+    `\n  <a href="${e.url}">\n    ${decodeHtml(e.title)}\n  </a>\n`;
 
 searchInput.addEventListener('focus', () => {
   searchJson ||
@@ -65,6 +64,11 @@ searchInput.addEventListener('focus', () => {
                 this.add(e);
               });
           }));
+      })
+      .then(() => {
+        searchBtn
+          .setAttribute('disabled', 'disabled')
+          .setAttribute('tabindex', -1);
       });
 }),
   searchInput.addEventListener('input', () => {
@@ -72,12 +76,15 @@ searchInput.addEventListener('focus', () => {
     e.length > 1
       ? ((e = e.includes('~') ? e : `${e}~1`), find(e))
       : clearResults(!0);
-  }),
-  searchBtn.addEventListener('click', e => {
-    e.preventDefault();
-    const t = searchInput.value;
-    t.length > 2 ? find(t) : clearResults(!0);
   });
+
+const clearAll = e => {
+  'Escape' === e.code &&
+    (clearResults(!0), (searchInput.value = ''), searchInput.focus());
+};
+
+searchInput.addEventListener('keyup', e => clearAll(e)),
+  resultsDropdown.addEventListener('keyup', e => clearAll(e));
 const root = document.querySelector('html'),
   themeMenu = document.querySelector('[data-menu="theme"]'),
   modeToggle = document.querySelector('[data-toggle="color-mode"]'),
@@ -101,17 +108,7 @@ const root = document.querySelector('html'),
 for (let e = 0; e < themeSelect.options.length; e++)
   themeOptions[e] = themeSelect.options[e].value;
 
-const mqMode = () => {
-    let e = null;
-    return (
-      modeOptions.forEach(t => {
-        const o = window.matchMedia(`(prefers-color-scheme: ${t})`);
-        e = o.matches ? t : e;
-      }),
-      e
-    );
-  },
-  setValue = (e, t, o = !0) => {
+const setValue = (e, t, o = !0) => {
     t &&
       (attrs[e]
         ? root.setAttribute(attrs[e], t)
@@ -143,7 +140,7 @@ const mqMode = () => {
   initMode = () => {
     const e = localStorage.getItem('theme');
     e && localStorage.removeItem('theme');
-    const t = localStorage.getItem(store.mode) || e || mqMode();
+    const t = localStorage.getItem(store.mode) || e;
     t && setValue('mode', t, !1);
   },
   initHue = () => {

@@ -1,9 +1,22 @@
 // Themes
 // ======
 
-/* primary hue */
-/* - optionally set `--h-user-prime` in JS */
+// OS defaults and toggles
+html {
+  @media (prefers-color-scheme: dark) {
+    --os-mode: -1;
+    background: #222;
+    color: #ddd;
+  }
+  @media (prefers-color-scheme: light) {
+    --os-mode: 1;
+    background: #222;
+    color: #ddd;
+  }
+}
+
 [data-theme] {
+  // primary and accent hues
   --h-prime: var(--h-user-prime, 330);
   --h-accent: var(--h-user-accent, 195);
 
@@ -57,6 +70,7 @@
 }
 
 [data-mode] {
+  --mode: var(--invert-mode, var(--html-mode, var(--os-mode, 1)));
   --invert: calc(-1 * var(--mode));
 
   /* options for setting different color palettes */
@@ -184,24 +198,28 @@
   --shadow-offset: calc(1px * var(--mode));
 
   /* color props set directly by the theme */
-  background: var(--accent-bg-lg);
-  color: var(--prime-fg-lg);
+  --bg: var(--accent-bg-lg);
+  --callout: var(--accent-bg-md-fade);
+  --color: var(--prime-fg-lg);
+
+  background: var(--bg);
+  color: var(--color);
   text-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--bg-full);
 }
 
 /* light bg / dark fg */
 [data-mode='light'] {
-  --mode: 1;
-  --rev: -1;
+  --html-mode: 1;
+  --invert-mode: initial;
 }
 
 /* dark bg / light fg */
 [data-mode='dark'] {
-  --mode: -1;
-  --rev: 1;
+  --html-mode: -1;
+  --invert-mode: initial;
 }
 
 /* invert fg/bg */
 [data-mode='invert'] {
-  --mode: var(--rev);
+  --invert-mode: calc(var(--html-mode, var(--os-mode, 1)) * -1);
 }

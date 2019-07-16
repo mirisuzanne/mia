@@ -30,16 +30,6 @@ for (let i = 0; i < themeSelect.options.length; i++) {
   themeOptions[i] = themeSelect.options[i].value;
 }
 
-// see if there is media-query preference for mode
-const mqMode = () => {
-  let modePref = null;
-  modeOptions.forEach(mode => {
-    const mq = window.matchMedia(`(prefers-color-scheme: ${mode})`);
-    modePref = mq.matches ? mode : modePref;
-  });
-  return modePref;
-};
-
 // set the theme, and optionally store the result
 const setValue = (type, to, toStore = true) => {
   if (to) {
@@ -94,7 +84,7 @@ const initMode = () => {
     localStorage.removeItem(legacyStore);
   }
 
-  const to = localStorage.getItem(store.mode) || legacy || mqMode();
+  const to = localStorage.getItem(store.mode) || legacy;
   if (to) {
     setValue('mode', to, false);
   }

@@ -75,8 +75,10 @@
   items,
   page
 ) %}
+  {% set at_name %}Miriam <span data-above="medium">Suzanne</span>{% endset %}
   <ul data-nav="site">
     {% for name, url in items %}
+      {% set name = at_name if (name == '@name') else name %}
       <li class="nav-item">{{ nav_link(name, url, page) }}</li>
     {% endfor %}
   </ul>
@@ -124,6 +126,6 @@
   <a
     href="{{ url | url }}"
     {{ utility.show_attrs(attrs) }}>
-    {{ name }}
+    {{ name | safe }}
   </a>
 {% endmacro %}

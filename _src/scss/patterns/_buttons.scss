@@ -7,8 +7,8 @@ button {
   --button-border: var(--prime-bg-md);
   @include font-family('midnight');
   background: var(--button-background);
-  border-radius: var(--half-shim);
-  border: var(--quarter-shim) solid var(--button-border);
+  border-radius: var(--border-radius);
+  border: var(--border) solid var(--button-border);
   color: var(--button-color);
   cursor: pointer;
   font-size: var(--font-small);
@@ -24,6 +24,12 @@ button {
     --button-background: var(--accent-bg-md);
     --button-color: var(--accent-fg-md);
     --button-border: var(--accent-fg-lg);
+  }
+
+  &:disabled {
+    filter: grayscale(100%);
+    cursor: not-allowed;
+    opacity: 0.5;
   }
 }
 

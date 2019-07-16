@@ -7,7 +7,7 @@
   "images": "/assets/images/",
   "icon": "icons/miriam.svg",
   "nav": {
-    "Miriam Suzanne": "/",
+    "@name": "/",
     "contact": "/contact/"
   },
   "og": {

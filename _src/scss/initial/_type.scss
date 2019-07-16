@@ -9,10 +9,8 @@ html {
   --half-shim: calc(var(--shim) / 2);
   --quarter-shim: calc(var(--shim) / 4);
 
-  --link-color: var(--prime-fg-md);
-  --link-underline: var(--prime-fg-sm);
-  --link-hover-color: var(--prime-fg-lg);
-  --link-hover-underline: var(--prime);
+  --border: var(--quarter-shim);
+  --border-radius: var(--quarter-shim);
 
   --font-small: 0.75rem;
 
@@ -40,14 +38,22 @@ html {
 }
 
 a {
+  --link-color-default: var(--prime-fg-md);
+  --link-underline: var(--prime-fg-sm);
+  --link-hover-default: var(--prime-fg-lg);
+  --link-hover-underline: var(--prime);
+
+  --link-apply: var(--link-color, var(--link-color-default));
+  --link-hover-apply: var(--link-hover, var(--link-hover-default));
+
   #{$link} {
-    color: var(--link-color);
+    color: var(--link-apply);
     text-decoration-color: var(--link-underline);
     text-decoration-skip-ink: auto;
   }
 
   #{$focus} {
-    color: var(--link-hover-color, var(--link-color));
+    color: var(--link-hover-apply, var(--link-apply));
     text-decoration-color: var(--link-hover-underline, var(--link-underline));
   }
 
@@ -151,8 +157,8 @@ $rainbow: ();
   }
 }
 
-// // Special
-// // -------
+// Special
+// -------
 
 [data-hidden] {
   @include is-hidden;
@@ -160,4 +166,28 @@ $rainbow: ();
 
 [data-offsite] {
   @include offsite;
+}
+
+// Above/below
+[data-above] {
+  --show: none;
+  display: var(--show);
+}
+
+[data-above='small'] {
+  @include above(30em) {
+    --show: initial;
+  }
+}
+
+[data-above='medium'] {
+  @include above(45em) {
+    --show: initial;
+  }
+}
+
+[data-above='large'] {
+  @include above(60em) {
+    --show: initial;
+  }
 }

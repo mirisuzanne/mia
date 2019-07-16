@@ -1,5 +1,5 @@
-const resultsDropdown = document.querySelector('.search-results');
-const resultsList = document.querySelector('[data-navlist="search"]');
+const resultsDropdown = document.querySelector('[data-navlist="search"]');
+const resultsList = resultsDropdown;
 const searchInput = document.querySelector('#search-str');
 const searchBtn = document.querySelector('[data-btn~="search"]');
 let searchIdx, searchJson;
@@ -36,13 +36,17 @@ const find = str => {
     const post = searchJson.filter(page => {
       return page.url === item.ref;
     })[0];
-    const link = document.createElement('a');
-    link.setAttribute('href', post.url);
-    link.setAttribute('data-nav', 'searchs');
-    link.textContent = decodeHtml(post.title);
-    resultsList.appendChild(link);
+    const li = document.createElement('li');
+    li.innerHTML = linkTemplate(post).trim();
+    resultsList.appendChild(li);
   }
 };
+
+const linkTemplate = post => `
+  <a href="${post.url}">
+    ${decodeHtml(post.title)}
+  </a>
+`;
 
 // add an event listener for a click on the search link
 searchInput.addEventListener('focus', () => {
@@ -65,6 +69,11 @@ searchInput.addEventListener('focus', () => {
             this.add(doc);
           });
         });
+      })
+      .then(() => {
+        searchBtn
+          .setAttribute('disabled', 'disabled')
+          .setAttribute('tabindex', -1);
       });
   }
 });
@@ -80,12 +89,14 @@ searchInput.addEventListener('input', () => {
   }
 });
 
-searchBtn.addEventListener('click', event => {
-  event.preventDefault();
-  const str = searchInput.value;
-  if (str.length > 2) {
-    find(str);
-  } else {
+// listen for escape key in search areas
+const clearAll = event => {
+  if (event.code === 'Escape') {
     clearResults(true);
+    searchInput.value = '';
+    searchInput.focus();
   }
-});
+};
+
+searchInput.addEventListener('keyup', e => clearAll(e));
+resultsDropdown.addEventListener('keyup', e => clearAll(e));

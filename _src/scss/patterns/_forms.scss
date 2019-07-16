@@ -27,6 +27,7 @@
 }
 
 [data-input~='text'] {
+  border-radius: var(--border-radius);
   font-size: var(--font-small);
   padding: var(--field-padding, var(--half-shim));
   width: var(--field-width, 100%);
