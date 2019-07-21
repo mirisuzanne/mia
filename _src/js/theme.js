@@ -2,18 +2,28 @@
 const root = document.querySelector('html');
 const themeMenu = document.querySelector('[data-menu="theme"]');
 const modeToggle = document.querySelector('[data-toggle="color-mode"]');
-const hueSelect = document.querySelector('#hue-select');
-const themeSelect = document.querySelector('#theme-select');
+
+// elements
+const selectElements = {
+  theme: document.querySelector('#theme-select'),
+  hue: document.querySelector('#hue-select'),
+  sat: document.querySelector('#sat-select'),
+  light: document.querySelector('#light-select'),
+  contrast: document.querySelector('#contrast-select'),
+};
 
 // attributes
 const attrs = {
   theme: 'data-theme',
-  mode: 'data-mode',
 };
 
 // properties
 const props = {
-  hue: '--h-user-prime',
+  hue: '--h-user',
+  sat: '--s-user',
+  light: '--l-user',
+  contrast: '--user-contrast',
+  mode: '--user-mode',
 };
 
 // local storage
@@ -21,16 +31,18 @@ const store = {
   theme: 'colorTheme',
   mode: 'colorMode',
   hue: 'colorHue',
+  sat: 'colorSat',
+  light: 'colorLight',
+  contrast: 'colorContrast',
 };
 
-// valid themes and modes
-const modeOptions = ['dark', 'light'];
+// valid themes
 const themeOptions = [];
-for (let i = 0; i < themeSelect.options.length; i++) {
-  themeOptions[i] = themeSelect.options[i].value;
+for (let i = 0; i < selectElements.theme.options.length; i++) {
+  themeOptions[i] = selectElements.theme.options[i].value;
 }
 
-// set the theme, and optionally store the result
+// set a value
 const setValue = (type, to, toStore = true) => {
   if (to) {
     if (attrs[type]) {
@@ -45,20 +57,17 @@ const setValue = (type, to, toStore = true) => {
   }
 };
 
-// change the theme & mode
-const changeTheme = () => {
-  setValue('theme', themeSelect.value);
+// toggle mode
+const getMode = () => {
+  return Number(
+    getComputedStyle(root)
+      .getPropertyValue('--mode')
+      .trim(),
+  );
 };
 
 const changeMode = () => {
-  const is = root.getAttribute(attrs.mode);
-  const is0 = modeOptions.indexOf(is);
-  const to = modeOptions[(is0 + 1) % modeOptions.length];
-  setValue('mode', to);
-};
-
-const changeHue = () => {
-  setValue('hue', hueSelect.value);
+  setValue('mode', getMode() * -1, true);
 };
 
 // initialize everything
@@ -66,45 +75,29 @@ const initMenu = () => {
   themeMenu.removeAttribute('hidden');
 };
 
-const initTheme = () => {
-  const to = localStorage.getItem(store.theme) || themeSelect.value;
+const initValue = type => {
+  const to = localStorage.getItem(store[type]) || selectElements[type].value;
   if (to) {
-    setValue('theme', to, false);
-    toIndex = themeOptions.indexOf(to);
-    if (toIndex) {
-      themeSelect.selectedIndex = toIndex;
-    }
+    setValue(type, to, false);
+    selectElements[type].value = to;
   }
 };
 
 const initMode = () => {
-  const legacyStore = 'theme';
-  const legacy = localStorage.getItem(legacyStore);
-  if (legacy) {
-    localStorage.removeItem(legacyStore);
-  }
-
-  const to = localStorage.getItem(store.mode) || legacy;
+  const to = localStorage.getItem(store.mode);
   if (to) {
     setValue('mode', to, false);
   }
 };
 
-const initHue = () => {
-  const to = localStorage.getItem(store.hue) || hueSelect.value;
-  if (to) {
-    setValue('hue', to, false);
-    hueSelect.value = to;
-  }
-};
-
-// on-load
+// init & events
 document.onload = initMenu();
-document.onload = initTheme();
 document.onload = initMode();
-document.onload = initHue();
-
-// events
 modeToggle.addEventListener('click', () => changeMode());
-hueSelect.addEventListener('input', () => changeHue());
-themeSelect.addEventListener('input', () => changeTheme());
+
+Object.keys(selectElements).forEach(type => {
+  document.onload = initValue(type);
+  selectElements[type].addEventListener('input', () =>
+    setValue(type, selectElements[type].value),
+  );
+});

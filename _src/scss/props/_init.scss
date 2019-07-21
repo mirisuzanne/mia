@@ -1,0 +1,15 @@
+html {
+  --os-mode: 1;
+
+  @media (prefers-color-scheme: dark) {
+    --os-mode: -1;
+    background: #222;
+    color: #ddd;
+  }
+
+  @media (prefers-color-scheme: light) {
+    --os-mode: 1;
+    background: #222;
+    color: #ddd;
+  }
+}

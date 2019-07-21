@@ -2,9 +2,9 @@
 // =======
 
 button {
-  --button-background: var(--prime-fg-sm);
-  --button-color: var(--prime-bg-lg);
-  --button-border: var(--prime-bg-md);
+  --button-background: var(--prime-fg1);
+  --button-color: var(--prime-bg3);
+  --button-border: var(--prime-bg2);
   @include font-family('midnight');
   background: var(--button-background);
   border-radius: var(--border-radius);
@@ -16,14 +16,14 @@ button {
 
   &:hover,
   &:focus {
-    --button-background: var(--prime-fg-md);
+    --button-background: var(--prime-fg2);
     --button-border: var(--accent);
   }
 
   &:active {
-    --button-background: var(--accent-bg-md);
-    --button-color: var(--accent-fg-md);
-    --button-border: var(--accent-fg-lg);
+    --button-background: var(--accent-bg2);
+    --button-color: var(--accent-fg2);
+    --button-border: var(--accent-fg3);
   }
 
   &:disabled {

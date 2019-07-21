@@ -15,19 +15,15 @@
     "type": "website",
     "img": "headshots/mia-smirk.jpg"
   },
-  "themes": {
-    "preset": {
-      "mia-pink": "default pink",
-      "mia-blue": "default blue",
-      "black": "black & white"
-    },
-    "custom": {
-      "complement": "complement",
-      "adjacent": "adjacent",
-      "triad": "triad",
-      "monochrome": "monochrome"
-    }
-  },
+  "themes": [
+    "default-pink",
+    "default-blue",
+    "complement",
+    "adjacent",
+    "triad",
+    "monochrome",
+    "black"
+  ],
   "feed": "feed.xml",
   "styles": ["screen.css"]
 }

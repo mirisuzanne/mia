@@ -1,0 +1,14 @@
+[data-colors] {
+  // flip the shadow based on the mode
+  --shadow-offset: calc(1px * var(--mode));
+  --text-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--bg-full);
+
+  // color props set directly by the theme
+  --bg: var(--accent-bg3);
+  --callout: var(--accent-bg2-fade);
+  --color: var(--prime-fg3);
+
+  background: var(--bg);
+  color: var(--color);
+  text-shadow: var(--text-shadow);
+}

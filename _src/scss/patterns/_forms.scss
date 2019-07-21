@@ -17,9 +17,9 @@
 }
 
 [data-input] {
-  --input-bg: var(--accent-bg-md-fade);
-  --input-border: var(--accent-bg-sm-fade);
-  --input-color: var(--prime-fg-lg-fade);
+  --input-bg: var(--accent-bg2-fade);
+  --input-border: var(--accent-bg1-fade);
+  --input-color: var(--prime-fg3-fade);
   background-color: var(--input-bg);
   border: var(--quarter-shim) solid var(--input-border);
   color: var(--input-color);
@@ -33,9 +33,9 @@
   width: var(--field-width, 100%);
 
   &:focus {
-    --input-bg: var(--accent-bg-lg-fade);
+    --input-bg: var(--accent-bg3-fade);
     --input-border: var(--accent);
-    --input-color: var(--prime-fg-lg);
+    --input-color: var(--prime-fg3);
   }
 }
 
