@@ -2,21 +2,33 @@
 // ====
 
 [data-orgs='section'] {
-  grid-row-gap: size('gutter');
-  margin-bottom: size('spacer');
+  grid-row-gap: var(--gutter);
+  margin-bottom: var(--spacer);
+}
+
+[data-orgs='list'] {
+  display: grid;
+  grid-template: 'date title' auto 'sub sub' auto / auto 1fr;
+  grid-gap: var(--gutter);
+  padding: 0 var(--gutter);
+
+  @include above('page-break') {
+    grid-template: 'date title' auto '. sub' auto / 1fr 1fr;
+  }
 }
 
 [data-orgs='item'] {
   align-items: baseline;
-  grid-column-gap: size('shim');
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template: inherit;
+  grid-template: subgrid;
+  grid-column-gap: var(--shim);
 }
 
 [data-meta] {
-  @include color--('action', 'text-light');
-  @include color--('action-underline', 'border');
-  @include font-family('code');
-  color: var-color('text-light');
-  font-size: size('xsmall');
+  font-size: var(--font-small);
+  color: var(--text-light);
 
   a {
     font-style: italic;
@@ -25,14 +37,15 @@
 
 [data-meta='orgs'] {
   text-align: right;
-  grid-row-end: span 2;
+  grid-area: date;
 }
 
-[data-title='orgs'],
-[data-meta='org-sub'] {
-  grid-column-end: span 3;
+[data-title='orgs'] {
+  grid-area: title;
+  margin: 0;
 }
 
 [data-meta='org-sub'] {
   font-style: italic;
+  grid-area: sub;
 }

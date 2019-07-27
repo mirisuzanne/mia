@@ -53,34 +53,33 @@
 
     {% if orgs | length %}
       <section
-        data-orgs="section"
-        data-area="main-left"
-        data-flow="grid">
+        data-orgs="section">
+
         {{ utility.section_title(
-          title=title,
-          area='type'
+          title=title
         ) }}
-        {% for item in orgs %}
-          {% set title = item.data.banner or item.data.renderData.title or item.data.title %}
-          <article
-            data-orgs="item"
-            data-area="main"
-            data-flow="grid">
-            <time
-              data-meta="orgs"
-              datetime="{{ item.data.start | getDate('iso') }}">
-              {{ item.data.start | getDate('yyyy') }}->
-            </time>
-            <h3 data-title="orgs">
-              {{ utility.link_if(title, item.url) }}
-            </h3>
-            {% if item.data.sub %}
-              <p data-meta="org-sub">
-                {{ item.data.sub | mdInline | safe }}
-              </p>
-            {% endif %}
-          </article>
-        {% endfor %}
+
+        <div data-orgs="list">
+          {% for item in orgs %}
+            {% set title = item.data.banner or item.data.renderData.title or item.data.title %}
+            <article
+              data-orgs="item">
+              <time
+                data-meta="orgs"
+                datetime="{{ item.data.start | getDate('iso') }}">
+                {{ item.data.start | getDate('yyyy') }}->
+              </time>
+              <h3 data-title="orgs">
+                {{ utility.link_if(title, item.url) }}
+              </h3>
+              {% if item.data.sub %}
+                <p data-meta="org-sub">
+                  {{ item.data.sub | mdInline | safe }}
+                </p>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
       </section>
     {% endif %}
   {% endif %}
@@ -206,9 +205,15 @@
     | {{ venue_adr }}
   {% endif %}
 
-  {% if tags %}
+  {# {% if tags %}
     {% if venue_adr %}»{% else %}|{% endif %}
     {{ utility.tag_list(tags | sort, all) }}
+  {% endif %} #}
+
+  {% set summary = item.page.data.sub if item.event else (item.page.data.summary or item.page.data.sub) %}
+
+  {% if summary %}
+    {{ summary | md | safe }}
   {% endif %}
 {% endmacro %}
 

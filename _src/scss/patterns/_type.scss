@@ -2,23 +2,27 @@
 // =======
 
 .intro {
-  font-size: size('intro');
+  font-size: var(--font-large);
   font-style: italic;
+
+  em,
+  i {
+    font-style: normal;
+  }
 }
 
 [data-typeset] {
-  margin: size('gutter') 0;
+  margin: var(--gutter) 0;
 
   h2,
   h3,
   h4 {
-    @include font-family('code');
     color: var-color('text-highlight');
     margin: size('double-gutter') 0 size('shim');
   }
 
   h2 {
-    font-size: size('h2');
+    font-size: var(--font-large);
   }
 
   h3 {
@@ -29,17 +33,16 @@
   ul,
   ol,
   pre {
-    margin-bottom: size('gutter');
+    margin-bottom: var(--gutter);
   }
 
   li {
-    margin-bottom: size('half-shim');
+    margin-bottom: var(--half-shim);
   }
 
   blockquote {
-    @include font-family('code');
     font-style: italic;
-    margin: 0 0 size('gutter') size('gutter');
+    margin: 0 0 var(--gutter) var(--gutter);
 
     em,
     i {
@@ -51,7 +54,7 @@
     }
 
     cite {
-      font-size: size('small');
+      font-size: var(--font-small);
       font-style: normal;
     }
   }
@@ -69,14 +72,31 @@ hr {
 }
 
 mark {
-  background: var-color('callout');
-  color: var-color('text');
+  background: var(--callout);
+  color: var(--text);
+}
+
+.section-header {
+  align-items: center;
+  display: grid;
+  grid: 'border title' auto / 1fr 1fr;
+  margin: var(--spacer) 0;
+
+  @include before('') {
+    background: var(--border);
+    height: var(--shim);
+    margin-top: var(--half-shim);
+  }
+}
+
+.section-title {
+  color: var(--border);
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0;
+  padding: 0 var(--gutter) 0 var(--shim);
 }
 
 [data-bright] {
-  color: var-color('text-highlight');
-
-  @include fancy-text {
-    background: pattern('bright');
-  }
+  @include fancy-text;
 }

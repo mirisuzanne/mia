@@ -42,17 +42,15 @@ gallery:
   - img: /art/theater/jane/BerthaDestruct_2_BrandyHiggensCohen.jpg
   - img: /art/theater/jane/DSC_0015.jpg
   - img: /art/theater/jane/DSC_0033.jpg
+summary: |
+  We are not here to flatter egotism,
+  or prop up humbug;
+  we are merely telling the [queer] story.
+  We value what is good in the book;
+  but we believe in the existence of other,
+  and more vivid kinds of goodness.
 ---
 {% import "content.macros.njk" as content %}
-
-## Songs and stories from the classic novel
-
-> We are not here to flatter egotism,
-> or prop up humbug;
-> we are merely telling the [queer] story.
-> We value what is good in the book;
-> but we believe in the existence of other,
-> and more vivid kinds of goodness.
 
 [Read the script »](script/)
 

@@ -1,13 +1,25 @@
 <menu
   type="toolbar"
   data-menu="theme"
+  role="complementary"
   hidden>
   <details>
     <summary class="menu-item">colors</summary>
     <div data-dropdown="pad">
       <div class="color-btns">
-        <button data-toggle="colors" data-btn="small">invert</button>
-        <button data-unset="colors" data-btn="small" hidden>reset</button>
+        <button
+          data-toggle="colors"
+          data-btn="small"
+          type="button">
+          invert
+        </button>
+        <button
+          data-unset="colors"
+          data-btn="small"
+          type="button"
+          hidden>
+          reset
+        </button>
       </div>
 
       <label data-field for="theme-select">

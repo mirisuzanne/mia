@@ -2,6 +2,5 @@
 // =========
 
 .footnotes {
-  @include font-family('code');
-  font-size: size('small');
+  font-size: var(--font-small);
 }

@@ -1,5 +1,6 @@
 html {
   --gutter: 0.5rem;
+  --gutter-plus: calc(var(--gutter) * 1.5);
   --double-gutter: calc(var(--gutter) * 2);
   --shim: calc(var(--gutter) / 2);
   --half-shim: calc(var(--shim) / 2);
@@ -10,6 +11,7 @@ html {
   --border-width: var(--quarter-shim);
   --border-radius: var(--half-shim);
 
+  --font-large: calc(1rem + 0.5vw);
   --font-small: 0.75rem;
   --font-smaller: 0.75em;
 

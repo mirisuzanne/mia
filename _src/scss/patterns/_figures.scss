@@ -2,8 +2,8 @@
 // =======
 
 img {
-  @include transition('img-filter');
   filter: brightness(var(--img-bright, 100%));
+  transition: filter time('relaxed') ease('_in-out');
 
   &:hover {
     --img-bright: 100%;
@@ -27,14 +27,14 @@ img {
 }
 
 [data-pattern='figure'] {
-  background: var-color('callout');
-  margin: size('gutter') negative('gutter');
-  padding: size('shim') size('gutter');
+  background: var(--callout);
+  margin: var(--gutter) calc(var(--gutter) * -1);
+  padding: var(--shim) var(--gutter);
 }
 
 [data-figure='content'] {
   display: grid;
-  grid-gap: size('shim');
+  grid-gap: var(--shim);
   grid-template-columns: [full-start] repeat(auto-fit, minmax(40%, 1fr)) [full-end];
 
   img,
@@ -49,9 +49,8 @@ img {
 }
 
 [data-figure='caption'] {
-  @include font-family('code');
-  font-size: size('xsmall');
-  margin-top: size('half-shim');
+  font-size: var(--font-small);
+  margin-top: var(--half-shim);
 }
 
 [data-place] {

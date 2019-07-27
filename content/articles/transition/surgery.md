@@ -15,16 +15,18 @@ summary: |
   Denver Health called me this week
   to give me a date: **September 10**,
   less than two months away.
-
-  I'm excited, and terrified,
-  and I might start crying.
-  It's hard to unpack all my feelings,
-  so I try to focus on the details:
-  what needs to happen
-  so this goes smoothly.
-  Let's do this!
 ---
 {% import "content.macros.njk" as content %}
+
+I'm excited, and terrified,
+and I might start crying.
+It's hard to unpack all my feelings,
+so I try to focus on the details:
+what needs to happen
+so this goes smoothly.
+Let's do this!
+
+------
 
 ## Grandma, I was wrong
 

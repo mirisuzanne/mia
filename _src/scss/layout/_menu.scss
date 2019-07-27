@@ -1,5 +1,6 @@
 [data-menu] {
   background: var(--bg-full);
+  display: flex;
   font-size: var(--font-small);
   grid-area: menu;
   padding: var(--shim);
@@ -8,16 +9,6 @@
   input,
   select {
     width: 100%;
-  }
-}
-
-.menu-item {
-  opacity: 0.5;
-  width: max-content;
-
-  #{$focus},
-  [open] & {
-    opacity: 1;
   }
 }
 

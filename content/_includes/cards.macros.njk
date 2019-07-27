@@ -6,13 +6,10 @@
 ) %}
   {% set content = content if (content != none) else caller() %}
 
-  <section
-    data-area="main-left"
-    data-flow="grid">
+  <section data-section="cards">
     {{ utility.section_title(title) }}
 
     <div
-      data-area="main-left"
       data-layout="card-groups">
       {{ content }}
     </div>

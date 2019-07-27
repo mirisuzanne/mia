@@ -29,18 +29,7 @@
     @include font-family('midnight');
   }
 
-  @supports (background-clip: text) {
-    --link-color: transparent;
-    background: linear-gradient(
-      to bottom right,
-      var(--prime-fg1),
-      var(--accent-fg1)
-    );
-    background-clip: text;
-    box-decoration-break: clone;
-    color: transparent;
-    text-shadow: none;
-  }
+  @include fancy-text;
 }
 
 .subtitle {

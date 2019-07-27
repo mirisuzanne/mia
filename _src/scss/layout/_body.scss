@@ -9,7 +9,13 @@
   overflow: hidden;
 }
 
-main {
-  margin: var(--spacer) var(--gutter);
-  max-width: 35rem;
+[data-main] {
+  display: grid;
+  grid-template-columns:
+    minmax(var(--gutter), 2fr) [main-start] minmax(min-content, size('page'))
+    [main-end] minmax(var(--gutter), 1fr);
+
+  > * {
+    grid-column: main;
+  }
 }

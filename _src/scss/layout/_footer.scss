@@ -23,7 +23,7 @@
     powderblue 80%
   );
   min-height: 90vh;
-  opacity: 0.5;
+  filter: brightness(var(--img-bright, 100%));
 
   @include above('page-break') {
     --angle: 95deg;

@@ -5,31 +5,31 @@ $code-selector-inline: ':not(pre) > code[class*="language-"]';
 
 // generic stuff
 $code-font-family: font-family('code');
-$code-font-size: size('code');
+$code-font-size: var(--font-small);
 $code-line-height: inherit;
 
 $code-tab-size: 2;
 $code-hyphens: none;
 
-$code-block-padding: size('shim');
-$code-inline-padding: 0 size('quarter-shim');
-$code-border-radius: size('quarter-shim');
+$code-block-padding: var(--shim);
+$code-inline-padding: 0 var(--quarter-shim);
+$code-border-radius: var(--quarter-shim);
 
 $code-border: none;
-$code-background: var-color('callout');
-$code-color: var-color('text');
-$code-color-fade: var-color('text-light');
-$code-text-shadow: 0 1px 0 var-color('shadow');
+$code-background: var(--callout);
+$code-color: var(--text);
+$code-color-fade: var(--text-light);
+$code-text-shadow: var(--text-shadow);
 $code-box-shadow: none;
 
 // prism tokens
 //
 $code-color-comment: $code-color-fade;
-$code-color-keyword: var-color('feature');
-$code-color-value: var-color('text-highlight');
-$code-color-string: var-color('text-highlight');
-$code-color-name: var-color('text-highlight');
-$code-color-number: var-color('text-highlight');
-$code-color-variable: var-color('feature');
-$code-color-selector: var-color('feature');
+$code-color-keyword: var(--accent-fg2);
+$code-color-value: var(--text-highlight);
+$code-color-string: var(--text-highlight);
+$code-color-name: var(--text-highlight);
+$code-color-number: var(--text-highlight);
+$code-color-variable: var(--accent-fg2);
+$code-color-selector: var(--accent-fg2);
 $code-color-punctuation: $code-color-fade;

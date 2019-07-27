@@ -36,26 +36,24 @@ $code-font: (
 @include add-font('code', $code-font);
 @include herman-add('font', 'code', $code-font);
 
-// TwoAM Font
-// ----------
-/// A readable monospace font for code previews
-/// @group config-fonts
-/// @font two-am
-$two-am-font: (
-  name: 'Blackout TwoAM',
-  normal: (
-    woff2: 'blackout/blackout_two_am-webfont',
-    woff: 'blackout/blackout_two_am-webfont',
-  ),
-  stack: font-family('code'),
-);
+// // TwoAM Font
+// // ----------
+// /// @group config-fonts
+// /// @font two-am
+// $two-am-font: (
+//   name: 'Blackout TwoAM',
+//   normal: (
+//     woff2: 'blackout/blackout_two_am-webfont',
+//     woff: 'blackout/blackout_two_am-webfont',
+//   ),
+//   stack: font-family('code'),
+// );
 
-@include add-font('two-am', $two-am-font);
-@include herman-add('font', 'two-am', $two-am-font);
+// @include add-font('two-am', $two-am-font);
+// @include herman-add('font', 'two-am', $two-am-font);
 
 // Midnight Font
 // -------------
-/// A readable monospace font for code previews
 /// @group config-fonts
 /// @font midnight
 $midnight-font: (
@@ -72,7 +70,6 @@ $midnight-font: (
 
 // Sunrise Font
 // ------------
-/// A readable monospace font for code previews
 /// @group config-fonts
 /// @font sunrise
 $sunrise-font: (

@@ -12,10 +12,18 @@
   --box-shadow-invert: var(--box-shadow-off-invert) var(--box-shadow-off-invert)
     0 var(--fg-full);
 
+  --feature-gradient: linear-gradient(
+    to bottom right,
+    var(--prime-fg1),
+    var(--accent-fg1)
+  );
+
   // color props set directly by the theme
   --bg: var(--accent-bg4);
   --callout: var(--accent-bg3);
   --text: var(--gray-fg3);
+  --text-light: var(--gray-fg2);
+  --text-highlight: var(--accent-fg3);
   --border: var(--gray);
 
   --action: var(--prime-fg2);

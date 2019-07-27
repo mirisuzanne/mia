@@ -23,7 +23,6 @@
 }
 
 .hero-caption {
-  @include font-family('code');
   background: var-color('overlay');
   font-size: size('xsmall');
   font-style: italic;

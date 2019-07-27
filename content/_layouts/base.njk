@@ -24,9 +24,6 @@
 		<link rel="canonical"
 			href="{{ canon | url }}">
 
-		<script src="https://use.typekit.net/slx1xnq.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-
 		{% for url in site.styles %}
 			<link rel="stylesheet"
 				href="/assets/css/{{ url }}" />
@@ -50,24 +47,43 @@
 		  {% include 'site/fancy.njk' %}
 		</div>
 
-		{% include 'site/hero.njk' %}
+		<main data-layout="main">
+			{% include 'site/hero.njk' %}
 
-    {% if (content or summary) and not hide_content %}
-			{% set elsewhere = {
-				'venue': venue,
-				'url': url
-			} if elsewhere else none %}
-      {{ show.main(
-				content=content,
-				intro=summary,
-				section=section,
-				erasure=erasure,
-				elsewhere=elsewhere
-			) }}
-    {% endif %}
+			{% if (content or summary) %}
+				{% set elsewhere = {
+					'venue': venue,
+					'url': url
+				} if elsewhere else none %}
 
-		{% include 'site/series.njk' %}
-		{% include 'site/calendar.njk' %}
+				<div
+					data-main
+					{{ utility.attr_if('data-section', section.name or 'content') }}
+					{{ utility.attr_if('data-erase', 'off' if erasure else none) }}
+					data-typeset>
+
+					{% if summary %}
+						<div class='intro'>{{ summary | md | safe }}</div>
+					{% endif %}
+
+					{{ content | typogr | safe }}
+
+					{% if elsewhere %}
+						<p class="elsewhere">
+							Source:
+							<a rel="bookmark"
+								href="{{ elsewhere.url }}">
+								<em>{{ elsewhere.venue }}</em>
+							</a>
+						</p>
+					{% endif %}
+				</div>
+			{% endif %}
+
+			{% include 'site/series.njk' %}
+			{% include 'site/calendar.njk' %}
+		</main>
+
 		{% include 'site/footer.njk' %}
 
 		<script type="text/javascript" src="https://unpkg.com/lunr/lunr.js"></script>

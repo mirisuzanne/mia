@@ -11,7 +11,6 @@ renderData:
   banner: 'Just {{ tag }} and Nothing Else'
   calendar: '{{ tag }}'
 eleventyExcludeFromCollections: true
-hide_content: true
 ---
 
 <!-- This is required, and I don't know why -->

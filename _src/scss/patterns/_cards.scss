@@ -2,16 +2,17 @@
 // =====
 
 [data-layout='card-groups'] {
-  margin: size('gutter') 0;
+  margin: var(--gutter) 0;
 }
 
 [data-layout='cards'] {
   align-items: start;
   display: grid;
-  font-size: size('small');
-  grid-gap: size('gutter-plus');
-  grid-template-columns: repeat(auto-fill, minmax(size('calendar'), 1fr));
-  margin: 0 size('gutter');
+  font-size: var(--font-small);
+  grid-gap: var(--spacer);
+  grid-template-columns: repeat(auto-fill, minmax(20em, 25em));
+  justify-content: space-evenly;
+  margin: 0 var(--double-gutter);
 }
 
 // Groups
@@ -20,23 +21,21 @@
 [data-card-group] {
   display: grid;
   grid-template: 'grouper list' auto / auto minmax(0, 1fr);
-  margin-bottom: size('spacer');
+  margin-bottom: calc(var(--spacer) * 2);
 }
 
 [data-cards='grouper'] {
-  @include font-family('code');
-  background: var-color('contrast')
-    linear-gradient(to top, var-color('action-hover'), transparent 80%);
-  color: var-color('background');
-  font-size: size('xsmall');
+  @include font-family('midnight');
+  font-size: var(--font-xsmall);
   grid-area: grouper;
-  padding: size('shim') 0;
-  text-shadow: none;
+  margin: 0;
+  padding: var(--shim) var(--half-shim);
   writing-mode: vertical-rl;
 
   span {
+    @include fancy-text;
     position: sticky;
-    top: size('shim');
+    top: var(--shim);
   }
 }
 
@@ -52,17 +51,17 @@
   }
 
   &[data-feature] {
-    background: pattern('feature');
-    margin: negative('half-shim');
-    padding: size('quarter-shim');
+    background: var(--feature-gradient);
+    margin: calc(var(--half-shim) * -1);
+    padding: var(--quarter-shim);
   }
 }
 
 [data-card='inner'] {
   [data-feature] & {
-    background: var-color('background');
-    border: 1px solid var-color('action');
-    padding: size('shim');
+    background: var(--bg);
+    border: 1px solid var(--action);
+    padding: var(--shim);
     transform: rotate(var(--feature, -0.006turn));
   }
 }
@@ -71,5 +70,6 @@
 // -------
 
 [data-card='title'] {
-  font-style: italic;
+  line-height: var(--rhythm);
+  margin: 0;
 }
