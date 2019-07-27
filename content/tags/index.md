@@ -1,6 +1,6 @@
 ---
 layout: base
-title: All the Tags and Nothing Else
+title: Browse Everything by Tags
 show_tags: true
 eleventyExcludeFromCollections: true
 ---

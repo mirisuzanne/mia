@@ -27,6 +27,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('typeCheck', utils.typeCheck);
   eleventyConfig.addFilter('objectKeys', utils.objectKeys);
   eleventyConfig.addFilter('jsonString', utils.jsonString);
+  eleventyConfig.addFilter('only', utils.only);
 
   eleventyConfig.addFilter('getDate', time.getDate);
   eleventyConfig.addFilter('rssDate', time.rssDate);

@@ -39,6 +39,10 @@ const jsonString = item => {
   return JSON.stringify(item);
 };
 
+const only = (list, start, end) => {
+  return list.slice(start, end);
+};
+
 module.exports = {
   groupBy,
   typeCheck,
@@ -46,4 +50,5 @@ module.exports = {
   slugify,
   unique,
   jsonString,
+  only,
 };
