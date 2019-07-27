@@ -3,6 +3,7 @@
   display: grid;
   justify-items: center;
   grid-area: 1 / 1 / -1 / -1;
+  min-height: 90vh;
   padding-bottom: var(--gutter);
   position: relative;
   z-index: -1;

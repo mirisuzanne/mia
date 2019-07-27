@@ -2,7 +2,7 @@
   --given-mode: var(--user-mode, var(--html-mode, var(--os-mode, 1)));
   --mode: var(--given-mode, 1);
   --invert: calc(-1 * var(--mode));
-  --img-bright: calc(100% + 25% * var(--mode));
+  --img-bright: calc(85% + 15% * var(--mode));
 }
 
 [data-colors='invert'] {

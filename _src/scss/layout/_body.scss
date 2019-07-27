@@ -1,12 +1,9 @@
 // Body Layout
 // ===========
 
-[data-layout='head'] {
+[data-layout='body'] {
   display: grid;
   grid-template: 'menu' auto 'nav' auto 'banner' 1fr / 100vw;
-  grid-gap: var(--gutter);
-  min-height: 90vh;
-  overflow: hidden;
 }
 
 [data-main] {

@@ -21,7 +21,8 @@
 [data-card-group] {
   display: grid;
   grid-template: 'grouper list' auto / auto minmax(0, 1fr);
-  margin-bottom: calc(var(--spacer) * 2);
+  margin: var(--spacer) 0;
+  padding: var(--spacer) 0;
 }
 
 [data-cards='grouper'] {
@@ -29,13 +30,13 @@
   font-size: var(--font-xsmall);
   grid-area: grouper;
   margin: 0;
-  padding: var(--shim) var(--half-shim);
+  padding: 0 var(--half-shim);
   writing-mode: vertical-rl;
 
   span {
     @include fancy-text;
     position: sticky;
-    top: var(--shim);
+    top: var(--spacer);
   }
 }
 

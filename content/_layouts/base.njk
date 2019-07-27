@@ -40,12 +40,10 @@
 
 	<body
 		data-layout="body">
-		<div data-layout="head">
-			{% include 'site/menu.njk' %}
-			{% include 'site/nav.njk' %}
-			{% include 'site/banner.njk' %}
-		  {% include 'site/fancy.njk' %}
-		</div>
+		{% include 'site/menu.njk' %}
+		{% include 'site/nav.njk' %}
+		{% include 'site/banner.njk' %}
+		{% include 'site/fancy.njk' %}
 
 		<main data-layout="main">
 			{% include 'site/hero.njk' %}

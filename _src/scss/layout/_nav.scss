@@ -3,13 +3,17 @@
 
 [data-area='nav'] {
   align-items: center;
+  background: var(--overlay);
+  backdrop-filter: blur(var(--shim));
   display: grid;
   font-size: var(--font-small);
   grid: 'nav search' auto / minmax(max-content, 1fr) minmax(3em, 16em);
   grid-area: nav;
   grid-column-gap: var(--gutter);
-  margin-bottom: var(--shim);
-  padding: 0 var(--gutter);
+  padding: var(--shim) var(--gutter);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 // Site Nav
