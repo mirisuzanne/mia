@@ -32,17 +32,24 @@
 				href="/assets/css/{{ url }}" />
 		{% endfor %}
 
+		{% for url in extra_styles %}
+			<link rel="stylesheet"
+				href="/assets/css/{{ url }}" />
+		{% endfor %}
+
     {% include 'site/og.njk' %}
     {% include 'site/feed.njk' %}
 	</head>
 
 	<body
-		data-layout="body"
-		data-area="full"
-		data-flow="grid">
-		{% include 'site/nav.njk' %}
-		{% include 'site/menu.njk' %}
-		{% include 'site/banner.njk' %}
+		data-layout="body">
+		<div data-layout="head">
+			{% include 'site/menu.njk' %}
+			{% include 'site/nav.njk' %}
+			{% include 'site/banner.njk' %}
+		  {% include 'site/fancy.njk' %}
+		</div>
+
 		{% include 'site/hero.njk' %}
 
     {% if (content or summary) and not hide_content %}

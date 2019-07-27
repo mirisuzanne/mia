@@ -17,9 +17,9 @@
 }
 
 [data-input] {
-  --input-bg: var(--accent-bg2-fade);
-  --input-border: var(--accent-bg1-fade);
-  --input-color: var(--prime-fg3-fade);
+  --input-bg: var(--bg);
+  --input-border: var(--border);
+  --input-color: var(--border);
   background-color: var(--input-bg);
   border: var(--quarter-shim) solid var(--input-border);
   color: var(--input-color);
@@ -27,13 +27,13 @@
 }
 
 [data-input~='text'] {
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius) 0;
   font-size: var(--font-small);
   padding: var(--field-padding, var(--half-shim));
   width: var(--field-width, 100%);
 
   &:focus {
-    --input-bg: var(--accent-bg3-fade);
+    --input-bg: var(--bg);
     --input-border: var(--accent);
     --input-color: var(--prime-fg3);
   }

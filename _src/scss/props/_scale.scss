@@ -1,0 +1,22 @@
+html {
+  --gutter: 0.5rem;
+  --double-gutter: calc(var(--gutter) * 2);
+  --shim: calc(var(--gutter) / 2);
+  --half-shim: calc(var(--shim) / 2);
+  --quarter-shim: calc(var(--shim) / 4);
+
+  --spacer: calc(var(--gutter) + 5vh);
+
+  --border-width: var(--quarter-shim);
+  --border-radius: var(--half-shim);
+
+  --font-small: 0.75rem;
+  --font-smaller: 0.75em;
+
+  --line-ratio: 1.4;
+  --rhythm: 1.4rem;
+
+  @media (min-width: 35em) {
+    --gutter: 1rem;
+  }
+}

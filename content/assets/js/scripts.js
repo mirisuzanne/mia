@@ -87,7 +87,8 @@ searchInput.addEventListener('keyup', e => clearAll(e)),
   resultsDropdown.addEventListener('keyup', e => clearAll(e));
 const root = document.querySelector('html'),
   themeMenu = document.querySelector('[data-menu="theme"]'),
-  modeToggle = document.querySelector('[data-toggle="color-mode"]'),
+  modeToggle = document.querySelector('[data-toggle="colors"]'),
+  unsetBtn = document.querySelector('[data-unset="colors"]'),
   selectElements = {
     theme: document.querySelector('#theme-select'),
     hue: document.querySelector('#hue-select'),
@@ -113,17 +114,25 @@ const root = document.querySelector('html'),
     light: 'colorLight',
     contrast: 'colorContrast',
   },
-  themeOptions = [];
-
-for (let e = 0; e < selectElements.theme.options.length; e++)
-  themeOptions[e] = selectElements.theme.options[e].value;
-
-const setValue = (e, t, o = !0) => {
+  clearColors = () => {
+    setValue('theme', selectElements.theme.getAttribute('data-default'), !1),
+      Object.keys(store).forEach(e => localStorage.removeItem(store[e])),
+      Object.keys(props).forEach(e => root.style.removeProperty(props[e])),
+      Object.keys(selectElements).forEach(e => {
+        const t = selectElements[e];
+        selectElements[e].value = t.getAttribute('data-default');
+      }),
+      unsetBtn.setAttribute('hidden', '');
+  },
+  setValue = (e, t, o = !0) => {
     t &&
       (attrs[e]
         ? root.setAttribute(attrs[e], t)
         : props[e] && root.style.setProperty(props[e], t),
-      o && store[e] && localStorage.setItem(store[e], t));
+      o &&
+        store[e] &&
+        (localStorage.setItem(store[e], t),
+        unsetBtn.removeAttribute('hidden')));
   },
   getMode = () =>
     Number(
@@ -138,12 +147,21 @@ const setValue = (e, t, o = !0) => {
     themeMenu.removeAttribute('hidden');
   },
   initValue = e => {
-    const t = localStorage.getItem(store[e]) || selectElements[e].value;
-    t && (setValue(e, t, !1), (selectElements[e].value = t));
+    selectElements[e].setAttribute('data-default', selectElements[e].value);
+    const t = localStorage.getItem(store[e]);
+    t &&
+      (setValue(e, t, !1),
+      (selectElements[e].value = t),
+      unsetBtn.removeAttribute('hidden'));
   },
   initMode = () => {
-    const e = localStorage.getItem(store.mode);
-    e && setValue('mode', e, !1);
+    let e = localStorage.getItem(store.mode);
+    const t = {
+      light: 1,
+      dark: -1,
+    }[e];
+    (e = t || e) &&
+      (setValue('mode', e, t), unsetBtn.removeAttribute('hidden'));
   };
 
 (document.onload = void themeMenu.removeAttribute('hidden')),
@@ -151,6 +169,19 @@ const setValue = (e, t, o = !0) => {
   modeToggle.addEventListener(
     'click',
     () => void setValue('mode', -1 * getMode(), !0),
+  ),
+  unsetBtn.addEventListener(
+    'click',
+    () => (
+      setValue('theme', selectElements.theme.getAttribute('data-default'), !1),
+      Object.keys(store).forEach(e => localStorage.removeItem(store[e])),
+      Object.keys(props).forEach(e => root.style.removeProperty(props[e])),
+      Object.keys(selectElements).forEach(e => {
+        const t = selectElements[e];
+        selectElements[e].value = t.getAttribute('data-default');
+      }),
+      void unsetBtn.setAttribute('hidden', '')
+    ),
   ),
   Object.keys(selectElements).forEach(e => {
     (document.onload = initValue(e)),

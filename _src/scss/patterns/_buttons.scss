@@ -2,28 +2,34 @@
 // =======
 
 button {
-  --button-background: var(--prime-fg1);
-  --button-color: var(--prime-bg3);
-  --button-border: var(--prime-bg2);
-  @include font-family('midnight');
-  background: var(--button-background);
-  border-radius: var(--border-radius);
-  border: var(--border) solid var(--button-border);
-  color: var(--button-color);
+  --btn-shade: hsla(var(--h-prime), var(--s-bg1), var(--l-bg1), 0.25);
+  --btn-shadow: var(--text-shadow-off) var(--text-shadow-off);
+  background-color: var(--btn-bg, var(--action));
+  background-image: linear-gradient(
+    to bottom,
+    var(--btn-shade) 50%,
+    transparent 50%
+  );
+  border: var(--border-width) solid var(--btn-border, var(--prime-fade));
+  border-radius: var(--border-radius) 0;
+  color: var(--btn-color, var(--bg));
   cursor: pointer;
-  font-size: var(--font-small);
-  padding: var(--half-shim) var(--shim) var(--quarter-shim);
+  font: inherit;
+  padding: var(--quarter-shim) var(--shim);
+  text-shadow: var(--btn-shadow) 0 var(--btn-shade);
+  text-transform: capitalize;
 
-  &:hover,
-  &:focus {
-    --button-background: var(--prime-fg2);
-    --button-border: var(--accent);
+  #{$focus} {
+    --btn-bg: var(--action-hover);
+    --btn-border: var(--action);
   }
 
   &:active {
-    --button-background: var(--accent-bg2);
-    --button-color: var(--accent-fg2);
-    --button-border: var(--accent-fg3);
+    --btn-bg: var(--accent-bg2);
+    --btn-color: var(--accent-fg2);
+    --btn-border: var(--accent-fg3);
+    --btn-shade: hsla(var(--h-accent), var(--s-fg1), var(--l-fg1), 0.25);
+    --btn-shadow: var(--text-shadow-off-invert) var(--text-shadow-off-invert);
   }
 
   &:disabled {
@@ -35,4 +41,8 @@ button {
 
 [data-btn~='flush'] {
   border-radius: 0 0.1em 0.1em 0;
+}
+
+[data-btn~='small'] {
+  font-size: var(--font-small);
 }

@@ -16,8 +16,8 @@
     "img": "headshots/mia-smirk.jpg"
   },
   "themes": [
-    "default-pink",
-    "default-blue",
+    "pink-to-blue",
+    "blue-to-pink",
     "complement",
     "adjacent",
     "triad",

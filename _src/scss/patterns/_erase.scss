@@ -4,6 +4,7 @@
 [data-erase] {
   mark {
     background: none;
+    color: var(--text);
   }
 }
 
@@ -15,13 +16,11 @@
 }
 
 [data-toggle='erase'] {
-  background: var-color('callout');
-  color: var-color('text');
   display: inline-block;
 
   #{$focus},
   &[data-active='true'] {
-    background: var-color('action-hover');
-    color: var-color('background');
+    background: var(--accent-fg2);
+    color: var(--prime-bg3);
   }
 }

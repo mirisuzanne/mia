@@ -1,0 +1,37 @@
+// Links
+// -----
+
+a {
+  #{$link} {
+    background: var(--link-bg, initial);
+    color: var(--link-color, var(--action));
+    text-decoration-color: var(--link-line, var(--prime-fg1));
+    text-decoration-skip-ink: auto;
+  }
+
+  #{$focus} {
+    background: var(--link-hover-bg, var(--link-bg, initial));
+    color: var(--link-hover, var(--action-hover));
+    text-decoration-color: var(--link-hover-line, var(--prime, initial));
+  }
+
+  &:focus {
+    outline: 2px dashed var(--accent);
+    outline-offset: var(--quarter-shim);
+  }
+
+  &[data-active] {
+    --link-color: var(--accent-fg2);
+    --link-hover: var(--accent-fg4);
+  }
+}
+
+[href*='://'],
+[data-offsite] {
+  &::after {
+    content: '↗';
+    text-decoration: none;
+    font-size: var(--font-smaller);
+    opacity: 0.5;
+  }
+}

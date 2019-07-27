@@ -1,8 +1,15 @@
 // Body Layout
 // ===========
 
-[data-layout='body'] {
-  grid-template-rows: [banner-start] minmax(75vmin, auto) [banner-end nav-start] auto [nav-end];
-  min-height: 100vh;
-  overflow-x: hidden;
+[data-layout='head'] {
+  display: grid;
+  grid-template: 'menu' auto 'nav' auto 'banner' 1fr / 100vw;
+  grid-gap: var(--gutter);
+  min-height: 90vh;
+  overflow: hidden;
+}
+
+main {
+  margin: var(--spacer) var(--gutter);
+  max-width: 35rem;
 }

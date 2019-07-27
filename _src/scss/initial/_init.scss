@@ -1,0 +1,53 @@
+// Type
+// ====
+
+@include import-webfonts;
+
+html {
+  @include font-family('code');
+  font-size: calc(1em + 0.5vw);
+  line-height: var(--line-ratio);
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+// Special
+// -------
+
+summary {
+  cursor: pointer;
+
+  #{$focus},
+  [open] & {
+    color: var(--action);
+  }
+}
+
+[data-hidden] {
+  @include is-hidden;
+}
+
+// Above/below
+[data-above] {
+  --show: none;
+  display: var(--show);
+}
+
+[data-above='small'] {
+  @include above(30em) {
+    --show: initial;
+  }
+}
+
+[data-above='medium'] {
+  @include above(45em) {
+    --show: initial;
+  }
+}
+
+[data-above='large'] {
+  @include above(60em) {
+    --show: initial;
+  }
+}

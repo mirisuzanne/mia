@@ -5,7 +5,7 @@
 }
 
 [data-colors='invert'] {
-  --mode: calc(-1 * var(--system-mode, 1));
+  --mode: calc(-1 * var(--given-mode, 1));
 }
 
 [data-colors='light'] {

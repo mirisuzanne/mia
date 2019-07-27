@@ -69,3 +69,20 @@ $midnight-font: (
 
 @include add-font('midnight', $midnight-font);
 @include herman-add('font', 'midnight', $midnight-font);
+
+// Sunrise Font
+// ------------
+/// A readable monospace font for code previews
+/// @group config-fonts
+/// @font sunrise
+$sunrise-font: (
+  name: 'Blackout Sunrise',
+  normal: (
+    woff2: 'blackout/blackout_sunrise-webfont',
+    woff: 'blackout/blackout_sunrise-webfont',
+  ),
+  stack: font-family('code'),
+);
+
+@include add-font('sunrise', $sunrise-font);
+@include herman-add('font', 'sunrise', $sunrise-font);

@@ -1,10 +1,7 @@
 {% import 'utility.macros.njk' as utility %}
 
-<hr class="footer-hr" />
 <footer
-  data-colors="invert"
-  data-section="footer"
-  data-area="right">
+  data-section="footer">
   <div data-content>
     <p>
       Copyright © {% getDate 'year' %}
@@ -12,13 +9,7 @@
         {{ site.author }}
       </a>
     </p>
-
-    <p>
-      {% for link in footer.links %}
-        <a href="{{ link.url | url }}">{{ link.name }}</a> |
-      {% endfor %}
-    </p>
   </div>
 </footer>
-
 <div data-layout="flag"></div>
+
