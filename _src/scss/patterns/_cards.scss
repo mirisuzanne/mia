@@ -46,6 +46,7 @@
 
 [data-card='item'] {
   --feature: -0.006turn;
+  font-style: italic;
 
   &:nth-child(3n),
   &:nth-last-child(7n-3) {
@@ -73,5 +74,6 @@
 
 [data-card='title'] {
   line-height: var(--rhythm);
+  font-style: normal;
   margin: 0;
 }

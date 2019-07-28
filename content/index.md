@@ -8,7 +8,7 @@ letter:
   face: miriam.svg
   sig: miriam-sig.svg
   text: |
-    Hello lovely -- \
+    *Hello lovely* --- \
     I'm [Miriam](/who/).
     I make art & software
     that celebrate the
