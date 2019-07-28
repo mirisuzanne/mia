@@ -22,6 +22,17 @@ module.exports = eleventyConfig => {
       .filter(item => item.data.org && !item.data.end)
       .sort((a, b) => a.data.start - b.data.start);
   });
+  eleventyConfig.addCollection('all_orgs', collection => {
+    return collection
+      .getAll()
+      .filter(item => item.data.org)
+      .sort((a, b) => {
+        if (a.data.end === b.data.end) {
+          return a.data.start - b.data.start;
+        }
+        return a.data.end - b.data.end;
+      });
+  });
 
   // filters
   eleventyConfig.addFilter('typeCheck', utils.typeCheck);

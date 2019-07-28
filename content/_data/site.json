@@ -8,7 +8,8 @@
   "icon": "icons/miriam.svg",
   "nav": {
     "@name": "/",
-    "browse": "/tags/",
+    "about": "/who/",
+    "tags": "/tags/",
     "contact": "/contact/"
   },
   "og": {

@@ -30,8 +30,6 @@
   &::first-line {
     @include font-family('midnight');
   }
-
-  @include fancy-text;
 }
 
 .subtitle {

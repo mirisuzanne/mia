@@ -7,13 +7,16 @@
   collections,
   page
 ) %}
-  {% set title = 'events…' %}
+  {% set title = 'episodes' %}
   {% set org_title = 'orgs' %}
   {% set events = collections.all | getPage(page) | getEvents %}
 
   {% if events_group == 'all' %}
-    {% set title = 'episodes' %}
     {% set events = collections.all | getEvents %}
+  {% elif events_group == 'all_orgs' %}
+    {% set org_title = 'org history' %}
+    {% set events_group = 'all' %}
+    {% set events = none %}
   {% elif events_group %}
     {% set tag_name = events_group | displayName %}
     {% set title %}
@@ -28,7 +31,8 @@
   {{ show_orgs(
     org_title,
     events_group,
-    collections
+    collections,
+    all=(org_title != 'orgs')
   ) }}
 
   {% if events %}
@@ -45,10 +49,11 @@
 {% macro show_orgs(
   title,
   events_group,
-  collections
+  collections,
+  all=false
 ) %}
   {% if events_group %}
-    {% set orgs = collections.orgs %}
+    {% set orgs = collections.all_orgs if all else collections.orgs %}
     {% set orgs = orgs if (events_group == 'all') else orgs | withTag(events_group) %}
 
     {% if orgs | length %}
@@ -67,7 +72,11 @@
               <time
                 data-meta="orgs"
                 datetime="{{ item.data.start | getDate('iso') }}">
-                {{ item.data.start | getDate('yyyy') }}->
+                {{
+                  item.data.start | getDate('yyyy')
+                }}->{{
+                  item.data.end | getDate('yyyy') if item.data.end else ''
+                }}
               </time>
               <h3 data-title="orgs">
                 {{ utility.link_if(title, item.url) }}
@@ -162,7 +171,7 @@
 
   {{ cards.event(
     title=title(item, is_self, not_me),
-    meta=meta(item, tags, all),
+    meta=meta(item, tags, all, is_self),
     feature=item.feature
   ) }}
 {% endmacro %}
@@ -174,9 +183,9 @@
   not_me=false
 ) %}
   {# Venue Link #}
-  {%- set venue_name = item.event.venue or item.page.data.venue -%}
+  {%- set venue_name = item.event.venue or item.page.data.venue or none -%}
   {%- set venue_url = item.event.url or item.page.data.url or item.page.url -%}
-  {%- set venue = utility.link_if(venue_name, venue_url) if venue_name else none -%}
+  {%- set venue = utility.link_if(venue_name, venue_url) if is_self else venue_name -%}
   {%- set venue = ['@', venue] | join(' ') if venue else none -%}
 
   {# Title Link #}
@@ -184,7 +193,7 @@
   {%- set url = none if is_self else item.page.url -%}
   {%- set url = (url or venue_url) if (not venue) else url -%}
   {%- set title = utility.link_if(title_name | mdInline, url) -%}
-  {%- set title = ['See Also:', title] | join(' ') if not_me else title -%}
+  {%- set title = ['Link:', title] | join(' ') if not_me else title -%}
 
   {{ title | safe }}
   {{ venue | safe }}
@@ -194,7 +203,8 @@
 {% macro meta(
   item,
   tags,
-  all
+  all,
+  is_self
 ) %}
   {%- set date_format = 'since' if (item.group | groupName == 'ongoing') else 'md' -%}
   {%- set venue_adr = item.event.adr or item.page.data.adr -%}
@@ -205,14 +215,9 @@
     | {{ venue_adr }}
   {% endif %}
 
-  {# {% if tags %}
-    {% if venue_adr %}»{% else %}|{% endif %}
-    {{ utility.tag_list(tags | sort, all) }}
-  {% endif %} #}
-
   {% set summary = item.page.data.sub if item.event else (item.page.data.summary or item.page.data.sub) %}
 
-  {% if summary %}
+  {% if summary and not is_self %}
     {{ summary | md | safe }}
   {% endif %}
 {% endmacro %}

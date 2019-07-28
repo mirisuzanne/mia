@@ -1,16 +1,18 @@
 {% if hero.img %}
-<figure
-  data-area="main">
-  <div data-content="hero">
+<figure data-pattern="figure" class="hero">
+  <div data-figure="content" class="hero-content">
     <img
       src="{{ site.images + hero.img }}"
       alt="{{ hero.alt or '' }}"
-      class="hero-image" />
-    {% if hero.caption %}
-    <figcaption class="hero-caption">
-      {{ hero.caption | md | safe }}
-    </figcaption>
-    {% endif %}
+      class="hero-image"/>
   </div>
+
+  {% if hero.caption %}
+    <figcaption
+      data-figure="caption"
+      class="hero-caption">
+      {{ hero.caption | mdInline | safe }}
+    </figcaption>
+  {% endif %}
 </figure>
 {% endif %}

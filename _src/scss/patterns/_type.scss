@@ -42,14 +42,26 @@
 
   blockquote {
     font-style: italic;
-    margin: 0 0 var(--gutter) var(--gutter);
+    margin: 0 0 var(--gutter);
+    position: relative;
+
+    @include before('"') {
+      color: var(--accent);
+      margin-right: var(--shim);
+      position: absolute;
+      right: 100%;
+    }
 
     em,
     i {
       font-style: normal;
     }
 
-    :last-child {
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
       margin-bottom: 0;
     }
 

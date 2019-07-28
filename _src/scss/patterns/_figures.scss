@@ -2,8 +2,8 @@
 // =======
 
 img {
+  @include transition('img-filter');
   filter: brightness(var(--img-bright, 100%));
-  transition: filter time('relaxed') ease('_in-out');
 
   &:hover {
     --img-bright: 100%;
@@ -27,9 +27,11 @@ img {
 }
 
 [data-pattern='figure'] {
-  background: var(--callout);
-  margin: var(--gutter) calc(var(--gutter) * -1);
-  padding: var(--shim) var(--gutter);
+  --main-column: pull;
+  border: var(--border-width) solid var(--border);
+  border-width: var(--border-width) 0;
+  margin: var(--gutter) 0;
+  padding: var(--gutter);
 }
 
 [data-figure='content'] {

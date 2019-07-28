@@ -9,10 +9,17 @@
 [data-main] {
   display: grid;
   grid-template-columns:
-    minmax(var(--gutter), 2fr) [main-start] minmax(min-content, size('page'))
-    [main-end] minmax(var(--gutter), 1fr);
+    minmax(var(--gutter), 1fr)
+    [hero-start] minmax(0, 1fr)
+    [pull-start] minmax(0, var(--pull-max, 1fr))
+    [main-start] minmax(min-content, size('page'))
+    [main-end hero-end pull-end] minmax(var(--gutter), 1fr);
 
   > * {
-    grid-column: main;
+    grid-column: var(--main-column, main);
+  }
+
+  @include above('page-break') {
+    --pull-max: var(--spacer);
   }
 }

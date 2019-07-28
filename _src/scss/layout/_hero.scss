@@ -1,33 +1,35 @@
 // Hero Layout
 // ===========
 
-[data-content~='hero'] {
+.hero {
+  --main-column: hero;
   display: grid;
-  grid-template-columns: minmax(auto, 1fr);
-  grid-template-rows: auto auto;
-  justify-content: center;
-  padding: 0;
+  grid:
+    [img-start] auto [caption-start] auto [img-end caption-end]
+    / [img-start caption-start] 100% [img-end caption-end];
+}
+
+.hero-content {
+  grid-area: img;
 }
 
 .hero-image {
   @include transition('hero');
-  background: var-color('callout');
-  border: border('hero');
-  grid-column: 1;
-  grid-row: 1 / -1;
+  fill: currentColor;
   transform: rotate(-6deg);
+  z-index: 1;
 
   &:hover {
-    transform: rotate(-1.5deg);
+    transform: rotate(1.5deg);
   }
 }
 
 .hero-caption {
-  background: var-color('overlay');
-  font-size: size('xsmall');
+  background: var(--overlay);
+  font-size: var(--font-small);
   font-style: italic;
-  grid-column: 1;
-  grid-row-end: -1;
-  padding: size('quarter-shim') size('half-shim') size('half-shim');
+  grid-area: caption;
+  padding: var(--quarter-shim) var(--half-shim);
   position: relative;
+  z-index: 2;
 }

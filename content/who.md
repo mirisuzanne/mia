@@ -2,6 +2,7 @@
 layout: base
 title: About
 banner: All About Miriam
+calendar: all_orgs
 hero:
   img: headshots/mia-smirk.jpg
   alt: Headshot of Mia smirking

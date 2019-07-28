@@ -3,6 +3,7 @@ feature: true
 title: Not Clear To Me, an Installation
 sub: art and words @ Bardo Coffee House
 venue: Bardo Coffee House
+adr: Denver, CO
 url: https://www.bardocoffee.com/
 date: 2019-07-05
 end: 2019-08-01
