@@ -29,13 +29,9 @@
 [data-meta] {
   font-size: var(--font-small);
   color: var(--text-light);
-
-  a {
-    font-style: italic;
-  }
 }
 
-[data-meta='orgs'] {
+[data-meta='org-date'] {
   text-align: right;
   grid-area: date;
 }

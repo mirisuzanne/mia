@@ -55,12 +55,12 @@
 ) %}
   {{ cards.event(
     title=utility.tag_link(tag.tag, all),
-    meta=tag_meta(tag.tag, all)
+    summary=tag_items(tag.tag, all)
   ) }}
 {% endmacro %}
 
 
-{% macro tag_meta(
+{% macro tag_items(
   tag,
   all
 ) %}

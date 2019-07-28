@@ -37,6 +37,7 @@
 {% macro event(
   title,
   meta,
+  summary,
   feature
 ) %}
 <article
@@ -53,6 +54,12 @@
     {% if meta %}
       <div data-meta="card">
         {{ meta | safe }}
+      </div>
+    {% endif %}
+
+    {% if summary %}
+      <div data-card="summary">
+        {{ summary | safe }}
       </div>
     {% endif %}
   </div>
