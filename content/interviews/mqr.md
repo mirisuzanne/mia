@@ -1,5 +1,5 @@
 ---
-title: On Riding SideSaddle
+title: Interview -- On Riding SideSaddle*
 date: 2015-06-16
 venue: Michigan Quarterly Review
 url: https://sites.lsa.umich.edu/mqr/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/

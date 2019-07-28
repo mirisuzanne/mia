@@ -6,7 +6,6 @@ a {
     background: var(--link-bg, initial);
     color: var(--link-color, var(--action));
     text-decoration-color: var(--link-line, var(--prime-fg1-fade));
-    text-decoration-skip: ink;
     text-decoration-skip-ink: auto;
   }
 

@@ -87,7 +87,7 @@ if you've read my work.
 Most of it is new material.
 
 [^1]: I don't assume trans men *want* a monologue --
-but they do, also, sometimes, have vaginas…
+but they do (sometimes) have vaginas…
 
 [^2]: Ironically,
 after bemoaning the dangers of a single story,

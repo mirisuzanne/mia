@@ -22,7 +22,7 @@ tags:
   - open source
   - oddbird
 events:
-  - title: Learning Susy [book]
+  - title: Book -- Learning Susy
     venue: Zell Liew
     url: https://learnsusy.zellwk.com/
     date: 2014-11-19

@@ -16,11 +16,13 @@ tags:
   - smashing magazine
 summary: |
   A deeper dive into the
-  **CSS Custom Properties for Cascading Variables** specification.
+  [CSS Custom Properties for Cascading Variables][vars] specification.
   Why are they called custom properties,
   how do they work in the cascade,
   and what else can we do with them?
   Pushing past the “variable” metaphor,
   custom properties can provide new ways
   to balance context and isolation in CSS patterns and components.
+
+  [vars]: https://www.w3.org/TR/css-variables/
 ---

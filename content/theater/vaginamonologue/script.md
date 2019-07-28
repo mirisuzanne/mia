@@ -1,6 +1,6 @@
 ---
 feature: true
-title: My Body, My Gender [script]
+title: Script -- My Body, My Gender
 sub: |
   Why Is No One Talking About
   [The Mouthfeel](https://www.youtube.com/watch?v=j1dJ8whOM8E)?

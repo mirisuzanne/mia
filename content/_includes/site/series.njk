@@ -5,8 +5,11 @@
 
 {% if to.prev or to.next %}
   <nav
-    data-series="{{ series | slug }}">
-    {{ utility.prev_next(to.prev, 'prev') }}
-    {{ utility.prev_next(to.next, 'next') }}
+    data-series="{{ series | slug }}"
+    data-divide="before">
+    <ul>
+      {{ utility.prev_next(to.prev, 'prev') }}
+      {{ utility.prev_next(to.next, 'next') }}
+    </ul>
   </nav>
 {% endif %}

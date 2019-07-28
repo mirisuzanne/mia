@@ -29,14 +29,19 @@ $patterns: (
   /* stylelint-enable */
 }
 
-@mixin divider {
-  @include font-family('midnight');
-  border: none;
-  font-size: var(--font-large);
-  margin: var(--spacer) 0;
-  text-align: center;
-
-  @include before('~ & & & ~') {
+@mixin divide($position: 'before') {
+  &::#{$position} {
     @include fancy-text;
+    @include font-family('midnight');
+    content: '~ & & & ~';
+    display: block;
+    font-size: var(--font-large);
+    margin: var(--spacer) 0;
+    text-align: center;
   }
+}
+
+@mixin divider {
+  @include divide;
+  border: none;
 }

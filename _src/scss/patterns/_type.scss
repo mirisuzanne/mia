@@ -6,7 +6,9 @@
   font-style: italic;
 
   em,
-  i {
+  i,
+  strong,
+  b {
     font-style: normal;
   }
 }
@@ -18,10 +20,11 @@
   h3,
   h4 {
     color: var-color('text-highlight');
-    margin: size('double-gutter') 0 size('shim');
+    margin: size('gutter') 0 0;
   }
 
   h2 {
+    @include font-family('midnight');
     font-size: var(--font-large);
   }
 
@@ -32,8 +35,14 @@
   p,
   ul,
   ol,
-  pre {
-    margin-bottom: var(--gutter);
+  pre,
+  blockquote {
+    margin: 0 0 var(--gutter);
+  }
+
+  strong,
+  b {
+    @include font-family('midnight');
   }
 
   li {
@@ -42,7 +51,6 @@
 
   blockquote {
     font-style: italic;
-    margin: 0 0 var(--gutter);
     position: relative;
 
     @include before('"') {
@@ -76,11 +84,29 @@
   }
 }
 
+ul,
+ol {
+  padding-left: var(--list-padding, 0);
+
+  ul,
+  ol {
+    --list-padding: var(--gutter);
+  }
+}
+
 hr {
   &[data-divider],
   [data-typeset] & {
     @include divider;
   }
+}
+
+[data-divide='before'] {
+  @include divide;
+}
+
+[data-divide='after'] {
+  @include divide('after');
 }
 
 mark {

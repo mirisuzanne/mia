@@ -1,5 +1,5 @@
 ---
-title: A Dark Plain [Video]
+title: Video -- A Dark Plain
 venue: Seventh Circle Sessions
 url: https://www.youtube.com/watch?v=pZutQD4GCi4
 date: 2019-04-14

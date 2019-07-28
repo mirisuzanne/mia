@@ -19,7 +19,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('orgs', collection => {
     return collection
       .getAll()
-      .filter(item => item.data.org && !item.data.end)
+      .filter(item => item.data.org && item.data.end === 'ongoing')
       .sort((a, b) => a.data.start - b.data.start);
   });
   eleventyConfig.addCollection('all_orgs', collection => {
@@ -27,10 +27,13 @@ module.exports = eleventyConfig => {
       .getAll()
       .filter(item => item.data.org)
       .sort((a, b) => {
-        if (a.data.end === b.data.end) {
+        const ae = a.data.end === 'ongoing' ? null : a.data.end;
+        const be = b.data.end === 'ongoing' ? null : b.data.end;
+
+        if (ae === be) {
           return a.data.start - b.data.start;
         }
-        return a.data.end - b.data.end;
+        return ae - be;
       });
   });
 

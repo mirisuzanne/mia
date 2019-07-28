@@ -1,6 +1,6 @@
 ---
 feature: true
-title: The Holes They Leave [EP]
+title: EP -- The Holes They Leave
 sub: Teacup Gorilla's debut album
 date: 2015-07-09
 venue: BandCamp

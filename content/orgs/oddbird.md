@@ -3,7 +3,7 @@ title: OddBird
 sub: humane and accessible web software
 role: Co-Founder
 start: 2008-04-15
-end: null
+end: ongoing
 hero:
   img: elsewhere/oddlogo.svg
 index: oddbird

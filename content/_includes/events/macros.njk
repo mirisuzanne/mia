@@ -75,7 +75,9 @@
                 {{
                   item.data.start | getDate('yyyy')
                 }}->{{
-                  item.data.end | getDate('yyyy') if item.data.end else ''
+                  item.data.end | getDate('yyyy')
+                  if item.data.end and (item.data.end != 'ongoing')
+                  else ''
                 }}
               </time>
               <h3 data-title="orgs">
@@ -209,29 +211,15 @@
   tags,
   all
 ) %}
-  {%- set date_format = 'since' if (item.group | groupName == 'ongoing') else 'md' -%}
+  {{ utility.datetime(
+    pubdate=item.page.data.pubdate or item.page.date,
+    start=item.start,
+    end=item.end,
+    format='md'
+  ) }}
+
   {%- set venue_adr = item.event.adr or item.page.data.adr -%}
-
-  {{ datetime(item, date_format) }}
-
   {% if venue_adr %}
     | {{ venue_adr }}
   {% endif %}
-{% endmacro %}
-
-
-{% macro datetime(
-  item,
-  format
-) %}
-  {%- set start = item.start | getDate('year') -%}
-  {%- set end = item.end | getDate('year') -%}
-
-  <time datetime="{{ item.date | getDate('iso') }}">
-    {% if (format == 'since') or (start == end) %}
-      {{ item.date | getDate(format) }}
-    {% else %}
-      {{ start }}—{{ end }}
-    {% endif %}
-  </time>
 {% endmacro %}

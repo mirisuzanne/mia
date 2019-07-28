@@ -1,5 +1,5 @@
 ---
-title: Just Like That [Music Video]
+title: Video -- Just Like That
 sub: Produced & Directed by [Gio Toninelo](https://www.rockethousepictures.com/)
 venue: IMDb
 url: https://www.imdb.com/title/tt7175232/?ref_=ttpl_pl_tt

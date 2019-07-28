@@ -1,5 +1,5 @@
 ---
-title: I See Rockets [demo]
+title: Demo -- I See Rockets
 date: 2009-05-14
 tags:
   - _calendar

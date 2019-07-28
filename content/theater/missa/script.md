@@ -1,5 +1,5 @@
 ---
-title: Missa Populi [script]
+title: Script -- Missa Populi
 sub: |
   This ain’t grace, this all fucked, this old thing…
 date: 2010-03-16

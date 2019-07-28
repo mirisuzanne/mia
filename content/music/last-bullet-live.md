@@ -1,5 +1,5 @@
 ---
-title: Last Bullet [Video]
+title: Video -- Last Bullet
 venue: Seventh Circle Sessions
 url: https://www.youtube.com/watch?v=tF2IoI9fHzs
 date: 2019-04-20
