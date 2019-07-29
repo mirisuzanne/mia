@@ -3,22 +3,22 @@
 
 [data-dropdown] {
   --push: calc(100% + var(--half-shim));
-  --t: var(--push);
-  --r: initial;
-  --b: initial;
-  --l: initial;
+  --top: var(--push);
+  --right: initial;
+  --bottom: initial;
+  --left: initial;
   background: var(--callout);
-  bottom: var(--b);
+  bottom: var(--bottom);
   border: var(--border-width) solid var(--border);
   box-shadow: var(--box-shadow);
   display: none;
-  left: var(--l);
+  left: var(--left);
   max-height: calc(var(--rhythm) * 2 + 40vh);
   max-width: calc(100vw - var(--gutter) * 2);
   overflow-y: auto;
   position: absolute;
-  right: var(--r);
-  top: var(--t);
+  right: var(--right);
+  top: var(--top);
   width: 35ch;
   z-index: 100;
 
