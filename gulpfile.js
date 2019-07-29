@@ -88,11 +88,7 @@ const sassTask = opts => {
     }),
   );
   if (options.minify) {
-    stream = stream.pipe(
-      cleanCSS({
-        level: 0,
-      }),
-    );
+    stream = stream.pipe(cleanCSS({ level: 0 }));
   }
   if (options.sourcemap) {
     stream = stream.pipe(
