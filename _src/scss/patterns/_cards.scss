@@ -37,7 +37,7 @@
   span {
     @include fancy-text;
     position: sticky;
-    top: var(--spacer);
+    top: calc(var(--rhythm) * 2);
   }
 }
 

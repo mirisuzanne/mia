@@ -88,7 +88,15 @@ const sassTask = opts => {
     }),
   );
   if (options.minify) {
-    stream = stream.pipe(cleanCSS());
+    stream = stream.pipe(
+      cleanCSS({
+        compatibility: {
+          properties: {
+            zeroUnits: false,
+          },
+        },
+      }),
+    );
   }
   if (options.sourcemap) {
     stream = stream.pipe(
