@@ -6,10 +6,10 @@
 {% if to.prev or to.next %}
   <nav
     data-series="{{ series | slug }}"
-    data-area="full"
-    data-flow="grid">
-    {{ utility.prev_next(to.prev, 'prev') }}
-    &nbsp;<!-- forces a new grid row… -->
-    {{ utility.prev_next(to.next, 'next') }}
+    data-divide="before">
+    <ul>
+      {{ utility.prev_next(to.prev, 'prev') }}
+      {{ utility.prev_next(to.next, 'next') }}
+    </ul>
   </nav>
 {% endif %}

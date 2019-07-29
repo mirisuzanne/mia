@@ -3,102 +3,6 @@
 /// @link https://oddbird.net/accoutrement-scale/docs/
 ///   Accoutrement Scale
 
-// capture the necessary functions for Herman
-$_ratio: get-function('ratio');
-$_size: get-function('size');
-$_break: get-function('break');
-
-// Ratios
-// ------
-/// @group config-scale
-/// @ratios
-$modular-scale: (
-  'text-ratio': 1.4,
-);
-@include add-ratios($modular-scale);
-@include herman-add('ratios', 'modular-scale', $modular-scale, $_ratio);
-
-// Text Sizes
-// ----------
-/// @sizes {text}
-/// @group config-scale
-$text-sizes: (
-  'root': 18px,
-  'responsive': 'calc(100% + 0.5vw)',
-  'large-root': 1rem
-    (
-      'text-ratio': 1,
-    ),
-  'large': 'calc(1rem + 0.5vw)',
-  'xlarge': 'calc(#large-root + 9vw)',
-  'small': 1rem
-    (
-      'text-ratio': -0.5,
-    ),
-  'xsmall': 1rem
-    (
-      'text-ratio': -1,
-    ),
-  'code': 0.875em,
-  'intro': '#large',
-  'h1': '#xlarge',
-  'h2': '#large',
-);
-@include add-sizes($text-sizes);
-@include herman-add('sizes', 'text-sizes', $text-sizes, $_size);
-
-// Spacing Sizes
-// -------------
-/// @sizes {ruler}
-/// @group config-scale
-$spacing-sizes: (
-  'rhythm': '#root'
-    (
-      'text-ratio': 1,
-      'convert-units': 'rem',
-    ),
-  'gutter': '#rhythm',
-  'double-gutter': '#gutter'
-    (
-      'times': 2,
-    ),
-  'gutter-plus': '#gutter'
-    (
-      'times': 1.5,
-    ),
-  'spacer': 'calc(#double-gutter + 6vmin)',
-  'shim': '#gutter'
-    (
-      'times': 0.5,
-    ),
-  '3q-shim': '#shim'
-    (
-      'times': 0.75,
-    ),
-  'half-shim': '#shim'
-    (
-      'times': 0.5,
-    ),
-  'quarter-shim': '#shim'
-    (
-      'times': 0.25,
-    ),
-);
-@include add-sizes($spacing-sizes);
-@include herman-add('sizes', 'spacing-sizes', $spacing-sizes, $_size);
-
-// Component Sizes
-// ---------------
-/// @sizes {ruler}
-/// @group config-scale
-$component-sizes: (
-  'icon': 1em,
-  'border': '#half-shim',
-  'grid-margin': size('shim'),
-);
-@include add-sizes($component-sizes);
-@include herman-add('sizes', 'component-sizes', $component-sizes, $_size);
-
 // Page Sizes
 // ----------
 /// @sizes {ruler-large}
@@ -119,7 +23,6 @@ $page-sizes: (
     ),
 );
 @include add-sizes($page-sizes);
-@include herman-add('sizes', 'page-sizes', $page-sizes, $_size);
 
 // Breakpoints
 // -----------
@@ -130,9 +33,12 @@ $breakpoints: (
     (
       'convert-units': 'browser-ems',
     ),
-  'wide': '#page-break'
+  'medium': '#page-break'
     (
       'times': 1.5,
     ),
+  'wide': '#page-break'
+    (
+      'times': 2,
+    ),
 );
-@include herman-add('sizes', 'breakpoints', $breakpoints, $_break);

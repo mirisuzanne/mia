@@ -4,7 +4,8 @@
 {% macro section(
   all
 ) %}
-  {% call cards.section('all the tags…') %}
+  {% set section_title = [all | getTags(null) | list | length, 'tags'] | join(' ') %}
+  {% call cards.section(section_title) %}
     {% for segment in all | groupTags %}
       {%- set title -%}
         {%- if segment.group != 'top' -%}~{%- endif -%}
@@ -54,19 +55,26 @@
 ) %}
   {{ cards.event(
     title=utility.tag_link(tag.tag, all),
-    meta=tag_meta(tag.events)
+    summary=tag_items(tag.tag, all)
   ) }}
 {% endmacro %}
 
 
-{% macro tag_meta(
-  data
+{% macro tag_items(
+  tag,
+  all
 ) %}
-  e.g.
-  {% set item = data | first %}
-  {% set title = item.event.title or item.page.data.title %}
-  {{ utility.link_if(
-    title | mdInline,
-    item.page.url
-  ) }}
+  {% set data = all[tag] %}
+  {% if data %}
+    <ul>
+    {% for item in data | only(0, 5) %}
+      <li>
+        {{ utility.link_if(
+          item.data.title | mdInline,
+          item.url
+        ) }}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
 {% endmacro %}

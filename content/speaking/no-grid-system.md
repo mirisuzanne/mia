@@ -1,5 +1,6 @@
 ---
 title: Don't Use My Grid System
+sub: it's time to move past grid systems like Susy
 slides: https://talks.oddbird.net/no-grid-system/
 hero:
   img: talks/devconf-best.jpg
@@ -8,7 +9,6 @@ tags:
   - code
   - susy
   - layout
-  - video
 events:
   - venue: Boulder Python
     url: https://www.meetup.com/BoulderPython/events/256868153/

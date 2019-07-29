@@ -1,6 +1,6 @@
 ---
 feature: true
-title: Gods on the Lam [cover art]
+title: Cover Art -- Gods on the Lam
 sub: by [Christopher David Rosales](http://www.christopherrosales.com/)
 venue: Perpetual Motion Machine Publishing
 url: http://perpetualpublishing.com/product/gods-on-the-lam/

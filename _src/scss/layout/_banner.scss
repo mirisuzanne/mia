@@ -1,48 +1,31 @@
 // Banner Layout
 // =============
 
-[data-layout~='banner'] {
-  display: grid;
-  grid: 'theme theme' auto 'head head' 1fr / auto auto;
-  grid-area: banner / full;
-  margin-bottom: size('gutter');
-}
-
-.toggle-theme {
-  --field-padding: #{size('quarter-shim')};
-  grid-area: theme;
-  justify-self: end;
-  padding: size('grid-margin');
-  z-index: 2;
-}
-
-// Main
-// ----
-
-.banner-content {
+[data-layout='banner'] {
   align-self: center;
-  display: grid;
-  grid:
-    [title-start] auto [sub-start] size('rhythm') [title-end] auto [sub-end]
-    / [title-start sub-start] auto [title-end sub-end];
-  grid-area: head;
-  justify-content: center;
-  justify-self: center;
-  padding: size('shim');
+  grid-area: banner;
+  margin: var(--spacer) var(--gutter);
   text-align: center;
-  transform: rotate(-13deg);
+  transform: rotate(-4deg);
+  transition: transform time('fast') ease('_in-out-back');
+  z-index: 1;
 
   @include above('page-break') {
-    padding: size('spacer') size('shim');
+    transform: rotate(-8deg);
+  }
+
+  @include above('wide') {
+    transform: rotate(-12deg);
   }
 }
 
 .banner-title {
   @include font-family('sunrise');
-  grid-area: title;
+  font-size: calc(1rem + 8vw);
   line-height: 0.74;
-  padding-top: size('shim');
-  text-transform: uppercase; // fixes Blackout kerning…
+  margin: 0;
+  padding: var(--shim);
+  text-transform: uppercase;
 
   &::first-line {
     @include font-family('midnight');
@@ -50,81 +33,6 @@
 }
 
 .subtitle {
-  @include font-family('code');
-  background: var-color('overlay');
-  color: var-color('text-light');
-  grid-area: sub;
-  font-size: size('small');
   font-style: italic;
-  justify-self: center;
-}
-
-// Dots
-// ----
-
-.banner-fancy {
-  align-items: center;
-  display: grid;
-  justify-items: center;
-  grid-area: 1 / 1 / -1 / -1;
-  padding-bottom: size('gutter');
-  position: relative;
-  z-index: -1;
-}
-
-[data-dot] {
-  @include square(calc(6px + 1vmin));
-  --dot: var(--dot-color-6);
-  --opacity: #{(random(30) + 10) / 100};
-  background: var(--dot);
-  border-radius: 100%;
-  fill: var(--dot);
-  grid-area: var(--area);
-  opacity: var(--opacity);
-  transform: scale(var(--scale));
-
-  $dot-color-options: join(map-keys($main-shades), map-keys($accent-shades));
-  $dot-color-length: length($dot-color-options);
-
-  @for $i from 1 through 6 {
-    $color: nth($dot-color-options, random($dot-color-length));
-    --dot-color-#{$i}: #{var-color($color)};
-  }
-}
-
-[data-dot='1'] {
-  --dot: var(--dot-color-1);
-}
-
-[data-dot='2'] {
-  --dot: var(--dot-color-2);
-}
-
-[data-dot='3'] {
-  --dot: var(--dot-color-3);
-}
-
-[data-dot='4'] {
-  --dot: var(--dot-color-4);
-}
-
-[data-dot='5'] {
-  --dot: var(--dot-color-5);
-}
-
-// Blip
-// ----
-
-@keyframes blip {
-  12%,
-  37%,
-  95% {
-    opacity: 0;
-  }
-
-  21%,
-  40%,
-  63% {
-    opacity: 1;
-  }
+  margin: 0 var(--gutter);
 }

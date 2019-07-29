@@ -1,30 +1,48 @@
 // Buttons
 // =======
 
-[data-btn] {
-  --btn-bg: #{var-color('action')};
-  --btn-color: #{var-color('background')};
-  --btn-hover: #{var-color('action-hover')};
-  --btn-hover-color: var(--btn-color);
-  background: var(--btn-bg);
-  border-radius: 0.1em;
-  color: var(--btn-color);
-  padding: 0 size('half-shim');
-  white-space: nowrap;
+button {
+  --btn-shade: hsla(var(--h-prime), var(--s-bg1), var(--l-bg1), 0.25);
+  --btn-shadow: var(--text-shadow-off) var(--text-shadow-off);
+  background-color: var(--btn-bg, var(--action));
+  background-image: linear-gradient(
+    to bottom,
+    var(--btn-shade) 50%,
+    transparent 50%
+  );
+  border: var(--border-width) solid var(--btn-border, var(--prime-fade));
+  border-radius: var(--border-radius) 0;
+  color: var(--btn-color, var(--bg));
+  cursor: pointer;
+  font: inherit;
+  padding: var(--quarter-shim) var(--shim);
+  text-shadow: var(--btn-shadow) 0 var(--btn-shade);
+  text-transform: capitalize;
 
   #{$focus} {
-    background: var(--btn-hover);
-    color: var(--btn-hover-color);
+    --btn-bg: var(--action-hover);
+    --btn-border: var(--action);
+  }
+
+  &:active {
+    --btn-bg: var(--accent-bg2);
+    --btn-color: var(--accent-fg2);
+    --btn-border: var(--accent-fg3);
+    --btn-shade: hsla(var(--h-accent), var(--s-fg1), var(--l-fg1), 0.25);
+    --btn-shadow: var(--text-shadow-off-invert) var(--text-shadow-off-invert);
+  }
+
+  &:disabled {
+    filter: grayscale(100%);
+    cursor: not-allowed;
+    opacity: 0.5;
   }
 }
 
 [data-btn~='flush'] {
-  border-radius: 0 0.1em 0.1em 0;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
-[data-btn~='fade'] {
-  --btn-bg: #{var-color('callout')};
-  --btn-color: #{var-color('action')};
-  --btn-hover: #{var-color('action-hover')};
-  --btn-hover-color: #{var-color('background')};
+[data-btn~='small'] {
+  font-size: var(--font-small);
 }

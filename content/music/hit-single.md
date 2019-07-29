@@ -1,5 +1,5 @@
 ---
-title: Hit Single [album]
+title: Album -- Hit Single
 date: 2007-07-07
 venue: SoundCloud
 url: https://soundcloud.com/dirt-circle-dogs/sets/hit-single

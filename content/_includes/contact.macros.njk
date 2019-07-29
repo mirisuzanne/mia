@@ -10,22 +10,37 @@
   data-netlify="true">
   <label data-field="name">
     <span data-label>Name:</span>
-    <input data-input="text" type="text" name="name" />
+    <input
+      data-input="text"
+      type="text"
+      name="name"
+      required />
   </label>
   <label data-field="email">
     <span data-label>Email:</span>
-    <input data-input="text" type="email" name="email" />
+    <input
+      data-input="text"
+      type="email"
+      name="email"
+      required />
   </label>
   <label data-field="message">
     <span data-label>Message:</span>
-    <textarea data-input="text area" name="message"></textarea>
+    <textarea
+      data-input="text area"
+      name="message"
+      required></textarea>
   </label>
   <label hidden>
     <span>Don't fill out this field:</span>
     <input name="subject" />
   </label>
   <div data-actions>
-    <button data-btn="submit" type="submit">{{ submit }}</button>
+    <button
+      data-btn="submit"
+      type="submit">
+      {{ submit }}
+    </button>
   </div>
 </form>
 {% endmacro %}

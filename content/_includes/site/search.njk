@@ -2,32 +2,32 @@
   action="https://google.com/search"
   method="get"
   data-form="search">
-  <input type="hidden" name="q" id="q" value="site:{{ pkg.homepage | safe }}">
-  <label
-    data-field="search"
-    for="search-str">
-    <span data-hidden>Search</span>
-    <input
-      data-input="text"
-      type="text"
-      name="q"
-      placeholder="Search…"
-      autocomplete="off"
-      id="search-str">
-  </label>
-  <button
-    data-btn="search flush"
-    data-offsite
-    data-hidden
-    type="submit">
-    Search
-  </button>
+  <div role="search">
+    <input type="hidden" name="q" id="q" value="site:{{ pkg.homepage | safe }}">
+    <label
+      data-field="search"
+      for="search-str">
+      <span data-hidden>Search</span>
+      <input
+        data-input="text"
+        type="text"
+        name="q"
+        placeholder="Search…"
+        autocomplete="off"
+        id="search-str">
+    </label>
+    <button
+      data-btn="search flush"
+      data-offsite
+      data-hidden
+      type="submit">
+      Search
+    </button>
+    <ul
+      data-navlist="search"
+      data-dropdown="links"
+      style="--right: 0;"
+      aria-expanded="false">
+    </ul>
+  </div>
 </form>
-<div
-  class="search-results"
-  data-dropdown="left"
-  aria-expanded="false">
-  <div
-    data-dropdown-content
-    data-navlist="search"></div>
-</div>

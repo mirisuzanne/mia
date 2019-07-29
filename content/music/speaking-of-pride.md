@@ -8,7 +8,6 @@ tags:
   - music
   - writing
   - transition
-  - video
 events:
   - venue: Invisible City
     date: 2018-06-14

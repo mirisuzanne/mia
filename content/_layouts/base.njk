@@ -2,12 +2,13 @@
 {%- import 'site/macros.njk' as show -%}
 {%- import 'events/macros.njk' as cal -%}
 <!doctype html>
-<html lang="en" data-theme="{{ site.themes[0] }}">
+<html lang="en" data-theme="{{ site.themes[0] }}" data-colors>
 	{%- set meta_title = renderData.title or title -%}
 	{%- set desc = sub or summary or content or none -%}
 	{%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') if desc else desc -%}
 	{%- set meta_desc = description or desc or site.description -%}
-	{%- set full_title = banner or meta_title -%}
+	{%- set full_title = renderData.banner or banner or meta_title -%}
+	{%- set full_title = show.tag_title(collections) if (full_title == 'show_tags') else full_title | mdInline(false) -%}
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport"
@@ -23,10 +24,12 @@
 		<link rel="canonical"
 			href="{{ canon | url }}">
 
-		<script src="https://use.typekit.net/slx1xnq.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-
 		{% for url in site.styles %}
+			<link rel="stylesheet"
+				href="/assets/css/{{ url }}" />
+		{% endfor %}
+
+		{% for url in extra_styles %}
 			<link rel="stylesheet"
 				href="/assets/css/{{ url }}" />
 		{% endfor %}
@@ -36,29 +39,17 @@
 	</head>
 
 	<body
-		data-layout="body"
-		data-area="full"
-		data-flow="grid">
-		{% include 'site/banner.njk' %}
+		data-layout="body">
+		{% include 'site/menu.njk' %}
 		{% include 'site/nav.njk' %}
-		{% include 'site/hero.njk' %}
+		{% include 'site/banner.njk' %}
+		{% include 'site/fancy.njk' %}
 
-    {% if (content or summary) and not hide_content %}
-			{% set elsewhere = {
-				'venue': venue,
-				'url': url
-			} if elsewhere else none %}
-      {{ show.main(
-				content=content,
-				intro=summary,
-				section=section,
-				erasure=erasure,
-				elsewhere=elsewhere
-			) }}
-    {% endif %}
+		<main data-layout="main">
+			{% include 'site/page.njk' %}
+			{% include 'site/calendar.njk' %}
+		</main>
 
-		{% include 'site/series.njk' %}
-		{% include 'site/calendar.njk' %}
 		{% include 'site/footer.njk' %}
 
 		<script type="text/javascript" src="https://unpkg.com/lunr/lunr.js"></script>

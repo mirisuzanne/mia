@@ -1,6 +1,7 @@
 ---
 title: Dynamic CSS
-sub: Layouts and beyond
+banner: Dynamic CSS -- layouts & beyond
+sub: with grids & custom properties
 slides: https://talks.oddbird.net/dynamic-css/
 hero:
   img: talks/miriam.jpg
@@ -8,7 +9,6 @@ tags:
   - speaking
   - code
   - layout
-  - video
 events:
   - venue: Webconf.asia
     url: https://2019.webconf.asia/
@@ -108,6 +108,8 @@ press:
 summary: |
   Don't let the declarative syntax fool you --
   CSS is a powerful and dynamic programming language.
+  It's time to start moving style logic
+  back into the language designed for it.
 media:
   - span: full
     <<: *fsfest
@@ -116,7 +118,7 @@ media:
 ---
 {% import "content.macros.njk" as content %}
 
-**CSS has come a long way since the browser wars** of the late 90s.
+CSS has come a long way since the browser wars of the late 90s.
 What used to be a struggle,
 is now often a breeze (see `box-shadow` or `border-radius`).
 But the last 2 years have pushed CSS into entirely new territory:

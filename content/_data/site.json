@@ -7,9 +7,9 @@
   "images": "/assets/images/",
   "icon": "icons/miriam.svg",
   "nav": {
-    "home": "/",
-    "shop": "https://art.miriamsuzanne.com",
+    "@name": "/",
     "about": "/who/",
+    "tags": "/tags/",
     "contact": "/contact/"
   },
   "og": {
@@ -18,9 +18,13 @@
     "img": "headshots/mia-smirk.jpg"
   },
   "themes": [
-    "dark",
-    "light",
-    "contrast"
+    "pink-to-blue",
+    "blue-to-pink",
+    "complement",
+    "adjacent",
+    "triad",
+    "monochrome",
+    "black"
   ],
   "feed": "feed.xml",
   "styles": ["screen.css"]

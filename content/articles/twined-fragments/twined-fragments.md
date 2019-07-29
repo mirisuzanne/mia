@@ -5,18 +5,14 @@ url: https://medium.com/twined-fragments/twined-fragments-chapter-1-mothers-fath
 venue: Twined Fragments
 hero:
   img: 2017/she-tried.jpg
+summary: |
+  "Mother finds me at her wardrobe, in her pumps and pearls.
+  *What are you doing?*
+  Being a mommy.
+  *Are you, then?*
+  She clips on the earrings (they pinch!),
+  reaches for her lipstick."
 ---
-
-> Mother finds me at her wardrobe, in her pumps and pearls.
-> *What are you doing?*
-> Being a mommy.
-> *Are you, then?*
-> She clips on the earrings (they pinch!),
-> reaches for her lipstick.
->
-> ---Allison Washington
-
-------
 
 Twined Fragments is an ongoing collaboration
 between authors **Miriam Suzanne** and

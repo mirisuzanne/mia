@@ -1,62 +1,14 @@
 {% import "utility.macros.njk" as utility %}
 
 
-{% macro main(
-  content,
-  intro=none,
-  section=none,
-  erasure=false,
-  elsewhere=none,
-  page=true
-) %}
-  {% if content or intro %}
-    <main
-      data-area="main-left"
-      data-flow="grid">
-      {% if page %}
-        {{ inner(content, intro, section, erasure, elsewhere) }}
-      {% else %}
-        {{ content | safe }}
-      {% endif %}
-    </main>
-  {% endif %}
-{% endmacro %}
-
-
-{% macro inner(
-  content,
-  intro,
-  section,
-  erasure,
-  elsewhere
-) %}
-  <div
-    data-main
-    {{ utility.attr_if('data-section', section.name or 'content') }}
-    {{ utility.attr_if('data-area', section.area or true) }}
-    {{ utility.style_if(section.style) }}>
-    <div
-      {{ utility.attr_if('data-content', section.content or true) }}
-      {{ utility.attr_if('data-flow', section.flow) }}
-      {{ utility.attr_if('data-erase', 'off' if erasure else none) }}
-      data-typeset>
-      {% if intro %}
-        <div class='intro'>{{ intro | md | safe }}</div>
-      {% endif %}
-
-      {{ content | typogr | safe }}
-
-      {% if elsewhere %}
-        <p class="elsewhere">
-          Source:
-          <a rel="bookmark"
-            href="{{ elsewhere.url }}">
-            <em>{{ elsewhere.venue }}</em>
-          </a>
-        </p>
-      {% endif %}
-    </div>
-  </div>
+{% macro tag_title(collections) %}
+  {% set amp = '&amp;&nbsp;' %}
+  {% for tag in collections | getTags %}
+    {% set url = tag | tagLink(collections) %}
+    {% set amp1 = '' if loop.first else amp %}
+    {{ amp1 | safe }}<a href="{{ url }}">{{ tag | displayName }}</a>
+  {% endfor %}
+  {{ amp | safe }}<a href="/tags/">more</a>
 {% endmacro %}
 
 
@@ -64,9 +16,13 @@
   items,
   page
 ) %}
-  {% for name, url in items %}
-    {{ nav_link(name, url, page) }}
-  {% endfor %}
+  {% set at_name %}Miriam <span data-above="medium">Suzanne</span>{% endset %}
+  <ul data-navlist="site">
+    {% for name, url in items %}
+      {% set name = at_name if (name == '@name') else name %}
+      <li class="nav-item">{{ nav_link(name, url, page) }}</li>
+    {% endfor %}
+  </ul>
 {% endmacro %}
 
 
@@ -88,7 +44,7 @@
   {% endfor %}
 
   {{ nav_link(
-    name='tags…',
+    name='tags',
     url='/tags/',
     page=page
   ) }}
@@ -111,6 +67,6 @@
   <a
     href="{{ url | url }}"
     {{ utility.show_attrs(attrs) }}>
-    {{ name }}
+    {{ name | safe }}
   </a>
 {% endmacro %}

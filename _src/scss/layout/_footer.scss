@@ -1,34 +1,29 @@
 // Footer Layout
 // =============
 
-.footer-hr {
-  border: none;
-  grid-column: full;
-  margin-top: size('gutter');
-}
-
-[data-section='footer'] {
-  @include font-family('code');
-  --top: #{size('quarter-shim')};
-  font-size: size('xsmall');
+[data-layout='footer'] {
+  --top: var(--quarter-shim);
+  background: var(--bg-full);
+  font-size: var(font-small);
+  margin-top: var(--spacer);
+  padding: var(--spacer) var(--gutter);
 
   p {
-    margin-bottom: size('half-shim');
+    margin-bottom: var(--half-shim);
   }
 }
 
 [data-layout='flag'] {
-  --angle: 5deg;
-  background-image: stripes(
+  background-image: linear-gradient(
     var(--angle, 5deg),
-    'trans-blue',
-    'trans-pink',
-    'trans-white',
-    'trans-pink',
-    'trans-blue'
+    powderblue 20%,
+    pink 20% 40%,
+    white 40% 60%,
+    pink 60% 80%,
+    powderblue 80%
   );
-  grid-column: full;
   min-height: 90vh;
+  filter: brightness(var(--img-bright, 100%));
 
   @include above('page-break') {
     --angle: 95deg;

@@ -1,12 +1,9 @@
 {% import 'utility.macros.njk' as utility %}
 {% import 'site/macros.njk' as show %}
 
-<nav data-area="nav">
-  <div data-inner="nav">
-    {% include "site/search.njk" %}
+<nav data-layout="nav">
+  {% set page = collections.all | getPage(page) | first or page %}
+  {{ show.site_nav(site.nav, page) }}
 
-    {% set page = collections.all | getPage(page) | first or page %}
-    {{ show.site_nav(site.nav, page) }}
-    {{ show.tag_nav(collections, page) }}
-  </div>
+  {% include "site/search.njk" %}
 </nav>

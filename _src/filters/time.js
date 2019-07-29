@@ -37,8 +37,8 @@ const formatDate = (date, format) => {
   const D = days[date.getUTCDay()];
   const yyyy = date.getUTCFullYear();
   const md = `${M} ${d}`;
-  const since = now.getUTCFullYear() === yyyy ? md : yyyy;
   const iso = `${yyyy}-${mm}-${dd}`;
+  const range = `${M} ${yyyy}`;
 
   const formats = {
     dd,
@@ -47,18 +47,21 @@ const formatDate = (date, format) => {
     mm,
     MM,
     M,
-    md,
     yyyy,
+    md,
+    iso,
+    range,
     day: D,
     date: d,
     month: MM,
     year: yyyy,
-    iso: iso,
+    mmd: `${MM} ${d}`,
+    dy: `${d}, ${yyyy}`,
     slash: `${mm}/${dd}/${yyyy}`,
     url: `${yyyy}/${mm}/${dd}`,
     short: `${M} ${d}, ${yyyy}`,
     long: `${MM} ${d}, ${yyyy}`,
-    since: `since ${since}`,
+    since: `since ${range}`,
     rfc: `${iso}T12:00:00-06:00`,
   };
 

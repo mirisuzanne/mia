@@ -13,7 +13,7 @@ tags:
 hero:
   img: 2019/creative-bloq.jpg
 summary: |
-  Steve Jenkins interviews Miriam
+  Steve Jenkins interviews me
   about the state of CSS,
   and what's coming next for the language --
   from Intrinsic Design

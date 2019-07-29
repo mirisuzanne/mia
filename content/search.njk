@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
   {%- endset -%}
   {%- set json = {
     url: item.url,
-    title: item.data.title,
+    title: item.data.title | mdInline | striptags,
     meta: meta,
     events: events,
     content: item.templateContent | striptags

@@ -1,9 +1,10 @@
 ---
 title: CSS Tricks
-sub: Staff Writer -- blog for people who make websites
+sub: blog for people who make websites
+org: Staff Writer
 url: https://css-tricks.com/author/miriam/
 start: 2016-10-15
-end: null
+end: ongoing
 index: css tricks
 hero:
   img: elsewhere/css-tricks.svg

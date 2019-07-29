@@ -1,16 +1,19 @@
 ---
 title: Teacup Gorilla
-sub: Bass & Vocals -- dark indie soundscapes with evocative poetry
+sub: dark indie-rock soundscapes with evocative poetry
+org: Bass & Vocals
 hero:
   img: art/music/video-meta.jpg
 url: https://teacupgorilla.com/
 start: 2010-03-04
-end: null
+end: ongoing
 index: teacup gorilla
 tags:
   - art
   - music
+  - writing
   - teacup gorilla
+  - band
 events:
   - title: PRF BBQ Denver
     date: 2019-04-28

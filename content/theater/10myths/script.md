@@ -1,6 +1,6 @@
 ---
-title: 10 Myths... [script]
-banner: 10 Myths on the Proper Application of Beauty Products [script]
+title: Script -- 10 Myths...
+banner: Script -- 10 Myths on the Proper Application of Beauty Products
 sub: |
   Award-winning stage adaptation of
   [Riding SideSaddle*](/books/sidesaddle/),

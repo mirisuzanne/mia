@@ -1,50 +1,44 @@
 // Nav Layout
 // ==========
 
-[data-area='nav'] {
-  position: relative;
-  margin: size('gutter') 0;
-
-  @include above('page-break') {
-    grid-area: nav;
-    grid-row-end: span 3;
-    margin: 0 0 0 size('grid-margin');
-  }
+[data-layout='nav'] {
+  align-items: center;
+  background: var(--overlay);
+  backdrop-filter: blur(var(--shim));
+  display: grid;
+  font-size: var(--font-small);
+  grid: 'nav search' auto / minmax(max-content, 1fr) minmax(3em, 16em);
+  grid-area: nav;
+  grid-column-gap: var(--gutter);
+  padding: var(--shim) var(--gutter);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
-[data-inner='nav'] {
-  margin-bottom: size('gutter');
-  position: sticky;
-  text-align: center;
-  top: size('shim');
-  z-index: 10;
+// Site Nav
+// --------
 
-  @include above('page-break') {
-    align-content: start;
-    display: grid;
-    justify-items: end;
-  }
+[data-nav='site'] {
+  grid-area: nav;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
 }
 
 [data-nav] {
-  @include font-family('code');
-  display: inline-block;
-  font-size: size('xsmall');
-  font-style: italic;
-  padding: size('quarter-shim') size('grid-margin');
-  text-align: right;
-
-  &[data-current] {
-    background: #{var-color('callout')};
+  #{$link} {
+    border-bottom: var(--border-width) solid var(--nav-border, transparent);
+    display: inline-block;
+    padding: 0 var(--half-shim) var(--half-shim);
+    text-decoration: none;
   }
 
   &[data-active] {
-    background: #{var-color('action-hover')};
-    color: var-color('background');
-    font-style: normal;
-    justify-self: stretch;
-    text-decoration: none;
-    text-shadow: none;
+    --nav-border: var(--accent-fade);
   }
 }
 
@@ -52,29 +46,12 @@
 // ------
 
 [data-form='search'] {
-  --field-padding: #{size('quarter-shim') size('half-shim')};
-  --field-margin: #{size('half-shim')};
-  font-size: size('xsmall');
-
-  @include above('page-break') {
-    --field-margin: 0;
-    --field-width: 8em;
-    display: flex;
-    margin-bottom: size('quarter-shim');
-    padding-right: size('half-shim');
-  }
+  --field-margin: 0;
+  grid-area: search;
+  justify-self: end;
+  position: relative;
 }
 
-.search-results {
-  --t: #{size('guttter')};
-}
-
-[data-navlist='search'] {
-  display: grid;
-
-  [href] {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+[aria-expanded='false'] {
+  display: none;
 }

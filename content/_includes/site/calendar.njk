@@ -10,11 +10,4 @@
   page=page
 ) %}
 
-{% if content %}
-  {{ calendar }}
-{% else %}
-  {{ show.main(
-    content=calendar,
-    page=false
-  ) }}
-{% endif %}
+{{ calendar }}

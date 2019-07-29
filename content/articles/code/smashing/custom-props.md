@@ -1,6 +1,8 @@
 ---
 feature: true
-title: CSS Custom Properties In The Cascade
+title: CSS Custom Properties
+banner: CSS Custom Properties In The Cascade
+sub: a deep-dive into what's possible
 url: https://www.smashingmagazine.com/2019/07/css-custom-properties-cascade/
 venue: Smashing Magazine
 date: 2019-07-01
@@ -15,12 +17,16 @@ tags:
   - writing
   - smashing magazine
 summary: |
-  A deeper dive into the
-  **CSS Custom Properties for Cascading Variables** specification.
-  Why are they called custom properties,
-  how do they work in the cascade,
-  and what else can we do with them?
   Pushing past the “variable” metaphor,
-  custom properties can provide new ways
-  to balance context and isolation in CSS patterns and components.
+  CSS Custom Properties can provide new ways
+  to balance context and isolation
+  in our patterns and components.
+
+  [vars]: https://www.w3.org/TR/css-variables/
 ---
+
+A deeper dive into the
+[CSS Custom Properties for Cascading Variables][vars] specification.
+Why are they called custom properties,
+how do they work in the cascade,
+and what else can we do with them?

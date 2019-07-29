@@ -1,7 +1,6 @@
 ---
 title: 'Herman: design docs'
-sub: |
-  Automate design-system documentation directly from your Sass
+sub: Automate design-system documentation directly from your Sass
 venue: OddBird
 url: https://oddbird.net/herman/
 date: 2015-11-18

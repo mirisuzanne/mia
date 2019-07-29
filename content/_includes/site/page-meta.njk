@@ -1,0 +1,48 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+{% set pub_tags = tags | publicTags %}
+{% set elsewhere = {
+  'venue': venue,
+  'url': url
+} if elsewhere else none %}
+
+{% if pub_tags or elsewhere or org %}
+  <footer data-meta="page">
+    {% if org %}
+      <p>
+        {{ org | mdInline | safe }}
+      </p>
+    {% endif %}
+
+    <p>
+      {{ utility.datetime(
+        pubdate=pubdate or page.date,
+        start=start or date or page.date,
+        end=end,
+        format='long'
+      ) }}
+    </p>
+
+    {% if adr %}
+      <p>
+        {{ adr | typogr | safe }}
+      </p>
+    {% endif %}
+
+    {% if elsewhere %}
+      <p class="elsewhere">
+        at
+        <a rel="bookmark"
+          href="{{ elsewhere.url }}">
+          <em>{{ elsewhere.venue }}</em>
+        </a>
+      </p>
+    {% endif %}
+
+    {% if pub_tags %}
+      <p class="page-tags">
+        in {{ utility.tag_list(tags, collections) }}
+      </p>
+    {% endif %}
+  </footer>
+{% endif %}

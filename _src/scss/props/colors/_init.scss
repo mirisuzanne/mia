@@ -1,0 +1,43 @@
+html {
+  --os-mode: 1;
+
+  @media (prefers-color-scheme: dark) {
+    --os-mode: -1;
+    background: #222;
+    color: #ddd;
+  }
+
+  @media (prefers-color-scheme: light) {
+    --os-mode: 1;
+    background: #222;
+    color: #ddd;
+  }
+}
+
+[data-theme] {
+  // optionally set `--h-user-*` values with JS
+  --h-prime: var(--h-user, 330);
+  --h-accent: var(--h-user-accent, 195);
+
+  // initial lightness and saturation values
+  --l-user-p: calc(var(--l-user) * 1%);
+  --l: var(--l-user-p, 50%);
+  --s-user-p: calc(var(--s-user) * 1%);
+  --s: var(--s-user-p, 80%);
+
+  // offset lightness and saturation by various amounts
+  --offset-count: 4;
+  --user-contrast-p: calc(var(--user-contrast) * 1%);
+  --contrast: var(--user-contrast-p, 45%);
+
+  --offset-step: calc(var(--contrast) / var(--offset-count));
+  --offset-diff: calc(var(--contrast) - var(--offset-step));
+
+  --off-1: calc(var(--offset-step));
+  --off-2: calc(var(--offset-step) + var(--offset-diff) * 1 / 3);
+  --off-3: calc(var(--offset-step) + var(--offset-diff) * 2 / 3);
+  --off-4: var(--contrast);
+
+  // generate faded values…
+  --fade: 0.75;
+}

@@ -1,9 +1,10 @@
 ---
 title: Ersatz Robots
-sub: Bass -- trans-femme 90's-alt sad-girl rock
+sub: trans-femme 90's-alt sad-girl rock
+org: Bass
 url: https://www.facebook.com/ersatzrobots/
 start: 2018-06-24
-end: null
+end: ongoing
 hero:
   img: art/music/ersatz.jpg
   alt: Galen Nissa, Miriam, Josie, and Gwyn
@@ -16,6 +17,7 @@ calendar: music
 tags:
   - art
   - music
+  - band
 ---
 {% import "content.macros.njk" as content %}
 

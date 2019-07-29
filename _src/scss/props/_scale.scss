@@ -1,0 +1,25 @@
+html {
+  --gutter: 0.75rem;
+  --gutter-plus: calc(var(--gutter) * 1.5);
+  --double-gutter: calc(var(--gutter) * 2);
+  --shim: calc(var(--gutter) / 2);
+  --half-shim: calc(var(--shim) / 2);
+  --quarter-shim: calc(var(--shim) / 4);
+
+  --spacer: calc(var(--gutter) + 5vh);
+  --double-spacer: calc(var(--double-gutter) + 8vh);
+
+  --border-width: var(--quarter-shim);
+  --border-radius: var(--half-shim);
+
+  --font-large: calc(1rem + 0.5vw);
+  --font-small: 0.75rem;
+  --font-smaller: 0.75em;
+
+  --line-ratio: 1.4;
+  --rhythm: 1.4rem;
+
+  @media (min-width: 35em) {
+    --gutter: 1rem;
+  }
+}

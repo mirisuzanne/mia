@@ -1,0 +1,53 @@
+<menu
+  type="toolbar"
+  data-menu="theme"
+  role="complementary"
+  hidden>
+  <details>
+    <summary class="menu-item">colors</summary>
+    <div data-dropdown="pad">
+      <div class="color-btns">
+        <button
+          data-toggle="colors"
+          data-btn="small"
+          type="button">
+          invert
+        </button>
+        <button
+          data-unset="colors"
+          data-btn="small"
+          type="button"
+          hidden>
+          reset
+        </button>
+      </div>
+
+      <label data-field for="theme-select">
+        <span data-label>theme:</span>
+        <select name="theme-select" id="theme-select">
+          {% for theme in site.themes %}
+            <option value="{{ theme }}" {{ 'selected' if loop.first }}>
+              {{ theme }}
+            </option>
+          {% endfor %}
+        </select>
+      </label>
+      <label data-field for="hue-select">
+        <span data-label>hue:</span>
+        <input id="hue-select" type="range" min="0" max="360" value="330">
+      </label>
+      <label data-field for="sat-select">
+        <span data-label>saturation:</span>
+        <input id="sat-select" type="range" min="0" max="100" value="80">
+      </label>
+      <label data-field for="light-select">
+        <span data-label>lightness:</span>
+        <input id="light-select" type="range" min="25" max="75" value="50">
+      </label>
+      <label data-field for="contrast-select">
+        <span data-label>contrast:</span>
+        <input id="contrast-select" type="range" min="25" max="150" value="45">
+      </label>
+    </div>
+  </details>
+</menu>

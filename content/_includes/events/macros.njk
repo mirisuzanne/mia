@@ -7,20 +7,23 @@
   collections,
   page
 ) %}
-  {% set title = 'events…' %}
-  {% set org_title = 'orgs…' %}
+  {% set title = 'episodes' %}
+  {% set org_title = 'orgs' %}
   {% set events = collections.all | getPage(page) | getEvents %}
 
   {% if events_group == 'all' %}
-    {% set title = 'events…' %}
     {% set events = collections.all | getEvents %}
+  {% elif events_group == 'all_orgs' %}
+    {% set org_title = 'org history' %}
+    {% set events_group = 'all' %}
+    {% set events = none %}
   {% elif events_group %}
     {% set tag_name = events_group | displayName %}
     {% set title %}
-      events tagged '{{ tag_name }}'…
+      '{{ tag_name }}' episodes
     {% endset %}
     {% set org_title %}
-      orgs tagged '{{ tag_name }}'…
+      '{{ tag_name }}' orgs
     {% endset %}
     {% set events = collections.all | getEvents(events_group) %}
   {% endif %}
@@ -28,7 +31,8 @@
   {{ show_orgs(
     org_title,
     events_group,
-    collections
+    collections,
+    all=(org_title != 'orgs')
   ) }}
 
   {% if events %}
@@ -45,42 +49,48 @@
 {% macro show_orgs(
   title,
   events_group,
-  collections
+  collections,
+  all=false
 ) %}
   {% if events_group %}
-    {% set orgs = collections.orgs %}
+    {% set orgs = collections.all_orgs if all else collections.orgs %}
     {% set orgs = orgs if (events_group == 'all') else orgs | withTag(events_group) %}
 
     {% if orgs | length %}
       <section
-        data-orgs="section"
-        data-area="main-left"
-        data-flow="grid">
+        data-orgs="section">
+
         {{ utility.section_title(
-          title=title,
-          area='type'
+          title=title
         ) }}
-        {% for item in orgs %}
-          {% set title = item.data.banner or item.data.renderData.title or item.data.title %}
-          <article
-            data-orgs="item"
-            data-area="main"
-            data-flow="grid">
-            <time
-              data-meta="orgs"
-              datetime="{{ item.data.start | getDate('iso') }}">
-              {{ item.data.start | getDate('yyyy') }}->
-            </time>
-            <h3 data-title="orgs">
-              {{ utility.link_if(title, item.url) }}
-            </h3>
-            {% if item.data.sub %}
-              <p data-meta="org-sub">
-                {{ item.data.sub | mdInline | safe }}
-              </p>
-            {% endif %}
-          </article>
-        {% endfor %}
+
+        <div data-orgs="list">
+          {% for item in orgs %}
+            {% set title = item.data.banner or item.data.renderData.title or item.data.title %}
+            <article
+              data-orgs="item">
+              <time
+                data-meta="org-date"
+                datetime="{{ item.data.start | getDate('iso') }}">
+                {{
+                  item.data.start | getDate('yyyy')
+                }}->{{
+                  item.data.end | getDate('yyyy')
+                  if item.data.end and (item.data.end != 'ongoing')
+                  else ''
+                }}
+              </time>
+              <h3 data-title="orgs">
+                {{ utility.link_if(title, item.url) }}
+              </h3>
+              {% if item.data.sub %}
+                <p data-meta="org-sub">
+                  {{ item.data.sub | mdInline | safe }}
+                </p>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
       </section>
     {% endif %}
   {% endif %}
@@ -161,9 +171,13 @@
   {%- set not_me = ('inspiration' in tags) -%}
   {%- set is_self = (item.page.url == self) -%}
 
+  {% set summary = item.page.data.sub if item.event else (item.page.data.summary or item.page.data.sub) %}
+  {% set summary = summary | md if (summary and not is_self) else none %}
+
   {{ cards.event(
     title=title(item, is_self, not_me),
-    meta=meta(item, tags, all),
+    meta=meta(item, tags, all, is_self),
+    summary=summary,
     feature=item.feature
   ) }}
 {% endmacro %}
@@ -175,17 +189,17 @@
   not_me=false
 ) %}
   {# Venue Link #}
-  {%- set venue_name = item.event.venue or item.page.data.venue -%}
+  {%- set venue_name = item.event.venue or item.page.data.venue or none -%}
   {%- set venue_url = item.event.url or item.page.data.url or item.page.url -%}
-  {%- set venue = utility.link_if(venue_name, venue_url) if venue_name else none -%}
-  {%- set venue = ['@', venue] | join(' ') if venue else none -%}
+  {%- set venue = utility.link_if(venue_name, venue_url) if is_self else venue_name -%}
+  {%- set venue = ['@', venue] | join('&nbsp;') if venue else none -%}
 
   {# Title Link #}
   {%- set title_name = item.event.title or item.page.data.title -%}
   {%- set url = none if is_self else item.page.url -%}
   {%- set url = (url or venue_url) if (not venue) else url -%}
   {%- set title = utility.link_if(title_name | mdInline, url) -%}
-  {%- set title = ['See Also:', title] | join(' ') if not_me else title -%}
+  {%- set title = ['Link:', title] | join(' ') if not_me else title -%}
 
   {{ title | safe }}
   {{ venue | safe }}
@@ -197,34 +211,15 @@
   tags,
   all
 ) %}
-  {%- set date_format = 'since' if (item.group | groupName == 'ongoing') else 'md' -%}
+  {{ utility.datetime(
+    pubdate=item.page.data.pubdate or item.page.date,
+    start=item.start,
+    end=item.end,
+    format='md'
+  ) }}
+
   {%- set venue_adr = item.event.adr or item.page.data.adr -%}
-
-  {{ datetime(item, date_format) }}
-
   {% if venue_adr %}
     | {{ venue_adr }}
   {% endif %}
-
-  {% if tags %}
-    {% if venue_adr %}»{% else %}|{% endif %}
-    {{ utility.tag_list(tags | sort, all) }}
-  {% endif %}
-{% endmacro %}
-
-
-{% macro datetime(
-  item,
-  format
-) %}
-  {%- set start = item.start | getDate('year') -%}
-  {%- set end = item.end | getDate('year') -%}
-
-  <time datetime="{{ item.date | getDate('iso') }}">
-    {% if (format == 'since') or (start == end) %}
-      {{ item.date | getDate(format) }}
-    {% else %}
-      {{ start }}—{{ end }}
-    {% endif %}
-  </time>
 {% endmacro %}

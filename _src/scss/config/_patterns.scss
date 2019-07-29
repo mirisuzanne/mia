@@ -3,34 +3,10 @@
 /// @link https://oddbird.net/accoutrement/docs/core-get.html
 ///   Accoutrement Core
 
-// Borders
-// --------
-/// @group config-patterns
-/// @type map
-/// @see border
-$borders: (
-  '_base': size('border') solid,
-  'hero': '#_base' var-color('feature'),
-  'section': '#_base' var-color('border'),
-  'quote': '#_base' var-color('callout'),
-);
-
-// Shadows
-// -------
-/// @group config-patterns
-/// @type map
-/// @see shadow
-$shadows: (
-  'dark': 0 -1px 0,
-  'light': 0 1px 0,
-  'contrast': '#dark',
-);
-
 // Patterns
 // --------
 /// @group config-patterns
 /// @type map
-/// @see patterns
 $patterns: (
   'bright':
     linear-gradient(to left, var-color('text-highlight'), var-color('action')),
@@ -39,26 +15,33 @@ $patterns: (
 
 @mixin fancy-text {
   /* stylelint-disable */
+  color: var(--text-highlight);
+
   @supports (background-clip: text) {
-    @content;
+    --link-color: transparent;
+    background: var(--feature-gradient);
     background-clip: text;
     box-decoration-break: clone;
     color: transparent;
     text-shadow: none;
+    @content;
   }
   /* stylelint-enable */
 }
 
-@mixin divider {
-  @include font-family('amp');
-  color: var-color('text-highlight');
-  font-style: italic;
-  margin: size('spacer') 0;
-  text-align: center;
-
-  @include before('~ & & & ~') {
-    @include fancy-text {
-      background: pattern('bright');
-    }
+@mixin divide($position: 'before') {
+  &::#{$position} {
+    @include fancy-text;
+    @include font-family('midnight');
+    content: '~ & & & ~';
+    display: block;
+    font-size: var(--font-large);
+    margin: var(--spacer) 0;
+    text-align: center;
   }
+}
+
+@mixin divider {
+  @include divide;
+  border: none;
 }

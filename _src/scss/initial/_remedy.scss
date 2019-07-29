@@ -1,0 +1,86 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+} /* Switch to border-box for box-sizing. */
+
+/* Immediately jump any animation to the end point if the user has set their device to "prefers reduced motion". */
+/* This could create bad, unintended consequences. Remove as needed, and write your own appropriate code for prefers-reduced-motion. */
+/* stylelint-disable */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-play-state: paused !important;
+  }
+}
+/* stylelint-enable */
+
+body {
+  margin: 0; /* Remove the tiny space around the edge of the page */
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  font-weight: normal;
+}
+
+/* Improve readability */
+pre {
+  white-space: pre-wrap; /* Overflow by default is bad. */
+}
+
+hr {
+  border: 0.5px solid;
+}
+
+/* Are browsers now consistent with margin & padding on lists?
+  See: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation  */
+nav ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* Switch display mode to block, since that's what we usually want for images. */
+  vertical-align: middle; /* If you override, and make an image inline, it's likely you'll want middle vertical alignment. */
+}
+
+img,
+video {
+  max-width: 100%; /* Make images and video flexible by default. */
+  height: auto; /* Ensure images and video maintain their aspect ratio when max-width comes into play. */
+}
+
+img {
+  border-style: none; /* Remove the border on images inside links in IE 10 and earlier. */
+}
+
+/* In English, when styling the <q> element, use curly quotes instead of straight quotes. */
+
+/* Code for this is now in the quotes.css file */
+
+/* Support upcoming properties that haven't been broadly implemented yet,
+   but for which the initial value and legacy behavior is not be the best behavior.
+*/
+
+/* Consistent line spacing, which does not unnecessarily grow to accommodate things that would fit anyway */
+/* From CSS Inline Layout Module Level 3: https://drafts.csswg.org/css-inline-3/#line-sizing-property */
+:root {
+  line-sizing: normal;
+
+  /* Improve spacing of punctuation marks and at script changes in CJK languages */
+  /* From CSS Text Module Level 4: https://drafts.csswg.org/css-text-4/#text-spacing-property */
+  text-spacing: trim-start allow-end trim-adjacent ideograph-alpha
+    ideograph-numeric;
+}

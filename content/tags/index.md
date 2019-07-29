@@ -1,8 +1,6 @@
 ---
 layout: base
-title: All The Tags
-sub: maybe I should add a search feature...
+title: Browse Everything by Tags
 show_tags: true
 eleventyExcludeFromCollections: true
 ---
-

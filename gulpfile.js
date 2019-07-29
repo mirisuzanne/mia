@@ -111,6 +111,13 @@ gulp.task('sass', () => {
   return sassTask({ src: paths.SASS_DIR + 'screen.scss', sourcemap: 'inline' });
 });
 
+gulp.task('sass-guide', () => {
+  return sassTask({
+    src: paths.SASS_DIR + 'styleguide.scss',
+    sourcemap: 'inline',
+  });
+});
+
 gulp.task('sass-prod', () => {
   return sassTask({
     src: paths.SASS_DIR + 'screen.scss',
@@ -176,7 +183,7 @@ gulp.task(
 );
 
 gulp.task('watch', cb => {
-  gulp.watch(paths.SASS, gulp.parallel(['sasslint', 'sass']));
+  gulp.watch(paths.SASS, gulp.parallel(['sasslint', 'sass', 'sass-guide']));
   gulp.watch(paths.JS, gulp.parallel('js'));
 
   // lint all scss when rules change
@@ -194,10 +201,13 @@ gulp.task('sassdoc-watch', cb => {
   cb();
 });
 
-gulp.task('build-assets', gulp.parallel('imagemin', 'js', 'sass'));
+gulp.task(
+  'build-assets',
+  gulp.parallel('imagemin', 'js', 'sass', 'sass-guide'),
+);
 gulp.task(
   'build-assets-prod',
-  gulp.parallel('imagemin', 'js', 'sassdoc', 'sass-prod'),
+  gulp.parallel('imagemin', 'js', 'sass-prod', 'sass-guide'),
 );
 
 gulp.task('build-clean', () => del([`${paths.OUTPUT_DIR}**`]));

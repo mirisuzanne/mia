@@ -2,47 +2,19 @@
 
 <header
   data-layout="banner">
+  <h1 class="banner-title" data-bright>
+    {{ full_title | safe }}
+  </h1>
 
-  <div class="toggle-theme">
-    <select data-input="text" name="themes" id="toggle-theme">
-      {% for theme in site.themes %}
-        <option
-          value="{{ theme }}"
-          {{ utility.attr_if('selected', loop.first) }}>
-          {{ theme }}
-        </option>
-      {% endfor %}
-    </select>
-  </div>
+  {% set go_to = utility.link_if(venue or 'the interwebz', url) if url else none %}
+  {% set go_to = ['@', go_to] | join(' ') if go_to else none %}
+	{% set sub_md = sub | mdInline if sub else sub -%}
+	{% set sub = show.tag_title(collections) if (sub == 'show_tags') else sub_md -%}
 
-  <div class="banner-content">
-    <h1 class="banner-title" data-bright>
-      {{ full_title | mdInline(false) | safe }}
-    </h1>
-
-    {% set go_to = utility.link_if(venue or 'the interwebz', url) if url else none %}
-
-    {% if sub or go_to %}
-      <span class="subtitle">
-        {% if sub %}
-          {{ sub | mdInline | safe }}
-        {% elif go_to %}
-          @ {{ go_to }}
-        {% endif %}
-      </span>
-    {% endif %}
-  </div>
-
-  <div
-    class="banner-fancy"
-    role="presentation" >
-    {% for i in range(1, 25) -%}
-      {% set col = range(1, 80) | random %}
-      {% set row = range(1, 40) | random %}
-      {% set scale = range(1, 25) | random / 10 %}
-      {% set opacity = (range(1, 30) | random + 10) / 100 %}
-      <span data-dot="{{ range(0, 5) | random }}"
-        style="--area: {{ col }} / {{ row }}; --scale: {{ scale }}; --opacity: {{ opacity }};"></span>
-    {%- endfor %}
-  </div>
+  {% if sub or go_to %}
+    <p class="subtitle">
+      {{ sub | safe }}
+      {{ go_to | safe }}
+    </p>
+  {% endif %}
 </header>

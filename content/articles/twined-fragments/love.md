@@ -5,15 +5,11 @@ url: https://psiloveyou.xyz/twined-fragments-sex-love-romance-c292698d8f1a
 venue: PS I Love You
 hero:
   img: 2017/the-man.jpg
+summary: |
+  "I don’t have many guy friends, but my guitarist is one.
+  Parting, I lean in for the cheek-kiss
+  but he plants a good one right on my lips."
 ---
-
-> I don’t have many guy friends, but my guitarist is one.
-> Parting, I lean in for the cheek-kiss
-> but he plants a good one right on my lips.
->
-> ---Allison Washington
-
-------
 
 Twined Fragments is an ongoing collaboration
 between authors **Miriam Suzanne** and

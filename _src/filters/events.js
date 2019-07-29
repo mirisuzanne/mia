@@ -24,10 +24,11 @@ const buildEvent = (page, event) => {
   const eventStart = event ? event.start || event.date : null;
   const start = eventStart || page.data.start || page.date;
   let end = eventStart ? event.end : page.data.end;
+  end = end ? end : start;
 
   // set end for far future…
-  if (!end) {
-    end = end === null ? new Date(`${groupNames['ongoing']}-01-01`) : start;
+  if (end === 'ongoing') {
+    end = new Date(`${groupNames['ongoing']}-01-01`);
   }
 
   // set group…

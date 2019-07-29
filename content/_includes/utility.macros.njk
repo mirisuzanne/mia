@@ -5,8 +5,7 @@
   area='main-left'
 ) %}
   <header
-    class="section-header"
-    data-area="{{ area }}">
+    class="section-header">
     <h2 class="section-title">
       {{ title | typogr | safe }}
     </h2>
@@ -36,9 +35,22 @@
   all,
   separator=', '
 ) -%}
-{%- for tag in tags | publicTags -%}
-  {{ tag_link(tag, all) }}{%-if not loop.last %}{{ separator }}{% endif -%}
-{%- endfor -%}
+{% set tags = tags | publicTags %}
+{% if tags | length > 0 %}
+  {% if (separator == 'ul') %}
+    <ul>
+      {%- for tag in tags -%}
+        <li>
+          {{ tag_link(tag, all) }}
+        </li>
+      {%- endfor -%}
+    </ul>
+  {% else %}
+    {%- for tag in tags -%}
+      {{ tag_link(tag, all) }}{%-if not loop.last %}{{ separator }}{% endif -%}
+    {%- endfor -%}
+  {% endif %}
+{% endif %}
 {%- endmacro -%}
 
 {# Attributes #}
@@ -93,17 +105,53 @@
 
 {% macro prev_next(to, is) %}
   {% if to %}
-    <div
-      data-section="series-{{ is }}"
-      data-area="{{ 'left' if (is == 'prev') else 'right'}}"
-      data-flow="grid">
-      <div
-        data-area="main"
-        data-content>
-        {{ is }}:
-        {{ link_if(to.data.title | mdInline, to.url) }}
-      </div>
-    </div>
+    <li>
+      {{ is }}:
+      {{ link_if(to.data.title | mdInline, to.url) }}
+    </li>
   {% endif %}
 {% endmacro %}
 
+{% macro datetime(
+  pubdate,
+  start,
+  end,
+  format='long'
+) %}
+  {% set ranges = {
+    'same-y': {
+      'start': 'M',
+      'end': 'range'
+    },
+    'same-m': {
+      'start': 'md',
+      'end': 'd' if (format == 'md') else 'dy'
+    }
+  } %}
+
+  {% set ongoing = (end == 'ongoing') or (end | groupName == 'ongoing') %}
+
+  <time
+    datetime="{{ pub | getDate('iso') }}"
+    {{ attr_if('pubdate', not not pubdate) }}>
+
+    {% if ongoing %}
+      since {{ start | getDate('range') }}
+    {% elif (start and end) and (start != end) %}
+      {% set start_m = start | getDate('month') %}
+      {% set start_y = start | getDate('year') %}
+      {% set end_m = end | getDate('month') %}
+      {% set end_y = end | getDate('year') %}
+
+      {% set same = 'same-y' if (start_y == end_y) else none %}
+      {% set same = 'same-m' if same and (start_m == end_m) else same %}
+
+      {{ start | getDate(ranges[same].start or 'range') }}
+      {{- '---' | typogr | safe -}}
+      {{ end | getDate(ranges[same].end or 'range') }}
+
+    {% else %}
+      {{ start | getDate(format) }}
+    {% endif %}
+  </time>
+{% endmacro %}

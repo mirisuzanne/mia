@@ -11,7 +11,6 @@ tags:
   - design
   - process
   - collaboration
-  - video
 events:
   - venue: Design 4 Drupal [keynote]
     url: https://design4drupal.org/

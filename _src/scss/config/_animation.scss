@@ -21,7 +21,7 @@ $times: (
 /// @link https://oddbird.net/accoutrement/docs/animate-change.html
 ///   Animate Changes
 $changes: (
-  'img-filter': filter time('relaxed') ease('_in-out'),
+  'img-filter': filter time('fast') ease('_in-out'),
   'hero-rotate': transform time('relaxed') ease('_in-out-back'),
   'hero': (
     '#img-filter',

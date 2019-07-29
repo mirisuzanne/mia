@@ -13,8 +13,8 @@ eraseBtn &&
   eraseBtn.addEventListener('click', () => {
     toggleErase();
   });
-const resultsDropdown = document.querySelector('.search-results'),
-  resultsList = document.querySelector('[data-navlist="search"]'),
+const resultsDropdown = document.querySelector('[data-navlist="search"]'),
+  resultsList = resultsDropdown,
   searchInput = document.querySelector('#search-str'),
   searchBtn = document.querySelector('[data-btn~="search"]');
 let searchIdx, searchJson;
@@ -39,13 +39,12 @@ const clearResults = e => {
     for (let e in results) {
       e = results[e];
       const t = searchJson.filter(t => t.url === e.ref)[0],
-        s = document.createElement('a');
-      s.setAttribute('href', t.url),
-        s.setAttribute('data-nav', 'searchs'),
-        (s.textContent = decodeHtml(t.title)),
-        resultsList.appendChild(s);
+        s = document.createElement('li');
+      (s.innerHTML = linkTemplate(t).trim()), resultsList.appendChild(s);
     }
-  };
+  },
+  linkTemplate = e =>
+    `\n  <a href="${e.url}">\n    ${decodeHtml(e.title)}\n  </a>\n`;
 
 searchInput.addEventListener('focus', () => {
   searchJson ||
@@ -65,6 +64,11 @@ searchInput.addEventListener('focus', () => {
                 this.add(e);
               });
           }));
+      })
+      .then(() => {
+        searchBtn
+          .setAttribute('disabled', 'disabled')
+          .setAttribute('tabindex', -1);
       });
 }),
   searchInput.addEventListener('input', () => {
@@ -72,36 +76,116 @@ searchInput.addEventListener('focus', () => {
     e.length > 1
       ? ((e = e.includes('~') ? e : `${e}~1`), find(e))
       : clearResults(!0);
-  }),
-  searchBtn.addEventListener('click', e => {
-    e.preventDefault();
-    const t = searchInput.value;
-    t.length > 2 ? find(t) : clearResults(!0);
   });
-const root = document.querySelector('html'),
-  attr = 'data-theme',
-  themeToggle = document.getElementById('toggle-theme'),
-  setTheme = e => {
-    e && root.setAttribute(attr, e);
-  },
-  getTheme = () => {
-    const e = e => {
-      return window.matchMedia(`(prefers-color-scheme: ${e})`).matches
-        ? e
-        : null;
-    };
 
-    return localStorage.getItem('theme') || e('dark') || e('light');
+const clearAll = e => {
+  'Escape' === e.code &&
+    (clearResults(!0), (searchInput.value = ''), searchInput.focus());
+};
+
+searchInput.addEventListener('keyup', e => clearAll(e)),
+  resultsDropdown.addEventListener('keyup', e => clearAll(e));
+const root = document.querySelector('html'),
+  themeMenu = document.querySelector('[data-menu="theme"]'),
+  modeToggle = document.querySelector('[data-toggle="colors"]'),
+  unsetBtn = document.querySelector('[data-unset="colors"]'),
+  selectElements = {
+    theme: document.querySelector('#theme-select'),
+    hue: document.querySelector('#hue-select'),
+    sat: document.querySelector('#sat-select'),
+    light: document.querySelector('#light-select'),
+    contrast: document.querySelector('#contrast-select'),
   },
-  changeTheme = () => {
-    const e = themeToggle.value;
-    setTheme(e), localStorage.setItem('theme', e);
+  attrs = {
+    theme: 'data-theme',
   },
-  initTheme = e => {
-    e && ((themeToggle.value = e), setTheme(e));
+  props = {
+    hue: '--h-user',
+    sat: '--s-user',
+    light: '--l-user',
+    contrast: '--user-contrast',
+    mode: '--user-mode',
+  },
+  store = {
+    theme: 'colorTheme',
+    mode: 'colorMode',
+    hue: 'colorHue',
+    sat: 'colorSat',
+    light: 'colorLight',
+    contrast: 'colorContrast',
+  },
+  clearColors = () => {
+    setValue('theme', selectElements.theme.getAttribute('data-default'), !1),
+      Object.keys(store).forEach(e => localStorage.removeItem(store[e])),
+      Object.keys(props).forEach(e => root.style.removeProperty(props[e])),
+      Object.keys(selectElements).forEach(e => {
+        const t = selectElements[e];
+        selectElements[e].value = t.getAttribute('data-default');
+      }),
+      unsetBtn.setAttribute('hidden', '');
+  },
+  setValue = (e, t, o = !0) => {
+    t &&
+      (attrs[e]
+        ? root.setAttribute(attrs[e], t)
+        : props[e] && root.style.setProperty(props[e], t),
+      o &&
+        store[e] &&
+        (localStorage.setItem(store[e], t),
+        unsetBtn.removeAttribute('hidden')));
+  },
+  getMode = () =>
+    Number(
+      getComputedStyle(root)
+        .getPropertyValue('--mode')
+        .trim(),
+    ),
+  changeMode = () => {
+    setValue('mode', -1 * getMode(), !0);
+  },
+  initMenu = () => {
+    themeMenu.removeAttribute('hidden');
+  },
+  initValue = e => {
+    selectElements[e].setAttribute('data-default', selectElements[e].value);
+    const t = localStorage.getItem(store[e]);
+    t &&
+      (setValue(e, t, !1),
+      (selectElements[e].value = t),
+      unsetBtn.removeAttribute('hidden'));
+  },
+  initMode = () => {
+    let e = localStorage.getItem(store.mode);
+    const t = {
+      light: 1,
+      dark: -1,
+    }[e];
+    (e = t || e) &&
+      (setValue('mode', e, t), unsetBtn.removeAttribute('hidden'));
   };
 
-(document.onload = initTheme(getTheme())),
-  themeToggle.addEventListener('input', () => {
-    changeTheme();
+(document.onload = void themeMenu.removeAttribute('hidden')),
+  (document.onload = initMode()),
+  modeToggle.addEventListener(
+    'click',
+    () => void setValue('mode', -1 * getMode(), !0),
+  ),
+  unsetBtn.addEventListener(
+    'click',
+    () => (
+      setValue('theme', selectElements.theme.getAttribute('data-default'), !1),
+      Object.keys(store).forEach(e => localStorage.removeItem(store[e])),
+      Object.keys(props).forEach(e => root.style.removeProperty(props[e])),
+      Object.keys(selectElements).forEach(e => {
+        const t = selectElements[e];
+        selectElements[e].value = t.getAttribute('data-default');
+      }),
+      void unsetBtn.setAttribute('hidden', '')
+    ),
+  ),
+  Object.keys(selectElements).forEach(e => {
+    (document.onload = initValue(e)),
+      selectElements[e].addEventListener('input', () =>
+        setValue(e, selectElements[e].value),
+      );
   });

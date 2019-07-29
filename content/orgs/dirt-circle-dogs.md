@@ -1,7 +1,8 @@
 ---
 feature: true
 title: Dirt Circle Dogs
-sub: Multi-Instrumetalist -- bright/dark music
+sub: blues-inflected bright/dark music
+org: Multi-Instrumetalist
 url: http://www.dirtcircledogs.com/
 start: 2007-08-14
 end: 2010-01-14
@@ -13,6 +14,7 @@ tags:
   - music
   - art
   - dirt circle dogs
+  - band
 press:
   - text: |
       An earthy and soulful collaboration…

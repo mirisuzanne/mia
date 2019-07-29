@@ -1,12 +1,15 @@
 ---
 title: Grapefruit Lab
-sub: Co-Founder -- multimedia performance ensemble
+sub: multimedia performance & theater ensemble
+org: Co-Founder
+adr: Denver, CO
 url: https://www.grapefruitlab.com/
 start: 2009-08-14
-end: null
+end: ongoing
 index: grapefruit lab
 tags:
   - theater
+  - writing
   - art
   - grapefruit lab
 events:

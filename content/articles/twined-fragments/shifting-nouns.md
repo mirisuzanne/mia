@@ -5,16 +5,12 @@ url: https://medium.com/twined-fragments/twined-fragments-chapter-2-shifting-nou
 venue: Twined Fragments
 hero:
   img: 2017/the-humans.jpg
+summary: |
+  "I’ve seen myself in the mirror.
+  I find me… disorienting.
+  What do they see that I don’t?
+  Why aren’t they laughing at me?"
 ---
-
-> I’ve seen myself in the mirror.
-> I find me… disorienting.
-> What do they see that I don’t?
-> Why aren’t they laughing at me?
->
-> ---Miriam Suzanne
-
-------
 
 Twined Fragments is an ongoing collaboration
 between authors **Miriam Suzanne** and

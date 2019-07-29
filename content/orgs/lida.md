@@ -1,6 +1,8 @@
 ---
 title: The LIDA Project
-sub: Company Member / Technical Director -- Denver, CO
+sub: meta-media performance collective
+adr: Denver, CO
+org: Company Member | Technical Director
 url: http://lida.org/
 start: 2008-05-01
 end: 2010-03-01
@@ -53,11 +55,12 @@ summary: |
   Founded in 1995,
   The LIDA Project is a meta-media art collective
   dedicated to experimental live performance.
-  Since the company’s founding,
-  LIDA has maintained a vigorous and strong commitment
-  to the growth of the avant-garde in the American Theatre.
-  Working as a permanent company of artists and technicians,
-  The LIDA Project builds new works for the theatre
-  based on a unique long-form collaborative process
-  for devising new work.
 ---
+
+Since the company’s founding,
+LIDA has maintained a vigorous and strong commitment
+to the growth of the avant-garde in the American Theatre.
+Working as a permanent company of artists and technicians,
+The LIDA Project builds new works for the theatre
+based on a unique long-form collaborative process
+for devising new work.
