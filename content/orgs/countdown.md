@@ -9,11 +9,11 @@ end: 2010-01-14
 index: countdown to zero
 tags:
   - _calendar
+  - countdown to zero
   - theater
   - art
   - ensemble
   - technical director
-  - countdown
 events:
   - title: The Resistible Rise of Arturo Ui
     venue: Countdown to Zero

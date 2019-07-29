@@ -1,6 +1,6 @@
 ---
-title: \*Beyond Pixels
-sub: A profile in Net Magazine
+title: \*Beyond Pixels Profile
+sub: Some day you’ll realise you can’t do everything…
 venue: Net Magazine
 url: https://www.creativebloq.com/net-magazine
 date: 2016-12-01

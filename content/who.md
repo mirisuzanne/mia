@@ -9,20 +9,22 @@ hero:
   caption: |
     This face is one of my special skills.
 summary: |
-  Miriam is an artist, activist,
-  teacher, and web-developer.
+  I'm an artist, activist,
+  teacher, and web developer.
   As a co-founder of [OddBird](/orgs/oddbird/),
   [Teacup Gorilla](/orgs/teacup-gorilla/),
   and [Grapefruit Lab](/orgs/grapefruit-lab/)
-  she hopes to create art & software
+  I hope to create art & software
   that celebrate the queer complexity
   of human experience.
 ---
 {% import "content.macros.njk" as content %}
 
-Miriam has published novels & albums & technical manuals,
-produced award-winning theater & open-source code,
+Over the last 15 years
+I've published novels & albums & technical manuals;
+created award-winning theater & open-source tools;
+cleaned my bedroom more than once;
 and presented at conferences around the world --
-but she has never been promoted at a job,
-done a white-board interview,
+but I've never been promoted at a job,
+done a whiteboard interview,
 or graduated from college.

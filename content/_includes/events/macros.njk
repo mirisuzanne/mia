@@ -8,12 +8,13 @@
   page
 ) %}
   {% set title = 'episodes' %}
-  {% set org_title = 'orgs' %}
+  {% set org_title = 'current orgs' %}
   {% set events = collections.all | getPage(page) | getEvents %}
+  {% set all_orgs = (events_group == 'all_orgs') %}
 
   {% if events_group == 'all' %}
     {% set events = collections.all | getEvents %}
-  {% elif events_group == 'all_orgs' %}
+  {% elif all_orgs %}
     {% set org_title = 'org history' %}
     {% set events_group = 'all' %}
     {% set events = none %}
@@ -32,7 +33,7 @@
     org_title,
     events_group,
     collections,
-    all=(org_title != 'orgs')
+    all_orgs
   ) }}
 
   {% if events %}
