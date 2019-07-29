@@ -34,6 +34,7 @@
 
 @mixin range-thumb {
   &::-webkit-slider-thumb {
+    transform: translateY(-35%);
     @content;
   }
   &::-moz-range-thumb {
@@ -70,22 +71,25 @@ $rainbow: ();
 [type='range'] {
   appearance: none;
   background: transparent;
-  height: 0.75em;
+  height: var(--gutter);
   max-width: 100%;
+  padding: 0;
 
   @include range-track {
-    height: 1em;
+    appearance: none;
+    height: var(--shim);
     background: var(--callout);
-    border-radius: 1em;
-    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--border);
     cursor: pointer;
   }
 
   @include range-thumb {
+    appearance: none;
     border: 2px solid var(--accent-fg3);
-    height: 1em;
-    width: 0.5em;
-    border-radius: 0.25em;
+    height: var(--gutter);
+    width: var(--shim);
+    border-radius: var(--border-radius);
     background: var(--prime);
     cursor: pointer;
   }

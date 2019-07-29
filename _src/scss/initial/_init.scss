@@ -34,20 +34,20 @@ summary {
   display: var(--show);
 }
 
-[data-above='small'] {
-  @include above(30em) {
+[data-above='page'] {
+  @include above('page-break') {
     --show: initial;
   }
 }
 
 [data-above='medium'] {
-  @include above(45em) {
+  @include above('medium') {
     --show: initial;
   }
 }
 
-[data-above='large'] {
-  @include above(60em) {
+[data-above='wide'] {
+  @include above('wide') {
     --show: initial;
   }
 }

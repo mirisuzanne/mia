@@ -3,40 +3,6 @@
 /// @link https://oddbird.net/accoutrement/docs/core-get.html
 ///   Accoutrement Core
 
-// Borders
-// -------
-/// @group tools-patterns
-/// @type map
-$borders: () !default;
-
-// Border [Function]
-// -----------------
-/// @group tools-patterns
-/// @param {string} $key -
-///   border token key
-/// @return {*} -
-///   compiled border token value
-@function border($key) {
-  @return get-token($borders, $key);
-}
-
-// Shadows
-// -------
-/// @group tools-patterns
-/// @type map
-$shadows: () !default;
-
-// Shadow [Function]
-// -----------------
-/// @group tools-patterns
-/// @param {string} $key -
-///   border token key
-/// @return {*} -
-///   compiled border token value
-@function shadow($key) {
-  @return get-token($shadows, $key);
-}
-
 // Patterns
 // --------
 /// @group tools-patterns
