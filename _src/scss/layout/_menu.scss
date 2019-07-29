@@ -108,10 +108,11 @@ $rainbow: ();
 }
 
 [id='sat-select'] {
+  // 0.1% so that units aren't removed in minification
   @include range-track {
     background: linear-gradient(
       to right,
-      hsl(var(--h-prime, 0), 0%, var(--l, 50%)),
+      hsl(var(--h-prime, 0), 0.1%, var(--l, 50%)),
       hsl(var(--h-prime, 0), 100%, var(--l, 50%))
     );
   }
