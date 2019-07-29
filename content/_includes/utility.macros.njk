@@ -136,7 +136,7 @@
     {{ attr_if('pubdate', not not pubdate) }}>
 
     {% if ongoing %}
-      since {{ (start or pubdate) | getDate('range') }}
+      since {{ start | getDate('range') }}
     {% elif (start and end) and (start != end) %}
       {% set start_m = start | getDate('month') %}
       {% set start_y = start | getDate('year') %}
@@ -151,7 +151,7 @@
       {{ end | getDate(ranges[same].end or 'range') }}
 
     {% else %}
-      {{ (pubdate or start) | getDate(format) }}
+      {{ start | getDate(format) }}
     {% endif %}
   </time>
 {% endmacro %}

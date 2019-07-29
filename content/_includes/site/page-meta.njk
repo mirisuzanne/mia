@@ -17,7 +17,7 @@
     <p>
       {{ utility.datetime(
         pubdate=pubdate or page.date,
-        start=start,
+        start=start or date or page.date,
         end=end,
         format='long'
       ) }}
