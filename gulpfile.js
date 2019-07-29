@@ -87,9 +87,6 @@ const sassTask = opts => {
       cascade: false,
     }),
   );
-  if (options.minify) {
-    stream = stream.pipe(cleanCSS({ level: 0 }));
-  }
   if (options.sourcemap) {
     stream = stream.pipe(
       sourcemaps.write(options.sourcemap === 'inline' ? undefined : '.'),
