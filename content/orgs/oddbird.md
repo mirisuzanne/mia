@@ -1,7 +1,7 @@
 ---
 title: OddBird
-sub: humane and accessible web software
-role: Co-Founder
+sub: accessible web software with human-centered design
+org: Co-Founder
 start: 2008-04-15
 end: ongoing
 hero:

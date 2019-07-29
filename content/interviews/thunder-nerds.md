@@ -1,5 +1,6 @@
 ---
 title: Dynamic CSS Interview
+sub: a mid-conference conversation
 venue: Thunder Nerds
 url: https://www.thundernerds.io/2019/04/miriam-suzanne-vueconf-us-2019/
 date: 2019-03-26
@@ -13,7 +14,7 @@ tags:
   - podcast
   - code
 summary: |
-  Thunder Nerds interview Miriam
+  Thunder Nerds interview me
   before her talk at VueConf US 2019.
 media:
   - span: full

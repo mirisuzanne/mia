@@ -6,18 +6,32 @@
   'url': url
 } if elsewhere else none %}
 
-{% if pub_tags or elsewhere %}
+{% if pub_tags or elsewhere or org %}
   <footer data-meta="page">
-    {{ utility.datetime(
-      pubdate=pubdate or page.date,
-      start=start,
-      end=end,
-      format='long'
-    ) }}
+    {% if org %}
+      <p>
+        {{ org | mdInline | safe }}
+      </p>
+    {% endif %}
+
+    <p>
+      {{ utility.datetime(
+        pubdate=pubdate or page.date,
+        start=start,
+        end=end,
+        format='long'
+      ) }}
+    </p>
+
+    {% if adr %}
+      <p>
+        {{ adr | typogr | safe }}
+      </p>
+    {% endif %}
 
     {% if elsewhere %}
       <p class="elsewhere">
-        from
+        at
         <a rel="bookmark"
           href="{{ elsewhere.url }}">
           <em>{{ elsewhere.venue }}</em>

@@ -1,7 +1,9 @@
 ---
 feature: true
 title: New World Arts
-sub: Artistic Director (2003-2007), Technical Director (2001-2003)
+sub: ensemble theater and event space
+org: Artistic Director & Technical Director
+adr: Goshen, IN
 url: https://web.archive.org/web/20100810193456/http://newworldarts.org/events/history.php
 start: 2001-01-01
 end: 2007-08-14
@@ -101,13 +103,21 @@ events:
     date: 2001-02-04
     tags:
       - lighting design
+summary: |
+  Founded in 1998 as New World Players,
+  we produced original & alternative ensemble theater
+  for over a decade --
+  along with an art gallery and event space.
 ---
 
-Founded in 1998 as New World Players,
-we developed and produced altrenative ensemble theater
-for over a decade.
-I began working with the company
+I began working with New World
 as an Assistant Director and Lighting Designer in 2001,
-and became Artistic Director
+took over Technical Direction,
+and eventually became the Artistic Director
 from 2004--2007.
 
+Our shows included a mix of
+original devised work,
+local playwrights,
+re-invented classics,
+and more.

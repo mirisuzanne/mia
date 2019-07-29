@@ -2,12 +2,10 @@
 feature: true
 title: 'Susy: layout toolkit'
 sub: |
-  Popular
-  **CSS layout framework** –
+  Popular CSS layout framework
   used by **Virgin America**,
   **The Smithsonian**,
-  **Esquire UK**,
-  and more.
+  and others
 venue: OddBird
 url: https://oddbird.net/susy/
 date: 2009-07-13

@@ -1,7 +1,6 @@
 ---
 title: The In-Between
-sub: |
-  A site-specific performance in the Utah desert…
+sub: a site-specific performance in the Utah desert
 hero:
   img: art/theater/inbetween.jpg
 events:

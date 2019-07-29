@@ -1,12 +1,12 @@
 ---
 feature: true
 title: Not Clear To Me, an Installation
-sub: art and words @ Bardo Coffee House
+sub: art and words
 venue: Bardo Coffee House
 adr: Denver, CO
 url: https://www.bardocoffee.com/
 date: 2019-07-05
-end: 2019-08-01
+end: 2019-07-31
 hero:
   img: art/shows/bardo.jpg
   alt: Art on the walls of Bardo Coffee
@@ -23,8 +23,7 @@ gallery:
     - img: art/parents/parents2.jpg
       alt: digital collage with tail of a tadpole, bees, and orchids
 summary: |
-  An art installation
-  at my local cafe --
+  Art installation
   featuring a mix of
   [pieces from Riding SideSaddle*](/books/sidesaddle/art/),
   [PROPHETIA VETITUM MUNDI](/2019/07/05/screwtooth/),

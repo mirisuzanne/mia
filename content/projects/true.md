@@ -1,9 +1,7 @@
 ---
 feature: true
 title: 'True: unit-testing'
-sub: |
-  Popular
-  Sass unit-testing framework
+sub: Popular Sass unit-testing framework
 venue: OddBird
 url: https://oddbird.net/true/
 date: 2013-06-06

@@ -1,5 +1,6 @@
 ---
 title: Video -- Last Bullet
+sub: live-filmed music video
 venue: Seventh Circle Sessions
 url: https://www.youtube.com/watch?v=tF2IoI9fHzs
 date: 2019-04-20

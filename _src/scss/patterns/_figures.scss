@@ -32,6 +32,11 @@ img {
   border-width: var(--border-width) 0;
   margin: var(--gutter) 0;
   padding: var(--gutter);
+
+  [data-meta='page'] + & {
+    --main-column: unset;
+    margin-top: 0;
+  }
 }
 
 [data-figure='content'] {

@@ -1,9 +1,7 @@
 ---
 feature: true
 title: Script -- My Body, My Gender
-sub: |
-  Why Is No One Talking About
-  [The Mouthfeel](https://www.youtube.com/watch?v=j1dJ8whOM8E)?
+sub: a trans vagina monologue
 date: 2018-11-05
 hero:
   img: art/theater/vm/vm.jpg
@@ -15,6 +13,9 @@ tags:
   - writing
   - script
   - transition
+summary: |
+  Why Is No One Talking About
+  [The Mouthfeel](https://www.youtube.com/watch?v=j1dJ8whOM8E)?
 ---
 
 We have a story in my family.

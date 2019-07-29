@@ -1,6 +1,7 @@
 ---
 title: Raven Jane
-sub: Multi-Instrumetalist
+sub: indie roots-rock featuring Rachel Eisenstat
+org: Multi-Instrumetalist
 url: http://www.ravenjane.com/
 start: 2010-09-14
 end: 2012-03-24
@@ -13,6 +14,7 @@ tags:
   - art
   - raven jane
   - audio
+  - band
 events:
   - title: Album -- Queen City Magnetic
     venue: BandCamp

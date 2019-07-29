@@ -1,9 +1,8 @@
 ---
 title: Vagina Monologues
-sub: |
-  Unofficial, autobiographical,
-  trans-femme Vagina Monologue
-  for It Grows Wild
+sub: unofficial, autobiographical, trans-femme monologue
+venue: It Grows Wild
+url: https://www.itgrowswild.com/
 date: 2018-11-02
 hero:
   img: art/theater/vm/vm.jpg
@@ -22,11 +21,9 @@ tags:
   - writing
   - actor
 summary: |
-  I was invited to write and perform
-  my own Vagina Monologue
-  for [It Grows Wild][igw] theater.
-
-  [igw]: https://www.itgrowswild.com/
+  I was invited to perform
+  a Vagina Monologue,
+  and ended up writing my own.
 ---
 {% import "content.macros.njk" as content %}
 

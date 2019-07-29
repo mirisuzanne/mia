@@ -1,9 +1,7 @@
 ---
 feature: true
 title: Outside The Room
-sub: |
-  Grapefruit Lab adapts Kafka
-  for a series of DCPA "Bite Size" productions
+sub: bite-size production of Kafka's metamorphoses
 venue: Denver Center for the Performing Arts
 url: https://www.denvercenter.org/tickets-events/bite-size/
 date: 2018-10-23
@@ -22,15 +20,15 @@ video:
   - iframe: https://www.youtube.com/embed/aBBnSi5MJ8o
     width: 560
     height: 315
+summary: |
+  A family struggles to find humanity and normalcy
+  in a world made uncertain and strange
+  after the transformation and “othering” of one of their own.
+  This physical theatre piece imagines what happens
+  on the other side of the iconic door
+  in Kafka’s Metamorphosis.
 ---
 {% import "content.macros.njk" as content %}
-
-A family struggles to find humanity and normalcy
-in a world made uncertain and strange
-after the transformation and “othering” of one of their own.
-This physical theatre piece imagines what happens
-on the other side of the iconic door
-in Kafka’s Metamorphosis.
 
 {{ content.fig(
   video,
