@@ -6,8 +6,8 @@ html {
   --half-shim: calc(var(--shim) / 2);
   --quarter-shim: calc(var(--shim) / 4);
 
-  --spacer: calc(var(--gutter) + 5vh);
-  --double-spacer: calc(var(--double-gutter) + 8vh);
+  --spacer: calc(var(--gutter) + 5vmin);
+  --double-spacer: calc(var(--double-gutter) + 8vmin);
 
   --border-width: var(--quarter-shim);
   --border-radius: var(--half-shim);
