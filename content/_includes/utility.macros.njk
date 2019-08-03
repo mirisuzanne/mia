@@ -1,20 +1,12 @@
 {# Titles #}
 {% macro section_title(
-  title,
-  more=none,
-  area='main-left'
+  title
 ) %}
   <header
     class="section-header">
     <h2 class="section-title">
       {{ title | typogr | safe }}
     </h2>
-
-    {% if more %}
-      <div data-content>
-        {{ more | typogr | safe }}
-      </div>
-    {% endif %}
   </header>
 {% endmacro %}
 

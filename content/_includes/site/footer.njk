@@ -1,15 +1,40 @@
 {% import 'utility.macros.njk' as utility %}
+{% import 'contact.macros.njk' as contact %}
 
 <footer
   data-layout="footer">
-  <div data-content>
-    <p>
-      Copyright © {% getDate 'year' %}
-      <a href="mailto:{{ site.email }}">
-        {{ site.author }}
-      </a>
-    </p>
+
+  {% set title %}
+    Copyright © {% getDate 'year' %}
+  {% endset %}
+
+  <div class="section-header">
+    <h2 class="section-title">
+      {{ title | typogr | safe }}
+    </h2>
   </div>
+
+  <div data-footer="content">
+    <section data-footer="bio">
+      <h3>
+        <a href="mailto:{{ site.email }}">
+          {{ site.author }}
+        </a>
+      </h3>
+
+      {% if page.url | url != '/who/' %}
+        {% set who = collections.all | getPage('/who/') | first %}
+        {{ who.data.summary | md | safe }}
+      {% endif %}
+    </section>
+
+    {% if page.url | url != '/contact/' %}
+      <section data-footer="contact">
+        {{ contact.form() }}
+      </section>
+    {% endif %}
+  </div>
+
+  <div data-layout="flag"></div>
 </footer>
-<div data-layout="flag"></div>
 
