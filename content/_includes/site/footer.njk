@@ -15,18 +15,16 @@
   </div>
 
   <div data-footer="content">
-    <section data-footer="bio">
-      <h3>
-        <a href="mailto:{{ site.email }}">
-          {{ site.author }}
-        </a>
-      </h3>
+    {% if page.url | url != '/who/' %}
+      <section data-footer="bio">
+        <h3>
+          <a href="mailto:{{ site.email }}">{{ site.author }}</a>
+        </h3>
 
-      {% if page.url | url != '/who/' %}
         {% set who = collections.all | getPage('/who/') | first %}
         {{ who.data.summary | md | safe }}
-      {% endif %}
-    </section>
+      </section>
+    {% endif %}
 
     {% if page.url | url != '/contact/' %}
       <section data-footer="contact">

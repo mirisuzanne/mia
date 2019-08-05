@@ -114,6 +114,7 @@ mark {
   align-items: center;
   display: grid;
   grid: 'border title' auto / 1fr 1fr;
+  grid-column: 1 / -1;
   margin: var(--spacer) 0;
 
   @include before('') {
