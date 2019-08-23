@@ -1,0 +1,6 @@
+[data-media] {
+  align-items: var(--align, stretch);
+  display: grid;
+  grid-template-columns: var(--spacer) 1fr;
+  grid-gap: var(--gutter);
+}

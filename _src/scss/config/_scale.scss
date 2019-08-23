@@ -13,6 +13,14 @@ $page-sizes: (
     (
       'divide': 2,
     ),
+  'page-plus': '#page'
+    (
+      'times': 1.5,
+    ),
+  'double-page': '#page'
+    (
+      'times': 2,
+    ),
   'quarter': '#page'
     (
       'divide': 4,

@@ -56,6 +56,32 @@
 {% endmacro %}
 
 
+{% macro media(
+  src,
+  alt='',
+  align=none,
+  embed=false,
+  class=none,
+  content=none
+) %}
+  {%- set content = content if (content != none) else caller() -%}
+  {% set align = ('--align: %s;' % align) if align else none %}
+  <div data-media=""
+    {{ utility.attr_if('style', align) }}
+    {{ utility.attr_if('class', class) }}>
+    {% if embed %}
+      <div class="media-image">
+        {% include src %}
+      </div>
+    {% else %}
+      <img src="{{ src }}" alt="{{ alt }}" class="media-image">
+    {% endif %}
+    <div class="media-text">
+      {{ content | safe }}
+    </div>
+  </div>
+{% endmacro %}
+
 {#
   Erase
   -----
