@@ -3,10 +3,9 @@
 
 [data-layout='footer'] {
   display: grid;
-  grid: auto auto 1fr / 2fr [content-start] minmax(
-      min-content,
-      size('page-plus')
-    ) [content-end] 1fr;
+  grid:
+    auto auto 1fr / 2fr [content-start] minmax(min-content, size('double-page'))
+    [content-end] 1fr;
   min-height: calc(100vh - var(--spacer));
 }
 
@@ -23,11 +22,10 @@
   @include above('wide') {
     --gap: var(--double-gutter);
   }
-}
 
-[data-footer='bio'],
-[data-footer='contact'] {
-  max-width: size('page');
+  h3 {
+    margin: 0;
+  }
 }
 
 [data-layout='flag'] {

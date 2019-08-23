@@ -1,50 +1,80 @@
+/* stylelint-disable */
+
+/* Global Remedies…
+   ---------------- */
+
+/* Use border-box by default, globally */
 *,
 ::before,
 ::after {
   box-sizing: border-box;
-} /* Switch to border-box for box-sizing. */
-
-/* Immediately jump any animation to the end point if the user has set their device to "prefers reduced motion". */
-/* This could create bad, unintended consequences. Remove as needed, and write your own appropriate code for prefers-reduced-motion. */
-/* stylelint-disable */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-play-state: paused !important;
-  }
 }
-/* stylelint-enable */
 
+/* Consistent line spacing: */
+/* - CSS Inline Layout Module Level 3: https://drafts.csswg.org/css-inline-3/#line-sizing-property */
+html {
+  line-sizing: normal;
+}
+
+/* Improve spacing of punctuation marks and script changes in CJK languages */
+/* - CSS Text Module Level 4: https://drafts.csswg.org/css-text-4/#text-spacing-property */
+html {
+  text-spacing: trim-start allow-end trim-adjacent ideograph-alpha
+    ideograph-numeric;
+}
+
+/* Remove the tiny space around the edge of the page */
 body {
-  margin: 0; /* Remove the tiny space around the edge of the page */
+  margin: 0;
 }
 
-h2,
-h3,
-h4,
-h5,
+/* Headings…
+   --------- */
+
+/* Switch to rem units for headings */
+/* - Initial values are based on existing browser defaults */
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.17rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.83rem;
+}
 h6 {
-  line-height: 1;
-  font-weight: normal;
+  font-size: 0.67rem;
 }
 
-/* Improve readability */
+/* Keep h1 margins consistent, even when nested */
+h1 {
+  margin: 0.67em 0;
+}
+
+/* Typography…
+   ----------- */
+
+/* Overflow by default is bad */
 pre {
-  white-space: pre-wrap; /* Overflow by default is bad. */
+  white-space: pre-wrap;
 }
 
+/* Solid, thin horizonatal rules */
 hr {
   border: 0.5px solid;
 }
 
-/* Are browsers now consistent with margin & padding on lists?
-  See: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation  */
-nav ul,
-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/* Replaced Elements…
+   ------------------ */
 
+/* - Block display is usually what we want */
+/* - Remove strange space-below when inline */
 img,
 video,
 canvas,
@@ -52,35 +82,22 @@ audio,
 iframe,
 embed,
 object {
-  display: block; /* Switch display mode to block, since that's what we usually want for images. */
-  vertical-align: middle; /* If you override, and make an image inline, it's likely you'll want middle vertical alignment. */
+  display: block;
+  vertical-align: middle;
 }
 
+/* - Responsive by default */
+/* - Maintain their aspect ratio when max-width comes into play */
 img,
-video {
-  max-width: 100%; /* Make images and video flexible by default. */
-  height: auto; /* Ensure images and video maintain their aspect ratio when max-width comes into play. */
+video,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
+/* Remove the border on images inside links in IE 10 and earlier */
 img {
-  border-style: none; /* Remove the border on images inside links in IE 10 and earlier. */
+  border-style: none;
 }
 
-/* In English, when styling the <q> element, use curly quotes instead of straight quotes. */
-
-/* Code for this is now in the quotes.css file */
-
-/* Support upcoming properties that haven't been broadly implemented yet,
-   but for which the initial value and legacy behavior is not be the best behavior.
-*/
-
-/* Consistent line spacing, which does not unnecessarily grow to accommodate things that would fit anyway */
-/* From CSS Inline Layout Module Level 3: https://drafts.csswg.org/css-inline-3/#line-sizing-property */
-:root {
-  line-sizing: normal;
-
-  /* Improve spacing of punctuation marks and at script changes in CJK languages */
-  /* From CSS Text Module Level 4: https://drafts.csswg.org/css-text-4/#text-spacing-property */
-  text-spacing: trim-start allow-end trim-adjacent ideograph-alpha
-    ideograph-numeric;
-}
+/* stylelint-enable */

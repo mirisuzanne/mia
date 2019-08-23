@@ -18,8 +18,6 @@ summary: |
   that celebrate the queer complexity
   of human experience.
 ---
-{% import "content.macros.njk" as content %}
-
 Over the last 15 years
 I've published novels & albums & technical manuals;
 created award-winning theater & open-source tools;
