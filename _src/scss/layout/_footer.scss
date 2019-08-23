@@ -14,8 +14,8 @@
   display: grid;
   grid-column: content;
   grid-gap: var(--gap);
-  grid-template-columns: repeat(auto-fit, minmax(size('half'), 1fr));
-  justify-content: end;
+  grid-template-columns: repeat(auto-fit, minmax(size('half'), size('page')));
+  justify-content: center;
   margin-bottom: var(--spacer);
   padding: 0 var(--gap);
 
