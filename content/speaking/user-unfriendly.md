@@ -12,6 +12,9 @@ tags:
   - process
   - collaboration
 events:
+  - venue:  Agnes Scott College
+    adr: Atlanta, GA
+    start: 2019-09-17
   - venue: Design 4 Drupal [keynote]
     url: https://design4drupal.org/
     adr: Boston, MA
