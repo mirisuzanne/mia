@@ -18,7 +18,7 @@ tags:
 events:
   - title: Queer Art & Reading
     venue: Charis Books
-    url: https://www.charisbooksandmore.com/event/miriam-suzanne-presents-riding-sidesaddle-queer-art-and-collaborative-reading%E2%80%9D
+    url: https://www.facebook.com/events/737586806673620/
     adr: Atlanta, GA
     start: 2019-09-16
   - title: SideSaddle Reading
