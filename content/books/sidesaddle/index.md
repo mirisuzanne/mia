@@ -17,7 +17,7 @@ tags:
   - book
 events:
   - title: Queer Art & Reading
-    venue: Agnes Scott College & Charis Books
+    venue: Charis Books
     url: https://www.charisbooksandmore.com/event/miriam-suzanne-presents-riding-sidesaddle-queer-art-and-collaborative-reading%E2%80%9D
     adr: Atlanta, GA
     start: 2019-09-16

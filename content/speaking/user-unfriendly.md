@@ -12,7 +12,8 @@ tags:
   - process
   - collaboration
 events:
-  - venue:  Agnes Scott College
+  - venue: Agnes Scott College
+    url: https://calendar.agnesscott.edu/event/user_unfriendlynotes_toward_a_queer_web
     adr: Atlanta, GA
     start: 2019-09-17
   - venue: Design 4 Drupal [keynote]

@@ -311,10 +311,10 @@ accepts@~1.3.4:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-accoutrement@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/accoutrement/-/accoutrement-2.1.1.tgz#7a2f60ae0c42a529915e73ffcd4ee6f85dae84bf"
-  integrity sha512-79Wqu4YVa/2KHfZd3fWHpP0300z/HcCDkoJg+4JB3IXEJgHOWKRH5JzHgGgguZ0HEg1tglNKYDOupx6/+7ortQ==
+accoutrement@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/accoutrement/-/accoutrement-2.1.2.tgz#41713543e0b280ea23995eb8c041f57284bb5e30"
+  integrity sha512-se0jj7gShxxWEX1cjPVH2jSzWnC0GCoNERZ055S9YIHydzZxXxjOu2NxgGTBqt+mKhapcI5GDClNcfWl4DCPyA==
 
 acorn-globals@^3.0.0:
   version "3.1.0"

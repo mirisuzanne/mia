@@ -21,7 +21,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
-    "accoutrement": "^2.1.1",
+    "accoutrement": "^2.1.2",
     "beeper": "^2.0.0",
     "chalk": "^2.4.2",
     "del": "^4.1.1",
