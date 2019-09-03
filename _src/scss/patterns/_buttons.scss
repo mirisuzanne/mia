@@ -4,13 +4,21 @@
 button {
   --btn-shade: hsla(var(--h-prime), var(--s-bg1), var(--l-bg1), 0.25);
   --btn-shadow: var(--text-shadow-off) var(--text-shadow-off);
-  background-color: var(--btn-bg, var(--action));
-  background-image: linear-gradient(
-    to bottom,
-    var(--btn-shade) 50%,
-    transparent 50%
-  );
-  border: var(--border-width) solid var(--btn-border, var(--prime-fade));
+  background: linear-gradient(
+        calc(90deg + 90deg * var(--mode, 1)),
+        var(--btn-shade) 50%,
+        transparent 50%
+      )
+      padding-box,
+    linear-gradient(var(--btn-bg, var(--action)), var(--btn-bg, var(--action)))
+      padding-box,
+    linear-gradient(
+        to bottom right,
+        var(--btn-border, var(--prime-fade)),
+        var(--action)
+      )
+      border-box;
+  border: var(--border-width) solid transparent;
   border-radius: var(--border-radius) 0;
   color: var(--btn-color, var(--bg));
   cursor: pointer;
