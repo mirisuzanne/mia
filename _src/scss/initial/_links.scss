@@ -8,7 +8,7 @@ a {
     text-decoration-skip-ink: auto;
     text-decoration-thickness: var(--line-weight, 0.125em);
     text-underline-offset: var(--line-offset, 0.125em);
-    transition: text-decoration time('fast') ease('_in-out');
+    transition: text-decoration-thickness time('fast') ease('_in-out');
   }
 
   #{$focus} {
