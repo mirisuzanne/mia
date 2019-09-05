@@ -3,16 +3,28 @@
 
 a {
   #{$link} {
-    background: var(--link-bg, initial);
     color: var(--link-color, var(--action));
-    text-decoration-color: var(--link-line, var(--prime-fg1-fade));
+    text-decoration-color: var(--link-line, var(--accent-fade));
     text-decoration-skip-ink: auto;
+    text-decoration-thickness: var(--line-weight, 0.125em);
+    text-underline-offset: var(--line-offset, 0.125em);
+    transition: text-decoration-thickness time('fast') ease('_in-out');
   }
 
   #{$focus} {
-    background: var(--link-hover-bg, var(--link-bg, initial));
     color: var(--link-hover, var(--action-hover));
-    text-decoration-color: var(--link-hover-line, var(--prime, initial));
+    text-decoration-color: var(
+      --link-hover-line,
+      var(--link-line, var(--accent))
+    );
+    text-decoration-thickness: var(
+      --line-hover-weight,
+      var(--line-weight, 0.25em)
+    );
+    text-underline-offset: var(
+      --line-hover-offset,
+      var(--line-offset, 0.125em)
+    );
   }
 
   &:focus {

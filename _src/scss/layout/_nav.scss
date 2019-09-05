@@ -31,14 +31,19 @@
 
 [data-nav] {
   #{$link} {
+    --link-line: transparent;
     border-bottom: var(--border-width) solid var(--nav-border, transparent);
     display: inline-block;
+    overflow: hidden;
     padding: 0 var(--half-shim) var(--half-shim);
-    text-decoration: none;
   }
 
   &[data-active] {
     --nav-border: var(--accent-fade);
+  }
+
+  span {
+    margin-left: -1px;
   }
 }
 

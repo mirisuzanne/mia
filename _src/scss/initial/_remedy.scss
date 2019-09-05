@@ -1,7 +1,7 @@
 /* stylelint-disable */
 
-/* Global Remedies…
-   ---------------- */
+/* Global Remedies
+******************/
 
 /* Use border-box by default, globally */
 *,
@@ -10,15 +10,14 @@
   box-sizing: border-box;
 }
 
-/* Consistent line spacing: */
-/* - CSS Inline Layout Module Level 3: https://drafts.csswg.org/css-inline-3/#line-sizing-property */
+/*
+* 1. Consistent line spacing...
+*    CSS Inline Layout Module Level 3: https://drafts.csswg.org/css-inline-3/#line-sizing-property
+* 2. Improve spacing of punctuation marks and script changes in CJK languages
+*    CSS Text Module Level 4: https://drafts.csswg.org/css-text-4/#text-spacing-property
+*/
 html {
   line-sizing: normal;
-}
-
-/* Improve spacing of punctuation marks and script changes in CJK languages */
-/* - CSS Text Module Level 4: https://drafts.csswg.org/css-text-4/#text-spacing-property */
-html {
   text-spacing: trim-start allow-end trim-adjacent ideograph-alpha
     ideograph-numeric;
 }
@@ -28,11 +27,11 @@ body {
   margin: 0;
 }
 
-/* Headings…
-   --------- */
+/* Headings
+***********/
 
 /* Switch to rem units for headings */
-/* - Initial values are based on existing browser defaults */
+/* @@@ Initial values are based on existing browser defaults */
 h1 {
   font-size: 2rem;
 }
@@ -57,8 +56,30 @@ h1 {
   margin: 0.67em 0;
 }
 
-/* Typography…
-   ----------- */
+/* Nav Lists
+************/
+
+/*
+* List styling is not usually desired in navigation,
+* but this also removes list-semantics for screen-readers
+* See: https://github.com/mozdevs/cssremedy/issues/15
+*/
+nav ul {
+  list-style: none;
+}
+
+/*
+* 1. Add zero-width-space to prevent VoiceOver disable
+* 2. Absolute position ensures no extra space
+* See: https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/
+*/
+nav li:before {
+  content: '\200B';
+  position: absolute;
+}
+
+/* Typography
+*************/
 
 /* Overflow by default is bad */
 pre {
@@ -70,12 +91,16 @@ hr {
   border: 0.5px solid;
 }
 
-/* Replaced Elements…
-   ------------------ */
+/* Embedded Elements
+********************/
 
-/* - Block display is usually what we want */
-/* - Remove strange space-below when inline */
+/*
+* 1. Block display is usually what we want
+* 2. Remove strange space-below when inline
+* 3. Responsive by default
+*/
 img,
+svg,
 video,
 canvas,
 audio,
@@ -84,20 +109,109 @@ embed,
 object {
   display: block;
   vertical-align: middle;
+  max-width: 100%;
 }
 
-/* - Responsive by default */
-/* - Maintain their aspect ratio when max-width comes into play */
+/*
+* Maintain intrinsic aspect ratios when `max-width` is applied
+* (iframe, embed, and object have no intrinsic ratio, set height explicitly)
+*/
 img,
+svg,
 video,
-svg {
-  max-width: 100%;
+canvas {
   height: auto;
 }
+
+/*
+* There is no good reason elements default to 300px,
+* and audio files are unlikely to come with a width attribute
+*/
+audio {
+  width: 100%;
+}
+
+/* Old Browsers
+***************/
 
 /* Remove the border on images inside links in IE 10 and earlier */
 img {
   border-style: none;
+}
+
+/* Hide the overflow in IE 10 and earlier */
+svg {
+  overflow: hidden;
+}
+
+/* Default block display on HTML5 elements */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+/*
+* 1. Add the correct box sizing in IE 10
+* 2. Remove the padding in IE 10
+*/
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Reduced Motion
+*****************/
+
+/*
+* 1. Immediately jump any animation to the end point
+* 2. Remove transitions & fixed background attachment
+* See: https://github.com/mozdevs/cssremedy/issues/11
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1s !important;
+    animation-duration: 1s !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    transition-duration: 0s !important;
+  }
+}
+
+/* Line Heights
+***************/
+
+/*
+* The default `normal` line-height is tightly spaced, but takes font-metrics into account.
+* Looser spacing may improve readability, but may cause problems in some scripts.
+* See: https://github.com/mozdevs/cssremedy/issues/7
+*/
+html {
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+}
+caption,
+figcaption,
+label,
+legend {
+  line-height: 1.375;
 }
 
 /* stylelint-enable */
