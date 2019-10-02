@@ -54,7 +54,7 @@ summary: |
 Over the years, we’ve become industry leaders --
 creating and contributing to
 the open source languages and tools
-that millions of develoers
+that millions of developers
 and larger companies rely on.
 We provide enterprise-level expertise,
 with the focus and personal attention
