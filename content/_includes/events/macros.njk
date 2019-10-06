@@ -18,7 +18,7 @@
     {% set org_title = 'org history' %}
     {% set events_group = 'all' %}
     {% set events = none %}
-  {% elif events_group %}
+  {% elif events_group != 'self' %}
     {% set tag_name = events_group | displayName %}
     {% set title %}
       '{{ tag_name }}' episodes

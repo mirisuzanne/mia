@@ -66,14 +66,6 @@ events:
     tags:
       - writing
       - director
-  - title: In a Time of War
-    venue: New World Arts
-    start: 2004-04-29
-    end: 2004-05-01
-    tags:
-      - writing
-    awards: '**International Peace Play Contest**: Runner Up'
-    summary: Directed by Michael Natoli
   - title: Criminal Hearts
     venue: New World Arts
     start: 2004-10-14
