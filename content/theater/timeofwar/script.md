@@ -58,11 +58,11 @@ I was fourteen years old and that was suddenly more important to me than anythin
 My mother's things, you know.
 
 **Aube:**
-Here Mennonites didn't have jewelry, but in Europe we wore anything like anyone else. Jewelry and buttons, collars and what, but the jewelry box was gone, we had left it behind. It'sÉ Strange, you knowÉ What remains.
+Here Mennonites didn't have jewelry, but in Europe we wore anything like anyone else. Jewelry and buttons, collars and what, but the jewelry box was gone, we had left it behind. It's Strange, you know, What remains.
 
 **Young Aube:**
 We got to a train station where we were loaded into Boxcars. It was one big thing with about forty-six people in each one. It moved slowly like a freight train so we spent one night in there, and a day, from Nancy to Saint Etienne.
-YouNG (cont'd)
+
 At the refugee camp we were forty-eight people in one big hall with concrete floor. There was some straw for our beds, and we would lie side by side with all the other people. We had a few blankets, army blankets that were given to us, but nothing like pillows or anything like that. After a few days we had fleas everywhere and the straw was just moving when you looked at it, which kept us from sleeping at night.
 
 **Aube:**
@@ -75,7 +75,7 @@ Two boards set together with a hole in the center, and a tank of water above tha
 It was the only private place you had to change your clothes.
 
 **Young Aube:**
-My brothers and my father had to work in factories, which was especially difficult for my father who had been a farmer all his life and he was already in his sixties. But, we made it through the yearÉ
+My brothers and my father had to work in factories, which was especially difficult for my father who had been a farmer all his life and he was already in his sixties. But, we made it through the year.
 
 So we were refugees for a year, until France was defeated by the Germans. And then we could go back home, but we were under German occupation until the end of the war. My oldest brother didn't return with us because he didn't want to live under German occupation. He stayed in Saint Etienne and kept on working in the factory, and got married there.
 
@@ -329,7 +329,7 @@ Americans. And then we had the little reconnaissance planes around. There were a
 
 **Aube:**
 Especially not with women...
-(Longer Pause)
+
 What I learned, I think is that soldiers are soldiers, and in a time of war, that the worst comes out. Perhaps because any day could be... they could be gone the next day. Perhaps because they are far from home and they are in enemy territory, and so they... they can do anything...
 
 **Young Aube:**
