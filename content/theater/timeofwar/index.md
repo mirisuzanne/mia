@@ -30,7 +30,7 @@ events:
     end: 2004-10-03
 summary: |
   Based on a series of interviews
-  with Annie Yoder in 2003,
+  with Aube in 2003,
   this play was produced first by Goshen College
   as a runner-up
   for the International Peace Play Contest,
@@ -44,19 +44,19 @@ summary: |
 
 ------
 
-“In a Time of War” relates the true story of Annie Yoder
+“In a Time of War” relates the true story of Aube
 who grew up Mennonite in Lorraine, France --
 a village bordering Germany.
-Yoder was 15 years old when World War II was declared
+Aube was 15 years old when World War II was declared
 and her home became a battleground.
 In this first public venue for sharing her story,
-Yoder tells about the year her family spent as refugees,
+Aube tells about the year her family spent as refugees,
 and then their return to their home under the German occupation.
 Her brother was drafted by the army,
 but went instead into hiding;
 her father was taken to a concentration camp.
 Both German and Allied forces used their family home for shelter.
-Yoder also talks about her time at Goshen College
+Aube also talks about her time at Goshen College
 soon after the war ended,
 asking some hard questions for the world today,
 including
