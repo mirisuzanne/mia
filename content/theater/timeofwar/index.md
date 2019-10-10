@@ -24,7 +24,7 @@ events:
       This is a play based on interviews in 2003,
       reflecting on her childhood
       *in a time of war*.
-    pin: 2019-09-20
+    start: 2019-09-20
     end: 2020-01-01
     feature: true
   - venue: New World Arts
