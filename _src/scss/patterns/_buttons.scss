@@ -2,7 +2,7 @@
 // =======
 
 button {
-  --btn-shade: hsla(var(--h-prime), var(--s-bg1), var(--l-bg1), 0.25);
+  --btn-shade: hsla(var(--ccs-h--prime), var(--s-bg1), var(--l-bg1), 0.25);
   --btn-shadow: var(--text-shadow-off) var(--text-shadow-off);
   background: linear-gradient(
         calc(90deg + 90deg * var(--mode, 1)),
@@ -36,7 +36,7 @@ button {
     --btn-bg: var(--accent-bg2);
     --btn-color: var(--accent-fg2);
     --btn-border: var(--accent-fg3);
-    --btn-shade: hsla(var(--h-accent), var(--s-fg1), var(--l-fg1), 0.25);
+    --btn-shade: hsla(var(--ccs-h--accent), var(--s-fg1), var(--l-fg1), 0.25);
     --btn-shadow: var(--text-shadow-off-invert) var(--text-shadow-off-invert);
   }
 

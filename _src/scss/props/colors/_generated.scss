@@ -1,8 +1,8 @@
-[data-colors] {
+[data-ccs-colors] {
   /* options for setting different color palettes */
-  --h-complement: calc(var(--h-prime) + (180 * var(--mode)));
-  --h-triad: calc(var(--h-prime) + (120 * var(--mode)));
-  --h-adjacent: calc(var(--h-prime) + (60 * var(--mode)));
+  --h-complement: calc(var(--ccs-h--prime) + (180 * var(--mode)));
+  --h-triad: calc(var(--ccs-h--prime) + (120 * var(--mode)));
+  --h-adjacent: calc(var(--ccs-h--prime) + (60 * var(--mode)));
 
   /* full contrast colors, foreground and background */
   --bg-full: hsl(0, 0%, calc(100% * var(--mode)));
@@ -31,180 +31,185 @@
   --s-bg4: calc(var(--s) - 20% - var(--off-4));
 
   /* generate the prime color palette */
-  --prime: hsl(var(--h-prime), var(--s), var(--l));
-  --prime-fade: hsla(var(--h-prime), var(--s-fg3), var(--l), var(--fade));
-  --prime-fg1: hsl(var(--h-prime), var(--s-fg1), var(--l-fg1));
+  --prime: hsl(var(--ccs-h--prime), var(--s), var(--l));
+  --prime-fade: hsla(var(--ccs-h--prime), var(--s-fg3), var(--l), var(--fade));
+  --prime-fg1: hsl(var(--ccs-h--prime), var(--s-fg1), var(--l-fg1));
   --prime-fg1-fade: hsla(
-    var(--h-prime),
+    var(--ccs-h--prime),
     var(--s-fg3),
     var(--l-fg1),
     var(--fade)
   );
-  --prime-fg2: hsl(var(--h-prime), var(--s-fg2), var(--l-fg2));
+  --prime-fg2: hsl(var(--ccs-h--prime), var(--s-fg2), var(--l-fg2));
   --prime-fg2-fade: hsla(
-    var(--h-prime),
+    var(--ccs-h--prime),
     var(--s-fg3),
     var(--l-fg2),
     var(--fade)
   );
-  --prime-fg3: hsl(var(--h-prime), var(--s-fg3), var(--l-fg3));
+  --prime-fg3: hsl(var(--ccs-h--prime), var(--s-fg3), var(--l-fg3));
   --prime-fg3-fade: hsla(
-    var(--h-prime),
+    var(--ccs-h--prime),
     var(--s-fg3),
     var(--l-fg3),
     var(--fade)
   );
-  --prime-fg4: hsl(var(--h-prime), var(--s-fg4), var(--l-fg4));
+  --prime-fg4: hsl(var(--ccs-h--prime), var(--s-fg4), var(--l-fg4));
   --prime-fg4-fade: hsla(
-    var(--h-prime),
+    var(--ccs-h--prime),
     var(--s-fg4),
     var(--l-fg4),
     var(--fade)
   );
 
-  --prime-bg1: hsl(var(--h-prime), var(--s-bg1), var(--l-bg1));
+  --prime-bg1: hsl(var(--ccs-h--prime), var(--s-bg1), var(--l-bg1));
   --prime-bg1-fade: hsla(
-    var(--h-prime),
+    var(--ccs-h--prime),
     var(--s-bg3),
     var(--l-bg1),
     var(--fade)
   );
-  --prime-bg2: hsl(var(--h-prime), var(--s-bg2), var(--l-bg2));
+  --prime-bg2: hsl(var(--ccs-h--prime), var(--s-bg2), var(--l-bg2));
   --prime-bg2-fade: hsla(
-    var(--h-prime),
+    var(--ccs-h--prime),
     var(--s-bg3),
     var(--l-bg2),
     var(--fade)
   );
-  --prime-bg3: hsl(var(--h-prime), var(--s-bg3), var(--l-bg3));
+  --prime-bg3: hsl(var(--ccs-h--prime), var(--s-bg3), var(--l-bg3));
   --prime-bg3-fade: hsla(
-    var(--h-prime),
+    var(--ccs-h--prime),
     var(--s-bg3),
     var(--l-bg3),
     var(--fade)
   );
-  --prime-bg4: hsl(var(--h-prime), var(--s-bg4), var(--l-bg4));
+  --prime-bg4: hsl(var(--ccs-h--prime), var(--s-bg4), var(--l-bg4));
   --prime-bg4-fade: hsla(
-    var(--h-prime),
+    var(--ccs-h--prime),
     var(--s-bg4),
     var(--l-bg4),
     var(--fade)
   );
 
   /* generate the accent color palette */
-  --accent: hsl(var(--h-accent), var(--s), var(--l));
-  --accent-fade: hsla(var(--h-accent), var(--s-fg3), var(--l), var(--fade));
-  --accent-fg1: hsl(var(--h-accent), var(--s-fg1), var(--l-fg1));
+  --accent: hsl(var(--ccs-h--accent), var(--s), var(--l));
+  --accent-fade: hsla(
+    var(--ccs-h--accent),
+    var(--s-fg3),
+    var(--l),
+    var(--fade)
+  );
+  --accent-fg1: hsl(var(--ccs-h--accent), var(--s-fg1), var(--l-fg1));
   --accent-fg1-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-fg3),
     var(--l-fg1),
     var(--fade)
   );
-  --accent-fg2: hsl(var(--h-accent), var(--s-fg2), var(--l-fg2));
+  --accent-fg2: hsl(var(--ccs-h--accent), var(--s-fg2), var(--l-fg2));
   --accent-fg2-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-fg3),
     var(--l-fg2),
     var(--fade)
   );
-  --accent-fg3: hsl(var(--h-accent), var(--s-fg3), var(--l-fg3));
+  --accent-fg3: hsl(var(--ccs-h--accent), var(--s-fg3), var(--l-fg3));
   --accent-fg3-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-fg3),
     var(--l-fg3),
     var(--fade)
   );
-  --accent-fg4: hsl(var(--h-accent), var(--s-fg4), var(--l-fg4));
+  --accent-fg4: hsl(var(--ccs-h--accent), var(--s-fg4), var(--l-fg4));
   --accent-fg4-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-fg4),
     var(--l-fg4),
     var(--fade)
   );
 
-  --accent-bg1: hsl(var(--h-accent), var(--s-bg1), var(--l-bg1));
+  --accent-bg1: hsl(var(--ccs-h--accent), var(--s-bg1), var(--l-bg1));
   --accent-bg1-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg3),
     var(--l-bg1),
     var(--fade)
   );
-  --accent-bg2: hsl(var(--h-accent), var(--s-bg2), var(--l-bg2));
+  --accent-bg2: hsl(var(--ccs-h--accent), var(--s-bg2), var(--l-bg2));
   --accent-bg2-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg3),
     var(--l-bg2),
     var(--fade)
   );
-  --accent-bg3: hsl(var(--h-accent), var(--s-bg3), var(--l-bg3));
+  --accent-bg3: hsl(var(--ccs-h--accent), var(--s-bg3), var(--l-bg3));
   --accent-bg3-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg3),
     var(--l-bg3),
     var(--fade)
   );
-  --accent-bg4: hsl(var(--h-accent), var(--s-bg4), var(--l-bg4));
+  --accent-bg4: hsl(var(--ccs-h--accent), var(--s-bg4), var(--l-bg4));
   --accent-bg4-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg4),
     var(--l-bg4),
     var(--fade)
   );
 
-  --gray: hsl(var(--h-accent), var(--s-bg3), var(--l));
-  --gray-bg1: hsl(var(--h-accent), var(--s-bg4), var(--l-bg1));
+  --gray: hsl(var(--ccs-h--accent), var(--s-bg3), var(--l));
+  --gray-bg1: hsl(var(--ccs-h--accent), var(--s-bg4), var(--l-bg1));
   --gray-bg1-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg4),
     var(--l-bg1),
     var(--fade)
   );
-  --gray-bg2: hsl(var(--h-accent), var(--s-bg4), var(--l-bg2));
+  --gray-bg2: hsl(var(--ccs-h--accent), var(--s-bg4), var(--l-bg2));
   --gray-bg2-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg4),
     var(--l-bg2),
     var(--fade)
   );
-  --gray-bg3: hsl(var(--h-accent), var(--s-bg4), var(--l-bg3));
+  --gray-bg3: hsl(var(--ccs-h--accent), var(--s-bg4), var(--l-bg3));
   --gray-bg3-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg4),
     var(--l-bg3),
     var(--fade)
   );
-  --gray-bg4: hsl(var(--h-accent), var(--s-bg4), var(--l-bg4));
+  --gray-bg4: hsl(var(--ccs-h--accent), var(--s-bg4), var(--l-bg4));
   --gray-bg4-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg4),
     var(--l-bg4),
     var(--fade)
   );
-  --gray-fg1: hsl(var(--h-accent), var(--s-bg4), var(--l-fg1));
+  --gray-fg1: hsl(var(--ccs-h--accent), var(--s-bg4), var(--l-fg1));
   --gray-fg1-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg4),
     var(--l-fg1),
     var(--fade)
   );
-  --gray-fg2: hsl(var(--h-accent), var(--s-bg4), var(--l-fg2));
+  --gray-fg2: hsl(var(--ccs-h--accent), var(--s-bg4), var(--l-fg2));
   --gray-fg2-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg4),
     var(--l-fg2),
     var(--fade)
   );
-  --gray-fg3: hsl(var(--h-accent), var(--s-bg4), var(--l-fg3));
+  --gray-fg3: hsl(var(--ccs-h--accent), var(--s-bg4), var(--l-fg3));
   --gray-fg3-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg4),
     var(--l-fg3),
     var(--fade)
   );
-  --gray-fg4: hsl(var(--h-accent), var(--s-bg4), var(--l-fg4));
+  --gray-fg4: hsl(var(--ccs-h--accent), var(--s-bg4), var(--l-fg4));
   --gray-fg4-fade: hsla(
-    var(--h-accent),
+    var(--ccs-h--accent),
     var(--s-bg4),
     var(--l-fg4),
     var(--fade)

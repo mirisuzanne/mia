@@ -1,4 +1,4 @@
-[data-colors] {
+[data-ccs-colors] {
   // flip the shadow based on the mode
   --text-shadow-off: calc(1px * var(--mode));
   --text-shadow-off-invert: calc(-1px * var(--mode));
@@ -20,7 +20,7 @@
 
   // color props set directly by the theme
   --bg: var(--accent-bg4);
-  --overlay: hsla(var(--h-accent), var(--s-bg4), var(--l-bg4), 0.85);
+  --overlay: hsla(var(--ccs-h--accent), var(--s-bg4), var(--l-bg4), 0.85);
   --callout: var(--accent-bg3);
   --text: var(--gray-fg3);
   --text-light: var(--gray-fg2);

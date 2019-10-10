@@ -1,18 +1,3 @@
-[data-colors] {
-  --given-mode: var(--user-mode, var(--html-mode, var(--os-mode, 1)));
-  --mode: var(--given-mode, 1);
-  --invert: calc(-1 * var(--mode));
+[data-ccs-colors] {
   --img-bright: calc(85% + 15% * var(--mode));
-}
-
-[data-colors='invert'] {
-  --mode: calc(-1 * var(--given-mode, 1));
-}
-
-[data-colors='light'] {
-  --html-mode: 1;
-}
-
-[data-colors='dark'] {
-  --html-mode: -1;
 }

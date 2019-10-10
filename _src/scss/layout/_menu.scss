@@ -54,19 +54,19 @@ $rainbow: ();
 }
 
 [for='hue-select'] {
-  display: var(--custom-hue, block);
+  display: var(--ccs-custom-hue, block);
 }
 
 [for='light-select'] {
-  display: var(--custom-light, block);
+  display: var(--ccs-custom-light, block);
 }
 
 [for='sat-select'] {
-  display: var(--custom-sat, block);
+  display: var(--ccs-custom-sat, block);
 }
 
 [for='contrast-select'] {
-  display: var(--custom-contrast, block);
+  display: var(--ccs-custom-contrast, block);
 }
 
 [type='range'] {
@@ -113,8 +113,8 @@ $rainbow: ();
   @include range-track {
     background: linear-gradient(
       to right,
-      hsl(var(--h-prime, 0), 0.1%, var(--l, 50%)),
-      hsl(var(--h-prime, 0), 100%, var(--l, 50%))
+      hsl(var(--ccs-h--prime, 0), 0.1%, var(--l, 50%)),
+      hsl(var(--ccs-h--prime, 0), 100%, var(--l, 50%))
     );
   }
 }
