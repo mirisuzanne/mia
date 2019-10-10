@@ -1,7 +1,8 @@
 ---
 title: Script -- In a Time of War
-sub: based on an interview...
+sub: based on interviews with Aube in 2003
 type: script
+date: 2003-11-18
 hero:
   img: /art/theater/timeofwar/pic2.jpg
   alt: |
@@ -17,8 +18,9 @@ tags:
   - new world
   - goshen college
 summary: |
-  Script for [In a Time of War](../)
-  senior thesis production.
+  Reflections of a Mennonite
+  holocaust survivor
+  after the war
 ---
 
 ------

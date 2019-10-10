@@ -170,7 +170,7 @@
   {%- set not_me = ('inspiration' in tags) -%}
   {%- set is_self = (item.page.url == self) -%}
 
-  {% set summary = item.page.data.sub if item.event else (item.page.data.summary or item.page.data.sub) %}
+  {% set summary = (item.event.sub or item.page.data.sub) if item.event else (item.page.data.summary or item.page.data.sub) %}
   {% set summary = summary | md if (summary and not is_self) else none %}
 
   {{ cards.event(
