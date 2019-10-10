@@ -1,10 +1,8 @@
 ---
 title: Education
 layout: base
-sub: theater, code, and creative writing
+sub: I studied these things
 index: education
-tags:
-  - education
 venue_title: true
 events:
   - venue: Naropa Summer Writing Program
@@ -30,14 +28,4 @@ events:
     summary: |
       Stage management intern for Antony and Cleopatra,
       directed by Penny Metropolis
-  - venue: Goshen College
-    title: Theater, Writing, & Visual Arts
-    url: https://www.goshen.edu/
-    start: 2001-08-15
-    end: 2006-06-15
-    summary: Studied theater, writing, and visual art
-    tags:
-      - art
-      - theater
-      - writing
 ---
