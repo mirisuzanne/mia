@@ -1,5 +1,4 @@
 ---
-feature: true
 title: Not Clear To Me, an Installation
 sub: art and words
 venue: Bardo Coffee House

@@ -4,7 +4,7 @@ const utils = require('./utils');
 const events = require('./events');
 
 const topCount = 6;
-const isPublic = tag => tag !== 'all' && !tag.startsWith('_');
+const isPublic = tag => (tag ? tag !== 'all' && !tag.startsWith('_') : null);
 const publicTags = tags => (tags ? tags.filter(tag => isPublic(tag)) : tags);
 
 const hasTag = (page, tag) => {
@@ -68,7 +68,9 @@ const groupTags = (collections, top = topCount) => {
 };
 
 const displayName = tag => {
-  return tag.startsWith('_') ? tag.slice(1) : tag;
+  if (tag) {
+    return tag.startsWith('_') ? tag.slice(1) : tag;
+  }
 };
 
 const tagLink = (tag, collections) => {

@@ -12,7 +12,7 @@ $code-selector-block: 'pre[class*="language-"]';
 $code-selector-inline: ':not(pre) > code[class*="language-"]';
 
 // generic stuff
-$code-font-family: Menlo, Monaco, 'Courier New', monospace !default;
+$code-font-family: font-family('code');
 $code-font-size: 12px !default;
 $code-line-height: 18px !default;
 
