@@ -1,0 +1,80 @@
+@use '../../../node_modules/cascading-color-systems' with (
+  $prime-hue: 330,
+  $accent-hue: 195,
+  $saturation: 80%,
+  $lightness: 50%,
+  $contrast: 45%,
+  $fade-background: 20%,
+  $fades: 0.75,
+  $gradients: true,
+  $build: true,
+);
+
+[data-ccs-colors] {
+  --img-bright: calc(85% + 15% * var(--ccs-mode));
+  --ccs-neutral--theme: var(--ccs-h--accent);
+
+  // flip the shadow based on the mode
+  --text-shadow-off: calc(1px * var(--ccs-mode));
+  --text-shadow-off-invert: calc(-1px * var(--ccs-mode));
+  --box-shadow-off: calc(var(--half-shim) * var(--ccs-mode));
+  --box-shadow-off-invert: calc(var(--half-shim) * var(--ccs-mode) * -1);
+
+  --text-shadow: var(--text-shadow-off) var(--text-shadow-off) 0
+    var(--ccs--bg-full);
+  --text-shadow-invert: var(--text-shadow-off-invert)
+    var(--text-shadow-off-invert) 0 var(--ccs--fg-full);
+  --box-shadow: var(--box-shadow-off) var(--box-shadow-off) 0
+    var(--ccs--bg-full);
+  --box-shadow-invert: var(--box-shadow-off-invert) var(--box-shadow-off-invert)
+    0 var(--ccs--fg-full);
+
+  --feature-gradient: linear-gradient(
+    to bottom right,
+    var(--ccs-prime--fg1),
+    var(--ccs-accent--fg1)
+  );
+
+  // color props set directly by the theme
+  --bg: var(--ccs-accent--bg4);
+  --overlay: hsla(
+    var(--ccs-h--accent),
+    var(--ccs-s--bg4),
+    var(--ccs-l--bg4),
+    0.85
+  );
+  --callout: var(--ccs-accent--bg3);
+  --text: var(--ccs-neutral--fg3);
+  --text-light: var(--ccs-neutral--fg2);
+  --text-highlight: var(--ccs-accent--fg3);
+  --border: var(--ccs-neutral);
+
+  --action: var(--ccs-prime--fg2);
+  --action-hover: var(--ccs-prime--fg3);
+
+  background: var(--bg);
+  color: var(--text);
+  text-shadow: var(--text-shadow);
+}
+
+[data-ccs-theme='pink-to-blue'] {
+  --ccs-h--prime: 330;
+  --ccs-accent--theme: 195;
+  --ccs-custom-hue: none;
+}
+
+[data-ccs-theme='blue-to-pink'] {
+  --ccs-h--prime: 195;
+  --ccs-accent--theme: 330;
+  --ccs-custom-hue: none;
+}
+
+[data-ccs-theme='black'] {
+  --ccs-s: 0%;
+  --ccs-l: 50%;
+  --ccs-contrast: calc(100% * var(--offset-count));
+  --ccs-custom-hue: none;
+  --ccs-custom-saturation: none;
+  --ccs-custom-lightness: none;
+  --ccs-custom-contrast: none;
+}

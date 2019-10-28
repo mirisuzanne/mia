@@ -1,6 +1,5 @@
 _site
-content/assets/css
-content/assets/images
+_built
 
 # Logs
 logs

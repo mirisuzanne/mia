@@ -15,5 +15,5 @@ layout: style
 
 <section class="palette" role="presentation">
 <h2 data-ccs-colors="invert">gray</h2>
-<div style="--show: var(--gray-palette)"></div>
+<div style="--show: var(--ccs-neutral-palette)"></div>
 </section>

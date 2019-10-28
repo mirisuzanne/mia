@@ -1,0 +1,10 @@
+!.*
+.git/
+.nyc_output/
+.vscode/
+_built/
+_site/
+coverage/
+htmlcov/
+jscache/
+node_modules/

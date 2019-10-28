@@ -8,9 +8,5 @@
     "img": "narrators/default.jpg"
   },
   "series": "narrators",
-  "tags": [
-    "_calendar",
-    "speaking",
-    "narrators"
-  ]
+  "tags": ["_calendar", "speaking", "narrators"]
 }
