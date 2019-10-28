@@ -63,15 +63,15 @@ $rainbow: ();
   @include range-track {
     appearance: none;
     height: 1em;
-    background: var(--callout);
+    background: var(--callout) no-repeat;
     border-radius: 0.25em;
-    border: 2px solid;
+    border: 2px solid var(--border);
     cursor: pointer;
   }
 
   @include range-thumb {
     appearance: none;
-    border: 2px solid var(--ccs-accent--fg3);
+    border: 2px solid var(--text);
     height: 1em;
     width: 0.5em;
     border-radius: 0.25em;
@@ -82,13 +82,13 @@ $rainbow: ();
 
 [id='hue'] {
   @include range-track {
-    background: linear-gradient(to right, $rainbow);
+    background-image: linear-gradient(to right, $rainbow);
   }
 }
 
 [id='lightness'] {
   @include range-track {
-    background: linear-gradient(to right, hsl(0, 0%, 25%), silver);
+    background-image: linear-gradient(to right, hsl(0, 0%, 25%), silver);
   }
 }
 
@@ -105,10 +105,9 @@ $rainbow: ();
 
 [id='contrast'] {
   @include range-track {
-    background: linear-gradient(to right, gray, white),
+    background-image: linear-gradient(to right, gray, white),
       linear-gradient(to right, gray, black);
     background-size: 100% 50%, 100% 100%;
     background-position: top left, bottom left;
-    background-repeat: no-repeat;
   }
 }
