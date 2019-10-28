@@ -7,7 +7,7 @@ hero:
   alt: |
     a woman with bandage over her eyes,
     and another hugging her from behind
-  caption: Lindsay Nance & Mallory Parsons as Aube, 2005
+  caption: Lindsay Nance & Mallory Parsons as Annie, 2005
 calendar: self
 tags:
   - theater
@@ -16,7 +16,7 @@ tags:
   - goshen college
   - new world
 events:
-  - title: In loving memory of Tante Aube
+  - title: In loving memory of Tante Annie
     sub: |
       She was a beautiful force in my life,
       slipping into French to tell dirty jokes
@@ -40,7 +40,7 @@ events:
     end: 2004-10-03
 summary: |
   Based on a series of interviews
-  with Aube in 2003,
+  with Annie in 2003,
   this play was produced first by Goshen College
   as a runner-up
   for the International Peace Play Contest,
@@ -54,19 +54,19 @@ summary: |
 
 ------
 
-“In a Time of War” relates the true story of Aube
+“In a Time of War” relates the true story of Annie
 who grew up Mennonite in Lorraine, France --
 a village bordering Germany.
-Aube was 15 years old when World War II was declared
+Annie was 15 years old when World War II was declared
 and her home became a battleground.
 In this first public venue for sharing her story,
-Aube tells about the year her family spent as refugees,
+Annie tells about the year her family spent as refugees,
 and then their return to their home under the German occupation.
 Her brother was drafted by the army,
 but went instead into hiding;
 her father was taken to a concentration camp.
 Both German and Allied forces used their family home for shelter.
-Aube also talks about her time at Goshen College
+Annie also talks about her time at Goshen College
 soon after the war ended,
 asking some hard questions for the world today,
 including
@@ -76,7 +76,7 @@ including
 
 ## Thesis Production:
 
-- **Aube**: Lindsay Nance & Mallory Parsons
+- **Annie**: Lindsay Nance & Mallory Parsons
 - **Director**: Michael Natoli
 - **Stage Manager**: Phoebe Brubaker
 - **Costume Design**: Sara Stevens
@@ -92,6 +92,6 @@ underwritten by a grant from the Disciples of Peace,
 a Middlebury (Ind.) charitable fellowship,
 was established in 1982.
 
-- **Aube**: Lindsay Nance & Laura Kraybill
+- **Annie**: Lindsay Nance & Laura Kraybill
 - **Director**: Pat McFarlane
 - **Stage Manager**: Laura Landis
