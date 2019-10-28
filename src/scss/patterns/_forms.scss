@@ -1,13 +1,13 @@
 // Buttons
 // =======
 
-[data-field],
 [data-label],
 [data-input] {
   display: block;
 }
 
 [data-field] {
+  display: var(--ccs-field-display, block);
   margin-bottom: var(--field-margin, var(--shim));
 }
 

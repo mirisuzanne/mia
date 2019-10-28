@@ -78,3 +78,20 @@
   --ccs-custom-lightness: none;
   --ccs-custom-contrast: none;
 }
+
+// temporary
+[data-ccs-field='hue'] {
+  --ccs-field-display: var(--ccs-custom-hue, block);
+}
+
+[data-ccs-field='lightness'] {
+  --ccs-field-display: var(--ccs-custom-lightness, block);
+}
+
+[data-ccs-field='saturation'] {
+  --ccs-field-display: var(--ccs-custom-saturation, block);
+}
+
+[data-ccs-field='contrast'] {
+  --ccs-field-display: var(--ccs-custom-contrast, block);
+}
