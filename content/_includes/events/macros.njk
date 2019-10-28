@@ -18,7 +18,7 @@
     {% set org_title = 'org history' %}
     {% set events_group = 'all' %}
     {% set events = none %}
-  {% elif events_group %}
+  {% elif events_group != 'self' %}
     {% set tag_name = events_group | displayName %}
     {% set title %}
       '{{ tag_name }}' episodes
@@ -170,7 +170,7 @@
   {%- set not_me = ('inspiration' in tags) -%}
   {%- set is_self = (item.page.url == self) -%}
 
-  {% set summary = item.page.data.sub if item.event else (item.page.data.summary or item.page.data.sub) %}
+  {% set summary = (item.event.sub or item.page.data.sub) if item.event else (item.page.data.summary or item.page.data.sub) %}
   {% set summary = summary | md if (summary and not is_self) else none %}
 
   {{ cards.event(

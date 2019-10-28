@@ -13,8 +13,7 @@ events:
   - venue: Webconf.asia
     url: https://2019.webconf.asia/
     adr: Hong Kong
-    start: 2019-11-22
-    end: 2019-11-23
+    start: 2020-08-15
   - venue: Develop Denver
     url: https://developdenver.org/
     start: 2019-08-15

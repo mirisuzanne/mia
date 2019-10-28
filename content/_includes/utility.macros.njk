@@ -126,12 +126,12 @@
   <time
     datetime="{{ pub | getDate('iso') }}"
     {{ attr_if('pubdate', not not pubdate) }}>
+    {% set start_y = start | getDate('year') %}
 
     {% if ongoing %}
       since {{ start | getDate('range') }}
     {% elif (start and end) and (start != end) %}
       {% set start_m = start | getDate('month') %}
-      {% set start_y = start | getDate('year') %}
       {% set end_m = end | getDate('month') %}
       {% set end_y = end | getDate('year') %}
 
@@ -143,6 +143,8 @@
       {{ end | getDate(ranges[same].end or 'range') }}
 
     {% else %}
+      {% set now %}{% getDate 'year' %}{% endset %}
+      {% set format = 'short' if (start_y != now) else format %}
       {{ start | getDate(format) }}
     {% endif %}
   </time>

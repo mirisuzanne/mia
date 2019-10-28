@@ -21,21 +21,27 @@ const isEvent = page => {
 };
 
 const buildEvent = (page, event) => {
+  const feature = event ? event.feature : page.data.feature;
+
+  // start and end
   const eventStart = event ? event.start || event.date : null;
   const start = eventStart || page.data.start || page.date;
   let end = eventStart ? event.end : page.data.end;
   end = end ? end : start;
 
+  let date = start;
+
   // set end for far future…
   if (end === 'ongoing') {
     end = new Date(`${groupNames['ongoing']}-01-01`);
+  } else if (feature === 'pin') {
+    date = new Date(`${groupNames['now']}-01-01`);
   }
 
   // set group…
   const end_iso = time.getDate(end, 'iso');
   const start_iso = time.getDate(start, 'iso');
   const now_iso = time.getDate(time.now, 'iso');
-  let date = start;
   let group = time.getDate(date, 'year');
 
   if (end_iso >= now_iso) {
@@ -51,9 +57,6 @@ const buildEvent = (page, event) => {
   const pageTags = page.data.tags || [];
   const eventTags = event ? event.tags || [] : [];
   const tags = utils.unique([...pageTags, ...eventTags]);
-
-  // feature
-  const feature = event ? event.feature : page.data.feature;
 
   return { page, event, start, end, date, group, tags, feature };
 };

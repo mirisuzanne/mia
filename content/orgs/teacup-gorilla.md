@@ -106,7 +106,7 @@ with theaters, writers, dancers, and other artists.
   Riding SideSaddle*.
 - In 2015 and 2016, we collaborated with Buntport Theater to crerate
   ReTriplicate for the Clyfford Still Museum,
-  and a fuull-length play --
+  and a full-length play --
   10 Myths on the Proper Application of Beauty Products --
   which recieved a True West Award.
 - In 2018, we collaboratted with Grapefruit Lab
