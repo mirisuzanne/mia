@@ -1,6 +1,6 @@
 <menu
   type="toolbar"
-  data-menu="theme"
+  data-ccs="menu"
   role="complementary"
   hidden>
   <details>
@@ -8,13 +8,13 @@
     <div data-dropdown="pad">
       <div class="color-btns">
         <button
-          data-toggle="colors"
+          data-ccs-input="mode"
           data-btn="small"
           type="button">
           invert
         </button>
         <button
-          data-unset="colors"
+          data-ccs-input="unset"
           data-btn="small"
           type="button"
           hidden>
@@ -22,9 +22,10 @@
         </button>
       </div>
 
-      <label data-field for="theme-select">
+      <label data-field for="theme" data-ccs-field="theme">
         <span data-label>theme:</span>
-        <select name="theme-select" id="theme-select">
+        <select data-ccs-input="theme"
+          name="theme" id="theme">
           {% for theme in site.themes %}
             <option value="{{ theme }}" {{ 'selected' if loop.first }}>
               {{ theme }}
@@ -32,21 +33,25 @@
           {% endfor %}
         </select>
       </label>
-      <label data-field for="hue-select">
+      <label data-field for="hue" data-ccs-field="hue">
         <span data-label>hue:</span>
-        <input id="hue-select" type="range" min="0" max="360" value="330">
+        <input data-ccs-input="hue"
+          id="hue" type="range" min="0" max="360" value="330">
       </label>
-      <label data-field for="sat-select">
+      <label data-field for="sat" data-ccs-field="saturation">
         <span data-label>saturation:</span>
-        <input id="sat-select" type="range" min="0" max="100" value="80">
+        <input data-ccs-input="saturation"
+          id="saturation" type="range" min="0" max="100" value="80">
       </label>
-      <label data-field for="light-select">
+      <label data-field for="light" data-ccs-field="lightness">
         <span data-label>lightness:</span>
-        <input id="light-select" type="range" min="25" max="75" value="50">
+        <input data-ccs-input="lightness"
+          id="lightness" type="range" min="25" max="75" value="50">
       </label>
-      <label data-field for="contrast-select">
+      <label data-field for="contrast" data-ccs-field="contrast">
         <span data-label>contrast:</span>
-        <input id="contrast-select" type="range" min="25" max="150" value="45">
+        <input data-ccs-input="contrast"
+          id="contrast" type="range" min="25" max="150" value="45">
       </label>
     </div>
   </details>

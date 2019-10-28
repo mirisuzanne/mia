@@ -1,0 +1,37 @@
+// palettes
+// --------
+
+.palette {
+  background: linear-gradient(
+      45deg,
+      var(--ccs--fg-full) 25%,
+      transparent 25% 75%,
+      var(--ccs--fg-full) 75%
+    ),
+    linear-gradient(
+        45deg,
+        var(--ccs--fg-full) 25%,
+        transparent 25% 75%,
+        var(--ccs--fg-full) 75%
+      )
+      var(--ccs--bg-full);
+  background-size: 1em 1em;
+  background-position: 0 0, 0.5em 0.5em;
+  border: 2px solid var(--ccs--fg-full);
+  margin: 1em 0;
+
+  h2 {
+    font: inherit;
+    margin: 0;
+  }
+}
+
+// show
+// ----
+
+[style*='--show'] {
+  background-image: var(--show);
+  background-size: 100% 50%, 100% 100%;
+  background-repeat: no-repeat;
+  height: 3em;
+}

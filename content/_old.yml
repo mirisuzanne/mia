@@ -1,7 +1,6 @@
 ---
 #   ### 2013 -------------------------------------
 
-
 #   - name: 'Bad Shadow Affair'
 #     url: 'http://badshadowaffair.blogspot.com/2013/11/november-16th-douglas-cook-meyer.html'
 #     datetime: ['2013', '10', '16']
@@ -10,7 +9,6 @@
 #     with:
 #       - name: 'Teacup Gorilla'
 #         url: 'http://teacupgorilla.com'
-
 
 #   - name: 'Art is for People'
 #     url: '/art-is-for-people/'
@@ -21,7 +19,6 @@
 #       - name: 'Brakhage Center Media Arts'
 #         url: 'http://www.colorado.edu/brakhagecenter/2013/08/10/bc-luncheon-series-welcomes-eric-meyer-october-7th'
 
-
 #   - name: 'Digital Art'
 #     datetime: ['2013', '10', '02']
 #     type: ['speaking']
@@ -30,7 +27,6 @@
 #       - name: 'Erin Costello'
 #     venue:
 #       - name: 'Colorado University'
-
 
 #   - name: 'Making a Small Press Work'
 #     datetime: ['2013', '09', '26']
@@ -43,7 +39,6 @@
 #       - name: '<i>&</i>Now Festival'
 #         url: 'http://andnowfestival.com/'
 
-
 #   - name: 'Intro to Digital Media for Humanities'
 #     datetime: ['2013', '08', null]
 #     type: ['speaking']
@@ -53,9 +48,7 @@
 #     venue:
 #       - name: 'Colorado University'
 
-
 #   ### 2012 -------------------------------------
-
 
 #   - name: 'Meaningful CSS (or What if CSS Made Sense?)'
 #     url: 'https://speakerdeck.com/eriiicam/meaningful-css'
@@ -66,12 +59,9 @@
 #       - name: 'HTML5 Denver Users Group'
 #         url: 'http://www.meetup.com/HTML5-Denver-Users-Group/events/56361842/'
 
-
-
 #   ### 2011 -------------------------------------
 
 #   # silence is golden...
-
 
 #   ### 2010 -------------------------------------
 
@@ -104,7 +94,6 @@
 #       url: 'http://www.theatreworkscs.org/'
 #     # press:
 #     #   - source: '@@@'
-
 
 #   ### 2004 -------------------------------------
 
@@ -148,7 +137,6 @@
 #       name: 'Oregon Shakespeare Festival'
 #       url: 'https://www.osfashland.org/'
 
-
 #   ### 2001 -------------------------------------
 
 #   - name: 'Another Round'
@@ -158,7 +146,6 @@
 #     org:
 #       name: 'Pittsburgh City Theatre 4x5 Festival'
 #       url: 'http://citytheatrecompany.org/'
-
 
 # # Interviews
 
@@ -193,7 +180,6 @@
 #       contact: 'Mél Hogan'
 #       name: 'Media Archeology Lab'
 #       url: 'http://mediaarchaeologylab.com/'
-
 
 # # Associations
 #   - name: 'Boulder Writers’ Workshop'

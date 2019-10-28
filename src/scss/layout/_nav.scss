@@ -1,0 +1,63 @@
+// Nav Layout
+// ==========
+
+[data-layout='nav'] {
+  align-items: center;
+  background: var(--overlay);
+  backdrop-filter: blur(var(--shim));
+  display: grid;
+  font-size: var(--font-small);
+  grid: 'nav search' auto / minmax(max-content, 1fr) minmax(3em, 16em);
+  grid-area: nav;
+  grid-column-gap: var(--gutter);
+  padding: var(--shim) var(--gutter);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+// Site Nav
+// --------
+
+[data-navlist='site'] {
+  grid-area: nav;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+[data-nav] {
+  #{$link} {
+    --link-line: var(--nav-border, transparent);
+    --line-weight: 0;
+    display: inline-block;
+    padding: 0 var(--half-shim);
+  }
+
+  &[data-active] {
+    --nav-border: var(--ccs-accent--fade);
+    --line-weight: 0.25em;
+    --line-offset: 0.5em;
+  }
+
+  span {
+    margin-left: -1px;
+  }
+}
+
+// Search
+// ------
+
+[data-form='search'] {
+  --field-margin: 0;
+  grid-area: search;
+  justify-self: end;
+  position: relative;
+}
+
+[aria-expanded='false'] {
+  display: none;
+}

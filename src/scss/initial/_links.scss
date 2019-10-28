@@ -1,0 +1,48 @@
+// Links
+// -----
+
+a {
+  #{$link} {
+    color: var(--link-color, var(--action));
+    text-decoration-color: var(--link-line, var(--ccs-accent-fade));
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: var(--line-weight, 0.125em);
+    text-underline-offset: var(--line-offset, 0.125em);
+    transition: text-decoration-thickness time('fast') ease('_in-out');
+  }
+
+  #{$focus} {
+    color: var(--link-hover, var(--action-hover));
+    text-decoration-color: var(
+      --link-hover-line,
+      var(--link-line, var(--ccs-accent))
+    );
+    text-decoration-thickness: var(
+      --line-hover-weight,
+      var(--line-weight, 0.25em)
+    );
+    text-underline-offset: var(
+      --line-hover-offset,
+      var(--line-offset, 0.125em)
+    );
+  }
+
+  &:focus {
+    outline: 2px dashed var(--ccs-accent);
+    outline-offset: var(--quarter-shim);
+  }
+
+  &[data-active] {
+    --link-color: var(--ccs-accent--fg2);
+    --link-hover: var(--ccs-accent--fg4);
+  }
+}
+
+[href*='://'],
+[data-offsite] {
+  &::after {
+    content: '↗';
+    text-decoration: none;
+    font-size: var(--font-smaller);
+  }
+}
