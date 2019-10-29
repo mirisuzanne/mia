@@ -66,6 +66,12 @@
     margin: calc(var(--half-shim) * -1);
     padding: var(--quarter-shim);
   }
+
+  &[data-old] {
+    --link-color: var(--text-light);
+    color: var(--text-light);
+    font-style: italic;
+  }
 }
 
 [data-card='inner'] {
@@ -86,5 +92,15 @@
 }
 
 [data-card='summary'] {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.pinned {
+  color: var(--text-highlight);
+}
+
+.event-type {
+  color: var(--text-light);
   font-style: italic;
 }

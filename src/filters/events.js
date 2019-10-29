@@ -19,11 +19,14 @@ const groupNames = {
 const isEvent = (page) =>
   page.data.tags ? page.data.tags.includes('_calendar') : false;
 
-const buildEvent = (page, event) => {
+const eventDate = (event) => event.start || event.date;
+
+const buildEvent = (page, event, index) => {
+  index = index || 0;
   const feature = event ? event.feature : page.data.feature;
 
   // start and end
-  const eventStart = event ? event.start || event.date : null;
+  const eventStart = event ? eventDate(event) : null;
   const start = eventStart || page.data.start || page.date;
   let end = eventStart ? event.end : page.data.end;
   end = end ? end : start;
@@ -57,7 +60,7 @@ const buildEvent = (page, event) => {
   const eventTags = event ? event.tags || [] : [];
   const tags = utils.unique([...pageTags, ...eventTags]);
 
-  return { page, event, start, end, date, group, tags, feature };
+  return { page, event, start, end, date, group, tags, feature, index };
 };
 
 const fromYAML = (page) => {
@@ -65,8 +68,9 @@ const fromYAML = (page) => {
 
   page.data.events
     .filter((event) => isPublic(event))
-    .forEach((event) => {
-      events.push(buildEvent(page, event));
+    .sort((a, b) => eventDate(b) - eventDate(a))
+    .forEach((event, index) => {
+      events.push(buildEvent(page, event, index));
     });
 
   return events;

@@ -38,11 +38,13 @@
   title,
   meta,
   summary,
-  feature
+  feature,
+  is_old=false
 ) %}
 <article
   data-card="item"
   {{ utility.attr_if('data-feature', feature) }}
+  {{ utility.attr_if('data-old', is_old) }}
 >
   <div data-card="inner">
     {% if title %}

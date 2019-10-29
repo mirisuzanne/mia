@@ -1,6 +1,7 @@
 ---
 title: Script -- JANE/EYRE
 sub: A [queer adaptation](../) of the classic novel
+type: script
 date: 2018-03-03
 hero:
   img: /art/theater/jane/DSC_0362.jpg

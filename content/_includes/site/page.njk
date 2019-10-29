@@ -9,7 +9,17 @@
     {% include 'site/page-meta.njk' %}
 
     {% if summary %}
-      <div class='intro'>{{ summary | md | safe }}</div>
+      <div class='intro'>
+        {{ summary | md | safe }}
+
+        {% if elsewhere %}
+          <a rel="bookmark"
+            class="summary-elsewhere"
+            href="{{ url }}">
+            View on {{ venue }} »
+          </a>
+        {% endif %}
+      </div>
     {% endif %}
 
     {{ content | typogr | safe }}

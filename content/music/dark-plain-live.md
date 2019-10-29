@@ -1,5 +1,6 @@
 ---
-title: Video -- A Dark Plain
+type: video
+title: A Dark Plain
 sub: live-filmed music video
 venue: Seventh Circle Sessions
 url: https://www.youtube.com/watch?v=pZutQD4GCi4
