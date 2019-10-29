@@ -11,6 +11,8 @@
 );
 
 [data-ccs-colors] {
+  --mode-zero: calc((var(--ccs-mode) + 1) * 0.5);
+  --mode-zero--invert: calc((var(--ccs-mode--invert) + 1) * 0.5);
   --img-bright: calc(85% + 15% * var(--ccs-mode));
   --ccs-neutral--theme: var(--ccs-h--accent);
 
@@ -46,8 +48,9 @@
   --callout: var(--ccs-accent--bg3);
   --text: var(--ccs-neutral--fg3);
   --text-light: var(--ccs-neutral--fg2);
-  --text-highlight: var(--ccs-accent--fg3);
+  --text-highlight: var(--ccs-accent--fg1);
   --border: var(--ccs-neutral);
+  --border-light: var(--ccs-neutral--bg1);
 
   --action: var(--ccs-prime--fg2);
   --action-hover: var(--ccs-prime--fg3);

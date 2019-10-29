@@ -1,6 +1,7 @@
 {
   "calendar": "mozilla developer",
   "venue": "Mozilla Developer",
+  "type": "video",
   "tags": [
     "_calendar",
     "_post",

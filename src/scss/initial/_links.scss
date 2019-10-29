@@ -4,10 +4,10 @@
 a {
   #{$link} {
     color: var(--link-color, var(--action));
-    text-decoration-color: var(--link-line, var(--ccs-accent-fade));
+    text-decoration-color: var(--link-line, var(--border-light));
     text-decoration-skip-ink: auto;
-    text-decoration-thickness: var(--line-weight, 0.125em);
-    text-underline-offset: var(--line-offset, 0.125em);
+    text-decoration-thickness: var(--line-weight, 0.1em);
+    text-underline-offset: var(--line-offset, 0.15em);
     transition: text-decoration-thickness time('fast') ease('_in-out');
   }
 

@@ -24,7 +24,6 @@ $code-inline-padding: 2px 6px !default;
 $code-border-radius: 5px !default;
 
 $code-border: 1px solid #e1e1e8 !default;
-$code-background: #2a2a2a !default;
 $code-color: #fff !default;
 $code-color-fade: #bebec5 !default;
 $code-text-shadow: 0 1px 0 #000 !default;
@@ -59,34 +58,20 @@ $code-box-shadow: 1px 1px 0.3em -0.1em #000 inset !default;
 
     color: $code-color;
     text-shadow: $code-text-shadow;
-    background: $code-background;
   }
-}
-
-%code-background {
-  border-radius: $code-border-radius;
-  border: $code-border;
-  box-shadow: $code-box-shadow;
 }
 
 @if $code-selector-block != null {
   #{$code-selector-block} {
-    @extend %code-background;
     padding: $code-block-padding;
   }
 }
 
 @if $code-selector-inline != null {
   #{$code-selector-inline} {
-    @extend %code-background;
     padding: $code-inline-padding;
   }
 }
-
-// pre[class*="language-"],
-// :not(pre) > code[class*="language-"] {
-// 	background: $code-background;
-// }
 
 // prism tokens
 //

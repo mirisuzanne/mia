@@ -11,12 +11,12 @@ $code-line-height: inherit;
 $code-tab-size: 2;
 $code-hyphens: none;
 
-$code-block-padding: var(--shim);
+$code-block-padding: var(--gutter);
 $code-inline-padding: 0 var(--quarter-shim);
-$code-border-radius: var(--quarter-shim);
+$code-border-radius: 0;
 
-$code-border: none;
-$code-background: var(--callout);
+$code-border: null;
+$code-background: null;
 $code-color: var(--text);
 $code-color-fade: var(--text-light);
 $code-text-shadow: var(--text-shadow);
@@ -33,3 +33,10 @@ $code-color-number: var(--text-highlight);
 $code-color-variable: var(--ccs-accent--fg2);
 $code-color-selector: var(--ccs-accent--fg2);
 $code-color-punctuation: $code-color-fade;
+
+#{$code-selector-block} {
+  background: var(--callout);
+  border: var(--border-width) solid var(--border);
+  border-width: var(--border-width) 0;
+  grid-column: pull;
+}

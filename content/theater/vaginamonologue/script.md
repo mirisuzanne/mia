@@ -2,6 +2,7 @@
 feature: true
 title: Script -- My Body, My Gender
 sub: a trans vagina monologue
+type: script
 date: 2018-11-05
 hero:
   img: art/theater/vm/vm.jpg

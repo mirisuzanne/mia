@@ -66,17 +66,17 @@
         <div data-orgs="list">
           {% for item in orgs %}
             {% set title = item.data.banner or item.data.renderData.title or item.data.title %}
+            {% set is_old = item.data.end and (item.data.end != 'ongoing') %}
             <article
-              data-orgs="item">
+              data-orgs="item"
+              {{ utility.attr_if('data-old', is_old) }}>
               <time
                 data-meta="org-date"
                 datetime="{{ item.data.start | getDate('iso') }}">
                 {{
                   item.data.start | getDate('yyyy')
                 }}->{{
-                  item.data.end | getDate('yyyy')
-                  if item.data.end and (item.data.end != 'ongoing')
-                  else ''
+                  item.data.end | getDate('yyyy') if is_old else ''
                 }}
               </time>
               <h3 data-title="orgs">
@@ -169,15 +169,18 @@
   {%- set tags = item.tags | publicTags -%}
   {%- set not_me = ('inspiration' in tags) -%}
   {%- set is_self = (item.page.url == self) -%}
+  {%- set is_old = (item.index and not item.feature) -%}
+  {%- set hide_summary = (is_self or is_old) -%}
 
-  {% set summary = (item.event.sub or item.page.data.sub) if item.event else (item.page.data.summary or item.page.data.sub) %}
-  {% set summary = summary | md if (summary and not is_self) else none %}
+  {%- set summary = (item.page.data.summary or item.event.sub or item.page.data.sub) -%}
+  {%- set summary = summary | md if (summary and not hide_summary) else none -%}
 
   {{ cards.event(
     title=title(item, is_self, not_me),
     meta=meta(item, tags, all, is_self),
     summary=summary,
-    feature=item.feature
+    feature=item.feature,
+    is_old=is_old
   ) }}
 {% endmacro %}
 
@@ -198,10 +201,15 @@
   {%- set url = none if is_self else item.page.url -%}
   {%- set url = (url or venue_url) if (not venue) else url -%}
   {%- set title = utility.link_if(title_name | mdInline, url) -%}
-  {%- set title = ['Link:', title] | join(' ') if not_me else title -%}
+  {%- set type = '[link]' if not_me else none -%}
+  {%- set type = item.page.data.type or type -%}
 
   {{ title | safe }}
   {{ venue | safe }}
+
+  {% if type %}
+    <span class="event-type">[{{ type }}]</span>
+  {% endif %}
 {% endmacro %}
 
 
@@ -220,5 +228,9 @@
   {%- set venue_adr = item.event.adr or item.page.data.adr -%}
   {% if venue_adr %}
     | {{ venue_adr }}
+  {% endif %}
+
+  {% if (item.feature == 'pin') %}
+    <strong class="pinned">[pinned]</strong>
   {% endif %}
 {% endmacro %}

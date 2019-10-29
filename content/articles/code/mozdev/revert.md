@@ -1,5 +1,5 @@
 ---
-title: CSS Revert
+title: CSS Revert Video
 banner: What does `revert` do in CSS?
 sub: and how is it different from `unset` or `initial`?
 date: 2019-10-09

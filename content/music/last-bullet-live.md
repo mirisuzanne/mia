@@ -1,5 +1,6 @@
 ---
-title: Video -- Last Bullet
+type: video
+title: Last Bullet
 sub: live-filmed music video
 venue: Seventh Circle Sessions
 url: https://www.youtube.com/watch?v=tF2IoI9fHzs
