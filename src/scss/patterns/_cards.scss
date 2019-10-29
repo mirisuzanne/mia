@@ -66,12 +66,6 @@
     margin: calc(var(--half-shim) * -1);
     padding: var(--quarter-shim);
   }
-
-  &[data-old] {
-    --link-color: var(--text-light);
-    color: var(--text-light);
-    font-style: italic;
-  }
 }
 
 [data-card='inner'] {
@@ -96,11 +90,20 @@
   font-style: italic;
 }
 
+// Extra bits
+// ----------
+
 .pinned {
   color: var(--text-highlight);
 }
 
 .event-type {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+[data-old] {
+  --link-color: var(--text-light);
   color: var(--text-light);
   font-style: italic;
 }
