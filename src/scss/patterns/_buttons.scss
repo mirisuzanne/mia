@@ -28,6 +28,7 @@ button {
   color: var(--btn-color, var(--bg));
   cursor: pointer;
   font: inherit;
+  letter-spacing: inherit;
   padding: var(--quarter-shim) var(--shim);
   text-shadow: var(--btn-shadow) 0 var(--btn-shade);
   text-transform: capitalize;

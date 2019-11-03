@@ -5,8 +5,9 @@
 
 html {
   @include font-family('code');
-  line-height: var(--line-ratio);
   font-size: var(--font-size);
+  letter-spacing: var(--letter-spacing--user-em, 0);
+  line-height: var(--line-ratio);
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;

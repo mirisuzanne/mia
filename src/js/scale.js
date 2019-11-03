@@ -9,6 +9,7 @@ export default function() {
     base: document.querySelector('[data-type-input="base"]'),
     scale: document.querySelector('[data-type-input="scale"]'),
     line: document.querySelector('[data-type-input="line"]'),
+    letters: document.querySelector('[data-type-input="letters"]'),
     spacing: document.querySelector('[data-type-input="spacing"]'),
   };
 
@@ -17,6 +18,7 @@ export default function() {
     base: '--font-size--user',
     scale: '--font-scale--user',
     line: '--line-ratio--user',
+    letters: '--letter-spacing--user',
     spacing: '--gutter--user',
   };
 
@@ -25,6 +27,7 @@ export default function() {
     base: 'typeBase',
     scale: 'typeScale',
     line: 'typeLine',
+    letters: 'typeLetters',
     spacing: 'typeSpacing',
   };
 
