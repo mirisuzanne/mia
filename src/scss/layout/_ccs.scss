@@ -1,0 +1,98 @@
+.color-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--gutter);
+}
+
+/* stylelint-disable */
+
+@mixin range-track {
+  &::-webkit-slider-runnable-track {
+    @content;
+  }
+  &::-moz-range-track {
+    @content;
+  }
+  &::-ms-track {
+    @content;
+  }
+}
+
+@mixin range-thumb {
+  &::-webkit-slider-thumb {
+    transform: translateY(-35%);
+    @content;
+  }
+  &::-moz-range-thumb {
+    @content;
+  }
+  &::-ms-thumb {
+    @content;
+  }
+}
+
+/* stylelint-enable */
+
+$rainbow: ();
+@for $hue from 1 through 36 {
+  $rainbow: append($rainbow, hsl($hue * 10, 80%, 40%), comma);
+}
+
+[type='range'] {
+  appearance: none;
+  background: transparent;
+  height: 1em;
+  max-width: 100%;
+  padding: 0;
+
+  @include range-track {
+    appearance: none;
+    height: 1em;
+    background: var(--callout) no-repeat;
+    border-radius: 0.25em;
+    border: 2px solid var(--border);
+    cursor: pointer;
+  }
+
+  @include range-thumb {
+    appearance: none;
+    border: 2px solid var(--text);
+    height: 1em;
+    width: 0.5em;
+    border-radius: 0.25em;
+    background: var(--ccs-prime);
+    cursor: pointer;
+  }
+}
+
+[id='hue'] {
+  @include range-track {
+    background-image: linear-gradient(to right, $rainbow);
+  }
+}
+
+[id='lightness'] {
+  @include range-track {
+    background-image: linear-gradient(to right, hsl(0, 0%, 25%), silver);
+  }
+}
+
+[id='saturation'] {
+  // 0.1% so that units aren't removed in minification
+  @include range-track {
+    background-image: linear-gradient(
+      to right,
+      hsl(var(--ccs-h--prime, 0), 0.1%, var(--ccs-l, 50%)),
+      hsl(var(--ccs-h--prime, 0), 100%, var(--ccs-l, 50%))
+    );
+  }
+}
+
+[id='contrast'] {
+  @include range-track {
+    background-image: linear-gradient(to right, gray, white),
+      linear-gradient(to right, gray, black);
+    background-size: 100% 50%, 100% 100%;
+    background-position: top left, bottom left;
+  }
+}

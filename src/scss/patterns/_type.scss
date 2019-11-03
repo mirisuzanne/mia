@@ -19,8 +19,8 @@
   h2,
   h3,
   h4 {
-    color: var-color('text-highlight');
-    margin: size('gutter') 0 0;
+    color: var(--text-highlight);
+    margin: var(--gutter) 0 0;
   }
 
   h2 {

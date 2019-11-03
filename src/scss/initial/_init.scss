@@ -5,13 +5,13 @@
 
 html {
   @include font-family('code');
-  font-size: calc(1em + 0.5vw);
   line-height: var(--line-ratio);
+  font-size: var(--font-size);
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
   scroll-snap-type: block;
-  scroll-padding: var(--double-gutter);
+  scroll-padding: var(--shim);
 }
 
 h1,
@@ -27,7 +27,6 @@ h2,
 h3,
 h4 {
   scroll-snap-align: start;
-  scroll-margin: var(--gutter);
 }
 
 // Special
@@ -53,7 +52,7 @@ summary {
 }
 
 [data-above='page'] {
-  @include above('page-break') {
+  @include above('page') {
     --show: unset;
   }
 }

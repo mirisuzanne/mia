@@ -17,7 +17,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({ _built: 'assets' });
   eleventyConfig.addPassthroughCopy({ 'src/fonts': 'assets/fonts' });
   eleventyConfig.addPassthroughCopy({ 'src/images': 'assets/images' });
-  eleventyConfig.addPassthroughCopy('**/*.txt');
+  eleventyConfig.addPassthroughCopy('content/**/*.txt');
   // eleventyConfig.addPassthroughCopy('content/favicon.ico');
 
   // collections

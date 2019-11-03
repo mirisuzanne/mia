@@ -1,18 +1,3 @@
-/// # Border Configuration
-/// @group config-patterns
-/// @link https://oddbird.net/accoutrement/docs/core-get.html
-///   Accoutrement Core
-
-// Patterns
-// --------
-/// @group config-patterns
-/// @type map
-$patterns: (
-  'bright':
-    linear-gradient(to left, var-color('text-highlight'), var-color('action')),
-  'feature': linear-gradient(to bottom, var-color('text'), var-color('feature')),
-);
-
 @mixin fancy-text {
   /* stylelint-disable */
   color: var(--text-highlight);

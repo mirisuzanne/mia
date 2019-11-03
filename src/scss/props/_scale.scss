@@ -1,5 +1,6 @@
 html {
-  --gutter: 0.75rem;
+  --gutter--user-c: calc(var(--gutter--user) * 1rem / 40);
+  --gutter: var(--gutter--user-c, var(--gutter--config, 0.75rem));
   --gutter-plus: calc(var(--gutter) * 1.5);
   --double-gutter: calc(var(--gutter) * 2);
   --shim: calc(var(--gutter) / 2);
@@ -12,14 +13,26 @@ html {
   --border-width: var(--quarter-shim);
   --border-radius: var(--half-shim);
 
-  --font-large: calc(1rem + 0.5vw);
+  --font-scale--user-vw: calc(var(--font-scale--user) / 1000 * 1vw);
+  --font-scale: var(--font-scale--user-vw, 0.5vw);
+  --font-size--user-em: calc(var(--font-size--user) / 1000 * 1em);
+  --font-range: var(--font-range--user, 16);
+
+  --font-size: calc(var(--font-size--user-em, 1em) + var(--font-scale));
+  --font-large: calc(1rem + var(--font-scale));
+  --font-headline: calc(1rem + (var(--font-scale) * var(--font-range)));
   --font-small: 0.75rem;
   --font-smaller: 0.75em;
 
-  --line-ratio: 1.4;
-  --rhythm: 1.4rem;
+  --line-ratio--user-c: calc(1 + var(--line-ratio--user) / 10);
+  --line-ratio: var(--line-ratio--user-c, 1.4);
+  --rhythm: calc(var(--line-ratio) * 1em);
+
+  --page: 36rem;
+  --double-page: calc(var(--page) * 2);
+  --half-page: calc(var(--page) / 2);
 
   @media (min-width: 35em) {
-    --gutter: 1rem;
+    --gutter--config: 1rem;
   }
 }

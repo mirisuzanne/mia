@@ -3,49 +3,17 @@
 /// @link https://oddbird.net/accoutrement-scale/docs/
 ///   Accoutrement Scale
 
-// Page Sizes
-// ----------
-/// @sizes {ruler-large}
-/// @group config-scale
-$page-sizes: (
-  'page': 36rem,
-  'half': '#page'
-    (
-      'divide': 2,
-    ),
-  'page-plus': '#page'
-    (
-      'times': 1.5,
-    ),
-  'double-page': '#page'
-    (
-      'times': 2,
-    ),
-  'quarter': '#page'
-    (
-      'divide': 4,
-    ),
-  'calendar': '#page'
-    (
-      'divide': 2.5,
-    ),
-);
-@include add-sizes($page-sizes);
-
 // Breakpoints
 // -----------
 /// @sizes {ruler-large}
 /// @group config-scale
 $breakpoints: (
-  'page-break': '#page'
-    (
-      'convert-units': 'browser-ems',
-    ),
-  'medium': '#page-break'
+  'page': 36em,
+  'medium': '#page'
     (
       'times': 1.5,
     ),
-  'wide': '#page-break'
+  'wide': '#page'
     (
       'times': 2,
     ),

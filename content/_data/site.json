@@ -18,13 +18,13 @@
     "img": "headshots/mia-smirk.jpg"
   },
   "themes": [
-    "pink-to-blue",
-    "blue-to-pink",
+    "mia",
+    "today",
     "complement",
     "adjacent",
     "triad",
     "monochrome",
-    "black"
+    "contrast"
   ],
   "feed": "feed.xml",
   "styles": ["screen.css"]

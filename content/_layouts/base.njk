@@ -40,7 +40,12 @@
 
 	<body
 		data-layout="body">
-		{% include 'site/menu.njk' %}
+
+		<menu type="toolbar" data-layout="menu">
+			{% include 'site/ccs.njk' %}
+			{% include 'site/type.njk' %}
+		</menu>
+
 		{% include 'site/nav.njk' %}
 		{% include 'site/banner.njk' %}
 		{% include 'site/fancy.njk' %}

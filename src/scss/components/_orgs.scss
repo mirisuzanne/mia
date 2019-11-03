@@ -12,7 +12,7 @@
   grid-gap: var(--gutter);
   padding: 0 var(--gutter);
 
-  @include above('page-break') {
+  @include above('page') {
     grid-template: 'date title' auto '. sub' auto / 1fr 1fr;
   }
 }

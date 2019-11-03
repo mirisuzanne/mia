@@ -2,11 +2,20 @@
 title: CSS is Rad
 sub: resilient design on an infinite canvas
 hero:
-  img: talks/miriam.jpg
+  img: talks/rad.jpg
+  alt: |
+    Slide of "CSS is Awesome" overflow meme,
+    but "CSS is Rad"
+    (which fits the box just fine)
+  caption: CSS is better than "awesome"
 tags:
   - speaking
   - code
 events:
+  - venue: Front Range Front End
+    url: https://www.meetup.com/front-range-front-end/events/bxrfwqyzpbkb/
+    date: 2019-11-07
+    adr: Denver, CO
   - venue: Smashing Conf NY
     url: https://smashingconf.com/ny-2019/
     start: 2019-10-15

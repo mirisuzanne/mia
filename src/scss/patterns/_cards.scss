@@ -15,7 +15,7 @@
   justify-content: space-evenly;
   margin: 0 var(--double-gutter);
 
-  @include above('page-break') {
+  @include above('page') {
     --gap: var(--spacer) var(--double-gutter);
   }
 
@@ -45,8 +45,10 @@
 
   span {
     @include fancy-text;
+    display: inline-block;
+    padding: var(--shim) 0;
     position: sticky;
-    top: calc(var(--rhythm) * 2);
+    top: var(--shim);
   }
 }
 
