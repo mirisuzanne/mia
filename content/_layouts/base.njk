@@ -40,17 +40,22 @@
 
 	<body
 		data-layout="body">
+		<a href="#banner" class="skiplink">Skip to content</a>
 
-		<menu data-layout="menu" aria-label="Adjust Colors & Typography">
+		<menu
+			data-layout="menu"
+			aria-label="Adjust Colors & Typography">
 			<li aria-labelledby="menu-colors">{% include 'site/ccs.njk' %}</li>
 			<li aria-labelledby="menu-type">{% include 'site/type.njk' %}</li>
 		</menu>
 
 		{% include 'site/nav.njk' %}
-		{% include 'site/banner.njk' %}
 		{% include 'site/fancy.njk' %}
 
-		<main data-layout="main">
+		{% include 'site/banner.njk' %}
+		<main
+			id="main"
+			data-layout="main">
 			{% include 'site/page.njk' %}
 			{% include 'site/calendar.njk' %}
 		</main>
