@@ -13,11 +13,12 @@
         {{ summary | md | safe }}
 
         {% if elsewhere %}
-          <a rel="bookmark"
-            class="summary-elsewhere"
-            href="{{ url }}">
-            View on {{ venue }} »
-          </a>
+          <p>
+            <a rel="bookmark"
+              href="{{ url }}">
+              View on {{ venue }} »
+            </a>
+          </p>
         {% endif %}
       </div>
     {% endif %}

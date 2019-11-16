@@ -12,7 +12,7 @@ summary: |
   but now we can manage scroll alignment directly in CSS
   with only a few lines of code.
 media:
-  - media: https://www.youtube.com/embed/pohyK8iz-SQ
+  - iframe: https://www.youtube.com/embed/pohyK8iz-SQ
     width: 560
     height: 315
 ---

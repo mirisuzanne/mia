@@ -7,28 +7,28 @@ export default function() {
   // elements
   const selectElements = {
     base: document.querySelector('[data-type-input="base"]'),
-    scale: document.querySelector('[data-type-input="scale"]'),
     line: document.querySelector('[data-type-input="line"]'),
     letters: document.querySelector('[data-type-input="letters"]'),
-    spacing: document.querySelector('[data-type-input="spacing"]'),
+    // scale: document.querySelector('[data-type-input="scale"]'),
+    // spacing: document.querySelector('[data-type-input="spacing"]'),
   };
 
   // properties
   const props = {
     base: '--font-size--user',
-    scale: '--font-scale--user',
     line: '--line-ratio--user',
     letters: '--letter-spacing--user',
-    spacing: '--gutter--user',
+    // scale: '--font-scale--user',
+    // spacing: '--gutter--user',
   };
 
   // local storage
   const store = {
     base: 'typeBase',
-    scale: 'typeScale',
     line: 'typeLine',
     letters: 'typeLetters',
-    spacing: 'typeSpacing',
+    // scale: 'typeScale',
+    // spacing: 'typeSpacing',
   };
 
   // clear all settings

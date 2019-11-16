@@ -4,6 +4,7 @@
 .intro {
   font-size: var(--font-large);
   font-style: italic;
+  margin-bottom: var(--double-gutter);
 
   em,
   i,
@@ -103,6 +104,12 @@ hr {
 
 [data-divide='after'] {
   @include divide('after');
+}
+
+pre,
+code,
+tt {
+  @include font-family('code');
 }
 
 mark {

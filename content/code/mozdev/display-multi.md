@@ -11,7 +11,7 @@ summary: |
   Now the `display` syntax is getting an upgrade
   to match it's multiple uses.
 media:
-  - media: https://www.youtube.com/embed/4Clyc38U-MA
+  - iframe: https://www.youtube.com/embed/4Clyc38U-MA
     width: 560
     height: 315
 ---

@@ -1,7 +1,7 @@
 {% import 'utility.macros.njk' as utility %}
 {% import 'site/macros.njk' as show %}
 
-<nav data-layout="nav">
+<nav data-layout="nav" aria-label="Main Navigation">
   {% set page = collections.all | getPage(page) | first or page %}
   {{ show.site_nav(site.nav, page) }}
 

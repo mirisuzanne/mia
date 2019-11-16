@@ -11,14 +11,14 @@ summary: |
   (line-names! grid-areas! `minmax`! `fit-content`! `fr units`!)
   and missing IE11 support can make it scary to many developers.
 media:
-  - media: https://www.youtube.com/embed/KOvGeFUHAC0
+  - iframe: https://www.youtube.com/embed/KOvGeFUHAC0
     width: 560
     height: 315
     span: full
-  - media: https://www.youtube.com/embed/lLnFtK1LNu4
+  - iframe: https://www.youtube.com/embed/lLnFtK1LNu4
     width: 560
     height: 315
-  - media: https://www.youtube.com/embed/gmQlK3kRft4
+  - iframe: https://www.youtube.com/embed/gmQlK3kRft4
     width: 560
     height: 315
 ---

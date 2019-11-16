@@ -11,7 +11,7 @@ summary: |
   Open the developer tools,
   and look for the greyed-out property with an info-box on hover.
 media:
-  - media: https://www.youtube.com/embed/O3DAm82vIvU
+  - iframe: https://www.youtube.com/embed/O3DAm82vIvU
     width: 560
     height: 315
 ---

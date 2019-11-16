@@ -4,7 +4,10 @@
   width="200px"
   height="260px"
   data-icon="miriam"
+  role="img"
+  aria-labelledby="miriam-face-title"
   >
+  <title id="miriam-face-title">Miriam's face</title>
   <style>
     @keyframes draw-logo {
       0% { stroke-dashoffset: 800; }

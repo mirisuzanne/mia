@@ -15,7 +15,6 @@ html {
   scroll-padding: var(--shim);
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -24,9 +23,8 @@ h6 {
   font-weight: normal;
 }
 
-h2,
-h3,
-h4 {
+hr,
+.section-header {
   scroll-snap-align: start;
 }
 

@@ -1,5 +1,5 @@
 ---
-title: CSS Revert Video
+title: CSS Revert
 banner: What does `revert` do in CSS?
 sub: and how is it different from `unset` or `initial`?
 date: 2019-10-09
@@ -14,7 +14,7 @@ summary: |
   But then Firefox implemented `revert` and I was confused --
   how is this one different from the others?!
 media:
-  - media: https://www.youtube.com/embed/GAjoVRmipcU
+  - iframe: https://www.youtube.com/embed/GAjoVRmipcU
     width: 560
     height: 315
 ---

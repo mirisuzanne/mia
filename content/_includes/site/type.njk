@@ -1,23 +1,10 @@
 <details data-menu="type" hidden>
-  <summary class="menu-item">type</summary>
+  <summary class="menu-item" id="menu-type">type</summary>
   <div data-dropdown="pad">
-    <button
-      data-type-input="unset"
-      data-btn="small"
-      type="button"
-      hidden>
-      reset
-    </button>
-
     <label data-field for="base" data-type-field="base">
       <span data-label>font-size:</span>
       <input data-type-input="base"
-        id="base" type="range" min="-200" max="1500" value="0">
-    </label>
-    <label data-field for="scale" data-type-field="scale">
-      <span data-label>scale:</span>
-      <input data-type-input="scale"
-        id="scale" type="range" min="100" max="1000" value="500">
+        id="base" type="range" min="-10" max="100" value="0">
     </label>
     <label data-field for="line" data-type-field="line">
       <span data-label>line height:</span>
@@ -29,10 +16,13 @@
       <input data-type-input="letters"
         id="letters" type="range" min="-150" max="500" value="0">
     </label>
-    <label data-field for="spacing" data-type-field="spacing">
-      <span data-label>padding & margins:</span>
-      <input data-type-input="spacing"
-        id="spacing" type="range" min="10" max="100" value="40">
-    </label>
+
+    <button
+      data-type-input="unset"
+      data-btn="small"
+      type="button"
+      hidden>
+      reset
+    </button>
   </div>
 </details>
