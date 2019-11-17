@@ -14,7 +14,7 @@ tags:
   - writing
   - art
   - goshen college
-  - new world
+  - _new world
 events:
   - title: In loving memory of Tante Annie
     sub: |

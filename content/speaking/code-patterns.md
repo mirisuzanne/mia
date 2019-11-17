@@ -6,7 +6,6 @@ tags:
   - speaking
   - code
   - design systems
-  - video
   - sass
 events:
   - venue: Refresh Denver
@@ -35,6 +34,8 @@ events:
       iframe: https://www.youtube.com/embed/lK_akjzOUY0
       width: 560
       height: 315
+    tags:
+      - code video
   - venue: CascadiaFest
     url: http://2016.cascadiafest.org/
     start: 2016-08-03
@@ -43,6 +44,8 @@ events:
       iframe: https://www.youtube.com/embed/cVZreFHgLFw
       width: 560
       height: 315
+    tags:
+      - code video
   - venue: CSS Summit
     url: http://environmentsforhumans.com/2016/css-summit/
     start: 2016-07-26
@@ -60,6 +63,8 @@ events:
       iframe: https://www.youtube.com/embed/b4vSy1e1ai8
       width: 560
       height: 315
+    tags:
+      - code video
 summary: |
   Style Guides & Pattern Libraries are great tools
   for documenting the relationships between code and design,

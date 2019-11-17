@@ -17,7 +17,7 @@ tags:
   - writing
   - art
   - riding sidesaddle
-  - teacup gorilla
+  - _teacup gorilla
   - music
   - buntport
 events:

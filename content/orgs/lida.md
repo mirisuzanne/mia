@@ -7,14 +7,13 @@ type: theater
 url: http://lida.org/
 start: 2008-05-01
 end: 2010-03-01
-index: LIDA
+index: _LIDA
 tags:
   - _calendar
   - theater
   - art
   - technical director
   - ensemble
-  - LIDA
 events:
   - title: Roller Skating With My Cousin
     venue: BINDERY | space

@@ -15,7 +15,7 @@ tags:
   - art
   - theater
   - director
-  - grapefruit lab
+  - _grapefruit lab
 video:
   - iframe: https://www.youtube.com/embed/aBBnSi5MJ8o
     width: 560

@@ -10,8 +10,9 @@ tags:
   - _post
   - _elsewhere
   - code
-  - css tricks
-  - video
+  - _css tricks
+  - interview
+  - code video
 video:
   caption: |
     Exploring CSS Grids with Geoff Graham

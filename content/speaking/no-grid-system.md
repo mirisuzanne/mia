@@ -5,7 +5,6 @@ slides: https://talks.oddbird.net/no-grid-system/
 hero:
   img: talks/devconf-best.jpg
 tags:
-  - video
   - speaking
   - code
   - susy
@@ -26,6 +25,8 @@ events:
     start: 2018-05-07
     slides: https://oddbooksapp.com/release/ce37ef91-8bd8-43e2-932a-66931b4b25ce
     video: https://vimeo.com/268576559
+    tags:
+      - code video
     embed: &bt
       iframe: https://player.vimeo.com/video/268576559
       width: 640
@@ -36,6 +37,8 @@ events:
     start: 2017-11-28
     slides: https://oddbooksapp.com/release/ae641b90-8efa-4b1e-8da8-16940edf420d
     video: https://youtu.be/Prc_V-j6yS4
+    tags:
+      - code video
     embed: &clarity
       iframe: https://www.youtube.com/embed/Prc_V-j6yS4
       width: 560
@@ -51,6 +54,8 @@ events:
     start: 2017-08-14
     slides: https://www.oddbooksapp.com/book/djangocon-layout
     video: https://youtu.be/mDRfFEcj3-Q
+    tags:
+      - code video
     embed: &django
       iframe: https://www.youtube.com/embed/mDRfFEcj3-Q
       width: 560

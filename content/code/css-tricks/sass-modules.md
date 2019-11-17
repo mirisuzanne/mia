@@ -8,7 +8,7 @@ tags:
   - _elsewhere
   - writing
   - code
-  - css tricks
+  - _css tricks
   - sass
 summary: |
   Sass recently launched a new module system.

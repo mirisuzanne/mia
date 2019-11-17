@@ -10,8 +10,7 @@ events:
 tags:
   - art
   - music
-  - writing
-  - teacup gorilla
+  - _teacup gorilla
 summary: |
   Founded in 2001,
   The UMS is an annual three-day celebration of music

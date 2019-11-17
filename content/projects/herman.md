@@ -12,7 +12,7 @@ tags:
   - _elsewhere
   - code
   - open source
-  - oddbird
+  - _oddbird
   - sass
 press:
   - text: |

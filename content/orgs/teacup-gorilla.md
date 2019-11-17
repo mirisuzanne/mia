@@ -8,37 +8,13 @@ hero:
 url: https://teacupgorilla.com/
 start: 2010-03-04
 end: ongoing
-index: teacup gorilla
+index: _teacup gorilla
 tags:
   - art
   - music
   - writing
-  - teacup gorilla
+  - _teacup gorilla
   - band
-events:
-  - title: PRF BBQ Denver
-    date: 2019-04-28
-    url: https://www.facebook.com/events/2191187377812554/
-    venue: The Bakery
-    venue_url: https://thebakerydenver.com
-  - title: FACEMAN's 100 Year Storm
-    venue: The Oriental Theater
-    url: http://www.theorientaltheater.com/event/260005/facemans-100-year-storm-
-    date: 2016-11-18
-  - venue: Bouldering Poets Anniversary
-    url: http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/
-    date: 2014-05-17
-    venue_title: true
-    tags:
-      - writing
-      - reading
-  - venue: Bouldering Poets
-    url: https://boulderingpoets.wordpress.com/2013/04/01/march-photos/
-    date: 2013-03-22
-    venue_title: true
-    tags:
-      - writing
-      - reading
 press:
   - text: |
       Teacup Gorilla's amiable creative approach,

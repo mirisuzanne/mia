@@ -8,7 +8,7 @@ tags:
   - _calendar
   - theater
   - art
-  - teacup gorilla
+  - _teacup gorilla
   - music
 ---
 

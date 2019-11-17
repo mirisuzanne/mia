@@ -17,8 +17,8 @@ tags:
   - actor
   - lighting design
   - music
-  - grapefruit lab
-  - teacup gorilla
+  - _grapefruit lab
+  - _teacup gorilla
 gallery:
   - img: /art/theater/jane/DSC_0412.jpg
   - img: /art/theater/jane/DSC_0430.jpg

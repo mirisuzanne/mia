@@ -5,7 +5,6 @@ slides: https://www.oddbooksapp.com/book/software-for-humans
 hero:
   img: talks/user-unfriendly.png
 tags:
-  - video
   - speaking
   - code
   - art
@@ -23,6 +22,8 @@ events:
     start: 2019-06-26
     slides: https://talks.oddbird.net/user-unfriendly/design4drupal19
     video: https://drupal.tv/external-video/2019-06-28/user-unfriendly-practical-guide-losing-control
+    tags:
+      - code video
     embed: &drupal
       iframe: https://www.youtube.com/embed/2MkQBQb43gE
       width: 560

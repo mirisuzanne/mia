@@ -12,7 +12,7 @@ tags:
   - theater
   - art
   - writing
-  - teacup gorilla
+  - _teacup gorilla
   - music
   - director
   - creator

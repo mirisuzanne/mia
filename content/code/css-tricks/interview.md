@@ -9,7 +9,7 @@ tags:
   - _post
   - _elsewhere
   - code
-  - css tricks
+  - _css tricks
   - interview
 summary: |
   Chris Coyier interviews Miriam

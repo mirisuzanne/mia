@@ -9,7 +9,7 @@ tags:
   - _calendar
   - theater
   - buntport
-  - teacup gorilla
+  - _teacup gorilla
   - creator
   - music
 press:

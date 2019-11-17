@@ -15,7 +15,7 @@ tags:
   - art
   - writing
   - script
-  - new world
+  - _new world
   - goshen college
 summary: |
   Reflections of a Mennonite

@@ -3,7 +3,7 @@ title: Five(5)
 date: 2013-03-12
 tags:
   - _calendar
-  - teacup gorilla
+  - _teacup gorilla
   - art
   - music
   - audio

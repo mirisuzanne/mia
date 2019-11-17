@@ -9,12 +9,12 @@ start: 2009-08-14
 end: ongoing
 hero:
   img: /art/theater/jane/DSC_0362.jpg
-index: grapefruit lab
+index: _grapefruit lab
 tags:
   - theater
   - writing
   - art
-  - grapefruit lab
+  - _grapefruit lab
 events:
   - title: A Murder One Less
     date: 2009-08-01

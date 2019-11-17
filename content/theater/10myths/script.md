@@ -16,7 +16,7 @@ tags:
   - writing
   - riding sidesaddle
   - buntport
-  - teacup gorilla
+  - _teacup gorilla
   - script
 ---
 

@@ -7,7 +7,6 @@ hero:
   img: talks/miriam.jpg
 tags:
   - speaking
-  - video
   - code
   - layout
 events:
@@ -20,6 +19,8 @@ events:
     start: 2019-08-15
     end: 2019-08-16
     adr: Denver, CO
+    tags:
+      - code video
     embed: &dvlpdnvr
       - iframe: https://www.youtube.com/embed/JnvkjhwcMcM
         width: 560
@@ -55,6 +56,8 @@ events:
     start: 2018-09-06
     slides: https://talks.oddbird.net/dynamic-css/fullstack18/
     video: https://youtu.be/9fTUeLsR2Hc
+    tags:
+      - code video
     embed: &fsfest
       iframe: https://www.youtube.com/embed/9fTUeLsR2Hc
       width: 560
@@ -65,6 +68,8 @@ events:
     start: 2018-08-21
     slides: https://talks.oddbird.net/dynamic-css/jsconfus18/
     video: https://www.youtube.com/watch?v=uwgBz748t-g
+    tags:
+      - code video
     embed: &jsconf
       iframe: https://www.youtube.com/embed/uwgBz748t-g
       width: 560

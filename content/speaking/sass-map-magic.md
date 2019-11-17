@@ -2,7 +2,6 @@
 title: Sass Map Magic
 slides: https://www.oddbooksapp.com/book/sass-map-magic
 tags:
-  - video
   - speaking
   - code
   - sass
@@ -12,6 +11,8 @@ events:
     adr: Boston, MA
     start: 2016-09-26
     slides: https://oddbooksapp.com/release/b71e6e5d-e956-42ff-a4dd-b70bf3b13a2a
+    tags:
+      - code video
     embed: &cssconf
       iframe: https://www.youtube.com/embed/MdwtoFt2LOI
       width: 560

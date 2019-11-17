@@ -13,7 +13,7 @@ events:
 tags:
   - theater
   - art
-  - grapefruit lab
+  - _grapefruit lab
   - actor
 ---
 

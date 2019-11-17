@@ -12,7 +12,7 @@ tags:
   - _calendar
   - code
   - open source
-  - oddbird
+  - _oddbird
   - sass
 press:
   - text: OMG I just love this tool way too&nbsp;much.

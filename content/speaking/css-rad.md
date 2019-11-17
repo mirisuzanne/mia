@@ -10,7 +10,6 @@ hero:
   caption: CSS is better than "awesome"
 tags:
   - speaking
-  - video
   - code
 events:
   - venue: Smashing Conf NY
@@ -23,16 +22,21 @@ events:
     date: 2019-11-07
     adr: Denver, CO
     video: https://youtu.be/bSITeqDKkb8
+    tags:
+      - code video
     embed: &frfe
       - iframe: https://www.youtube.com/embed/bSITeqDKkb8
         width: 560
         height: 315
   - venue: Smashing Conf NY
+    feature: true
     url: https://smashingconf.com/ny-2019/
     start: 2019-10-15
     end: 2019-10-16
     adr: New York, NY
     video: https://vimeo.com/367890815
+    tags:
+      - code video
     embed: &smashing
       - iframe: https://player.vimeo.com/video/367890815
         width: 640

@@ -11,7 +11,7 @@ index: mozilla developer
 tags:
   - writing
   - code
-  - video
+  - code video
   - speaking
   - mozilla developer
 summary: |

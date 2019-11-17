@@ -13,7 +13,22 @@ tags:
   - music
   - album
   - audio
-  - teacup gorilla
+  - _teacup gorilla
+events:
+  - title: EP Release Party
+    url: http://www.hi-dive.com/event/864133-teacup-gorilla-denver/
+    venue: Hi Dive
+    venue_url: http://www.hi-dive.com/
+    start: 2015-07-09
+    adr: Denver, CO
+    image: shows/blc.jpg
+    with:
+      - name: Bad Luck City
+        url: https://www.facebook.com/badluckcity
+      - name: Coastal Wives
+        url: https://www.facebook.com/Coastalwives
+      - name: Jen Korte
+        url: http://jkandtheloss.com
 press:
   - text: |
       The Holes They Leave occupies a middle place

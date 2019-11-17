@@ -18,7 +18,7 @@ tags:
   - code
   - susy
   - open source
-  - oddbird
+  - _oddbird
   - sass
 events:
   - title: Book -- Learning Susy
