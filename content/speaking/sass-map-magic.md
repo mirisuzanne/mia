@@ -2,8 +2,10 @@
 title: Sass Map Magic
 slides: https://www.oddbooksapp.com/book/sass-map-magic
 tags:
+  - video
   - speaking
   - code
+  - sass
 events:
   - venue: CSSConf 2016
     url: https://2016.cssconf.com/
@@ -31,7 +33,7 @@ events:
     start: 2014-09-12
     video: http://teamtreehouse.com/library/sass-map-magic
 summary: |
-  **Maps are a powerful data type in Sass** —
+  Maps are a powerful data type in Sass --
   perfect for managing color and scale palettes,
   framework configuration, data storage, and more.
 media:

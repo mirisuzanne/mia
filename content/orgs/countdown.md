@@ -2,6 +2,7 @@
 title: Countdown to Zero
 sub: 10-show political theater collective
 org: Technical Director
+type: theater
 adr: Denver, CO
 url: http://countdowntozero.org/
 start: 2007-09-20

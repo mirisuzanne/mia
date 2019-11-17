@@ -1,5 +1,5 @@
 ---
-title: Script -- In a Time of War
+title: In a Time of War
 sub: based on interviews with Annie in 2003
 type: script
 date: 2003-11-18

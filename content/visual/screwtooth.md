@@ -1,5 +1,6 @@
 ---
 feature: true
+type: gallery
 title: PROPHETIA VETITUM MUNDI
 sub: a collaborative installation based on obscure 80s sci-fi films
 venue: Screw Tooth & Buntport Theater

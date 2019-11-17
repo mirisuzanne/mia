@@ -7,6 +7,7 @@ tags:
   - code
   - susy
   - layout
+  - sass
 events:
   - venue: Bmore Sass
     url: http://bmore-sass.com/

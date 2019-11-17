@@ -5,7 +5,7 @@ org: Co-Founder
 start: 2008-04-15
 end: ongoing
 hero:
-  img: elsewhere/oddlogo.svg
+  svg: oddbird.svg
 index: oddbird
 tags:
   - code

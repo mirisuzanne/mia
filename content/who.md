@@ -2,6 +2,7 @@
 layout: base
 title: About
 banner: All About Miriam
+sub: (this is my website)
 calendar: all_orgs
 hero:
   img: headshots/mia-smirk.jpg

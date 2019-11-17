@@ -1,6 +1,7 @@
 ---
+type: gallery
 title: Not Clear To Me, an Installation
-sub: art and words
+sub: art & words
 venue: Bardo Coffee House
 adr: Denver, CO
 url: https://www.bardocoffee.com/

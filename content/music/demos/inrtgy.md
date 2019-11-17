@@ -1,5 +1,5 @@
 ---
-title: Demo -- I'm Not Ready To Go Yet
+title: I'm Not Ready To Go Yet
 date: 2014-07-29
 tags:
   - _calendar

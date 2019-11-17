@@ -1,5 +1,5 @@
 ---
-title: Demo -- A Dark Plain
+title: A Dark Plain
 date: 2014-07-26
 tags:
   - _calendar

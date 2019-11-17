@@ -1,5 +1,7 @@
 ---
-title: SideSaddle Art Show
+type: gallery
+title: Riding on the Walls
+sub: art & words from [Riding SideSaddle*](/books/sidesaddle/)
 date: 2015-10-10
 hero:
   img: huck.jpg

@@ -7,6 +7,8 @@ tags:
   - code
   - agile
   - design systems
+  - sass
+  - video
 events:
   - venue: Agile Alliance
     url: https://www.agilealliance.org/agile2019/program/
@@ -45,7 +47,7 @@ press:
     title: Microsoft Sr. Developer Advocate & Vue Core Team member
     url: https://twitter.com/sarah_edo/status/979023728611905536
 summary: |
-  **Style Guides & Pattern Libraries are great tools**
+  Style Guides & Pattern Libraries are great tools
   for documenting the relationships between code and design,
   but beautiful docs are only half the battle.
 media:

@@ -1,5 +1,5 @@
 ---
-title: Demo -- Pig Sez
+title: Pig Sez
 date: 2014-08-01
 tags:
   - _calendar

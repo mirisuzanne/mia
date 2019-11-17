@@ -2,6 +2,7 @@
 title: Teacup Gorilla
 sub: dark indie-rock soundscapes with evocative poetry
 org: Bass & Vocals
+type: music
 hero:
   img: art/music/video-meta.jpg
 url: https://teacupgorilla.com/
@@ -24,14 +25,6 @@ events:
     venue: The Oriental Theater
     url: http://www.theorientaltheater.com/event/260005/facemans-100-year-storm-
     date: 2016-11-18
-  - title: Underground Music Showcase
-    venue: Illegal Pete's
-    url: http://theums.com/
-    date: 2016-07-25
-  - title: Underground Music Showcase
-    venue: The Historian
-    url: http://theums.com/
-    date: 2015-07-25
   - venue: Bouldering Poets Anniversary
     url: http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/
     date: 2014-05-17

@@ -1,4 +1,5 @@
 ---
+type: novel
 title: Into the Green Green Mud
 sub: an animated graphic novel (in progress)
 date: 2012-02-21

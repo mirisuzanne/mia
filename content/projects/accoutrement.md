@@ -13,13 +13,15 @@ tags:
   - code
   - open source
   - oddbird
+  - sass
 summary: |
-  **Design systems must be
-  meaningful to both humans and machines**
+  Design systems must be
+  meaningful to both humans and machines
   Accoutrement provides Sass design-token management
   that improves readability and consistency,
   while encouraging automation.
-  These tools integrate with
-  [Herman](../herman/),
-  the OddBird pattern-library generator.
 ---
+
+These tools integrate with
+[Herman](../herman/),
+the OddBird pattern-library generator.

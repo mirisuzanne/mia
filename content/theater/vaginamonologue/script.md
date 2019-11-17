@@ -1,6 +1,6 @@
 ---
 feature: true
-title: Script -- My Body, My Gender
+title: My Body, My Gender
 sub: a trans vagina monologue
 type: script
 date: 2018-11-05

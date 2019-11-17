@@ -88,6 +88,7 @@
               </h3>
               {% if item.data.sub %}
                 <p data-meta="org-sub">
+                  <strong>{{ item.data.org | mdInline | safe }}</strong>:
                   {{ item.data.sub | mdInline | safe }}
                 </p>
               {% endif %}
@@ -180,8 +181,8 @@
   {%- set summary = summary | md if (summary and not hide_summary) else none -%}
 
   {{ cards.event(
-    title=title(item, is_self, not_me),
-    meta=meta(item, tags, all, is_self),
+    title=title(item, is_self),
+    meta=meta(item, tags, all, not_me),
     summary=summary,
     feature=item.feature,
     is_old=is_old
@@ -191,8 +192,7 @@
 
 {% macro title(
   item,
-  is_self=false,
-  not_me=false
+  is_self=false
 ) %}
   {# Venue Link #}
   {%- set venue_name = item.event.venue or item.page.data.venue or none -%}
@@ -205,22 +205,17 @@
   {%- set url = none if is_self else item.page.url -%}
   {%- set url = (url or venue_url) if (not venue) else url -%}
   {%- set title = utility.link_if(title_name | mdInline, url) -%}
-  {%- set type = '[link]' if not_me else none -%}
-  {%- set type = item.page.data.type or type -%}
 
   {{ title | safe }}
   {{ venue | safe }}
-
-  {% if type %}
-    <span class="event-type">[{{ type }}]</span>
-  {% endif %}
 {% endmacro %}
 
 
 {% macro meta(
   item,
   tags,
-  all
+  all,
+  not_me=false
 ) %}
   {{ utility.datetime(
     pubdate=item.page.data.pubdate or item.page.date,
@@ -228,6 +223,16 @@
     end=item.end,
     format='short' if (item.group | groupName == 'soon') else 'md'
   ) }}
+
+  {%- set type = 'link' if not_me else none -%}
+  {%- set type = item.page.data.type or type -%}
+  {%- set type = item.event.type or type -%}
+  {%- set type = 'event' if item.event and (type == 'org') else type -%}
+
+  {% if type %}
+    | <strong>{{ type }}</strong>
+  {% endif %}
+
 
   {%- set venue_adr = item.event.adr or item.page.data.adr -%}
   {% if venue_adr %}

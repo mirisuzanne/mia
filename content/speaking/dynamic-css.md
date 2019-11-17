@@ -7,6 +7,7 @@ hero:
   img: talks/miriam.jpg
 tags:
   - speaking
+  - video
   - code
   - layout
 events:

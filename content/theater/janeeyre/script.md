@@ -1,5 +1,5 @@
 ---
-title: Script -- JANE/EYRE
+title: JANE/EYRE
 sub: A [queer adaptation](../) of the classic novel
 type: script
 date: 2018-03-03

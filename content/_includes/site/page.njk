@@ -3,7 +3,7 @@
 {% if (content or summary) %}
   <article
     data-main
-    data-typeset
+    data-typeset="{{ type }}"
     {{ utility.attr_if('data-erase', 'off' if erasure else none) }}>
     {% include 'site/hero.njk' %}
     {% include 'site/page-meta.njk' %}

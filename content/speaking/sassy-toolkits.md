@@ -5,6 +5,7 @@ url: https://www.oddbooksapp.com/book/sassy-toolkits
 tags:
   - speaking
   - code
+  - sass
 events:
   - venue: Frontend Zurich
     url: http://frontendconf.ch

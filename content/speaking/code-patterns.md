@@ -6,6 +6,8 @@ tags:
   - speaking
   - code
   - design systems
+  - video
+  - sass
 events:
   - venue: Refresh Denver
     url: https://www.meetup.com/refreshdenver/events/241230495/?from=ref
@@ -59,7 +61,7 @@ events:
       width: 560
       height: 315
 summary: |
-  **Style Guides & Pattern Libraries are great tools**
+  Style Guides & Pattern Libraries are great tools
   for documenting the relationships between code and design,
   but beautiful docs are only half the battle.
 media:

@@ -1,6 +1,7 @@
 ---
 feature: true
-title: Cover Art -- The Posture of Contour
+type: cover art
+title: The Posture of Contour
 sub: by [James Belflower](http://www.pw.org/content/james_belflower)
 venue: SpringGun Press
 url: http://www.springgunpress.com/posture/

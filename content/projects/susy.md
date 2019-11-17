@@ -19,6 +19,7 @@ tags:
   - susy
   - open source
   - oddbird
+  - sass
 events:
   - title: Book -- Learning Susy
     venue: Zell Liew
@@ -61,7 +62,7 @@ press:
     credit: Zell Liew
     url: https://learnsusy.zellwk.com/
 summary: |
-  **Susy is a lightweight grid-layout engine for Sass**,
+  Susy is a lightweight grid-layout engine for Sass,
   designed to simplify and clarify responsive grid layouts
   without ever getting in your way.
   Originally released in 2009,

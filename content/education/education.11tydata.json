@@ -1,5 +1,6 @@
 {
   "layout": "base",
   "calendar": "education",
+  "type": "education",
   "tags": ["education"]
 }

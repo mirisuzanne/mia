@@ -1,12 +1,11 @@
 ---
 feature: true
-title: Album -- Kingdom Come
+title: Kingdom Come
 date: 2009-05-19
 venue: SoundCloud
 url: https://soundcloud.com/dirt-circle-dogs/sets/kingdom-come
 hero:
   img: art/music/kingdom-come.png
-calendar: music
 tags:
   - _calendar
   - art

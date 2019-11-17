@@ -73,6 +73,9 @@
           item.data.title | mdInline,
           item.url
         ) }}
+        {% if item.data.type and (item.data.type != tag) %}
+          [{{ item.data.type }}]
+        {% endif %}
       </li>
     {% endfor %}
     </ul>

@@ -1,16 +1,17 @@
 ---
+type: video
 title: Getting Started with CSS Grid
 url: https://css-tricks.com/video-screencasts/153-getting-started-with-css-grid/
 date: 2017-02-20
 hero:
-  img: elsewhere/css-tricks.svg
+  svg: css-tricks.svg
 tags:
   - _calendar
   - _post
   - _elsewhere
   - code
   - css tricks
-  - screencast
+  - video
 video:
   caption: |
     Exploring CSS Grids with Geoff Graham

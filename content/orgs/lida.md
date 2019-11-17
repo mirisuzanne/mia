@@ -2,7 +2,8 @@
 title: The LIDA Project
 sub: meta-media performance collective
 adr: Denver, CO
-org: Company Member | Technical Director
+org: Technical Director
+type: theater
 url: http://lida.org/
 start: 2008-05-01
 end: 2010-03-01

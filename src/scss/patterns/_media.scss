@@ -1,3 +1,7 @@
+svg {
+  fill: currentColor;
+}
+
 [data-media] {
   align-items: var(--align, stretch);
   display: grid;

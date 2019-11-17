@@ -1,5 +1,6 @@
 ---
 feature: true
+type: novel
 title: Riding SideSaddle*
 sub: A queer novel, in fragments of memory…
 date: 2015-04-02
@@ -16,21 +17,28 @@ tags:
   - writing
   - book
 events:
-  - title: Queer Art & Reading
+  - title: Queer Art
+    type: reading
     venue: Charis Books
     url: https://www.facebook.com/events/737586806673620/
     adr: Atlanta, GA
     start: 2019-09-16
-  - title: SideSaddle Reading
-    venue: A Leon Affair
+  - title: A Leon Affair
+    type: reading
+    venue: Leon Gallery
+    adr: Denver, CO
     date: 2017-03-18
-  - title: SideSaddle Reading
-    venue: The Card Table
+  - title: The Card Table
+    type: reading
+    venue: Buntport
+    adr: Denver, CO
     url: http://tracyshaffer.com/the-card-table/
     date: 2016-03-19
   - title: Fucking Fabulous Fiction Festival
+    type: reading
     venue: Oriental Theater
     url: http://www.theorientaltheater.com/event/214770/fiction-fest
+    adr: Denver, CO
     date: 2015-07-31
     with:
       - name: BookBar
@@ -38,6 +46,7 @@ events:
       - name: High Fiction
         url: http://highfiction.com/
   - title: SideSaddle Book Release
+    type: reading
     venue: Syntax Physic Opera
     url: http://physicopera.com/
     date: 2015-04-02

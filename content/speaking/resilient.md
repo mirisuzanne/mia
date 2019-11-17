@@ -6,6 +6,7 @@ tags:
   - speaking
   - workshop
   - code
+  - sass
 events:
   - venue: Smashing Conf Austin
     url: https://smashingconf.com/austin-2020/

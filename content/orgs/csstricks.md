@@ -7,7 +7,7 @@ start: 2016-10-15
 end: ongoing
 index: css tricks
 hero:
-  img: elsewhere/css-tricks.svg
+  svg: css-tricks.svg
 tags:
   - writing
   - code

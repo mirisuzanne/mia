@@ -1,5 +1,11 @@
-// Buttons
-// =======
+// Type
+// ====
+
+strong {
+  color: var(--text-highlight);
+  font-weight: normal;
+  font-style: normal;
+}
 
 .intro {
   font-size: var(--font-large);
@@ -8,7 +14,6 @@
 
   em,
   i,
-  strong,
   b {
     font-style: normal;
   }
@@ -39,11 +44,6 @@
   pre,
   blockquote {
     margin: 0 0 var(--gutter);
-  }
-
-  strong,
-  b {
-    @include font-family('midnight');
   }
 
   li {
@@ -141,4 +141,10 @@ mark {
 
 [data-bright] {
   @include fancy-text;
+}
+
+[data-typeset='script'] {
+  strong {
+    @include font-family('midnight');
+  }
 }

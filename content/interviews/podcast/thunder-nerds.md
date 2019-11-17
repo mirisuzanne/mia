@@ -1,5 +1,5 @@
 ---
-title: Dynamic CSS Interview
+title: On Dynamic CSS
 sub: a mid-conference conversation
 venue: Thunder Nerds
 url: https://www.thundernerds.io/2019/04/miriam-suzanne-vueconf-us-2019/

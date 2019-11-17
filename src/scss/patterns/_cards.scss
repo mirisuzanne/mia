@@ -85,6 +85,10 @@
 [data-card='title'] {
   line-height: var(--rhythm);
   margin: 0;
+
+  [data-old] & {
+    font-style: italic;
+  }
 }
 
 [data-card='summary'] {
@@ -99,13 +103,7 @@
   color: var(--text-highlight);
 }
 
-.event-type {
-  color: var(--text-light);
-  font-style: italic;
-}
-
 [data-old] {
   --link-color: var(--text-light);
   color: var(--text-light);
-  font-style: italic;
 }

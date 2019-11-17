@@ -1,4 +1,5 @@
 ---
+type: illustration
 title: Portrait of Sondra & Dan
 date: 2012-11-20
 tags:
