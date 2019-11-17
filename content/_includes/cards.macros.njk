@@ -24,12 +24,14 @@
 
   <section
     data-card-group="{{ title | slug }}">
-    <h3
+    <header
       data-cards="grouper">
-      <span>{{ title }}</span>
-    </h3>
+      <h3 data-cards="group-title">
+        {{ title | safe }}
+      </h3>
+    </header>
     <div data-layout="cards">
-      {{ content }}
+      {{ content | safe }}
     </div>
   </section>
 {% endmacro %}
