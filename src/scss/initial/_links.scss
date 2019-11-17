@@ -8,6 +8,7 @@ a {
     text-decoration-skip-ink: auto;
     text-decoration-thickness: var(--line-weight, 0.1em);
     text-underline-offset: var(--line-offset, 0.15em);
+    text-shadow: none;
     transition: text-decoration-thickness time('fast') ease('_in-out');
   }
 

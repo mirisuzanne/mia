@@ -4,7 +4,7 @@
 [data-layout='footer'] {
   display: grid;
   grid:
-    auto auto 1fr / 2fr [content-start] minmax(min-content, size('double-page'))
+    auto auto 1fr / 2fr [content-start] minmax(min-content, var(--double-page))
     [content-end] 1fr;
   min-height: calc(100vh - var(--spacer));
 }
@@ -14,7 +14,7 @@
   display: grid;
   grid-column: content;
   grid-gap: var(--gap);
-  grid-template-columns: repeat(auto-fit, minmax(size('half'), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--half-page), 1fr));
   justify-content: center;
   margin-bottom: var(--spacer);
   padding: 0 var(--gap);
@@ -41,7 +41,7 @@
   grid-column: 1 / -1;
   min-height: 50vh;
 
-  @include above('page-break') {
+  @include above('page') {
     --angle: 95deg;
     min-height: var(--double-spacer);
   }

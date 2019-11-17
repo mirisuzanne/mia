@@ -1,0 +1,28 @@
+<details data-menu="type" hidden>
+  <summary class="menu-item" id="menu-type">type</summary>
+  <div data-dropdown="pad">
+    <label data-field for="base" data-type-field="base">
+      <span data-label>font-size:</span>
+      <input data-type-input="base"
+        id="base" type="range" min="-10" max="100" value="0">
+    </label>
+    <label data-field for="line" data-type-field="line">
+      <span data-label>line height:</span>
+      <input data-type-input="line"
+        id="line" type="range" min="0" max="10" value="4">
+    </label>
+    <label data-field for="letters" data-type-field="letters">
+      <span data-label>letter spacing:</span>
+      <input data-type-input="letters"
+        id="letters" type="range" min="-150" max="500" value="0">
+    </label>
+
+    <button
+      data-type-input="unset"
+      data-btn="small"
+      type="button"
+      hidden>
+      reset
+    </button>
+  </div>
+</details>

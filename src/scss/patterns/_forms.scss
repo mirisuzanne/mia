@@ -24,6 +24,7 @@
   border: var(--quarter-shim) solid var(--input-border);
   color: var(--input-color);
   font: inherit;
+  letter-spacing: inherit;
 }
 
 [data-input~='text'] {

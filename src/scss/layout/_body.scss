@@ -1,9 +1,30 @@
 // Body Layout
 // ===========
 
+.skiplink {
+  --pos: -200%;
+  --delay: 1s;
+  background: var(--overlay);
+  border: var(--border-width) solid va(--border);
+  left: 50%;
+  padding: var(--half-shim) var(--gutter);
+  position: absolute;
+  top: var(--half-shim);
+  transform: translate3d(-50%, var(--pos), 0);
+  transition: transform 150ms ease-in;
+  transition-delay: var(--delay);
+  z-index: 1000;
+
+  #{$focus} {
+    --pos: 0;
+    --delay: 0;
+  }
+}
+
 [data-layout='body'] {
   display: grid;
   grid-template: 'menu' auto 'nav' auto 'banner' 1fr / 100vw;
+  position: relative;
 }
 
 [data-main] {
@@ -12,14 +33,14 @@
     minmax(var(--gutter), 1fr)
     [hero-start] minmax(0, 1fr)
     [pull-start] minmax(0, var(--pull-max, 1fr))
-    [main-start] minmax(min-content, size('page'))
+    [main-start] minmax(min-content, var(--page))
     [main-end hero-end pull-end] minmax(var(--gutter), 1fr);
 
   > * {
     grid-column: var(--main-column, main);
   }
 
-  @include above('page-break') {
+  @include above('page') {
     --pull-max: var(--spacer);
     grid-column-gap: var(--gutter);
   }

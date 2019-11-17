@@ -15,7 +15,7 @@
   justify-content: space-evenly;
   margin: 0 var(--double-gutter);
 
-  @include above('page-break') {
+  @include above('page') {
     --gap: var(--spacer) var(--double-gutter);
   }
 
@@ -35,19 +35,21 @@
 }
 
 [data-cards='grouper'] {
-  @include font-family('midnight');
   font-size: var(--font-xsmall);
   grid-area: grouper;
   margin: 0;
   padding: 0 var(--half-shim);
   text-transform: uppercase;
   writing-mode: vertical-rl;
+}
 
-  span {
-    @include fancy-text;
-    position: sticky;
-    top: calc(var(--rhythm) * 2);
-  }
+[data-cards='group-title'] {
+  @include font-family('midnight');
+  @include fancy-text;
+  display: inline-block;
+  padding: var(--shim) 0;
+  position: sticky;
+  top: var(--shim);
 }
 
 // Items

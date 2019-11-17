@@ -19,6 +19,10 @@ events:
     start: 2019-08-15
     end: 2019-08-16
     adr: Denver, CO
+    embed: &dvlpdnvr
+      - iframe: https://www.youtube.com/embed/JnvkjhwcMcM
+        width: 560
+        height: 315
   - venue: Generate New York
     url: https://www.generateconf.com/
     adr: San Francisco, CA
@@ -106,9 +110,9 @@ summary: |
   back into the language designed for it.
 media:
   - span: full
-    <<: *fsfest
-  - span: full
-    <<: *jsconf
+    <<: *dvlpdnvr
+  - <<: *fsfest
+  - <<: *jsconf
 ---
 {% import "content.macros.njk" as content %}
 

@@ -9,7 +9,9 @@
 ) %}
   {% set title = 'episodes' %}
   {% set org_title = 'current orgs' %}
-  {% set events = collections.all | getPage(page) | getEvents %}
+  {% set page = collections.all | getPage(page) %}
+  {% set events = page | getEvents %}
+  {% set page = page | first %}
   {% set all_orgs = (events_group == 'all_orgs') %}
 
   {% if events_group == 'all' %}
@@ -18,7 +20,7 @@
     {% set org_title = 'org history' %}
     {% set events_group = 'all' %}
     {% set events = none %}
-  {% elif events_group != 'self' %}
+  {% elif events_group and (events_group != 'self') %}
     {% set tag_name = events_group | displayName %}
     {% set title %}
       '{{ tag_name }}' episodes
@@ -29,12 +31,14 @@
     {% set events = collections.all | getEvents(events_group) %}
   {% endif %}
 
-  {{ show_orgs(
-    org_title,
-    events_group,
-    collections,
-    all_orgs
-  ) }}
+  {% if not page.data.org %}
+    {{ show_orgs(
+      org_title,
+      events_group,
+      collections,
+      all_orgs
+    ) }}
+  {% endif %}
 
   {% if events %}
     {{ section(
@@ -222,7 +226,7 @@
     pubdate=item.page.data.pubdate or item.page.date,
     start=item.start,
     end=item.end,
-    format='md'
+    format='short' if (item.group | groupName == 'soon') else 'md'
   ) }}
 
   {%- set venue_adr = item.event.adr or item.page.data.adr -%}

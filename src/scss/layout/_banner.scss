@@ -10,7 +10,7 @@
   transition: transform time('fast') ease('_in-out-back');
   z-index: 1;
 
-  @include above('page-break') {
+  @include above('page') {
     transform: rotate(-8deg);
   }
 
@@ -21,7 +21,7 @@
 
 .banner-title {
   @include font-family('sunrise');
-  font-size: calc(1rem + 8vw);
+  font-size: var(--font-headline);
   line-height: 0.74;
   margin: 0;
   padding: var(--shim);

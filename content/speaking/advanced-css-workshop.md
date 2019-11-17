@@ -1,5 +1,6 @@
 ---
-title: Advanced CSS Workshop
+type: workshop
+title: Advanced CSS
 banner: Advanced CSS for Modern Applications
 sub: with practical use-cases, tooling, and pitfalls
 tags:
