@@ -38,6 +38,12 @@ events:
     end: 2019-04-17
     slides: https://talks.oddbird.net/dynamic-css/smashingsf19/
     video: https://vimeo.com/331571593
+    tags:
+      - code video
+    embed: &smashing
+      - iframe: https://player.vimeo.com/video/331571593
+        width: 640
+        height: 360
   - venue: VueConf US
     url: http://vueconf.us/
     adr: Tampa, FL
@@ -115,8 +121,8 @@ summary: |
   It's time to start moving style logic
   back into the language designed for it.
 media:
-  - span: full
-    <<: *dvlpdnvr
+  - <<: *smashing
+  - <<: *dvlpdnvr
   - <<: *fsfest
   - <<: *jsconf
 ---

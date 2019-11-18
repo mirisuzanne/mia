@@ -8,6 +8,7 @@
   page
 ) %}
   {% set title = 'episodes' %}
+  {% set filter = none %}
   {% set org_title = 'current orgs' %}
   {% set page = collections.all | getPage(page) %}
   {% set events = page | getEvents %}
@@ -16,6 +17,7 @@
 
   {% if events_group == 'all' %}
     {% set events = collections.all | getEvents %}
+    {% set filter = 'off' %}
   {% elif all_orgs %}
     {% set org_title = 'org history' %}
     {% set events_group = 'all' %}
@@ -45,7 +47,8 @@
       title=title,
       events=events,
       all=collections,
-      self=page.url
+      self=page.url,
+      filter=filter
     ) }}
   {% endif %}
 {% endmacro %}
@@ -105,14 +108,15 @@
   title,
   events,
   all,
-  self
+  self,
+  filter=none
 ) %}
   {% set title = [events | countEvents, title] | join(' ') %}
   {% if events | length %}
     {{ cards.section(
       title,
       content=groups(events, all, self),
-      filter='off'
+      filter=filter
     ) }}
   {% endif %}
 {% endmacro %}

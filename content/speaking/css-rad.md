@@ -51,8 +51,8 @@ summary: |
   but trapped in a strange middle ground
   with unique rules and constraints.
 media:
-  - span: full
-    <<: *frfe
+  - <<: *smashing
+  - <<: *frfe
 ---
 {% import "content.macros.njk" as content %}
 
