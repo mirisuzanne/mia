@@ -12,7 +12,7 @@ events:
   - venue: Webconf.asia
     url: https://2019.webconf.asia/
     adr: Hong Kong
-    start: 2020-08-15
+    start: 2020-08-27
   - venue: Generate New York
     url: https://www.generateconf.com/
     adr: San Francisco, CA
