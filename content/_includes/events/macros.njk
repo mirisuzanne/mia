@@ -111,7 +111,8 @@
   {% if events | length %}
     {{ cards.section(
       title,
-      content=groups(events, all, self)
+      content=groups(events, all, self),
+      filter='off'
     ) }}
   {% endif %}
 {% endmacro %}
@@ -174,8 +175,8 @@
   {%- set tags = item.tags | publicTags -%}
   {%- set not_me = ('inspiration' in tags) -%}
   {%- set is_self = (item.page.url == self) -%}
-  {%- set is_old = (item.index and not item.feature) -%}
-  {%- set hide_summary = (is_self or is_old) -%}
+  {%- set is_old = item.index -%}
+  {%- set hide_summary = (is_self or is_old) and not item.feature -%}
 
   {%- set summary = (item.page.data.summary or item.event.sub or item.page.data.sub) -%}
   {%- set summary = summary | md if (summary and not hide_summary) else none -%}

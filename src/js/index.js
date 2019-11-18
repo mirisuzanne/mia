@@ -1,10 +1,11 @@
 import ccs from 'cascading-color-systems';
 
-import erase from './erase';
 import scale from './scale';
 import search from './search';
+import toggle from './toggle';
 
-ccs();
-erase();
+toggle('erase');
+toggle('filter');
 search();
+ccs();
 scale();

@@ -2,15 +2,21 @@
 
 {% macro section(
   title,
-  content=none
+  content=none,
+  filter=none
 ) %}
   {% set content = content if (content != none) else caller() %}
 
   <section data-section="cards">
     {{ utility.section_title(title) }}
 
+    {% if filter %}
+      <button data-toggle="filter">filter repeats…</button>
+    {% endif %}
+
     <div
-      data-layout="card-groups">
+      data-layout="card-groups"
+      {{ utility.attr_if('data-filter', filter) }}>
       {{ content }}
     </div>
   </section>

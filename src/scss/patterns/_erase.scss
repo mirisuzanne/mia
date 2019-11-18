@@ -9,18 +9,8 @@
 }
 
 [data-erase='on'] {
-  :not(mark) {
+  :not(mark):not([data-toggle]) {
     color: transparent;
     text-shadow: none;
-  }
-}
-
-[data-toggle='erase'] {
-  display: inline-block;
-
-  #{$focus},
-  &[data-active='true'] {
-    background: var(--ccs-accent--fg2);
-    color: var(--ccs-prime--bg3);
   }
 }

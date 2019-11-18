@@ -47,6 +47,7 @@
   @include font-family('midnight');
   @include fancy-text;
   display: inline-block;
+  margin: 0;
   padding: var(--shim) 0;
   position: sticky;
   top: var(--shim);
@@ -104,6 +105,19 @@
 }
 
 [data-old] {
-  --link-color: var(--text-light);
-  color: var(--text-light);
+  &:not([data-feature]) {
+    --link-color: var(--text-light);
+    color: var(--text-light);
+  }
+
+  [data-filter='on'] & {
+    display: none;
+  }
+}
+
+[data-toggle='filter'] {
+  font-size: var(--font-small);
+  margin-top: calc(-1 * var(--spacer));
+  position: absolute;
+  transform: translate3d(var(--shim), var(--shim), 0);
 }

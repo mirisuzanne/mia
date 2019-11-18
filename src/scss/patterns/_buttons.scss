@@ -1,7 +1,7 @@
 // Buttons
 // =======
 
-button {
+button:not([data-toggle]) {
   --btn-shade: hsla(
     var(--ccs-h--prime),
     var(--ccs-s--bg1),
@@ -64,4 +64,44 @@ button {
 
 [data-btn~='small'] {
   font-size: var(--font-small);
+}
+
+// toggles
+
+[data-toggle] {
+  background: initial;
+  border: thin solid var(--border);
+  border-radius: var(--border-radius) 0;
+  color: var(--action);
+  cursor: pointer;
+  font: inherit;
+  font-style: italic;
+  letter-spacing: inherit;
+  padding: var(--quarter-shim) var(--gutter) var(--half-shim) var(--shim);
+
+  #{$focus} {
+    --toggle: var(--action-hover);
+    border-color: currentColor;
+    color: var(--action-hover);
+  }
+
+  &::before {
+    border: 2px solid var(--toggle, transparent);
+    border-radius: 1px;
+    border-width: 0 0 2px 2px;
+    content: '';
+    display: inline-block;
+    height: 0.3em;
+    margin-right: 0.1em;
+    transform: translateY(-0.25em) rotate(-39deg);
+    width: 0.6em;
+    transition: boder-color 150ms ease-in-out;
+  }
+}
+
+[data-active='true'] {
+  --toggle: var(--action);
+  border-color: currentColor;
+  color: var(--text-highlight);
+  font-style: normal;
 }
