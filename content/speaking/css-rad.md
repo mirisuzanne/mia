@@ -12,7 +12,7 @@ tags:
   - speaking
   - code
 events:
-  - venue: Smashing Conf NY
+  - venue: Smashing Conf Austin
     url: https://smashingconf.com/austin-2020/
     start: 2020-06-09
     end: 2020-06-10
