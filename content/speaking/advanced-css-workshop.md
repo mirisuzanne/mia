@@ -1,7 +1,7 @@
 ---
 type: workshop
-title: Advanced CSS
-banner: Advanced CSS for Modern Applications
+title: Advanced CSS & Sass
+banner: Advanced CSS & Sass for Modern Applications
 sub: with practical use-cases, tooling, and pitfalls
 tags:
   - speaking

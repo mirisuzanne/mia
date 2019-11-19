@@ -20,14 +20,16 @@ tags:
   - open source
   - _oddbird
   - sass
-events:
-  - title: Book -- Learning Susy
-    venue: Zell Liew
+press:
+  - text: |
+      My constant search for a better grid system
+      ended when I discovered Susy.
+      It is very likely that Susy
+      is what you’re looking for as well.
+    credit: Zell Liew
+    venue: Learning Susy [book]
     url: https://learnsusy.zellwk.com/
     date: 2014-11-19
-    tags:
-      - inspiration
-press:
   - text: I like the idea of grids-on-demand, rather than a strict framework.
     credit: Chris Coyier
     venue: CSS Tricks

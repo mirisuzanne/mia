@@ -26,7 +26,7 @@ you should talk to them!*
 If you are interested in queer art
 ==more than queer== answers,
 check out
-my novel: [Riding SideSaddle*](/writing/ridingsidesaddle/).
+my novel: [Riding SideSaddle*](/books/sidesaddle/).
 It's totally about transition,
 ==and totally== not-at-all about transition.
 It's about ==bodies== and identities that won't stay put.

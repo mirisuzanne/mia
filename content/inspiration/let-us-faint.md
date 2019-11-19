@@ -1,4 +1,5 @@
 ---
+type: podcast
 title: Guts | Let's Faint for Each Other
 sub: Erin Rollman talks about my surgery
 date: 2019-02-15

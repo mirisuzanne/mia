@@ -9,9 +9,10 @@ hero:
   img: art/music/just-like-that.jpg
 tags:
   - _calendar
-  - music
   - _teacup gorilla
+  - music
   - music video
+  - film
 events:
   - title: Just Like That Video Release
     url: https://www.facebook.com/events/1845576042369221/

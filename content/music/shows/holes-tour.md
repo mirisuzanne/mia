@@ -1,9 +1,14 @@
 ---
-type: music tour
-title: THTL Midwest Tour
-banner: The Holes They Leave | Midwest Tour
-sub: Teacup Gorilla goes on the road...
-date: 2015-08-11
+type: tour
+title: Holes / SideSaddle Midwest Tour
+sub: A hybrid evening of music & story
+date: 2015-08-01
+hero:
+  img: teacupgorilla/tour.jpg
+  alt: |
+    The Holes They Leave / Riding SideSaddle*
+    a hybrid evening of music & story
+calendar: null
 tags:
   - art
   - music
@@ -82,4 +87,8 @@ events:
         url: https://soundcloud.com/hot-books/sets/hot-books-demo
       - name: MariaElena
         url: http://www.elcucomusic.com/
+summary: |
+  A joint tour for [Teacup Gorilla](/orgs/teacup-gorilla/)'s
+  debut album [*The Holes They Leave*](/2015/07/09/holes-they-leave/),
+  and my debut novel [*Riding SideSaddle**](/books/sidesaddle/).
 ---

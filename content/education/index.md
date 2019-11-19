@@ -6,6 +6,7 @@ index: education
 venue_title: true
 events:
   - venue: Naropa Summer Writing Program
+    title: Writing Intensive
     url: https://www.naropa.edu/academics/swp/index.php
     start: 2012-06-11
     end: 2012-07-08

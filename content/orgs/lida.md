@@ -15,26 +15,6 @@ tags:
   - technical director
   - ensemble
 events:
-  - title: Roller Skating With My Cousin
-    venue: BINDERY | space
-    url: http://lida.org/roller-skating-with-my-cousin/
-    adr: Denver, CO
-    start: 2010-01-15
-    end: 2010-02-20
-    tags:
-      - actor
-  - title: RAIN/ of terror
-    venue: BINDERY | space
-    url: http://lida.org/rain-of-terror/
-    adr: Denver, CO
-    start: 2009-02-27
-    end: 2009-03-21
-    award:
-      - title: '[nomination] Best Lighting Design'
-        venue: Denver Post Ovation Award
-        url: http://www.denverpost.com/theater/ci_13971871
-    tags:
-      - lighting design
   - title: The Anonymous Mr. W.
     venue: BINDERY | space
     url: http://lida.org/the-anonymous-mr-w/

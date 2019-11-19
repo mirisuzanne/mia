@@ -52,7 +52,7 @@ and a tour across the midwest.
 [Buy the album](http://teacupgorilla.bandcamp.com/album/the-holes-they-leave)
 
 [tg]: /orgs/teacup-gorilla/
-[sidesaddle]: /projects/ridingsidesaddle/
+[sidesaddle]: /books/sidesaddle/
 
 {{ content.fig(
   audio,

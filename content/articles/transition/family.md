@@ -99,7 +99,7 @@ and build my life around
 >
 > ---[Riding SideSaddle*][sidesaddle] (a novel about chosen family)
 
-[sidesaddle]: /writing/ridingsidesaddle/
+[sidesaddle]: /books/sidesaddle/
 
 *Much love and gratitude*, \
 ❤️ Mia
