@@ -1,15 +1,6 @@
 ---
 #   ### 2013 -------------------------------------
 
-#   - name: 'Bad Shadow Affair'
-#     url: 'http://badshadowaffair.blogspot.com/2013/11/november-16th-douglas-cook-meyer.html'
-#     datetime: ['2013', '10', '16']
-#     role: 'poet/musician'
-#     type: ['performance']
-#     with:
-#       - name: 'Teacup Gorilla'
-#         url: 'http://teacupgorilla.com'
-
 #   - name: 'Art is for People'
 #     url: '/art-is-for-people/'
 #     datetime: ['2013', '10', '07']
@@ -61,7 +52,7 @@
 
 #   ### 2011 -------------------------------------
 
-#   # silence is golden...
+#   # nanonwrimo?
 
 #   ### 2010 -------------------------------------
 
@@ -97,16 +88,6 @@
 
 #   ### 2004 -------------------------------------
 
-#   - name: 'In a Time of War'
-#     datetime: ['2004', null, null]
-#     role: 'playwright'
-#     type: ['performance']
-#     org:
-#       name: 'New World Arts'
-#       url: 'http://newworldarts.org/history'
-#     notes:
-#       - name: '<b>International Peace Play Contest</b>: Runner Up'
-
 #   - name: 'Every Other Day (chapbook)'
 #     datetime: ['2004', null, null]
 #     role: 'playwright'
@@ -128,14 +109,6 @@
 #     notes:
 #       - name: '<b>shortfilmfest03</b>: Audience Choice Award'
 #       - name: '<b>Kennedy Center ACTF</b>: [finalist] Best 10-Minute Play'
-
-#   - name: 'Antony & Cleopatra'
-#     datetime: ['2003', null, null]
-#     role: 'stage management intern'
-#     type: ['performance']
-#     org:
-#       name: 'Oregon Shakespeare Festival'
-#       url: 'https://www.osfashland.org/'
 
 #   ### 2001 -------------------------------------
 

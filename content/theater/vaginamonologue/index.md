@@ -19,7 +19,7 @@ tags:
   - theater
   - art
   - writing
-  - actor
+  - acting
 summary: |
   I was invited to perform
   a Vagina Monologue,

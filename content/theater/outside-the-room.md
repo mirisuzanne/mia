@@ -9,12 +9,11 @@ end: 2018-11-18
 hero:
   img: art/theater/outsidetheroom.jpg
 calendar: grapefruit lab
-series: grapefruit lab
 tags:
   - _calendar
   - art
   - theater
-  - director
+  - directing
   - _grapefruit lab
 video:
   - iframe: https://www.youtube.com/embed/aBBnSi5MJ8o

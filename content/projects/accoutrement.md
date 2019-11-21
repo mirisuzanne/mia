@@ -1,18 +1,17 @@
 ---
-title: 'Accoutrement: design utils'
+title: Accoutrement
 sub: Open-source tools for mainaining design system "tokens" in Sass
 venue: OddBird
 url: https://oddbird.net/accoutrement/
 date: 2014-10-30
 hero:
   img: projects/accoutrement.jpg
-series: open source
 tags:
   - _calendar
   - _elsewhere
+  - _oddbird
   - code
   - open source
-  - _oddbird
   - sass
 summary: |
   Design systems must be

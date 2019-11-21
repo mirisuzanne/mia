@@ -1,18 +1,17 @@
 ---
-title: 'Herman: design docs'
+title: Herman
 sub: Automate design-system documentation directly from your Sass
 venue: OddBird
 url: https://oddbird.net/herman/
 date: 2015-11-18
 hero:
   img: projects/herman.jpg
-series: open source
 tags:
   - _calendar
   - _elsewhere
+  - _oddbird
   - code
   - open source
-  - _oddbird
   - sass
 press:
   - text: |

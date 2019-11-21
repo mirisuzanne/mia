@@ -14,7 +14,7 @@ tags:
   - theater
   - art
   - _grapefruit lab
-  - actor
+  - acting
 ---
 
 Created by [Grapefuit Lab](/orgs/grapefruit-lab)

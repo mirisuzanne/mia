@@ -9,7 +9,7 @@ index: _css tricks
 hero:
   svg: css-tricks.svg
 tags:
+  - _css tricks
   - writing
   - code
-  - _css tricks
 ---

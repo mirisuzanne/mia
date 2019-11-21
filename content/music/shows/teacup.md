@@ -494,6 +494,8 @@ events:
     with:
       - name: Marcia Douglas
       - name: Matt Cook
+      - name: Teacup Gorilla
+        url: http://teacupgorilla.com
 
   - venue: Toad Tavern
     start: 2013-10-24
@@ -556,14 +558,6 @@ events:
       - name: Miriam Suzanne
         url: http://ericsuzanne.com/
       - name: Kelly Dulaney
-
-  - title: Wedding
-    venue: Butterfly Pavilion
-    start: 2010-09-03
-    adr: Boulder, CO
-    with:
-      - name: Rachel Eisenstat
-        url: http://www.ravenjane.com/
 
   - title: Fundraiser
     venue: The Packing House

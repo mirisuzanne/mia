@@ -6,6 +6,11 @@ venue: BandCamp
 url: http://www.ravenjane.com/
 start: 2010-09-14
 end: 2012-03-24
+hero:
+  img: /art/music/ravenjane.jpg
+  caption: |
+    New years eve house show, 2011—'12.
+    Photo by Kenny Storms.
 index: raven jane
 tags:
   - _calendar

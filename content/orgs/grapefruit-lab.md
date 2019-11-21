@@ -11,18 +11,11 @@ hero:
   img: /art/theater/jane/DSC_0362.jpg
 index: _grapefruit lab
 tags:
+  - _grapefruit lab
   - theater
   - writing
   - art
-  - _grapefruit lab
-events:
-  - title: A Murder One Less
-    date: 2009-08-01
-    venue: Boulder International Fringe Festival
-    url: http://www.boulderfringe.com/
-    tags:
-      - director
-      - lighting design
+  - ensemble
 summary: |
   We want to make art without assumptions --
   art that humanizes

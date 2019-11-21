@@ -1,6 +1,6 @@
 ---
 feature: true
-title: 'Susy: layout toolkit'
+title: Susy
 sub: |
   Popular CSS layout framework
   used by **Virgin America**,
@@ -11,14 +11,13 @@ url: https://oddbird.net/susy/
 date: 2009-07-13
 hero:
   img: projects/susy.png
-series: open source
 index: susy
 tags:
   - _calendar
+  - _oddbird
   - code
   - susy
   - open source
-  - _oddbird
   - sass
 press:
   - text: |

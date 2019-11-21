@@ -12,9 +12,9 @@ tags:
   - _calendar
   - theater
   - art
-  - director
+  - directing
   - writing
-  - actor
+  - acting
   - lighting design
   - music
   - _grapefruit lab

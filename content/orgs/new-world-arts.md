@@ -11,10 +11,10 @@ end: 2007-08-14
 index: _new world
 tags:
   - _calendar
+  - _new world
   - theater
   - artistic director
   - technical director
-  - _new world
   - art
 events:
   - title: Bigger Guns III
@@ -22,7 +22,7 @@ events:
     start: 2007-04-20
     end: 2007-04-28
     tags:
-      - director
+      - directing
     press:
       - title: Lights, No Cameras, Plenty of Action
         credit: Jeremy D. Bonfiglio
@@ -34,13 +34,13 @@ events:
     start: 2006-10-20
     end: 2006-10-29
     tags:
-      - director
+      - directing
   - title: Danny and the Deep Blue Sea
     venue: New World Arts
     start: 2006-09-15
     end: 2006-09-24
     tags:
-      - director
+      - directing
     press:
       - credit: Andrew S. Hughes
         venue: South Bend Tribune
@@ -51,7 +51,7 @@ events:
     start: 2006-11-25
     end: 2006-12-04
     tags:
-      - director
+      - directing
     press:
       - text: |
           Rarely does one encounter a production
@@ -66,13 +66,13 @@ events:
     date: 2005-09-13
     tags:
       - writing
-      - director
+      - directing
   - title: Criminal Hearts
     venue: New World Arts
     start: 2004-10-14
     end: 2004-10-24
     tags:
-      - director
+      - directing
   - title: Every Other Day
     venue: New World Arts
     start: 2004-09-09

@@ -16,7 +16,7 @@ tags:
   - _LIDA
   - theater
   - art
-  - actor
+  - acting
   - ensemble
 press:
   - text: |

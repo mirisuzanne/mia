@@ -1,13 +1,12 @@
 ---
 feature: true
-title: 'True: unit-testing'
+title: 'True'
 sub: Popular Sass unit-testing framework
 venue: OddBird
 url: https://oddbird.net/true/
 date: 2013-06-06
 hero:
   img: projects/true.jpg
-series: open source
 tags:
   - _calendar
   - code

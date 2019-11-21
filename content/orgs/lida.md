@@ -1,12 +1,14 @@
 ---
 title: The LIDA Project
-sub: meta-media performance collective
+sub: Art theatre designed to infect the mind
 adr: Denver, CO
 org: Technical Director
 type: theater
 url: http://lida.org/
 start: 2008-05-01
 end: 2010-03-01
+hero:
+  img: art/theater/lida/skatingpromo.jpg
 index: _LIDA
 tags:
   - _calendar
@@ -14,23 +16,7 @@ tags:
   - art
   - technical director
   - ensemble
-events:
-  - title: The Anonymous Mr. W.
-    venue: BINDERY | space
-    url: http://lida.org/the-anonymous-mr-w/
-    adr: Denver, CO
-    start: 2008-12-12
-    end: 2008-12-13
-    tags:
-      - lighting design
-      - assistant director
-  - title: 'Untitled #39'
-    venue: Dresden Dolls
-    adr: Denver, CO
-    date: 2008-05-16
-    tags:
-      - actor
-      - creator
+  - devising
 summary: |
   Founded in 1995,
   The LIDA Project is a meta-media art collective

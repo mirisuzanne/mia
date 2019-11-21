@@ -7,10 +7,10 @@ venue: Buntport Theater
 date: 2015-09-24
 tags:
   - _calendar
+  - _teacup gorilla
   - theater
   - buntport
-  - _teacup gorilla
-  - creator
+  - devising
   - music
 press:
   - credit: Eden Lane

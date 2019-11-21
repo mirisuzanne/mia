@@ -11,5 +11,5 @@ renderData:
   banner: 'Just {{ tag }} and Nothing Else'
   calendar: '{{ tag }}'
 extraTags:
-  - assistant director
+  - nothing
 ---
