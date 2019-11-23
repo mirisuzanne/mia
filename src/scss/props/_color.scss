@@ -13,7 +13,7 @@
 [data-ccs-colors] {
   --mode-zero: calc((var(--ccs-mode) + 1) * 0.5);
   --mode-zero--invert: calc((var(--ccs-mode--invert) + 1) * 0.5);
-  --img-bright: calc(85% + 15% * var(--ccs-mode));
+  --img-bright: calc(90% + 10% * var(--ccs-mode));
   --ccs-neutral--theme: var(--ccs-h--accent);
 
   // flip the shadow based on the mode

@@ -19,11 +19,41 @@
 
 .hero-image {
   @include transition('hero');
+  --hero-gray: 10%;
+  --hero-crop: polygon(
+    50.11% 2.36%,
+    87.39% -6.04%,
+    100.25% 18.06%,
+    98.16% 61.35%,
+    97.56% 101.57%,
+    52.43% 95.75%,
+    14.72% 102.84%,
+    0.85% 91.59%,
+    1.71% 52.38%,
+    -1.23% 20.17%,
+    8.19% -2.02%
+  );
+  --img-filter: grayscale(var(--hero-gray)) var(--img-filter-bright);
+  clip-path: var(--hero-crop);
   fill: currentColor;
   transform: rotate(-6deg);
   z-index: 1;
 
   &:hover {
+    --hero-crop: polygon(
+      0% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%,
+      100% 100%,
+      100% 100%,
+      0% 100%,
+      0% 100%,
+      0% 100%,
+      0% 0%,
+      0% 0%
+    );
+    --hero-gray: 0%;
     transform: rotate(1.5deg);
   }
 }

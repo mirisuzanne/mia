@@ -22,9 +22,11 @@ $times: (
 ///   Animate Changes
 $changes: (
   'img-filter': filter time('fast') ease('_in-out'),
+  'hero-clip': clip-path time('relaxed') ease('_in-out-back'),
   'hero-rotate': transform time('relaxed') ease('_in-out-back'),
   'hero': (
     '#img-filter',
+    '#hero-clip',
     '#hero-rotate',
   ),
   'clip-path': clip-path time('relaxed') ease('_in-out-back'),

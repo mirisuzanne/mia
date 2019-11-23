@@ -2,8 +2,9 @@
 // =======
 
 img {
+  --img-filter-bright: brightness(var(--img-bright, 100%));
   @include transition('img-filter');
-  filter: brightness(var(--img-bright, 100%));
+  filter: var(--img-filter, var(--img-filter-bright));
 
   &:hover {
     --img-bright: 100%;
