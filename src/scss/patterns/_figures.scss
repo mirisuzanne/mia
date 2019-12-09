@@ -29,8 +29,7 @@ img {
 
 [data-pattern='figure'] {
   --main-column: pull;
-  border: var(--border-width) solid var(--border);
-  border-width: var(--border-width) 0;
+  background: var(--callout);
   margin: var(--gutter) 0;
   padding: var(--gutter);
 

@@ -563,3 +563,4 @@ events:
     venue: The Packing House
     start: 2010-06-26
     adr: Denver, CO
+---
