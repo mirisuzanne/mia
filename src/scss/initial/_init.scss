@@ -1,10 +1,10 @@
-// Type
-// ====
+@use '../../../node_modules/accoutrement/sass/tools';
+@use '../config/actions';
 
-@include import-webfonts;
+@include tools.import-webfonts;
 
 html {
-  @include font-family('code');
+  @include tools.font-family('code');
   font-size: var(--font-size);
   letter-spacing: var(--letter-spacing--user-em, 0);
   line-height: var(--line-ratio);
@@ -34,14 +34,14 @@ hr,
 summary {
   cursor: pointer;
 
-  #{$focus},
+  #{actions.$focus},
   [open] & {
     color: var(--action);
   }
 }
 
 [data-hidden] {
-  @include is-hidden;
+  @include tools.is-hidden;
 }
 
 // Above/below
@@ -51,19 +51,19 @@ summary {
 }
 
 [data-above='page'] {
-  @include above('page') {
+  @include tools.above('page') {
     --show: unset;
   }
 }
 
 [data-above='medium'] {
-  @include above('medium') {
+  @include tools.above('medium') {
     --show: unset;
   }
 }
 
 [data-above='wide'] {
-  @include above('wide') {
+  @include tools.above('wide') {
     --show: unset;
   }
 }

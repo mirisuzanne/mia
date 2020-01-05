@@ -1,9 +1,11 @@
+@use 'sass:meta';
+@use '../../../node_modules/sassdoc-theme-herman/scss/utilities' as herman;
+@use '../../../node_modules/accoutrement/sass/tools';
+
 /// # Font Configuration
 /// @group config-fonts
 /// @link https://oddbird.net/accoutrement/docs/type.html
 ///   Accoutrement Type
-
-$font-path: '../fonts/';
 
 // Code Font
 // ---------
@@ -33,8 +35,8 @@ $code-font: (
   ),
 );
 
-@include add-font('code', $code-font);
-@include herman-add('font', 'code', $code-font);
+@include tools.add-font('code', $code-font);
+@include herman.herman-add('font', 'code', $code-font);
 
 // // TwoAM Font
 // // ----------
@@ -49,8 +51,8 @@ $code-font: (
 //   stack: font-family('code'),
 // );
 
-// @include add-font('two-am', $two-am-font);
-// @include herman-add('font', 'two-am', $two-am-font);
+// @include tools.add-font('two-am', $two-am-font);
+// @include herman.herman-add('font', 'two-am', $two-am-font);
 
 // Midnight Font
 // -------------
@@ -62,11 +64,11 @@ $midnight-font: (
     woff2: 'blackout/blackout_midnight-webfont',
     woff: 'blackout/blackout_midnight-webfont',
   ),
-  stack: font-family('code'),
+  stack: tools.font-family('code'),
 );
 
-@include add-font('midnight', $midnight-font);
-@include herman-add('font', 'midnight', $midnight-font);
+@include tools.add-font('midnight', $midnight-font);
+@include herman.herman-add('font', 'midnight', $midnight-font);
 
 // Sunrise Font
 // ------------
@@ -78,8 +80,8 @@ $sunrise-font: (
     woff2: 'blackout/blackout_sunrise-webfont',
     woff: 'blackout/blackout_sunrise-webfont',
   ),
-  stack: font-family('code'),
+  stack: tools.font-family('code'),
 );
 
-@include add-font('sunrise', $sunrise-font);
-@include herman-add('font', 'sunrise', $sunrise-font);
+@include tools.add-font('sunrise', $sunrise-font);
+@include herman.herman-add('font', 'sunrise', $sunrise-font);

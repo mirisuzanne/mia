@@ -1,5 +1,4 @@
-// Buttons
-// =======
+@use '../config/actions';
 
 button:not([data-toggle]) {
   --btn-shade: hsla(
@@ -33,7 +32,7 @@ button:not([data-toggle]) {
   text-shadow: var(--btn-shadow) 0 var(--btn-shade);
   text-transform: capitalize;
 
-  #{$focus} {
+  #{actions.$focus} {
     --btn-bg: var(--action-hover);
     --btn-border: var(--action);
   }
@@ -79,7 +78,7 @@ button:not([data-toggle]) {
   letter-spacing: inherit;
   padding: var(--quarter-shim) var(--gutter) var(--half-shim) var(--shim);
 
-  #{$focus} {
+  #{actions.$focus} {
     --toggle: var(--action-hover);
     border-color: currentColor;
     color: var(--action-hover);

@@ -1,5 +1,5 @@
-// Type
-// ====
+@use '../config/patterns';
+@use '../../../node_modules/accoutrement/sass/tools';
 
 strong {
   color: var(--text-highlight);
@@ -30,7 +30,7 @@ strong {
   }
 
   h2 {
-    @include font-family('midnight');
+    @include tools.font-family('midnight');
     font-size: var(--font-large);
   }
 
@@ -54,7 +54,7 @@ strong {
     font-style: italic;
     position: relative;
 
-    @include before('"') {
+    @include tools.before('"') {
       color: var(--ccs-accent);
       margin-right: var(--shim);
       position: absolute;
@@ -94,22 +94,22 @@ ol {
 hr {
   &[data-divider],
   [data-typeset] & {
-    @include divider;
+    @include patterns.divider;
   }
 }
 
 [data-divide='before'] {
-  @include divide;
+  @include patterns.divide;
 }
 
 [data-divide='after'] {
-  @include divide('after');
+  @include patterns.divide('after');
 }
 
 pre,
 code,
 tt {
-  @include font-family('code');
+  @include tools.font-family('code');
 }
 
 mark {
@@ -124,7 +124,7 @@ mark {
   grid-column: 1 / -1;
   margin: var(--spacer) 0;
 
-  @include before('') {
+  @include tools.before('') {
     background: var(--border);
     height: var(--shim);
     margin-top: var(--half-shim);
@@ -140,11 +140,11 @@ mark {
 }
 
 [data-bright] {
-  @include fancy-text;
+  @include patterns.fancy-text;
 }
 
 [data-typeset='script'] {
   strong {
-    @include font-family('midnight');
+    @include tools.font-family('midnight');
   }
 }

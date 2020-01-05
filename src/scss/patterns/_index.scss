@@ -1,14 +1,14 @@
 // Patterns
 // ========
 
-@import 'buttons';
-@import 'cards';
-@import 'dropdowns';
-@import 'erase';
-@import 'figures';
-@import 'footnotes';
-@import 'forms';
-@import 'icons';
-@import 'media';
-@import 'prism';
-@import 'type';
+@forward 'buttons';
+@forward 'cards';
+@forward 'dropdowns';
+@forward 'erase';
+@forward 'figures';
+@forward 'footnotes';
+@forward 'forms';
+@forward 'icons';
+@forward 'media';
+@forward 'prism';
+@forward 'type';

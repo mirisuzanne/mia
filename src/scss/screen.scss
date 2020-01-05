@@ -1,9 +1,10 @@
 // Styles
 // ======
 
-@import 'config';
-@import 'props';
-@import 'initial';
-@import 'patterns';
-@import 'layout';
-@import 'components';
+@use '../../node_modules/cssremedy/css/remedy';
+@use 'config';
+@use 'props';
+@use 'initial';
+@use 'patterns';
+@use 'layout';
+@use 'components';

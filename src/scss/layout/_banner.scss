@@ -1,26 +1,25 @@
-// Banner Layout
-// =============
+@use '../../../node_modules/accoutrement/sass/tools';
 
 [data-layout='banner'] {
+  @include tools.transition('move');
   align-self: center;
   grid-area: banner;
   margin: var(--spacer) var(--gutter);
   text-align: center;
   transform: rotate(-4deg);
-  transition: transform time('fast') ease('_in-out-back');
   z-index: 1;
 
-  @include above('page') {
+  @include tools.above('page') {
     transform: rotate(-8deg);
   }
 
-  @include above('wide') {
+  @include tools.above('wide') {
     transform: rotate(-12deg);
   }
 }
 
 .banner-title {
-  @include font-family('sunrise');
+  @include tools.font-family('sunrise');
   font-size: var(--font-headline);
   line-height: 0.74;
   margin: 0;
@@ -28,7 +27,7 @@
   text-transform: uppercase;
 
   &::first-line {
-    @include font-family('midnight');
+    @include tools.font-family('midnight');
   }
 }
 

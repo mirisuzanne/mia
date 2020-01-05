@@ -1,5 +1,5 @@
-// Body Layout
-// ===========
+@use '../../../node_modules/accoutrement/sass/tools';
+@use '../config/actions';
 
 .skiplink {
   --pos: -200%;
@@ -15,7 +15,7 @@
   transition-delay: var(--delay);
   z-index: 1000;
 
-  #{$focus} {
+  #{actions.$focus} {
     --pos: 0;
     --delay: 0;
   }
@@ -40,7 +40,7 @@
     grid-column: var(--main-column, main);
   }
 
-  @include above('page') {
+  @include tools.above('page') {
     --pull-max: var(--spacer);
     grid-column-gap: var(--gutter);
   }
@@ -54,7 +54,7 @@
     margin: 0;
   }
 
-  @include above('wide') {
+  @include tools.above('wide') {
     --main-column: hero-start / main-start;
     font-size: var(--font-xsmall);
     text-align: right;

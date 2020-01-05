@@ -1,5 +1,5 @@
-// Cards
-// =====
+@use '../config/patterns';
+@use '../../../node_modules/accoutrement/sass/tools';
 
 [data-layout='card-groups'] {
   margin: var(--gutter) 0;
@@ -15,11 +15,11 @@
   justify-content: space-evenly;
   margin: 0 var(--double-gutter);
 
-  @include above('page') {
+  @include tools.above('page') {
     --gap: var(--spacer) var(--double-gutter);
   }
 
-  @include above('wide') {
+  @include tools.above('wide') {
     --gap: var(--spacer);
   }
 }
@@ -44,8 +44,8 @@
 }
 
 [data-cards='group-title'] {
-  @include font-family('midnight');
-  @include fancy-text;
+  @include tools.font-family('midnight');
+  @include patterns.fancy-text;
   display: inline-block;
   margin: 0;
   padding: var(--shim) 0;

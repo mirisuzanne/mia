@@ -1,9 +1,8 @@
-// Icons
-// =======
+@use '../../../node_modules/accoutrement/sass/tools';
 
 img {
   --img-filter-bright: brightness(var(--img-bright, 100%));
-  @include transition('img-filter');
+  @include tools.transition('img-filter');
   filter: var(--img-filter, var(--img-filter-bright));
 
   &:hover {
@@ -14,7 +13,7 @@ img {
 .ratio {
   position: relative;
 
-  @include before('') {
+  @include tools.before('') {
     display: inline-block;
     height: 0;
     padding-top: calc(100% / var(--ratio));
@@ -22,8 +21,8 @@ img {
   }
 
   iframe {
-    @include position(0 0 0 0);
-    @include square(100%);
+    @include tools.position(0 0 0 0);
+    @include tools.square(100%);
   }
 }
 

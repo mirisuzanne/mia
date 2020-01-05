@@ -1,5 +1,4 @@
-// Footer Layout
-// =============
+@use '../../../node_modules/accoutrement/sass/tools';
 
 [data-layout='footer'] {
   display: grid;
@@ -19,12 +18,24 @@
   margin-bottom: var(--spacer);
   padding: 0 var(--gap);
 
-  @include above('wide') {
+  @include tools.above('wide') {
     --gap: var(--double-gutter);
   }
 
   h3 {
     margin: 0;
+  }
+}
+
+[data-fieldgroup='contact-info'] {
+  display: grid;
+  grid-column-gap: var(--gutter);
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+}
+
+[data-footer='colophon'] {
+  > :first-child {
+    margin-top: 0;
   }
 }
 
@@ -41,7 +52,7 @@
   grid-column: 1 / -1;
   min-height: 50vh;
 
-  @include above('page') {
+  @include tools.above('page') {
     --angle: 95deg;
     min-height: var(--double-spacer);
   }

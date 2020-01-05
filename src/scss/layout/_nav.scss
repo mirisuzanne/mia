@@ -1,5 +1,4 @@
-// Nav Layout
-// ==========
+@use '../config/actions';
 
 [data-layout='nav'] {
   align-items: center;
@@ -28,7 +27,7 @@
 }
 
 [data-nav] {
-  #{$link} {
+  #{actions.$link} {
     --link-line: var(--nav-border, transparent);
     --line-weight: 0;
     display: inline-block;

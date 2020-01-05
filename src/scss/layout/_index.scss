@@ -1,11 +1,11 @@
 // Layout
 // ======
 
-@import 'body';
-@import 'fancy';
-@import 'menu';
-@import 'ccs';
-@import 'nav';
-@import 'banner';
-@import 'hero';
-@import 'footer';
+@forward 'body';
+@forward 'fancy';
+@forward 'menu';
+@forward 'ccs';
+@forward 'nav';
+@forward 'banner';
+@forward 'hero';
+@forward 'footer';

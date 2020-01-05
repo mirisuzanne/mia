@@ -1,6 +1,9 @@
-@use '../../../node_modules/cascading-color-systems' with (
-  $prime-hue: 330,
-  $accent-hue: 195,
+@use '../../../node_modules/cascading-color-systems' as ccs with (
+  $hues: (
+    'prime': 330,
+    'accent': 195,
+    'neutral': 195,
+  ),
   $saturation: 80%,
   $lightness: 50%,
   $contrast: 45%,
@@ -11,8 +14,6 @@
 );
 
 [data-ccs-colors] {
-  --mode-zero: calc((var(--ccs-mode) + 1) * 0.5);
-  --mode-zero--invert: calc((var(--ccs-mode--invert) + 1) * 0.5);
   --img-bright: calc(90% + 10% * var(--ccs-mode));
   --ccs-neutral--theme: var(--ccs-h--accent);
 
@@ -55,33 +56,30 @@
   --action: var(--ccs-prime--fg2);
   --action-hover: var(--ccs-prime--fg3);
 
-  background: var(--bg);
-  color: var(--text);
+  --ccs-background: var(--bg);
+  --ccs-color: var(--text);
   text-shadow: var(--text-shadow);
 }
 
+[data-ccs-theme] {
+  --ccs-accent--theme: #{ccs.if-mode(var(--ccs-theme--1), var(--ccs-theme--2))};
+}
+
 [data-ccs-theme='mia'] {
-  --ccs-theme-pink: 330;
-  --ccs-theme-blue: 195;
-  --ccs-h--prime: calc(
-    var(--mode-zero) * var(--ccs-theme-blue) + var(--mode-zero--invert) *
-      var(--ccs-theme-pink)
-  );
-  --ccs-accent--theme: calc(
-    var(--mode-zero--invert) * var(--ccs-theme-blue) + var(--mode-zero) *
-      var(--ccs-theme-pink)
-  );
+  --ccs-theme--1: 330;
+  --ccs-theme--2: 195;
+  --ccs-prime--theme: #{ccs.if-mode(var(--ccs-theme--2), var(--ccs-theme--1))};
   --ccs-custom-hue: none;
 }
 
 [data-ccs-theme='today'] {
   --ccs-h--prime: calc(
-    var(--mode-zero) * #{random(360)} + var(--mode-zero--invert) * #{random(
+    var(--ccs-mode--zero) * #{random(360)} + var(--ccs-invert--zero) * #{random(
         360
       )}
   );
   --ccs-accent--theme: calc(
-    var(--mode-zero--invert) * #{random(360)} + var(--mode-zero) * #{random(
+    var(--ccs-invert--zero) * #{random(360)} + var(--ccs-mode--zero) * #{random(
         360
       )}
   );
@@ -95,21 +93,4 @@
 [data-ccs-theme='contrast'] {
   --ccs-custom-hue: none;
   --ccs-custom-saturation: none;
-}
-
-// temporary
-[data-ccs-field='hue'] {
-  --ccs-field-display: var(--ccs-custom-hue, block);
-}
-
-[data-ccs-field='lightness'] {
-  --ccs-field-display: var(--ccs-custom-lightness, block);
-}
-
-[data-ccs-field='saturation'] {
-  --ccs-field-display: var(--ccs-custom-saturation, block);
-}
-
-[data-ccs-field='contrast'] {
-  --ccs-field-display: var(--ccs-custom-contrast, block);
 }

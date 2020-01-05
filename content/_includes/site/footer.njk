@@ -2,6 +2,22 @@
 {% import 'content.macros.njk' as content %}
 {% import 'contact.macros.njk' as contact %}
 
+{% set colophon %}
+{% md %}
+Made by **Miriam Suzanne**
+with love and care and reckless abandon
+using
+[Eleventy](https://11ty.dev),
+[Sass](https://sass-lang.com),
+and [Cascading Colors](https://cascading-colors.netlify.com/).
+
+Hosted on
+[Netlify](https://www.netlify.com/).
+
+Take care of each other.
+{% endmd %}
+{% endset %}
+
 <footer
   data-layout="footer">
 
@@ -16,7 +32,10 @@
   </div>
 
   <div data-footer="content">
-    {% if page.url | url != '/who/' %}
+    {% set is_about = (page.url | url == '/who/') %}
+    {% set is_contact = (page.url | url == '/contact/') %}
+
+    {% if not is_about %}
       <section data-footer="bio">
         {% call content.media(
           src='icons/miriam.svg',
@@ -32,10 +51,14 @@
       </section>
     {% endif %}
 
-    {% if page.url | url != '/contact/' %}
-      <section data-footer="contact">
-        {{ contact.form() }}
-      </section>
+    {% if not is_contact %}
+      {{ contact.form(attrs={'data-footer': 'contact'}) }}
+    {% endif %}
+
+    {% if is_about or is_contact %}
+      <div data-footer="colophon">
+        {{ colophon | safe }}
+      </div>
     {% endif %}
   </div>
 

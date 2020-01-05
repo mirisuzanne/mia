@@ -7,7 +7,7 @@
 }
 
 [data-field] {
-  display: var(--ccs-field-display, block);
+  display: var(--ccs-custom-display, var(--ccs-field-display, block));
   margin-bottom: var(--field-margin, var(--shim));
 }
 
@@ -41,7 +41,7 @@
 }
 
 [data-input~='area'] {
-  min-height: calc(var(--gutter) * 4);
+  min-height: calc(var(--gutter) * 8);
 }
 
 ::placeholder {

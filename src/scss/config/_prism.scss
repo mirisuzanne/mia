@@ -1,10 +1,12 @@
+@use '../../../node_modules/accoutrement/sass/tools';
+
 // prism selector
 $code-selector: 'code[class*="language-"], pre[class*="language-"]';
 $code-selector-block: 'pre[class*="language-"]';
 $code-selector-inline: ':not(pre) > code[class*="language-"]';
 
 // generic stuff
-$code-font-family: font-family('code');
+$code-font-family: tools.font-family('code');
 $code-font-size: var(--font-small);
 $code-line-height: inherit;
 

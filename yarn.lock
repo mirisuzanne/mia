@@ -1751,10 +1751,10 @@ capture-stack-trace@^1.0.0:
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
   integrity sha512-mYQLZnx5Qt1JgB1WEiMCf2647plpGeQ2NMR/5L0HNZzGQo4fuSPnK+wjfPnKZV0aiJDgzmWqqkV/g7JD+DW0qw==
 
-cascading-color-systems@^0.1.0-beta.7:
-  version "0.1.0-beta.7"
-  resolved "https://registry.yarnpkg.com/cascading-color-systems/-/cascading-color-systems-0.1.0-beta.7.tgz#c3f3fbd6975b9bb116ae92a36e8ef1d4fbfeb840"
-  integrity sha512-fs/uXgZA0QkdyyUYsGKNx4kiXv7ml7/p0JuX7o1fb7jgznoZiqlptuv16IN2Ai4uPvYb7hBK32wlk6eQyQn0VA==
+cascading-color-systems@^0.1.0-beta.11:
+  version "0.1.0-beta.11"
+  resolved "https://registry.yarnpkg.com/cascading-color-systems/-/cascading-color-systems-0.1.0-beta.11.tgz#7873748a1beac57c312e2f55fff761f2335e4c1b"
+  integrity sha512-voVYPiJwBzZNBnm2Bp2V5OGnXE4b0j66wigs9Od/fVG1BS8UgGx2/cjY9zALPDUAXflOyu99tqUOA9ozr16Y8w==
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -2467,6 +2467,11 @@ csso@^3.5.1:
   integrity sha512-vrqULLffYU1Q2tLdJvaCYbONStnfkfimRxXNaGjxMldI0C7JPBC4rB1RyjhfdZ4m1frm8pM9uRPKH3d2knZ8gg==
   dependencies:
     css-tree "1.0.0-alpha.29"
+
+cssremedy@^0.1.0-beta.2:
+  version "0.1.0-beta.2"
+  resolved "https://registry.yarnpkg.com/cssremedy/-/cssremedy-0.1.0-beta.2.tgz#ad900aecee78b37a4a6354ad1b0ca831fd38ee13"
+  integrity sha512-6mpPQzoUQHY7fiAxWCQDgPz73j5ugz2LqU62BLohUsxYurYLdTHQc+ilPm4i52wU2SxzPTrcRMIdniE2zGfjOA==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"

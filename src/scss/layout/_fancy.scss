@@ -1,3 +1,5 @@
+@use '../../../node_modules/accoutrement/sass/tools';
+
 .fancy {
   align-items: center;
   display: grid;
@@ -10,7 +12,7 @@
 }
 
 [data-dot] {
-  @include square(calc(6px + 1vmin));
+  @include tools.square(calc(6px + 1vmin));
   --dot: var(--dot-color-6);
   --opacity: #{(random(30) + 10) / 100};
   background: var(--dot);

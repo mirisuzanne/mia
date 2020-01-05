@@ -1,29 +1,35 @@
+{% import "utility.macros.njk" as utility %}
+
 {% macro form(
   next='/contact/thanks/',
-  submit='send'
+  submit='send',
+  attrs={}
 ) %}
 <form
   name="contact"
   method="POST"
   action="{{ next }}"
   netlify-honeypot="subject"
-  data-netlify="true">
-  <label data-field="name">
-    <span data-label>Name:</span>
-    <input
-      data-input="text"
-      type="text"
-      name="name"
-      required />
-  </label>
-  <label data-field="email">
-    <span data-label>Email:</span>
-    <input
-      data-input="text"
-      type="email"
-      name="email"
-      required />
-  </label>
+  data-netlify="true"
+  {{ utility.show_attrs(attrs) }}>
+  <div data-fieldgroup="contact-info">
+    <label data-field="name">
+      <span data-label>Name:</span>
+      <input
+        data-input="text"
+        type="text"
+        name="name"
+        required />
+    </label>
+    <label data-field="email">
+      <span data-label>Email:</span>
+      <input
+        data-input="text"
+        type="email"
+        name="email"
+        required />
+    </label>
+  </div>
   <label data-field="message">
     <span data-label>Message:</span>
     <textarea

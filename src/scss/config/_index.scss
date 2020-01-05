@@ -1,10 +1,11 @@
-// Config Manifest
-// ===============
+@use '../../../node_modules/accoutrement/sass/tools' with (
+  $font-path: '../fonts/'
+);
 
-@import 'requirements';
-@import 'animation';
-@import 'actions';
-@import 'fonts';
-@import 'scale';
-@import 'patterns';
-@import 'prism';
+@forward 'animation';
+@forward 'actions';
+@forward 'color';
+@forward 'fonts';
+@forward 'scale';
+@forward 'patterns';
+@forward 'prism';

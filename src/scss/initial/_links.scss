@@ -1,8 +1,7 @@
-// Links
-// -----
+@use '../config/actions';
 
 a {
-  #{$link} {
+  #{actions.$link} {
     color: var(--link-color, var(--action));
     text-decoration-color: var(--link-line, var(--border-light));
     text-decoration-skip-ink: auto;
@@ -12,7 +11,7 @@ a {
     transition: text-decoration-thickness time('fast') ease('_in-out');
   }
 
-  #{$focus} {
+  #{actions.$focus} {
     color: var(--link-hover, var(--action-hover));
     text-decoration-color: var(
       --link-hover-line,

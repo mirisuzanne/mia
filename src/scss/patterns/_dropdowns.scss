@@ -1,5 +1,4 @@
-// Dropdown
-// ========
+@use '../config/actions';
 
 [data-dropdown] {
   --push: calc(100% + var(--half-shim));
@@ -30,7 +29,7 @@
 
 [data-dropdown~='links'] {
   a {
-    #{$link} {
+    #{actions.$link} {
       display: block;
       max-width: 100%;
       overflow: hidden;
@@ -39,7 +38,7 @@
       white-space: nowrap;
     }
 
-    #{$focus} {
+    #{actions.$focus} {
       background: var(--bg);
     }
   }

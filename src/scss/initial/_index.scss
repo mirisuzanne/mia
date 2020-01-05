@@ -1,6 +1,6 @@
 // Initial
 // =======
 
-@import 'remedy';
-@import 'init';
-@import 'links';
+@forward 'remedy';
+@forward 'init';
+@forward 'links';

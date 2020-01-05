@@ -1,180 +1,65 @@
 /* stylelint-disable */
+// from '../../node_modules/cssremedy/css/reminders.css';
 
-/* Global Remedies
-******************/
+/* @docs
+label: Reminders
+version: 0.1.0-beta.2
 
-/* Use border-box by default, globally */
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
+note: |
+  All the remedies in this file are commented out by default,
+  because they could cause harm as general defaults.
+  These should be used as reminders
+  to handle common styling issues
+  in a way that will work for your project and users.
+  Read, explore, uncomment, and edit as needed.
 
-/*
-* 1. Consistent line spacing...
-*    CSS Inline Layout Module Level 3: https://drafts.csswg.org/css-inline-3/#line-sizing-property
-* 2. Improve spacing of punctuation marks and script changes in CJK languages
-*    CSS Text Module Level 4: https://drafts.csswg.org/css-text-4/#text-spacing-property
+category: file
 */
-html {
-  line-sizing: normal;
-  text-spacing: trim-start allow-end trim-adjacent ideograph-alpha
-    ideograph-numeric;
-}
 
-/* Remove the tiny space around the edge of the page */
-body {
-  margin: 0;
-}
+/* @docs
+label: List Style
 
-/* Headings
-***********/
+note: |
+  List styling is not usually desired in navigation,
+  but this also removes list-semantics for screen-readers
 
-/* Switch to rem units for headings */
-/* @@@ Initial values are based on existing browser defaults */
-h1 {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.17rem;
-}
-h4 {
-  font-size: 1rem;
-}
-h5 {
-  font-size: 0.83rem;
-}
-h6 {
-  font-size: 0.67rem;
-}
+links:
+  - https://github.com/mozdevs/cssremedy/issues/15
 
-/* Keep h1 margins consistent, even when nested */
-h1 {
-  margin: 0.67em 0;
-}
-
-/* Nav Lists
-************/
-
-/*
-* List styling is not usually desired in navigation,
-* but this also removes list-semantics for screen-readers
-* See: https://github.com/mozdevs/cssremedy/issues/15
+category: navigation
 */
 nav ul {
   list-style: none;
 }
 
-/*
-* 1. Add zero-width-space to prevent VoiceOver disable
-* 2. Absolute position ensures no extra space
-* See: https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/
+/* @docs
+label: List Voiceover
+
+note: |
+  1. Add zero-width-space to prevent VoiceOver disable
+  2. Absolute position ensures no extra space
+
+links:
+  - https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/
+
+category: navigation
 */
 nav li:before {
   content: '\200B';
   position: absolute;
 }
 
-/* Typography
-*************/
+/* @docs
+label: Reduced Motion
 
-/* Overflow by default is bad */
-pre {
-  white-space: pre-wrap;
-}
+note: |
+  1. Immediately jump any animation to the end point
+  2. Remove transitions & fixed background attachment
 
-/* Solid, thin horizonatal rules */
-hr {
-  border: 0.5px solid;
-}
+links:
+  - https://github.com/mozdevs/cssremedy/issues/11
 
-/* Embedded Elements
-********************/
-
-/*
-* 1. Block display is usually what we want
-* 2. Remove strange space-below when inline
-* 3. Responsive by default
-*/
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
-  display: block;
-  vertical-align: middle;
-  max-width: 100%;
-}
-
-/*
-* Maintain intrinsic aspect ratios when `max-width` is applied
-* (iframe, embed, and object have no intrinsic ratio, set height explicitly)
-*/
-img,
-svg,
-video,
-canvas {
-  height: auto;
-}
-
-/*
-* There is no good reason elements default to 300px,
-* and audio files are unlikely to come with a width attribute
-*/
-audio {
-  width: 100%;
-}
-
-/* Old Browsers
-***************/
-
-/* Remove the border on images inside links in IE 10 and earlier */
-img {
-  border-style: none;
-}
-
-/* Hide the overflow in IE 10 and earlier */
-svg {
-  overflow: hidden;
-}
-
-/* Default block display on HTML5 elements */
-article,
-aside,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-  display: block;
-}
-
-/*
-* 1. Add the correct box sizing in IE 10
-* 2. Remove the padding in IE 10
-*/
-[type='checkbox'],
-[type='radio'] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-/* Reduced Motion
-*****************/
-
-/*
-* 1. Immediately jump any animation to the end point
-* 2. Remove transitions & fixed background attachment
-* See: https://github.com/mozdevs/cssremedy/issues/11
+category: accessibility
 */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -184,17 +69,35 @@ section {
     animation-duration: 1s !important;
     animation-iteration-count: 1 !important;
     background-attachment: initial !important;
+    scroll-behavior: auto !important;
     transition-duration: 0s !important;
   }
 }
 
-/* Line Heights
-***************/
+/* @docs
+label: Line Heights
 
-/*
-* The default `normal` line-height is tightly spaced, but takes font-metrics into account.
-* Looser spacing may improve readability, but may cause problems in some scripts.
-* See: https://github.com/mozdevs/cssremedy/issues/7
+note: |
+  The default `normal` line-height is tightly spaced,
+  but takes font-metrics into account,
+  which is important for many fonts.
+  Looser spacing may improve readability in latin type,
+  but may cause problems in some scripts --
+  from cusrive/fantasy fonts to
+  [Javanese](https://jsbin.com/bezasax/1/edit?html,css,output),
+  [Persian](https://jsbin.com/qurecom/edit?html,css,output),
+  and CJK languages.
+
+links:
+  - https://github.com/mozdevs/cssremedy/issues/7
+  - https://jsbin.com/bezasax/1/edit?html,css,output
+  - https://jsbin.com/qurecom/edit?html,css,output
+
+todo: |
+  - Use `:lang(language-code)` selectors?
+  - Add typography remedies for other scripts & languages...
+
+category: typography
 */
 html {
   line-height: 1.5;
