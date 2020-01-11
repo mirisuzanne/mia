@@ -1,53 +1,29 @@
 ---
 feature: true
-title: Antony & Cleopatra
-sub: Stage management & lighting internship
-venue: Oregon Shakespeare Festival
+title: Oregon Shakespeare Festival
+sub: Among the oldest & largest professional non-profit theatres in the nation.
+org: Stage Management Intern
 type: theater
 url: https://www.osfashland.org/
 start: 2003-02-06
 end: 2003-04-26
+adr: Ashland, OR
 hero:
-  img: art/theater/osf.jpg
-  alt: The 2003 OSF website with broken images, thanks to the Web Archive
-  caption: At least the tiny logo for my show is still there…
+  img: art/theater/osf-logo.jpg
+index: _oregon shakespeare
 tags:
-  - _calendar
+  - _oregon shakespeare
   - art
   - theater
   - education
   - intern
 summary: |
-  A glittering tragedy,
-  a passionate romance,
-  and an internship opportunity.
+  I worked on
+  [Antony & Cleopatra](/theater/antony/)
+  with Penny Metropulos
+  and the wonderful OSF ensemble,
+  as a Stage Management Intern.
+  I also got to work with the
+  lighting & electrical department
+  while I was there.
 ---
-
-Antony, the seasoned warrior known as
-the *triple pillar of the world*,
-and Cleopatra,
-the Egyptian Queen known as the *Eastern Star*,
-play out this sweeping saga against the backdrop
-of the glamour and politics
-of the mighty Roman Empire.
-It will take a *new heaven, new earth* to contain their ardor.
-
-Directed by Penny Metropulos.
-Lighting by Robert Peterson.
-
-------
-
-- **Antony**: Armando Durán *
-- **Cleopatra**: Judith-Marie Bergan *
-- **Enobarbus**: John Pribyl *
-- **Caesar**: Kevin Kenerly *
-- **Pompey/Eros/Ensemble**: Duane Boutté *
-- **Charmian/Ensemble**: Crystal Fox *
-- **Iras/Octavia/Ensemble**: Nancy Rodriguez *
-- **Soothsayer/Ensemble**: G. Valmont Thomas *
-- **Lepidus/Ensemble**: Robert Vincent Frank *
-- **Menas/Ensemble**: U. Jonathan Toppo *
-- **Agrippa/Ensemble**: Richard Howard *
-- **Messenger/Ensemble**: Danforth Comins
-
-* Member of Actors' Equity Association

@@ -1,5 +1,5 @@
 ---
-title: No Degree
+title: Undergrad
 sub: Theater, Writing, & Visual Arts
 venue: Goshen College
 url: https://www.goshen.edu/
@@ -18,3 +18,8 @@ summary: |
   but never took those 2 final classes
   required for graduation.
 ---
+
+I also worked for several years
+as the Master Electrician of performance venues --
+including both the Umble Center theater,
+and then-new Music Center concert halls.
