@@ -11,7 +11,7 @@ tags:
   - theater
   - art
   - ensemble
-  - lighting design
+  - lighting
 events:
   - venue: Boulder International Fringe Festival
     url: http://www.boulderfringe.com/

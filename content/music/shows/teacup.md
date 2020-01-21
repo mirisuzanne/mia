@@ -7,12 +7,18 @@ tags:
   - music
   - _teacup gorilla
 events:
+  - title: Music & Poetry Showcase
+    image: shows/2019/joel.jpg
+    venue: The Bakery
+    url: https://www.facebook.com/events/2145592542411364/
+    start: 2019-12-14
+    adr: Denver, CO
+
   - title: PRF BBQ Denver
     image: shows/prf19.jpg
     venue: The Bakery
     start: 2019-04-28
     adr: Denver, CO
-    feature: true
 
   - venue: Lion’s Lair
     image: shows/laurium.jpg

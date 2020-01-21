@@ -25,21 +25,17 @@ module.exports = (eleventyConfig) => {
     collection
       .getAll()
       .filter((item) => item.data.org && item.data.end === 'ongoing')
-      .sort((a, b) => a.data.start - b.data.start),
+      .sort((a, b) => events.startDate(a) - events.startDate(b)),
   );
   eleventyConfig.addCollection('all_orgs', (collection) =>
     collection
       .getAll()
       .filter((item) => item.data.org)
-      .sort((a, b) => {
-        const ae = a.data.end === 'ongoing' ? null : a.data.end;
-        const be = b.data.end === 'ongoing' ? null : b.data.end;
-
-        if (ae === be) {
-          return a.data.start - b.data.start;
-        }
-        return ae - be;
-      }),
+      .sort((a, b) =>
+        a.data.end === b.data.end
+          ? events.startDate(a) - events.startDate(b)
+          : events.endDate(b) - events.endDate(a),
+      ),
   );
 
   // filters

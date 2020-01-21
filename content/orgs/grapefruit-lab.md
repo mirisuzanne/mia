@@ -1,6 +1,6 @@
 ---
 title: Grapefruit Lab
-sub: multimedia performance laboratory & theater ensemble
+sub: Multimedia performance laboratory & theater ensemble
 org: Co-Founder
 type: theater
 adr: Denver, CO

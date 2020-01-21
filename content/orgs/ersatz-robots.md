@@ -1,6 +1,6 @@
 ---
 title: Ersatz Robots
-sub: trans-femme 90's-alt sad-girl rock
+sub: Trans-femme 90's-alt sad-girl rock
 org: Bass
 type: music
 url: https://www.facebook.com/ersatzrobots/

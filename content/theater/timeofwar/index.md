@@ -13,31 +13,25 @@ tags:
   - theater
   - writing
   - art
-  - goshen college
-  - _new world
 events:
-  - title: In loving memory of Tante Annie
-    sub: |
-      She was a beautiful force in my life,
-      slipping into French to tell dirty jokes
-      over a glass of wine.
-      This is a play based on interviews in 2003,
-      reflecting on her childhood
-      *in a time of war*.
-    feature: true
-    start: 2019-09-20
   - venue: New World Arts
     start: 2005-04-22
     end: 2005-05-23
+    tags:
+      - _new world
   - title: Senior Theater Recital
     venue: Goshen College
     url: /education/goshen/
     start: 2005-04-21
+    tags:
+      - _goshen college
   - title: International Peace Play Contest
     venue: Goshen College
     url: /education/goshen/
     start: 2004-10-01
     end: 2004-10-03
+    tags:
+      - _goshen college
 summary: |
   Based on a series of interviews
   with Annie in 2003,

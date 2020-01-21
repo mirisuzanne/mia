@@ -1,0 +1,15 @@
+---
+title: The House of Yes
+sub: directed by Diana Phillips
+start: 2001-06-08
+end: 2001-07-08
+tags:
+  - _calendar
+  - _new world
+  - art
+  - theater
+  - lighting
+  - assistant director
+summary: |
+  The play by Wendy MacLeod.
+---

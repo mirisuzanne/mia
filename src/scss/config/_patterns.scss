@@ -31,4 +31,5 @@
 @mixin divider {
   @include divide;
   border: none;
+  height: auto;
 }

@@ -1,6 +1,6 @@
 ---
 title: CSS Tricks
-sub: blog for people who make websites
+sub: Blog for people who make websites
 org: Staff Writer
 url: https://css-tricks.com/author/miriam/
 start: 2016-10-15

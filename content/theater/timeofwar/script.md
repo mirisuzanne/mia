@@ -16,7 +16,7 @@ tags:
   - writing
   - script
   - _new world
-  - goshen college
+  - _goshen college
 summary: |
   Reflections of a Mennonite
   holocaust survivor

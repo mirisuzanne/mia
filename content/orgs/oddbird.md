@@ -1,6 +1,6 @@
 ---
 title: OddBird
-sub: accessible web software with human-centered design
+sub: Custom web applications, developer tools, and training
 org: Co-Founder
 start: 2008-04-15
 end: ongoing

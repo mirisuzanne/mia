@@ -1,6 +1,6 @@
 ---
 title: Teacup Gorilla
-sub: dark indie-rock soundscapes with evocative poetry
+sub: Dark indie-rock soundscapes with evocative poetry
 org: Bass & Vocals
 type: music
 hero:

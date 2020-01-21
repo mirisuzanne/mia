@@ -15,7 +15,7 @@ tags:
   - _LIDA
   - theater
   - art
-  - lighting design
+  - lighting
   - assistant director
 summary: |
   Inspired by Georg Büchner’s unfinished masterpiece, *Woyzeck*,

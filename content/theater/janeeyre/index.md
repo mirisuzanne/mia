@@ -15,7 +15,7 @@ tags:
   - directing
   - writing
   - acting
-  - lighting design
+  - lighting
   - music
   - _grapefruit lab
   - _teacup gorilla

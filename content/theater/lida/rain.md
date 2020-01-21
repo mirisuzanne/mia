@@ -13,7 +13,7 @@ tags:
   - _LIDA
   - theater
   - art
-  - lighting design
+  - lighting
   - ensemble
 press:
   - text: |

@@ -1,7 +1,7 @@
 ---
 feature: true
 title: Dirt Circle Dogs
-sub: blues-inflected bright/dark music
+sub: Blues-inflected bright/dark music
 org: Multi-Instrumetalist
 url: http://www.dirtcircledogs.com/
 start: 2007-08-14

@@ -16,29 +16,32 @@ const groupNames = {
   soon: 3000,
 };
 
+const groupDate = (date) =>
+  typeof date === 'string' ? new Date(`${groupNames[date]}-01-01`) : date;
+
 const isEvent = (page) =>
   page.data.tags ? page.data.tags.includes('_calendar') : false;
 
-const eventDate = (event) => event.start || event.date;
+const eventStart = (event) => event.start || event.date;
+const pageStart = (page) => page.data.start || page.date;
+const startDate = (page, event) =>
+  event ? eventStart(event) || pageStart(page) : pageStart(page);
+const endDate = (page, event) => {
+  const end =
+    event && eventStart(event)
+      ? event.end || startDate(page, event)
+      : page.data.end || startDate(page, event);
+  return groupDate(end);
+};
 
 const buildEvent = (page, event, index) => {
   index = index || 0;
   const feature = event ? event.feature : page.data.feature;
 
   // start and end
-  const eventStart = event ? eventDate(event) : null;
-  const start = eventStart || page.data.start || page.date;
-  let end = eventStart ? event.end : page.data.end;
-  end = end ? end : start;
-
-  let date = start;
-
-  // set end for far future…
-  if (end === 'ongoing') {
-    end = new Date(`${groupNames.ongoing}-01-01`);
-  } else if (feature === 'pin') {
-    date = new Date(`${groupNames.now}-01-01`);
-  }
+  const start = startDate(page, event);
+  const end = endDate(page, event);
+  const date = feature === 'pin' ? groupDate('now') : start;
 
   // set group…
   const end_iso = time.getDate(end, 'iso');
@@ -68,7 +71,7 @@ const fromYAML = (page) => {
 
   page.data.events
     .filter((event) => isPublic(event))
-    .sort((a, b) => eventDate(b) - eventDate(a))
+    .sort((a, b) => eventStart(b) - eventStart(a))
     .forEach((event, index) => {
       events.push(buildEvent(page, event, index));
     });
@@ -137,4 +140,7 @@ module.exports = {
   get,
   count,
   groupNames,
+  groupDate,
+  startDate,
+  endDate,
 };

@@ -121,7 +121,7 @@ I can't find a good link...*
 Those are memories of me,
 and ==my name is Miriam==.
 I was not a different person then.
-I haven't transtioned lives,
+I haven't transitioned lives,
 I've only transitioned what you call me.
 
 When I say "I'm transitioning"
