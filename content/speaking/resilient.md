@@ -8,9 +8,15 @@ tags:
   - code
   - sass
 events:
+  - venue: Smashing Conf NY
+    url: https://smashingconf.com/ny-2020/
+    date: 2020-10-19
+    end: 2020-10-21
+    adr: New York
   - venue: Smashing Conf Austin
     url: https://smashingconf.com/austin-2020/
     start: 2020-06-08
+    end: 2020-06-10
     adr: Austin, TX
 summary: |
   Take full advantage of the universal web,

@@ -11,9 +11,13 @@ tags:
   - layout
 events:
   - venue: Webconf.asia
-    url: https://2019.webconf.asia/
+    url: https://2020.webconf.asia/
     adr: Hong Kong
-    start: 2020-08-28
+    date: 2020-08-28
+  - venue: CSS Day
+    url: https://cssday.nl/2020
+    adr: Amsterdam, Netherlands
+    date: 2020-06-12
   - venue: Develop Denver
     url: https://developdenver.org/
     start: 2019-08-15
