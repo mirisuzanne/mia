@@ -73,7 +73,7 @@
         <div data-orgs="list">
           {% for item in orgs %}
             {% set start = item.data.start | getDate('yyyy') %}
-            {% set title = item.data.banner or item.data.renderData.title or item.data.title %}
+            {% set title = item.data.banner or item.data.title %}
             {% set is_old = item.data.end and (item.data.end != 'ongoing') %}
             {% set end = item.data.end | getDate('yyyy') if is_old else none %}
             {% set end = end if end and (end != start) %}

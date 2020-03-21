@@ -19,7 +19,7 @@
   {% set at_name %}Miriam <span data-above="medium">Suzanne</span>{% endset %}
   <ul data-navlist="site">
     {% for name, url in items %}
-      {% set name = at_name if (name == '@name') else name %}
+      {% set name = at_name if (name == '__name') else name %}
       <li class="nav-item">{{ nav_link(name, url, page) }}</li>
     {% endfor %}
   </ul>

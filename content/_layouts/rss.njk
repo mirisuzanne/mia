@@ -2,26 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ site.title }}</title>
   <subtitle>{{ site.description }}</subtitle>
-  <link href="{{ site.url }}/{{ permalink }}" rel="self"/>
-  <link href="{{ site.url }}/"/>
-  <updated>{{ collections._post | rssLatest }}</updated>
-  <id>{{ site.url }}/</id>
+  <link href="{{ page.url | absoluteUrl(site.url) }}" rel="self"/>
+  <link href="{{ site.url }}"/>
+  <updated>{{ (collections._post | getPublic | reverse)[0].date.toISOString() }}</updated>
+  <id>{{ site.url }}</id>
   <author>
     <name>{{ site.author }}</name>
     <email>{{ site.email }}</email>
   </author>
-  {%- for post in collections._post | getPublic %}
+  {%- for post in collections._post | getPublic -%}
+  {%- if post.templateContent or post.data.summary -%}
+  {%- set absolutePostUrl = post.url | absoluteUrl(site.url) -%}
   <entry>
     <title>{{ post.data.title }}</title>
-    <link href="{{ site.url }}{{ post.url }}"/>
-    <updated>{{ post | rssDate }}</updated>
-    <id>{{ site.url }}{{ post.url }}</id>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date.toISOString() }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    {%- if post.templateContent %}
     <content type="html">
-      {% if post.data.hero %}
-        <img src="{{ site.url + site.images + post.data.hero.img }}" alt="{{ post.data.hero.alt }}"/>;
-      {% endif %}
-      {{ post.templateContent }}
+      {% if post.data.hero.img -%}
+      {%- filter escape -%}
+      <img src="{{ (site.images + post.data.hero.img) | absoluteUrl(site.url) }}" alt="{{ post.data.hero.alt }}"/>
+      {%- endfilter -%}
+      {%- endif %}
+      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
     </content>
+    {%- elif post.data.summary %}
+    <summary type="html">{{ post.data.summary | md | htmlToAbsoluteUrls(absolutePostUrl) }}</summary>
+    {%- endif %}
   </entry>
+  {%- endif %}
   {%- endfor %}
 </feed>
