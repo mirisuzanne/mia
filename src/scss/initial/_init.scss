@@ -15,7 +15,9 @@ html {
   overflow-x: hidden;
   scroll-snap-type: block;
   scroll-padding: var(--shim);
+}
 
+.fonts-loaded {
   @supports (font-variation-settings: normal) {
     @include tools.font-family('recursive');
     @include fonts.var('body');
