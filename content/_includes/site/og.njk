@@ -1,13 +1,14 @@
-{%- set og_image = [site.url, '/assets/images/', hero.img or site.og.img] | join -%}
+{%- set og_image = [site.images, hero.img or site.og.img] | join | absoluteUrl(site.url)  -%}
 
 <meta property="og:locale" content="{{ site.og.locale }}" />
 <meta property="og:type" content="{{ og.type or site.og.type }}" />
-<meta property="og:title" content="{{ site.title }} » {{ meta_title }}" />
+<meta property="og:title" content="{{ site.title }} » {{ title }}" />
 <meta property="og:image" content="{{ og_image }}" />
 <meta property="og:description" content="{{ meta_desc }}" />
-<meta property="og:url" content="{{ [site.url, page.url] | join }}" />
+<meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}" />
 <meta property="og:site_name" content="{{ site.title }}" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:description" content="{{ meta_desc }}" />
-<meta name="twitter:title" content="{{ meta_title }}" />
+<meta name="twitter:title" content="{{ title }}" />
 <meta name="twitter:domain" content="{{ site.url }}" />
+<meta name="twitter:creator" content="@mirisuzanne" />

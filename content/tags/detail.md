@@ -6,7 +6,7 @@ pagination:
   size: 1
   alias: tag
 permalink: /tags/{{ tag | slug }}/
-renderData:
+eleventyComputed:
   title: 'Just {{ tag }}'
   banner: 'Just {{ tag }} and Nothing Else'
   calendar: '{{ tag }}'

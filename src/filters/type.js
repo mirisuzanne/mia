@@ -7,6 +7,7 @@ const mdown = require('markdown-it')({
   linkify: true,
   typographer: true,
 })
+  .disable('code')
   .use(require('markdown-it-mark'))
   .use(require('markdown-it-footnote'));
 

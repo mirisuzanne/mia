@@ -1,6 +1,9 @@
 'use strict';
 
 const hljs = require('@11ty/eleventy-plugin-syntaxhighlight');
+const rss = require('@11ty/eleventy-plugin-rss');
+const yaml = require('js-yaml');
+const _ = require('lodash');
 
 const utils = require('./src/filters/utils');
 const events = require('./src/filters/events');
@@ -12,6 +15,7 @@ const type = require('./src/filters/type');
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPlugin(hljs);
+  eleventyConfig.addPlugin(rss);
 
   // pass-through
   eleventyConfig.addPassthroughCopy({ _built: 'assets' });
@@ -46,8 +50,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('domain', utils.domain);
 
   eleventyConfig.addFilter('getDate', time.getDate);
-  eleventyConfig.addFilter('rssDate', time.rssDate);
-  eleventyConfig.addFilter('rssLatest', time.rssLatest);
 
   eleventyConfig.addFilter('publicTags', tags.publicTags);
   eleventyConfig.addFilter('getTags', tags.getTags);
@@ -75,6 +77,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('md', type.render);
   eleventyConfig.addFilter('mdInline', type.inline);
 
+  eleventyConfig.addFilter('concat', _.concat);
+  eleventyConfig.addFilter('merge', _.merge);
+
   // shortcodes
   eleventyConfig.addPairedShortcode('md', type.render);
   eleventyConfig.addPairedShortcode('mdInline', type.inline);
@@ -83,8 +88,11 @@ module.exports = (eleventyConfig) => {
     (format) => `${time.getDate(time.now, format)}`,
   );
 
-  // markdown
+  // config
   eleventyConfig.setLibrary('md', type.mdown);
+  eleventyConfig.addDataExtension('yaml', yaml.safeLoad);
+  eleventyConfig.setQuietMode(true);
+  eleventyConfig.setDataDeepMerge(true);
 
   // settings
   return {

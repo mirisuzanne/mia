@@ -3,7 +3,7 @@
 {% import 'site/macros.njk' as show %}
 
 {% set taglist = tag.section(collections) if show_tags else none %}
-{% set events = index or renderData.calendar or calendar or series or 'self' %}
+{% set events = index or calendar or series or 'self' %}
 
 {% set calendar = taglist or cal.get_calendar(
   events_group=events,

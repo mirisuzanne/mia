@@ -4,3 +4,12 @@
 [data-icon] {
   fill: currentColor;
 }
+
+[data-icon='miriam'] {
+  --mia-svg-eyes: hsla(
+    var(--ccs-h--neutral),
+    var(--ccs-s--bg-contrast),
+    var(--ccs-l--bg-contrast),
+    var(--ccs-mode--invert)
+  );
+}

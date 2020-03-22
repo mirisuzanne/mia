@@ -3,5 +3,5 @@
   rel="alternate"
   type="application/atom+xml"
   title="{{ site.title }}"
-  href="{{ site.url }}/{{ site.feed }}" />
+  href="{{ site.feed | absoluteUrl(site.url) }}" />
 {% endif %}

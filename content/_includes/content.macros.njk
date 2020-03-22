@@ -7,8 +7,8 @@
 {% macro intro(
   content=none
 ) -%}
-{%- set content = content if (content != none) else caller() -%}
-<div class='intro'>{{ content | md | safe }}</div>
+  {%- set content = content if (content != none) else caller() -%}
+  <div class='intro'>{{ content | md | safe }}</div>
 {%- endmacro %}
 
 {#
@@ -18,41 +18,43 @@
 {% macro quote(
   data
 ) -%}
-> {{ data.text | trim }}
->
-> ---<cite>{{ cite(data) }}</cite>
+  <blockquote>
+    {{ data.text | md | safe }}
+    <p>{{ '---' | mdInline }}<cite>{{ cite(data) }}</cite></p>
+  </blockquote>
 {%- endmacro %}
 
 
 {% macro cite(
   data
 ) -%}
-{%- set where -%}
-{{ data.venue | safe }}{% if data.venue and data.title %}: {% endif %}{{ data.title | safe }}
-{%- endset -%}
-{%- set where = where if (data.venue or data.title) else none -%}
-{%- if data.credit and where and data.url -%}
-{{ data.credit }}, [{{ where }}]({{ data.url }})
-{%- elif data.credit and where -%}
-{{ data.credit }}, {{ where }}
-{%- elif data.credit and data.url -%}
-[{{ data.credit }}]({{ data.url }})
-{%- elif where and data.url -%}
-[{{ data.credit }}]({{ data.url }})
-{%- else -%}
-{{ data.credit or where or data.url }}
-{%- endif -%}
+  {%- set where -%}
+    {{ data.venue | safe }}{% if data.venue and data.title %}: {% endif %}{{ data.title | safe }}
+  {%- endset -%}
+  {%- set where = where if (data.venue or data.title) else none -%}
+
+  {%- if data.credit and where and data.url -%}
+    {{ data.credit }}, [{{ where }}]({{ data.url }})
+  {%- elif data.credit and where -%}
+    {{ data.credit }}, {{ where }}
+  {%- elif data.credit and data.url -%}
+    [{{ data.credit }}]({{ data.url }})
+  {%- elif where and data.url -%}
+    [{{ where }}]({{ data.url }})
+  {%- else -%}
+    {{ data.credit or where or data.url }}
+  {%- endif -%}
 {%- endmacro %}
 
 
 {% macro quotes(
   data
 ) %}
-{% for item in data %}
-{% if item.text %}
-{{ quote(item) }}
-{% endif %}
-{% endfor %}
+  {% for item in data -%}
+    {%- if item.text -%}
+      {{ quote(item) }}
+    {%- endif -%}
+  {% endfor -%}
 {% endmacro %}
 
 
@@ -88,7 +90,11 @@
 #}
 {%- macro erase(
   content
-) -%}<button data-toggle="erase">{{ content | mdInline | safe }}</button>{%- endmacro -%}
+) -%}
+  <button data-toggle="erase">
+    {{ content | mdInline | safe }}
+  </button>
+{%- endmacro -%}
 
 {#
   Figures
@@ -98,17 +104,18 @@
   data=none,
   caption=none
 ) -%}
-{%- set content = _fig_content(data) if data else caller() | mdInline -%}
-<figure data-pattern="figure">
-<div data-figure="content">{#
-#}{{ content | safe }}{#
-#}</div>
-{%- if caption -%}
-<figcaption data-figure="caption">{#
-#}{{ caption | mdInline | safe }}{#
-#}</figcaption>
-{%- endif -%}
-</figure>
+  {%- set content = _fig_content(data) if data else caller() | mdInline -%}
+  <figure data-pattern="figure">
+    <div data-figure="content">
+      {{ content | safe }}
+    </div>
+
+    {%- if caption -%}
+      <figcaption data-figure="caption">
+        {{ caption | mdInline | safe }}
+      </figcaption>
+    {%- endif -%}
+  </figure>
 {%- endmacro %}
 
 {#
@@ -120,15 +127,15 @@
   height=none,
   span=none
 ) -%}
-{%- if width | typeCheck('number') and height | typeCheck('number') -%}
-<div
-  class="ratio"
-  style="--ratio:{{ width / height }};{{ span }}">{#
-#}{{ caller() }}{#
-#}</div>
-{%- else -%}
-{{ caller() }}
-{%- endif -%}
+  {%- if width | typeCheck('number') and height | typeCheck('number') -%}
+  <div
+    class="ratio"
+    style="--ratio:{{ width / height }};{{ span }}">
+    {{ caller() }}
+  </div>
+  {%- else -%}
+    {{ caller() }}
+  {%- endif -%}
 {%- endmacro %}
 
 {#
@@ -139,10 +146,10 @@
   width,
   height=none
 ) -%}
-{%- set width = ['--width:', width, ';'] | join if width else '' -%}
-{%- set height = ['--height:', height, ';'] | join if height else '' -%}
-{%- set style = [width, height] | join if (width or height) else none -%}
-<div data-place {{ utility.attr_if('style', style) }}>{{ caller() }}</div>
+  {%- set width = ['--width:', width, ';'] | join if width else '' -%}
+  {%- set height = ['--height:', height, ';'] | join if height else '' -%}
+  {%- set style = [width, height] | join if (width or height) else none -%}
+  <div data-place {{ utility.attr_if('style', style) }}>{{ caller() }}</div>
 {%- endmacro %}
 
 {#
@@ -152,20 +159,22 @@
 {% macro _fig_content(
   data
 ) -%}
-{%- for item in data -%}
-{%- set span = ['--span:', item.span, ';'] | join if item.span else '' -%}
-{%- if item.img -%}
-{%- set src = item.img if ('://' in item.img) else ('/assets/images/' + item.img) -%}
-{%- set width = ['--width:', item.width, ';'] | join if item.width else '' -%}
-{%- set style = (width + span) if (width or span) else none -%}{#
-#}<img src="{{ src }}" alt="{{ item.alt }}" {{ utility.attr_if('style', style) }}/>{#
-#}{%- elif item.iframe -%}
-{%- call ratio(item.width, item.height, span) -%}{#
-#}<iframe src="{{ item.iframe }}" {{ utility.attr_if('width', item.width) }} {{ utility.attr_if('height', item.height) }} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{%- endcall -%}{#
-#}{%- elif item.audio -%}{#
-#}<audio src="{{ item.audio }}" style="--width: 100%;{{ span }}" controls>{{ item.audio | mdInline }}</audio>{#
-#}{%- endif -%}
-{%- endfor -%}
+  {%- for item in data -%}
+    {%- set span = ['--span:', item.span, ';'] | join if item.span else '' -%}
+    {%- if item.img -%}
+      {%- set src = item.img if ('://' in item.img) else ('/assets/images/' + item.img) -%}
+      {%- set width = ['--width:', item.width, ';'] | join if item.width else '' -%}
+      {%- set style = (width + span) if (width or span) else none -%}
+      <img src="{{ src }}" alt="{{ item.alt }}" {{ utility.attr_if('style', style) }}/>
+      {%- elif item.iframe -%}
+      {%- call ratio(item.width, item.height, span) -%}
+      <iframe src="{{ item.iframe }}" {{ utility.attr_if('width', item.width) }} {{ utility.attr_if('height', item.height) }} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{%- endcall -%}
+    {%- elif item.audio -%}
+      <audio src="{{ item.audio }}" style="--width: 100%;{{ span }}" controls>
+        {{ item.audio | mdInline }}
+      </audio>
+    {%- endif -%}
+  {%- endfor -%}
 {%- endmacro %}
 
 

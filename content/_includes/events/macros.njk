@@ -73,7 +73,7 @@
         <div data-orgs="list">
           {% for item in orgs %}
             {% set start = item.data.start | getDate('yyyy') %}
-            {% set title = item.data.banner or item.data.renderData.title or item.data.title %}
+            {% set title = item.data.banner or item.data.title %}
             {% set is_old = item.data.end and (item.data.end != 'ongoing') %}
             {% set end = item.data.end | getDate('yyyy') if is_old else none %}
             {% set end = end if end and (end != start) %}
@@ -201,8 +201,8 @@
 ) %}
   {# Venue Link #}
   {%- set venue_name = item.event.venue or item.page.data.venue or none -%}
-  {%- set venue_url = item.event.url or item.page.data.url or item.page.url -%}
-  {%- set venue = utility.link_if(venue_name or venue_url | domain, venue_url) if is_self else venue_name -%}
+  {%- set venue_url = item.event.url or item.page.data.url -%}
+  {%- set venue = utility.link_if(venue_name or venue_url | domain, venue_url) if is_self and (venue_name or venue_url) else venue_name -%}
   {%- set venue = ['@', venue] | join('&nbsp;') if venue else none -%}
 
   {# Title Link #}
