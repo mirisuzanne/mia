@@ -1,7 +1,5 @@
 @use '../../../node_modules/accoutrement/sass/tools';
 
-@include tools.import-webfonts;
-
 /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
 @font-face {
   font-family: 'Recursive';

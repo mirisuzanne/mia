@@ -24,15 +24,6 @@ $font-stack: (
 /// @font static
 $static-font: (
   name: 'Recursive Sans',
-  normal: (
-    woff2: 'RecursiveSansLnrSt-Regular.woff2',
-  ),
-  bold: (
-    woff2: 'RecursiveSansLnrSt-Bold.woff2',
-  ),
-  italic: (
-    woff2: 'RecursiveSansLnrSt-Italic.woff2',
-  ),
   stack: $font-stack,
 );
 
@@ -45,15 +36,6 @@ $static-font: (
 /// @font mono
 $mono-font: (
   name: 'Recursive Mono',
-  normal: (
-    woff2: 'RecursiveMonoLnrSt-Regular.woff2',
-  ),
-  bold: (
-    woff2: 'RecursiveMonoLnrSt-Bold.woff2',
-  ),
-  italic: (
-    woff2: 'RecursiveMonoLnrSt-Italic.woff2',
-  ),
   stack: $font-stack,
 );
 

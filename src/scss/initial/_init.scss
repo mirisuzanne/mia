@@ -3,8 +3,7 @@
 @use '../config/fonts';
 
 html {
-  @include tools.font-family('static');
-  @include fonts.var('body');
+  font-family: fonts.$font-stack, monospace;
   font-feature-settings: 'dlig' 1, 'liga' 1;
   font-size: var(--font-size);
   font-synthesis: none;
@@ -19,6 +18,7 @@ html {
 
   @supports (font-variation-settings: normal) {
     @include tools.font-family('recursive');
+    @include fonts.var('body');
   }
 }
 
