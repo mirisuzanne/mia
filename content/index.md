@@ -5,7 +5,7 @@ banner: Miriam Suzanne
 sub: show_tags
 calendar: all
 summary: |
-  *Hello lovely* --- \
+  **Hello lovely** --- \
   I'm [Miriam](/who/).
   I make art & software
   that celebrate the queer complexity

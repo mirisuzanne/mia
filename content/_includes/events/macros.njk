@@ -77,7 +77,7 @@
             {% set is_old = item.data.end and (item.data.end != 'ongoing') %}
             {% set end = item.data.end | getDate('yyyy') if is_old else none %}
             {% set end = end if end and (end != start) %}
-            {% set range = '->' if end or (not is_old) %}
+            {% set range = '→' if end or (not is_old) %}
             <article
               data-orgs="item"
               {{ utility.attr_if('data-old', is_old) }}>

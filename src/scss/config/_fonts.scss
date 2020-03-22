@@ -1,87 +1,123 @@
 @use 'sass:meta';
+@use 'sass:map';
 @use '../../../node_modules/sassdoc-theme-herman/scss/utilities' as herman;
 @use '../../../node_modules/accoutrement/sass/tools';
 
 /// # Font Configuration
 /// @group config-fonts
-/// @link https://oddbird.net/accoutrement/docs/type.html
-///   Accoutrement Type
 
-// Code Font
-// ---------
-/// A readable monospace font for code previews
+$font-stack: (
+  'Consolas',
+  'Menlo',
+  'Monaco',
+  'Lucida Console',
+  'Liberation Mono',
+  'DejaVu Sans Mono',
+  'Bitstream Vera Sans Mono',
+  'Courier New',
+  'monospace'
+);
+
+// Static Font
+// --------------
 /// @group config-fonts
-/// @font code
-$code-font: (
-  name: 'Dank Mono',
+/// @font static
+$static-font: (
+  name: 'Recursive Sans',
   normal: (
-    woff2: 'dankmono/dankmono-regular-webfont',
-    woff: 'dankmono/dankmono-regular-webfont',
+    woff2: 'RecursiveSansLnrSt-Regular.woff2',
+  ),
+  bold: (
+    woff2: 'RecursiveSansLnrSt-Bold.woff2',
   ),
   italic: (
-    woff2: 'dankmono/dankmono-italic-webfont',
-    woff: 'dankmono/dankmono-italic-webfont',
+    woff2: 'RecursiveSansLnrSt-Italic.woff2',
   ),
-  stack: (
-    'Consolas',
-    'Menlo',
-    'Monaco',
-    'Lucida Console',
-    'Liberation Mono',
-    'DejaVu Sans Mono',
-    'Bitstream Vera Sans Mono',
-    'Courier New',
-    'monospace',
-  ),
+  stack: $font-stack,
 );
 
-@include tools.add-font('code', $code-font);
-@include herman.herman-add('font', 'code', $code-font);
+@include tools.add-font('static', $static-font);
+@include herman.herman-add('font', 'static', $static-font);
 
-// // TwoAM Font
-// // ----------
-// /// @group config-fonts
-// /// @font two-am
-// $two-am-font: (
-//   name: 'Blackout TwoAM',
-//   normal: (
-//     woff2: 'blackout/blackout_two_am-webfont',
-//     woff: 'blackout/blackout_two_am-webfont',
-//   ),
-//   stack: font-family('code'),
-// );
-
-// @include tools.add-font('two-am', $two-am-font);
-// @include herman.herman-add('font', 'two-am', $two-am-font);
-
-// Midnight Font
-// -------------
+// Mono Font
+// ---------
 /// @group config-fonts
-/// @font midnight
-$midnight-font: (
-  name: 'Blackout Midnight',
+/// @font mono
+$mono-font: (
+  name: 'Recursive Mono',
   normal: (
-    woff2: 'blackout/blackout_midnight-webfont',
-    woff: 'blackout/blackout_midnight-webfont',
+    woff2: 'RecursiveMonoLnrSt-Regular.woff2',
   ),
-  stack: tools.font-family('code'),
+  bold: (
+    woff2: 'RecursiveMonoLnrSt-Bold.woff2',
+  ),
+  italic: (
+    woff2: 'RecursiveMonoLnrSt-Italic.woff2',
+  ),
+  stack: $font-stack,
 );
 
-@include tools.add-font('midnight', $midnight-font);
-@include herman.herman-add('font', 'midnight', $midnight-font);
+@include tools.add-font('mono', $mono-font);
+@include herman.herman-add('font', 'mono', $mono-font);
 
-// Sunrise Font
-// ------------
+// Recursive Font
+// --------------
 /// @group config-fonts
-/// @font sunrise
-$sunrise-font: (
-  name: 'Blackout Sunrise',
-  normal: (
-    woff2: 'blackout/blackout_sunrise-webfont',
-    woff: 'blackout/blackout_sunrise-webfont',
-  ),
-  stack: tools.font-family('code'),
+$recursive-font: (
+  name: 'Recursive',
+  stack: $font-stack,
 );
 
-@include tools.add-font('sunrise', $sunrise-font);
-@include herman.herman-add('font', 'sunrise', $sunrise-font);
+@include tools.add-font('recursive', $recursive-font);
+@include herman.herman-add('font', 'recursive', $recursive-font);
+
+$_variants: (
+  body: (
+    --mono: 0,
+    --casl: 0,
+    --wght: 400,
+    --slnt: 0,
+    --ital: 0.5,
+  ),
+  code: (
+    --mono: 1,
+  ),
+  italic: (
+    font-style: italic,
+    --slnt: -15,
+  ),
+  fun: (
+    --casl: 1,
+  ),
+  light: (
+    font-weight: 200,
+    --wght: 200,
+  ),
+  bold: (
+    font-weight: bold,
+    --wght: 600,
+  ),
+  extra: (
+    font-weight: bold,
+    --wght: 1000,
+  ),
+);
+
+@mixin var($name, $settings: true) {
+  @if ($settings) {
+    font-variation-settings: 'MONO' var(--mono), 'CASL' var(--casl),
+      'wght' var(--wght), 'slnt' var(--slnt), 'ital' var(--ital);
+  }
+
+  $name: if($name, $name, ('body'));
+  $map: ();
+
+  @each $var in $name {
+    $var: tools.get-token($_variants, $var);
+    $map: map.merge($map, $var);
+  }
+
+  @each $prop, $val in $map {
+    #{$prop}: #{$val};
+  }
+}

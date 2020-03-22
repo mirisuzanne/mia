@@ -1,4 +1,5 @@
 @use '../../../node_modules/accoutrement/sass/tools';
+@use '../config/fonts';
 
 [data-layout='banner'] {
   @include tools.transition('move');
@@ -19,7 +20,7 @@
 }
 
 .banner-title {
-  @include tools.font-family('sunrise');
+  @include fonts.var('light');
   font-size: var(--font-headline);
   line-height: 0.74;
   margin: 0;
@@ -27,11 +28,11 @@
   text-transform: uppercase;
 
   &::first-line {
-    @include tools.font-family('midnight');
+    @include fonts.var('extra');
   }
 }
 
 .subtitle {
-  font-style: italic;
+  @include fonts.var('italic');
   margin: 0 var(--gutter);
 }

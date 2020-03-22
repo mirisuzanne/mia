@@ -1,4 +1,5 @@
 @use '../../../node_modules/accoutrement/sass/tools';
+@use '../config/fonts';
 
 [data-orgs='section'] {
   grid-row-gap: var(--gutter);
@@ -41,6 +42,6 @@
 }
 
 [data-meta='org-sub'] {
-  font-style: italic;
+  @include fonts.var('italic');
   grid-area: sub;
 }

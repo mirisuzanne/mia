@@ -1,4 +1,5 @@
 @use '../config/actions';
+@use '../config/fonts';
 
 button:not([data-toggle]) {
   --btn-shade: hsla(
@@ -68,13 +69,13 @@ button:not([data-toggle]) {
 // toggles
 
 [data-toggle] {
+  @include fonts.var('italic');
   background: initial;
   border: thin solid var(--border);
   border-radius: var(--border-radius) 0;
   color: var(--action);
   cursor: pointer;
   font: inherit;
-  font-style: italic;
   letter-spacing: inherit;
   padding: var(--quarter-shim) var(--gutter) var(--half-shim) var(--shim);
 

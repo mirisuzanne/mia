@@ -1,5 +1,4 @@
-// Hero Layout
-// ===========
+@use '../config/fonts';
 
 [data-hero] {
   --main-column: hero;
@@ -21,9 +20,9 @@
 }
 
 .hero-caption {
+  @include fonts.var('italic');
   background: var(--callout);
   font-size: var(--font-small);
-  font-style: italic;
   grid-area: caption;
   padding: var(--quarter-shim) var(--half-shim);
   position: relative;
