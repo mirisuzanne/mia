@@ -39,13 +39,7 @@ $code-box-shadow: 1px 1px 0.3em -0.1em #000 inset !default;
 
 @if $code-selector != null {
   #{$code-selector} {
-    -moz-tab-size: $code-tab-size;
-    -o-tab-size: $code-tab-size;
     tab-size: $code-tab-size;
-
-    -webkit-hyphens: $code-hyphens;
-    -moz-hyphens: $code-hyphens;
-    -ms-hyphens: $code-hyphens;
     hyphens: $code-hyphens;
 
     // whitespace management

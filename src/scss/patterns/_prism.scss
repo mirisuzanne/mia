@@ -1,7 +1,7 @@
 $_code-color-fade: var(--text-light);
 
 @use '../../../node_modules/accoutrement/sass/tools';
-@use '../vendor/prism' as * with (
+@use '../vendor/prism' with (
   // generic stuff
   $code-font-family: tools.font-family('recursive'),
   $code-font-size: inherit,
@@ -31,7 +31,7 @@ $_code-color-fade: var(--text-light);
   $code-color-punctuation: $_code-color-fade,
 );
 
-#{$code-selector-block} {
+#{prism.$code-selector-block} {
   background: var(--callout);
   border: var(--border-width) solid var(--border);
   border-width: var(--border-width) 0;
