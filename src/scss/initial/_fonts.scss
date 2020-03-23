@@ -5,7 +5,7 @@
   font-family: 'Recursive';
   font-style: oblique -15deg 0deg;
   font-weight: 300 1000;
-  font-display: swap;
+  font-display: fallback;
   src: url('../fonts/Recursive_VF_1.043--subset_range_english_basic.woff2')
       format('woff2 supports variations'),
     url('../fonts/Recursive_VF_1.043--subset_range_english_basic.woff2')

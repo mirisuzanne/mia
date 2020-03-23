@@ -22,8 +22,9 @@
 }
 
 $banner-font: tools.font('recursive');
-$banner-stack: (map.get($banner-font, 'name'), Impact);
-$banner-stack: list.join($banner-stack, map.get($banner-font, 'stack'));
+$banner-stack: map.get($banner-font, 'name');
+$banner-fallback: list.join((Impact), map.get($banner-font, 'stack'));
+$banner-stack: list.join(($banner-stack), $banner-fallback);
 
 .banner-title {
   @include fonts.var('light');
@@ -35,7 +36,13 @@ $banner-stack: list.join($banner-stack, map.get($banner-font, 'stack'));
 
   &::first-line {
     @include fonts.var('extra');
-    font-family: $banner-stack;
+    font-family: $banner-fallback;
+    letter-spacing: 0.1em;
+
+    .fonts-loaded & {
+      font-family: $banner-stack;
+      letter-spacing: var(--letter-spacing--user-em, 0);
+    }
   }
 }
 

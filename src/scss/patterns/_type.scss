@@ -113,8 +113,10 @@ tt {
   @include tools.font-family('mono');
 
   @supports (font-variation-settings: normal) {
-    @include tools.font-family('recursive');
-    @include fonts.var('code');
+    .fonts-loaded & {
+      @include tools.font-family('recursive');
+      @include fonts.var('code');
+    }
   }
 }
 
