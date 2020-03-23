@@ -22,7 +22,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({ 'src/fonts': 'assets/fonts' });
   eleventyConfig.addPassthroughCopy({ 'src/images': 'assets/images' });
   eleventyConfig.addPassthroughCopy('content/**/*.txt');
-  // eleventyConfig.addPassthroughCopy('content/favicon.ico');
+  eleventyConfig.addPassthroughCopy('content/favicon.svg');
 
   // collections
   eleventyConfig.addCollection('orgs', (collection) =>

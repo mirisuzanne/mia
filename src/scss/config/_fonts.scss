@@ -1,13 +1,13 @@
-@use 'sass:meta';
+@use 'sass:list';
 @use 'sass:map';
+@use 'sass:meta';
 @use '../../../node_modules/sassdoc-theme-herman/scss/utilities' as herman;
 @use '../../../node_modules/accoutrement/sass/tools';
 
 /// # Font Configuration
 /// @group config-fonts
 
-$font-stack: (
-  'Consolas',
+$mono-stack: (
   'Menlo',
   'Monaco',
   'Lucida Console',
@@ -18,13 +18,15 @@ $font-stack: (
   'monospace'
 );
 
+$sans-stack: ('Geneva', 'sans-serif');
+
 // Static Font
 // --------------
 /// @group config-fonts
 /// @font static
 $static-font: (
-  name: 'Recursive Sans',
-  stack: $font-stack,
+  name: 'Verdana',
+  stack: $sans-stack,
 );
 
 @include tools.add-font('static', $static-font);
@@ -35,8 +37,8 @@ $static-font: (
 /// @group config-fonts
 /// @font mono
 $mono-font: (
-  name: 'Recursive Mono',
-  stack: $font-stack,
+  name: 'Consolas',
+  stack: $mono-stack,
 );
 
 @include tools.add-font('mono', $mono-font);
@@ -46,12 +48,23 @@ $mono-font: (
 // --------------
 /// @group config-fonts
 $recursive-font: (
-  name: 'Recursive',
-  stack: $font-stack,
+  name: Recursive,
+  stack: list.join((Verdana), $sans-stack),
 );
 
 @include tools.add-font('recursive', $recursive-font);
 @include herman.herman-add('font', 'recursive', $recursive-font);
+
+// Recursive Font
+// --------------
+/// @group config-fonts
+$recursive-font: (
+  name: Recursive Mono,
+  stack: list.join((Consolas), $mono-stack),
+);
+
+@include tools.add-font('recursive-mono', $recursive-font);
+@include herman.herman-add('font', 'recursive-mono', $recursive-font);
 
 $_variants: (
   body: (

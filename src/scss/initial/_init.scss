@@ -4,7 +4,7 @@
 
 html {
   @include fonts.var('body');
-  font-family: fonts.$font-stack, monospace;
+  @include tools.font-family('static');
   font-feature-settings: 'dlig' 1, 'liga' 1;
   font-size: var(--font-size);
   font-synthesis: none;
