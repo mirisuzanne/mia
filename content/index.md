@@ -3,7 +3,7 @@ layout: base
 title: art & code
 banner: Miriam Suzanne
 sub: show_tags
-calendar: all
+calendar: recent
 summary: |
   **Hello lovely** --- \
   I'm [Miriam](/who/).

@@ -110,15 +110,12 @@
     --link-color: var(--text-light);
     color: var(--text-light);
   }
-
-  [data-filter='on'] & {
-    display: none;
-  }
 }
 
-[data-toggle='filter'] {
-  font-size: var(--font-small);
-  margin-top: calc(-1 * var(--spacer));
-  position: absolute;
-  transform: translate3d(var(--shim), var(--shim), 0);
+.everything-link {
+  background-color: var(--callout);
+  display: block;
+  margin: var(--gutter) var(--spacer);
+  padding: var(--gutter);
+  text-align: center;
 }

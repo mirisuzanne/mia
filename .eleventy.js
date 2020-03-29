@@ -79,6 +79,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter('concat', _.concat);
   eleventyConfig.addFilter('merge', _.merge);
+  eleventyConfig.addFilter('loSlice', _.slice);
 
   // shortcodes
   eleventyConfig.addPairedShortcode('md', type.render);

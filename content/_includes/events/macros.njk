@@ -8,16 +8,20 @@
   page
 ) %}
   {% set title = 'episodes' %}
-  {% set filter = none %}
   {% set org_title = 'current orgs' %}
   {% set page = collections.all | getPage(page) %}
   {% set events = page | getEvents %}
   {% set page = page | first %}
   {% set all_orgs = (events_group == 'all_orgs') %}
+  {% set all_events = collections.all | getEvents %}
 
-  {% if events_group == 'all' %}
-    {% set events = collections.all | getEvents %}
-    {% set filter = 'off' %}
+  {% if events_group in ['all', 'recent'] %}
+    {% set events = all_events | loSlice(0,3) if (events_group == 'recent') else all_events %}
+
+    {% if events_group == 'recent' %}
+      {% set title = 'recent episodes' %}
+      {% set more = all_events | loSlice(3) %}
+    {% endif %}
   {% elif all_orgs %}
     {% set org_title = 'org history' %}
     {% set events_group = 'all' %}
@@ -43,12 +47,21 @@
   {% endif %}
 
   {% if events %}
+    {% set title = [events | countEvents, title] | join(' ') %}
+
     {{ section(
       title=title,
       events=events,
       all=collections,
-      self=page.url,
-      filter=filter
+      self=page.url
+    ) }}
+  {% endif %}
+
+  {% if events != all_events %}
+    {{ utility.link_if(
+      ['See all', all_events | countEvents, 'episodes'] | join(' '),
+      '/everything/',
+      'everything-link'
     ) }}
   {% endif %}
 {% endmacro %}
@@ -78,15 +91,17 @@
             {% set end = item.data.end | getDate('yyyy') if is_old else none %}
             {% set end = end if end and (end != start) %}
             {% set range = '→' if end or (not is_old) %}
+            {% set id = ['orgs', loop.index] | join('-') %}
             <article
               data-orgs="item"
+              aria-labelledby="{{ id }}"
               {{ utility.attr_if('data-old', is_old) }}>
               <time
                 data-meta="org-date"
                 datetime="{{ item.data.start | getDate('iso') }}">
                 {{ start }}{{ range }}{{ end or '' }}
               </time>
-              <h3 data-title="orgs">
+              <h3 data-title="orgs" id="{{ id }}">
                 {{ utility.link_if(title, item.url) }}
               </h3>
               {% if item.data.sub %}
@@ -108,15 +123,12 @@
   title,
   events,
   all,
-  self,
-  filter=none
+  self
 ) %}
-  {% set title = [events | countEvents, title] | join(' ') %}
   {% if events | length %}
     {{ cards.section(
       title,
-      content=groups(events, all, self),
-      filter=filter
+      content=groups(events, all, self)
     ) }}
   {% endif %}
 {% endmacro %}
