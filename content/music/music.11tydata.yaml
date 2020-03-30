@@ -1,0 +1,7 @@
+permalink: "/{{ page.date | getDate('url') }}/{{ page.fileSlug }}/index.html"
+type: music
+calendar: music
+tags:
+  - _calendar
+  - art
+  - music

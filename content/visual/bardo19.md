@@ -11,10 +11,7 @@ hero:
   img: art/shows/bardo.jpg
   alt: Art on the walls of Bardo Coffee
 tags:
-  - _calendar
-  - art
   - riding sidesaddle
-  - visual
 gallery:
   caption: Diptych commisioned by Kelcie Glick...
   art:

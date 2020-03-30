@@ -9,10 +9,7 @@ venue: The Narrators
 url: https://thenarrators.org/174-erin-rollman-lets-faint-for-each-other/
 series: transition
 tags:
-  - _calendar
-  - _elsewhere
   - transition
-  - inspiration
   - narrators
   - podcast
 track:

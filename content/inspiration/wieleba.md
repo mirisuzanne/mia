@@ -4,9 +4,6 @@ sub: The writing and comedy of Jordan Wieleba
 date: 2016-10-10
 hero:
   img: 2016/wieleba.png
-tags:
-  - _calendar
-  - inspiration
 audio:
   - iframe: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219256111&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false
     width: 100%

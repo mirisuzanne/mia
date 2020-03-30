@@ -4,12 +4,8 @@ sub: a play in one page, and a short short film
 type: script
 date: 2003-03-14
 tags:
-  - _calendar
-  - theater
-  - art
   - writing
   - script
-  - film
 ---
 
 *Interior, three weeks later. Morning.

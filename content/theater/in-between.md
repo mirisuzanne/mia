@@ -11,9 +11,7 @@ events:
     url: http://www.julierada.com/#/the-in-between/
     date: 2016-05-21
 tags:
-  - theater
-  - art
-  - _grapefruit lab
+  - grapefruit lab
   - acting
 summary: |
   *Try to locate the moon.

@@ -1,15 +1,19 @@
 ---
 title: Every Other Day
-sub: directed by Michael Natoli
-start: 2004-09-09
-end: 2004-09-18
+sub: Another day in the lives of Milo & Sam
+date: 2004-09-09
 tags:
-  - _calendar
-  - _new world
-  - art
-  - theater
   - writing
+  - film
   - directing
+events:
+  - venue: New World Arts
+    start: 2004-09-09
+    end: 2004-09-18
+  - venue: shortfilmfest03
+    date: 2003-05-09
 summary: |
-  Another day in the lives of Milo & Sam.
+  My first one-act play...
 ---
+
+[Read the script »](script/)

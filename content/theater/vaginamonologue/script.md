@@ -9,8 +9,6 @@ hero:
 series: transition
 tags:
   - _calendar
-  - theater
-  - art
   - writing
   - script
   - transition

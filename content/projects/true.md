@@ -8,10 +8,9 @@ date: 2013-06-06
 hero:
   img: projects/true.jpg
 tags:
-  - _calendar
   - code
   - open source
-  - _oddbird
+  - oddbird
   - sass
 press:
   - text: OMG I just love this tool way too&nbsp;much.

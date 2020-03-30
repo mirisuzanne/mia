@@ -6,7 +6,6 @@ slides: https://talks.oddbird.net/dynamic-css/
 hero:
   img: talks/miriam.jpg
 tags:
-  - speaking
   - code
   - layout
 events:
@@ -18,6 +17,7 @@ events:
     url: https://cssday.nl/2020
     adr: Amsterdam, Netherlands
     date: 2020-06-12
+    cancel: covid19
   - venue: Develop Denver
     url: https://developdenver.org/
     start: 2019-08-15

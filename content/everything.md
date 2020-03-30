@@ -1,8 +1,6 @@
 ---
 eleventyExcludeFromCollections: true
-layout: base
 title: Everything
-banner: Miriam Suzanne
 sub: show_tags
 calendar: all
 summary: |

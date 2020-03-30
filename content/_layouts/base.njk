@@ -3,8 +3,8 @@
 {%- import 'events/macros.njk' as cal -%}
 <!doctype html>
 <html lang="en" data-ccs="root" data-ccs-theme="{{ site.themes[0] }}" data-ccs-colors>
-	{%- set desc = sub or summary or content or none -%}
-	{%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') if desc else desc -%}
+	{%- set desc = sub or summary or content or '' -%}
+	{%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') -%}
 	{%- set meta_desc = description or desc or site.description -%}
 	{%- set full_title = banner or title -%}
 	{%- set full_title = show.tag_title(collections) if (full_title == 'show_tags') else full_title | mdInline(false) -%}
@@ -17,7 +17,7 @@
     <meta name="description"
       content="{{ meta_desc }}" />
 
-		{% set elsewhere = '_elsewhere' in (tags or []) %}
+		{% set elsewhere = 'elsewhere' in (tags or []) %}
 		{% set canon = url if elsewhere else page.url | absoluteUrl(site.url) %}
 		<link rel="canonical"
 			href="{{ canon | url }}">
@@ -43,7 +43,7 @@
 
 	<body
 		data-layout="body">
-		<a href="#banner" class="skiplink">Skip to content</a>
+		<a href="#title" class="skiplink">Skip to content</a>
 
 		<ul
 			data-layout="menu"
@@ -54,10 +54,11 @@
 
 		{% include 'site/nav.njk' %}
 		{% include 'site/fancy.njk' %}
-
 		{% include 'site/banner.njk' %}
+
 		<main
-			id="main"
+	    id="main"
+			aria-labelledby="title"
 			data-layout="main">
 			{% include 'site/page.njk' %}
 			{% include 'site/calendar.njk' %}

@@ -3,7 +3,6 @@ title: Agile Design Systems
 sub: with meaningful code and automation
 slides: https://talks.oddbird.net/agile-systems/
 tags:
-  - speaking
   - code
   - agile
   - design systems

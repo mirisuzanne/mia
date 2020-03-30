@@ -7,11 +7,6 @@ date: 2019-03-26
 hero:
   img: talks/miriam.jpg
 tags:
-  - _calendar
-  - _post
-  - _elsewhere
-  - interview
-  - podcast
   - code
 summary: |
   Thunder Nerds interview me

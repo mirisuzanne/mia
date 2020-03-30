@@ -2,7 +2,6 @@
 title: Sass Map Magic
 slides: https://www.oddbooksapp.com/book/sass-map-magic
 tags:
-  - speaking
   - code
   - sass
 events:

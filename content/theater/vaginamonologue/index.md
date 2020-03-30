@@ -16,8 +16,6 @@ events:
     date: 2018-11-02
     end: 2018-11-03
 tags:
-  - theater
-  - art
   - writing
   - acting
 summary: |

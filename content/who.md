@@ -1,5 +1,4 @@
 ---
-layout: base
 title: About
 banner: All About Miriam
 sub: (this is my website)

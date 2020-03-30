@@ -9,10 +9,7 @@ date: 2017-06-02
 hero:
   img: art/design/gotl-cover.jpg
 tags:
-  - _calendar
   - book design
-  - art
-  - visual
 ---
 
 {% import "content.macros.njk" as content %}

@@ -9,8 +9,8 @@ hero:
   img: art/theater/missa.jpg
 tags:
   - _calendar
-  - _teacup gorilla
-  - _grapefruit lab
+  - teacup gorilla
+  - grapefruit lab
   - theater
   - art
   - writing

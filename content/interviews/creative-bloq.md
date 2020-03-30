@@ -4,11 +4,7 @@ url: https://www.creativebloq.com/features/has-css-has-finally-come-of-age
 venue: Creative Bloq
 date: 2019-04-23
 tags:
-  - _calendar
-  - _post
-  - _elsewhere
   - code
-  - interview
   - creative bloq
 hero:
   img: 2019/creative-bloq.jpg

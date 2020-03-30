@@ -7,9 +7,7 @@ hero:
   alt: woman in a crate, watching a small TV through the slats
   caption: Julie Rada as a plain and pensive woman
 tags:
-  - _grapefruit lab
-  - theater
-  - art
+  - grapefruit lab
   - ensemble
   - lighting
 events:

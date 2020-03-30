@@ -6,10 +6,7 @@ date: 2013-04-18
 hero:
   img: tennis/volley6.jpg
 tags:
-  - _calendar
-  - art
   - process
-  - visual
 gallery:
   - img: tennis/volley1.jpg
   - img: tennis/volley2.jpg

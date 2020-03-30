@@ -4,9 +4,6 @@ start: 2006-09-15
 end: 2006-09-24
 tags:
   - _calendar
-  - _new world
-  - art
-  - theater
   - directing
 press:
   - credit: Andrew S. Hughes

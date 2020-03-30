@@ -9,10 +9,7 @@ date: 2013-01-22
 hero:
   img: art/design/contour.jpg
 tags:
-  - _calendar
   - book design
-  - art
-  - visual
 process:
   caption: |
     Exploring levels of distance from object to abstraction,

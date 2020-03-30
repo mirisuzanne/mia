@@ -27,11 +27,6 @@ a {
     );
   }
 
-  &:focus {
-    outline: 2px dashed var(--ccs-accent);
-    outline-offset: var(--quarter-shim);
-  }
-
   &[data-active] {
     --link-color: var(--ccs-accent--fg2);
     --link-hover: var(--ccs-accent--fg4);

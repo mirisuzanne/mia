@@ -7,9 +7,6 @@ date: 2012-07-24
 hero:
   img: 2012/i-made-this.jpg
   alt: I made this, you play this, we are enemies
-tags:
-  - _calendar
-  - inspiration
 ---
 
 In case you are ever bored,

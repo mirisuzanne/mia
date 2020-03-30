@@ -5,7 +5,6 @@ slides: https://www.oddbooksapp.com/book/software-for-humans
 hero:
   img: talks/user-unfriendly.png
 tags:
-  - speaking
   - code
   - art
   - design

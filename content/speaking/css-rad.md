@@ -9,7 +9,6 @@ hero:
     (which fits the box just fine)
   caption: CSS is better than "awesome"
 tags:
-  - speaking
   - code
 events:
   - venue: Smashing Conf Austin

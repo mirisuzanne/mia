@@ -7,9 +7,7 @@ date: 2014-10-30
 hero:
   img: projects/accoutrement.jpg
 tags:
-  - _calendar
-  - _elsewhere
-  - _oddbird
+  - oddbird
   - code
   - open source
   - sass

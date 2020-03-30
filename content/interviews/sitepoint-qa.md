@@ -6,10 +6,6 @@ url: https://www.sitepoint.com/how-to-choose-the-right-css-toolkits-and-framewor
 hero:
   img: 2016/QandA.png
 tags:
-  - _calendar
-  - _post
-  - _elsewhere
-  - interview
   - code
   - susy
   - sass

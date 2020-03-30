@@ -6,10 +6,7 @@ venue: square product theatre
 url: http://www.squareproducttheatre.org/history
 tags:
   - _calendar
-  - art
-  - theater
   - acting
-calendar: theater
 video:
   - iframe: https://www.youtube.com/embed/FDbrHv-zLGU
     width: 560

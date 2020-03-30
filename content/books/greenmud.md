@@ -8,11 +8,9 @@ url: http://greengreenmud.com/
 tags:
   - _calendar
   - art
-  - writing
   - design
   - code
   - elit
-  - book
 hero:
   img: greenmud/cover.jpg
 press:

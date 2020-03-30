@@ -48,8 +48,15 @@ summary {
   }
 }
 
-[data-hidden] {
-  @include tools.is-hidden;
+.sr-only {
+  &:not(:focus):not(:active) {
+    @include tools.is-hidden;
+  }
+}
+
+:focus {
+  outline: 2px dashed var(--ccs-accent);
+  outline-offset: var(--half-shim);
 }
 
 // Above/below

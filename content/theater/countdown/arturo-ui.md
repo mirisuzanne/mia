@@ -8,7 +8,7 @@ hero:
   img: art/theater/ctz/ui.png
   alt: Ui in white face, right hand in the air
 tags:
-  - _countdown to zero
+  - countdown to zero
   - theater
   - art
   - ensemble

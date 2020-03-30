@@ -6,11 +6,11 @@ start: 2008-04-15
 end: ongoing
 hero:
   svg: oddbird.svg
-index: _oddbird
+index: oddbird
 tags:
   - code
   - speaking
-  - _oddbird
+  - oddbird
 press:
   - text: |
       Working with OddBird

@@ -9,10 +9,6 @@ end: 2014-08-09
 hero:
   img: prophetia/installation.jpg
   caption: The full sci-fi art installation at Buntport Theater
-tags:
-  - _calendar
-  - art
-  - visual
 gallery:
   - img: prophetia/st01.jpg
     url: http://art.miriamsuzanne.com/item/the-monster-print

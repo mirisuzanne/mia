@@ -5,11 +5,8 @@ type: script
 date: 2007-04-20
 tags:
   - _calendar
-  - theater
-  - art
   - writing
   - script
-  - _new world
 summary: |
   An action comedy for the stage,
   based on our favorite movie tropes.

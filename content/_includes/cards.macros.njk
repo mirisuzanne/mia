@@ -37,21 +37,25 @@
 {% endmacro %}
 
 {% macro event(
-  title,
+  name,
   meta,
   summary,
   feature,
-  is_old=false
+  is_old=false,
+  index=0
 ) %}
+{% set name = name | typogr %}
+{% set id = [name | striptags | slug, index] | join('-') %}
 <article
   data-card="item"
+  aria-labelledby="{{ id }}"
   {{ utility.attr_if('data-feature', feature) }}
   {{ utility.attr_if('data-old', is_old) }}
 >
   <div data-card="inner">
-    {% if title %}
-      <h4 data-card="title">
-        {{ title | typogr | safe }}
+    {% if name %}
+      <h4 data-card="title" id="{{ id }}">
+        {{ name | safe }}
       </h4>
     {% endif %}
 

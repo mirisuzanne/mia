@@ -3,7 +3,6 @@ title: Code Patterns
 banner: Code Patterns for Pattern Making
 slides: https://oddbooksapp.com/book/pattern-making
 tags:
-  - speaking
   - code
   - design systems
   - sass

@@ -1,0 +1,4 @@
+permalink: /{{ page.date | getDate('url') }}/{{ page.fileSlug }}/index.html
+tags:
+  - micro
+  - _calendar

@@ -17,18 +17,10 @@ hero:
 url: https://www.facebook.com/events/342356676462227/
 series: transition
 tags:
-  - _calendar
-  - _post
   - transition
-  - speaking
-  - narrators
   - writing
 ---
 {% import "content.macros.njk" as content %}
-
-{{ content.intro(group_summary) }}
-
----
 
 Last week,
 my dad sent me a newspaper ==clipping==

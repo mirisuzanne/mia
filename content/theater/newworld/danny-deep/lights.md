@@ -5,9 +5,6 @@ start: 2001-02-04
 end: 2001-03-04
 tags:
   - _calendar
-  - _new world
-  - art
-  - theater
   - lighting
   - assistant director
 summary: |

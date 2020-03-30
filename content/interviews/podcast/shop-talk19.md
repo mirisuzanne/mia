@@ -5,12 +5,7 @@ venue: Shop Talk Show
 date: 2019-10-28
 url: https://shoptalkshow.com/episodes/384/
 tags:
-  - _calendar
-  - _post
-  - _elsewhere
-  - interview
   - code
-  - podcast
   - sass
 summary: |
   I drop by the show to talk about Sass in 2019,

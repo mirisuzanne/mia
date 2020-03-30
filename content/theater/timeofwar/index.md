@@ -10,28 +10,26 @@ hero:
   caption: Lindsay Nance & Mallory Parsons as Annie, 2005
 calendar: self
 tags:
-  - theater
   - writing
-  - art
 events:
   - venue: New World Arts
     start: 2005-04-22
     end: 2005-05-23
     tags:
-      - _new world
+      - new world arts
   - title: Senior Theater Recital
     venue: Goshen College
     url: /education/goshen/
     start: 2005-04-21
     tags:
-      - _goshen college
+      - goshen college
   - title: International Peace Play Contest
     venue: Goshen College
     url: /education/goshen/
     start: 2004-10-01
     end: 2004-10-03
     tags:
-      - _goshen college
+      - goshen college
 summary: |
   Based on a series of interviews
   with Annie in 2003,

@@ -9,9 +9,7 @@ events:
   - venue: The Historian
     date: 2015-07-25
 tags:
-  - art
-  - music
-  - _teacup gorilla
+  - teacup gorilla
 summary: |
   Founded in 2001,
   The UMS is an annual three-day celebration of music

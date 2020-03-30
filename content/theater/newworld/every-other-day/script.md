@@ -9,8 +9,6 @@ events:
     venue: Kennedy Center ACTF
 tags:
   - _calendar
-  - theater
-  - art
   - writing
   - script
 ---

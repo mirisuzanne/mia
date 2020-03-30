@@ -8,10 +8,10 @@ adr: Goshen, IN
 url: https://web.archive.org/web/20100810193456/http://newworldarts.org/events/history.php
 start: 2001-01-01
 end: 2007-08-14
-index: _new world
+index: new world arts
 tags:
   - _calendar
-  - _new world
+  - new world arts
   - theater
   - artistic director
   - technical director

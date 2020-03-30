@@ -10,11 +10,9 @@ hero:
     a hybrid evening of music & story
 calendar: null
 tags:
-  - art
-  - music
   - writing
   - tour
-  - _teacup gorilla
+  - teacup gorilla
 events:
   - adr: Iowa City, IA
     venue: Gabe's Iowa City
