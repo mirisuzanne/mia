@@ -13,15 +13,12 @@
   {% set events = page | getEvents %}
   {% set page = page | first %}
   {% set all_orgs = (events_group == 'all_orgs') %}
-  {% set all_events = collections.all | getEvents %}
 
-  {% if events_group in ['all', 'recent'] %}
-    {% set events = all_events | loSlice(0,3) if (events_group == 'recent') else all_events %}
-
-    {% if events_group == 'recent' %}
-      {% set section_title = 'recent & upcoming episodes' %}
-      {% set more = all_events | loSlice(3) %}
-    {% endif %}
+  {% if events_group == 'all' %}
+    {% set events = collections.all | getEvents %}
+  {% elif events_group == 'recent' %}
+    {% set events = collections.all | recentEvents %}
+    {% set section_title = 'recent & upcoming episodes' %}
   {% elif all_orgs %}
     {% set org_title = 'org history' %}
     {% set events_group = 'all' %}
@@ -57,7 +54,8 @@
     ) }}
   {% endif %}
 
-  {% if events != all_events %}
+  {% if events_group == 'recent' %}
+    {% set all_events = collections.all | getEvents %}
     {{ utility.link_if(
       ['See all', all_events | countEvents, 'episodes'] | join(' '),
       '/everything/',

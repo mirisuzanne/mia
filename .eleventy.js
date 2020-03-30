@@ -70,6 +70,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter('getEvents', events.get);
   eleventyConfig.addFilter('countEvents', events.count);
+  eleventyConfig.addFilter('recentEvents', events.recentEvents);
   eleventyConfig.addFilter('groupName', (group) => events.groupNames[group]);
 
   eleventyConfig.addFilter('amp', type.amp);

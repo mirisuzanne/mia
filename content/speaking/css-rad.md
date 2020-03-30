@@ -41,24 +41,15 @@ events:
         width: 640
         height: 360
 summary: |
-  Depending who you ask,
-  CSS is either awesome or broken.
-  CSS is not a programming language, unless it is.
-  CSS is too simple and entirely too difficult.
-  CSS is weird -- not like other languages,
-  and not like print design either --
-  but trapped in a strange middle ground
-  with unique rules and constraints.
+  The web is designed to work across platforms,
+  devices, languages, and interfaces --
+  but how can we possibly design for that
+  unknown and always-changing canvas?
 media:
   - <<: *smashing
   - <<: *frfe
 ---
 {% import "content.macros.njk" as content %}
-
-The web is designed to work across platforms,
-devices, languages, and interfaces --
-but how can we possibly design for that
-unknown and always-changing canvas?
 
 CSS is designed to be resilient, declarative, accessible, and contextual --
 with progressive enhancement and graceful degradation built in.

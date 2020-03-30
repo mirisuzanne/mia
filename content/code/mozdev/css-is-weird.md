@@ -6,11 +6,6 @@ date: 2019-10-03
 hero:
   img: mozdev/css-is-weird.png
 summary: |
-  CSS is the design language of the web --
-  one of three core web languages --
-  but it also seems to be the most contentious and often perplexing.
-  It’s too easy and too hard,
-  too fragile and too resilient.
   Love it or hate it, CSS is weird:
   not quite markup,
   not quite programming in the imperative sense,
@@ -27,6 +22,12 @@ media:
   data=media,
   caption='CSS is for documents, and also for apps, on a universally accessible web.'
 ) }}
+
+CSS is the design language of the web --
+one of three core web languages --
+but it also seems to be the most contentious and often perplexing.
+It’s too easy and too hard,
+too fragile and too resilient.
 
 This is a young platform, and all the core languages are growing fast,
 with CSS advancing leaps and bounds over the last few years,
