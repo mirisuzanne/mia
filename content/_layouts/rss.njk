@@ -25,7 +25,9 @@
       <img src="{{ (site.images + post.data.hero.img) | absoluteUrl(site.url) }}" alt="{{ post.data.hero.alt }}"/>
       {%- endfilter -%}
       {%- endif %}
-      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+      {{- post.data.sub | md | htmlToAbsoluteUrls(absolutePostUrl) or '' -}}
+      {{- post.data.summary | md | htmlToAbsoluteUrls(absolutePostUrl) or '' -}}
+      {{- post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) -}}
     </content>
     {%- elif post.data.summary %}
     <summary type="html">{{ post.data.summary | md | htmlToAbsoluteUrls(absolutePostUrl) }}</summary>
