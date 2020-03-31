@@ -10,7 +10,7 @@
     <name>{{ site.author }}</name>
     <email>{{ site.email }}</email>
   </author>
-  {%- for post in collections._post | getPublic -%}
+  {%- for post in collections._post | getPublic | reverse -%}
   {%- if post.templateContent or post.data.summary -%}
   {%- set absolutePostUrl = post.url | absoluteUrl(site.url) -%}
   <entry>
