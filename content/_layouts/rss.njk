@@ -4,7 +4,7 @@
   <subtitle>{{ site.description }}</subtitle>
   <link href="{{ page.url | absoluteUrl(site.url) }}" rel="self"/>
   <link href="{{ site.url }}"/>
-  <updated>{{ (collections._post | getPublic | reverse)[0].date.toISOString() }}</updated>
+  <updated>{{ collections._post | rssLastUpdatedDate }}</updated>
   <id>{{ site.url }}</id>
   <author>
     <name>{{ site.author }}</name>
@@ -16,7 +16,7 @@
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date.toISOString() }}</updated>
+    <updated>{{ post | rssDate }}</updated>
     <id>{{ absolutePostUrl }}</id>
     {%- if post.templateContent %}
     <content type="html">
