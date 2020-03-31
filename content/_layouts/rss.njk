@@ -4,6 +4,8 @@
   <subtitle>{{ site.description }}</subtitle>
   <link href="{{ page.url | absoluteUrl(site.url) }}" rel="self"/>
   <link href="{{ site.url }}"/>
+  <icon>{{ '/favicon.svg' | absoluteUrl(site.url) }}</icon>
+  <logo>{{ '/favicon.svg' | absoluteUrl(site.url) }}</logo>
   <updated>{{ (collections._post | getPublic | reverse)[0].date.toISOString() }}</updated>
   <id>{{ site.url }}</id>
   <author>

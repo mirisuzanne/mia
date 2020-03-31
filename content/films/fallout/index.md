@@ -2,6 +2,9 @@
 title: Fallout
 sub: a play in one page, and a short short film
 date: 2020-03-30
+hero:
+  img: 2020/fallout.jpg
+  alt: tv static
 tags:
   - _calendar
   - _post
@@ -25,6 +28,8 @@ media:
     height: 360
 ---
 {% import "content.macros.njk" as content %}
+
+[Read the script »](script/)
 
 {{ content.fig(
   data=media,

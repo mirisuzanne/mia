@@ -4,6 +4,9 @@ sub: from her *Backup Singers* poetry collection
 venue: Sommer Browning
 url: https://vimeo.com/391161116
 date: 2020-02-13
+hero:
+  img: 2020/alcohol.jpg
+  alt: close up of eyes, black and white
 tags:
   - _calendar
   - _post
