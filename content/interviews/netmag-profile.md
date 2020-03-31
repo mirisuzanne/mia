@@ -5,10 +5,7 @@ venue: Net Magazine
 url: https://www.creativebloq.com/net-magazine
 date: 2016-12-01
 tags:
-  - _calendar
-  - _post
   - code
-  - interview
   - net magazine
   - creative bloq
 hero:

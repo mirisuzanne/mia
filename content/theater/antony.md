@@ -3,7 +3,6 @@ feature: true
 title: Antony & Cleopatra
 sub: Stage management & lighting internship
 venue: Oregon Shakespeare Festival
-type: theater
 url: /education/osf/
 start: 2003-02-06
 end: 2003-04-26
@@ -14,9 +13,7 @@ hero:
   caption: At least the tiny logo for my show is still there…
 tags:
   - _calendar
-  - _oregon shakespeare
-  - art
-  - theater
+  - oregon shakespeare
   - education
   - intern
 summary: |

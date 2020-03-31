@@ -1,5 +1,4 @@
 ---
-layout: base
 title: Minifesto
 banner: Some Kind of Minifesto
 section:

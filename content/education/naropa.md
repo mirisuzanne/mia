@@ -8,7 +8,6 @@ tags:
   - _calendar
   - art
   - writing
-  - education
 summary: |
   Studied writing and performance
   with E. Tracy Grinnell, Michelle Ellsworth,

@@ -1,5 +1,4 @@
 ---
-layout: base
 title: contact
 banner: Contact Miriam
 sub: Leave me a note, or find me online!

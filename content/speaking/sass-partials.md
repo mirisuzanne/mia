@@ -2,7 +2,6 @@
 title: Organizing Sass Partials
 slides: http://mirisuzanne.github.io/pres/sass-partials/
 tags:
-  - speaking
   - code
   - sass
 events:

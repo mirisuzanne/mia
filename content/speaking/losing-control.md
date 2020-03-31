@@ -3,7 +3,6 @@ title: Losing Control
 banner: A Practical Guide to Losing Control
 slides: https://www.oddbooksapp.com/book/losing-control
 tags:
-  - speaking
   - code
   - art
 events:

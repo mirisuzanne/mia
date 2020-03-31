@@ -1,0 +1,9 @@
+permalink: "/{{ page.date | getDate('url') }}/{{ page.fileSlug }}/index.html"
+type: poem
+calendar: poem
+tags:
+  - _post
+  - _calendar
+  - art
+  - writing
+  - poem

@@ -13,8 +13,7 @@ hero:
   img: projects/susy.png
 index: susy
 tags:
-  - _calendar
-  - _oddbird
+  - oddbird
   - code
   - susy
   - open source

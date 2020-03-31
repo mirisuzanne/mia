@@ -22,7 +22,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({ 'src/fonts': 'assets/fonts' });
   eleventyConfig.addPassthroughCopy({ 'src/images': 'assets/images' });
   eleventyConfig.addPassthroughCopy('content/**/*.txt');
-  // eleventyConfig.addPassthroughCopy('content/favicon.ico');
+  eleventyConfig.addPassthroughCopy('content/favicon.svg');
 
   // collections
   eleventyConfig.addCollection('orgs', (collection) =>
@@ -70,6 +70,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter('getEvents', events.get);
   eleventyConfig.addFilter('countEvents', events.count);
+  eleventyConfig.addFilter('recentEvents', events.recentEvents);
   eleventyConfig.addFilter('groupName', (group) => events.groupNames[group]);
 
   eleventyConfig.addFilter('amp', type.amp);
@@ -79,6 +80,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter('concat', _.concat);
   eleventyConfig.addFilter('merge', _.merge);
+  eleventyConfig.addFilter('loSlice', _.slice);
 
   // shortcodes
   eleventyConfig.addPairedShortcode('md', type.render);

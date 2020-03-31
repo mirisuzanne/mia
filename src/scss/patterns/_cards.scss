@@ -1,4 +1,5 @@
 @use '../config/patterns';
+@use '../config/fonts';
 @use '../../../node_modules/accoutrement/sass/tools';
 
 [data-layout='card-groups'] {
@@ -44,7 +45,7 @@
 }
 
 [data-cards='group-title'] {
-  @include tools.font-family('midnight');
+  @include fonts.var('light');
   @include patterns.fancy-text;
   display: inline-block;
   margin: 0;
@@ -88,13 +89,13 @@
   margin: 0;
 
   [data-old] & {
-    font-style: italic;
+    @include fonts.var('italic');
   }
 }
 
 [data-card='summary'] {
+  @include fonts.var('italic');
   color: var(--text-light);
-  font-style: italic;
 }
 
 // Extra bits
@@ -109,15 +110,12 @@
     --link-color: var(--text-light);
     color: var(--text-light);
   }
-
-  [data-filter='on'] & {
-    display: none;
-  }
 }
 
-[data-toggle='filter'] {
-  font-size: var(--font-small);
-  margin-top: calc(-1 * var(--spacer));
-  position: absolute;
-  transform: translate3d(var(--shim), var(--shim), 0);
+.everything-link {
+  background-color: var(--callout);
+  display: block;
+  margin: var(--gutter) var(--spacer);
+  padding: var(--gutter);
+  text-align: center;
 }

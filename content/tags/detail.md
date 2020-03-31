@@ -1,5 +1,4 @@
 ---
-layout: base
 sub: '[see all tags](/tags/)'
 pagination:
   data: collections

@@ -13,7 +13,6 @@ url: http://post-obsolete.com
 date: 2012-07-08
 index: post-obsolete
 tags:
-  - _calendar
   - writing
   - art
   - theater

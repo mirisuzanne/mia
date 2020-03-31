@@ -1,87 +1,118 @@
+@use 'sass:list';
+@use 'sass:map';
 @use 'sass:meta';
 @use '../../../node_modules/sassdoc-theme-herman/scss/utilities' as herman;
 @use '../../../node_modules/accoutrement/sass/tools';
 
 /// # Font Configuration
 /// @group config-fonts
-/// @link https://oddbird.net/accoutrement/docs/type.html
-///   Accoutrement Type
 
-// Code Font
-// ---------
-/// A readable monospace font for code previews
+$mono-stack: (
+  'Menlo',
+  'Monaco',
+  'Lucida Console',
+  'Liberation Mono',
+  'DejaVu Sans Mono',
+  'Bitstream Vera Sans Mono',
+  'Courier New',
+  'monospace'
+);
+
+$sans-stack: ('Geneva', 'sans-serif');
+
+// Static Font
+// --------------
 /// @group config-fonts
-/// @font code
-$code-font: (
-  name: 'Dank Mono',
-  normal: (
-    woff2: 'dankmono/dankmono-regular-webfont',
-    woff: 'dankmono/dankmono-regular-webfont',
+/// @font static
+$static-font: (
+  name: 'Verdana',
+  stack: $sans-stack,
+);
+
+@include tools.add-font('static', $static-font);
+@include herman.herman-add('font', 'static', $static-font);
+
+// Mono Font
+// ---------
+/// @group config-fonts
+/// @font mono
+$mono-font: (
+  name: 'Consolas',
+  stack: $mono-stack,
+);
+
+@include tools.add-font('mono', $mono-font);
+@include herman.herman-add('font', 'mono', $mono-font);
+
+// Recursive Font
+// --------------
+/// @group config-fonts
+$recursive-font: (
+  name: Recursive,
+  stack: list.join((Verdana), $sans-stack),
+);
+
+@include tools.add-font('recursive', $recursive-font);
+@include herman.herman-add('font', 'recursive', $recursive-font);
+
+// Recursive Font
+// --------------
+/// @group config-fonts
+$recursive-font: (
+  name: Recursive Mono,
+  stack: list.join((Consolas), $mono-stack),
+);
+
+@include tools.add-font('recursive-mono', $recursive-font);
+@include herman.herman-add('font', 'recursive-mono', $recursive-font);
+
+$_variants: (
+  body: (
+    --mono: 0,
+    --casl: 0,
+    --wght: 400,
+    --slnt: 0,
+    --ital: 0.5,
+  ),
+  code: (
+    --mono: 1,
   ),
   italic: (
-    woff2: 'dankmono/dankmono-italic-webfont',
-    woff: 'dankmono/dankmono-italic-webfont',
+    font-style: italic,
+    --slnt: -15,
   ),
-  stack: (
-    'Consolas',
-    'Menlo',
-    'Monaco',
-    'Lucida Console',
-    'Liberation Mono',
-    'DejaVu Sans Mono',
-    'Bitstream Vera Sans Mono',
-    'Courier New',
-    'monospace',
+  fun: (
+    --casl: 1,
+  ),
+  light: (
+    font-weight: 200,
+    --wght: 200,
+  ),
+  bold: (
+    font-weight: bold,
+    --wght: 600,
+  ),
+  extra: (
+    font-weight: bold,
+    --wght: 1000,
   ),
 );
 
-@include tools.add-font('code', $code-font);
-@include herman.herman-add('font', 'code', $code-font);
+@mixin var($name, $settings: true) {
+  @if ($settings) {
+    font-variation-settings: 'MONO' var(--mono), 'CASL' var(--casl),
+      'wght' var(--wght), 'slnt' var(--slnt), 'ital' var(--ital);
+  }
 
-// // TwoAM Font
-// // ----------
-// /// @group config-fonts
-// /// @font two-am
-// $two-am-font: (
-//   name: 'Blackout TwoAM',
-//   normal: (
-//     woff2: 'blackout/blackout_two_am-webfont',
-//     woff: 'blackout/blackout_two_am-webfont',
-//   ),
-//   stack: font-family('code'),
-// );
+  $name: if($name, $name, ('body'));
+  $map: ();
 
-// @include tools.add-font('two-am', $two-am-font);
-// @include herman.herman-add('font', 'two-am', $two-am-font);
+  @each $var in $name {
+    $var: tools.get-token($_variants, $var);
+    $map: map.merge($map, $var);
+  }
 
-// Midnight Font
-// -------------
-/// @group config-fonts
-/// @font midnight
-$midnight-font: (
-  name: 'Blackout Midnight',
-  normal: (
-    woff2: 'blackout/blackout_midnight-webfont',
-    woff: 'blackout/blackout_midnight-webfont',
-  ),
-  stack: tools.font-family('code'),
-);
-
-@include tools.add-font('midnight', $midnight-font);
-@include herman.herman-add('font', 'midnight', $midnight-font);
-
-// Sunrise Font
-// ------------
-/// @group config-fonts
-/// @font sunrise
-$sunrise-font: (
-  name: 'Blackout Sunrise',
-  normal: (
-    woff2: 'blackout/blackout_sunrise-webfont',
-    woff: 'blackout/blackout_sunrise-webfont',
-  ),
-  stack: tools.font-family('code'),
-);
-
-@include tools.add-font('sunrise', $sunrise-font);
-@include herman.herman-add('font', 'sunrise', $sunrise-font);
+  @each $prop, $val in $map {
+    #{$prop}: #{$val};
+  }
+}

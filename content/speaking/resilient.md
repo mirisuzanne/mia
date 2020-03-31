@@ -3,7 +3,6 @@ type: workshop
 title: Resilient Web Systems
 sub:
 tags:
-  - speaking
   - workshop
   - code
   - sass
@@ -13,6 +12,7 @@ events:
     date: 2020-10-19
     end: 2020-10-21
     adr: New York
+    feature: true
   - venue: Smashing Conf Austin
     url: https://smashingconf.com/austin-2020/
     start: 2020-06-08

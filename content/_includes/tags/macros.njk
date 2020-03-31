@@ -4,17 +4,17 @@
 {% macro section(
   all
 ) %}
-  {% set section_title = [all | getTags(null) | list | length, 'tags'] | join(' ') %}
+  {% set section_title = [all | getTags | list | length, 'tags'] | join(' ') %}
   {% call cards.section(section_title) %}
     {% for segment in all | groupTags %}
       {%- set title -%}
-        {%- if segment.group != 'top' -%}~{%- endif -%}
         {{ segment.group }}
+        <span class="sr-only">tags</span>
       {%- endset -%}
 
       {{ group(
         title=title,
-        segment=segment.tags,
+        segment=segment.tags | sort(true, false, 'pages'),
         all=all
       ) }}
     {% endfor %}
@@ -43,7 +43,8 @@
   {% for tag in tags %}
     {{ show_tag(
       tag=tag,
-      all=all
+      all=all,
+      index=loop.index
     ) }}
   {% endfor %}
 {% endmacro %}
@@ -51,11 +52,14 @@
 
 {% macro show_tag(
   tag,
-  all
+  all,
+  index
 ) %}
+  {% set title = utility.tag_link(tag.tag, all) %}
   {{ cards.event(
-    title=utility.tag_link(tag.tag, all),
-    summary=tag_items(tag.tag, all)
+    name=[title, tag.pages] | join(' | '),
+    summary=tag_items(tag.tag, all),
+    index=index
   ) }}
 {% endmacro %}
 

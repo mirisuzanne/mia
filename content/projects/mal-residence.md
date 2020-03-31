@@ -10,7 +10,6 @@ hero:
   img: elo14/dancesex.jpg
   caption: Say "ooooooooo" while you dance
 tags:
-  - _calendar
   - writing
   - art
   - theater

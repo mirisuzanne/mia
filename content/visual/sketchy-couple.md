@@ -3,9 +3,6 @@ type: illustration
 title: Portrait of Sondra & Dan
 date: 2012-11-20
 tags:
-  - _calendar
-  - art
-  - visual
   - portrait
 gallery:
   - img: portraits/DanSondra-BW.png

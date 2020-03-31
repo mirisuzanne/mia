@@ -1,21 +1,21 @@
 @use '../config/patterns';
+@use '../config/fonts';
 @use '../../../node_modules/accoutrement/sass/tools';
 
 strong {
+  @include fonts.var('bold' 'fun');
   color: var(--text-highlight);
-  font-weight: normal;
-  font-style: normal;
 }
 
 .intro {
+  @include fonts.var('fun' 'italic');
   font-size: var(--font-large);
-  font-style: italic;
   margin-bottom: var(--double-gutter);
 
   em,
   i,
   b {
-    font-style: normal;
+    @include fonts.var('body');
   }
 }
 
@@ -30,12 +30,12 @@ strong {
   }
 
   h2 {
-    @include tools.font-family('midnight');
+    @include fonts.var('extra');
     font-size: var(--font-large);
   }
 
   h3 {
-    font-style: italic;
+    @include fonts.var('bold' 'fun');
   }
 
   p,
@@ -51,10 +51,11 @@ strong {
   }
 
   blockquote {
-    font-style: italic;
+    @include fonts.var('italic' 'fun');
     position: relative;
 
     @include tools.before('"') {
+      @include fonts.var('extra');
       color: var(--ccs-accent);
       margin-right: var(--shim);
       position: absolute;
@@ -75,8 +76,8 @@ strong {
     }
 
     cite {
+      @include fonts.var('body');
       font-size: var(--font-small);
-      font-style: normal;
     }
   }
 }
@@ -109,7 +110,14 @@ hr {
 pre,
 code,
 tt {
-  @include tools.font-family('code');
+  @include tools.font-family('mono');
+
+  @supports (font-variation-settings: normal) {
+    .fonts-loaded & {
+      @include tools.font-family('recursive');
+      @include fonts.var('code');
+    }
+  }
 }
 
 mark {
@@ -132,9 +140,9 @@ mark {
 }
 
 .section-title {
+  @include fonts.var('italic');
   color: var(--border);
   font-size: 1rem;
-  font-style: italic;
   margin: 0;
   padding: 0 var(--gutter) 0 var(--shim);
 }
@@ -145,6 +153,6 @@ mark {
 
 [data-typeset='script'] {
   strong {
-    @include tools.font-family('midnight');
+    @include fonts.var('extra' 'fun', false);
   }
 }

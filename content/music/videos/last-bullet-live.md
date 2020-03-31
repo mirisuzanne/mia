@@ -8,7 +8,7 @@ date: 2019-04-20
 tags:
   - _calendar
   - music
-  - _teacup gorilla
+  - teacup gorilla
   - music video
 video:
   - iframe: https://www.youtube.com/embed/tF2IoI9fHzs

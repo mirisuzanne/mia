@@ -6,12 +6,8 @@ venue: Westword
 hero:
   img: art/theater/10myths.jpg
 tags:
-  - _calendar
-  - _post
-  - _elsewhere
   - theater
   - writing
-  - interview
   - art
 ---
 

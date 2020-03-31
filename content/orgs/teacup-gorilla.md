@@ -8,12 +8,12 @@ hero:
 url: https://teacupgorilla.com/
 start: 2010-03-04
 end: ongoing
-index: _teacup gorilla
+index: teacup gorilla
 tags:
   - art
   - music
   - writing
-  - _teacup gorilla
+  - teacup gorilla
   - band
 press:
   - text: |

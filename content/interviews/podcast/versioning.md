@@ -6,11 +6,6 @@ date: 2016-10-13
 hero:
   img: 2016/versioning.png
 tags:
-  - _calendar
-  - _post
-  - _elsewhere
-  - interview
-  - podcast
   - code
   - sass
 summary: |

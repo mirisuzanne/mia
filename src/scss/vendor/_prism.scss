@@ -1,3 +1,5 @@
+@use '../config/fonts';
+
 /* stylelint-disable */
 
 /**
@@ -137,7 +139,7 @@ $code-color-punctuation: $code-color-fade !default;
 
     &.property,
     &.tag {
-      font-style: italic;
+      @include fonts.var('italic');
     }
 
     &.important,

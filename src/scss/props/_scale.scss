@@ -26,7 +26,7 @@ html {
   --font-smaller: 0.75em;
 
   --line-ratio--user-c: calc(1 + var(--line-ratio--user) / 10);
-  --line-ratio: var(--line-ratio--user-c, 1.4);
+  --line-ratio: var(--line-ratio--user-c, 1.5);
   --rhythm: calc(var(--line-ratio) * 1em);
 
   --page: 36rem;

@@ -1,5 +1,4 @@
-// Buttons
-// =======
+@use '../config/fonts';
 
 [data-label],
 [data-input] {
@@ -13,7 +12,7 @@
 
 [data-label] {
   font-size: var(--font-small);
-  font-style: italic;
+  @include fonts.var('italic');
 }
 
 [data-input] {
@@ -45,5 +44,5 @@
 }
 
 ::placeholder {
-  font-style: italic;
+  @include fonts.var('italic');
 }

@@ -9,9 +9,9 @@ start: 2009-08-14
 end: ongoing
 hero:
   img: /art/theater/jane/DSC_0362.jpg
-index: _grapefruit lab
+index: grapefruit lab
 tags:
-  - _grapefruit lab
+  - grapefruit lab
   - theater
   - writing
   - art

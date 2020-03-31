@@ -10,12 +10,11 @@ end: 2003-04-26
 adr: Ashland, OR
 hero:
   img: art/theater/osf-logo.jpg
-index: _oregon shakespeare
+index: oregon shakespeare
 tags:
-  - _oregon shakespeare
+  - oregon shakespeare
   - art
   - theater
-  - education
   - intern
 summary: |
   I worked on

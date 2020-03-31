@@ -4,12 +4,8 @@ sub: a ten minute play, and short film
 date: 2005-11-14
 type: script
 tags:
-  - _calendar
-  - theater
-  - art
   - writing
   - script
-  - film
 ---
 
 *(Two rocks in a driveway. They’ve been here a while)*

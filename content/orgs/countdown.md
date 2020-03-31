@@ -7,10 +7,9 @@ adr: Denver, CO
 url: http://countdowntozero.org/
 start: 2007-09-20
 end: 2010-01-14
-index: _countdown to zero
+index: countdown to zero
 tags:
-  - _calendar
-  - _countdown to zero
+  - countdown to zero
   - theater
   - art
   - ensemble

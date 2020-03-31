@@ -11,8 +11,8 @@ tags:
   - art
   - writing
   - music
-  - _grapefruit lab
-  - _teacup gorilla
+  - grapefruit lab
+  - teacup gorilla
 ---
 
 ## Gateshead Hall

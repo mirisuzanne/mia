@@ -1,11 +1,13 @@
 @use '../../../node_modules/accoutrement/sass/tools';
 @use '../config/actions';
-
-@include tools.import-webfonts;
+@use '../config/fonts';
 
 html {
-  @include tools.font-family('code');
+  @include fonts.var('body');
+  @include tools.font-family('static');
+  font-feature-settings: 'dlig' 1, 'liga' 1;
   font-size: var(--font-size);
+  font-synthesis: none;
   letter-spacing: var(--letter-spacing--user-em, 0);
   line-height: var(--line-ratio);
   max-width: 100vw;
@@ -13,6 +15,12 @@ html {
   overflow-x: hidden;
   scroll-snap-type: block;
   scroll-padding: var(--shim);
+}
+
+.fonts-loaded {
+  @supports (font-variation-settings: normal) {
+    @include tools.font-family('recursive');
+  }
 }
 
 h2,
@@ -40,8 +48,15 @@ summary {
   }
 }
 
-[data-hidden] {
-  @include tools.is-hidden;
+.sr-only {
+  &:not(:focus):not(:active) {
+    @include tools.is-hidden;
+  }
+}
+
+:focus {
+  outline: 2px dashed var(--ccs-accent);
+  outline-offset: var(--half-shim);
 }
 
 // Above/below

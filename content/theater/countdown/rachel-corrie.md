@@ -8,7 +8,7 @@ hero:
   img: art/theater/ctz/rachel.png
   alt: Silhouette sitting on a hill, beside a bullhorn
 tags:
-  - _countdown to zero
+  - countdown to zero
   - theater
   - art
   - ensemble

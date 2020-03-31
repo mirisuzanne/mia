@@ -7,8 +7,7 @@ venue: Buntport Theater
 date: 2015-09-24
 tags:
   - _calendar
-  - _teacup gorilla
-  - theater
+  - teacup gorilla
   - buntport
   - devising
   - music

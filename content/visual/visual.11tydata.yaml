@@ -1,0 +1,6 @@
+permalink: "/{{ page.date | getDate('url') }}/{{ page.fileSlug }}/index.html"
+calendar: visual
+tags:
+  - _calendar
+  - art
+  - visual

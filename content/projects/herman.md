@@ -7,9 +7,7 @@ date: 2015-11-18
 hero:
   img: projects/herman.jpg
 tags:
-  - _calendar
-  - _elsewhere
-  - _oddbird
+  - oddbird
   - code
   - open source
   - sass

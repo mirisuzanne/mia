@@ -4,10 +4,6 @@ date: 2015-11-15
 venue: Media Archeology Blog
 url: https://mediaarchaeologylab.com/blog/miriam-suzanne-ideas-process-obsolescence-iterative-interview-mel-hogan/
 tags:
-  - _calendar
-  - _post
-  - _elsewhere
-  - interview
   - art
   - writing
   - elit

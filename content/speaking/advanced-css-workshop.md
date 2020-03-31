@@ -4,7 +4,6 @@ title: Advanced CSS & Sass
 banner: Advanced CSS & Sass for Modern Applications
 sub: with practical use-cases, tooling, and pitfalls
 tags:
-  - speaking
   - workshop
   - code
   - sass

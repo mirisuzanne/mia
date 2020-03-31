@@ -131,6 +131,19 @@ const get = (collection, only, group = true) => {
   return events;
 };
 
+const recentEvents = (collection, group = true) => {
+  const year = time.getDate(time.now, 'yyyy') - 1;
+  const cutOff = time.getDate(
+    `${year}-${time.getDate(time.now, 'mm')}-${time.getDate(time.now, 'dd')}`,
+  );
+
+  const recent = fromCollection(collection)
+    .filter((event) => event.date > cutOff)
+    .slice(-25);
+
+  return group ? byGroup(recent) : recent;
+};
+
 module.exports = {
   isPublic,
   isEvent,
@@ -143,4 +156,5 @@ module.exports = {
   groupDate,
   startDate,
   endDate,
+  recentEvents,
 };

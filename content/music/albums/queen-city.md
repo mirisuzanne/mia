@@ -4,11 +4,6 @@ date: 2014-03-03
 venue: BandCamp
 url: https://ravenjane.bandcamp.com/
 tags:
-  - _calendar
-  - art
-  - music
-  - audio
-  - album
   - raven jane
 album:
   - iframe: https://bandcamp.com/EmbeddedPlayer/album=242379306/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/

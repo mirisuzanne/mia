@@ -6,11 +6,6 @@ url: https://ironcity.bandcamp.com/album/iron-city
 hero:
   img: art/music/iron-city.jpg
 tags:
-  - _calendar
-  - art
-  - music
-  - audio
-  - album
   - raven jane
 album:
   - iframe: https://bandcamp.com/EmbeddedPlayer/album=2816247102/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/

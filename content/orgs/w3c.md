@@ -5,11 +5,11 @@ org: Invited Expert
 url: https://css-tricks.com/author/miriam/
 start: 2020-03-01
 end: ongoing
-index: _w3c
+index: w3c
 hero:
   svg: w3c.svg
 tags:
-  - _w3c
+  - w3c
   - code
   - open source
 summary: |

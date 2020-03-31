@@ -5,13 +5,9 @@ hero:
   img: 2016/resistence.jpg
 index: _resistance tour
 tags:
-  - _calendar
-  - _post
   - speaking
-  - writing
   - riding sidesaddle
   - art
-  - journal
   - code
   - tour
 events:

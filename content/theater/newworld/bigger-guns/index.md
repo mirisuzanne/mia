@@ -5,9 +5,6 @@ start: 2007-04-20
 end: 2007-04-28
 tags:
   - _calendar
-  - _new world
-  - art
-  - theater
   - directing
 press:
   - title: Lights, No Cameras, Plenty of Action
@@ -20,3 +17,5 @@ summary: |
   inspired by the movies,
   and created by our ensemble.
 ---
+
+[Read the script »](script/)

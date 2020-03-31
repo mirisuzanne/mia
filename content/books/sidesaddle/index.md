@@ -12,10 +12,6 @@ hero:
 index: riding sidesaddle
 tags:
   - _calendar
-  - riding sidesaddle
-  - art
-  - writing
-  - book
 events:
   - title: Queer Art
     type: reading
@@ -57,7 +53,7 @@ events:
       - Aaron & Jacob Liechty
     tags:
       - music
-      - _teacup gorilla
+      - teacup gorilla
 press:
   - text: |
       This feels more realistic than any other novel could hope to be:

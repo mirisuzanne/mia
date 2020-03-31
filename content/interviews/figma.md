@@ -6,11 +6,7 @@ venue: Figma Design
 hero:
   img: 2017/figma.png
 tags:
-  - _calendar
-  - _post
-  - _elsewhere
   - design
-  - interview
   - code
 ---
 

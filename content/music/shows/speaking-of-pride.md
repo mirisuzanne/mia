@@ -5,7 +5,6 @@ date: 2018-06-09
 adr: Denver, CO
 url: http://playgroundensemble.org/2018/05/speaking-of-pride/
 tags:
-  - music
   - writing
   - transition
 events:

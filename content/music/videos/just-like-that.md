@@ -9,7 +9,7 @@ hero:
   img: art/music/just-like-that.jpg
 tags:
   - _calendar
-  - _teacup gorilla
+  - teacup gorilla
   - music
   - music video
   - film

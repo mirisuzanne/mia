@@ -7,10 +7,8 @@ hero:
   img: huck.jpg
   caption: Riding SideSaddle* art installation
 tags:
-  - writing
-  - art
-  - riding sidesaddle
   - visual
+  - book design
 events:
   - venue: Buntport Theater
     adr: Denver, CO

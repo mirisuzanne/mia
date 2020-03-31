@@ -7,11 +7,6 @@ url: https://soundcloud.com/dirt-circle-dogs/sets/kingdom-come
 hero:
   img: art/music/kingdom-come.png
 tags:
-  - _calendar
-  - art
-  - music
-  - album
-  - audio
   - dirt circle dogs
 press:
   - text: |

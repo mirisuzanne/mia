@@ -4,9 +4,6 @@ start: 2006-11-25
 end: 2006-12-04
 tags:
   - _calendar
-  - _new world
-  - art
-  - theater
   - directing
 press:
   - text: |

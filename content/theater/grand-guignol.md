@@ -6,9 +6,7 @@ date: 2016-08-18
 end: 2016-08-27
 tags:
   - _calendar
-  - theater
-  - art
-  - _teacup gorilla
+  - teacup gorilla
   - music
 ---
 

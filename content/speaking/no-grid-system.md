@@ -5,7 +5,6 @@ slides: https://talks.oddbird.net/no-grid-system/
 hero:
   img: talks/devconf-best.jpg
 tags:
-  - speaking
   - code
   - susy
   - layout

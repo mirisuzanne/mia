@@ -1,7 +1,7 @@
 @use '../../../node_modules/accoutrement/sass/tools';
+@use 'fonts';
 
 @mixin fancy-text {
-  /* stylelint-disable */
   color: var(--text-highlight);
 
   @supports (background-clip: text) {
@@ -13,13 +13,12 @@
     text-shadow: none;
     @content;
   }
-  /* stylelint-enable */
 }
 
 @mixin divide($position: 'before') {
   &::#{$position} {
     @include fancy-text;
-    @include tools.font-family('midnight');
+    @include fonts.var('body' 'light');
     content: '~ & & & ~';
     display: block;
     font-size: var(--font-large);

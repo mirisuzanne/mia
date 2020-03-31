@@ -8,10 +8,6 @@ hero:
   img: writing/sidesaddle/box.jpg
   caption: A novel on 250 note-cards
 tags:
-  - _calendar
-  - _post
-  - _elsewhere
-  - interview
   - art
   - writing
   - riding sidesaddle

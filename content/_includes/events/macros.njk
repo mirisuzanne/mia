@@ -7,8 +7,7 @@
   collections,
   page
 ) %}
-  {% set title = 'episodes' %}
-  {% set filter = none %}
+  {% set section_title = 'episodes' %}
   {% set org_title = 'current orgs' %}
   {% set page = collections.all | getPage(page) %}
   {% set events = page | getEvents %}
@@ -17,14 +16,16 @@
 
   {% if events_group == 'all' %}
     {% set events = collections.all | getEvents %}
-    {% set filter = 'off' %}
+  {% elif events_group == 'recent' %}
+    {% set events = collections.all | recentEvents %}
+    {% set section_title = 'recent & upcoming episodes' %}
   {% elif all_orgs %}
     {% set org_title = 'org history' %}
     {% set events_group = 'all' %}
     {% set events = none %}
   {% elif events_group and (events_group != 'self') %}
     {% set tag_name = events_group | displayName %}
-    {% set title %}
+    {% set section_title %}
       '{{ tag_name }}' episodes
     {% endset %}
     {% set org_title %}
@@ -43,19 +44,29 @@
   {% endif %}
 
   {% if events %}
+    {% set section_title = [events | countEvents, section_title] | join(' ') %}
+
     {{ section(
-      title=title,
+      section_title=section_title,
       events=events,
       all=collections,
-      self=page.url,
-      filter=filter
+      self=page.url
+    ) }}
+  {% endif %}
+
+  {% if events_group == 'recent' %}
+    {% set all_events = collections.all | getEvents %}
+    {{ utility.link_if(
+      ['See all', all_events | countEvents, 'episodes'] | join(' '),
+      '/everything/',
+      'everything-link'
     ) }}
   {% endif %}
 {% endmacro %}
 
 
 {% macro show_orgs(
-  title,
+  org_title,
   events_group,
   collections,
   all=false
@@ -68,26 +79,28 @@
       <section
         data-orgs="section">
 
-        {{ utility.section_title(title) }}
+        {{ utility.section_title(org_title) }}
 
         <div data-orgs="list">
           {% for item in orgs %}
             {% set start = item.data.start | getDate('yyyy') %}
-            {% set title = item.data.banner or item.data.title %}
+            {% set org_title = item.data.banner or item.data.title %}
             {% set is_old = item.data.end and (item.data.end != 'ongoing') %}
             {% set end = item.data.end | getDate('yyyy') if is_old else none %}
             {% set end = end if end and (end != start) %}
-            {% set range = '->' if end or (not is_old) %}
+            {% set range = '→' if end or (not is_old) %}
+            {% set id = ['orgs', loop.index] | join('-') %}
             <article
               data-orgs="item"
+              aria-labelledby="{{ id }}"
               {{ utility.attr_if('data-old', is_old) }}>
               <time
                 data-meta="org-date"
                 datetime="{{ item.data.start | getDate('iso') }}">
                 {{ start }}{{ range }}{{ end or '' }}
               </time>
-              <h3 data-title="orgs">
-                {{ utility.link_if(title, item.url) }}
+              <h3 data-title="orgs" id="{{ id }}">
+                {{ utility.link_if(org_title, item.url) }}
               </h3>
               {% if item.data.sub %}
                 <p data-meta="org-sub">
@@ -105,18 +118,15 @@
 
 
 {% macro section(
-  title,
+  section_title,
   events,
   all,
-  self,
-  filter=none
+  self
 ) %}
-  {% set title = [events | countEvents, title] | join(' ') %}
   {% if events | length %}
     {{ cards.section(
-      title,
-      content=groups(events, all, self),
-      filter=filter
+      section_title,
+      content=groups(events, all, self)
     ) }}
   {% endif %}
 {% endmacro %}
@@ -135,7 +145,7 @@
     {% endif %}
 
     {{ group(
-      title=segment.group,
+      group_title=segment.group,
       events=segment.data,
       all=all,
       self=self
@@ -145,16 +155,16 @@
 
 
 {% macro group(
-  title,
+  group_title,
   events,
   all,
   self
 ) %}
-  {% set is_future = title | groupName %}
+  {% set is_future = group_title | groupName %}
   {% set events = events | reverse if (not is_future) else events %}
 
   {{ cards.group(
-    title=title,
+    title=group_title,
     content=list(events, all, self)
   ) }}
 {% endmacro %}
@@ -166,7 +176,7 @@
   self
 ) %}
   {% for item in events %}
-    {{ event(item, all, self) }}
+    {{ event(item, all, self, loop.index) }}
   {% endfor %}
 {% endmacro %}
 
@@ -174,28 +184,40 @@
 {% macro event(
   item,
   all,
-  self
+  self,
+  index=0
 ) %}
   {%- set tags = item.tags | publicTags -%}
   {%- set not_me = ('inspiration' in tags) -%}
   {%- set is_self = (item.page.url == self) -%}
-  {%- set is_old = item.index -%}
+  {%- set is_old = item.index if item.group < 3000 else false -%}
   {%- set hide_summary = (is_self or is_old) and not item.feature -%}
+
+  {% set name = get_title(item, is_self) %}
 
   {%- set summary = (item.page.data.summary or item.event.sub or item.page.data.sub) -%}
   {%- set summary = summary | md if (summary and not hide_summary) else none -%}
 
+  {% set cancel = item.page.data.cancel or item.event.cancel %}
+  {% if cancel %}
+    {% set name %}<s>{{ name | safe }}</s>{% endset %}
+    {% set message = item.page.data.message[cancel] %}
+    {% set summary = message | md if message else summary %}
+    {% set is_old = true %}
+  {% endif %}
+
   {{ cards.event(
-    title=title(item, is_self),
+    name=name,
     meta=meta(item, tags, all, not_me),
     summary=summary,
     feature=item.feature,
-    is_old=is_old
+    is_old=is_old,
+    index=index
   ) }}
 {% endmacro %}
 
 
-{% macro title(
+{% macro get_title(
   item,
   is_self=false
 ) %}
@@ -209,9 +231,9 @@
   {%- set title_name = item.event.title or item.page.data.title -%}
   {%- set url = none if is_self else item.page.url -%}
   {%- set url = (url or venue_url) if (not venue) else url -%}
-  {%- set title = utility.link_if(title_name | mdInline, url) -%}
+  {%- set full_title = utility.link_if(title_name | mdInline, url) -%}
 
-  {{ title | safe }}
+  {{ full_title | safe }}
   {{ venue | safe }}
 {% endmacro %}
 

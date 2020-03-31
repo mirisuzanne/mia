@@ -1,0 +1,7 @@
+permalink: /{{ page.date | getDate('url') }}/{{ page.fileSlug }}/index.html
+type: article
+calendar: _post
+tags:
+  - _post
+  - _calendar
+  - writing

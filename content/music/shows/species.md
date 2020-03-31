@@ -4,9 +4,7 @@ sub: concert & live stream
 type: music video
 date: 2015-07-10
 tags:
-  - art
-  - music
-  - _teacup gorilla
+  - teacup gorilla
 events:
   - url: /2015/07/02/species/
     venue: The Bakery

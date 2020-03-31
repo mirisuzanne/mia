@@ -1,4 +1,5 @@
 @use '../../../node_modules/accoutrement/sass/tools';
+@use '../config/fonts';
 
 [data-orgs='section'] {
   grid-row-gap: var(--gutter);
@@ -11,7 +12,7 @@
   grid-gap: var(--gutter);
   padding: 0 var(--gutter);
 
-  @include tools.above('page') {
+  @include tools.above('medium') {
     grid-template: 'date title' auto '. sub' auto / 1fr 1fr;
   }
 }
@@ -41,6 +42,6 @@
 }
 
 [data-meta='org-sub'] {
-  font-style: italic;
+  @include fonts.var('italic');
   grid-area: sub;
 }

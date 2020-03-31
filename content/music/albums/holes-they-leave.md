@@ -8,12 +8,7 @@ url: http://teacupgorilla.bandcamp.com/album/the-holes-they-leave
 hero:
   img: art/music/thtl.jpg
 tags:
-  - _calendar
-  - art
-  - music
-  - album
-  - audio
-  - _teacup gorilla
+  - teacup gorilla
 events:
   - title: EP Release Party
     url: http://www.hi-dive.com/event/864133-teacup-gorilla-denver/
