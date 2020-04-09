@@ -43,17 +43,23 @@
 
 	<body
 		data-layout="body">
-		<a href="#title" class="skiplink">Skip to content</a>
+		<a href="#title" class="skiplink">Main content</a>
 
 		<ul
 			data-layout="menu"
-			aria-label="Adjust Colors & Typography">
+			aria-label="Adjust Colors & Typography" hidden>
 			<li aria-labelledby="menu-color">{% include 'site/ccs.njk' %}</li>
 			<li aria-labelledby="menu-type">{% include 'site/type.njk' %}</li>
 		</ul>
 
 		{% include 'site/nav.njk' %}
-		{% include 'site/fancy.njk' %}
+		{# {% include 'site/fancy.njk' %} #}
+
+		<p>
+			<strong>Where are all the styles?!</strong>
+			<a href="https://css-naked-day.github.io/">Learn more!</a>
+		</p>
+
 		{% include 'site/banner.njk' %}
 
 		<main
@@ -66,7 +72,9 @@
 
 		{% include 'site/footer.njk' %}
 
-		<script type="text/javascript" src="/assets/js/scripts.js"></script>
+		{% for script in site.scripts %}
+			<script type="text/javascript" src="/assets/js/{{ script }}"></script>
+		{% endfor %}
 
 		<!-- Current page: {{ page.url | url }} -->
 	</body>
