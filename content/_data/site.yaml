@@ -23,7 +23,7 @@ themes:
   - monochrome
   - contrast
 feed: feed.xml
-styles: []
-  # - screen.css
-scripts: []
-  # - scripts.js
+styles:
+  - screen.css
+scripts:
+  - scripts.js

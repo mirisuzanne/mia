@@ -3,79 +3,73 @@
 {%- import 'events/macros.njk' as cal -%}
 <!doctype html>
 <html lang="en" data-ccs="root" data-ccs-theme="{{ site.themes[0] }}" data-ccs-colors>
-	{%- set desc = sub or summary or content or '' -%}
-	{%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') -%}
-	{%- set meta_desc = description or desc or site.description -%}
-	{%- set full_title = banner or title -%}
-	{%- set full_title = show.tag_title(collections) if (full_title == 'show_tags') else full_title | mdInline(false) -%}
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport"
+  {%- set desc = sub or summary or content or '' -%}
+  {%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') -%}
+  {%- set meta_desc = description or desc or site.description -%}
+  {%- set full_title = banner or title -%}
+  {%- set full_title = show.tag_title(collections) if (full_title == 'show_tags') else full_title | mdInline(false) -%}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
       content="width=device-width, initial-scale=1.0" />
 
     <title>{{ [title, site.title] | join(' | ') }}</title>
     <meta name="description"
       content="{{ meta_desc }}" />
 
-		{% set elsewhere = 'elsewhere' in (tags or []) %}
-		{% set canon = url if elsewhere else page.url | absoluteUrl(site.url) %}
-		<link rel="canonical"
-			href="{{ canon | url }}">
+    {% set elsewhere = 'elsewhere' in (tags or []) %}
+    {% set canon = url if elsewhere else page.url | absoluteUrl(site.url) %}
+    <link rel="canonical"
+      href="{{ canon | url }}">
 
-		<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  	<link rel="preload" href="/assets/fonts/Recursive_VF_1.043--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="/assets/fonts/Recursive_VF_1.043--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin>
 
-		{% for url in site.styles %}
-			<link rel="stylesheet"
-				href="/assets/css/{{ url }}" />
-		{% endfor %}
+    {% for url in site.styles %}
+      <link rel="stylesheet"
+        href="/assets/css/{{ url }}" />
+    {% endfor %}
 
-		<script type="text/javascript" src="/assets/js/fonts.js"></script>
+    <script type="text/javascript" src="/assets/js/fonts.js"></script>
 
-		{% for url in extra_styles %}
-			<link rel="stylesheet"
-				href="/assets/css/{{ url }}" />
-		{% endfor %}
+    {% for url in extra_styles %}
+      <link rel="stylesheet"
+        href="/assets/css/{{ url }}" />
+    {% endfor %}
 
     {% include 'site/og.njk' %}
     {% include 'site/feed.njk' %}
-	</head>
+  </head>
 
-	<body
-		data-layout="body">
-		<a href="#title" class="skiplink">Main content</a>
+  <body
+    data-layout="body">
+    <a href="#title" class="skiplink">Main content</a>
 
-		<ul
-			data-layout="menu"
-			aria-label="Adjust Colors & Typography" hidden>
-			<li aria-labelledby="menu-color">{% include 'site/ccs.njk' %}</li>
-			<li aria-labelledby="menu-type">{% include 'site/type.njk' %}</li>
-		</ul>
+    <ul
+      data-layout="menu"
+      aria-label="Adjust Colors & Typography">
+      <li aria-labelledby="menu-color">{% include 'site/ccs.njk' %}</li>
+      <li aria-labelledby="menu-type">{% include 'site/type.njk' %}</li>
+    </ul>
 
-		{% include 'site/nav.njk' %}
-		{# {% include 'site/fancy.njk' %} #}
+    {% include 'site/nav.njk' %}
+    {% include 'site/fancy.njk' %}
+    {% include 'site/banner.njk' %}
 
-		<p>
-			<strong>Where are all the styles?!</strong>
-			<a href="https://css-naked-day.github.io/">Learn more!</a>
-		</p>
+    <main
+      id="main"
+      aria-labelledby="title"
+      data-layout="main">
+      {% include 'site/page.njk' %}
+      {% include 'site/calendar.njk' %}
+    </main>
 
-		{% include 'site/banner.njk' %}
+    {% include 'site/footer.njk' %}
 
-		<main
-	    id="main"
-			aria-labelledby="title"
-			data-layout="main">
-			{% include 'site/page.njk' %}
-			{% include 'site/calendar.njk' %}
-		</main>
+    {% for script in site.scripts %}
+      <script type="text/javascript" src="/assets/js/{{ script }}"></script>
+    {% endfor %}
 
-		{% include 'site/footer.njk' %}
-
-		{% for script in site.scripts %}
-			<script type="text/javascript" src="/assets/js/{{ script }}"></script>
-		{% endfor %}
-
-		<!-- Current page: {{ page.url | url }} -->
-	</body>
+    <!-- Current page: {{ page.url | url }} -->
+  </body>
 </html>
