@@ -10,7 +10,10 @@ events:
   - venue: Smashing Conf NY
     url: https://smashingconf.com/ny-2020/
     date: 2020-10-19
-    end: 2020-10-21
+    adr: New York
+  - venue: Smashing Conf Austin
+    url: https://smashingconf.com/austin-2020/
+    date: 2020-10-12
     adr: New York
   - venue: Smashing Online Workshops
     url: https://smashingconf.com/online-workshops/workshops/miriam-suzanne
