@@ -1,7 +1,8 @@
+@use '../../../node_modules/accoutrement/sass/tools';
+
 [data-layout='menu'] {
   background: var(--ccs--bg-full);
   display: flex;
-  font-size: var(--font-small);
   grid-area: menu;
   margin: 0;
   padding: 0;
@@ -14,6 +15,10 @@
   input,
   select {
     width: 100%;
+  }
+
+  @include tools.above('page') {
+    font-size: var(--font-small);
   }
 }
 

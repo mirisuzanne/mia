@@ -1,3 +1,4 @@
+@use '../../../node_modules/accoutrement/sass/tools';
 @use '../config/actions';
 
 [data-layout='nav'] {
@@ -5,12 +6,16 @@
   background: var(--overlay);
   backdrop-filter: blur(var(--shim));
   display: grid;
-  font-size: var(--font-small);
-  grid: 'nav search' auto / minmax(max-content, 1fr) minmax(3em, 16em);
+  grid: 'nav' auto 'search' auto / auto;
   grid-area: nav;
-  grid-column-gap: var(--gutter);
+  grid-gap: var(--gutter);
   padding: var(--shim) var(--gutter);
   z-index: 2;
+
+  @include tools.above('page') {
+    font-size: var(--font-small);
+    grid: 'nav search' auto / minmax(max-content, 1fr) minmax(3em, 16em);
+  }
 }
 
 // Site Nav
@@ -51,8 +56,11 @@
 [data-form='search'] {
   --field-margin: 0;
   grid-area: search;
-  justify-self: end;
   position: relative;
+
+  @include tools.above('page') {
+    justify-self: end;
+  }
 }
 
 [aria-expanded='false'] {

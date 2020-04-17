@@ -43,6 +43,10 @@
   min-height: calc(var(--gutter) * 8);
 }
 
+select {
+  font: inherit;
+}
+
 ::placeholder {
   @include fonts.var('italic');
 }

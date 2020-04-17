@@ -248,7 +248,7 @@
     pubdate=item.page.data.pubdate or item.page.date,
     start=item.start,
     end=item.end,
-    format='short' if (item.group | groupName == 'soon') else 'md'
+    format='short' if (item.group | groupName == 'future') else 'md'
   ) }}
 
   {%- set type = 'link' if not_me else none -%}

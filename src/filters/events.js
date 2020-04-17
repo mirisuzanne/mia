@@ -12,8 +12,8 @@ const groupNames = {
   now: 5000,
   4000: 'ongoing',
   ongoing: 4000,
-  3000: 'soon',
-  soon: 3000,
+  3000: 'future',
+  future: 3000,
 };
 
 const groupDate = (date) =>
@@ -54,7 +54,7 @@ const buildEvent = (page, event, index) => {
     if (groupNames[endYear]) {
       group = endYear;
     } else {
-      group = start_iso > now_iso ? groupNames.soon : groupNames.now;
+      group = start_iso > now_iso ? groupNames.future : groupNames.now;
     }
   }
 
