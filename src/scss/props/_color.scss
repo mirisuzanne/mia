@@ -43,6 +43,14 @@
   --ccs-custom-hue: none;
 }
 
+[data-ccs-theme='Black Lives Matter'] {
+  --ccs-h--prime: 53;
+  --ccs-h--accent: 53;
+  --ccs-s: 96.6%;
+  --ccs-custom-hue: none;
+  --ccs-custom-saturation: none;
+}
+
 [data-ccs-theme='today'] {
   --ccs-h--prime: calc(
     var(--ccs-mode--zero) * #{random(360)} + var(--ccs-invert--zero) * #{random(
