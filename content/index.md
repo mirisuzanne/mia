@@ -11,9 +11,8 @@ calendar: recent
 #   of human experience.
 summary: |
   **Black Lives Matter** --- \
-  If we only pay attention when buildings burn,
-  we're the reason buildings are burning.
-  Please
-  donate to [bail funds](https://docs.google.com/document/d/1X4-YS3vFn5CLL9QtJSU0xqmTh_h8XilXgOqGAjZISBI/preview?pru=AAABcpAq8jU*3bO4MKBXe0MAn7-qYmIYMQ) &
-  [Black-led organizations](http://mendozao.github.io/Resource-Generation-Map/app/index.html).
+  Black trans women are the target of racist violence
+  more consistently than any other community,
+  and have always been leaders in both Black & queer movements.
+  [Support Black trans organizations.](https://docs.google.com/document/d/10M1ZuGcRPMYMNxOfT7b5t-X4R1wsfkVnRGOUXw3sHTw/edit)
 ---

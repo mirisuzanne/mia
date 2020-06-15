@@ -1,4 +1,7 @@
 url: https://www.miriamsuzanne.com/
+source:
+  repo: https://github.com/mirisuzanne/mia/
+  branch: tree/main/
 author: &author Miriam Eric Suzanne
 title: *author
 description: Art, writing, and code from Miriam Suzanne

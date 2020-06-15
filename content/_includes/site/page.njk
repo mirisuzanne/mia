@@ -8,15 +8,22 @@
     {% include 'site/hero.njk' %}
     {% include 'site/page-meta.njk' %}
 
+    {% if draft %}
+      <p>
+        <a href="{{ site.source.repo }}{{ site.source.branch }}{{ page.inputPath | replace('./', '') }}">
+          Draft Source
+        </a>
+      </p>
+    {% endif %}
+
     {% if summary %}
       <div class='intro'>
         {{ summary | md | safe }}
 
         {% if elsewhere %}
           <p>
-            <a rel="bookmark"
-              href="{{ url }}">
-              View on {{ venue }} »
+            <a rel="bookmark" href="{{ url }}">
+              View on {{ venue }}
             </a>
           </p>
         {% endif %}
