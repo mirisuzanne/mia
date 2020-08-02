@@ -2,9 +2,18 @@
 @use '../config/fonts';
 @use '../../../node_modules/accoutrement/sass/tools';
 
+b,
 strong {
   @include fonts.var('bold' 'fun');
   color: var(--text-highlight);
+}
+
+i,
+cite,
+em,
+var,
+dfn {
+  @include fonts.var('italic');
 }
 
 .intro {
