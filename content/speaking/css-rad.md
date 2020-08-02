@@ -11,11 +11,11 @@ hero:
 tags:
   - code
 events:
-  - venue: Smashing Conf Austin
-    url: https://smashingconf.com/austin-2020/
-    start: 2020-10-13
-    end: 2020-10-14
-    adr: Austin, TX
+  - venue: SmashingConf Live
+    url: https://smashingconf.com/live/
+    date: 2020-08-20
+    end: 2020-08-21
+    adr: Online
   - venue: Front Range Front End
     url: https://www.meetup.com/front-range-front-end/events/bxrfwqyzpbkb/
     date: 2019-11-07

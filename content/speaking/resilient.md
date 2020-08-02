@@ -7,25 +7,11 @@ tags:
   - code
   - sass
 events:
-  - venue: Smashing Conf NY
-    url: https://smashingconf.com/ny-2020/
-    date: 2020-10-19
-    adr: New York
-  - venue: Smashing Conf Austin
-    url: https://smashingconf.com/austin-2020/
-    date: 2020-10-12
-    adr: New York
-  - venue: Smashing Online Workshops
+  - venue: Smashing Workshops
     url: https://smashingconf.com/online-workshops/workshops/miriam-suzanne
-    start: 2020-05-07
+    date: 2020-05-07
     end: 2020-05-22
-    adr: smashingconf.com
-    feature: true
-  - title: Advanced CSS & Sass
-    venue: Webconf.asia
-    url: https://2019.webconf.asia/
-    adr: Hong Kong
-    start: 2020-08-27
+    adr: Online
   - title: Advanced CSS & Sass
     venue: Generate New York
     url: https://www.generateconf.com/
