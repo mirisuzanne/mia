@@ -9,8 +9,7 @@ tags:
   - productivity
   - SuperYesMore
 hero:
-  img: blog/2017/neck.jpg
-  alt: Mechanical neck drawing
+  img: 2017/neck.jpg
 summary: |
   A reflection on the nature and value of productivity for the
   SuperYesMore series: *The Human in the Machine*.
