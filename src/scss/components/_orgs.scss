@@ -7,13 +7,14 @@
 }
 
 [data-orgs='list'] {
+  --template: 'date title' auto 'sub sub' auto / auto 1fr;
   display: grid;
-  grid-template: 'date title' auto 'sub sub' auto / auto 1fr;
+  grid-template: var(--template);
   grid-gap: var(--gutter);
   padding: 0 var(--gutter);
 
   @include tools.above('medium') {
-    grid-template: 'date title' auto '. sub' auto / 1fr 1fr;
+    --template: 'date title' auto '. sub' auto / 1fr 1fr;
   }
 }
 
@@ -21,7 +22,7 @@
   align-items: baseline;
   display: grid;
   grid-column: 1 / -1;
-  grid-template: inherit;
+  grid-template: var(--template);
   grid-template: subgrid;
   grid-column-gap: var(--shim);
 }
