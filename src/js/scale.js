@@ -84,7 +84,7 @@ export default function() {
   Object.keys(selectElements).forEach((type) => {
     if (selectElements[type]) {
       document.onload = initValue(type);
-      selectElements[type].addEventListener('input', () =>
+      selectElements[type].addEventListener('change', () =>
         setValue(type, selectElements[type].value),
       );
     }
