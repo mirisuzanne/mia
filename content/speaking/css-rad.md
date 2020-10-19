@@ -11,6 +11,14 @@ hero:
 tags:
   - code
 events:
+  - venue: Design 4 Drupal Webinar Series
+    url: https://design4drupal.org/webinar-series
+    date: 2020-09-09
+    adr: Online
+    slides: https://slides.oddbird.net/rad/design4drupal/
+    video: https://youtu.be/JTzYGWYjQdg
+    media: &d4d
+      iframe: https://www.youtube.com/embed/JTzYGWYjQdg
   - venue: SmashingConf Live
     url: https://smashingconf.com/live/
     date: 2020-08-20
@@ -46,6 +54,8 @@ summary: |
   but how can we possibly design for that
   unknown and always-changing canvas?
 media:
+  - <<: *d4d
+    span: full
   - <<: *smashing
   - <<: *frfe
 ---

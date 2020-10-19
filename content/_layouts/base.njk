@@ -2,7 +2,7 @@
 {%- import 'site/macros.njk' as show -%}
 {%- import 'events/macros.njk' as cal -%}
 <!doctype html>
-<html lang="en" data-ccs="root" data-ccs-theme="{{ site.themes[0] }}" data-ccs-colors>
+<html lang="en" data-ccs="root" data-ccs-theme="{{ ccs.themes[0] }}" data-ccs-colors>
   {%- set desc = sub or summary or content or '' -%}
   {%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') -%}
   {%- set meta_desc = description or desc or site.description -%}

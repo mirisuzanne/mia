@@ -1,3 +1,4 @@
+@use '../../../node_modules/accoutrement/sass/tools';
 @use '../config/actions';
 
 [data-dropdown] {
@@ -23,6 +24,17 @@
 
   &[aria-expanded='true'],
   summary + & {
+    display: block;
+  }
+}
+
+[open] summary {
+  @include tools.z-index('dropdown');
+
+  @include tools.before('') {
+    @include tools.position(0 fixed);
+    @include tools.z-index('bump');
+    cursor: default;
     display: block;
   }
 }

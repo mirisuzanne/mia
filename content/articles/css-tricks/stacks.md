@@ -1,4 +1,5 @@
 ---
+feature: true
 title: Custom Property “Stacks"
 canonical: https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/
 date: 2020-06-22

@@ -1960,7 +1960,7 @@ caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001111:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001117.tgz#69a9fae5d480eaa9589f7641a83842ad396d17c4"
   integrity sha512-4tY0Fatzdx59kYjQs+bNxUwZB03ZEBgVmJ1UkFPz/Q8OLiUUbjct2EdpnXj0fvFTPej2EkbPIG0w8BWsjAyk1Q==
 
-cascading-color-systems@^0.1.0-beta.11:
+cascading-color-systems@^0.1.0-beta.14:
   version "0.1.0-beta.14"
   resolved "https://registry.yarnpkg.com/cascading-color-systems/-/cascading-color-systems-0.1.0-beta.14.tgz#d8dfde3de0279059ca595e73a80db8fb38f54540"
   integrity sha512-tXTAsmOyIoiDjFnk7hxkZyLf5N/owyV1Uy5w1JoIThnbQo6+NYYh0MqE3P6xCASW8dGTstf9A8OaDbZpP1Ya0w==

@@ -17,14 +17,6 @@ og:
   locale: en_US
   type: website
   img: headshots/mia-smirk.jpg
-themes:
-  - mia
-  - today
-  - complement
-  - adjacent
-  - triad
-  - monochrome
-  - contrast
 feed: feed.xml
 styles:
   - screen.css

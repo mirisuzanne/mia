@@ -1,52 +1,83 @@
+{% import 'forms.macros.njk' as forms %}
+
 <details data-ccs="menu" hidden>
   <summary class="menu-item" id="menu-color">colors</summary>
   <div data-dropdown="pad">
-    <div class="color-btns">
-      <button
-        data-ccs-input="mode"
-        data-btn="small"
-        type="button">
-        invert
-      </button>
-      <button
-        data-ccs-input="unset"
-        data-btn="small"
-        type="button"
-        hidden>
-        reset
-      </button>
-    </div>
 
-    <label data-field for="theme" data-ccs-field="theme">
-      <span data-label>theme:</span>
-      <select data-ccs-input="theme"
-        name="theme" id="theme">
-        {% for theme in site.themes %}
-          <option value="{{ theme }}" {{ 'selected' if loop.first }}>
-            {{ theme }}
-          </option>
-        {% endfor %}
-      </select>
-    </label>
-    <label data-field for="hue" data-ccs-field="hue">
-      <span data-label>hue:</span>
-      <input data-ccs-input="hue"
-        id="hue" type="range" min="0" max="360" value="330">
-    </label>
-    <label data-field for="sat" data-ccs-field="saturation">
-      <span data-label>saturation:</span>
-      <input data-ccs-input="saturation"
-        id="saturation" type="range" min="0" max="100" value="80">
-    </label>
-    <label data-field for="light" data-ccs-field="lightness">
-      <span data-label>lightness:</span>
-      <input data-ccs-input="lightness"
-        id="lightness" type="range" min="25" max="75" value="50">
-    </label>
-    <label data-field for="contrast" data-ccs-field="contrast">
-      <span data-label>contrast:</span>
-      <input data-ccs-input="contrast"
-        id="contrast" type="range" min="25" max="150" value="45">
-    </label>
+    {% call forms.fieldset(
+      legend='Color Mode',
+      name='ccs-modes',
+      attrs={'data-radio': 'group'}
+    ) %}
+      {% for mode in ['light', 'dark', 'auto'] %}
+        {{ forms.radio(
+          label=mode,
+          id=[mode, 'mode'] | join('-'),
+          group='ccs-modes',
+          attrs={'data-ccs-colors': true if (mode == 'auto') else mode},
+          input_attrs={
+            'data-ccs-input': [mode, 'mode'] | join('-'),
+            'checked': true if (mode == 'auto') else false
+          }
+        ) }}
+      {% endfor %}
+    {% endcall %}
+
+    {{ forms.field(
+      label='Theme',
+      type='select',
+      options=ccs.themes,
+      field_attrs={'data-ccs-field': 'theme'},
+      input_attrs={'data-ccs-input': 'theme unset-values'}
+    ) }}
+
+    {{ forms.field(
+      label='Hue',
+      type='range',
+      field_attrs={'data-ccs-field': 'hue'},
+      input_attrs={
+        'data-ccs-input': 'hue',
+        'min': 0,
+        'max': 360,
+        'value': ccs.hue
+      }
+    ) }}
+
+    {{ forms.field(
+      label='Saturation',
+      type='range',
+      field_attrs={'data-ccs-field': 'saturation'},
+      input_attrs={
+        'data-ccs-input': 'saturation',
+        'min': 0,
+        'max': 100,
+        'value': ccs.saturation
+      }
+    ) }}
+
+    {{ forms.field(
+      label='Lightness',
+      type='range',
+      field_attrs={'data-ccs-field': 'lightness'},
+      input_attrs={
+        'data-ccs-input': 'lightness',
+        'min': 30,
+        'max': 70,
+        'value': ccs.lightness
+      }
+    ) }}
+
+    {{ forms.field(
+      label='Contrast',
+      type='range',
+      field_attrs={'data-ccs-field': 'contrast'},
+      input_attrs={
+        'data-ccs-input': 'contrast',
+        'min': 25,
+        'max': 150,
+        'value': ccs.contrast
+      }
+    ) }}
+
   </div>
 </details>

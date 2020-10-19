@@ -1,5 +1,7 @@
 'use strict';
 
+const _ = require('lodash');
+
 const groupBy = (objectArray, property) =>
   objectArray.reduce((acc, obj) => {
     const key = obj[property];
@@ -39,6 +41,24 @@ const domain = (url) =>
     .replace('https://', '')
     .split(/[/?#]/)[0];
 
+/* @docs
+label: styles
+category: Formatting
+note: |
+  Convert an object of property-value pairs
+  into valid CSS for an inline-style.
+example: |
+  <div style="{{ style_dict | styles }}">
+params:
+  dict:
+    type: object
+    note: CSS property-value pairs
+*/
+const styles = (dict) =>
+  _(dict)
+    .map((val, prop) => (val ? `${prop}:${val};` : ''))
+    .reduce((all, one) => `${all}${one}`, '');
+
 module.exports = {
   groupBy,
   typeCheck,
@@ -48,4 +68,5 @@ module.exports = {
   jsonString,
   only,
   domain,
+  styles,
 };

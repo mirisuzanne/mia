@@ -1,9 +1,8 @@
 @use '../../../node_modules/accoutrement/sass/tools';
-@use '../config/actions';
-@use '../config/fonts';
+@use '../config';
 
 html {
-  @include fonts.var('body');
+  @include config.var('body');
   @include tools.font-family('static');
   font-feature-settings: 'dlig' 1, 'liga' 1;
   font-size: var(--font-size);
@@ -42,7 +41,7 @@ hr,
 summary {
   cursor: pointer;
 
-  #{actions.$focus},
+  #{config.$focus},
   [open] & {
     color: var(--action);
   }
@@ -55,8 +54,7 @@ summary {
 }
 
 :focus {
-  outline: 2px dashed var(--ccs-accent);
-  outline-offset: var(--half-shim);
+  @include config.focus-ring();
 }
 
 // Above/below

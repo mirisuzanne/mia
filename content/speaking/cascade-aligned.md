@@ -1,29 +1,53 @@
 ---
 title: Cascade Aligned Programming
-sub: Understanding & improving on CSS conventions
+sub: What does it mean to style a universal medium?
+author: miriam
+date: 2020-07-15
 hero:
   img: talks/cascade.jpg
   width: 2500
   height: 1150
 tags:
-  - code
+  - Cascade
+  - CSS
+  - Methodology
 events:
   - venue: Front Range Front End
     url: https://frontrangefrontend.com/
     date: 2020-08-06
     adr: Online
+    slides: https://slides.oddbird.net/cascade-aligned/front-range20/
+    video: https://www.youtube.com/watch?v=-wlokRJRepY
+    media: &frfe
+      iframe: https://www.youtube.com/embed/-wlokRJRepY
+media:
+  - span: full
+    <<: *frfe
 summary: |
-  How do we write code that is modular & maintainable,
-  in a language designed to be systematic & contextual?
+  From the very start,
+  “web design” has posed a nearly impossible paradox.
 ---
 
-Over the years developers have explored various programming methods,
-frameworks, and naming conventions to achieve that goal --
-from Nicole Sullivan's OOCSS and Natalie Downe's CSS Systems,
-to BEM, SMACSS, ITCSS, CUBE,
-and recent attempts at purely "functional" or "utility-based" CSS.
+{% import "content.macros.njk" as content %}
 
-We'll look at what these systems have in common,
-where they differ,
-and how the Cascade changes everything we know about
-writing resilient code.
+What does it mean to style a medium that must adapt universally
+across languages, devices, operating systems,
+user-preferences, browsers, and interfaces --
+from a monochrome terminal to 4k monitors,
+watches, braille-readers, and smart speakers?
+
+The result is CSS, a programming language unlike any other --
+built around a resilient “cascade”
+of hints & suggestions for the browser
+to interpret in each context.
+Still, as an industry
+we rely heavily on “Object Oriented” and “Functional” paradigms
+developed for controlled environments.
+
+What might it look like to create a new,
+cascade-informed, approach to writing code?
+
+{{ content.fig(
+  data=media,
+  caption='Conference videos…'
+) }}

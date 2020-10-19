@@ -1,21 +1,44 @@
+{% import 'forms.macros.njk' as forms %}
+
 <details data-menu="type" hidden>
   <summary class="menu-item" id="menu-type">type</summary>
   <div data-dropdown="pad">
-    <label data-field for="base" data-type-field="base">
-      <span data-label>font-size:</span>
-      <input data-type-input="base"
-        id="base" type="range" min="-10" max="100" value="0">
-    </label>
-    <label data-field for="line" data-type-field="line">
-      <span data-label>line height:</span>
-      <input data-type-input="line"
-        id="line" type="range" min="0" max="10" value="4">
-    </label>
-    <label data-field for="letters" data-type-field="letters">
-      <span data-label>letter spacing:</span>
-      <input data-type-input="letters"
-        id="letters" type="range" min="-150" max="500" value="0">
-    </label>
+
+    {{ forms.field(
+      label='Font Size',
+      type='range',
+      field_attrs={'data-type-field': 'base'},
+      input_attrs={
+        'data-type-input': 'base',
+        'min': -10,
+        'max': 100,
+        'value': 0
+      }
+    ) }}
+
+    {{ forms.field(
+      label='Line Height',
+      type='range',
+      field_attrs={'data-type-field': 'line'},
+      input_attrs={
+        'data-type-input': 'line',
+        'min': 0,
+        'max': 10,
+        'value': 4
+      }
+    ) }}
+
+    {{ forms.field(
+      label='Letter Spacing',
+      type='range',
+      field_attrs={'data-type-field': 'letters'},
+      input_attrs={
+        'data-type-input': 'letters',
+        'min': -150,
+        'max': 500,
+        'value': 0
+      }
+    ) }}
 
     <button
       data-type-input="unset"

@@ -5,6 +5,7 @@
   display: block;
 }
 
+[data-fieldset],
 [data-field] {
   display: var(--ccs-custom-display, var(--ccs-field-display, block));
   margin-bottom: var(--field-margin, var(--shim));

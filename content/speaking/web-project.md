@@ -13,11 +13,11 @@ events:
     url: https://www.meetup.com/EducelerateCO/
     adr: Denver, CO
     start: 2017-12-12
+summary: |
+  A **non-technical guide**
+  for taking your project from concept to launch,
+  without ever losing sight of the goals.
 ---
-
-A **non-technical guide**
-for taking your project from concept to launch,
-without ever losing sight of the goals.
 
 **Are you looking to expand your web presence,
 or develop a new application?**

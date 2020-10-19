@@ -4,91 +4,31 @@
   margin-bottom: var(--gutter);
 }
 
-@mixin range-track {
-  &::-webkit-slider-runnable-track {
-    @content;
-  }
-  &::-moz-range-track {
-    @content;
-  }
-  &::-ms-track {
-    @content;
-  }
-}
-
-@mixin range-thumb {
-  &::-webkit-slider-thumb {
-    @content;
-  }
-  &::-moz-range-thumb {
-    @content;
-  }
-  &::-ms-thumb {
-    @content;
-  }
-}
-
 $rainbow: ();
 @for $hue from 1 through 36 {
   $rainbow: append($rainbow, hsl($hue * 10, 80%, 40%), comma);
 }
 
-[type='range'] {
-  appearance: none;
-  background: transparent;
-  height: 2em;
-  max-width: 100%;
-  padding: 0;
-
-  @include range-track {
-    appearance: none;
-    height: 2em;
-    background: var(--callout) no-repeat;
-    border-radius: 0.25em;
-    border: 2px solid var(--border);
-    cursor: pointer;
-  }
-
-  @include range-thumb {
-    appearance: none;
-    background: transparent;
-    border: 2px solid var(--text);
-    border-radius: 0.25em;
-    box-shadow: thin solid var(--shadow) inset;
-    cursor: pointer;
-    height: 2.2em;
-    width: 1em;
-  }
+[data-ccs-input='hue'] {
+  background-image: linear-gradient(to right, $rainbow);
 }
 
-[id='hue'] {
-  @include range-track {
-    background-image: linear-gradient(to right, $rainbow);
-  }
+[data-ccs-input='lightness'] {
+  background-image: linear-gradient(to right, hsl(0, 0%, 25%), silver);
 }
 
-[id='lightness'] {
-  @include range-track {
-    background-image: linear-gradient(to right, hsl(0, 0%, 25%), silver);
-  }
-}
-
-[id='saturation'] {
+[data-ccs-input='saturation'] {
   // 0.1% so that units aren't removed in minification
-  @include range-track {
-    background-image: linear-gradient(
-      to right,
-      hsl(var(--ccs-h--prime, 0), 0.1%, var(--ccs-l, 50%)),
-      hsl(var(--ccs-h--prime, 0), 100%, var(--ccs-l, 50%))
-    );
-  }
+  background-image: linear-gradient(
+    to right,
+    hsl(var(--ccs-h--prime, 0), 0.1%, var(--ccs-l, 50%)),
+    hsl(var(--ccs-h--prime, 0), 100%, var(--ccs-l, 50%))
+  );
 }
 
-[id='contrast'] {
-  @include range-track {
-    background-image: linear-gradient(to right, gray, white),
-      linear-gradient(to right, gray, black);
-    background-size: 100% 50%, 100% 100%;
-    background-position: top left, bottom left;
-  }
+[data-ccs-input='contrast'] {
+  background-image: linear-gradient(to right, gray, white),
+    linear-gradient(to right, gray, black);
+  background-size: 100% 50%, 100% 100%;
+  background-position: top left, bottom left;
 }

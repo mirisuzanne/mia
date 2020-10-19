@@ -122,8 +122,6 @@ press:
 summary: |
   Don't let the declarative syntax fool you --
   CSS is a powerful and dynamic programming language.
-  It's time to start moving style logic
-  back into the language designed for it.
 media:
   - <<: *smashing
   - <<: *dvlpdnvr
@@ -131,6 +129,9 @@ media:
   - <<: *jsconf
 ---
 {% import "content.macros.njk" as content %}
+
+It's time to start moving style logic
+back into the language designed for it.
 
 CSS has come a long way since the browser wars of the late 90s.
 What used to be a struggle,

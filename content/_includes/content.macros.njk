@@ -116,22 +116,173 @@
 </figure>
 {%- endmacro %}
 
-{#
-  Ratios
-  ------
+{# @docs
+label: img
+category: Embed
+note: Embed an image
+params:
+  src:
+    type: url
+  alt:
+    type: string
+    default: ''
+  width:
+    type: number
+    default: none
+  height:
+    type: number
+    default: none
+  sizes:
+    type: string | none
+    default: none
+    note: |
+      Only required for small images, since the default is 100vw.
+      See taxonomy data for named sizes
+      like "card", "media", and "gallery".
+  attrs:
+    type: object
+    default: '{}'
+#}
+{% macro img(
+  src,
+  alt=none,
+  width=none,
+  height=none,
+  sizes=none,
+  attrs={}
+) -%}
+{%- if src -%}
+  {%- set src = src if ('://' in src) else ('/assets/images/' + src) -%}
+  {%- set attrs = attrs | merge({
+    'src': src,
+    'alt': alt or true,
+    'width': width,
+    'height': height
+  }) -%}
+  <img {{ utility.show_attrs(attrs) }}/>
+{%- endif -%}
+{%- endmacro %}
+
+
+{# @docs
+label: svg
+category: Embed
+note: Embed an svg file from the `content/_includes/` folder
+params:
+  path:
+    type: string
+#}
+{% macro svg(
+  path,
+  alt=none
+) -%}
+  {%- include path + '.svg' -%}
+  {% if alt %}<span class="sr-only">{{ alt }}</span>{% endif %}
+{%- endmacro %}
+
+
+{# @docs
+label: iframe
+category: Embed
+note: |
+  Embed an iframe (most often used for videos).
+  Width and height are provided both as defaults,
+  and to create intrinsic ratios when possible.
+params:
+  src:
+    type: url
+  width:
+    type: number
+    default: 'none'
+  height:
+    type: number
+    default: 'none'
+  span:
+    type: number | 'full'
+    default: 'none'
+    note: Span multiple columns of a gallery
+#}
+{% macro iframe(
+  src,
+  width=none,
+  height=none,
+  span=none
+) %}
+  {%- set width = width or 560 -%}
+  {%- set height = height or 315 -%}
+  {%- set attrs = {
+    'src': src,
+    'width': width,
+    'height': height,
+    'frameborder': '0',
+    'webkitallowfullscreen': true,
+    'mozallowfullscreen': true,
+    'allowfullscreen': true
+  } -%}
+  {%- set content %}<iframe {{ utility.show_attrs(attrs) }}></iframe>{% endset -%}
+  {{- ratio(width, height, span, content) | safe -}}
+{% endmacro %}
+
+{# @docs
+label: audio
+category: Embed
+note: Embed an audio file
+params:
+  src:
+    type: url
+  attrs:
+    type: object
+    default: '{}'
+#}
+{% macro audio(
+  src,
+  span
+) -%}
+{%- set style = {
+  '--width': '100%',
+  '--span': span
+} -%}
+{%- set src = src if ('://' in src) else ('/assets/media/' + src) -%}
+<audio src="{{ src }}" {{ utility.style_if(style) }} controls>{{ src | mdInline }}</audio>
+{%- endmacro %}
+
+
+{# @docs
+label: ratio
+category: Layout
+note: Maintain aspect ratio for embedded media
+params:
+  width:
+    type: number
+    default: 'none'
+  height:
+    type: number
+    default: 'none'
+  span:
+    type: number | 'full'
+    default: 'none'
+    note: Span multiple columns of a gallery
+  content:
+    type: html
+    default: 'none'
+    note: The content to embed (can also be a `caller()` block)
 #}
 {% macro ratio(
   width=none,
   height=none,
-  span=none
-) -%}
+  span=none,
+  content=none
+) %}
+{%- set content = content if (content != none) else caller() -%}
 {%- if width | typeCheck('number') and height | typeCheck('number') -%}
-<div class="ratio" style="--ratio:{{ width / height }};{{ span }}">
-{{ caller() }}
-</div>
-{%- else -%}
-{{ caller() }}
-{%- endif -%}
+  {%- set style = {
+    '--ratio': (width / height),
+    '--span': span
+  } -%}
+<div class="ratio" {{ utility.style_if(style) }}>{{ content | safe }}</div>
+  {%- else -%}
+    {{- content | safe -}}
+  {%- endif -%}
 {%- endmacro %}
 
 {#
@@ -156,22 +307,30 @@
   data
 ) -%}
 {%- for item in data -%}
-{%- set span = ['--span:', item.span, ';'] | join if item.span else '' -%}
-{%- if item.img -%}
-{%- set src = item.img if ('://' in item.img) else ('/assets/images/' + item.img) -%}
-{%- set width = ['--width:', item.width, ';'] | join if item.width else '' -%}
-{%- set style = (width + span) if (width or span) else none -%}
-<img src="{{ src }}" alt="{{ item.alt }}" {{ utility.attr_if('style', style) }}/>
-{%- elif item.iframe -%}
-{%- call ratio(item.width, item.height, span) -%}
-<iframe src="{{ item.iframe }}" {{ utility.attr_if('width', item.width) }} {{ utility.attr_if('height', item.height) }} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{%- endcall -%}
-{%- elif item.audio -%}
-<audio src="{{ item.audio }}" style="--width: 100%;{{ span }}" controls>
-{{ item.audio | mdInline }}
-</audio>
-{%- endif -%}
+  {%- if item.img -%}
+    {%- set style = {
+      '--width': item.width,
+      '--span': item.span
+    } | styles -%}
+    {% set full_width = (loop.length == 1) or (item.span == 'full') or (item.span > 1) %}
+    {{- img(
+      src=item.img,
+      alt=item.alt,
+      width=item.width,
+      height=item.height,
+      sizes=none if full_width else 'gallery',
+      attrs={'style': style}
+    ) | safe -}}
+  {%- elif item.svg -%}
+    {{- svg(item.svg, item.alt) | safe -}}
+  {%- elif item.iframe -%}
+    {{- iframe(item.iframe, item.width, item.height, item.span) -}}
+  {%- elif item.audio -%}
+    {{- audio(item.audio, item.span) -}}
+  {%- endif -%}
 {%- endfor -%}
 {%- endmacro %}
+
 
 {% macro codepen(
   id,

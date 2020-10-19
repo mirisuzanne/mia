@@ -1,0 +1,12 @@
+hue: 330
+saturation: 80
+lightness: 50
+contrast: 42
+themes:
+  - mia
+  - today
+  - complement
+  - adjacent
+  - triad
+  - monochrome
+  - contrast

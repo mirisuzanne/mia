@@ -56,7 +56,7 @@
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "accoutrement": "^2.1.2",
-    "cascading-color-systems": "^0.1.0-beta.11",
+    "cascading-color-systems": "^0.1.0-beta.14",
     "chokidar-cli": "^2.0.0",
     "core-js": "^3.3.2",
     "cssremedy": "^0.1.0-beta.2",
