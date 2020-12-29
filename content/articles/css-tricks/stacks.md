@@ -1,7 +1,7 @@
 ---
 feature: true
 title: Custom Property “Stacks"
-canonical: https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/
+url: https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/
 date: 2020-06-22
 hero:
   img: 2020/stack.jpg

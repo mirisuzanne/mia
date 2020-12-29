@@ -326,7 +326,11 @@ params:
   {%- elif item.iframe -%}
     {{- iframe(item.iframe, item.width, item.height, item.span) -}}
   {%- elif item.audio -%}
-    {{- audio(item.audio, item.span) -}}
+    <div style="--span: {{ item.span }}">
+      {{- audio(item.audio) -}}
+    </div>
+  {%- elif item.pen -%}
+    {{- codepen(item.pen, item.title, item.user, item.tab, item.height, item.theme, item.preview, item.attrs) -}}
   {%- endif -%}
 {%- endfor -%}
 {%- endmacro %}
@@ -335,7 +339,7 @@ params:
 {% macro codepen(
   id,
   title,
-  user,
+  user='mirisuzanne',
   tab='result',
   height=500,
   theme=none,
@@ -344,11 +348,11 @@ params:
 ) -%}
 <p {{ utility.show_attrs(attrs) }} {{ utility.show_attrs({
   'class': 'codepen',
-  'data-height': height,
+  'data-height': height or 500,
   'data-theme-id': theme,
   'data-slug-hash': id,
-  'data-default-tab': tab,
-  'data-user': user,
+  'data-default-tab': tab or 'result',
+  'data-user': user or 'mirisuzanne',
   'data-embed-version': "2",
   "data-preview": preview
 }) }}>See the Pen {{ utility.link_if(
