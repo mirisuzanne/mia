@@ -12,7 +12,7 @@ html {
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  scroll-snap-type: block;
+  // scroll-snap-type: block;
   scroll-padding: var(--shim);
 }
 
@@ -30,10 +30,10 @@ h6 {
   font-weight: normal;
 }
 
-hr,
-.section-header {
-  scroll-snap-align: start;
-}
+// hr,
+// .section-header {
+//   scroll-snap-align: start;
+// }
 
 // Special
 // -------
