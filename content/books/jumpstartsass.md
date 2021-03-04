@@ -6,7 +6,7 @@ hero:
   img: writing/jssass.jpg
   caption: |
     co-writen with my friend
-    [Hugo Giraudel](https://hugogiraudel.com/)
+    [Kitty Giraudel](https://kittygiraudel.com/)
 venue: SitePoint
 url: https://www.sitepoint.com/premium/books/jump-start-sass
 date: 2016-03-22
@@ -15,10 +15,6 @@ tags:
   - code
   - sass
 press:
-  - text: |
-      Miriam and Hugo have become some of the most notable
-      creators of Sass plugins and best practices.
-    credit: Chris Eppstein
   - text: |
       This is hands down the best book on Sass
       if you want to learn the most important parts of the Sass language

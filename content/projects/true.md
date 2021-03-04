@@ -14,8 +14,8 @@ tags:
   - sass
 press:
   - text: OMG I just love this tool way too&nbsp;much.
-    credit: Hugo Giraudel
-    url: http://hugogiraudel.com/
+    credit: Kitty Giraudel
+    url: https://kittygiraudel.com/
 summary: |
   True is a full-featured unit-testing library for Sass.
   The core functionality is written in pure SassScript,

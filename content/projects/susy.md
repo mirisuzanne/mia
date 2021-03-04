@@ -45,7 +45,7 @@ press:
   - text: |
       If you're interested in reading Sass poetry,
       be sure to look at Susy's source code!
-    credit: Hugo Giraudel
+    credit: Kitty Giraudel
     venue: SitePoint
     url: http://www.sitepoint.com/my-favorite-sass-tools/
   - text: |
