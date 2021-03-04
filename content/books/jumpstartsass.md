@@ -2,11 +2,6 @@
 feature: true
 title: Jump Start Sass
 sub: Get up to speed with Sass in a weekend…
-hero:
-  img: writing/jssass.jpg
-  caption: |
-    co-writen with my friend
-    [Kitty Giraudel](https://kittygiraudel.com/)
 venue: SitePoint
 url: https://www.sitepoint.com/premium/books/jump-start-sass
 date: 2016-03-22
@@ -29,6 +24,8 @@ summary: |
   the repetitive tasks that come with writing vanilla CSS.
   This book provides a thorough introduction to
   Sass for the beginner.
+  Co-writen with my friend
+  [Kitty Giraudel](https://kittygiraudel.com/).
 ---
 {% import "content.macros.njk" as content %}
 
