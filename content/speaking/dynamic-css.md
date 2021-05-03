@@ -9,11 +9,11 @@ tags:
   - code
   - layout
 events:
-  - venue: Webconf.asia
-    url: https://webconf.asia/
-    start: 2021-06-04
-    end: 2021-06-05
-    adr: Hong Kong
+  # - venue: Webconf.asia
+  #   url: https://webconf.asia/
+  #   start: 2021-06-04
+  #   end: 2021-06-05
+  #   adr: Hong Kong
   - venue: Shift Remote
     url: https://remote.shiftconf.co/
     start: 2020-08-06
@@ -92,7 +92,7 @@ events:
 press:
   - text: |
       Some pretty mind-bendingly cool uses for CSS custom props
-      from @MiriSuzanne --
+      from @TerribleMia --
       color, layout & animation all in css
       and only using JS to feed data.
     credit: Jason Pamental
@@ -102,7 +102,7 @@ press:
       Well that was awesome!!!
       “If you think CSS is a dumb language,
       you’re a dumb language — CSS IS AWESOME!”
-      @MiriSuzanne thank you so much for the amazing talk!
+      @TerribleMia thank you so much for the amazing talk!
     credit: Nour Saud
     title: Software Engineer
     url: https://twitter.com/Nour_ASoud/status/1118588349994823681
@@ -114,7 +114,7 @@ press:
     title: Founder of Smashing Magazine & Conference
     url: https://www.smashingmagazine.com/events/
   - text: |
-      So stoked @mirisuzanne is @vueconfus !!!
+      So stoked @TerribleMia is @vueconfus !!!
       look at how cool CSS is ~ and all the squishy things it does.
     credit: Ngan Hoang
     title: Principal Designer at Prefect.io

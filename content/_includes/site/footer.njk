@@ -52,7 +52,10 @@ Take care of each other.
     {% endif %}
 
     {% if not is_contact %}
-      {{ contact.form(attrs={'data-footer': 'contact'}) }}
+      {{ contact.form(
+        attrs={'data-footer': 'contact'},
+        url=page.url
+      ) }}
     {% endif %}
 
     {% if is_about or is_contact %}

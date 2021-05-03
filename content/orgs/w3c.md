@@ -16,7 +16,8 @@ summary: |
   I was invited to join the CSS Working Group
   to help develop the next level of
   Cascading & Inheritance --
-  building on a proposal I made through Github.
+  along with Container Queries,
+  CSS scoping, and more.
 ---
 
 Cascading Style Sheets (CSS) are the design language of the web --
@@ -25,3 +26,6 @@ allowing authors and users to attach style
 to structured documents and Web applications.
 By separating the presentation style from the content,
 CSS simplifies Web authoring and site maintenance.
+
+All my research, explainers, and proposals
+are available at [css.oddbird.net](https://css.oddbird.net/)

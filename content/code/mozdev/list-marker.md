@@ -20,7 +20,7 @@ I'll also show you how the `::marker` element
 is different from `::before` or `::after`.
 Watch the video, and go play with the [demo on codepen][pen].
 
-[pen]: https://codepen.io/mirisuzanne/pen/BaBKowO?editors=0100
+[pen]: https://codepen.io/miriamsuzanne/pen/BaBKowO?editors=0100
 
 {{ content.fig(
   data=embed,
