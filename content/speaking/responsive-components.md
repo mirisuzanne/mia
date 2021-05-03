@@ -16,11 +16,11 @@ events:
     date: 2021-04-23
     end: 2021-04-30
     adr: Online
-  - venue: Modern Web Conference
-    url: https://modernwebconference.com/
-    date: 2021-05-17
-    end: 2021-05-28
-    adr: Online
+  # - venue: Modern Web Conference
+  #   url: https://modernwebconference.com/
+  #   date: 2021-05-17
+  #   end: 2021-05-28
+  #   adr: Online
 summary: |
   New CSS proposals like Container Queries,
   Cascade Layers, Scoped Styles, and Nesting

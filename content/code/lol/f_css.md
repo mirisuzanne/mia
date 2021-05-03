@@ -20,7 +20,7 @@ summary: |
 }
 ```
 
-See the [CodePen Demo »](https://codepen.io/mirisuzanne/pen/GRKEZQy)
+See the [CodePen Demo »](https://codepen.io/miriamsuzanne/pen/GRKEZQy)
 
 [^1]: The key words
 "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",

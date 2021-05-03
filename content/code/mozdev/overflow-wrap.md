@@ -30,4 +30,4 @@ and how to use them.
 
 - [MDN Overflow-Wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap)
 - [MDN Hyphens](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens)
-- [CodePen Demo](https://codepen.io/mirisuzanne/pen/GRKoxXY)
+- [CodePen Demo](https://codepen.io/miriamsuzanne/pen/GRKoxXY)

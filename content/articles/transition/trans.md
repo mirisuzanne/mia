@@ -49,7 +49,7 @@ If ==you== do have appropriate questions,
 I'd love to talk!
 Some questions are better in person,
 but I'm always hanging out on
-[Twitter](http://twitter.com/mirisuzanne) as well,
+[Twitter](http://twitter.com/TerribleMia) as well,
 and I have a [nifty contact form](/contact/)
 if you need it.
 

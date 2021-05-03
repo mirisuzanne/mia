@@ -23,6 +23,6 @@ media:
   caption="The fallback even works well in old browsers!"
 ) }}
 
-- [Image Gallery Demo](https://codepen.io/mirisuzanne/pen/bXRebo?editors=0100)
-- [Page Sections Demo](https://codepen.io/mirisuzanne/pen/vomNBg?editors=0100)
+- [Image Gallery Demo](https://codepen.io/miriamsuzanne/pen/bXRebo?editors=0100)
+- [Page Sections Demo](https://codepen.io/miriamsuzanne/pen/vomNBg?editors=0100)
 - [More on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts)

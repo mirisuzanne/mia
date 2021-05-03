@@ -3,7 +3,8 @@
 {% macro form(
   next='/contact/thanks/',
   submit='send',
-  attrs={}
+  attrs={},
+  url='/contact/'
 ) %}
 <form
   name="contact"
@@ -40,6 +41,10 @@
   <label hidden>
     <span>Don't fill out this field:</span>
     <input name="subject" />
+  </label>
+  <label hidden>
+    <span>URL:</span>
+    <input name="url" value="{{ url }}" />
   </label>
   <div data-actions>
     <button

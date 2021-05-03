@@ -30,4 +30,4 @@ It rolls back styles to the expected browser default for each element,
 rather than using the specification default for each property.
 
 - MDN [documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/revert)
-- CodePen [demo](https://codepen.io/mirisuzanne/pen/WVjNZP)
+- CodePen [demo](https://codepen.io/miriamsuzanne/pen/WVjNZP)
