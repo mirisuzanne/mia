@@ -33,16 +33,44 @@ by the CSS Working Group,
 to be added in [CSS Containment Level 3][css-contain],
 with me as one of the authors.
 
+See the [Contain 3 Project](https://github.com/w3c/csswg-drafts/projects/18)
+for issues and progress.
+
 [issue]: https://github.com/w3c/csswg-drafts/issues/5796
 [dbaron]: https://github.com/dbaron/container-queries-implementability
 [css-contain]: https://drafts.csswg.org/css-contain-3/
 
+## Establishing Containers
+
+The first step is to establish **containers**.
+Any element can become a container,
+by adding `layout`, `size` (generally `inline-size`),
+and `style` containment:
+
 ```css
 /* Establish containers */
 main, aside {
-  contain: layout inline-size;
+  contain: layout inline-size style;
 }
+```
 
+This syntax works in the prototype,
+but is clearly not ideal for readable and clear code.
+There is an open issue to discuss
+[better syntax for establishing query containers][syntax]
+
+[syntax]: https://github.com/w3c/csswg-drafts/issues/6174
+
+## Writing Queries
+
+Each container creates a _containment context_
+that can be queried by their descendant elements.
+We can query the current containment context
+(the nearest ancestor container)
+using an `@container` rule that is very similar
+to existing `@media` queries:
+
+```css
 /* Change styles according to container size */
 @container (min-width: 35em) {
   .media {
@@ -51,6 +79,17 @@ main, aside {
   }
 }
 ```
+
+The `.media` class above is now
+responsive to any container it is in.
+Each instance of the `.media` class
+will query its nearest container.
+
+That means we can have one `.media` element that moves around,
+responding to the context we put it in --
+or multiple `.meia` elements,
+each one responding individually
+to its own location.
 
 ## Prototype
 
