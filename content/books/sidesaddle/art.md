@@ -24,31 +24,31 @@ events:
 gallery:
   caption: |
     Art from the novel
-    ([available as prints](http://art.miriamsuzanne.com/))
+    ([available as prints](https://miriamsuzanne.square.site/))
   images:
     - img: writing/sidesaddle/neck.jpg
-      url: http://art.miriamsuzanne.com/item/a-longing-print
+      url: https://miriamsuzanne.square.site/item/a-longing-print
       span: full
     - img: writing/sidesaddle/dancers.jpg
-      url: http://art.miriamsuzanne.com/item/carcass-print
+      url: https://miriamsuzanne.square.site/item/carcass-print
     - img: writing/sidesaddle/divers.jpg
-      url: http://art.miriamsuzanne.com/item/when-we-walked-print
+      url: https://miriamsuzanne.square.site/item/when-we-walked-print
     - img: writing/sidesaddle/house.jpg
-      url: http://art.miriamsuzanne.com/item/deformed-print
+      url: https://miriamsuzanne.square.site/item/deformed-print
     - img: writing/sidesaddle/moths.jpg
-      url: http://art.miriamsuzanne.com/item/sunset-burns-print
+      url: https://miriamsuzanne.square.site/item/sunset-burns-print
     - img: writing/sidesaddle/denver.svg
-      url: http://art.miriamsuzanne.com/item/cities-rise-sweaty-print
+      url: https://miriamsuzanne.square.site/item/cities-rise-sweaty-print
     - img: writing/sidesaddle/reeds.jpg
-      url: http://art.miriamsuzanne.com/item/dangly-bits-print
+      url: https://miriamsuzanne.square.site/item/dangly-bits-print
     - img: writing/sidesaddle/boxer.jpg
-      url: http://art.miriamsuzanne.com/item/into-your-heart-print
+      url: https://miriamsuzanne.square.site/item/into-your-heart-print
     - img: writing/sidesaddle/herm.jpg
-      url: http://art.miriamsuzanne.com/item/a-body-print
+      url: https://miriamsuzanne.square.site/item/a-body-print
     - img: writing/sidesaddle/volvo.jpg
-      url: http://art.miriamsuzanne.com/item/high-heels-print
+      url: https://miriamsuzanne.square.site/item/high-heels-print
     - img: writing/sidesaddle/mascara.jpg
-      url: http://art.miriamsuzanne.com/item/boy-on-the-tv-print
+      url: https://miriamsuzanne.square.site/item/boy-on-the-tv-print
 summary: |
   [Riding SideSaddle*](../) has gone vertical --
   all 250 cards displayed in a gallery show.

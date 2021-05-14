@@ -11,21 +11,21 @@ hero:
   caption: The full sci-fi art installation at Buntport Theater
 gallery:
   - img: prophetia/st01.jpg
-    url: http://art.miriamsuzanne.com/item/the-monster-print
+    url: https://miriamsuzanne.square.site/item/the-monster-print
   - img: prophetia/st02.jpg
-    url: http://art.miriamsuzanne.com/item/the-scientist-print
+    url: https://miriamsuzanne.square.site/item/the-scientist-print
   - img: prophetia/st03.jpg
-    url: http://art.miriamsuzanne.com/item/the-man-print
+    url: https://miriamsuzanne.square.site/item/the-man-print
   - img: prophetia/st04.jpg
-    url: http://art.miriamsuzanne.com/item/the-humans-print
+    url: https://miriamsuzanne.square.site/item/the-humans-print
   - img: prophetia/st05.jpg
-    url: http://art.miriamsuzanne.com/item/the-threat-print
+    url: https://miriamsuzanne.square.site/item/the-threat-print
   - img: prophetia/st06.jpg
-    url: http://art.miriamsuzanne.com/item/the-cancer-print
+    url: https://miriamsuzanne.square.site/item/the-cancer-print
   - img: prophetia/st07.jpg
-    url: http://art.miriamsuzanne.com/item/the-battle-print
+    url: https://miriamsuzanne.square.site/item/the-battle-print
   - img: prophetia/st08.jpg
-    url: http://art.miriamsuzanne.com/item/the-survivors-print
+    url: https://miriamsuzanne.square.site/item/the-survivors-print
 summary: |
   Story panels for PROPHETIA VETITUM MUNDI
   ([available as prints](htps://art.miriamsuzanne.com))

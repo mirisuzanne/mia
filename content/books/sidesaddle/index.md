@@ -98,9 +98,9 @@ press:
     date: 2015-04-01
 actions:
   - text: buy the novel
-    url: http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/
+    url: https://miriamsuzanne.square.site/product/ridingsidesaddle/16?cs=true&cst=custom
   - text: art from the novel
-    url: http://squareup.com/store/miriamsuzanne/
+    url: https://miriamsuzanne.square.site/
 video:
   caption: |
     with [Teacup Gorilla](/orgs/teacup-gorilla/)'s
@@ -118,9 +118,9 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-[Buy the book](http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/)
+[Buy the book](https://miriamsuzanne.square.site/)
 or
-[read it online](https://read.ridingsidesaddle.com)
+[read it online](https://ridingsidesaddle.com)
 
 ---
 
@@ -180,7 +180,7 @@ Riding SideSaddle* is an
 [open source text](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 published by
 [SpringGun Press](http://springgunpress.com),
-[released online](https://read.ridingsidesaddle.com)
+[released online](https://ridingsidesaddle.com)
 by [OddBird](https://oddbird.net/),
 and [adapted for the stage](/theater/10myths/)
 by [Buntport Theater](http://buntport.com/) and
