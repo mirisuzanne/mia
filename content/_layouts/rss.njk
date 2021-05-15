@@ -27,9 +27,16 @@
       <img src="{{ (site.images + post.data.hero.img) | absoluteUrl(site.url) }}" alt="{{ post.data.hero.alt }}"/>
       {%- endfilter -%}
       {%- endif %}
+
       {{- (post.data.sub | md if post.data.sub else '') | htmlToAbsoluteUrls(absolutePostUrl) -}}
       {{- (post.data.summary | md if post.data.summary else '') | htmlToAbsoluteUrls(absolutePostUrl) -}}
       {{- post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) -}}
+
+      {%- if post | hasTag('elsewhere') and post.data.url and post.data.venue -%}
+      {%- filter escape -%}
+      <p><a href="{{ post.data.url }}">More at {{ post.data.venue }} »</a></p>
+      {%- endfilter -%}
+      {%- endif -%}
     </content>
     {%- elif post.data.summary %}
     <summary type="html">{{ post.data.summary | md | htmlToAbsoluteUrls(absolutePostUrl) }}</summary>
