@@ -16,21 +16,22 @@
       </p>
     {% endif %}
 
+
     {% if summary %}
       <div class='intro'>
         {{ summary | md | safe }}
-
-        {% if elsewhere %}
-          <p>
-            <a rel="bookmark" href="{{ url }}">
-              View on {{ venue }}
-            </a>
-          </p>
-        {% endif %}
       </div>
     {% endif %}
 
     {{ content | typogr | safe }}
+
+    {% if tags and ('elsewhere' in tags) %}
+      <p>
+        <a rel="bookmark" href="{{ url }}">
+          More at {{ venue }}
+        </a>
+      </p>
+    {% endif %}
 
     {% include 'site/series.njk' %}
   </div>

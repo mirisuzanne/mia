@@ -10,11 +10,6 @@ tags:
   - code
   - w3c
   - sass
-events:
-  - venue: Front-end Development, South Africa
-    url: https://www.meetup.com/fedsa-community/events/276328093/
-    date: 2021-05-05
-    adr: Online
 summary: |
   I've spent nearly two decades
   learning, teaching, and writing CSS --

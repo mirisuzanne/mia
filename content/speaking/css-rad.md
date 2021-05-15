@@ -18,7 +18,7 @@ events:
     slides: https://slides.oddbird.net/rad/design4drupal/
     video: https://youtu.be/JTzYGWYjQdg
     media: &d4d
-      iframe: https://www.youtube.com/embed/JTzYGWYjQdg
+      - iframe: https://www.youtube.com/embed/JTzYGWYjQdg
   - venue: SmashingConf Live
     url: https://smashingconf.com/live/
     date: 2020-08-20

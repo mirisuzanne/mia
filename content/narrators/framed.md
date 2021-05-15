@@ -1,5 +1,4 @@
 ---
-feature: true
 title: Framed | Born To Choose This Way
 sub: Struggles in re-writing the narrative of my life
 erasure: true
@@ -14,13 +13,28 @@ hero:
   caption: |
     I still haven't managed to
     suck out all the marrow of life.
-url: https://www.facebook.com/events/342356676462227/
+events:
+  - venue: The Narrators (podcast)
+    url: https://thenarrators.org/232-miriam-suzanne-born-to-choose-this-way/
+    date: 2021-05-14
+    feature: true
+    type: podcast
 series: transition
 tags:
   - transition
   - writing
+podcast:
+  - iframe: https://playlist.megaphone.fm/?e=WTM2270650214
+    height: 200
+    width: 100%
+summary: |
+  A reflection on change,
+  desire, choice,
+  and the stories we tell about ourselves
 ---
 {% import "content.macros.njk" as content %}
+
+{{ content.fig(podcast) }}
 
 Last week,
 my dad sent me a newspaper ==clipping==

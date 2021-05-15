@@ -2,7 +2,7 @@ permalink: "/{{ page.date | getDate('url') }}/{{ page.fileSlug }}/index.html"
 summary: |
   [The Narrators](https://thenarrators.org/) is a live storytelling
   show and podcast featuring true stories on a monthly theme.
-venue: The Narrators
+venue: The Narrators (live)
 url: https://thenarrators.org/
 hero:
   img: narrators/default.jpg

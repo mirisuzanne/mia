@@ -102,7 +102,7 @@
   data=none,
   caption=none
 ) -%}
-  {%- set content = _fig_content(data) if data else caller() | mdInline -%}
+{%- set content = _fig_content(data) if data else caller() | mdInline -%}
 <figure data-pattern="figure">
 <div data-figure="content">
 {{ content | safe }}
@@ -346,6 +346,7 @@ params:
   preview=none,
   attrs={}
 ) -%}
+{% call fig() %}
 <p {{ utility.show_attrs(attrs) }} {{ utility.show_attrs({
   'class': 'codepen',
   'data-height': height or 500,
@@ -365,4 +366,5 @@ params:
   content='CodePen',
   url='https://codepen.io'
 ) }}.</p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% endcall %}
 {%- endmacro %}

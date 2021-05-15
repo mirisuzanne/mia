@@ -18,7 +18,7 @@ events:
     venue: Charis Books
     url: https://www.facebook.com/events/737586806673620/
     adr: Atlanta, GA
-    start: 2019-09-16
+    date: 2019-09-16
   - title: A Leon Affair
     type: reading
     venue: Leon Gallery

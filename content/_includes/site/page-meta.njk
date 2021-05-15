@@ -1,12 +1,12 @@
 {%- import 'utility.macros.njk' as utility -%}
 
 {% set pub_tags = tags | publicTags %}
-{% set elsewhere = {
+{% set offsite = {
   'venue': venue,
   'url': url
-} if elsewhere else none %}
+} if tags and ('elsewhere' in tags) else none %}
 
-{% if pub_tags or elsewhere or org %}
+{% if pub_tags or offsite or org %}
   <footer data-meta="page">
     {% if org %}
       <p>
@@ -29,12 +29,12 @@
       </p>
     {% endif %}
 
-    {% if elsewhere %}
+    {% if offsite %}
       <p class="elsewhere">
         at
         <a rel="bookmark"
-          href="{{ elsewhere.url }}">
-          <em>{{ elsewhere.venue }}</em>
+          href="{{ offsite.url }}">
+          <em>{{ offsite.venue }}</em>
         </a>
       </p>
     {% endif %}

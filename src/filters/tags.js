@@ -10,7 +10,7 @@ const publicTags = (tags) =>
   tags ? tags.filter((tag) => isPublic(tag)) : tags;
 
 const hasTag = (page, tag) =>
-  page.data.tags ? page.data.tags.includes(tag) : false;
+  page.data && page.data.tags ? page.data.tags.includes(tag) : false;
 
 const withTag = (collection, tag) =>
   collection.filter((page) => hasTag(page, tag));
