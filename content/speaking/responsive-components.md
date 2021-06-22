@@ -11,11 +11,20 @@ tags:
   - code
   - w3c
 events:
-  - venue: Modern Web Conference
-    url: https://modernwebconference.com/
-    date: 2021-08-09
-    end: 2021-08-20
+  - venue: Smashing Meets CSSummer
+    url: https://smashingconf.com/meets-css/
+    date: 2021-07-08
     adr: Online
+  - venue: CSS Café
+    url: https://www.meetup.com/CSS-Cafe/events/278822813/
+    date: 2021-06-24
+    adr: Online
+  - venue: Front Range Front-End
+    url: https://www.meetup.com/front-range-front-end/events/kvckcsyccjbfb/
+    date: 2021-06-03
+    adr: Online
+    media: &frfe
+      iframe: https://www.youtube.com/embed/GuMvZuUrJaY
   - venue: Front-end Development South Africa
     url: https://www.meetup.com/fedsa-community/events/276328093/
     date: 2021-05-05
@@ -29,7 +38,9 @@ events:
     date: 2021-04-23
     end: 2021-04-30
     adr: Online
+    slides: https://slides.oddbird.net/css-next/hover/
 media:
+  - <<: *frfe
   - <<: *fedsa
 summary: |
   New CSS proposals like Container Queries,

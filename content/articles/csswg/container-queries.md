@@ -61,6 +61,12 @@ There is an open issue to discuss
 
 [syntax]: https://github.com/w3c/csswg-drafts/issues/6174
 
+**Note**:
+See the [Editor's Draft Specification](https://drafts.csswg.org/css-contain-3/)
+for the latest syntax.
+The Chrome prototype already has basic support
+for `container-type` and `container-name`.
+
 ## Writing Queries
 
 Each container creates a _containment context_
