@@ -4,6 +4,8 @@
 html {
   @include config.var('body');
   @include tools.font-family('static');
+  accent-color: var(--action);
+  color-scheme: dark light;
   font-feature-settings: 'dlig' 1, 'liga' 1;
   font-size: var(--font-size);
   font-synthesis: none;

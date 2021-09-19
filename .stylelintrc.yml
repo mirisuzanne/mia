@@ -26,6 +26,7 @@ rules:
 
   # possible errors (these are all on by default)
   no-descending-specificity: null
+  property-no-unknown: null
 
   # limit language features
   at-rule-no-vendor-prefix: true

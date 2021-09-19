@@ -14,7 +14,7 @@
 [data-dot] {
   @include tools.square(calc(6px + 1vmin));
   --dot: var(--dot-color-6);
-  --opacity: #{(random(30) + 10) / 100};
+  --opacity: #{(random(30) + 10) * 0.01};
   background: var(--dot);
   border-radius: 100%;
   fill: var(--dot);
