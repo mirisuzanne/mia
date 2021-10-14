@@ -4,7 +4,7 @@ sub: Adapted from Georg Büchner’s Danton’s Death by Julie Rada
 venue: BINDERY | space
 url: http://lida.org/rain-of-terror/
 adr: Denver, CO
-start: 2009-02-27
+date: 2009-02-27
 end: 2009-03-21
 hero:
   img: art/theater/lida/rain.jpg

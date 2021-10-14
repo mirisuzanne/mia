@@ -1,9 +1,9 @@
 $_code-color-fade: var(--text-light);
 
-@use '../../../node_modules/accoutrement/sass/tools';
+@use '../config/fonts';
 @use '../vendor/prism' with (
   // generic stuff
-  $code-font-family: tools.font-family('recursive-mono'),
+  $code-font-family: fonts.font-family(fonts.$recursive-mono),
   $code-font-size: inherit,
   $code-line-height: inherit,
 

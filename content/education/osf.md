@@ -5,7 +5,7 @@ sub: Among the oldest & largest professional non-profit theatres in the nation.
 org: Stage Management Intern
 type: theater
 url: https://www.osfashland.org/
-start: 2003-02-06
+date: 2003-02-06
 end: 2003-04-26
 adr: Ashland, OR
 hero:

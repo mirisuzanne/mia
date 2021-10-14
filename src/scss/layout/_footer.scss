@@ -1,5 +1,3 @@
-@use '../../../node_modules/accoutrement/sass/tools';
-
 [data-layout='footer'] {
   display: grid;
   grid:
@@ -18,7 +16,7 @@
   margin-bottom: var(--spacer);
   padding: 0 var(--gap);
 
-  @include tools.above('wide') {
+  @media (min-width: 70em) {
     --gap: var(--double-gutter);
   }
 
@@ -52,7 +50,7 @@
   grid-column: 1 / -1;
   min-height: 50vh;
 
-  @include tools.above('page') {
+  @media (min-width: 40em) {
     --angle: 95deg;
     min-height: var(--double-spacer);
   }

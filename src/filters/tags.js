@@ -48,7 +48,7 @@ const groupTags = (collections) => {
 
   // group by popularity
   tagData(collections).forEach((item) => {
-    const group = taxonomy.tags.includes(item.tag) ? 'top' : 'other';
+    const group = taxonomy.tags.includes(item.tag) ? 'featured' : 'more…';
     if (grouped[group]) {
       grouped[group].push(item);
     } else {

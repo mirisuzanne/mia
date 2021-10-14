@@ -83,7 +83,7 @@
 
         <div data-orgs="list">
           {% for item in orgs %}
-            {% set start = item.data.start | getDate('yyyy') %}
+            {% set start = (item.data.start or item.date) | getDate('yyyy') %}
             {% set org_title = item.data.banner or item.data.title %}
             {% set is_old = item.data.end and (item.data.end != 'ongoing') %}
             {% set end = item.data.end | getDate('yyyy') if is_old else none %}
@@ -96,7 +96,7 @@
               {{ utility.attr_if('data-old', is_old) }}>
               <time
                 data-meta="org-date"
-                datetime="{{ item.data.start | getDate('iso') }}">
+                datetime="{{ (item.data.start or item.date) | getDate('iso') }}">
                 {{ start }}{{ range }}{{ end or '' }}
               </time>
               <h3 data-title="orgs" id="{{ id }}">
@@ -140,10 +140,6 @@
   {% set this_year = none | getDate('year') %}
 
   {% for segment in events %}
-    {% if (segment.group == this_year) and not loop.first %}
-      <hr data-divider>
-    {% endif %}
-
     {{ group(
       group_title=segment.group,
       events=segment.data,
@@ -234,7 +230,12 @@
   {%- set full_title = utility.link_if(title_name | mdInline, url) -%}
 
   {{ full_title | safe }}
-  {{ venue | safe }}
+  <span class="venue">{{ venue | safe }}</span>
+
+  {%- set venue_adr = item.event.adr or item.page.data.adr -%}
+  {% if venue_adr %}
+    | {{ venue_adr }}
+  {% endif %}
 {% endmacro %}
 
 
@@ -257,16 +258,10 @@
   {%- set type = 'event' if item.event and (type == 'org') else type -%}
 
   {% if type %}
-    | <strong>{{ type }}</strong>
-  {% endif %}
-
-
-  {%- set venue_adr = item.event.adr or item.page.data.adr -%}
-  {% if venue_adr %}
-    | {{ venue_adr }}
+    | <em>{{ type }}</em>
   {% endif %}
 
   {% if (item.feature == 'pin') %}
-    <strong class="pinned">[pinned]</strong>
+    <em class="pinned">[pinned]</em>
   {% endif %}
 {% endmacro %}

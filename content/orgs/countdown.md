@@ -5,7 +5,7 @@ org: Technical Director
 type: theater
 adr: Denver, CO
 url: http://countdowntozero.org/
-start: 2007-09-20
+date: 2007-09-20
 end: 2010-01-14
 index: countdown to zero
 tags:

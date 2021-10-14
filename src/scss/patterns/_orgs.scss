@@ -1,4 +1,3 @@
-@use '../../../node_modules/accoutrement/sass/tools';
 @use '../config/fonts';
 
 [data-orgs='section'] {
@@ -8,12 +7,17 @@
 
 [data-orgs='list'] {
   --template: 'date title' auto 'sub sub' auto / auto 1fr;
+  background: radial-gradient(
+    ellipse at center,
+    var(--overlay),
+    transparent 75%
+  );
   display: grid;
   grid-template: var(--template);
   grid-gap: var(--gutter);
   padding: 0 var(--gutter);
 
-  @include tools.above('medium') {
+  @media (min-width: 50em) {
     --template: 'date title' auto '. sub' auto / 1fr 1fr;
   }
 }
@@ -29,7 +33,6 @@
 
 [data-meta] {
   font-size: var(--font-small);
-  color: var(--text-light);
 }
 
 [data-meta='org-date'] {

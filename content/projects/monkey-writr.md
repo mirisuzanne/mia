@@ -1,9 +1,10 @@
 ---
 feature: true
+type: code art
 title: Monkey Writr
 sub: An app for infinite monkeys on a deadline
 url: https://monkey.writr.art
-start: 2021-08-15
+date: 2021-08-15
 hero:
   img: projects/monkey.jpg
   alt: |

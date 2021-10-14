@@ -1,9 +1,7 @@
-@use '../../../node_modules/accoutrement/sass/tools';
-
 img {
   --img-filter-bright: brightness(var(--img-bright, 100%));
-  @include tools.transition('img-filter');
   filter: var(--img-filter, var(--img-filter-bright));
+  transition: filter 200ms ease;
 
   &:hover {
     --img-bright: 100%;
@@ -13,7 +11,8 @@ img {
 .ratio {
   position: relative;
 
-  @include tools.before('') {
+  &::before {
+    content: '';
     display: inline-block;
     height: 0;
     padding-top: calc(100% / var(--ratio));
@@ -21,8 +20,10 @@ img {
   }
 
   iframe {
-    @include tools.position(0 0 0 0);
-    @include tools.square(100%);
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    width: 100%;
   }
 }
 

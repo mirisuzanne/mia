@@ -10,60 +10,47 @@
   {%- set full_title = show.tag_title(collections) if (full_title == 'show_tags') else full_title | mdInline(false) -%}
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>{{ [title, site.title] | join(' | ') }}</title>
-    <meta name="description"
-      content="{{ meta_desc }}" />
+    <meta name="description" content="{{ meta_desc }}" />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="/assets/fonts/Recursive_VF_1.043--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin>
 
     <meta name="color-scheme" content="dark light">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#E0589C">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#A71F63">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e0cbd6">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1f2f34">
 
     {% for url in site.styles %}
-      <link rel="stylesheet"
-        href="/assets/css/{{ url }}" />
+      <link rel="stylesheet" href="/assets/css/{{ url }}" />
     {% endfor %}
 
     <script type="text/javascript" src="/assets/js/fonts.js"></script>
 
     {% for url in extra_styles %}
-      <link rel="stylesheet"
-        href="/assets/css/{{ url }}" />
+      <link rel="stylesheet" href="/assets/css/{{ url }}" />
     {% endfor %}
 
     {% include 'site/og.njk' %}
     {% include 'site/feed.njk' %}
   </head>
 
-  <body
-    data-layout="body">
-    <a href="#title" class="skiplink">Main content</a>
+  <body>
+    <div class="meta">
+      {% include 'site/nav.njk' %}
+      {% include 'site/settings.njk' %}
+    </div>
 
-    <ul
-      data-layout="menu"
-      aria-label="Adjust Colors & Typography">
-      <li aria-labelledby="menu-color">{% include 'site/ccs.njk' %}</li>
-      <li aria-labelledby="menu-type">{% include 'site/type.njk' %}</li>
-    </ul>
-
-    {% include 'site/nav.njk' %}
-    {% include 'site/fancy.njk' %}
     {% include 'site/banner.njk' %}
 
-    <main
-      id="main"
-      aria-labelledby="title"
-      data-layout="main">
+    <main aria-labelledby="title">
       {% include 'site/page.njk' %}
       {% include 'site/calendar.njk' %}
     </main>
 
     {% include 'site/footer.njk' %}
+    {% include 'site/fancy.njk' %}
 
     {% for script in site.scripts %}
       <script type="text/javascript" src="/assets/js/{{ script }}"></script>

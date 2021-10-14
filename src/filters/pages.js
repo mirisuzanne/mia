@@ -26,6 +26,8 @@ const seriesNav = (page, collection) => {
   return null;
 };
 
+const byDate = (collection) => collection.sort((a, b) => b.date - a.date);
+
 const titleSort = (collection) =>
   collection.sort((a, b) => a.data.title - b.data.title);
 
@@ -34,5 +36,6 @@ module.exports = {
   getPublic,
   fromCollection,
   seriesNav,
+  byDate,
   titleSort,
 };

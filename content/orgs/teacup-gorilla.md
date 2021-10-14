@@ -6,7 +6,7 @@ type: music
 hero:
   img: art/music/video-meta.jpg
 url: https://teacupgorilla.com/
-start: 2010-03-04
+date: 2010-03-04
 end: ongoing
 index: teacup gorilla
 tags:

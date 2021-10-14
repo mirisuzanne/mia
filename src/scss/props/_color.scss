@@ -1,9 +1,13 @@
-@use '../../../node_modules/accoutrement/sass/tools';
 @use '../../../node_modules/cascading-color-systems' as ccs;
+@use '../config/color';
+@use 'sass:meta';
 
 [data-ccs-colors] {
   @include ccs.colors;
-  @include tools.tokens--(tools.$colors);
+
+  @each $name, $color in meta.module-variables('color') {
+    --#{$name}: #{$color};
+  }
 
   // darken images in dark mode
   --img-bright: calc(90% + 10% * var(--ccs-mode));
@@ -16,10 +20,10 @@
   );
 
   // flip the shadow based on the mode
-  --text-shadow-off: calc(1px * var(--ccs-mode));
-  --text-shadow-off-invert: calc(var(--text-shadow-off) * -1);
-  --box-shadow-off: calc(var(--half-shim) * var(--ccs-mode));
-  --box-shadow-off-invert: calc(var(--box-shadow-off) * -1);
+  --text-shadow-off: 1px;
+  --text-shadow-off-invert: var(--text-shadow-off);
+  --box-shadow-off: var(--half-shim);
+  --box-shadow-off-invert: var(--box-shadow-off);
 
   --text-shadow: var(--text-shadow-off) var(--text-shadow-off) 0 var(--shadow);
   --text-shadow-invert: var(--text-shadow-off-invert)
@@ -27,9 +31,6 @@
   --box-shadow: var(--box-shadow-off) var(--box-shadow-off) 0 var(--shadow);
   --box-shadow-invert: var(--box-shadow-off-invert) var(--box-shadow-off-invert)
     0 var(--shadow-invert);
-
-  // apply text shadow
-  text-shadow: var(--text-shadow);
 }
 
 [data-ccs-theme] {

@@ -1,4 +1,5 @@
 ---
+type: web tooling
 title: Herman
 sub: Automate design-system documentation directly from your Sass
 venue: OddBird

@@ -3,7 +3,7 @@ title: Sass
 sub: CSS with superpowers
 org: Core Contributor
 url: https://sass-lang.com/
-start: 2017-07-05
+date: 2017-07-05
 end: ongoing
 hero:
   svg: sass.svg

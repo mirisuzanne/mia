@@ -1,6 +1,5 @@
 @use '../config/patterns';
 @use '../config/fonts';
-@use '../../../node_modules/accoutrement/sass/tools';
 
 b,
 strong {
@@ -63,9 +62,10 @@ dfn {
     @include fonts.var('italic' 'fun');
     position: relative;
 
-    @include tools.before('"') {
+    &::before {
       @include fonts.var('extra');
       color: var(--ccs-accent);
+      content: '"';
       margin-right: var(--shim);
       position: absolute;
       right: 100%;
@@ -119,11 +119,11 @@ hr {
 pre,
 code,
 tt {
-  @include tools.font-family('mono');
+  @include fonts.font-family(fonts.$mono);
 
   @supports (font-variation-settings: normal) {
     .fonts-loaded & {
-      @include tools.font-family('recursive');
+      @include fonts.font-family(fonts.$recursive);
       @include fonts.var('code');
     }
   }
@@ -141,8 +141,9 @@ mark {
   grid-column: 1 / -1;
   margin: var(--spacer) 0;
 
-  @include tools.before('') {
+  &::before {
     background: var(--border);
+    content: '';
     height: var(--shim);
     margin-top: var(--half-shim);
   }

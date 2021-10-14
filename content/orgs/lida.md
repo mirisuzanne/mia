@@ -5,7 +5,7 @@ adr: Denver, CO
 org: Technical Director
 type: theater
 url: http://lida.org/
-start: 2008-05-01
+date: 2008-05-01
 end: 2010-03-01
 hero:
   img: art/theater/lida/skatingpromo.jpg

@@ -1,12 +1,5 @@
-@use '../../../node_modules/accoutrement/sass/tools' with (
-  $font-path: '../fonts/'
-);
-
-@forward 'animation';
 @forward 'actions';
 @forward 'color';
 @forward 'fonts';
 @forward 'focus';
-@forward 'layout';
-@forward 'scale';
 @forward 'patterns';

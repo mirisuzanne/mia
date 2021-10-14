@@ -2,7 +2,7 @@
 title: OddBird
 sub: Custom web applications, developer tools, and training
 org: Co-Founder
-start: 2008-04-15
+date: 2008-04-15
 end: ongoing
 hero:
   svg: oddbird.svg

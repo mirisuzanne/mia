@@ -4,7 +4,7 @@ sub: Trans-femme 90's-alt sad-girl rock
 org: Bass
 type: music
 url: https://www.facebook.com/ersatzrobots/
-start: 2018-06-24
+date: 2018-06-24
 end: 2019-05-15
 hero:
   img: art/music/ersatz.jpg

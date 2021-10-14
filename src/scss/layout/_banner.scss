@@ -1,32 +1,28 @@
 @use 'sass:list';
 @use 'sass:map';
-@use '../../../node_modules/accoutrement/sass/tools';
 @use '../config/fonts';
+@use '../config/patterns';
 
-[data-layout='banner'] {
-  @include tools.transition('move');
+#banner {
   align-self: center;
   grid-area: banner;
-  margin: var(--spacer) var(--gutter);
+  padding: calc(var(--spacer) + var(--double-gutter)) var(--spacer);
   text-align: center;
+  transition: transform 200ms ease-in-out;
   transform: rotate(-4deg);
   z-index: 1;
 
-  @include tools.above('page') {
+  @media (min-width: 45em) and (min-height: 35em) {
     transform: rotate(-8deg);
   }
 
-  @include tools.above('wide') {
+  @media (min-width: 75em) and (min-height: 45em) {
     transform: rotate(-12deg);
   }
 }
 
-$banner-font: tools.font('recursive');
-$banner-stack: map.get($banner-font, 'name');
-$banner-fallback: list.join((Impact), map.get($banner-font, 'stack'));
-$banner-stack: list.join(($banner-stack), $banner-fallback);
-
 .banner-title {
+  @include patterns.fancy-text;
   @include fonts.var('light');
   font-size: var(--font-headline);
   line-height: 0.74;
@@ -36,13 +32,6 @@ $banner-stack: list.join(($banner-stack), $banner-fallback);
 
   &::first-line {
     @include fonts.var('extra');
-    font-family: $banner-fallback;
-    letter-spacing: 0.1em;
-
-    .fonts-loaded & {
-      font-family: $banner-stack;
-      letter-spacing: var(--letter-spacing--user-em, 0);
-    }
   }
 }
 

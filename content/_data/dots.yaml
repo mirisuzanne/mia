@@ -1,0 +1,8 @@
+count: 15
+colors:
+  - '--ccs-prime--bg1'
+  - '--ccs-prime--bg2'
+  - '--ccs-prime--bg3'
+  - '--ccs-accent--bg1'
+  - '--ccs-accent--bg2'
+  - '--ccs-accent--bg3'

@@ -24,10 +24,10 @@
 
 [data-input='range'] {
   appearance: none;
-  background: var(--callout) no-repeat;
+  background: var(--action) no-repeat;
   border-radius: 0.25em;
   border: thin solid var(--border);
-  height: 1.5em;
+  height: 1em;
   width: 100%;
   padding: 0;
 
@@ -44,7 +44,7 @@
     border-radius: 0.25em;
     box-shadow: 0 0 0 1px var(--bg), 0 0 0 1px var(--bg) inset;
     cursor: pointer;
-    height: 1.5em;
-    width: 1em;
+    height: 1em;
+    width: 0.5em;
   }
 }

@@ -1,5 +1,6 @@
 ---
 feature: true
+type: code art
 title: The Post-Obsolete Book
 banner: The Obsolete Book
 hero:

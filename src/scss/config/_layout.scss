@@ -1,8 +1,0 @@
-@use '../../../node_modules/accoutrement/sass/tools' as *;
-
-// Times
-// -----
-/// Named z-index stack (allows nested stacks as needed)
-/// @type list
-/// @group config-layout
-$z-index: ('bump', 'dropdown', 'skip-link');

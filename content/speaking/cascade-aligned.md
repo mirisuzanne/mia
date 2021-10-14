@@ -8,9 +8,7 @@ hero:
   width: 2500
   height: 1150
 tags:
-  - Cascade
-  - CSS
-  - Methodology
+  - code
 events:
   - venue: Front Range Front End
     url: https://frontrangefrontend.com/

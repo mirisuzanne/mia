@@ -1,68 +1,29 @@
-@use '../../../node_modules/accoutrement/sass/tools';
-@use '../config/actions';
+@use '../config/fonts';
 
-[data-layout='nav'] {
-  align-items: center;
-  background: var(--overlay);
-  backdrop-filter: blur(var(--shim));
-  display: grid;
-  grid: 'nav' auto 'search' auto / auto;
-  grid-area: nav;
-  grid-gap: var(--gutter);
-  padding: var(--shim) var(--gutter);
-  z-index: 2;
-
-  @include tools.above('page') {
-    font-size: var(--font-small);
-    grid: 'nav search' auto / minmax(max-content, 1fr) minmax(3em, 16em);
-  }
+#main-nav {
+  @include fonts.var('medium');
+  display: flex;
+  gap: var(--border-width);
 }
 
-// Site Nav
-// --------
-
-[data-navlist='site'] {
-  grid-area: nav;
+.nav-list {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--border-width);
   margin: 0;
   padding: 0;
 }
 
-.nav-item {
-  display: inline-block;
-}
-
 [data-nav] {
-  #{actions.$link} {
-    --link-line: var(--nav-border, transparent);
-    --line-weight: 0;
-    display: inline-block;
-    padding: 0 var(--half-shim);
-  }
+  align-items: center;
+  background: var(--callout);
+  display: flex;
+  padding: var(--half-shim) var(--gutter);
+  text-decoration: none;
 
   &[data-active] {
-    --nav-border: var(--ccs-accent--fade);
-    --line-weight: 0.25em;
-    --line-offset: 0.5em;
+    background: var(--feature-gradient);
+    color: var(--bg);
   }
-
-  span {
-    margin-left: -1px;
-  }
-}
-
-// Search
-// ------
-
-[data-form='search'] {
-  --field-margin: 0;
-  grid-area: search;
-  position: relative;
-
-  @include tools.above('page') {
-    justify-self: end;
-  }
-}
-
-[aria-expanded='false'] {
-  display: none;
 }

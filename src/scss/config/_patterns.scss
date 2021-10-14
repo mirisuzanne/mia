@@ -1,5 +1,16 @@
-@use '../../../node_modules/accoutrement/sass/tools';
 @use 'fonts';
+@use 'sass:list';
+@use 'sass:math';
+
+@mixin is-hidden {
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
 
 @mixin fancy-text {
   color: var(--text-highlight);

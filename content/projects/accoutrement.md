@@ -1,4 +1,5 @@
 ---
+type: sass tooling
 title: Accoutrement
 sub: Open-source tools for mainaining design system "tokens" in Sass
 venue: OddBird

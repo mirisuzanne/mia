@@ -5,7 +5,7 @@ org: Co-Founder
 type: theater
 adr: Denver, CO
 url: https://www.grapefruitlab.com/
-start: 2009-08-14
+date: 2009-08-14
 end: ongoing
 hero:
   img: /art/theater/jane/DSC_0362.jpg

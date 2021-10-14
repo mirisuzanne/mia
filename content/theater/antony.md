@@ -4,7 +4,7 @@ title: Antony & Cleopatra
 sub: Stage management & lighting internship
 venue: Oregon Shakespeare Festival
 url: /education/osf/
-start: 2003-02-06
+date: 2003-02-06
 end: 2003-04-26
 adr: Ashland, OR
 hero:

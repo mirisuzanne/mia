@@ -1,37 +1,31 @@
-@use 'sass:meta';
-@use 'sass:color';
-@use '../../../node_modules/accoutrement/sass/tools';
-@use '../../../node_modules/sassdoc-theme-herman/scss/utilities' as herman;
-
 @use '../../../node_modules/cascading-color-systems' with (
   $hues: (
     'prime': 330,
     'accent': 195,
     'neutral': 195,
   ),
-  $saturation: 80%,
+  $saturation: 90%,
   $lightness: 50%,
   $contrast: 45%,
   $fade-background: 20%,
   $fades: 0.85,
   $gradients: true,
+  $steps: 6,
 );
 
-tools.$colors: (
-  'bg': var(--ccs-accent--bg4),
-  'callout': var(--ccs-accent--bg3),
-  'overlay': var(--ccs-accent--bg4-fade),
-  'shadow': var(--ccs--bg-full),
-  'shadow-invert': var(--ccs--fg-full),
-  'text': var(--ccs-neutral--fg3),
-  'text-light': var(--ccs-neutral--fg2),
-  'text-highlight': var(--ccs-accent--fg1),
-  'border': var(--ccs-neutral--fg1),
-  'border-light': var(--ccs-neutral),
-  'action': var(--ccs-prime--fg2),
-  'action-hover': var(--ccs-prime--fg3),
-  'feature-from': var(--ccs-prime--fg1),
-  'feature-to': var(--ccs-accent--fg1),
-  'ccs-background': var(--bg),
-  'ccs-color': var(--text)
-);
+$bg: var(--ccs-accent--bg6);
+$callout: var(--ccs-neutral--bg5);
+$overlay: var(--ccs-accent--bg6-fade);
+$shadow: var(--ccs--bg-full);
+$shadow-invert: var(--ccs--fg-full);
+$text: var(--ccs-neutral--fg5);
+$text-light: var(--ccs-neutral--fg3);
+$text-highlight: var(--ccs-accent--fg1);
+$border: var(--ccs-neutral--fg1);
+$border-light: var(--ccs-neutral);
+$action: var(--ccs-prime--fg3);
+$action-hover: var(--ccs-prime--fg4);
+$feature-from: var(--ccs-prime--fg2);
+$feature-to: var(--ccs-accent--fg2);
+$ccs-background: var(--bg);
+$ccs-color: var(--text);

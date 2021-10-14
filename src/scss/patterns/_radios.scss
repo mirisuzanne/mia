@@ -1,4 +1,3 @@
-@use '../../../node_modules/accoutrement/sass/tools';
 @use '../config';
 
 /// # Radio Buttons
@@ -14,7 +13,7 @@
 
 /// @group input-radio
 [data-radio='input'] {
-  @include tools.is-hidden;
+  @include config.is-hidden;
 }
 
 /// @group input-radio
@@ -35,8 +34,8 @@
 
   [data-radio='input']:focus + & {
     @include config.focus-ring;
-    @include tools.z-index('bump');
     position: relative;
+    z-index: 1;
   }
 
   &:first-of-type {

@@ -4,7 +4,7 @@ sub: indie roots-rock featuring Rachel Eisenstat
 org: Multi-Instrumetalist
 venue: BandCamp
 url: http://www.ravenjane.com/
-start: 2010-09-14
+date: 2010-09-14
 end: 2012-03-24
 hero:
   img: /art/music/ravenjane.jpg

@@ -1,0 +1,21 @@
+@use '../config';
+
+[data-anchor~='settings'] {
+  --right: 0;
+  background: var(--callout);
+  flex: auto;
+
+  summary {
+    margin-left: auto;
+    max-width: max-content;
+    padding: var(--half-shim) var(--gutter);
+  }
+
+  @media (max-width: 30em) {
+    align-self: start;
+
+    .summary-text {
+      @include config.is-hidden;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: Hello and Goodbye
-start: 2006-11-25
+date: 2006-11-25
 end: 2006-12-04
 tags:
   - _calendar

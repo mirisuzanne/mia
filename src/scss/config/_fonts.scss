@@ -1,11 +1,5 @@
 @use 'sass:list';
 @use 'sass:map';
-@use 'sass:meta';
-@use '../../../node_modules/sassdoc-theme-herman/scss/utilities' as herman;
-@use '../../../node_modules/accoutrement/sass/tools';
-
-/// # Font Configuration
-/// @group config-fonts
 
 $mono-stack: (
   'Menlo',
@@ -22,55 +16,37 @@ $sans-stack: ('Geneva', 'sans-serif');
 
 // Static Font
 // --------------
-/// @group config-fonts
-/// @font static
-$static-font: (
+$static: (
   name: 'Verdana',
   stack: $sans-stack,
 );
 
-@include tools.add-font('static', $static-font);
-@include herman.herman-add('font', 'static', $static-font);
-
 // Mono Font
 // ---------
-/// @group config-fonts
-/// @font mono
-$mono-font: (
+$mono: (
   name: 'Consolas',
   stack: $mono-stack,
 );
 
-@include tools.add-font('mono', $mono-font);
-@include herman.herman-add('font', 'mono', $mono-font);
-
 // Recursive Font
 // --------------
-/// @group config-fonts
-$recursive-font: (
-  name: Recursive,
+$recursive: (
+  name: 'Recursive',
   stack: list.join((Verdana), $sans-stack),
 );
 
-@include tools.add-font('recursive', $recursive-font);
-@include herman.herman-add('font', 'recursive', $recursive-font);
-
-// Recursive Font
-// --------------
-/// @group config-fonts
-$recursive-font: (
-  name: Recursive Mono,
+// Mono Font
+// ---------
+$recursive-mono: (
+  name: 'Recursive Mono',
   stack: list.join((Consolas), $mono-stack),
 );
-
-@include tools.add-font('recursive-mono', $recursive-font);
-@include herman.herman-add('font', 'recursive-mono', $recursive-font);
 
 $_variants: (
   body: (
     --mono: 0,
     --casl: 0,
-    --wght: 400,
+    --wght: 200,
     --slnt: 0,
     --ital: 0.5,
   ),
@@ -88,6 +64,10 @@ $_variants: (
     font-weight: 200,
     --wght: 200,
   ),
+  medium: (
+    font-weight: normal,
+    --wght: 400,
+  ),
   bold: (
     font-weight: bold,
     --wght: 600,
@@ -97,6 +77,15 @@ $_variants: (
     --wght: 1000,
   ),
 );
+
+@function font-family($map) {
+  $stack: list.join(map.get($map, 'name'), map.get($map, 'stack'), comma);
+  @return $stack;
+}
+
+@mixin font-family($map) {
+  font-family: font-family($map);
+}
 
 @mixin var($name, $settings: true) {
   @if ($settings) {
@@ -108,7 +97,7 @@ $_variants: (
   $map: ();
 
   @each $var in $name {
-    $var: tools.get-token($_variants, $var);
+    $var: map.get($_variants, $var);
     $map: map.merge($map, $var);
   }
 

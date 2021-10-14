@@ -3,7 +3,7 @@ title: Mozilla Developer
 sub: Videos, articles, & tools from Mozilla (and OddBird)
 org: DevRel Contractor
 url: https://www.youtube.com/MozillaDeveloper
-start: 2019-07-01
+date: 2019-07-01
 end: 2020-01-01
 hero:
   img: mozdev/mozilla-youtube.jpg

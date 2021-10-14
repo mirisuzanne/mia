@@ -68,17 +68,17 @@
   tag,
   all
 ) %}
-  {% set data = all[tag] %}
+  {% set data = all[tag] | withTag('_calendar') %}
   {% if data %}
     <ul>
-    {% for item in data | only(0, 5) %}
+    {% for item in data | byDate | only(0, 5) %}
       <li>
         {{ utility.link_if(
           item.data.title | mdInline,
           item.url
         ) }}
         {% if item.data.type and (item.data.type != tag) %}
-          [{{ item.data.type }}]
+          | <em>{{ item.data.type }}</em>
         {% endif %}
       </li>
     {% endfor %}

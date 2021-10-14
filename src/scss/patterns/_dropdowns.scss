@@ -1,24 +1,35 @@
-@use '../../../node_modules/accoutrement/sass/tools';
 @use '../config/actions';
 
-[data-dropdown] {
-  --push: calc(100% + var(--half-shim));
-  --top: var(--push);
+[data-anchor] {
+  --top: var(--push, 100%);
   --right: initial;
   --bottom: initial;
   --left: initial;
+  position: relative;
+}
+
+[data-anchor~='left'] {
+  --left: 0;
+}
+
+[data-anchor~='right'] {
+  --right: 0;
+}
+
+[data-dropdown] {
   background: var(--callout);
-  bottom: var(--bottom);
+  bottom: var(--bottom, auto);
   border: var(--border-width) solid var(--border);
   box-shadow: var(--box-shadow);
   display: none;
-  left: var(--left);
-  max-height: calc(var(--rhythm) * 2 + 40vh);
+  left: var(--left, auto);
+  max-height: 80vh;
   max-width: calc(100vw - var(--gutter) * 2);
+  min-width: min-content;
   overflow-y: auto;
   position: absolute;
-  right: var(--right);
-  top: var(--top);
+  right: var(--right, auto);
+  top: var(--top, auto);
   width: 35ch;
   z-index: 100;
 
@@ -29,13 +40,15 @@
 }
 
 [open] summary {
-  @include tools.z-index('dropdown');
+  z-index: 10;
 
-  @include tools.before('') {
-    @include tools.position(0 fixed);
-    @include tools.z-index('bump');
+  &::before {
+    position: fixed;
+    inset: 0;
+    content: '';
     cursor: default;
     display: block;
+    z-index: 1;
   }
 }
 

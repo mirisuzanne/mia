@@ -1,15 +1,17 @@
+@use '../../../node_modules/cascading-color-systems' as ccs;
+@use 'sass:list';
+
 // Icons
-// =======
 
 [data-icon] {
   fill: currentColor;
 }
 
 [data-icon='miriam'] {
-  --mia-svg-eyes: hsla(
-    var(--ccs-h--neutral),
-    var(--ccs-s--bg-contrast),
-    var(--ccs-l--bg-contrast),
-    var(--ccs-mode--invert)
+  --mia-svg-eyes: hsl(
+    var(--ccs-h--neutral) var(--ccs-s--bg-contrast) #{ccs.if-mode(
+        var(--ccs-l--fg-contrast),
+        var(--ccs-l--bg-contrast)
+      )}
   );
 }

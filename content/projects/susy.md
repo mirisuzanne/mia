@@ -1,4 +1,5 @@
 ---
+type: sass tooling
 feature: true
 title: Susy
 sub: |

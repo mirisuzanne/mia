@@ -1,10 +1,11 @@
 ---
+type: code art
 title: Artist in Residence
 sub: The book is dead. Long live the book.
 venue: Media Archeology Lab
 adr: Boulder, CO
 url: http://mediaarchaeologylab.com/past-artist-in-residence/eric-meyer-2/
-start: 2013-09-25
+date: 2013-09-25
 end: 2013-10-07
 hero:
   img: elo14/dancesex.jpg

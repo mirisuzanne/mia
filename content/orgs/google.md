@@ -4,7 +4,7 @@ sub: New specifications & browser priorities
 org: Open Consultant
 venue: Open Collective
 url: https://opencollective.com/chrome
-start: 2020-10-15
+date: 2020-10-15
 end: ongoing
 index: google chrome
 tags:

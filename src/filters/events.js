@@ -89,7 +89,7 @@ const fromCollection = (collection) => {
         Array.prototype.push.apply(events, fromYAML(page));
       }
 
-      if (isEvent(page) && pages.isPublic(page)) {
+      if (isEvent(page)) {
         events.push(buildEvent(page));
       }
     });

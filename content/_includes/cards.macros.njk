@@ -53,16 +53,16 @@
   {{ utility.attr_if('data-old', is_old) }}
 >
   <div data-card="inner">
-    {% if name %}
-      <h4 data-card="title" id="{{ id }}">
-        {{ name | safe }}
-      </h4>
-    {% endif %}
-
     {% if meta %}
       <div data-meta="card">
         {{ meta | safe }}
       </div>
+    {% endif %}
+
+    {% if name %}
+      <h4 data-card="title" id="{{ id }}">
+        {{ name | safe }}
+      </h4>
     {% endif %}
 
     {% if summary %}

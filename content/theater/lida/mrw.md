@@ -6,7 +6,7 @@ sub: |
 venue: BINDERY | space
 url: http://lida.org/the-anonymous-mr-w/
 adr: Denver, CO
-start: 2008-12-12
+date: 2008-12-12
 end: 2008-12-13
 hero:
   img: art/theater/lida/mrw.jpg
