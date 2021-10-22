@@ -1,4 +1,6 @@
 count: 15
+width: 900
+height: 900
 colors:
   - '--ccs-prime--bg1'
   - '--ccs-prime--bg2'

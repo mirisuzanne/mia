@@ -10,6 +10,7 @@ svg {
 }
 
 [data-svg='fancy'] {
+  min-height: 100%;
   overflow: hidden;
   position: fixed;
   inset: 0;
