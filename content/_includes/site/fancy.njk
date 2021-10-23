@@ -1,10 +1,10 @@
 <svg
   data-svg="fancy"
-  role="img"
-  aria-labelledby="miriam-face-title"
+  aria-hidden="true"
+  focusable="false"
   viewBox="0 0 {{ dots.width }} {{ dots.height }}"
   preserveAspectRatio="xMidYMid slice"
-  >
+>
   {%- for i in range(1, dots.count) -%}
     {%- set x = range(1, dots.width / 20) | random * 20 - 10 -%}
     {%- set y = range(1, dots.height / 20) | random * 20 - 10 -%}
