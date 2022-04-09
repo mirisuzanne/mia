@@ -17,7 +17,7 @@ $break: (
 );
 
 @include tools.add-sizes($break);
-@include herman.herman-add(
+@include herman.add(
   'sizes',
   'break',
   $break,
