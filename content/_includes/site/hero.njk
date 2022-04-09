@@ -4,10 +4,7 @@
 <figure data-pattern="figure" data-hero="{{ hero_type }}">
   <div data-figure="content" class="hero-content">
     {% if hero.img %}
-      <img
-        src="{{ site.images + hero.img }}"
-        alt="{{ hero.alt or '' }}"
-        class="hero-image"/>
+      {{ hero.img | img(hero.alt, 'hero', {class: 'hero-img'}) | safe }}
     {% elif hero.svg %}
       {% include "icons/" + hero.svg %}
     {% endif %}

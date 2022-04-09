@@ -135,7 +135,7 @@ or
 
 ## 10 Myths on the Proper Application of Beauty Products
 
-![True West Award](/assets/images/writing/sidesaddle/true-west-award.jpg)
+{{ 'writing/sidesaddle/true-west-award.jpg' | img('True West Award') | safe }}
 
 Riding SideSaddle was
 [adapted for the stage][10myths] by [Buntport Theater][buntport],

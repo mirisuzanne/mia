@@ -117,54 +117,6 @@
 {%- endmacro %}
 
 {# @docs
-label: img
-category: Embed
-note: Embed an image
-params:
-  src:
-    type: url
-  alt:
-    type: string
-    default: ''
-  width:
-    type: number
-    default: none
-  height:
-    type: number
-    default: none
-  sizes:
-    type: string | none
-    default: none
-    note: |
-      Only required for small images, since the default is 100vw.
-      See taxonomy data for named sizes
-      like "card", "media", and "gallery".
-  attrs:
-    type: object
-    default: '{}'
-#}
-{% macro img(
-  src,
-  alt=none,
-  width=none,
-  height=none,
-  sizes=none,
-  attrs={}
-) -%}
-{%- if src -%}
-  {%- set src = src if ('://' in src) else ('/assets/images/' + src) -%}
-  {%- set attrs = attrs | merge({
-    'src': src,
-    'alt': alt or true,
-    'width': width,
-    'height': height
-  }) -%}
-  <img {{ utility.show_attrs(attrs) }}/>
-{%- endif -%}
-{%- endmacro %}
-
-
-{# @docs
 label: svg
 category: Embed
 note: Embed an svg file from the `content/_includes/` folder
@@ -313,13 +265,10 @@ params:
       '--span': item.span
     } | styles -%}
     {% set full_width = (loop.length == 1) or (item.span == 'full') or (item.span > 1) %}
-    {{- img(
-      src=item.img,
-      alt=item.alt,
-      width=item.width,
-      height=item.height,
-      sizes=none if full_width else 'gallery',
-      attrs={'style': style}
+    {{- item.img | img(
+      item.alt,
+      none if full_width else 'gallery',
+      {'style': style}
     ) | safe -}}
   {%- elif item.svg -%}
     {{- svg(item.svg, item.alt) | safe -}}

@@ -7,6 +7,7 @@ const _ = require('lodash');
 
 const utils = require('./src/filters/utils');
 const events = require('./src/filters/events');
+const image = require('./src/filters/image');
 const pages = require('./src/filters/pages');
 const tags = require('./src/filters/tags');
 const time = require('./src/filters/time');
@@ -19,8 +20,8 @@ module.exports = (eleventyConfig) => {
 
   // pass-through
   eleventyConfig.addPassthroughCopy({ _built: 'assets' });
-  eleventyConfig.addPassthroughCopy({ 'src/fonts': 'assets/fonts' });
-  eleventyConfig.addPassthroughCopy({ 'src/images': 'assets/images' });
+  eleventyConfig.addPassthroughCopy('./content/css');
+  eleventyConfig.addPassthroughCopy('./content/fonts');
   eleventyConfig.addPassthroughCopy('content/**/*.txt');
   eleventyConfig.addPassthroughCopy('content/favicon.svg');
 
@@ -51,6 +52,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('styles', utils.styles);
 
   eleventyConfig.addFilter('getDate', time.getDate);
+
+  eleventyConfig.addFilter('img', image.image);
 
   eleventyConfig.addFilter('publicTags', tags.publicTags);
   eleventyConfig.addFilter('getTags', tags.getTags);
@@ -85,6 +88,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('loSlice', _.slice);
 
   // shortcodes
+  eleventyConfig.addShortcode('img', image.image);
   eleventyConfig.addPairedShortcode('md', type.render);
   eleventyConfig.addPairedShortcode('mdInline', type.inline);
   eleventyConfig.addShortcode(

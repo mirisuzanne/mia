@@ -9,6 +9,10 @@ sub: |
 date: 2016-03-26
 hero:
   img: art/theater/10myths.jpg
+  alt: |
+    All the characters are crammed in a small bathroom,
+    with Herman and Sam brushing their teeth,
+    and Teacup Gorilla playing instruments in the bathtub.
 tags:
   - _calendar
   - theater
@@ -27,7 +31,9 @@ Jenny and Jolene are dancing together, Herman doing his nails,
 Edward cleaning, the Narrator watching.
 Time can pass slowly outside the bathroom]*
 
-![](/assets/images/art/theater/10myths/teacup.jpg)
+{{ 'art/theater/10myths/teacup.jpg' | img(
+  'A toilet in the foreground, with Teacup Gorilla playing in the bathtub behind.'
+) | safe }}
 
 **Sam:**
 Make-up tutorial number 37:
@@ -118,7 +124,9 @@ There. See. All gone.
 
 ------
 
-![](/assets/images/art/theater/10myths/jenny-film.jpg)
+{{ 'art/theater/10myths/jenny-film.jpg' | img(
+  'Jenny watching Sam undress on an old TV, surrounded by casseroles'
+) | safe }}
 
 *[Sam is dead in her chair.
 Someone takes a tape out of a box, puts it in the VCR and presses play.
@@ -467,7 +475,9 @@ turning it off and going to do their own thing. Time changes]*
 
 ------
 
-![](/assets/images/art/theater/10myths/dressing.jpg)
+{{ 'art/theater/10myths/dressing.jpg' | img(
+  'Herman and Sam together in dim blue light. Behind them, the bathroom full of characters and the band in the tub.'
+) | safe }}
 
 *[Sam stands up --
 alive and alone again --
@@ -798,7 +808,9 @@ I'd like to take a bath! How is anyone supposed to deal with this?
 
 ------
 
-![](/assets/images/art/theater/10myths/herman-sam-narrator.jpg)
+{{ 'art/theater/10myths/herman-sam-narrator.jpg' | img(
+  'Herman/Sam check their eyebrows and lashes in the camera, with the narrator flossing, and Jenny watching from the toilet.'
+) | safe }}
 
 *[Herman merges into Sam. Everyone else continues what they were doing.
 Jenny and Jolene enter and groom in the mirror]*
@@ -1437,7 +1449,9 @@ But goddamnit, that still looks like me.
 
 ------
 
-![](/assets/images/art/theater/10myths/jenny-herman.jpg)
+{{ 'art/theater/10myths/jenny-herman.jpg' | img(
+  'Jenny plucking her browse, while Herman fixes his hair.'
+) | safe }}
 
 *[Sam separates from Herman and sits down, dead in her chair.
 Everyone goes to watch TV and eat. Herman stays, looking in the mirror]*
@@ -1511,7 +1525,9 @@ I mucus you. I scab you.
 
 ------
 
-![](/assets/images/art/theater/10myths/narrator-edward.jpg)
+{{ 'art/theater/10myths/narrator-edward.jpg' | img(
+  'Narrator on the toilet, and Edward coming through the door.'
+) | safe }}
 
 *[Narrator enters. Sam is still dead]*
 
@@ -1577,7 +1593,9 @@ I don't know… fuck it if it's that kind of day.
 
 ------
 
-![](/assets/images/art/theater/10myths/jenny-others.jpg)
+{{ 'art/theater/10myths/jenny-others.jpg' | img(
+  'Jenny plucking her chin, Narrator standing on the toilet talking to Edward, and Herman/Sam dimmly lit in the background.'
+) | safe }}
 
 *[Sam is alone. People do what they do. Edward enters]*
 
@@ -1982,7 +2000,9 @@ All gone.
 
 ------
 
-![](/assets/images/art/theater/10myths/herman-sam.jpg)
+{{ 'art/theater/10myths/herman-sam.jpg' | img(
+  'Sam brusher her teeth, while Herman checks his lashes - both leaning into the camera/mirror.'
+) | safe }}
 
 *[Sam merges into Herman. They enter the bathroom quickly, as one]*
 
@@ -2127,7 +2147,9 @@ Good. We should get back out there. *[holding up her arm]* Last check.
 
 ------
 
-![](/assets/images/art/theater/10myths/herman-sam-others.jpg)
+{{ 'art/theater/10myths/herman-sam-others.jpg' | img(
+  'Herman/Sam joined by a hand on a forehead, Jolene rests on Jenny, the Narrator in the background, and the band in the bathtub.'
+) | safe }}
 
 *[Herman/Sam are merged. Everyone does their own thing. Jenny enters.
 She is being a bit cagey and secretive, checking the door.

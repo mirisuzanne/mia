@@ -80,7 +80,7 @@ summary: |
 
 ## [Learning Susy](https://learnsusy.zellwk.com/), by Zell Liew
 
-![](/assets/images/projects/learning-susy.png)
+{{ 'projects/learning-susy.png' | img('cover art') | safe }}
 
 [Zell Liew][zell] wrote a great book to get you started with Susy.
 Here are some of the things that you'll learn:

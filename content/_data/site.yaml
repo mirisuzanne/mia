@@ -6,7 +6,7 @@ author: &author Miriam Eric Suzanne
 title: *author
 description: Art, writing, and code from Miriam Suzanne
 email: miriam@miriamsuzanne.com
-images: /assets/images/
+images: /images/
 icon: icons/miriam.svg
 nav:
   about: /who/

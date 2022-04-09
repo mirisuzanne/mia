@@ -16,20 +16,20 @@
     <meta name="description" content="{{ meta_desc }}" />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="/assets/fonts/Recursive_VF_1.043--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Recursive_VF_1.043--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin>
 
     <meta name="color-scheme" content="dark light">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e0cbd6">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1f2f34">
 
     {% for url in site.styles %}
-      <link rel="stylesheet" href="/assets/css/{{ url }}" />
+      <link rel="stylesheet" href="/css/{{ url }}" />
     {% endfor %}
 
     <script type="text/javascript" src="/assets/js/fonts.js"></script>
 
     {% for url in extra_styles %}
-      <link rel="stylesheet" href="/assets/css/{{ url }}" />
+      <link rel="stylesheet" href="/css/{{ url }}" />
     {% endfor %}
 
     {% include 'site/og.njk' %}
