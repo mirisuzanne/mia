@@ -12,6 +12,9 @@ tags:
   - code
   - w3c
   - f-word
+  - cascade layers
+  - css scope
+  - container queries
 summary: |
   I chat with Bruce Lawson & Vadim Makeev
   about Sass & Susy,

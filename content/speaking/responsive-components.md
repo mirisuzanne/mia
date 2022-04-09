@@ -15,14 +15,22 @@ events:
     url: https://smashingconf.com/meets-css/
     date: 2021-07-08
     adr: Online
+    slides: https://slides.oddbird.net/css-next/smashing/
+    video: https://vimeo.com/showcase/8659526
   - venue: CSS Café
     url: https://www.meetup.com/CSS-Cafe/events/278822813/
     date: 2021-06-24
     adr: Online
+    slides: https://slides.oddbird.net/css-next/css-cafe/
+    video: https://youtu.be/ilR9KlsHMGk
+    media: &csscafe
+      iframe: https://www.youtube.com/embed/ilR9KlsHMGk
   - venue: Front Range Front-End
     url: https://www.meetup.com/front-range-front-end/events/kvckcsyccjbfb/
     date: 2021-06-03
     adr: Online
+    slides: https://slides.oddbird.net/css-next/front-range/
+    video: https://youtu.be/GuMvZuUrJaY
     media: &frfe
       iframe: https://www.youtube.com/embed/GuMvZuUrJaY
   - venue: Front-end Development South Africa
@@ -40,6 +48,8 @@ events:
     adr: Online
     slides: https://slides.oddbird.net/css-next/hover/
 media:
+  - <<: *csscafe
+    span: full
   - <<: *frfe
   - <<: *fedsa
 summary: |

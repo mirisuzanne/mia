@@ -14,9 +14,16 @@ events:
     end: 2020-10-28
     adr: Online
     feature: true
+    slides: https://slides.oddbird.net/conventions/aea1020/
+    video: https://vimeo.com/657632307
+    media: &aea
+      iframe: https://player.vimeo.com/video/657632307
 summary: |
   How do we write code that is modular & maintainable,
   in a language designed to be systematic & contextual?
+media:
+  - <<: *aea
+    span: full
 ---
 
 Over the years developers have explored a range of techniques,
@@ -31,3 +38,13 @@ By understanding the trade-offs involved,
 we can make more informed decisions
 about how to mix, match, adjust,
 or re-write these conventions to meet our needs.
+
+[More resources »](https://slides.oddbird.net/conventions/resources/)
+
+------
+
+{% import 'content.macros.njk' as content %}
+{{ content.fig(
+  data=media,
+  caption='Conference video...'
+) }}

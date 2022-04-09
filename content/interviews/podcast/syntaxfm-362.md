@@ -11,6 +11,9 @@ tags:
   - code
   - w3c
   - syntax.fm
+  - cascade layers
+  - css scope
+  - container queries
 summary: |
   In this episode of Syntax,
   Scott and Wes talk with Miriam

@@ -5,8 +5,9 @@ url: https://css-tricks.com/css-cascade-layers/
 date: 2022-02-21
 tags:
   - w3c
-image:
-  src: 2022/cascade-layers-guide.png
+  - cascade layers
+hero:
+  img: 2022/cascade-layers-guide.png
   alt: |
     fragment of an inverted triangle with the cascade --
     cascade layers are highlighted below element-attached styles

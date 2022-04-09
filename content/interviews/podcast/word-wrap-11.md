@@ -13,6 +13,9 @@ tags:
   - code
   - w3c
   - word wrap show
+  - cascade layers
+  - css scope
+  - container queries
 summary: |
   I talk with Claire and Steph
   about my journey into webdev and onto the CSSWG,
