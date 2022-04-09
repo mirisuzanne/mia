@@ -8,11 +8,6 @@ hero:
   img: art/theater/ctz/ui.png
   alt: Ui in white face, right hand in the air
 tags:
-  - countdown to zero
-  - theater
-  - art
-  - ensemble
-  - technical director
   - assistant director
 events:
   - venue: BINDERY | space

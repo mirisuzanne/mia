@@ -12,12 +12,7 @@ hero:
     Chorus (a.k.a. The Large Hadron Collider)
     *[photo by Erin Preston]*
 tags:
-  - _calendar
-  - _LIDA
-  - theater
-  - art
   - acting
-  - ensemble
 press:
   - text: |
       Roller Skating With My Cousin is a musical

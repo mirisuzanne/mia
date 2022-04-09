@@ -9,12 +9,7 @@ end: 2009-03-21
 hero:
   img: art/theater/lida/rain.jpg
 tags:
-  - _calendar
-  - _LIDA
-  - theater
-  - art
   - lighting
-  - ensemble
 press:
   - text: |
       It’s theater of chaos.

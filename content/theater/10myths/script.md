@@ -15,8 +15,6 @@ hero:
     and Teacup Gorilla playing instruments in the bathtub.
 tags:
   - _calendar
-  - theater
-  - art
   - writing
   - riding sidesaddle
   - buntport

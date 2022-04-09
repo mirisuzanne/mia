@@ -2,12 +2,5 @@
   "layout": "base",
   "type": "theater",
   "calendar": "countdown to zero",
-  "tags": [
-    "_calendar",
-    "theater",
-    "art",
-    "countdown to zero",
-    "ensemble",
-    "technical director"
-  ]
+  "tags": ["_calendar", "countdown to zero", "ensemble", "technical director"]
 }

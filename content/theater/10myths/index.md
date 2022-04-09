@@ -13,9 +13,7 @@ date: 2016-03-04
 end: 2016-03-26
 tags:
   - _calendar
-  - theater
   - writing
-  - art
   - riding sidesaddle
   - teacup gorilla
   - music

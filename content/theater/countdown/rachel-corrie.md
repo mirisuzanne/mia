@@ -8,11 +8,6 @@ hero:
   img: art/theater/ctz/rachel.png
   alt: Silhouette sitting on a hill, beside a bullhorn
 tags:
-  - countdown to zero
-  - theater
-  - art
-  - ensemble
-  - technical director
   - tour
 events:
   - venue: BINDERY | space

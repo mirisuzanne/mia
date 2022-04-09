@@ -567,7 +567,9 @@ And he was selling vacuum cleaners?
 
 **Milo:**
 Um, Yeah.
-**Sam what have you been smoking?:**
+
+**Sam:**
+what have you been smoking?
 
 **Milo:**
 I haven’t.
@@ -579,7 +581,8 @@ What do you mean?
 **Sam:**
 Vacuum cleaners. Everyone sells vacuum cleaners. You wouldn’t tell me.
 
-**Milo It wasn’t important. It was a moment.:**
+**Milo:**
+It wasn’t important. It was a moment.
 
 **Sam:**
 Right. The moment. You mentioned that. There was this guy and you had a spiritual moment together. Very Zen of you.
@@ -621,7 +624,9 @@ Understand what?
 
 **Milo:**
 Why I quit.
-**Sam quit what?:**
+
+**Sam:**
+quit what?
 
 **Milo:**
 So I can go somewhere, do something I like.

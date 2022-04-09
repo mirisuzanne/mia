@@ -9,8 +9,6 @@ tags:
   - _calendar
   - teacup gorilla
   - grapefruit lab
-  - theater
-  - art
   - writing
   - script
 summary: |

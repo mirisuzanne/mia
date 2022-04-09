@@ -11,10 +11,6 @@ end: 2008-12-13
 hero:
   img: art/theater/lida/mrw.jpg
 tags:
-  - _calendar
-  - _LIDA
-  - theater
-  - art
   - lighting
   - assistant director
 summary: |

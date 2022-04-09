@@ -5,10 +5,8 @@ url: https://www.du.edu/denverquarterly/past/index.html
 date: 2017-01-10
 tags:
   - _calendar
-  - art
   - riding sidesaddle
   - writing
-  - theater
   - buntport
 hero:
   img: 2017/denver-quarterly.jpg

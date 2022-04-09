@@ -29,3 +29,8 @@ CSS simplifies Web authoring and site maintenance.
 
 All my research, explainers, and proposals
 are available at [css.oddbird.net](https://css.oddbird.net/)
+
+Some of the work is funded through
+[Chrome's Web Framework & Tools Performance Fund][fund].
+
+[fund]: https://opencollective.com/chrome

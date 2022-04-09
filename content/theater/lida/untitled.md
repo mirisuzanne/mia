@@ -5,10 +5,6 @@ venue: Bluebird Theater
 adr: Denver, CO
 date: 2008-05-16
 tags:
-  - _calendar
-  - _LIDA
-  - theater
-  - art
   - acting
   - devising
 summary: |
