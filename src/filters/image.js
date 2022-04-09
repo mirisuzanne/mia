@@ -11,7 +11,8 @@ category: File
 */
 
 const imgOptions = {
-  widths: [480, 960, 1600],
+  // widths: [480, 960, 1600],
+  widths: [960, 1600],
   formats: ['avif', 'jpeg'],
   filenameFormat: (id, imgSrc, width, format) => {
     const extension = path.extname(imgSrc);
@@ -72,6 +73,13 @@ const image = (
     ...imgOptions,
     outputDir,
     urlPath,
+    sharpJpegOptions: {
+      quality: 80, // default
+      progressive: true,
+    },
+    sharpAvifOptions: {
+      quality: 80,
+    },
   };
 
   // generate images; this is async but we don’t wait

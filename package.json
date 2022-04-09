@@ -34,10 +34,9 @@
     "watch:sass": "sass --watch content/scss:_site/css",
     "watch:js:compile": "rollup -c --watch",
     "watch:js": "run-p watch:js:*",
-    "site:clean": "rm -rf ./_site/",
     "assets:clean": "rm -rf ./_built/",
     "serve": "npm-run-all build:assets build:site -p eleventy:serve watch:js watch:sass",
-    "build:site": "run-s site:clean sass sassdoc",
+    "build:site": "run-s sass sassdoc",
     "build:assets": "npm-run-all assets:clean -p js",
     "build": "run-s build:assets build:site eleventy"
   },
