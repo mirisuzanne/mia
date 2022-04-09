@@ -3,12 +3,12 @@
 [data-anchor~='settings'] {
   --right: 0;
   background: var(--callout);
-  flex: auto;
+  flex: 0;
 
   summary {
     margin-left: auto;
-    max-width: max-content;
     padding: var(--half-shim) var(--gutter);
+    white-space: nowrap;
   }
 
   @media (max-width: 30em) {

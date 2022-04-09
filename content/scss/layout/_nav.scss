@@ -3,6 +3,7 @@
 #main-nav {
   @include fonts.var('medium');
   display: flex;
+  flex: auto;
   gap: var(--border-width);
 }
 

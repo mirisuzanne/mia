@@ -16,14 +16,14 @@ html {
   --font-scale--user-vw: calc(var(--font-scale--user) * 0.001vw);
   --font-scale: var(--font-scale--user-vw, 0.25vw);
   --font-size--user-px: calc(var(--font-size--user) * 0.1px);
-  --font-range: var(--font-range--user, 28);
+  --font-range: var(--font-range--user, 22);
   --letter-spacing--user-em: calc(var(--letter-spacing--user) * 0.001em);
 
   --font-size: calc(1em + var(--font-size--user-px, 0px) + var(--font-scale));
   --font-large: calc(1.5rem + var(--font-scale));
-  --font-headline: calc(1.75rem + (var(--font-scale) * var(--font-range)));
-  --font-small: 0.75rem;
-  --font-smaller: 0.75em;
+  --font-headline: calc(1.5rem + (var(--font-scale) * var(--font-range)));
+  --font-small: max(16px, 0.75rem);
+  --font-smaller: max(16px, 0.75em);
 
   --line-ratio--user-c: calc(1 + var(--line-ratio--user) / 10);
   --line-ratio: var(--line-ratio--user-c, 1.5);

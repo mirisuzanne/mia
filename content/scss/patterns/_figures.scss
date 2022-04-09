@@ -42,10 +42,9 @@ img {
 [data-figure='content'] {
   display: grid;
   grid-gap: var(--shim);
-  grid-template-columns: [full-start] repeat(
-      auto-fit,
-      minmax(min(12em, 100%), 1fr)
-    ) [full-end];
+  grid-template-columns:
+    [full-start] repeat(auto-fit, minmax(min(12em + 2vw, 100%), 1fr))
+    [full-end];
 
   img,
   svg {

@@ -20,7 +20,7 @@
 ) -%}
 <blockquote>
 {{ data.text | md | safe }}
-<p>{{ '---' | mdInline }}<cite>{{ cite(data) }}</cite></p>
+<p>{{ '---' | mdInline }}<cite>{{ cite(data) | mdInline | safe }}</cite></p>
 </blockquote>
 {%- endmacro %}
 
