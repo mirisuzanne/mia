@@ -62,7 +62,7 @@
     "husky": "^4.2.3",
     "js-yaml": "^3.13.1",
     "lint-staged": "^10.0.8",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lunr": "^2.3.8",
     "markdown-it": "^10.0.0",
     "markdown-it-footnote": "^3.0.1",
