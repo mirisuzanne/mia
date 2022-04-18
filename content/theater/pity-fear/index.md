@@ -12,12 +12,14 @@ venue: Buntport Theater
 url: https://grapefruitlab.com/shows/pity-fear/
 date: 2022-05-13
 end: 2022-05-28
+index: pity+fear
 tags:
   - _calendar
   - writing
   - acting
   - lighting
   - grapefruit lab
+  - pity+fear
 summary: |
   **What does it mean to be a person** --
   to have a body, and live in it --
