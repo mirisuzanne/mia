@@ -27,6 +27,8 @@ summary: |
   to tell the truth?
 ---
 
+[Tickets are available now](https://grapefruitlab.com/shows/pity-fear/)
+
 **Pity+Fear**
 in an intimate and darkly comic
 attempt at a one-woman tragedy,
@@ -37,6 +39,11 @@ platonic realism,
 the conflicting myths of Agraulos,
 and what to order for dinner.
 
+> There are no new ideas.
+> There are only new ways of making them felt.
+>
+> ---Audre Lorde
+
 Written by Miriam Suzanne,
 with original music & lyrics
 by Josselyn Cool (Better Selfs, Teacup Gorilla).
@@ -44,8 +51,3 @@ Designed & developed with Julie Rada, Kenny Storms,
 Ben Meyer Reimer, and Erin Rollman.
 Thanks to Buntport Theater for
 generously providing us a space to perform.
-
-> There are no new ideas.
-> There are only new ways of making them felt.
->
-> ---Audre Lorde

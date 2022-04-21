@@ -1,7 +1,6 @@
 ---
-draft: true
-title: Delusions
-date: 2022-04-19
+title: My Theatrical Delusions
+date: 2022-04-20
 tags:
   - theater
   - writing
@@ -36,31 +35,30 @@ Like, can you imagine anything cooler?
 
 Probably.
 But, I couldn't.
-This was Indiana
-before the Web went World Wide!
 
+For context,
+this was Indiana
+before the Web went World Wide!
 And my dad --
-to rebel against his father --
-dropped out of college,
-and then became a car mechanic & a farmer.
+maybe rebelling against his own father --
+became a car mechanic & a farmer.
 Working with his hands.
 So I grew up splitting firewood,
 and throwing hay bales.
 
 But every summer,
-my uncle Bruce would come stay with us
-between shows.
+my uncle Bruce would come stay with us.
 That's on my mom's side, her brother.
 He was a stage manager
-at the Indiana Repertory Theater.
-And he was my idol.
+at the Indiana Repertory Theater,
+and would get 3 months off every summer.
 
-And eventually he started a theater company in town
-doing Shakespeare in the Park while he was there.
-And he would cast me as like
+And eventually he started
+doing Shakespeare in the Park
+while he was in town.
+And he would cast me as
 one of the fairies in _A Midsummer Nights Dream_,
 or part of the Night Watch in _Much Ado About Nothing_.
-
 Which, _nepotism_?
 Great job, if you can get it.
 But honestly, it's a small town.
@@ -73,18 +71,16 @@ maybe middle-school at that point,
 I'm not sure.
 My uncle's directing,
 and my dad is cast as The Friar.
-
-So we're both in this show together,
+We're both in this show together,
 and I can't drive yet,
 so dad is my ride home after rehearsal,
 and…
 He spends that time telling me
 all the things I got wrong --
 explaining to me why I'm not a very good actor.
-it's because I'm 12 years old, ok?
-But he thinks I need to work a lot harder.
-Or, you know, quit deluding myself,
-and find something I'm actually good at.
+I need to work a lot harder,
+or, you know, stop deluding myself.
+Find something I'm actually good at.
 
 And after that show,
 and a few more rounds of that fatherly feedback,
@@ -94,22 +90,24 @@ I found my place off-stage --
 lighting design, and then writing and directing.
 Pointing the spotlight at someone else.
 
-And he seems to like that batter.
+And he seemed to like that batter.
 I was not in the room,
-but I overheard him tell a friend
-that he liked a play I wrote, once.
+but I overheard him once,
+telling a friend
+that he liked a play I wrote.
 So, big win for me.
+Since then he's said it to my face,
+but that's the first I remember hearing it.
 
-Still, what he actually said to me
-was that it's not healthy to be an artist.
-He'd say
+Still, what he usually said to me
+was that it's good to make art,
+but not healthy to _be an artist_.
 "Every artist I know is in therapy.
-Clearly it's bad for you, emotionally,
+It's bad for you, emotionally,
 to play make-believe all the time.
-It's ok to make art, sometimes,
-but you also have to do something real in life.
-Something to keep you grounded,
-something with your hands."
+You also have to do something
+to keep yourself grounded.
+Something with your hands."
 
 And I was like, ok but counterpoint:
 therapy is actually pretty great,
@@ -122,35 +120,7 @@ So I don't know if typing counts
 as using my hands,
 but I'm not _just_ an artist.
 
-My accountant,
-a few years back…
-I got an accountant
-because self-employment taxes
-are a nightmare.
-And I have a web company,
-my theater company --
-we're not raking in money
-but the IRS counts it --
-two bands,
-my novel,
-some art that I sell…
-And the accountant told me:
-that's cool that you like doing
-so many different things,
-but some day you'll have to pick one thing
-to actually focus on, right?
-
-And like,
-ma'am: I'm almost 40.
-So… no.
-
-But I love that you're giving it a go
-as a life coach!
-That's excellent for you.
-Do you still do taxes,
-because I really need help with my taxes.
-
-Anyway, when I get to college,
+When I get to college,
 I'm studying theater,
 but I also start running
 a theater company downtown
@@ -179,9 +149,8 @@ the occasional artistic violence.
 
 But she'd point to Shakespeare,
 like you know, he doesn't say the F word even once!
-And I'd try to explain
+And I'd try to argue
 that _Much Ado About Nothing_
-at the time it was written
 is basically a single extended sex joke
 for three and a half hours.
 
@@ -193,19 +162,19 @@ And so this play is just people
 getting all hot and bothered about… nothing!
 It's like 16th century _American Pie_.
 
-Grandpa, the academic opera lover,
+Grandpa, the opera lover,
 would also come to my shows.
 And he generally liked them,
 but then every time
 he would suggest ways we could _explain_ the show better?
-Like if it was magical realism,
+Like if it was _magical realism_,
 he'd be like
 "that's great,
 I love all the magic,
 but wouldn't it be more clear
 if it was just _realism_ realism?"
 
-Probably, yeah.
+(Probably, yeah.)
 
 He also would ask me about
 what classes I was taking in college, of course,
@@ -214,7 +183,7 @@ and ask if I was studying anything _real_, you know.
 
 I think it was his brother,
 or maybe brother-in-law,
-who earnestly asked a writing professor:
+who asked a writing professor:
 _Why would anyone write fiction,
 it's not even true?_
 So there you go.
@@ -237,7 +206,7 @@ You can't trust actors, right?!
 
 You can trust me,
 I'm not an actor.
-I'm just _on stage_.
+I'm just _on stage, holding a script_.
 
 But ok, my senior year --
 my second senior year? --
@@ -271,7 +240,6 @@ So they're not asking me to translate --
 there are plenty of translations out there --
 what they need is someone to make it funny,
 while keeping it G-rated?
-
 Which… I tried,
 and I guess it caused some faculty fights?
 Theater department loved what I was doing,
@@ -297,7 +265,6 @@ For my brother,
 the question was:
 "how do cordless phones even work? There's no cord!
 Is it like wifi or something?"
-
 But for me,
 the conversation was always
 about that production of Figaro,
@@ -313,9 +280,29 @@ if I had just done a _literal translation_?
 Word for word, you know?
 Like on the VHS?
 
-Yeah, probably.
+(Yeah, probably.
+I miss him.)
 
-Ok, one more piece to the story.
+Eventually my company fell apart,
+and I moved to Denver.
+Now I have my web work,
+the bands, other art I'm doing.
+I got an accountant
+to help with self-employment taxes.
+And the accountant says
+"That's really cool that you like doing
+so many different things,
+but some day you'll have to pick one thing
+to actually focus on, right?"
+
+And like,
+ma'am: I'm almost 40.
+So… no.
+But I love that you're giving it a go
+as a life coach!
+That's excellent for you.
+Do you still do taxes,
+because I really need help with my taxes.
 
 There's another cousin,
 I think maybe grandma's cousin --
@@ -336,17 +323,16 @@ and says:
 "I dedicated my life to theater".
 Which, I had no idea actually.
 But really, I think,
-he dedicated his life to Drama Therapy,
-which is different.
+he dedicated his life to Drama Therapy.
 He was a psychologist, I think?
-
+Which is different.
 But what am I going to do,
 fact-check him in the hospital?
 
 Uncle Chuck was also
-an evangelical, an ex-missionary.
+an evangelical, a missionary.
 Something I didn't really understand as a kid.
-When I was going through my divorce,
+But when I was going through my divorce,
 he sent me this bulging envelope:
 pages of clipped articles
 from _Focus on The Family_ or whatever --
@@ -374,7 +360,12 @@ And… I don't know, Chuck.
 Yeah, probably.
 
 Anyway, here we are now.
-I have a new show opening in a couple weeks.
+I have a
+[new show opening](https://grapefruitlab.com/shows/pity-fear/)
+in a couple weeks.
+It's a one woman show with two women,
+a tragedy but also a comedy,
+and it's dealing with identity and change.
 I wrote it.
 It has _a lot_ of swearing,
 and some violence,
