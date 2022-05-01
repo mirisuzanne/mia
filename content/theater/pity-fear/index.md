@@ -3,11 +3,12 @@ feature: true
 title: Pity+Fear (a travesty)
 sub: Falling, turned to stone, and falling again
 hero:
-  img: art/theater/pity/teaser.jpg
+  img: art/theater/pity/postcards.jpg
   alt: |
-    Show details in bold type
-    over a blurred painting of
-    naked Truth emerging from her well.
+    A painting of
+    Truth emerging from her well,
+    ripped along the bust to reveal tattoos and coveralls,
+    and text with the show title & dates.
 venue: Buntport Theater
 url: https://grapefruitlab.com/shows/pity-fear/
 date: 2022-05-13
@@ -38,6 +39,9 @@ Miriam & Josie fail to grapple with queer identity,
 platonic realism,
 the conflicting myths of Agraulos,
 and what to order for dinner.
+
+- Fridays & Saturdays, May 13-28 @ 7:20pm
+- Buntport Theater, 717 Lipan St, Denver
 
 > There are no new ideas.
 > There are only new ways of making them felt.

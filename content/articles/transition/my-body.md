@@ -5,6 +5,11 @@ date: 2017-03-01
 erasure: true
 hero:
   img: 2017/fragments.jpg
+  alt: |
+    Sliced and offset black-and-white photo of Mia
+    with a friend in high school,
+    and a more recent color image of Mia more recently
+    imposed on top.
 summary: |
   I wasn't born in the wrong body.
   *I was born, a body.*
@@ -35,11 +40,13 @@ I call it transition.
 
 ------
 
-{{ content.erase('These fragments') }}
-are my own,
-not a guide to trans experience.
-Some will ==relate to parts.==
-Others won't.
+<p>
+  {{ content.erase('These fragments') }}
+  are my own,
+  not a guide to trans experience.
+  Some will <mark>relate to parts.</mark>
+  Others won't.
+</p>
 
 ------
 
