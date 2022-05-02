@@ -82,13 +82,13 @@ There's no instruction manual,
 Your hunger
 doesn't take the time
 to stop and explain itself
-before ==driving you mad.==
+before ==making you frustrated.==
 
 ------
 
 ==I watch== Eddie Izzard,
 and think maybe I'm an *action transvestite*,
-but the lazy kind with a beer gut,
+but the lazy kind,
 who has no time for makeup,
 and finds ==dresses== unflattering.
 
