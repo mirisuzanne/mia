@@ -99,5 +99,8 @@
       "prettier --write"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "sanitize-html": "^2.7.0"
+  }
 }

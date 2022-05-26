@@ -8,6 +8,7 @@ const _ = require('lodash');
 const utils = require('./src/filters/utils');
 const events = require('./src/filters/events');
 const image = require('./src/filters/image');
+const mentions = require('./src/filters/mentions');
 const pages = require('./src/filters/pages');
 const tags = require('./src/filters/tags');
 const time = require('./src/filters/time');
@@ -54,6 +55,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('getDate', time.getDate);
 
   eleventyConfig.addFilter('img', image.image);
+
+  eleventyConfig.addFilter('mentionsForUrl', mentions.forUrl);
 
   eleventyConfig.addFilter('publicTags', tags.publicTags);
   eleventyConfig.addFilter('getTags', tags.getTags);
