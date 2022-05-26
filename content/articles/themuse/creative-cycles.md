@@ -6,10 +6,12 @@ url: https://medium.com/the-operating-system/coco-process-course-eric-meyers-fuc
 date: 2012-11-08
 cleese:
   - iframe: https://player.vimeo.com/video/176474304
+    title: John Cleese video
     width: 640
     height: 483
 divided:
   - iframe: https://www.youtube.com/embed/dFs9WO2B8uI
+    title: video explaining the divided brain
     width: 521
     height: 293
 cycle:
@@ -17,10 +19,12 @@ cycle:
     alt: Is your approach working? Keep doing it, or try something else.
 elmo:
   - iframe: https://www.youtube.com/embed/iZhEcRrMA-M
+    title: video of Elmo
     width: 520
     height: 390
 different:
   - iframe: https://www.youtube.com/embed/K2P86C-1x3o
+    title: Monty Python video
     width: 520
     height: 390
 ---

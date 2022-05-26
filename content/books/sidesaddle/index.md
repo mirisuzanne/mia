@@ -107,6 +107,7 @@ video:
     *Whiskey From Strangers*
   src:
     - iframe: https://player.vimeo.com/video/182858323
+      title: Live video
       width: 640
       height: 360
 summary: |

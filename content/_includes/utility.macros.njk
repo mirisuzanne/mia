@@ -78,17 +78,19 @@
 {% macro link_if(
   content,
   url=none,
-  class=none
+  attrs={}
 ) -%}
+  {% set attrs = {'class': attrs} if attrs | typeCheck('string') else attrs %}
+
   {%- if url -%}
     <a
       href="{{ url | url }}"
-      {{ attr_if('class', class) }}>
+      {{ show_attrs(attrs) }}>
       {{- content | safe -}}
     </a>
   {%- else -%}
     <span
-      {{ attr_if('class', class) }}>
+      {{ show_attrs(attrs) }}>
       {{- content | safe -}}
     </span>
   {%- endif -%}

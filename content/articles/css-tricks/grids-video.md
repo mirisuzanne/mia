@@ -13,6 +13,7 @@ video:
     Exploring CSS Grids with Geoff Graham
   src:
     - iframe: https://www.youtube.com/embed/5fkC6AG3XWU
+      title: youtube video
       width: 560
       height: 315
 summary: |

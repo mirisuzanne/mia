@@ -24,6 +24,7 @@ media:
   - span: full
     iframe: https://anchor.fm/frontendnerdery/embed/episodes/10---Miriam-Suzanne-e14kfst
     height: 102px
+    title: Audio embed
   - span: full
     iframe: https://www.youtube.com/embed/vD7vJCckDGM
 ---

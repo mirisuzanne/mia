@@ -47,6 +47,8 @@ Take care of each other.
 
           {% set who = collections.all | getPage('/who/') | first %}
           {{ who.data.summary | md | safe }}
+
+          {{ contact.links(social) }}
         {% endcall %}
       </section>
     {% endif %}

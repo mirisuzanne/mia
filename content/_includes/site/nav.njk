@@ -1,8 +1,6 @@
 {% import 'site/macros.njk' as show %}
 
 <nav id="main-nav" aria-label="Primary">
-  {{ show.nav_link(site.title, '/', page) }}
-
   {% set page = collections.all | getPage(page) | first or page %}
   {{ show.site_nav(site.nav, page) }}
 </nav>

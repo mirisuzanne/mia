@@ -33,6 +33,7 @@ press:
     url: https://stubbornsounds.wordpress.com/2015/07/07/teacup-gorilla-the-holes-they-leave-in-review/
 audio:
   - iframe: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/118973549&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
+    title: Soundcloud embed
     width: 100%
     height: 450
 ---

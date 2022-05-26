@@ -143,6 +143,8 @@ note: |
 params:
   src:
     type: url
+  title:
+    type: string
   width:
     type: number
     default: 'none'
@@ -156,6 +158,7 @@ params:
 #}
 {% macro iframe(
   src,
+  title,
   width=none,
   height=none,
   span=none
@@ -164,6 +167,7 @@ params:
   {%- set height = height or 315 -%}
   {%- set attrs = {
     'src': src,
+    'title': title,
     'width': width,
     'height': height,
     'frameborder': '0',
@@ -273,7 +277,13 @@ params:
   {%- elif item.svg -%}
     {{- svg(item.svg, item.alt) | safe -}}
   {%- elif item.iframe -%}
-    {{- iframe(item.iframe, item.width, item.height, item.span) -}}
+    {{- iframe(
+      item.iframe,
+      item.title or 'video embed',
+      item.width,
+      item.height,
+      item.span
+    ) -}}
   {%- elif item.audio -%}
     <div style="--span: {{ item.span }}">
       {{- audio(item.audio) -}}
@@ -317,3 +327,19 @@ params:
 ) }}.</p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 {% endcall %}
 {%- endmacro %}
+
+{% macro caniuse(
+  feature,
+  periods=none,
+  script=true
+) %}
+{% set periods = periods or 'future_1,current,past_1,past_2' %}
+<p class="ciu_embed" data-feature="{{ feature }}" data-periods="future_1,current,past_1,past_2" data-accessible-colours="false">
+  <picture>
+    <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/{{ feature }}.webp">
+    <source type="image/png" srcset="https://caniuse.bitsofco.de/image/{{ feature }}.png">
+    <img src="https://caniuse.bitsofco.de/image/{{ feature }}.jpg" alt="Data on support for the {{ feature }} feature across the major browsers from caniuse.com">
+  </picture>
+</p>
+<script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/public/caniuse-embed.min.js"></script>
+{% endmacro %}

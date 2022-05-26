@@ -17,6 +17,7 @@ summary: |
   must be built around inclusivity and respect.
 media:
   - iframe: https://open.spotify.com/embed/episode/7xQhoapfCMFjxc1AUbb0z8
+    title: Audio embed
 ---
 
 {% import "content.macros.njk" as content %}

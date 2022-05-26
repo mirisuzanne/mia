@@ -5,6 +5,7 @@ hero:
   img: writing/sidesaddle/reeds.jpg
 carina:
   - iframe: https://www.youtube.com/embed/tGn6kZJaznI?rel=0
+    title: Carina Magyar video
     width: 560
     height: 315
 summary: |

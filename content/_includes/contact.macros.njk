@@ -55,3 +55,18 @@
   </div>
 </form>
 {% endmacro %}
+
+{% macro links(social) %}
+<ul>
+  {% for item in social %}
+  {% set content %}{% if item.user %}{{ item.user }} on {% endif %}{{ item.site }}{% endset %}
+  <li>
+    {{ utility.link_if(
+      content,
+      item.url,
+      {'rel': 'me'}
+    ) }}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

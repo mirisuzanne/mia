@@ -19,6 +19,7 @@ summary: |
   [ah]: https://americaheard.com/
 film:
   - iframe: https://player.vimeo.com/video/198228746?color=c30062
+    title: Transitions documentary video
     width: 800
     height: 450
 ---

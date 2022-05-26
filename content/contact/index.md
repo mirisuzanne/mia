@@ -9,8 +9,4 @@ sub: Leave me a note, or find me online!
 
 ## Feeling Social…
 
-- [Twitter](https://twitter.com/TerribleMia) (`@TerribleMia`)
-- [Github](https://github.com/mirisuzanne) (`@mirisuzanne`)
-- [Codepen](https://codepen.io/miriamsuzanne/) (`@miriamsuzanne`)
-- [StackOverflow](https://stackoverflow.com/users/1930386/)
-- [KeyBase](https://keybase.io/mirisuzanne)
+{{ contact.links(social) }}

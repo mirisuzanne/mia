@@ -9,6 +9,7 @@ tags:
   - raven jane
 album:
   - iframe: https://bandcamp.com/EmbeddedPlayer/album=2816247102/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/
+    title: Bandcamp embed
     width: 100%
     height: 307
 summary: |

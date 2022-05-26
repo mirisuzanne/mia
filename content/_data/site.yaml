@@ -9,6 +9,7 @@ email: miriam@miriamsuzanne.com
 images: /images/
 icon: icons/miriam.svg
 nav:
+  home: /
   about: /who/
   tags: /tags/
   contact: /contact/
