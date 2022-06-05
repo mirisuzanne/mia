@@ -3,8 +3,10 @@ title: CSS Cascade 6 (Scope)
 sub: Specification for Scoped Styles
 url: https://www.w3.org/TR/css-cascade-6/
 date: 2020-09-15
+type: css spec
 index: css scope
 tags:
+  - w3c
   - css scope
 events:
   - venue: Working Draft

@@ -1,23 +1,34 @@
 ---
 title: About
-banner: All About Miriam
+banner: Miriam Suzanne
 sub: (this is my website)
 calendar: all_orgs
+classes:
+  - h-card
 hero:
-  img: headshots/mia-smirk.jpg
-  alt: Headshot of Mia smirking
+  img: headshots/mia-smashing.jpg
+  alt: |
+    Mia with a laptop and water bottle,
+    wearing a bright yellow leather jacket,
+    trans lightning earrings,
+    and a headset mic
+    while speaking at a conference.
   caption: |
-    This face is one of my special skills.
+    Let's all get together in a big room
+    so I can talk at you about code for an hour.
 summary: |
   I'm an artist, activist,
   teacher, and web developer.
-  As a co-founder of [OddBird](/orgs/oddbird/),
-  [Teacup Gorilla](/orgs/teacup-gorilla/),
-  and [Grapefruit Lab](/orgs/grapefruit-lab/)
+  As a co-founder of
+  <a class="h-card p-org" href="/orgs/oddbird/">OddBird</a>,
+  <a class="h-card p-org" href="/orgs/teacup-gorilla/">Teacup Gorilla</a>,
+  and
+  <a class="h-card p-org" href="/orgs/grapefruit-lab/">Grapefruit Lab</a>
   I hope to create art & software
   that celebrate the queer complexity
   of human experience.
 ---
+
 Over the last 15 years
 I've published novels & albums & technical manuals;
 created award-winning theater & open-source tools;

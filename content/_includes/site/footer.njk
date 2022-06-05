@@ -36,17 +36,19 @@ Take care of each other.
     {% set is_contact = (page.url | url == '/contact/') %}
 
     {% if not is_about %}
-      <section data-footer="bio">
+      <section data-footer="bio" class="h-card">
         {% call content.media(
           src='icons/miriam.svg',
           embed=true
         ) %}
-          <h3>
-            <a href="mailto:{{ site.email }}">{{ site.author }}</a>
+          <h3 class="p-name">
+            <a href="/who/">{{ site.author }}</a>
           </h3>
 
           {% set who = collections.all | getPage('/who/') | first %}
-          {{ who.data.summary | md | safe }}
+          <div class="p-role">
+            {{ who.data.summary | md | safe }}
+          </div>
 
           {{ contact.links(social) }}
         {% endcall %}

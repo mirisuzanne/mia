@@ -1,10 +1,11 @@
 {# Titles #}
 {% macro section_title(
-  title
+  title,
+  hfeed=false
 ) %}
   <header
     class="section-header">
-    <h2 class="section-title">
+    <h2 class="section-title{% if hfeed %} p-name{% endif %}">
       {{ title | typogr | safe }}
     </h2>
   </header>
@@ -18,7 +19,7 @@
   {{ link_if(
     tag | displayName,
     tag | tagLink(all),
-    class
+    {'class': 'p-category'}
   ) }}
 {%- endmacro %}
 
@@ -126,6 +127,7 @@
 
   <time
     datetime="{{ pub | getDate('iso') }}"
+    {% if pubdate %}class="dt-published"{% endif %}
     {{ attr_if('pubdate', not not pubdate) }}>
     {% set start_y = start | getDate('year') %}
 

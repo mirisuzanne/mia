@@ -37,7 +37,10 @@
     {% include 'site/auth.njk' %}
   </head>
 
-  <body>
+  {%- set hentry = ['h-entry'] if (content and not eleventyExcludeFromCollections) else [] -%}
+  {%- set classes = classes | concat(hentry) -%}
+
+  <body {% if classes %}class="{{ classes | join(' ') }}"{% endif %}>
     <div class="meta">
       {% include 'site/nav.njk' %}
       {% include 'site/settings.njk' %}

@@ -99,7 +99,7 @@
                 datetime="{{ (item.data.start or item.date) | getDate('iso') }}">
                 {{ start }}{{ range }}{{ end or '' }}
               </time>
-              <h3 data-title="orgs" id="{{ id }}">
+              <h3 data-title="orgs" id="{{ id }}" class="p-org">
                 {{ utility.link_if(org_title, item.url) }}
               </h3>
               {% if item.data.sub %}
@@ -194,13 +194,13 @@
   {%- set summary = (item.page.data.summary or item.event.sub or item.page.data.sub) -%}
   {%- set summary = summary | md if (summary and not hide_summary) else none -%}
 
-  {% set cancel = item.page.data.cancel or item.event.cancel %}
-  {% if cancel %}
-    {% set name %}<s>{{ name | safe }}</s>{% endset %}
-    {% set message = item.page.data.message[cancel] %}
-    {% set summary = message | md if message else summary %}
-    {% set is_old = true %}
-  {% endif %}
+  {%- set cancel = item.page.data.cancel or item.event.cancel -%}
+  {%- if cancel -%}
+    {%- set name %}<s>{{ name | safe }}</s>{% endset -%}
+    {%- set message = item.page.data.message[cancel] -%}
+    {%- set summary = message | md if message else summary -%}
+    {%- set is_old = true -%}
+  {%- endif -%}
 
   {{ cards.event(
     name=name,
@@ -227,7 +227,11 @@
   {%- set title_name = item.event.title or item.page.data.title -%}
   {%- set url = none if is_self else item.page.url -%}
   {%- set url = (url or venue_url) if (not venue) else url -%}
-  {%- set full_title = utility.link_if(title_name | mdInline, url) -%}
+  {%- set full_title = utility.link_if(
+    content=title_name | mdInline,
+    url=url,
+    attrs={'class': 'u-url'}
+  ) -%}
 
   {{ full_title | safe }}
   <span class="venue">{{ venue | safe }}</span>

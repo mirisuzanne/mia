@@ -4,6 +4,7 @@
   <div
     data-main
     data-typeset="{{ type }}"
+    class="e-content"
     {{ utility.attr_if('data-erase', 'off' if erasure else none) }}>
     {% include 'site/hero.njk' %}
     {% include 'site/page-meta.njk' %}
@@ -17,7 +18,7 @@
     {% endif %}
 
     {% if summary %}
-      <div class='intro'>
+      <div class='intro p-summary'>
         {{ summary | md | safe }}
       </div>
     {% endif %}

@@ -16,6 +16,7 @@ end: 2022-05-28
 index: pity+fear
 tags:
   - _calendar
+  - _post
   - writing
   - acting
   - lighting
@@ -137,10 +138,12 @@ summary: |
   to have a body, and live in it --
   to make choices, and change over time --
   to tell the truth?
-
-  [Tickets on sale](https://grapefruitlab.com/shows/pity-fear/)
 ---
 {% import "content.macros.njk" as content %}
+
+[Read the script »](https://www.grapefruitlab.com/shows/pity-fear/script/)
+
+------
 
 **Pity+Fear**
 in an intimate and darkly comic

@@ -6,8 +6,8 @@
 ) %}
   {% set content = content if (content != none) else caller() %}
 
-  <section data-section="cards">
-    {{ utility.section_title(title) }}
+  <section data-section="cards" class="h-feed">
+    {{ utility.section_title(title, hfeed=true) }}
 
     <div
       data-layout="card-groups">
@@ -49,6 +49,7 @@
 <article
   data-card="item"
   aria-labelledby="{{ id }}"
+  class="h-entry"
   {{ utility.attr_if('data-feature', feature) }}
   {{ utility.attr_if('data-old', is_old) }}
 >
@@ -60,13 +61,13 @@
     {% endif %}
 
     {% if name %}
-      <h4 data-card="title" id="{{ id }}">
+      <h4 class="p-name" data-card="title" id="{{ id }}">
         {{ name | safe }}
       </h4>
     {% endif %}
 
     {% if summary %}
-      <div data-card="summary">
+      <div data-card="summary" class="p-summary entry-summary">
         {{ summary | safe }}
       </div>
     {% endif %}

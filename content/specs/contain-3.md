@@ -3,8 +3,10 @@ title: CSS Containment 3 (Container Queries)
 sub: Specification for Container Queries & Units
 url: https://www.w3.org/TR/css-contain-3/
 date: 2020-09-15
+type: css spec
 index: container queries
 tags:
+  - w3c
   - container queries
 events:
   # - venue: Released in Browsers

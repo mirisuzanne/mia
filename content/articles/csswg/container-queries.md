@@ -11,6 +11,9 @@ hero:
   position: top
 tags:
   - google
+  - container queries
+  - _calendar
+  - _post
 summary: |
   Media-queries allow an author
   to make style changes
