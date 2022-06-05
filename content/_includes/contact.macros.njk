@@ -64,7 +64,10 @@
     {{ utility.link_if(
       content,
       item.url,
-      {'rel': 'me'}
+      {
+        'rel': 'me',
+        'class': ['u-url', item.class] | join(' ')
+      }
     ) }}
   </li>
   {% endfor %}

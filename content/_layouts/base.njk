@@ -37,8 +37,8 @@
     {% include 'site/auth.njk' %}
   </head>
 
-  {%- set hentry = ['h-entry'] if (content and not eleventyExcludeFromCollections) else [] -%}
-  {%- set classes = classes | concat(hentry) -%}
+  {%- set hentry = (summary or content) and not eleventyExcludeFromCollections -%}
+  {%- set classes = classes | concat('h-entry' if hentry else []) -%}
 
   <body {% if classes %}class="{{ classes | join(' ') }}"{% endif %}>
     <div class="meta">
@@ -56,10 +56,10 @@
     {% include 'site/footer.njk' %}
     {% include 'site/fancy.njk' %}
 
+    <a href="{{ page.url | url }}" class="u-url" hidden>{{ full_title | safe }}</a>
+
     {% for script in site.scripts %}
       <script type="text/javascript" src="/assets/js/{{ script }}"></script>
     {% endfor %}
-
-    <!-- Current page: {{ page.url | url }} -->
   </body>
 </html>
