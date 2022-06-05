@@ -25,7 +25,7 @@ summary: |
   and
   <a class="h-card p-org" href="/orgs/grapefruit-lab/">Grapefruit Lab</a>
   I hope to create art & software
-  that celebrate the queer complexity
+  that celebrate the queerness & complexity
   of human experience.
 ---
 

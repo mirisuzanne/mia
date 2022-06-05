@@ -7,6 +7,6 @@ summary: |
   **Hello lovely** --- \
   I'm [Miriam](/who/).
   I make art & software
-  that celebrate the queer complexity
-  of human experience.
+  that celebrate queerness & diversity.
+  One size never fits all.
 ---

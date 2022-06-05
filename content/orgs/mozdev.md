@@ -1,5 +1,5 @@
 ---
-title: Mozilla Developer
+title: Mozilla Developer Channel
 sub: Videos, articles, & tools from Mozilla (and OddBird)
 org: DevRel Contractor
 url: https://www.youtube.com/MozillaDeveloper
