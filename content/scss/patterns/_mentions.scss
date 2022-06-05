@@ -31,10 +31,18 @@
 .webmentions-face {
   width: var(--face-pile);
   height: var(--face-pile);
+  border: thin solid transparent;
   border-radius: 50%;
   object-fit: cover;
   flex: none;
-  margin-inline-end: calc(var(--half-shim) * -1);
+  margin-inline-end: calc(var(--shim) * -1);
+  margin-block-end: calc(var(--shim) * -1);
+  position: relative;
+
+  &:hover {
+    border-color: currentColor;
+    z-index: 2;
+  }
 }
 
 /* Single Webmention */
