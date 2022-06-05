@@ -5,7 +5,7 @@ display:
   access: public
 
 package: ./package.json
-shortcutIcon: ./favicon.ico
+shortcutIcon: ./favicon.svg
 verbose: true
 
 groups:
