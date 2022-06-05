@@ -3,7 +3,7 @@
   grid:
     auto auto 1fr / 2fr [content-start] minmax(min-content, var(--double-page))
     [content-end] 1fr;
-  min-height: calc(100vh - var(--spacer));
+  min-height: calc(100svh - var(--spacer));
 }
 
 [data-footer='content'] {
@@ -48,7 +48,11 @@
   );
   filter: brightness(var(--img-bright, 100%));
   grid-column: 1 / -1;
-  min-height: 50vh;
+  min-height: 100vw;
+
+  @supports (height: 1svh) {
+    min-height: 50svh;
+  }
 
   @media (min-width: 40em) {
     --angle: 95deg;

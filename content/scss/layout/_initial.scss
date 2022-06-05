@@ -2,9 +2,16 @@
 @use '../config/fonts';
 
 body {
+  --banner-max: min(30rem, 100vw);
   display: grid;
-  grid-template: 'menu' auto 'banner' minmax(min-content, 85vh) / 100vw;
+  grid-template:
+    'menu' auto 'banner' minmax(min-content, var(--banner-max, 1fr))
+    / 100vw;
   overflow-x: hidden;
+
+  @supports (height: 1svh) {
+    --banner-max: min(60svh, 100vw);
+  }
 }
 
 .meta {

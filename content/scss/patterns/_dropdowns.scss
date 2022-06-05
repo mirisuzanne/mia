@@ -24,6 +24,7 @@
   display: none;
   left: var(--left, auto);
   max-height: 80vh;
+  max-height: 80svh;
   max-width: calc(100vw - var(--gutter) * 2);
   min-width: min-content;
   overflow-y: auto;

@@ -42,7 +42,7 @@
       {{ amp1 | safe }}<a href="{{ url }}">{{ tag | displayName }}</a>
     {%- endif -%}
   {%- endfor -%}
-  {%- if plaintext %} & more.{%- else -%}
-    {{ amp | safe }}<a href="/tags/">more <span class="sr-only">tags</span></a>
+  {%- if plaintext %} & more.{%- else %}
+    {{ amp | safe }}<a href="/tags/">more</a>
   {%- endif -%}
 {% endmacro %}

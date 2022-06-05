@@ -17,6 +17,13 @@ ignoreFiles:
 rules:
   prettier/prettier: true
 
+  unit-no-unknown:
+    - true
+    - ignoreUnits:
+        - 'svh'
+        - 'lvh'
+        - 'dvh'
+
   at-rule-no-unknown: null
   scss/at-rule-no-unknown:
     - true
