@@ -1,0 +1,67 @@
+@use '../config/fonts';
+
+[data-section='mentions'] {
+  --face-pile: calc(var(--gutter) * 3);
+  display: grid;
+  grid-template-columns:
+    minmax(var(--gutter), 1fr)
+    [hero-start] minmax(0, 1fr)
+    [pull-start] minmax(0, var(--pull-max, 1fr))
+    [main-start] minmax(min-content, var(--page))
+    [main-end] minmax(0, 0.5fr)
+    [hero-end pull-end] minmax(var(--gutter), 1fr);
+
+  > * {
+    grid-column: var(--main-column, main);
+  }
+
+  @media (min-width: 45em) {
+    --pull-max: var(--spacer);
+    grid-column-gap: var(--gutter);
+  }
+}
+
+.webmentions-facepile {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-block-end: var(--double-gutter);
+}
+
+.webmentions-face {
+  width: var(--face-pile);
+  height: var(--face-pile);
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+  margin-inline-end: calc(var(--half-shim) * -1);
+}
+
+/* Single Webmention */
+.webmention {
+  --main-column: pull / main;
+  --align: start;
+}
+
+.webmention .dt-published {
+  @include fonts.var('italic');
+  color: var(--text-light);
+}
+
+.webmention-media {
+  --media-size: var(--spacer);
+}
+
+.webmention-author {
+  @include fonts.var('bold');
+  margin: 0;
+}
+
+.webmention-author-photo {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.webmention-content {
+  margin-block-start: var(--gutter);
+}

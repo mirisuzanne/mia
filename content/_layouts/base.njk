@@ -6,6 +6,7 @@
   {%- set desc = sub or summary or content or '' -%}
   {%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') -%}
   {%- set meta_desc = description or desc or site.description -%}
+  {%- set meta_desc = show.tag_title(collections, true) if (meta_desc == 'show_tags') else meta_desc -%}
   {%- set full_title = banner or title -%}
   {%- set full_title = show.tag_title(collections) if (full_title == 'show_tags') else full_title | mdInline(false) -%}
   <head>
@@ -50,6 +51,7 @@
 
     <main aria-labelledby="title">
       {% include 'site/page.njk' %}
+      {% include 'site/mentions.njk' %}
       {% include 'site/calendar.njk' %}
     </main>
 

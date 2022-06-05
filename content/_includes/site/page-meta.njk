@@ -44,5 +44,12 @@
         in {{ utility.tag_list(tags, collections) }}
       </p>
     {% endif %}
+
+    {%- set absoluteUrl = page.url | url | absoluteUrl(site.url) -%}
+    {%- set likes = webmentions.children | likesForUrl(absoluteUrl) -%}
+    {% if likes | length %}
+      <p>({{ likes | length }} web-likes)</p>
+    {% endif %}
+
   </footer>
 {% endif %}

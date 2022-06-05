@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const fetch = require('node-fetch');
 const unionBy = require('lodash/unionBy');
-const domain = 'miriamsuzanne.com';
+const domain = 'www.miriamsuzanne.com';
 
 // Load .env variables with dotenv
 require('dotenv').config();

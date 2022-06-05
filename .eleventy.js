@@ -25,6 +25,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('./content/fonts');
   eleventyConfig.addPassthroughCopy('content/**/*.txt');
   eleventyConfig.addPassthroughCopy('content/favicon.svg');
+  eleventyConfig.addPassthroughCopy({ 'content/_includes/icons': 'icons' });
 
   // collections
   eleventyConfig.addCollection('orgs', (collection) =>
@@ -57,6 +58,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('img', image.image);
 
   eleventyConfig.addFilter('mentionsForUrl', mentions.forUrl);
+  eleventyConfig.addFilter('likesForUrl', mentions.likesForUrl);
 
   eleventyConfig.addFilter('publicTags', tags.publicTags);
   eleventyConfig.addFilter('getTags', tags.getTags);
@@ -90,6 +92,16 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('merge', _.merge);
   eleventyConfig.addFilter('loSlice', _.slice);
   eleventyConfig.addFilter('sortBy', _.sortBy);
+  eleventyConfig.addFilter('filter', _.filter);
+
+  // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter('onlyShow', (array, n) => {
+    if (n < 0) {
+      return array.slice(n);
+    }
+
+    return array.slice(0, n);
+  });
 
   // shortcodes
   eleventyConfig.addShortcode('img', image.image);

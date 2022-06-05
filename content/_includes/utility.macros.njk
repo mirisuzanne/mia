@@ -110,9 +110,10 @@
   pubdate,
   start,
   end,
-  format='long'
+  format='long',
+  attrs={}
 ) %}
-  {% set ranges = {
+  {%- set ranges = {
     'same-y': {
       'start': 'M',
       'end': 'range'
@@ -121,14 +122,18 @@
       'start': 'md',
       'end': 'd' if (format == 'md') else 'dy'
     }
-  } %}
+  } -%}
 
-  {% set ongoing = (end == 'ongoing') or (end | groupName == 'ongoing') %}
+  {%- set ongoing = (end == 'ongoing') or (end | groupName == 'ongoing') -%}
+
+  {% set attrs = {
+    'pubdate': not not pubdate,
+    'class': 'dt-published' if pubdate else none
+  } | merge(attrs) %}
 
   <time
     datetime="{{ pub | getDate('iso') }}"
-    {% if pubdate %}class="dt-published"{% endif %}
-    {{ attr_if('pubdate', not not pubdate) }}>
+    {{ show_attrs(attrs) }}>
     {% set start_y = start | getDate('year') %}
 
     {% if ongoing %}

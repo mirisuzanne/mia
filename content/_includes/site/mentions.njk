@@ -1,33 +1,62 @@
-{% set absoluteUrl = page.url | url | absoluteUrl(site.url) -%}
-{% set mentions = webmentions | mentionsForUrl(absoluteUrl) %}
-<section id="webmentions">
-  <h2>WebMentions</h2>
+{%- import 'utility.macros.njk' as utility -%}
+{% import 'content.macros.njk' as content %}
+
+{%- set absoluteUrl = page.url | url | absoluteUrl(site.url) -%}
+{%- set mentions = webmentions.children | mentionsForUrl(absoluteUrl) -%}
+{%- set facepile = webmentions.children | filter(['wm-target', absoluteUrl]) -%}
+
+{% if mentions | length %}
+<section id="webmentions" data-section="mentions">
+  {{ utility.section_title([facepile | length, 'WebMentions'] | join(' ')) }}
+
+  {% if facepile | length > 0 %}
+    <div class="webmentions-facepile">
+      {% for webmention in facepile | reverse | onlyShow(20) %}
+        <img src="{% if webmention.author.photo %}{{ webmention.author.photo }}{% else %}{{ '/icons/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions-face" />
+      {% endfor %}
+      {% if facepile.length > 20 %}
+        <span>+{{ facepile.length - 20 }}</span>
+      {% endif %}
+    </div>
+  {% endif %}
+
   {% for webmention in mentions %}
     <article class="webmention h-cite" id="webmention-{{ webmention['wm-id'] }}">
-      <div class="webmention__meta">
-        {% if webmention.author %}
-          <a class="webmention__author p-author h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-            {% if webmention.author.photo %}
-              <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}">
-            {% else %}
-              <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="">
-            {% endif %}
-            <strong class="p-name">{{ webmention.author.name }}</strong>
-          </a>
-        {% else %}
-          <span class="webmention__author">
-            <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="">
-            <strong>Anonymous</strong>
-          </span>
-        {% endif %}
+      {% set class = 'webmention-media' %}
+      {% set class = [class, 'p-author', 'h-card'] | join(' ') if webmention.author else class %}
+
+      {% set img_class = 'webmention-author-photo' %}
+      {% set img_class = [img_class, 'u-photo'] | join(' ') if webmention.author.photo else img_class %}
+
+      {% call content.media(
+        src=webmention.author.photo | url or '/icons/webmention-avatar-default.svg' | url,
+        alt=webmention.author.name if webmention.author.photo else '',
+        class=class,
+        img_class=img_class
+      ) %}
+        <h3 class="webmention-author{% if webmention.author %} p-name{% endif %}">
+          {% if webmention.author %}
+            <a class="u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+              {{ webmention.author.name }}
+            </a>
+          {% else %}
+            Anonymous
+          {% endif %}
+        </h3>
 
         {% if webmention.published %}
-          <time class="webmention__pubdate dt-published" datetime="{{ webmention.published }}">{{ webmention.published | dateFromTimestamp | readableDate("dd LLL yyyy - HH:mm") }}</time>
+          {{ utility.datetime(
+            pubdate=webmention.published,
+            format='long'
+          ) }}
         {% endif %}
-      </div>
-      <div class="webmention__content p-content">
-        {{ webmention.content.value | safe }}
-      </div>
+
+        <div class="webmention-content p-content">
+          {{ webmention.content.value | safe }}
+        </div>
+      {% endcall %}
+
     </article>
   {% endfor %}
 </section>
+{% endif %}

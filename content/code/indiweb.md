@@ -95,11 +95,11 @@ along with HTML & JS changes to my static site,
 just to verify my indieweb identity.
 Then more changes to the site
 and more online services to help fetch any mentions
-(so far, nothing to see, but that's probably expected).
+~~(so far, nothing to see, but that's probably expected)~~.
 Every time I think I have the basics in place,
 I find some other set of instructions
 suggesting there's another step to take.
-I haven't even attempted to display a 'backfeed' yet,
+~~I haven't even attempted to display a 'backfeed' yet~~,
 let alone update it client-side.
 
 

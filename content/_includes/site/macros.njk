@@ -31,12 +31,18 @@
   </a>
 {% endmacro %}
 
-{% macro tag_title(collections) %}
-  {% set amp = '&amp;&nbsp;' %}
-  {% for tag in collections | getTags(true) %}
-    {% set url = tag | tagLink(collections) %}
-    {% set amp1 = '' if loop.first else amp %}
-    {{ amp1 | safe }}<a href="{{ url }}">{{ tag | displayName }}</a>
-  {% endfor %}
-  {{ amp | safe }}<a href="/tags/">more <span class="sr-only">tags</span></a>
+{% macro tag_title(collections, plaintext=false) %}
+  {%- set amp = '&amp;&nbsp;' -%}
+  {%- for tag in collections | getTags(true) -%}
+    {%- if plaintext -%}
+      {{ tag | displayName }}{{ '' if loop.last else ' & ' }}
+    {%- else -%}
+      {%- set url = tag | tagLink(collections) -%}
+      {%- set amp1 = '' if loop.first else amp %}
+      {{ amp1 | safe }}<a href="{{ url }}">{{ tag | displayName }}</a>
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if plaintext %} & more.{%- else -%}
+    {{ amp | safe }}<a href="/tags/">more <span class="sr-only">tags</span></a>
+  {%- endif -%}
 {% endmacro %}
