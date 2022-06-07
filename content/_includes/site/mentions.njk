@@ -20,7 +20,7 @@
     </div>
   {% endif %}
 
-  {% for webmention in mentions %}
+  {% for webmention in mentions | reverse %}
     <article class="webmention h-cite" id="webmention-{{ webmention['wm-id'] }}">
       {% set class = 'webmention-media' %}
       {% set class = [class, 'p-author', 'h-card'] | join(' ') if webmention.author else class %}

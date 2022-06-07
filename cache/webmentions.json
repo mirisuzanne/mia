@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-06-07T01:55:01.837Z",
+  "lastFetched": "2022-06-07T16:22:19.936Z",
   "children": [
     {
       "type": "entry",
@@ -515,6 +515,253 @@
       "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave 🧱",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d5bccfce0da3ccaaf57c7627e3734679f0d778f5ae093b461145388ab5f00ccb.jpg",
+        "url": "https://twitter.com/DavidDarnes"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-33643481",
+      "published": null,
+      "wm-received": "2022-06-07T15:08:05Z",
+      "wm-id": 1410941,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/33643481",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Coyier",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fe17827fe542a95c9bfbe5d1bcd9a1dd2890b5efc270bf77b5776b244bb0e0f9.jpg",
+        "url": "https://twitter.com/chriscoyier"
+      },
+      "url": "https://twitter.com/chriscoyier/status/1534188978747805699",
+      "published": "2022-06-07T15:02:11+00:00",
+      "wm-received": "2022-06-07T15:08:04Z",
+      "wm-id": 1410940,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1533261728502362114/1534188978747805699",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "Right now I think if I had a full day-or-two to dedicate to it I’m not sure I could pull it off. Particularly the “if someone tweets a comment, pull it into my own DB and display it automatically”. Too hard.\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/hdv\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "Right now I think if I had a full day-or-two to dedicate to it I’m not sure I could pull it off. Particularly the “if someone tweets a comment, pull it into my own DB and display it automatically”. Too hard."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Saptak S",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/80524d6191bebfc8f3d88b518512d0b9d245aaae015850e161558327c6fe09ef.jpg",
+        "url": "https://twitter.com/Saptak013"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-361824665",
+      "published": null,
+      "wm-received": "2022-06-07T15:07:38Z",
+      "wm-id": 1410939,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/361824665",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marty McGuire",
+        "photo": "https://webmention.io/avatar/martymcgui.re/f750b9918a92f3dc86d15d8fefad4a06c20a829ae950e18dfc2c8b9a4b26b422.jpg",
+        "url": "https://martymcgui.re/"
+      },
+      "url": "https://martymcgui.re/2022/06/07/091116/",
+      "published": "2022-06-07T09:11:16-04:00",
+      "wm-received": "2022-06-07T13:13:03Z",
+      "wm-id": 1410897,
+      "wm-source": "https://martymcgui.re/2022/06/07/091116/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "summary": {
+        "content-type": "text/plain",
+        "value": "★ Liked https://www.miriamsuzanne.com/2022/06/04/indiweb/"
+      },
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://martymcgui.re/2022/06/07/091116/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jamie Tanna | www.jvt.me",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bce486055d6904cc4e059310f782f096087af47d3a6f331b231fc31a3a3eb10b.jpg",
+        "url": "https://twitter.com/JamieTanna"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-2292531098",
+      "published": null,
+      "wm-received": "2022-06-07T10:07:01Z",
+      "wm-id": 1410834,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/2292531098",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hidde",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/aec18d4e6514f5b156c5e7ef838f9bd1f81e3bfc4ac847a88be97a480eef77be.jpg",
+        "url": "https://twitter.com/hdv"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-1653181",
+      "published": null,
+      "wm-received": "2022-06-07T10:07:00Z",
+      "wm-id": 1410833,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/1653181",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Erik Kroes 🏔",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/6932a55846ec2e8febf426a5b76f5d733737a938b369d9d76daf4104dcdb5676.jpg",
+        "url": "https://twitter.com/erikkroes"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-28978622",
+      "published": null,
+      "wm-received": "2022-06-07T10:06:59Z",
+      "wm-id": 1410832,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/28978622",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adactio Links",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8e0a805eae6791b05c23541931a123a5446393bb9929fcdd274f7e5c33d7792f.jpeg",
+        "url": "https://twitter.com/adactioLinks"
+      },
+      "url": "https://twitter.com/adactioLinks/status/1534094660326547456",
+      "published": "2022-06-07T08:47:23+00:00",
+      "wm-received": "2022-06-07T10:06:58Z",
+      "wm-id": 1410830,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1534094660326547456",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "Am I on the IndieWeb Yet? | Miriam Eric Suzanne <a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\">miriamsuzanne.com/2022/06/04/ind…</a>",
+        "text": "Am I on the IndieWeb Yet? | Miriam Eric Suzanne miriamsuzanne.com/2022/06/04/ind…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hidde",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/aec18d4e6514f5b156c5e7ef838f9bd1f81e3bfc4ac847a88be97a480eef77be.jpg",
+        "url": "https://twitter.com/hdv"
+      },
+      "url": "https://twitter.com/hdv/status/1534096238785794048",
+      "published": "2022-06-07T08:53:40+00:00",
+      "wm-received": "2022-06-07T10:06:58Z",
+      "wm-id": 1410831,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1533261728502362114/1534096238785794048",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "Fully agree with the need you're identifying… the need for something that makes setting all this up a whole lot easier. Even if for selfish reasons… I want to be able to read great content from all those non technical but interesting people\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/chriscoyier\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "Fully agree with the need you're identifying… the need for something that makes setting all this up a whole lot easier. Even if for selfish reasons… I want to be able to read great content from all those non technical but interesting people"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jamie Tanna",
+        "photo": "https://webmention.io/avatar/www.jvt.me/582e6a8900c20ade6b097bfa1d87e8b808f61dd5a83e457e371d5b1ead35cb17.png",
+        "url": "https://www.jvt.me"
+      },
+      "url": "https://www.jvt.me/mf2/2022/06/fqk1w/",
+      "published": "2022-06-07T07:49:00+01:00",
+      "wm-received": "2022-06-07T07:00:32Z",
+      "wm-id": 1410790,
+      "wm-source": "https://www.jvt.me/mf2/2022/06/fqk1w/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "syndication": ["https://brid.gy/publish/twitter"],
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.jvt.me/mf2/2022/06/fqk1w/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthias Ott",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a34d0a855d4336e07245950e108a3d322445dabff46cfb01e805208ca3d8abcc.jpg",
+        "url": "https://twitter.com/m_ott"
+      },
+      "url": "https://twitter.com/m_ott/status/1534055442472656898",
+      "published": "2022-06-07T06:11:33+00:00",
+      "wm-received": "2022-06-07T06:15:48Z",
+      "wm-id": 1410780,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1534055442472656898",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "“The steps aren’t simple, and most of my friends are not web developers. So, to me, this all feels like the prototype of an idea – a proof of concept. […] What I would like to see is a tool that helps bring the entire system together in one place.” <a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a> about <a href=\"https://twitter.com/search?q=%23webmention\">#webmention</a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\"></a>\n<a href=\"https://twitter.com/terriblemia/status/1533261728502362114\">twitter.com/terriblemia/st…</a>",
+        "text": "“The steps aren’t simple, and most of my friends are not web developers. So, to me, this all feels like the prototype of an idea – a proof of concept. […] What I would like to see is a tool that helps bring the entire system together in one place.” @TerribleMia about #webmention\n\ntwitter.com/terriblemia/st…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia (not her best work)",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0070719556938ae95053b104df74ca15213d4a99abb84c5e03fe27b0c52e139e.jpg",
+        "url": "https://twitter.com/TerribleMia"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533993624957898752",
+      "published": "2022-06-07T02:05:55+00:00",
+      "wm-received": "2022-06-07T02:06:15Z",
+      "wm-id": 1410738,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1533261728502362114/1533993624957898752",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "Thank you also for demonstrating that I need to filter duplicate mentions, where one is a syndication of the other. I also needed spacing between multiple mentions.\n\nBoth issues should be fixed once the page rebuilds. :)\n<a class=\"u-mention\" href=\"https://twitter.com/ChrisAldrich\"></a>",
+        "text": "Thank you also for demonstrating that I need to filter duplicate mentions, where one is a syndication of the other. I also needed spacing between multiple mentions.\n\nBoth issues should be fixed once the page rebuilds. :)"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "in-reply-to",
       "wm-private": false
     }
   ]
