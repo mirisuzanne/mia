@@ -52,7 +52,15 @@ const fetchWebmentions = async (since, perPage = 10000) => {
 };
 
 // Merge fresh webmentions with cached entries, unique per id
-const mergeWebmentions = (a, b) => unionBy(a.children, b.children, 'wm-id');
+const mergeWebmentions = (a, b) => {
+  const all = unionBy(a.children, b.children, 'wm-id');
+  const syns = all.reduce(
+    (prev, current) => [...prev, ...(current.syndication || [])],
+    [],
+  );
+
+  return all.filter((entry) => !syns.includes(entry.url));
+};
 
 // save combined webmentions in cache file
 const writeToCache = (data) => {

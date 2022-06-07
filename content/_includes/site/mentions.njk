@@ -9,13 +9,13 @@
 <section id="webmentions" data-section="mentions">
   {{ utility.section_title([facepile | length, 'WebMentions'] | join(' ')) }}
 
-  {% if facepile | length > 0 %}
+  {% if facepile | length %}
     <div class="webmentions-facepile">
-      {% for webmention in facepile | reverse | onlyShow(20) %}
+      {% for webmention in facepile | reverse | onlyShow(100) %}
         <img src="{% if webmention.author.photo %}{{ webmention.author.photo }}{% else %}{{ '/icons/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions-face" />
       {% endfor %}
-      {% if facepile.length > 20 %}
-        <span>+{{ facepile.length - 20 }}</span>
+      {% if facepile.length > 100 %}
+        <span>+{{ facepile.length - 100 }}</span>
       {% endif %}
     </div>
   {% endif %}

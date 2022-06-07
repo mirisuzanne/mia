@@ -22,10 +22,17 @@
 }
 
 .webmentions-facepile {
+  --face-overlap: var(--shim);
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   margin-block-end: var(--double-gutter);
+
+  span:last-child {
+    margin-block-start: var(--face-overlap);
+    margin-inline-start: var(--face-overlap);
+    padding: var(--half-shim) var(--shim);
+  }
 }
 
 .webmentions-face {
@@ -35,8 +42,8 @@
   border-radius: 50%;
   object-fit: cover;
   flex: none;
-  margin-inline-end: calc(var(--shim) * -1);
-  margin-block-end: calc(var(--shim) * -1);
+  margin-inline-end: calc(var(--face-overlap) * -1);
+  margin-block-end: calc(var(--face-overlap) * -1);
   position: relative;
 
   &:hover {
@@ -49,6 +56,7 @@
 .webmention {
   --main-column: pull / main;
   --align: start;
+  margin-block: var(--gutter);
 }
 
 .webmention .dt-published {

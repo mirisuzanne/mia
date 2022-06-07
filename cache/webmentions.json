@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-06-05T18:30:23.538Z",
+  "lastFetched": "2022-06-07T01:55:01.837Z",
   "children": [
     {
       "type": "entry",
@@ -17,28 +17,6 @@
       "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "wm-property": "like-of",
-      "wm-private": false
-    },
-    {
-      "type": "entry",
-      "author": {
-        "type": "card",
-        "name": "Mia (not her best work)",
-        "photo": "https://webmention.io/avatar/pbs.twimg.com/0070719556938ae95053b104df74ca15213d4a99abb84c5e03fe27b0c52e139e.jpg",
-        "url": "https://twitter.com/TerribleMia"
-      },
-      "url": "https://twitter.com/TerribleMia/status/1533265042044375040",
-      "published": "2022-06-05T01:50:47+00:00",
-      "wm-received": "2022-06-05T02:05:36Z",
-      "wm-id": 1410008,
-      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1533265042044375040/1533265042044375040",
-      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
-      "content": {
-        "html": "I did the thing:\n\n<a href=\"https://twitter.com/TerribleMia/status/1533261728502362114?s=20&amp;t=FIJvw3_DENEyABRW4SQaOQ\">twitter.com/TerribleMia/st…</a>\n\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\"></a>",
-        "text": "I did the thing:\n\ntwitter.com/TerribleMia/st…"
-      },
-      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
-      "wm-property": "in-reply-to",
       "wm-private": false
     },
     {
@@ -393,6 +371,147 @@
       "wm-received": "2022-06-05T17:05:50Z",
       "wm-id": 1410203,
       "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/18915289",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthias Ott",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a34d0a855d4336e07245950e108a3d322445dabff46cfb01e805208ca3d8abcc.jpg",
+        "url": "https://twitter.com/m_ott"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-58448784",
+      "published": null,
+      "wm-received": "2022-06-06T22:46:15Z",
+      "wm-id": 1410685,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/58448784",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Aaron Crowder",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e06448343ee1ce661bc74835f7ba37816f894ac0632b4d56ee69c787e10ec441.jpg",
+        "url": "https://twitter.com/CrowderSoup"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-127090765",
+      "published": null,
+      "wm-received": "2022-06-06T22:46:14Z",
+      "wm-id": 1410683,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/127090765",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jalcine",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8a5ebc90a29e8fb24288b178d18ff3d2faaff0dea69a9511a86af590c3035907.jpg",
+        "url": "https://twitter.com/jackyalcine"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-1262855987993563136",
+      "published": null,
+      "wm-received": "2022-06-06T22:46:14Z",
+      "wm-id": 1410684,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/1262855987993563136",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Aldrich",
+        "photo": "https://webmention.io/avatar/stream.boffosocko.com/d0ba9f65fcbf0cef3bdbcccc0b6a1f42b1310f7ab2e07208c7a396166cde26b1.jpeg",
+        "url": "http://stream.boffosocko.com/profile/chrisaldrich"
+      },
+      "url": "http://stream.boffosocko.com/2022/terriblemia-youve-got-your-own-site-and-control-your-urls",
+      "published": "2022-06-06T20:54:23+00:00",
+      "wm-received": "2022-06-06T20:55:05Z",
+      "wm-id": 1410647,
+      "wm-source": "http://stream.boffosocko.com/2022/terriblemia-youve-got-your-own-site-and-control-your-urls",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "syndication": [
+        "https://twitter.com/ChrisAldrich/status/1533915341352493062"
+      ],
+      "content": {
+        "html": "@TerribleMia You've got your own site and control your URLs, so you're definitely on it! And you've got Webmentions for additional icing on the cake. Kudos! I'm glad you've managed to get things set up and working for yourself. It definitely helps to have small bite-sized pieces of technology to rely on to get it all going.<br /><br />\nYou're right that it's a lot of work on individuals, but there are some emerging platforms/providers attempting to make all of this technology easier on the general public who don't have the time, technical skills, or desire to maintain any of their own systems. Micro.blog is one of these options to be sure. A few others can be found here: <a href=\"https://indieweb.org/Quick_Start\">https://indieweb.org/Quick_Start</a> With available small building blocks that interoperate, hopefully it will be easier for companies to provide a variety and plurality of tools to make the entire enterprise easier for all of our friends and family.<br /><br />\nCongratulations again! <br />",
+        "text": "@TerribleMia You've got your own site and control your URLs, so you're definitely on it! And you've got Webmentions for additional icing on the cake. Kudos! I'm glad you've managed to get things set up and working for yourself. It definitely helps to have small bite-sized pieces of technology to rely on to get it all going.\n\n\nYou're right that it's a lot of work on individuals, but there are some emerging platforms/providers attempting to make all of this technology easier on the general public who don't have the time, technical skills, or desire to maintain any of their own systems. Micro.blog is one of these options to be sure. A few others can be found here: https://indieweb.org/Quick_Start With available small building blocks that interoperate, hopefully it will be easier for companies to provide a variety and plurality of tools to make the entire enterprise easier for all of our friends and family.\n\n\nCongratulations again!"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "🇺🇦🏳️‍🌈🐍Fundor 333🐳👨‍💻",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c3d085f0266cb157220a9e6312c26ccaeb56e5c4d2d501cf0d6426f05c36890e.jpg",
+        "url": "https://twitter.com/fundor333"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-2687984266",
+      "published": null,
+      "wm-received": "2022-06-06T14:56:45Z",
+      "wm-id": 1410467,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/2687984266",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Fundor 333",
+        "photo": "",
+        "url": "https://fundor333.com/social/2022/06/06/am-i-on-the-indieweb-yet--miriam-eric-suzanne/{.Site.BaseURL }"
+      },
+      "url": "https://fundor333.com/social/2022/06/06/am-i-on-the-indieweb-yet--miriam-eric-suzanne/",
+      "published": "2022-06-06T11:27:50",
+      "wm-received": "2022-06-06T11:31:21Z",
+      "wm-id": 1410419,
+      "wm-source": "https://fundor333.com/social/2022/06/06/am-i-on-the-indieweb-yet--miriam-eric-suzanne/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "name": "Bookmark 🔖 Am I on the IndieWeb Yet? | Miriam Eric Suzanne",
+      "content": {
+        "html": "<p>Another blog into the IndieWeb</p>",
+        "text": "Another blog into the IndieWeb"
+      },
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://fundor333.com/social/2022/06/06/am-i-on-the-indieweb-yet--miriam-eric-suzanne/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Dallas",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/238eac687bf46230e6a9bc596115628d79f21b190995c7f9e614941ef7ce5f47.jpg",
+        "url": "https://twitter.com/doctype_jon"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-1159494277",
+      "published": null,
+      "wm-received": "2022-06-06T04:16:11Z",
+      "wm-id": 1410354,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/1159494277",
       "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "wm-property": "like-of",
