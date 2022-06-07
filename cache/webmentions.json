@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-06-07T16:22:19.936Z",
+  "lastFetched": "2022-06-07T23:35:20.152Z",
   "children": [
     {
       "type": "entry",
@@ -763,6 +763,154 @@
       "in-reply-to": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "wm-property": "in-reply-to",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia (not her best work)",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0070719556938ae95053b104df74ca15213d4a99abb84c5e03fe27b0c52e139e.jpg",
+        "url": "https://twitter.com/TerribleMia"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1534249859980505088",
+      "published": "2022-06-07T19:04:06+00:00",
+      "wm-received": "2022-06-07T19:53:10Z",
+      "wm-id": 1411080,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1533261728502362114/1534249859980505088",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "Maybe. I was imagining more like browser devtool/plugins to visualize &amp; inspect the 'result' of the code.\n\nWith RSS, I'd want a built-in reader to view a rendered feed (rather than plain xml) when I navigate to the url. Mentions are a bit more complicated tho. Not sure.\n<a class=\"u-mention\" href=\"https://twitter.com/chriscoyier\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/drewm\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/hdv\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jackyalcine\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/rachelandrew\"></a>",
+        "text": "Maybe. I was imagining more like browser devtool/plugins to visualize & inspect the 'result' of the code.\n\nWith RSS, I'd want a built-in reader to view a rendered feed (rather than plain xml) when I navigate to the url. Mentions are a bit more complicated tho. Not sure."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jalcine",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8a5ebc90a29e8fb24288b178d18ff3d2faaff0dea69a9511a86af590c3035907.jpg",
+        "url": "https://twitter.com/jackyalcine"
+      },
+      "url": "https://twitter.com/jackyalcine/status/1534244526323269638",
+      "published": "2022-06-07T18:42:54+00:00",
+      "wm-received": "2022-06-07T19:53:09Z",
+      "wm-id": 1411079,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1533261728502362114/1534244526323269638",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "This sounds interesting. Just making sure I understand, would this be like a lint tool of sorts that you'd run locally and point at URLs? (<a href=\"https://jacky.wtf/2022/6/JsFH\">jacky.wtf/2022/6/JsFH</a>)\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/chriscoyier\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/drewm\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/hdv\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/rachelandrew\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "This sounds interesting. Just making sure I understand, would this be like a lint tool of sorts that you'd run locally and point at URLs? (jacky.wtf/2022/6/JsFH)"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/66668b8dccc6a13a0a207b2219cedf8ca8da93a11b4f8b2c9ac5bd0a3a7871c3.jpg",
+        "url": "https://twitter.com/brianleroux"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-676363",
+      "published": null,
+      "wm-received": "2022-06-07T19:52:41Z",
+      "wm-id": 1411078,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/676363",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Aram Zucker-Scharff",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/183aea56d9dffe8744b8622b98d9d73061a5d88e5a04cb656612da61ca78c560.jpg",
+        "url": "https://twitter.com/Chronotope"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1533261728502362114#favorited-by-15099054",
+      "published": null,
+      "wm-received": "2022-06-07T19:52:40Z",
+      "wm-id": 1411077,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1533261728502362114/15099054",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jalcine",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8a5ebc90a29e8fb24288b178d18ff3d2faaff0dea69a9511a86af590c3035907.jpg",
+        "url": "https://twitter.com/jackyalcine"
+      },
+      "url": "https://twitter.com/jackyalcine/status/1534254106919026688",
+      "published": "2022-06-07T19:20:58+00:00",
+      "wm-received": "2022-06-07T19:52:38Z",
+      "wm-id": 1411076,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1533261728502362114/1534254106919026688",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "Ahh, that would be _super_ handy (and is probably simpler to implement). I asked because I had an idea that I've been pecking at for a “IndieWeb linting” tool, but a browser extension feels like the more natural place for something like this. (<a href=\"https://jacky.wtf/2022/6/FYYI\">jacky.wtf/2022/6/FYYI</a>)\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/chriscoyier\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/drewm\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/hdv\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/rachelandrew\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "Ahh, that would be _super_ handy (and is probably simpler to implement). I asked because I had an idea that I've been pecking at for a “IndieWeb linting” tool, but a browser extension feels like the more natural place for something like this. (jacky.wtf/2022/6/FYYI)"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jamie Tanna",
+        "photo": "https://webmention.io/avatar/www.jvt.me/582e6a8900c20ade6b097bfa1d87e8b808f61dd5a83e457e371d5b1ead35cb17.png",
+        "url": "https://www.jvt.me"
+      },
+      "url": "https://www.jvt.me/mf2/2022/06/bzcnz/",
+      "published": "2022-06-07T17:58:00+01:00",
+      "wm-received": "2022-06-07T17:06:37Z",
+      "wm-id": 1410998,
+      "wm-source": "https://www.jvt.me/mf2/2022/06/bzcnz/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.jvt.me/mf2/2022/06/bzcnz/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mark Stanley Everitt",
+        "photo": "https://webmention.io/avatar/d33wubrfki0l68.cloudfront.net/031c9af059f519811a51ed3e5d8ebd5b7cad769e0377f40575466a1071018d1b.jpg",
+        "url": "https://qubyte.codes"
+      },
+      "url": "https://qubyte.codes/links/1654620823573",
+      "published": "2022-06-07T16:53:43",
+      "wm-received": "2022-06-07T16:54:40Z",
+      "wm-id": 1410994,
+      "wm-source": "https://qubyte.codes/links/1654620823573",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "name": "Am I on the IndieWeb Yet? - Miriam Eric Suzanne",
+      "content": {
+        "text": "I enjoyed this read. It's always worth coming back to the difficulties in the social IndieWeb features, and how tricky they are to implement. I've invested substantial effort in webmentions in particular, and that means there's a barrier to entry."
+      },
+      "bookmark-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "bookmark-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://qubyte.codes/links/1654620823573"
+      }
     }
   ]
 }

@@ -1,18 +1,29 @@
 'use strict';
 const sanitizeHTML = require('sanitize-html');
+const { uniqBy } = require('lodash');
 
 // sort webmentions by published timestamp chronologically.
 // swap a.published and b.published to reverse order.
 const orderByDate = (a, b) => new Date(b.published) - new Date(a.published);
 
-const likesForUrl = (webmentions, url) =>
-  webmentions
+const forUrl = (webMentions, url) =>
+  webMentions.children
     .filter((entry) => entry['wm-target'] === url)
     .filter((entry) => entry['wm-private'] === false)
-    .filter((entry) => entry['wm-property'] === 'like-of')
     .sort(orderByDate);
 
-const forUrl = (webmentions, url) => {
+const authors = (mentions) => {
+  const photos = mentions
+    .map((entry) => entry.author)
+    .filter((author) => author.photo);
+
+  return uniqBy(photos, 'photo');
+};
+
+const likes = (mentions) =>
+  mentions.filter((entry) => entry['wm-property'] === 'like-of');
+
+const webMentions = (mentions) => {
   // define which types of webmentions should be included per URL.
   // possible values listed here:
   // https://github.com/aaronpk/webmention.io#find-links-of-a-specific-type-to-a-specific-page
@@ -42,9 +53,7 @@ const forUrl = (webmentions, url) => {
   };
 
   // run all of the above for each webmention that targets the current URL
-  return webmentions
-    .filter((entry) => entry['wm-target'] === url)
-    .filter((entry) => entry['wm-private'] === false)
+  return mentions
     .filter((entry) => allowedTypes.includes(entry['wm-property']))
     .filter(checkRequiredFields)
     .sort(orderByDate)
@@ -53,5 +62,7 @@ const forUrl = (webmentions, url) => {
 
 module.exports = {
   forUrl,
-  likesForUrl,
+  authors,
+  likes,
+  webMentions,
 };

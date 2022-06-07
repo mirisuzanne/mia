@@ -38,12 +38,10 @@
 .webmentions-face {
   width: var(--face-pile);
   height: var(--face-pile);
-  border: thin solid transparent;
+  border: thin solid var(--border);
   border-radius: 50%;
   object-fit: cover;
   flex: none;
-  margin-inline-end: calc(var(--face-overlap) * -1);
-  margin-block-end: calc(var(--face-overlap) * -1);
   position: relative;
 
   &:hover {
@@ -52,16 +50,36 @@
   }
 }
 
+.facepile-url {
+  margin-inline-end: calc(var(--face-overlap) * -1);
+  margin-block-end: calc(var(--face-overlap) * -1);
+
+  &::after {
+    display: none;
+  }
+}
+
 /* Single Webmention */
 .webmention {
   --main-column: pull / main;
   --align: start;
-  margin-block: var(--gutter);
-}
+  margin-block-end: var(--gutter);
 
-.webmention .dt-published {
-  @include fonts.var('italic');
-  color: var(--text-light);
+  .dt-published {
+    @include fonts.var('italic');
+    color: var(--text-light);
+    font-size: var(--font-small);
+  }
+
+  [href*='twitter.com']:empty {
+    color: var(--text-light);
+    display: inline-block;
+    font-size: var(--font-small);
+
+    &::before {
+      content: '» ' attr(href);
+    }
+  }
 }
 
 .webmention-media {
@@ -70,10 +88,11 @@
 
 .webmention-author {
   @include fonts.var('bold');
-  margin: 0;
+  margin-block: var(--gutter) 0;
 }
 
 .webmention-author-photo {
+  border: thin solid var(--border);
   border-radius: 50%;
   object-fit: cover;
 }

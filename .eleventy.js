@@ -58,7 +58,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('img', image.image);
 
   eleventyConfig.addFilter('mentionsForUrl', mentions.forUrl);
-  eleventyConfig.addFilter('likesForUrl', mentions.likesForUrl);
+  eleventyConfig.addFilter('webLikes', mentions.likes);
+  eleventyConfig.addFilter('webAuthors', mentions.authors);
+  eleventyConfig.addFilter('webMentions', mentions.webMentions);
 
   eleventyConfig.addFilter('publicTags', tags.publicTags);
   eleventyConfig.addFilter('getTags', tags.getTags);
@@ -93,6 +95,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('loSlice', _.slice);
   eleventyConfig.addFilter('sortBy', _.sortBy);
   eleventyConfig.addFilter('filter', _.filter);
+  eleventyConfig.addFilter('includes', (array, key) =>
+    _.includes(array || [], key),
+  );
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('onlyShow', (array, n) => {
