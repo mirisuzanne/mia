@@ -10,7 +10,7 @@ const domain = 'www.miriamsuzanne.com';
 require('dotenv').config();
 
 // Define Cache Location and API Endpoint
-const CACHE_DIR = 'cache';
+const CACHE_DIR = '.cache';
 const API = 'https://webmention.io/api';
 // eslint-disable-next-line no-process-env
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;

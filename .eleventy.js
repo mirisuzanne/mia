@@ -4,6 +4,7 @@ const hljs = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rss = require('@11ty/eleventy-plugin-rss');
 const yaml = require('js-yaml');
 const _ = require('lodash');
+const sanitizeHTML = require('sanitize-html');
 
 const utils = require('./src/filters/utils');
 const events = require('./src/filters/events');
@@ -89,6 +90,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('typogr', type.set);
   eleventyConfig.addFilter('md', type.render);
   eleventyConfig.addFilter('mdInline', type.inline);
+
+  eleventyConfig.addFilter('sanitizeHTML', sanitizeHTML);
 
   eleventyConfig.addFilter('concat', _.concat);
   eleventyConfig.addFilter('merge', _.merge);
