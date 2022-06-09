@@ -14,11 +14,6 @@ const imgOptions = {
   // widths: [480, 960, 1600],
   widths: [960, 1600],
   formats: ['avif', 'jpeg'],
-  filenameFormat: (id, imgSrc, width, format) => {
-    const extension = path.extname(imgSrc);
-    const name = path.basename(imgSrc, extension);
-    return `${name}-${width}w.${format}`;
-  },
 };
 const IMG_SRC = './content/images/';
 
