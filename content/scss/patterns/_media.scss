@@ -8,11 +8,3 @@ svg {
   grid-template-columns: var(--media-size, var(--spacer)) 1fr;
   grid-gap: var(--gutter);
 }
-
-[data-svg='fancy'] {
-  min-height: 100%;
-  overflow: hidden;
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-}

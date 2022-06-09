@@ -132,7 +132,7 @@
   } | merge(attrs) %}
 
   <time
-    datetime="{{ pub | getDate('iso') }}"
+    datetime="{{ (pubdate or start) | getDate('iso') }}"
     {{ show_attrs(attrs) }}>
     {% set start_y = start | getDate('year') %}
 
