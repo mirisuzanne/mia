@@ -13,11 +13,18 @@ nav:
   about: /who/
   tags: /tags/
   contact: /contact/
+  rss: /feed.xml
 og:
   locale: en_US
   type: website
   img: headshots/mia-smashing.jpg
-feed: feed.xml
+feed:
+  - format: rss
+    type: rss+xml
+    url: feed.xml
+  - format: atom
+    type: atom+xml
+    url: feed.atom
 styles:
   - screen.css
 scripts:
