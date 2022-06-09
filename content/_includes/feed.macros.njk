@@ -3,7 +3,7 @@
   {{- (post.data.summary | md if post.data.summary else '') | safe -}}
 
   {%- if post.data.hero.img -%}
-    <img src="{{ (site.images + post.data.hero.img) }}" alt="{{ post.data.hero.alt | safe }}"/>
+    {{ post.data.hero.img | img(hero.alt, 'hero', {class: 'hero-img'}) | safe }}
   {%- endif -%}
 
   {{- post.templateContent | safe -}}

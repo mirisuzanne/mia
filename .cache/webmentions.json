@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-06-09T16:06:53.645Z",
+  "lastFetched": "2022-06-09T16:53:55.735Z",
   "children": [
     {
       "type": "entry",
@@ -1006,6 +1006,161 @@
       "wm-received": "2022-06-09T15:56:34Z",
       "wm-id": 1412029,
       "wm-source": "https://shanuverma.com/am-i-on-the-indieweb-yet-css-tricks/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "http://i-capitals.com/program/am-i-on-the-indieweb-yet-css-tricks/",
+      "published": null,
+      "wm-received": "2022-06-09T16:21:34Z",
+      "wm-id": 1412045,
+      "wm-source": "http://i-capitals.com/program/am-i-on-the-indieweb-yet-css-tricks/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "http://ecapital.news/program/am-i-on-the-indieweb-yet-css-tricks/",
+      "published": null,
+      "wm-received": "2022-06-09T16:20:09Z",
+      "wm-id": 1412041,
+      "wm-source": "http://ecapital.news/program/am-i-on-the-indieweb-yet-css-tricks/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://dztechno.com/am-i-on-the-indieweb-but-css-methods/",
+      "published": null,
+      "wm-received": "2022-06-09T16:09:08Z",
+      "wm-id": 1412034,
+      "wm-source": "https://dztechno.com/am-i-on-the-indieweb-but-css-methods/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://dztechno.com/am-i-on-the-indieweb-but-css-methods/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://webmention.io/avatar/secure.gravatar.com/b8b88206409c4fce32c580415c722d3596a59a0532a1a292f9f9d0504f902ed6.jpg",
+        "url": "https://tavarro.com/magazine/author/"
+      },
+      "url": "https://tavarro.com/magazine/am-i-on-the-indieweb-yetgeoff-graham/",
+      "published": null,
+      "wm-received": "2022-06-09T16:37:16Z",
+      "wm-id": 1412065,
+      "wm-source": "https://tavarro.com/magazine/am-i-on-the-indieweb-yetgeoff-graham/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "name": "Am I on the IndieWeb yet?Geoff Graham",
+      "content": {
+        "html": "<p>Can’t smash the Like button hard enough for what <a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\">Miriam Suzanne has to say</a> on the challenging technical hurdles of implementing Webmentions:</p>\n<p>The first round required several online services along with HTML &amp; JS changes to my static site, just to verify my indieweb identity. Then more changes to the site and more online services to help fetch any mentions (so far, nothing to see, but that’s probably expected). It seems the only way to test the setup is to launch all those changes publicly, and then ask for other devs to send you mentions.</p>\n<p>[…]</p>\n<p>I’m an experienced web developer, and I can figure it out. But the steps aren’t simple, and most of my friends <em>are not web developers</em>. So, to me, this all feels like the prototype of an idea – a proof of concept.</p>\n<p>A proof of concept for sure. And one that has been around for quite some time. The <a href=\"https://indieweb.org/\">IndieWeb</a> idea of owning your own data and using your website as a social hub is right up my alley — and likely yours, too, as someone working on the front end.</p>\n<p><span></span></p>\n<p>Yet, I’ve tinkered on and off with it — specifically <a href=\"https://indieweb.org/Webmention\">Webmentions</a> — over the past like three years with little to show for it. The problem isn’t so much the documentation of getting started because <a href=\"https://indieweb.org/Getting_Started\">it’s all there</a>. It’s more a combination of things…</p>\n<p><strong>The wiki is confusing.</strong> Wikis are super cool in general, but the non-linear nature of it makes it tough to know where to start and where to end.<strong>The plugin ecosystem is complex.</strong> My personal site is on WordPress and there’s a plugin designed to make it easy to integrate IndieWeb features on it. Except that it’s really one plugin that steers you to install several others, each one introducing a technology that I honestly struggle to understand.<strong>There’s a bunch of terms to learn.</strong> I mean, “IndieWeb” and “Webmention” are already difficult to grok. Toss in things like “Micropub,” “Microformats,” “IndieAuth,” and “Semantic Linkbacks,” and suddenly it feels like a bunch of puzzle pieces from different puzzles trying to fit together.<strong>Some middleware seems necessary?</strong> For example, I had to give a service called <a href=\"https://brid.gy/\">Bridgy</a> access to my Twitter to get that activity going. It <a href=\"https://indieweb.org/rel-me#Twitter\">apparently</a> has something to do with Twitter’s shortened t.co URLs and making them play well with microformats.</p>\n<p>But, like Miriam, I struggled my way through it and got something working in the end. This is the sort of visual I wish I had when I was first getting started, and maybe it’ll help you too.</p>\n<p>Feels like a lot to get Webmentions going, but maybe that’s only because I have such a light grasp of the tech and how it all fits together. All the pieces are there, though, and even with the initial struggle, I love the IndieWeb concept, er prototype.</p>\n<p><a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\">To Shared Link</a> — <a href=\"https://css-tricks.com/am-i-on-the-indieweb-yet/\">Permalink on CSS-Tricks</a></p>\n<p><a href=\"https://css-tricks.com/am-i-on-the-indieweb-yet/\">Am I on the IndieWeb yet?</a> originally published on <a href=\"https://css-tricks.com/\">CSS-Tricks</a>. You should <a href=\"https://css-tricks.com/newsletters/\">get the newsletter</a>.</p>\n\n\t<h3><em>Related</em></h3>",
+        "text": "Can’t smash the Like button hard enough for what Miriam Suzanne has to say on the challenging technical hurdles of implementing Webmentions:\nThe first round required several online services along with HTML & JS changes to my static site, just to verify my indieweb identity. Then more changes to the site and more online services to help fetch any mentions (so far, nothing to see, but that’s probably expected). It seems the only way to test the setup is to launch all those changes publicly, and then ask for other devs to send you mentions.\n[…]\nI’m an experienced web developer, and I can figure it out. But the steps aren’t simple, and most of my friends are not web developers. So, to me, this all feels like the prototype of an idea – a proof of concept.\nA proof of concept for sure. And one that has been around for quite some time. The IndieWeb idea of owning your own data and using your website as a social hub is right up my alley — and likely yours, too, as someone working on the front end.\n\nYet, I’ve tinkered on and off with it — specifically Webmentions — over the past like three years with little to show for it. The problem isn’t so much the documentation of getting started because it’s all there. It’s more a combination of things…\nThe wiki is confusing. Wikis are super cool in general, but the non-linear nature of it makes it tough to know where to start and where to end.The plugin ecosystem is complex. My personal site is on WordPress and there’s a plugin designed to make it easy to integrate IndieWeb features on it. Except that it’s really one plugin that steers you to install several others, each one introducing a technology that I honestly struggle to understand.There’s a bunch of terms to learn. I mean, “IndieWeb” and “Webmention” are already difficult to grok. Toss in things like “Micropub,” “Microformats,” “IndieAuth,” and “Semantic Linkbacks,” and suddenly it feels like a bunch of puzzle pieces from different puzzles trying to fit together.Some middleware seems necessary? For example, I had to give a service called Bridgy access to my Twitter to get that activity going. It apparently has something to do with Twitter’s shortened t.co URLs and making them play well with microformats.\nBut, like Miriam, I struggled my way through it and got something working in the end. This is the sort of visual I wish I had when I was first getting started, and maybe it’ll help you too.\nFeels like a lot to get Webmentions going, but maybe that’s only because I have such a light grasp of the tech and how it all fits together. All the pieces are there, though, and even with the initial struggle, I love the IndieWeb concept, er prototype.\nTo Shared Link — Permalink on CSS-Tricks\nAm I on the IndieWeb yet? originally published on CSS-Tricks. You should get the newsletter.\n\n\tRelated"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://tavarro.com/magazine/am-i-on-the-indieweb-yetgeoff-graham/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "http://e-capitals.com/program/am-i-on-the-indieweb-yet-css-tricks/",
+      "published": null,
+      "wm-received": "2022-06-09T16:31:48Z",
+      "wm-id": 1412061,
+      "wm-source": "http://e-capitals.com/program/am-i-on-the-indieweb-yet-css-tricks/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://wpguynews.com/am-i-on-the-indieweb-yet/",
+      "published": null,
+      "wm-received": "2022-06-09T16:31:27Z",
+      "wm-id": 1412057,
+      "wm-source": "https://wpguynews.com/am-i-on-the-indieweb-yet/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://vcodepedia.com/am-i-on-the-indieweb-yet-css-tricks/",
+      "published": null,
+      "wm-received": "2022-06-09T16:31:17Z",
+      "wm-id": 1412053,
+      "wm-source": "https://vcodepedia.com/am-i-on-the-indieweb-yet-css-tricks/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://marketingsolution.com.au/am-i-on-the-indieweb-but/",
+      "published": null,
+      "wm-received": "2022-06-09T16:30:09Z",
+      "wm-id": 1412049,
+      "wm-source": "https://marketingsolution.com.au/am-i-on-the-indieweb-but/",
       "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "wm-property": "mention-of",
