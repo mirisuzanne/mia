@@ -44,13 +44,13 @@ const buildEvent = (page, event, index) => {
   const date = feature === 'pin' ? groupDate('now') : start;
 
   // set group…
-  const end_iso = time.getDate(end, 'iso');
-  const start_iso = time.getDate(start, 'iso');
-  const now_iso = time.getDate(time.now, 'iso');
-  let group = time.getDate(date, 'year');
+  const end_iso = time.date(end, 'iso');
+  const start_iso = time.date(start, 'iso');
+  const now_iso = time.date(time.now, 'iso');
+  let group = time.date(date, 'year');
 
   if (end_iso >= now_iso) {
-    const endYear = `${time.getDate(end, 'year')}`;
+    const endYear = `${time.date(end, 'year')}`;
     if (groupNames[endYear]) {
       group = endYear;
     } else {
@@ -132,14 +132,7 @@ const get = (collection, only, group = true) => {
 };
 
 const recentEvents = (collection, group = true) => {
-  const year = time.getDate(time.now, 'yyyy') - 1;
-  const cutOff = time.getDate(
-    `${year}-${time.getDate(time.now, 'mm')}-${time.getDate(time.now, 'dd')}`,
-  );
-
-  const recent = fromCollection(collection)
-    .filter((event) => event.date > cutOff)
-    .slice(-25);
+  const recent = fromCollection(collection).slice(-25);
 
   return group ? byGroup(recent) : recent;
 };

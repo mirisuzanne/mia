@@ -54,7 +54,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('domain', utils.domain);
   eleventyConfig.addFilter('styles', utils.styles);
 
-  eleventyConfig.addFilter('getDate', time.getDate);
+  eleventyConfig.addFilter('date', time.date);
 
   eleventyConfig.addFilter('img', image.image);
 
@@ -117,7 +117,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPairedShortcode('mdInline', type.inline);
   eleventyConfig.addShortcode(
     'getDate',
-    (format) => `${time.getDate(time.now, format)}`,
+    (format) => `${time.date(null, format)}`,
   );
 
   // config

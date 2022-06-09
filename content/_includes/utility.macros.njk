@@ -115,12 +115,12 @@
 ) %}
   {%- set ranges = {
     'same-y': {
-      'start': 'M',
+      'start': 'mon',
       'end': 'range'
     },
     'same-m': {
-      'start': 'md',
-      'end': 'd' if (format == 'md') else 'dy'
+      'start': 'no-year',
+      'end': 'day' if (format == 'no-year') else 'no-month'
     }
   } -%}
 
@@ -132,28 +132,28 @@
   } | merge(attrs) %}
 
   <time
-    datetime="{{ (pubdate or start) | getDate('iso') }}"
+    datetime="{{ (pubdate or start) | date('iso') }}"
     {{ show_attrs(attrs) }}>
-    {% set start_y = start | getDate('year') %}
+    {% set start_y = start | date('year') %}
 
     {% if ongoing %}
-      since {{ start | getDate('range') }}
+      since {{ start | date('range') }}
     {% elif (start and end) and (start != end) %}
-      {% set start_m = start | getDate('month') %}
-      {% set end_m = end | getDate('month') %}
-      {% set end_y = end | getDate('year') %}
+      {% set start_m = start | date('month') %}
+      {% set end_m = end | date('month') %}
+      {% set end_y = end | date('year') %}
 
       {% set same = 'same-y' if (start_y == end_y) else none %}
       {% set same = 'same-m' if same and (start_m == end_m) else same %}
 
-      {{ start | getDate(ranges[same].start or 'range') }}
+      {{ start | date(ranges[same].start or 'range') }}
       {{- '---' | typogr | safe -}}
-      {{ end | getDate(ranges[same].end or 'range') }}
+      {{ end | date(ranges[same].end or 'range') }}
 
     {% else %}
       {% set now %}{% getDate 'year' %}{% endset %}
       {% set format = 'short' if (start_y != now) else format %}
-      {{ start | getDate(format) }}
+      {{ start | date(format) }}
     {% endif %}
   </time>
 {% endmacro %}

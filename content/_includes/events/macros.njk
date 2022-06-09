@@ -83,10 +83,10 @@
 
         <div data-orgs="list">
           {% for item in orgs %}
-            {% set start = (item.data.start or item.date) | getDate('yyyy') %}
+            {% set start = (item.data.start or item.date) | date('year') %}
             {% set org_title = item.data.banner or item.data.title %}
             {% set is_old = item.data.end and (item.data.end != 'ongoing') %}
-            {% set end = item.data.end | getDate('yyyy') if is_old else none %}
+            {% set end = item.data.end | date('year') if is_old else none %}
             {% set end = end if end and (end != start) %}
             {% set range = '→' if end or (not is_old) %}
             {% set id = ['orgs', loop.index] | join('-') %}
@@ -96,7 +96,7 @@
               {{ utility.attr_if('data-old', is_old) }}>
               <time
                 data-meta="org-date"
-                datetime="{{ (item.data.start or item.date) | getDate('iso') }}">
+                datetime="{{ (item.data.start or item.date) | date('iso') }}">
                 {{ start }}{{ range }}{{ end or '' }}
               </time>
               <h3 data-title="orgs" id="{{ id }}" class="p-org">
@@ -137,7 +137,7 @@
   all,
   self
 ) %}
-  {% set this_year = none | getDate('year') %}
+  {% set this_year = none | date('year') %}
 
   {% for segment in events %}
     {{ group(
@@ -253,7 +253,7 @@
     pubdate=item.page.data.pubdate or item.page.date,
     start=item.start,
     end=item.end,
-    format='short' if (item.group | groupName == 'future') else 'md'
+    format='short' if (item.group | groupName == 'future') else 'no-year'
   ) }}
 
   {%- set type = 'link' if not_me else none -%}

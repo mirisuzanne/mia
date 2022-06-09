@@ -15,15 +15,15 @@
       <atom:link href="{{ page.url | absoluteUrl(site.url) }}" rel="self" type="application/rss+xml" />
       <description>{{ site.description }}</description>
       <language>en-us</language>
-      <pubDate>{{ posts[0].date | getDate }}</pubDate>
-      <lastBuildDate>{{ none | getDate }}</lastBuildDate>
+      <pubDate>{{ posts[0].date | date('rss') }}</pubDate>
+      <lastBuildDate>{{ none | date('rss') }}</lastBuildDate>
       <docs>http://blogs.law.harvard.edu/tech/rss</docs>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
       <generator>Eleventy</generator>
       <image>
-        <url>{{ '/favicon.svg' | absoluteUrl(site.url) }}</url>
-        <title>Curly italic ampersand</title>
+        <url>{{ 'headshots/rss.jpg' | img('','default',{},true) | absoluteUrl(site.url) }}</url>
+        <title>{{ site.title }}</title>
         <link>{{ site.url | url }}</link>
         <width>88</width>
         <height>88</height>
@@ -38,7 +38,7 @@
         <title>{{ post.data.title or site.data.banner | mdInline(false) | striptags }}</title>
         <link>{{ absolutePostUrl }}</link>
         <guid>{{ absolutePostUrl }}</guid>
-        <pubDate>{{ post.date | getDate }}</pubDate>
+        <pubDate>{{ post.date | date('rss') }}</pubDate>
         <comments>{{ [absolutePostUrl, 'webmentions'] | join('#') }}</comments>
         <slash:comments>{{ mentions }}</slash:comments>
         <dc:creator>{{ post.author or site.author }}</dc:creator>
