@@ -46,7 +46,7 @@ const buildEvent = (page, event, index) => {
   // set group…
   const end_iso = time.date(end, 'iso');
   const start_iso = time.date(start, 'iso');
-  const now_iso = time.date(time.now, 'iso');
+  const now_iso = time.date(null, 'iso');
   let group = time.date(date, 'year');
 
   if (end_iso >= now_iso) {
@@ -94,7 +94,7 @@ const fromCollection = (collection) => {
       }
     });
 
-  return events;
+  return events.sort((a, b) => a.date - b.date);
 };
 
 const count = (groups) => {

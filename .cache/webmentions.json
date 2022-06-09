@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-06-09T06:23:55.887Z",
+  "lastFetched": "2022-06-09T16:06:53.645Z",
   "children": [
     {
       "type": "entry",
@@ -949,6 +949,66 @@
       "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://codytechs.com/am-i-on-the-indieweb-yet/",
+      "published": null,
+      "wm-received": "2022-06-09T15:45:08Z",
+      "wm-id": 1412024,
+      "wm-source": "https://codytechs.com/am-i-on-the-indieweb-yet/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://codytechs.com/am-i-on-the-indieweb-yet/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://underskore.in/am-i-on-the-indieweb-yet/",
+      "published": null,
+      "wm-received": "2022-06-09T15:42:46Z",
+      "wm-id": 1412020,
+      "wm-source": "https://underskore.in/am-i-on-the-indieweb-yet/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://underskore.in/am-i-on-the-indieweb-yet/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://shanuverma.com/am-i-on-the-indieweb-yet-css-tricks/",
+      "published": null,
+      "wm-received": "2022-06-09T15:56:34Z",
+      "wm-id": 1412029,
+      "wm-source": "https://shanuverma.com/am-i-on-the-indieweb-yet-css-tricks/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
       "wm-private": false
     }
   ]
