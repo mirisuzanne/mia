@@ -60,6 +60,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter('mentionsForUrl', mentions.forUrl);
   eleventyConfig.addFilter('webLikes', mentions.likes);
+  eleventyConfig.addFilter('webReposts', mentions.reposts);
   eleventyConfig.addFilter('webAuthors', mentions.authors);
   eleventyConfig.addFilter('webMentions', mentions.webMentions);
 

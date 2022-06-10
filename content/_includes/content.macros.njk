@@ -68,15 +68,22 @@
   img_class=''
 ) %}
 {%- set content = content if (content != none) else caller() -%}
-{% set align = ('--align: %s;' % align) if align else none %}
+{%- set align = ('--align: %s;' % align) if align else none -%}
+{%- set attrs = {
+  'class': [img_class, 'media-image'] | join(' ')
+} -%}
 <div data-media="" {{ utility.attr_if('style', align) }} {{ utility.attr_if('class', class) }}>
-{% if embed %}
+{%- if embed -%}
 <div class="media-image">
-{% include src %}
+{%- include src -%}
 </div>
-{% else %}
-<img src="{{ src }}" alt="{{ alt }}" {{ utility.attr_if('class', [img_class, 'media-image'] | join(' ')) }}>
-{% endif %}
+{%- else -%}
+{%- if '://' in src -%}
+<img src="{{ src | url }}" alt="{{ alt }}" {{ utility.show_attrs(attrs) }} />
+{%- else -%}
+{{ src | img(alt, 'media', attrs) | safe }}
+{%- endif -%}
+{%- endif -%}
 <div class="media-text">
 {{ content | safe }}
 </div>
