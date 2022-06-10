@@ -1,0 +1,14 @@
+{% macro entry(post, site) %}
+  {{- (post.data.sub | md if post.data.sub else '') | safe -}}
+  {{- (post.data.summary | md if post.data.summary else '') | safe -}}
+
+  {%- if post.data.hero.img -%}
+    {{ post.data.hero.img | img(hero.alt, 'hero', {class: 'hero-img'}) | safe }}
+  {%- endif -%}
+
+  {{- post.templateContent | safe -}}
+
+  {%- if post | hasTag('elsewhere') and post.data.url and post.data.venue -%}
+  <p><a href="{{ post.data.url }}">More at {{ post.data.venue }} »</a></p>
+  {%- endif -%}
+{% endmacro %}

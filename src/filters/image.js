@@ -14,11 +14,6 @@ const imgOptions = {
   // widths: [480, 960, 1600],
   widths: [960, 1600],
   formats: ['avif', 'jpeg'],
-  filenameFormat: (id, imgSrc, width, format) => {
-    const extension = path.extname(imgSrc);
-    const name = path.basename(imgSrc, extension);
-    return `${name}-${width}w.${format}`;
-  },
 };
 const IMG_SRC = './content/images/';
 
@@ -62,7 +57,7 @@ const image = (
   let urlPath = '/images/';
 
   if (fullSrc.startsWith(IMG_SRC)) {
-    const dir = path.dirname(fullSrc.slice(IMG_SRC.length));
+    const dir = path.dirname(src);
     outputDir = `${outputDir}${dir}`;
     urlPath = `${urlPath}${dir}`;
   } else {
@@ -97,6 +92,7 @@ const image = (
     default: '(min-width: 65em) 60vw, 95vw',
     hero: '(min-width: 75em) 75vw, 95vw',
     gallery: '(min-width: 65em) 30vw, (min-width: 30em) 45vw, 95vw',
+    media: '(min-width: 65em) 15vw, (min-width: 30em) 30vw, 50vw',
   };
 
   const imgSizes =

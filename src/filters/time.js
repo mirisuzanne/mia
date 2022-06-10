@@ -1,79 +1,48 @@
 'use strict';
 
-const now = new Date();
+const { DateTime } = require('luxon');
 
-const months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
-];
+const getDateObj = (date) => {
+  if (!date) {
+    return DateTime.now();
+  }
 
-const days = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-];
-
-const formatDate = (date, format) => {
-  const m0 = date.getUTCMonth();
-  const mm = `${m0 + 1}`.padStart(2, '0');
-  const MM = months[m0];
-  const M = MM.slice(0, 3);
-  const d = date.getUTCDate();
-  const dd = `${d}`.padStart(2, '0');
-  const D = days[date.getUTCDay()];
-  const yyyy = date.getUTCFullYear();
-  const md = `${M} ${d}`;
-  const iso = `${yyyy}-${mm}-${dd}`;
-  const range = `${M} ${yyyy}`;
-
-  const formats = {
-    dd,
-    d,
-    D,
-    mm,
-    MM,
-    M,
-    yyyy,
-    md,
-    iso,
-    range,
-    day: D,
-    date: d,
-    month: MM,
-    year: yyyy,
-    mmd: `${MM} ${d}`,
-    dy: `${d}, ${yyyy}`,
-    slash: `${mm}/${dd}/${yyyy}`,
-    url: `${yyyy}/${mm}/${dd}`,
-    short: `${M} ${d}, ${yyyy}`,
-    long: `${MM} ${d}, ${yyyy}`,
-    since: `since ${range}`,
-    rfc: `${iso}T12:00:00-06:00`,
-  };
-
-  return formats[format];
+  return typeof date === 'string'
+    ? DateTime.fromISO(date)
+    : DateTime.fromJSDate(date);
 };
 
-const getDate = (date, format) => {
-  date = typeof date === 'string' ? new Date(date) : date || now;
-  return format ? formatDate(date, format) : date;
+const date = (dateObj, format) => {
+  const obj = getDateObj(dateObj).setZone('UTC');
+
+  const formats = {
+    short: DateTime.DATE_MED,
+    long: DateTime.DATE_FULL,
+    range: { month: 'short', year: 'numeric' },
+    month: { month: 'long' },
+    mon: { month: 'short' },
+    year: { year: 'numeric' },
+    day: { day: 'numeric' },
+    'no-month': { day: 'numeric', year: 'numeric' },
+    'no-year': { month: 'short', day: 'numeric' },
+  };
+
+  const knownFormat = formats[format] || DateTime[format];
+
+  if (format === 'rss') {
+    return obj.toRFC2822();
+  } else if (format === 'iso') {
+    return obj.toISODate();
+  } else if (format && !knownFormat) {
+    const custom = {
+      url: "yyyy'/'MM'/'dd",
+    };
+    return obj.toFormat(custom[format] || format);
+  }
+
+  return obj.toLocaleString(knownFormat || DateTime.DATE_MED);
 };
 
 module.exports = {
-  now,
-  getDate,
+  date,
 };

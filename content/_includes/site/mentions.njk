@@ -5,20 +5,23 @@
 {%- set url_mentions = webmentions | mentionsForUrl(absoluteUrl) -%}
 {%- set mentions = url_mentions | webMentions -%}
 {%- set likes = url_mentions | webLikes -%}
+{%- set reposts = url_mentions | webReposts -%}
 
 {% if mentions | length or (likes | length > 20) and not hide | includes('mentions') %}
 <section id="webmentions" data-section="mentions">
   {%- set mentions_title = [mentions | length, 'WebMentions'] | join(' ') if mentions | length else none -%}
-  {%- set likes_title = [likes | length, 'Likes'] | join(' ') if likes | length else none -%}
+  {%- set likes_title = [likes | length, 'likes'] | join(' ') if likes | length else none -%}
+  {%- set reposts_title = [reposts | length, 'reposts'] | join(' ') if reposts | length else none -%}
+  {%- set actions_title = [likes_title, reposts_title] | join(', ') if (likes_title and reposts_title) else (likes_title or reposts_title) -%}
 
-  {{ utility.section_title(
-    [mentions_title, likes_title] | join(' & ')
-    if (mentions_title and likes_title)
-    else (mentions_title or likes_title)
-  ) }}
+  {{- utility.section_title(
+    [mentions_title, actions_title] | join(', ')
+    if (mentions_title and actions_title)
+    else (mentions_title or actions_title)
+  ) -}}
 
-  {% set facepile = url_mentions | webAuthors %}
-  {% if facepile | length %}
+  {%- set facepile = url_mentions | webAuthors -%}
+  {%- if facepile | length -%}
     <div class="webmentions-facepile">
       {%- for author in facepile | reverse -%}
         {%- set photo %}<img src="{{ author.photo }}" title="{{ author.name }}" alt="" class="webmentions-face" />{% endset -%}
@@ -32,7 +35,7 @@
         ) }}
       {%- endfor -%}
     </div>
-  {% endif %}
+  {%- endif -%}
 
   {% for webmention in mentions | reverse %}
     <article class="webmention h-cite" id="webmention-{{ webmention['wm-id'] }}">
@@ -42,28 +45,22 @@
       {%- set img_class = 'webmention-author-photo' -%}
       {%- set img_class = [img_class, 'u-photo'] | join(' ') if webmention.author.photo else img_class -%}
 
-      {% call content.media(
-        src=webmention.author.photo | url or '/icons/webmention-avatar-default.svg' | url,
+      {%- call content.media(
+        src=webmention.author.photo or 'icons/webmention-avatar-default.svg',
         alt=webmention.author.name if webmention.author.photo else '',
         class=class,
         img_class=img_class
       ) %}
         <h3 class="webmention-author{% if webmention.author %} p-name{% endif %}">
-          {% if webmention.author %}
-            <a class="u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-              {{ webmention.author.name }}
-            </a>
-          {% else %}
-            Anonymous
-          {% endif %}
+          <a class="u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+            {{- webmention.author.name -}}
+          </a>
         </h3>
 
-        {% if webmention.published %}
-          {{ utility.datetime(
-            pubdate=webmention.published,
-            format='long'
-          ) }}
-        {% endif %}
+        {{ utility.datetime(
+          pubdate=webmention.published,
+          format='long'
+        ) }}
 
         <div class="webmention-content p-content">
           {{ webmention.content.value | safe }}

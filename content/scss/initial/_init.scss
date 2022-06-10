@@ -19,22 +19,6 @@ html {
   scroll-padding: var(--shim);
 }
 
-body {
-  background: radial-gradient(
-      ellipse at top right,
-      var(--ccs-accent--bg4),
-      transparent 50%
-    ),
-    radial-gradient(ellipse at right, var(--ccs-prime--bg4), transparent 50%),
-    radial-gradient(
-      ellipse at bottom right,
-      var(--ccs-accent--bg4),
-      transparent 50%
-    );
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
 .fonts-loaded {
   @supports (font-variation-settings: normal) {
     @include config.font-family(config.$recursive);

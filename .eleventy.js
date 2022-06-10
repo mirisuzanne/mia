@@ -4,6 +4,7 @@ const hljs = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rss = require('@11ty/eleventy-plugin-rss');
 const yaml = require('js-yaml');
 const _ = require('lodash');
+const sanitizeHTML = require('sanitize-html');
 
 const utils = require('./src/filters/utils');
 const events = require('./src/filters/events');
@@ -53,12 +54,13 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('domain', utils.domain);
   eleventyConfig.addFilter('styles', utils.styles);
 
-  eleventyConfig.addFilter('getDate', time.getDate);
+  eleventyConfig.addFilter('date', time.date);
 
   eleventyConfig.addFilter('img', image.image);
 
   eleventyConfig.addFilter('mentionsForUrl', mentions.forUrl);
   eleventyConfig.addFilter('webLikes', mentions.likes);
+  eleventyConfig.addFilter('webReposts', mentions.reposts);
   eleventyConfig.addFilter('webAuthors', mentions.authors);
   eleventyConfig.addFilter('webMentions', mentions.webMentions);
 
@@ -90,6 +92,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('md', type.render);
   eleventyConfig.addFilter('mdInline', type.inline);
 
+  eleventyConfig.addFilter('sanitizeHTML', sanitizeHTML);
+
   eleventyConfig.addFilter('concat', _.concat);
   eleventyConfig.addFilter('merge', _.merge);
   eleventyConfig.addFilter('loSlice', _.slice);
@@ -114,7 +118,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPairedShortcode('mdInline', type.inline);
   eleventyConfig.addShortcode(
     'getDate',
-    (format) => `${time.getDate(time.now, format)}`,
+    (format) => `${time.date(null, format)}`,
   );
 
   // config

@@ -13,3 +13,6 @@ package = "netlify-plugin-cache"
     "_site/images", # Eleventy Image Disk Cache
     ".cache" # Remote Asset Cache
   ]
+
+[[plugins]]
+package = "netlify-plugin-debug-cache"

@@ -23,11 +23,14 @@ const authors = (mentions) => {
 const likes = (mentions) =>
   mentions.filter((entry) => entry['wm-property'] === 'like-of');
 
+const reposts = (mentions) =>
+  mentions.filter((entry) => entry['wm-property'] === 'repost-of');
+
 const webMentions = (mentions) => {
   // define which types of webmentions should be included per URL.
   // possible values listed here:
   // https://github.com/aaronpk/webmention.io#find-links-of-a-specific-type-to-a-specific-page
-  const allowedTypes = ['mention-of', 'in-reply-to'];
+  const allowedTypes = ['mention-of', 'in-reply-to', 'bookmark-of'];
 
   // clean webmention content for output
   const clean = (entry) => {
@@ -48,8 +51,13 @@ const webMentions = (mentions) => {
 
   // only allow webmentions that have an author name and a timestamp
   const checkRequiredFields = (entry) => {
-    const { author, published } = entry;
-    return Boolean(author) && Boolean(author.name) && Boolean(published);
+    const { author, published, content } = entry;
+    return (
+      Boolean(author) &&
+      Boolean(author.name) &&
+      Boolean(published) &&
+      Boolean(content)
+    );
   };
 
   // run all of the above for each webmention that targets the current URL
@@ -64,5 +72,6 @@ module.exports = {
   forUrl,
   authors,
   likes,
+  reposts,
   webMentions,
 };

@@ -67,7 +67,7 @@ we are developing a new native CSS approach to scope.
 ## Timeline & Documents
 
 {% for event in events | sortBy('date') | reverse -%}
-- {{ utility.link_if(event.venue, event.url) }} ({{ event.date | getDate('short') }})
+- {{ utility.link_if(event.venue, event.url) }} ({{ event.date | date }})
 {% endfor %}
 
 ## Browser Support

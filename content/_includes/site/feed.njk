@@ -1,7 +1,7 @@
-{% if site.feed %}
+{% for feed in site.feed %}
 <link
   rel="alternate"
-  type="application/atom+xml"
-  title="{{ site.title }}"
-  href="{{ site.feed | absoluteUrl(site.url) }}" />
-{% endif %}
+  type="application/{{ feed.type }}"
+  title="{{ site.title }} {{ feed.format }} feed"
+  href="{{ feed.url | absoluteUrl(site.url) }}" />
+{% endfor %}

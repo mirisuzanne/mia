@@ -28,7 +28,7 @@
     p-queue "^6.6.2"
     sharp "^0.30.3"
 
-"@11ty/eleventy-plugin-rss@^1.0.7":
+"@11ty/eleventy-plugin-rss@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-rss/-/eleventy-plugin-rss-1.1.2.tgz#e7841d6f8a82b443fd7a87230e9423f9468e86fc"
   integrity sha512-QdXMl29MzMtyMj9Y1lYijPX4vGMnBDo4Peyi4GCJznCO4+eryAZiyVYciLBCek893EXL3RLOuVSshYo+jvjZ0w==

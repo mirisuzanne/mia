@@ -42,8 +42,9 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^2.0.0",
-    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",

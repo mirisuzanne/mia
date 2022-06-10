@@ -1,47 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.title }}</title>
-  <subtitle>{{ site.description }}</subtitle>
-  <link href="{{ page.url | absoluteUrl(site.url) }}" rel="self"/>
-  <link href="{{ site.url }}"/>
-  <icon>{{ '/favicon.svg' | absoluteUrl(site.url) }}</icon>
-  <logo>{{ '/favicon.svg' | absoluteUrl(site.url) }}</logo>
-  <updated>{{ (collections._post | getPublic | reverse)[0].date.toISOString() }}</updated>
-  <id>{{ site.url }}</id>
-  <author>
-    <name>{{ site.author }}</name>
-    <email>{{ site.email }}</email>
-  </author>
-  {%- for post in collections._post | getPublic | reverse -%}
-  {%- if post.templateContent or post.data.summary -%}
-  {%- set absolutePostUrl = post.url | absoluteUrl(site.url) -%}
-  <entry>
-    <title>{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date.toISOString() }}</updated>
-    <id>{{ absolutePostUrl }}</id>
-    {%- if post.templateContent %}
-    <content type="html">
-      {% if post.data.hero.img -%}
-      {%- filter escape -%}
-      <img src="{{ (site.images + post.data.hero.img) | absoluteUrl(site.url) }}" alt="{{ post.data.hero.alt }}"/>
-      {%- endfilter -%}
-      {%- endif %}
+{%- import "feed.macros.njk" as feed -%}
+{%- set posts = collections._post | getPublic | reverse | onlyShow(15) -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
+   <channel>
+      <title>{{ site.title }}</title>
+      <link>{{ site.url | url }}</link>
+      <atom:link href="{{ page.url | absoluteUrl(site.url) }}" rel="self" type="application/rss+xml" />
+      <description>{{ site.description }}</description>
+      <language>en-us</language>
+      <pubDate>{{ posts | getNewestCollectionItemDate | date('rss') }}</pubDate>
+      <lastBuildDate>{{ none | date('rss') }}</lastBuildDate>
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+      <sy:updatePeriod>hourly</sy:updatePeriod>
+      <sy:updateFrequency>1</sy:updateFrequency>
+      <generator>Eleventy</generator>
+      <image>
+        <url>{{ 'headshots/rss.jpg' | img('','default',{},true) | absoluteUrl(site.url) }}</url>
+        <title>{{ site.title }}</title>
+        <link>{{ site.url | url }}</link>
+        <width>144</width>
+        <height>144</height>
+      </image>
+      {%- for post in posts -%}
+      {%- if post.templateContent or post.data.summary -%}
+      {%- set absolutePostUrl = post.url | absoluteUrl(site.url) -%}
+      {%- set post_summary = post.data.summary | mdInline if post.data.summary else none -%}
+      {%- set post_content = feed.entry(post, site) -%}
+      {%- set mentions = webmentions | mentionsForUrl(absoluteUrl) | webMentions | length -%}
+      <item>
+        <title>{{ post.data.title or site.data.banner | mdInline(false) | striptags }}</title>
+        <link>{{ absolutePostUrl }}</link>
+        <guid>{{ absolutePostUrl }}</guid>
+        <pubDate>{{ post.date | date('rss') }}</pubDate>
+        <comments>{{ [absolutePostUrl, 'webmentions'] | join('#') }}</comments>
+        <slash:comments>{{ mentions }}</slash:comments>
+        <dc:creator>{{ post.author or site.author }}</dc:creator>
 
-      {{- (post.data.sub | md if post.data.sub else '') | htmlToAbsoluteUrls(absolutePostUrl) -}}
-      {{- (post.data.summary | md if post.data.summary else '') | htmlToAbsoluteUrls(absolutePostUrl) -}}
-      {{- post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) -}}
+        <description><![CDATA[{{
+          (post_summary or post_content) | htmlToAbsoluteUrls(absolutePostUrl) | safe
+        }}]]></description>
 
-      {%- if post | hasTag('elsewhere') and post.data.url and post.data.venue -%}
-      {%- filter escape -%}
-      <p><a href="{{ post.data.url }}">More at {{ post.data.venue }} »</a></p>
-      {%- endfilter -%}
-      {%- endif -%}
-    </content>
-    {%- elif post.data.summary %}
-    <summary type="html">{{ post.data.summary | md | htmlToAbsoluteUrls(absolutePostUrl) }}</summary>
-    {%- endif %}
-  </entry>
-  {%- endif %}
-  {%- endfor %}
-</feed>
+        {%- if post_summary %}
+        <content:encoded><![CDATA[{{
+          post_content | htmlToAbsoluteUrls(absolutePostUrl) | safe
+        }}]]></content:encoded>
+        {%- endif %}
+
+        {%- for tag in post.data.tags | publicTags %}
+        <category>{{ tag }}</category>
+        {%- endfor %}
+      </item>
+      {% endif %}
+      {%- endfor %}
+   </channel>
+</rss>

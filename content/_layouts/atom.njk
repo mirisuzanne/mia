@@ -1,0 +1,46 @@
+{%- import "feed.macros.njk" as feed -%}
+{%- set posts = collections._post | getPublic | reverse | onlyShow(15) -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <id>{{ site.url }}</id>
+  <link href="{{ page.url | absoluteUrl(site.url) }}" rel="self"/>
+  <link href="{{ site.url }}"/>
+  <icon>{{ 'headshots/rss.jpg' | img('','default',{},true) | absoluteUrl(site.url) }}</icon>
+  <logo>{{ 'headshots/atom.jpg' | img('','default',{},true) | absoluteUrl(site.url) }}</logo>
+  <updated>{{ posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <rights>© {% getDate 'year' %} {{ site.author }}</rights>
+  <generator>Eleventy</generator>
+  <author>
+    <name>{{ site.author }}</name>
+    <email>{{ site.email }}</email>
+    <uri>{{ '/who/' | htmlToAbsoluteUrls(site.url) }}</uri>
+  </author>
+  {%- for post in posts -%}
+  {%- if post.templateContent or post.data.summary -%}
+  {%- set absolutePostUrl = post.url | absoluteUrl(site.url) -%}
+  {%- set post_summary = post.data.summary | mdInline if post.data.summary else none -%}
+  {%- set post_content = feed.entry(post, site) -%}
+  {%- set mentions = webmentions | mentionsForUrl(absoluteUrl) | webMentions | length -%}
+  <entry>
+    <title>{{ post.data.title or site.data.banner | mdInline(false) | striptags }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    {% if post_summary %}
+    <summary type="html">{{
+      post_summary | htmlToAbsoluteUrls(absolutePostUrl)
+    }}</summary>
+    {% endif %}
+    <content type="html">{{
+      post_content | htmlToAbsoluteUrls(absolutePostUrl)
+    }}</content>
+
+    {%- for tag in post.data.tags | publicTags %}
+    <category term='{{ tag }}' />
+    {%- endfor %}
+  </entry>
+  {%- endif %}
+  {%- endfor %}
+</feed>
