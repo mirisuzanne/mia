@@ -63,12 +63,12 @@
       "type": "entry",
       "author": {
         "type": "card",
-        "name": "",
-        "photo": "",
-        "url": ""
+        "name": "Geoff Graham",
+        "photo": "https://secure.gravatar.com/avatar/1a1b5ca4b139c0c8caaea26ef437d943?s=160&d=retro&r=pg",
+        "url": "https://css-tricks.com/author/geoffgraham/"
       },
       "url": "https://css-tricks.com/am-i-on-the-indieweb-yet/",
-      "published": null,
+      "published": "2022-06-09T16:56:28+00:00",
       "wm-received": "2022-06-09T16:56:28Z",
       "wm-id": 1412083,
       "wm-source": "https://css-tricks.com/am-i-on-the-indieweb-yet/",
