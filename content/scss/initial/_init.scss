@@ -66,3 +66,8 @@ summary {
 :focus {
   @include config.focus-ring();
 }
+
+::selection {
+  background-color: var(--action);
+  color: var(--bg);
+}

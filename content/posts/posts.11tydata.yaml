@@ -1,0 +1,6 @@
+permalink: /{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html
+type: post
+calendar: _post
+tags:
+  - _post
+  - _calendar

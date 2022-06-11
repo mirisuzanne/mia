@@ -36,27 +36,53 @@
 }
 
 .webmentions-face {
-  background-color: var(--bg);
+  border-radius: 50%;
   width: var(--face-pile);
   height: var(--face-pile);
-  border: thin solid var(--border);
-  border-radius: 50%;
   object-fit: cover;
-  flex: none;
-  position: relative;
-
-  &:hover {
-    border-color: currentColor;
-    z-index: 2;
-  }
 }
 
 .facepile-url {
+  background-color: var(--bg);
+  border: thin solid var(--border);
+  border-radius: 50%;
+  flex: none;
   margin-inline-end: calc(var(--face-overlap) * -1);
   margin-block-end: calc(var(--face-overlap) * -1);
+  position: relative;
+
+  &:hover {
+    --emoji: 1;
+    border-color: currentColor;
+    transform: scale(1.1);
+    transition: transform 150ms ease-out;
+    z-index: 2;
+  }
 
   &::after {
-    display: none;
+    background-color: var(--overlay);
+    border-radius: 50%;
+    content: var(--like, '') var(--mention, '') var(--repost, '');
+    display: grid;
+    height: 100%;
+    inset: 0;
+    place-content: center;
+    opacity: var(--emoji, 0);
+    position: absolute;
+  }
+
+  &[data-mention~='mention-of'],
+  &[data-mention~='in-reply-to'] {
+    --mention: '💬';
+  }
+
+  &[data-mention~='like-of'],
+  &[data-mention~='bookmark-of'] {
+    --like: '❤️';
+  }
+
+  &[data-mention~='repost-of'] {
+    --repost: '🔁';
   }
 }
 

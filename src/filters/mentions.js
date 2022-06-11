@@ -1,6 +1,6 @@
 'use strict';
 const sanitizeHTML = require('sanitize-html');
-const { uniqBy } = require('lodash');
+const _ = require('lodash');
 
 // sort webmentions by published timestamp chronologically.
 // swap a.published and b.published to reverse order.
@@ -14,10 +14,18 @@ const forUrl = (webMentions, url) =>
 
 const authors = (mentions) => {
   const photos = mentions
-    .map((entry) => entry.author)
+    .map((entry) => {
+      entry.author.property = entry['wm-property'];
+      return entry.author;
+    })
     .filter((author) => author.photo);
 
-  return uniqBy(photos, 'photo');
+  return _.uniqBy(photos, 'photo').map((a) => {
+    a.property = _.uniq(
+      _.filter(photos, ['photo', a.photo]).map((i) => i.property),
+    );
+    return a;
+  });
 };
 
 const likes = (mentions) =>

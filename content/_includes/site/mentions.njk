@@ -7,18 +7,23 @@
 {%- set likes = url_mentions | webLikes -%}
 {%- set reposts = url_mentions | webReposts -%}
 
-{% if mentions | length or (likes | length > 20) and not hide | includes('mentions') %}
-<section id="webmentions" data-section="mentions">
-  {%- set mentions_title = [mentions | length, 'WebMentions'] | join(' ') if mentions | length else none -%}
-  {%- set likes_title = [likes | length, 'likes'] | join(' ') if likes | length else none -%}
-  {%- set reposts_title = [reposts | length, 'reposts'] | join(' ') if reposts | length else none -%}
-  {%- set actions_title = [likes_title, reposts_title] | join(', ') if (likes_title and reposts_title) else (likes_title or reposts_title) -%}
+{%- set show_mentions =
+  (
+    mentions | length
+    or likes | length > 20
+  )
+  and not
+  (
+    hide | includes('mentions')
+    or (page.url == '/')
+    or eleventyExcludeFromCollections
+    or (not '_post' in (tags or []))
+  )
+-%}
 
-  {{- utility.section_title(
-    [mentions_title, actions_title] | join(', ')
-    if (mentions_title and actions_title)
-    else (mentions_title or actions_title)
-  ) -}}
+{% if show_mentions %}
+<section id="webmentions" data-section="mentions">
+  {{- utility.section_title('WebMentions') -}}
 
   {%- set facepile = url_mentions | webAuthors -%}
   {%- if facepile | length -%}
@@ -30,7 +35,8 @@
           author.url,
           {
             'class': 'facepile-url',
-            'rel': 'noopener noreferrer'
+            'rel': 'noopener noreferrer',
+            'data-mention': author.property | join(' ')
           }
         ) }}
       {%- endfor -%}

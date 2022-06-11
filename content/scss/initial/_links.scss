@@ -32,8 +32,7 @@ a {
   }
 }
 
-[href*='://'],
-[data-offsite] {
+:where([href*='://'], [data-offsite]) {
   &:not(:empty)::after {
     content: '↗';
     text-decoration: none;

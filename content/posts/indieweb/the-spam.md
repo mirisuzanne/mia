@@ -4,7 +4,6 @@ sub: Now I remember why we stopped putting comment forms on everything.
 date: 2022-06-09
 tags:
   - webmentions
-  - indieweb
 summary: |
   The other day, I posted an article about
   [implementing webmentions](https://www.miriamsuzanne.com/2022/06/04/indiweb/)
@@ -85,3 +84,9 @@ But there has to be a better way, right?
 Right?
 
 _There has to be a better way, right?_
+
+## Update (2022-06-11)
+
+There is a [shared blocklist](https://github.com/sw-yx/domainblocklist)
+maintained by [Shawn Wang](https://www.swyx.io/),
+which I'm now using and will contribute back to.

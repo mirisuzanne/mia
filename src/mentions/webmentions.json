@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-06-10T02:39:11.745Z",
+  "lastFetched": "2022-06-11T23:32:53.245Z",
   "children": [
     {
       "type": "entry",
@@ -73,6 +73,9 @@
       "wm-id": 1412083,
       "wm-source": "https://css-tricks.com/am-i-on-the-indieweb-yet/",
       "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "text": "Can’t smash the Like button hard enough for what Miriam Suzanne has to say on the challenging technical hurdles of implementing Webmentions…"
+      },
       "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "wm-property": "mention-of",
       "wm-private": false,
@@ -1002,6 +1005,359 @@
       "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Walker",
+        "photo": "https://webmention.io/avatar/colinwalker.blog/5c8ac8aacb04dbcefd378de5eca295387918214d093ff98aef0edad847c6f014.jpg",
+        "url": "https://colinwalker.blog"
+      },
+      "url": "https://colinwalker.blog/?date=2022-06-11#p1",
+      "published": "2022-06-11T09:25:58+01:00",
+      "wm-received": "2022-06-11T08:26:00Z",
+      "wm-id": 1414141,
+      "wm-source": "https://colinwalker.blog/?date=2022-06-11#p1",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "<p><span>Like</span> <em><a class=\"u-like-of\" href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\">Am I on the IndieWeb Yet? | Miriam Eric Suzanne</a>...</em></p>\n<blockquote>\n<p>_I’m an experienced web developer, and I can figure it out. But the steps aren’t simple, and most of my friends are not web developers. So, to me, this all feels like the prototype of an idea – a proof of concept.\n...\nWhat I would like to see is a tool that helps bring the entire system together in one place.</p>\n</blockquote>\n<p>It's a shame that we're still talking about this in these terms. Yes, there are more implementations out there and libraries you can use in your own code but it's still too hard for most people.</p>\n<p>But it's not just a code &amp; complexity issue. For the IndieWeb to grow people need to be convinced of the benefits of running their own site and owning their own data — an almost herculean task when faced with the size, simplicity and convenience of the centralised social platforms.</p>\n<p>The world and web have moved on.</p>",
+        "text": "Like Am I on the IndieWeb Yet? | Miriam Eric Suzanne...\n\n_I’m an experienced web developer, and I can figure it out. But the steps aren’t simple, and most of my friends are not web developers. So, to me, this all feels like the prototype of an idea – a proof of concept.\n...\nWhat I would like to see is a tool that helps bring the entire system together in one place.\n\nIt's a shame that we're still talking about this in these terms. Yes, there are more implementations out there and libraries you can use in your own code but it's still too hard for most people.\nBut it's not just a code & complexity issue. For the IndieWeb to grow people need to be convinced of the benefits of running their own site and owning their own data — an almost herculean task when faced with the size, simplicity and convenience of the centralised social platforms.\nThe world and web have moved on."
+      },
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrés Cárdenas",
+        "photo": "https://webmention.io/avatar/kandr3s.co/773ba94cd9bcf89e7d46c7a20a2fd6399af41857ecffc5883e9720ecea50bd2d.jpg",
+        "url": "https://kandr3s.co"
+      },
+      "url": "https://kandr3s.co/like/am-i-on-the-indieweb-yet",
+      "published": "2022-06-11T10:01:00",
+      "wm-received": "2022-06-11T08:03:21Z",
+      "wm-id": 1414130,
+      "wm-source": "https://kandr3s.co/like/am-i-on-the-indieweb-yet",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "name": "👍‍ Liked a post on www.miriamsuzanne.com",
+      "photo": [
+        "https://www.miriamsuzanne.com/images/headshots/GBoSaie2zL-1600.jpeg"
+      ],
+      "content": {
+        "text": "I haven’t signed to any major web labels."
+      },
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://kandr3s.co/like/am-i-on-the-indieweb-yet"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hack Design",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cbe5a0d2b260108bcbe8634d9c3018aafe6f8a0b8c64b49b600c75ca26778147.png",
+        "url": "https://twitter.com/hackdesign"
+      },
+      "url": "https://twitter.com/hackdesign/status/1535373782717702145",
+      "published": "2022-06-10T21:30:10+00:00",
+      "wm-received": "2022-06-10T23:43:13Z",
+      "wm-id": 1413515,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1535373782717702145",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "Am I on the IndieWeb Yet? <a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\">miriamsuzanne.com/2022/06/04/ind…</a>",
+        "text": "Am I on the IndieWeb Yet? miriamsuzanne.com/2022/06/04/ind…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jules",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2544ac1d66613cf532680413db6350efcd612598a6b0f58965a101493fccb7ab.jpg",
+        "url": "https://twitter.com/julesisuppose"
+      },
+      "url": "https://twitter.com/julesisuppose/status/1535325880012025857",
+      "published": "2022-06-10T18:19:49+00:00",
+      "wm-received": "2022-06-10T23:42:44Z",
+      "wm-id": 1413510,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1535279368741724161/1535325880012025857",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "I wouldn’t be upset about spam if a human had to write it. Not sure how to limit access while not invading privacy. Cool space to work on and anything to get content control back into peoples hands.\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "I wouldn’t be upset about spam if a human had to write it. Not sure how to limit access while not invading privacy. Cool space to work on and anything to get content control back into peoples hands."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric Portis",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/558b4c45b7bd5a1107c170e4bb77e2f8cd7f59bf7eda42756b5a7b93c24753a2.png",
+        "url": "https://twitter.com/etportis"
+      },
+      "url": "https://twitter.com/etportis/status/1535282516407353344",
+      "published": "2022-06-10T15:27:30+00:00",
+      "wm-received": "2022-06-10T23:42:44Z",
+      "wm-id": 1413511,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1535279368741724161/1535282516407353344",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "Anyways <a href=\"https://indieweb.org/Vouch\">indieweb.org/Vouch</a> is kind of interesting but the whole concept of decentralization is indeed a double-edged sword!!!\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "Anyways indieweb.org/Vouch is kind of interesting but the whole concept of decentralization is indeed a double-edged sword!!!"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jules",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2544ac1d66613cf532680413db6350efcd612598a6b0f58965a101493fccb7ab.jpg",
+        "url": "https://twitter.com/julesisuppose"
+      },
+      "url": "https://twitter.com/julesisuppose/status/1535324810653274117",
+      "published": "2022-06-10T18:15:34+00:00",
+      "wm-received": "2022-06-10T23:42:41Z",
+      "wm-id": 1413508,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1535279368741724161/1535324810653274117",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "I’d love to see cross site mentions work but this is what scares me off.\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "I’d love to see cross site mentions work but this is what scares me off."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia (not her best work)",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0070719556938ae95053b104df74ca15213d4a99abb84c5e03fe27b0c52e139e.jpg",
+        "url": "https://twitter.com/TerribleMia"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1535325276527132672",
+      "published": "2022-06-10T18:17:25+00:00",
+      "wm-received": "2022-06-10T23:42:41Z",
+      "wm-id": 1413509,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1535279368741724161/1535325276527132672",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "I expect the blocklist linked in comments will be pretty useful. It does seem like all the spam so far is coming from scrapes of the css-tricks article.\n<a class=\"u-mention\" href=\"https://twitter.com/julesisuppose\"></a>",
+        "text": "I expect the blocklist linked in comments will be pretty useful. It does seem like all the spam so far is coming from scrapes of the css-tricks article."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Giuseppe",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1313029d5a4c6892c7a5a74835c7259513a690972363d65a4657097c2af7b135.jpg",
+        "url": "https://twitter.com/giuseppegurgone"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1535279368741724161#favorited-by-75840965",
+      "published": null,
+      "wm-received": "2022-06-10T18:00:53Z",
+      "wm-id": 1413311,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1535279368741724161/75840965",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Scott Kellum",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4f1f45e4bc0fc740621c71058f1297152626ad37cbb4be9e7ac61f248b4d0953.jpg",
+        "url": "https://twitter.com/ScottKellum"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1535279368741724161#favorited-by-14958412",
+      "published": null,
+      "wm-received": "2022-06-10T18:00:53Z",
+      "wm-id": 1413312,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1535279368741724161/14958412",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric Portis",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/558b4c45b7bd5a1107c170e4bb77e2f8cd7f59bf7eda42756b5a7b93c24753a2.png",
+        "url": "https://twitter.com/etportis"
+      },
+      "url": "https://twitter.com/etportis/status/1535282047341580289",
+      "published": "2022-06-10T15:25:38+00:00",
+      "wm-received": "2022-06-10T18:00:52Z",
+      "wm-id": 1413310,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1535279368741724161/1535282047341580289",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "I can't post this yet because I'm still ironing out my IndieWeb implementation and the ol' blog is in shambles meanwhile.\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "I can't post this yet because I'm still ironing out my IndieWeb implementation and the ol' blog is in shambles meanwhile."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Max Böck",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/18a4e83da23e07a465feab2cd21362105938e9ac05ff774c757bec8f39bf6141.jpg",
+        "url": "https://twitter.com/mxbck"
+      },
+      "url": "https://twitter.com/mxbck/status/1535280787351805953",
+      "published": "2022-06-10T15:20:38+00:00",
+      "wm-received": "2022-06-10T18:00:51Z",
+      "wm-id": 1413309,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1535279368741724161/1535280787351805953",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "You may also be interested in this blocklist by <a href=\"https://twitter.com/swyx\">@swyx</a> - it tracks domains that usually spam automated reposts of popular sites. Can be used for a simple filter as well: <a href=\"https://github.com/sw-yx/domainblocklist\">github.com/sw-yx/domainbl…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "You may also be interested in this blocklist by @swyx - it tracks domains that usually spam automated reposts of popular sites. Can be used for a simple filter as well: github.com/sw-yx/domainbl…"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric Portis",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/558b4c45b7bd5a1107c170e4bb77e2f8cd7f59bf7eda42756b5a7b93c24753a2.png",
+        "url": "https://twitter.com/etportis"
+      },
+      "url": "https://twitter.com/etportis/status/1535281740326916096",
+      "published": "2022-06-10T15:24:25+00:00",
+      "wm-received": "2022-06-10T18:00:49Z",
+      "wm-id": 1413308,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1535279368741724161/1535281740326916096",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "This makes me desperately want to finish my drafted post comparing IndieWeb w/ ham radio: a similarly decentralized network of fiercely independent hobbyists who pride themselves robustness, except that when you spam ham, you go to JAIL <a href=\"https://wiki.c2.com/?HamRadioPests\">wiki.c2.com/?HamRadioPests</a>\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "This makes me desperately want to finish my drafted post comparing IndieWeb w/ ham radio: a similarly decentralized network of fiercely independent hobbyists who pride themselves robustness, except that when you spam ham, you go to JAIL wiki.c2.com/?HamRadioPests"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marty McGuire",
+        "photo": "https://webmention.io/avatar/martymcgui.re/f750b9918a92f3dc86d15d8fefad4a06c20a829ae950e18dfc2c8b9a4b26b422.jpg",
+        "url": "https://martymcgui.re/"
+      },
+      "url": "https://martymcgui.re/2022/06/10/093903/",
+      "published": "2022-06-10T09:39:03-04:00",
+      "wm-received": "2022-06-10T13:40:57Z",
+      "wm-id": 1413132,
+      "wm-source": "https://martymcgui.re/2022/06/10/093903/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "summary": {
+        "content-type": "text/plain",
+        "value": "★ Liked https://www.miriamsuzanne.com/2022/06/09/the-spam/"
+      },
+      "like-of": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://martymcgui.re/2022/06/10/093903/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Baldur Bjarnason",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8b4860c1e17e03b0e225e1d12c623f991c801297243686b3eeffff32dd038c7b.jpg",
+        "url": "https://twitter.com/fakebaldur"
+      },
+      "url": "https://twitter.com/fakebaldur/status/1535201942254891009",
+      "published": "2022-06-10T10:07:20+00:00",
+      "wm-received": "2022-06-10T13:27:50Z",
+      "wm-id": 1413071,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1535201942254891009",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "“The Spam Has Arrived - Miriam Eric Suzanne”\n\nTackbacks, pingbacks, webmentions—they all seem to handwave their way through the spam problem. <a href=\"https://www.miriamsuzanne.com/2022/06/09/the-spam/\">miriamsuzanne.com/2022/06/09/the…</a>",
+        "text": "“The Spam Has Arrived - Miriam Eric Suzanne”\n\nTackbacks, pingbacks, webmentions—they all seem to handwave their way through the spam problem. miriamsuzanne.com/2022/06/09/the…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ray @ Blogroll.org",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0ca4b26b7b64dccd831225f9eb1031131a763f96bfd347ce05af14c5c8eaa0f2.jpg",
+        "url": "https://twitter.com/BlogrollOrg"
+      },
+      "url": "https://twitter.com/BlogrollOrg/status/1535665460699615234",
+      "published": "2022-06-11T16:49:11+00:00",
+      "wm-received": "2022-06-11T19:25:25Z",
+      "wm-id": 1414455,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1535665460699615234",
+      "wm-target": "https://www.miriamsuzanne.com/",
+      "content": {
+        "html": "Just added to the Blogroll: Miriam Suzanne <a href=\"https://www.miriamsuzanne.com/\">miriamsuzanne.com</a>\n\nI hope to create art &amp; software that celebrate the queerness &amp; complexity of human experience.\n\nLovely design. Her foray into the Indieweb and struggles with it is eye opening. \n\n<a href=\"https://twitter.com/search?q=%23blogging\">#blogging</a> <a href=\"https://twitter.com/search?q=%23blogroll\">#blogroll</a>",
+        "text": "Just added to the Blogroll: Miriam Suzanne miriamsuzanne.com\n\nI hope to create art & software that celebrate the queerness & complexity of human experience.\n\nLovely design. Her foray into the Indieweb and struggles with it is eye opening. \n\n#blogging #blogroll"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "swyx",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/db2f1b4f7620d308acdd2562063783371b46809901ece09d2f99835e59a75980.jpg",
+        "url": "https://twitter.com/swyx"
+      },
+      "url": "https://twitter.com/swyx/status/1535680254890545152",
+      "published": "2022-06-11T17:47:58+00:00",
+      "wm-received": "2022-06-11T19:24:57Z",
+      "wm-id": 1414454,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1535279368741724161/1535680254890545152",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "crowdsourcing to beat the spambots 💪\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/mxbck\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "crowdsourcing to beat the spambots 💪"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
       "wm-private": false
     }
   ]

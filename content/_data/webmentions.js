@@ -4,13 +4,16 @@ const fs = require('fs');
 
 const fetch = require('node-fetch');
 const unionBy = require('lodash/unionBy');
+
+const { blocklist } = require('../../src/mentions/blocklist');
 const domain = 'www.miriamsuzanne.com';
 
 // Load .env variables with dotenv
 require('dotenv').config();
 
 // Define Cache Location and API Endpoint
-const CACHE_DIR = 'cache';
+const CACHE_DIR = 'src/mentions';
+const CACHE_FILE = `${CACHE_DIR}/webmentions.json`;
 const API = 'https://webmention.io/api';
 // eslint-disable-next-line no-process-env
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;
@@ -51,6 +54,8 @@ const fetchWebmentions = async (since, perPage = 10000) => {
   return null;
 };
 
+const getDomain = (entry) => new URL(entry['wm-source']).origin.split('://')[1];
+
 // Merge fresh webmentions with cached entries, unique per id
 const mergeWebmentions = (a, b) => {
   const all = unionBy(a.children, b.children, 'wm-id');
@@ -59,32 +64,31 @@ const mergeWebmentions = (a, b) => {
     [],
   );
 
-  return all.filter((entry) => !syns.includes(entry.url));
+  return all
+    .filter((entry) => !syns.includes(entry.url))
+    .filter((entry) => !blocklist.includes(getDomain(entry)));
 };
 
 // save combined webmentions in cache file
 const writeToCache = (data) => {
-  const filePath = `${CACHE_DIR}/webmentions.json`;
   const fileContent = JSON.stringify(data, null, 2);
   // create cache folder if it doesnt exist already
   if (!fs.existsSync(CACHE_DIR)) {
     fs.mkdirSync(CACHE_DIR);
   }
   // write data to cache json file
-  fs.writeFile(filePath, fileContent, (err) => {
+  fs.writeFile(CACHE_FILE, fileContent, (err) => {
     if (err) {
       throw err;
     }
-    console.log(`>>> webmentions saved to ${filePath}`);
+    console.log(`>>> webmentions saved to ${CACHE_FILE}`);
   });
 };
 
 // get cache contents from json file
 const readFromCache = () => {
-  const filePath = `${CACHE_DIR}/webmentions.json`;
-
-  if (fs.existsSync(filePath)) {
-    const cacheFile = fs.readFileSync(filePath);
+  if (fs.existsSync(CACHE_FILE)) {
+    const cacheFile = fs.readFileSync(CACHE_FILE);
     return JSON.parse(cacheFile);
   }
 
