@@ -151,8 +151,6 @@
       {{ end | date(ranges[same].end or 'range') }}
 
     {% else %}
-      {% set now %}{% getDate 'year' %}{% endset %}
-      {% set format = 'short' if (start_y != now) else format %}
       {{ start | date(format) }}
     {% endif %}
   </time>

@@ -8,12 +8,12 @@ const getDateObj = (date) => {
   }
 
   return typeof date === 'string'
-    ? DateTime.fromISO(date)
-    : DateTime.fromJSDate(date);
+    ? DateTime.fromISO(date, { zone: 'UTC' })
+    : DateTime.fromJSDate(date, { zone: 'UTC' });
 };
 
 const date = (dateObj, format) => {
-  const obj = getDateObj(dateObj).setZone('UTC');
+  const obj = getDateObj(dateObj);
 
   const formats = {
     short: DateTime.DATE_MED,
@@ -23,7 +23,6 @@ const date = (dateObj, format) => {
     mon: { month: 'short' },
     year: { year: 'numeric' },
     day: { day: 'numeric' },
-    'no-month': { day: 'numeric', year: 'numeric' },
     'no-year': { month: 'short', day: 'numeric' },
   };
 
@@ -36,6 +35,7 @@ const date = (dateObj, format) => {
   } else if (format && !knownFormat) {
     const custom = {
       url: "yyyy'/'MM'/'dd",
+      'no-month': "dd',' yyyy",
     };
     return obj.toFormat(custom[format] || format);
   }

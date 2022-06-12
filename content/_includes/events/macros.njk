@@ -250,7 +250,7 @@
   not_me=false
 ) %}
   {{ utility.datetime(
-    pubdate=item.page.data.pubdate or item.page.date,
+    pubdate=item.event.date if item.event else item.page.date,
     start=item.start,
     end=item.end,
     format='short' if (item.group | groupName == 'future') else 'no-year'
