@@ -11,6 +11,7 @@ hero:
 tags:
   - code
   - w3c
+  - oddbird
   - smashing magazine
 summary: |
   Starting a new season of the Smashing Podcast

@@ -10,6 +10,7 @@ hero:
 tags:
   - code
   - w3c
+  - oddbird
   - igalia chats
 summary: |
   Igalia's Brian Kardell

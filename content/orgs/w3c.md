@@ -10,6 +10,7 @@ hero:
   svg: w3c.svg
 tags:
   - w3c
+  - oddbird
   - code
   - open source
 summary: |

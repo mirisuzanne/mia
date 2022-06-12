@@ -8,6 +8,7 @@ venue: SpringGun Press
 url: http://springgunpress.com
 hero:
   img: writing/sidesaddle/box.jpg
+  alt:
   caption: A novel on 250 note-cards
 index: riding sidesaddle
 tags:

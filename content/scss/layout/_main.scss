@@ -1,12 +1,13 @@
 [data-main] {
   display: grid;
   grid-template-columns:
-    minmax(var(--gutter), 1fr)
+    [full-start] minmax(var(--gutter), 1fr)
     [hero-start] minmax(0, 1fr)
     [pull-start] minmax(0, var(--pull-max, 1fr))
     [main-start] minmax(min-content, var(--page))
     [main-end] minmax(0, 0.5fr)
-    [hero-end pull-end] minmax(var(--gutter), 1fr);
+    [hero-end pull-end] minmax(var(--gutter), 1fr)
+    [full-end];
 
   > * {
     grid-column: var(--main-column, main);

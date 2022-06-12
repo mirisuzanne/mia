@@ -53,12 +53,28 @@ summary: |
 
 Over the years, we’ve become industry leaders --
 creating and contributing to
-the open source languages and tools
-that millions of developers
-and larger companies rely on.
+the languages and open source tools
+that millions of developers rely on.
 We provide enterprise-level expertise,
 with the focus and personal attention
 of a boutique.
+
+## CSS, HTML, & Sass
+
+Since early 2020
+a large part of our work
+has been developing new
+specifications
+for the CSS, HTML, and Sass
+programming languages --
+along with tools & polyfills
+to help authors use the latest features.
+Check out our [public notebook](https://css.oddbird.net)
+to follow that work as it develops.
+
+{% for spec in collections.spec -%}
+- [{{ (spec.data.banner or spec.data.title) | mdInline | safe }}]({{ spec.url }})
+{% endfor %}
 
 ---
 

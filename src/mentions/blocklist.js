@@ -129,6 +129,9 @@ const additions = [
   'zephyrnet.com',
   'secretofcss.com',
   'test.designsolutions.online',
+  'www.prixleplusbas.xyz',
+  'www.nolisa.xyz',
+  'datechguru.com',
 ];
 
 const blocklist = [...domainblocklist, ...additions]

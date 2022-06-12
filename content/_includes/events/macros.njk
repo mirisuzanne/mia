@@ -84,7 +84,7 @@
         <div data-orgs="list">
           {% for item in orgs %}
             {% set start = (item.data.start or item.date) | date('year') %}
-            {% set org_title = item.data.banner or item.data.title %}
+            {% set org_name = item.data.banner or item.data.title %}
             {% set is_old = item.data.end and (item.data.end != 'ongoing') %}
             {% set end = item.data.end | date('year') if is_old else none %}
             {% set end = end if end and (end != start) %}
@@ -100,7 +100,7 @@
                 {{ start }}{{ range }}{{ end or '' }}
               </time>
               <h3 data-title="orgs" id="{{ id }}" class="p-org">
-                {{ utility.link_if(org_title, item.url) }}
+                {{ utility.link_if(org_name, item.url) }}
               </h3>
               {% if item.data.sub %}
                 <p data-meta="org-sub">

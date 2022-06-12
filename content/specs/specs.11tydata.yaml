@@ -1,9 +1,9 @@
 type: spec
 venue: W3C CSS Working Group
-calendar: w3c
-series: spec
+calendar: spec
 tags:
   - open source
   - code
+  - oddbird
   - spec
   - _post
