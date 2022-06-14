@@ -125,7 +125,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setLibrary('md', type.mdown);
   eleventyConfig.addDataExtension('yaml', yaml.safeLoad);
   eleventyConfig.setQuietMode(true);
-  eleventyConfig.setDataDeepMerge(true);
 
   // settings
   return {

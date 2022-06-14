@@ -6,7 +6,7 @@ tags:
   - webmentions
 summary: |
   The other day, I posted an article about
-  [implementing webmentions](https://www.miriamsuzanne.com/2022/06/04/indiweb/)
+  [implementing webmentions](/2022/06/04/indiweb/)
   on this site.
   Today, I'm battling an endless stream
   of spam in my mentions.

@@ -46,10 +46,17 @@ const webMentions = (mentions) => {
 
     if (html) {
       // really long html mentions, usually newsletters or compilations
-      entry.content.value =
+      entry.content.value = sanitizeHTML(
         html.length > 2000
-          ? `mentioned this in <a href="${entry['wm-source']}">${entry['wm-source']}</a>`
-          : sanitizeHTML(html);
+          ? `
+            <p>${html.substring(0, 250)}…</p>
+            <p>
+              Read more:
+              <a href="${entry['wm-source']}">${entry['wm-source']}</a>
+            </p>
+          `
+          : html,
+      );
     } else {
       entry.content.value = sanitizeHTML(text);
     }

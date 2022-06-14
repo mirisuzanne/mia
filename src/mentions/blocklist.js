@@ -132,6 +132,10 @@ const additions = [
   'www.prixleplusbas.xyz',
   'www.nolisa.xyz',
   'datechguru.com',
+  'www.cssdersleri.com',
+  'www.pixellyft.com',
+  'icapital.news',
+  'usae.sit',
 ];
 
 const blocklist = [...domainblocklist, ...additions]

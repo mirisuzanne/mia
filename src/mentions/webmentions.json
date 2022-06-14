@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-06-12T23:29:22.169Z",
+  "lastFetched": "2022-06-14T22:19:58.315Z",
   "children": [
     {
       "type": "entry",
@@ -1441,6 +1441,136 @@
       "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
       "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Max Glenister",
+        "photo": "https://webmention.io/avatar/social.omgmog.net/b4dc6ceb5e9ac4030bb6bdc007c4b6193808420c2a44f1561ed5f28182f65d36.png",
+        "url": "https://social.omgmog.net/profile/max"
+      },
+      "url": "https://social.omgmog.net/2022/yes-getting-it-all-up-and-running",
+      "published": "2022-06-14T20:15:26+00:00",
+      "wm-received": "2022-06-14T20:15:28Z",
+      "wm-id": 1416876,
+      "wm-source": "https://social.omgmog.net/2022/yes-getting-it-all-up-and-running",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "syndication": ["https://indieweb.social/@omgmog/108477659662175399"],
+      "content": {
+        "html": "<p>Yes getting it all up and running is challenging, but when it works it feels like magic and the enthusiasm of the community makes it worth it!</p>\n<blockquote>\n<p>We have the technology to implement a slow social network of personal sites. I’m excited to keep playing with that code. But proving the concept is not the same as actually making it easy &amp; accessible in a way that can replace platforms.</p>\n</blockquote>\n<p><a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\">https://www.miriamsuzanne.com/2022/06/04/indiweb/</a></p>",
+        "text": "Yes getting it all up and running is challenging, but when it works it feels like magic and the enthusiasm of the community makes it worth it!\n\nWe have the technology to implement a slow social network of personal sites. I’m excited to keep playing with that code. But proving the concept is not the same as actually making it easy & accessible in a way that can replace platforms.\n\nhttps://www.miriamsuzanne.com/2022/06/04/indiweb/"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/",
+      "published": null,
+      "wm-received": "2022-06-14T17:43:56Z",
+      "wm-id": 1416775,
+      "wm-source": "https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jamie Tanna",
+        "photo": "https://webmention.io/avatar/www.jvt.me/582e6a8900c20ade6b097bfa1d87e8b808f61dd5a83e457e371d5b1ead35cb17.png",
+        "url": "https://www.jvt.me"
+      },
+      "url": "https://www.jvt.me/mf2/2022/06/h0mwa/",
+      "published": "2022-06-14T12:41:00+01:00",
+      "wm-received": "2022-06-14T11:49:15Z",
+      "wm-id": 1416555,
+      "wm-source": "https://www.jvt.me/mf2/2022/06/h0mwa/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.jvt.me/mf2/2022/06/h0mwa/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Aldrich",
+        "photo": "https://webmention.io/avatar/stream.boffosocko.com/d0ba9f65fcbf0cef3bdbcccc0b6a1f42b1310f7ab2e07208c7a396166cde26b1.jpeg",
+        "url": "http://stream.boffosocko.com/profile/chrisaldrich"
+      },
+      "url": "http://stream.boffosocko.com/2022/im-sorry-youve-run-into-this-issue-i-cant-help",
+      "published": "2022-06-14T04:50:05+00:00",
+      "wm-received": "2022-06-14T04:51:21Z",
+      "wm-id": 1416317,
+      "wm-source": "http://stream.boffosocko.com/2022/im-sorry-youve-run-into-this-issue-i-cant-help",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "I'm sorry you've run into this issue.  I can't help but wonder if most of the spam is really pingback spam? Much of what you've gotten likely isn't arriving via webmention as I see the following header in your page: <br />\n&lt;link rel=\"pingback\" href=\"https://webmention.io/www.miriamsuzanne.com/xmlrpc\" /&gt;<br /><br />\nMy guess along with some minor sleuthing is that the entirety of the spam you're seeing is of the pingback variety as the mechanism by which webmention works is mean to actively decrease the amount of unwanted spam. Vanishingly little Webmention spam has been seen in the wild. <br /><br />\nRemoving the pingback link from the header of that particular page (or others that might get linked to with heavily trafficked sites like CSS-Tricks which are often pirated) should solve your immediate problem. Hopefully those who are working on additional anti-spam features will add to these measures to further mitigate this sort of issue for the broader publics' use and adoption. I've personally experienced this sort of \"attack\" at least once in the pingback space and another using the even older refbacks specification. On my small personal site, I leave them all on however, particularly for the small slice of academic blogging community that still uses pingbacks and the benefits generally outstrip the annoyance. Naturally your mileage may vary and you may consider turning them off.<br /><br />\nOf course, you'll probably also realize that the reason the CSS-Tricks notification was caught in spam was because it also came in as a pingback and not by webmetion. (I'm pretty sure that they don't have webmention set up to send them, so their site would have only sent a pingback.)  <br /><br />\nMany of the older systems, including WordPress which are frequently used by these same sorts of pirates, will still send/trigger pingbacks. Within the IndieWeb space, most sites explicitly sending webmention notifications will include h-cards with author names and timestamps which is part of why Max Böck’s filtering solution works well.<br /><br />\nOn the positive side, I wonder if this sort of notification behavior might help sites like CSS-Tricks to track these sort of bad actors for help in potential take downs of this sort of piracy?",
+        "text": "I'm sorry you've run into this issue.  I can't help but wonder if most of the spam is really pingback spam? Much of what you've gotten likely isn't arriving via webmention as I see the following header in your page: \n\n<link rel=\"pingback\" href=\"https://webmention.io/www.miriamsuzanne.com/xmlrpc\" />\n\n\nMy guess along with some minor sleuthing is that the entirety of the spam you're seeing is of the pingback variety as the mechanism by which webmention works is mean to actively decrease the amount of unwanted spam. Vanishingly little Webmention spam has been seen in the wild. \n\n\nRemoving the pingback link from the header of that particular page (or others that might get linked to with heavily trafficked sites like CSS-Tricks which are often pirated) should solve your immediate problem. Hopefully those who are working on additional anti-spam features will add to these measures to further mitigate this sort of issue for the broader publics' use and adoption. I've personally experienced this sort of \"attack\" at least once in the pingback space and another using the even older refbacks specification. On my small personal site, I leave them all on however, particularly for the small slice of academic blogging community that still uses pingbacks and the benefits generally outstrip the annoyance. Naturally your mileage may vary and you may consider turning them off.\n\n\nOf course, you'll probably also realize that the reason the CSS-Tricks notification was caught in spam was because it also came in as a pingback and not by webmetion. (I'm pretty sure that they don't have webmention set up to send them, so their site would have only sent a pingback.)  \n\n\nMany of the older systems, including WordPress which are frequently used by these same sorts of pirates, will still send/trigger pingbacks. Within the IndieWeb space, most sites explicitly sending webmention notifications will include h-cards with author names and timestamps which is part of why Max Böck’s filtering solution works well.\n\n\nOn the positive side, I wonder if this sort of notification behavior might help sites like CSS-Tricks to track these sort of bad actors for help in potential take downs of this sort of piracy?"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ryan Barrett",
+        "photo": "https://webmention.io/avatar/secure.gravatar.com/9b7c46d4a05823516268c8246411331da29538d0c6c78174484b2494cc893acc.png",
+        "url": "https://snarfed.org/"
+      },
+      "url": "https://snarfed.org/2022-06-13_the-spam-has-arrived-miriam-eric-suzanne",
+      "published": "2022-06-13T11:30:22-07:00",
+      "wm-received": "2022-06-13T18:30:30Z",
+      "wm-id": 1415725,
+      "wm-source": "https://snarfed.org/2022-06-13_the-spam-has-arrived-miriam-eric-suzanne",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "Ugh, sorry, no fun! Especially without a good filter. <a href=\"https://indieweb.org/vouch\">Vouch</a> is an interesting idea, but adoption is still very early and needs more iteration.\n<p>One thing to consider, <a href=\"https://webmention.io/#forwarding\">it looks like these are all probably pingbacks</a>, not webmentions per se. Pingbacks tend to be mostly spam, so if you don’t care about them specifically, you could stop them by removing <code>&lt;link rel=\"pingback\" ...&gt;</code> from your HTML. Up to you!\n<a class=\"u-in-reply-to\" href=\"https://www.miriamsuzanne.com/2022/06/09/the-spam/\"></a></p>",
+        "text": "Ugh, sorry, no fun! Especially without a good filter. Vouch is an interesting idea, but adoption is still very early and needs more iteration.\nOne thing to consider, it looks like these are all probably pingbacks, not webmentions per se. Pingbacks tend to be mostly spam, so if you don’t care about them specifically, you could stop them by removing <link rel=\"pingback\" ...> from your HTML. Up to you!"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://snarfed.org/2022-06-13_the-spam-has-arrived-miriam-eric-suzanne"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Dallas",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/238eac687bf46230e6a9bc596115628d79f21b190995c7f9e614941ef7ce5f47.jpg",
+        "url": "https://twitter.com/doctype_jon"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1535279368741724161#favorited-by-1159494277",
+      "published": null,
+      "wm-received": "2022-06-13T09:49:25Z",
+      "wm-id": 1415389,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1535279368741724161/1159494277",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "like-of",
       "wm-private": false
     }
   ]
