@@ -136,6 +136,8 @@ const additions = [
   'www.pixellyft.com',
   'icapital.news',
   'usae.sit',
+  'helpbuildweb.com',
+  'sharewarepile.com',
 ];
 
 const blocklist = [...domainblocklist, ...additions]
