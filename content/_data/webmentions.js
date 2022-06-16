@@ -1,5 +1,7 @@
+'use strict';
+
 /* eslint-disable no-sync */
-/* eslint-disable strict */
+
 const fs = require('fs');
 
 const fetch = require('node-fetch');
