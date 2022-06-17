@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-06-16T02:48:25.583Z",
+  "lastFetched": "2022-06-17T06:12:45.030Z",
   "children": [
     {
       "type": "entry",
@@ -2073,6 +2073,912 @@
       },
       "in-reply-to": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
       "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Noah Scales",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7904668cd00b11eb86ef9f82ee75bb4058d0e63df9d643c0a1121f2ccc71a351.jpg",
+        "url": "https://twitter.com/NoahJohnScales"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-1442618514976563200",
+      "published": null,
+      "wm-received": "2022-06-17T00:20:50Z",
+      "wm-id": 1418148,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/1442618514976563200",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Burnell",
+        "photo": "https://webmention.io/avatar/chrisburnell.com/ace41559b8d4e8d8189b285d88b1ea2dc6c53056fc512be7d199c0c8cadc53fe.jpg",
+        "url": "https://chrisburnell.com/"
+      },
+      "url": "https://chrisburnell.com/like/1655416135/",
+      "published": "2022-06-16T22:48:55+01:00",
+      "wm-received": "2022-06-16T21:51:52Z",
+      "wm-id": 1418111,
+      "wm-source": "https://chrisburnell.com/like/1655416135",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "name": "Am I on the IndieWeb Yet?",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://chrisburnell.com/like/1655416135/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bramus",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/05867d2965ead9c19f56436d55d4f94c52262b3b51dae292b9b9f45fa2a96995.jpg",
+        "url": "https://twitter.com/bramus"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-9131062",
+      "published": null,
+      "wm-received": "2022-06-16T20:13:11Z",
+      "wm-id": 1418013,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/9131062",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Carlos Martinez",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f11fdb0174809f00b933f9df7b3bb425bab4722b39d1a704aa04d758d38b5006.jpg",
+        "url": "https://twitter.com/carlosmtzdev"
+      },
+      "url": "https://twitter.com/carlosmtzdev/status/1537512773332221954",
+      "published": "2022-06-16T19:09:45+00:00",
+      "wm-received": "2022-06-16T20:13:11Z",
+      "wm-id": 1418014,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1537222094827663360/1537512773332221954",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "text": "In CSS, there are *compound selectors* and also *complex selectors* - but I never remember which is which.\n\nDo you need to learn the difference? Probably not. But I'm tired of looking it up. Maybe if I write it down…\n\nmiriamsuzanne.com/2022/06/15/com…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Carlos Martinez",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f11fdb0174809f00b933f9df7b3bb425bab4722b39d1a704aa04d758d38b5006.jpg",
+        "url": "https://twitter.com/carlosmtzdev"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-434436155",
+      "published": null,
+      "wm-received": "2022-06-16T20:13:09Z",
+      "wm-id": 1418011,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/434436155",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael Turnwall",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/6ef192f47b09b9d255a99fb9ca5668405007ad91773ffef3faa0e152ed95d6ca.png",
+        "url": "https://twitter.com/mturnwall"
+      },
+      "url": "https://twitter.com/mturnwall/status/1537519985668464640",
+      "published": "2022-06-16T19:38:24+00:00",
+      "wm-received": "2022-06-16T20:13:09Z",
+      "wm-id": 1418012,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1537222094827663360/1537519985668464640",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "text": "In CSS, there are *compound selectors* and also *complex selectors* - but I never remember which is which.\n\nDo you need to learn the difference? Probably not. But I'm tired of looking it up. Maybe if I write it down…\n\nmiriamsuzanne.com/2022/06/15/com…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Neal",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f43b93d8bae4bb8eb00b5260bb32a0ff0e182ccd3ccb179a2e75987d26ed0143.jpg",
+        "url": "https://twitter.com/jon_neal"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-103049472",
+      "published": null,
+      "wm-received": "2022-06-16T20:13:08Z",
+      "wm-id": 1418010,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/103049472",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Šime (she-meh)",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0df5cf5ae5046410d8297ed02954cade49abef308a785f9f7f559056eed9db7f.jpg",
+        "url": "https://twitter.com/simevidas"
+      },
+      "url": "https://twitter.com/simevidas/status/1537517343768723456",
+      "published": "2022-06-16T19:27:55+00:00",
+      "wm-received": "2022-06-16T20:13:06Z",
+      "wm-id": 1418009,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1537222094827663360/1537517343768723456",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "html": "For completeness’s sake, you could also mention selector lists at the end.\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "For completeness’s sake, you could also mention selector lists at the end."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthias Ott",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a34d0a855d4336e07245950e108a3d322445dabff46cfb01e805208ca3d8abcc.jpg",
+        "url": "https://twitter.com/m_ott"
+      },
+      "url": "https://twitter.com/m_ott/status/1537415741380648961",
+      "published": "2022-06-16T12:44:11+00:00",
+      "wm-received": "2022-06-16T15:44:54Z",
+      "wm-id": 1417882,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1537415741380648961",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "html": "“In CSS, there are compound selectors and also complex selectors, and I never remember which is which. Do you need to learn the difference? Probably not. But I’m tired of looking it up.”\n\nThanks for this, <a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a>!\n👇\n <a href=\"https://www.miriamsuzanne.com/2022/06/15/complex-compound/\">miriamsuzanne.com/2022/06/15/com…</a>",
+        "text": "“In CSS, there are compound selectors and also complex selectors, and I never remember which is which. Do you need to learn the difference? Probably not. But I’m tired of looking it up.”\n\nThanks for this, @TerribleMia!\n👇\n miriamsuzanne.com/2022/06/15/com…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Caleb Fong 💙",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4523701dd433d453975d1ce2ac7852909a9f7bb6a38a70d32bd926aae310bc7c.jpg",
+        "url": "https://twitter.com/geekosupremo"
+      },
+      "url": "https://twitter.com/geekosupremo/status/1537441224814014465",
+      "published": "2022-06-16T14:25:26+00:00",
+      "wm-received": "2022-06-16T15:44:33Z",
+      "wm-id": 1417879,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1537222094827663360/1537441224814014465",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "text": "In CSS, there are *compound selectors* and also *complex selectors* - but I never remember which is which.\n\nDo you need to learn the difference? Probably not. But I'm tired of looking it up. Maybe if I write it down…\n\nmiriamsuzanne.com/2022/06/15/com…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Code Worm",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fc1322e0f878c3521a14e0344cf04ad7b004ebe9f6ec320407f65e339fef9fa7.jpg",
+        "url": "https://twitter.com/Code_Worm"
+      },
+      "url": "https://twitter.com/Code_Worm/status/1537441149253992448",
+      "published": "2022-06-16T14:25:08+00:00",
+      "wm-received": "2022-06-16T15:44:33Z",
+      "wm-id": 1417880,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1537222094827663360/1537441149253992448",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "text": "In CSS, there are *compound selectors* and also *complex selectors* - but I never remember which is which.\n\nDo you need to learn the difference? Probably not. But I'm tired of looking it up. Maybe if I write it down…\n\nmiriamsuzanne.com/2022/06/15/com…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Amin Khan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5b91ca06ff19916d6831f3fed52e97bf25aedbb826b372265b38ef01158b17a9.jpg",
+        "url": "https://twitter.com/AminKhanDesign"
+      },
+      "url": "https://twitter.com/AminKhanDesign/status/1537438362843303937",
+      "published": "2022-06-16T14:14:04+00:00",
+      "wm-received": "2022-06-16T15:44:33Z",
+      "wm-id": 1417881,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1537222094827663360/1537438362843303937",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "text": "In CSS, there are *compound selectors* and also *complex selectors* - but I never remember which is which.\n\nDo you need to learn the difference? Probably not. But I'm tired of looking it up. Maybe if I write it down…\n\nmiriamsuzanne.com/2022/06/15/com…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Amin Khan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5b91ca06ff19916d6831f3fed52e97bf25aedbb826b372265b38ef01158b17a9.jpg",
+        "url": "https://twitter.com/AminKhanDesign"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-1673602039",
+      "published": null,
+      "wm-received": "2022-06-16T15:44:32Z",
+      "wm-id": 1417877,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/1673602039",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Johannes Odland",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a9882e9b684f606ecedd1f140e7a763e553db6b6aa60ce95cc34869979926210.jpg",
+        "url": "https://twitter.com/mrodland"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-109487800",
+      "published": null,
+      "wm-received": "2022-06-16T15:44:32Z",
+      "wm-id": 1417878,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/109487800",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Carlton Gibson 🇪🇺",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0054f83261311c984c0cca2f4a5b0b1b878be1f74eff3ba48c19d750a8ff4fba.jpg",
+        "url": "https://twitter.com/carltongibson"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-12214302",
+      "published": null,
+      "wm-received": "2022-06-16T15:44:31Z",
+      "wm-id": 1417875,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/12214302",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "hem",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4d735a5d1670061fba5fdae9e262cdc1b7682215dd3ea0d68112b5d3c3995cc9.jpg",
+        "url": "https://twitter.com/seabright_hem"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-1232867250274623488",
+      "published": null,
+      "wm-received": "2022-06-16T15:44:31Z",
+      "wm-id": 1417876,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/1232867250274623488",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Richard",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/649630e4f772125a3398d28140826ac6f741d633dbdfba4dea682e16b34a9c25.jpg",
+        "url": "https://twitter.com/RSPian"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-1568571085",
+      "published": null,
+      "wm-received": "2022-06-16T15:44:30Z",
+      "wm-id": 1417874,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/1568571085",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Scott Martin 🛠️",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/99c281fe6cdd0b5d7f8526c081bd96a4f3770302e3d0b53646411c617863c09f.jpg",
+        "url": "https://twitter.com/scottdotjs"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-974606653256601600",
+      "published": null,
+      "wm-received": "2022-06-16T15:44:29Z",
+      "wm-id": 1417872,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/974606653256601600",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Derk-Jan 💙💛🇺🇦",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8e41b199a99fc2976f4bccb91c4349fd4613c602023cc6ec4ce2addf7993b06f.jpg",
+        "url": "https://twitter.com/dj_hartman"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-83903305",
+      "published": null,
+      "wm-received": "2022-06-16T15:44:29Z",
+      "wm-id": 1417873,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/83903305",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Justgu.us (looking for dev-rel job!)",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2f2d5e86a042bdc54ad974d0fa8142aba0d242121d073583f7e7dcf056ce331a.jpg",
+        "url": "https://twitter.com/Bliepjes"
+      },
+      "url": "https://twitter.com/Bliepjes/status/1537403304124325889",
+      "published": "2022-06-16T11:54:45+00:00",
+      "wm-received": "2022-06-16T15:44:28Z",
+      "wm-id": 1417871,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1537222094827663360/1537403304124325889",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "html": "I think this is essentially the biggest reason for making a blog; to remember yourself\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "I think this is essentially the biggest reason for making a blog; to remember yourself"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://webmention.io/avatar/fundor333.com/5417b7cf1bc245b3809c53973ed6e761ff245c039915e8c05c75ba5cad93d2d1.jpg",
+        "url": ""
+      },
+      "url": "https://fundor333.com/post/2022/indieweb-webmention-and-h-entry-in-my-blog/",
+      "published": "2022-06-16T13:02:46",
+      "wm-received": "2022-06-16T15:25:43Z",
+      "wm-id": 1417856,
+      "wm-source": "https://fundor333.com/post/2022/indieweb-webmention-and-h-entry-in-my-blog/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "name": "How I implement Indieweb, Webmention and H Entry in My Blog",
+      "syndication": [
+        "https://news.indieweb.org/en",
+        "https://indieweb.xyz/en/indieweb"
+      ],
+      "photo": [
+        "https://fundor333.com/post/2022/indieweb-webmention-and-h-entry-in-my-blog/cover.jpg"
+      ],
+      "content": {
+        "html": "<h2>Some history of this blog</h2><p>When I start blogging, I was using a blog engine called <a href=\"https://wordpress.org/\">WordPress</a>\nbut I wasn’t ok with the way it was designed. I wanted to be able to write my posts in a way that was easy to read and edit. I want to have a lightweight blog engine so I change to <a href=\"https://blog.getpelican.com/\">Pelican</a>\nand I use for sometime. Sometime later, not happy with the tags and categories, I decided to switch to <a href=\"https://gohugo.io/\">Hugo</a>\nand I’m happier with it.</p><p>But I feet some time I wasn’t happy with Hugo so I search something else.\nAfter some time I find an article about <a href=\"https://victoria.dev/blog/make-your-own-independent-website/\">Independent website</a>\nand the tecnology for make a independent website.</p><p>In this article I discover:</p><ul><li>\n<a href=\"https://github.com/buckket/twtxt\"><em>Twtxt</em></a>\na protocol for instances for a decentralized timeline experience</li>\n<li>\n<a href=\"https://fundor333.com/post/2022/indieweb-webmention-and-h-entry-in-my-blog/Webmention\"><em>Webmention</em></a>\nand an <a href=\"https://github.com/aaronpk/webmention.io\">easy implementation</a>\nfor it</li>\n<li>\n<a href=\"https://indieweb.org/POSSE\"><em>IndieWeb</em></a>\nfor POSSE, an abbreviation for Publish (on your) Own Site, Syndicate Elsewhere</li>\n</ul><p>So I decided to study them for adding in my blog.</p><h2>Twtxt</h2><p>First tecnology I read about and I found it strange.</p><p>It call himself <em>decentralises, minimalist microblogging service for hackers</em> but it is only a txt file in your domain. Something like this:</p><pre style=\"color:#f8f8f2;background-color:#272822;\"><code><span><span>2016-02-04T13:30:00+01:00   You can really go crazy here! ┐(ﾟ∀ﾟ)┌\n</span></span><span><span>2016-02-03T23:05:00+01:00   @&lt;example &lt;http://example.org/twtxt.txt&gt;&gt; welcome to twtxt!\n</span></span><span><span>2016-02-01T11:00:00+01:00   This is just another example.\n</span></span><span><span>2015-12-12T12:00:00+01:00   Fiat lux!\n</span></span></code></pre><p>You can “tweet” from your domain to the world… It is a good idea but I don’t like it.</p><p>I was using it for a time but I prefer to use <a href=\"https://mastodon.social/@fundor333\">mastodon</a>\nor webmention.</p><p>Also it isn’t compatible with my stack for the blog (my github pages builder aren’t compatible with twtxt without rewrite all my stack) and I don’t like the way it is implemented: it is a good idea to have a decentralized timeline but I prefere something easy to use anda update with a mobile phone or a tablet unlike twtxt.</p><p>So I decided to study the others tecnologies.</p><h2>Webmention</h2><p>My favorite tecnology of the article.</p><blockquote>\n<p>Webmention is a simple way to notify any URL when you mention it on your site. From the receiver’s perspective, it’s a way to request notifications when other sites mention it.</p>\n<p><a href=\"https://www.w3.org/TR/webmention/\">Webmention w3c specification</a></p>\n</blockquote><p>This is a wonderfull way to interact between two websites. You can use it to send a notification to a third party when you mention it on your site or to send a notification to your site when you mention it on a third party site.</p><p>You can use to check also interaction with your twitter, mastodon, reddit and github with some tools like <a href=\"https://brid.gy/\">Bridgy</a>\n.</p><h3>Implementation</h3><p>Thanks to <a href=\"https://www.jayeless.net/2021/02/integrating-webmentions-into-hugo.html\">Jamie’s post</a>\n,<a href=\"https://www.jvt.me/posts/2019/03/18/displaying-webmentions/\">Jamie’s post</a>\nand <a href=\"https://paul.kinlan.me/using-web-mentions-in-a-static-sitehugo/\">Paul’s post</a>\nI implemented my own display section for the webmentions.</p><p>I wrote and rewrote the code for the display section but now it’s something simple:</p><p>for getting the webmentions from <a href=\"https://webmention.io/\">Webmention.io</a>\nI use the js package <a href=\"https://github.com/PlaidWeb/webmention.js/\">PlaidWeb/webmention.js</a>\nwith some changes for the rendering.</p><h4>theme/layouts/partials/webmentions.html</h4><pre style=\"color:#f8f8f2;background-color:#272822;\"><code><span><span>&lt;<span style=\"color:#f92672;\">script</span> <span style=\"color:#a6e22e;\">src</span><span style=\"color:#f92672;\">=</span><span style=\"color:#e6db74;\">\"/webmention.min.js\"</span> <span style=\"color:#a6e22e;\">data-wordcount</span><span style=\"color:#f92672;\">=</span><span style=\"color:#e6db74;\">\"100\"</span> <span style=\"color:#a6e22e;\">async</span><span style=\"color:#f92672;\">=</span><span style=\"color:#e6db74;\">\"\"</span> <span style=\"color:#a6e22e;\">data-add-urls</span><span style=\"color:#f92672;\">=</span><span style=\"color:#e6db74;\">\"https://fundor333.com{{ .RelPermalink}}\"</span>&gt;\n</span></span><span><span>&lt;/<span style=\"color:#f92672;\">script</span>&gt;\n</span></span><span><span>\n</span></span><span><span>&lt;<span style=\"color:#f92672;\">div</span> <span style=\"color:#a6e22e;\">id</span><span style=\"color:#f92672;\">=</span><span style=\"color:#e6db74;\">\"webmentions\"</span> <span style=\"color:#a6e22e;\">class</span><span style=\"color:#f92672;\">=</span><span style=\"color:#e6db74;\">\"row\"</span>&gt;\n</span></span><span><span>&lt;/<span style=\"color:#f92672;\">div</span>&gt;\n</span></span></code></pre><p>I suggest to download and edit the <a href=\"https://github.com/PlaidWeb/webmention.js/\"><em>webmention.min.js</em></a>\nfile for adding some customizations for the rendering and add some CSS because the basic theme is minimal.</p><p>With this code imported, you can show the webmention feed on your site in real time.</p><h2>Indiweb</h2><p>Realy the big thing and the last thing I studied and implement.\nIt is “<em>a people-focused alternative to the corporate web</em>” and it has three core concepts:</p><ul><li>Your content is yours</li>\n<li>You are better connected</li>\n<li>You are in control</li>\n</ul><p>I <i></i>\nit.</p><p>So I rewrote all my templates to implement the Indiweb concept:</p><ol start=\"0\"><li>Find a domain for my space</li>\n<li>Adding an <a href=\"https://indieweb.org/h-card\">h-card/microformat</a>\nto my homepage</li>\n<li>Adding an <a href=\"https://indieweb.org/h-card\">h-card/microformat</a>\nto my posts’ articles</li>\n<li>Adding the social media profiles for implementing the <a href=\"https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain\">IndieAuth identity</a>\n</li>\n<li>Adding RSS feeds and/or other type of feeds</li>\n</ol><p>After one or two month of work on my template the work was done and I was happy.\nAnd I search for more posts about indiweb and webmentions because I WANT MORE, so I find a lot of articles, posts and tweet about this stack of tecnologies.</p><p>One of my favorite posts about indiweb is <a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\">AM I ON THE INDIEWEB YET? by Miriam Suzanne</a>\n.</p><p>Here are some more articles I find about webmentions:</p><ul><li><a href=\"https://keithjgrant.com/posts/2019/02/adding-webmention-support-to-a-static-site/\">Adding Webmention Support to a Static Site</a></li>\n<li><a href=\"https://anaulin.org/blog/adding-webmentions/\">Adding Webmentions to My Static Hugo Site</a></li>\n<li><a href=\"https://hugo.md/post/add-webmentions-to-hugo-from-micro-blog/\">Adding Webmentions to my blog</a></li>\n<li><a href=\"https://anaulin.org/blog/adding-webmentions/\">Adding Webmentions to My Static Hugo Site</a></li>\n<li><a href=\"https://paulrobertlloyd.com/articles/2018/01/microblogging/\">Microblogging</a></li>\n</ul><p>If you liked this article,</p><p>please <a href=\"https://twitter.com/intent/tweet?text=How%20I%20implement%20Indieweb%2C%20Webmention%20and%20H%20Entry%20in%20My%20Blog&amp;url=https%3A%2F%2Ffundor333.com%2Fpost%2F2022%2Findieweb-webmention-and-h-entry-in-my-blog%2F&amp;via=fundor333\" title=\"Share on Twitter\">share it on <i></i></a></p><p>or <a href=\"https://webmention.io/fundor333.com/webmention\">webmention it</a></p>",
+        "text": "Some history of this blogWhen I start blogging, I was using a blog engine called WordPress\nbut I wasn’t ok with the way it was designed. I wanted to be able to write my posts in a way that was easy to read and edit. I want to have a lightweight blog engine so I change to Pelican\nand I use for sometime. Sometime later, not happy with the tags and categories, I decided to switch to Hugo\nand I’m happier with it.But I feet some time I wasn’t happy with Hugo so I search something else.\nAfter some time I find an article about Independent website\nand the tecnology for make a independent website.In this article I discover:\nTwtxt\na protocol for instances for a decentralized timeline experience\n\nWebmention\nand an easy implementation\nfor it\n\nIndieWeb\nfor POSSE, an abbreviation for Publish (on your) Own Site, Syndicate Elsewhere\nSo I decided to study them for adding in my blog.TwtxtFirst tecnology I read about and I found it strange.It call himself decentralises, minimalist microblogging service for hackers but it is only a txt file in your domain. Something like this:2016-02-04T13:30:00+01:00   You can really go crazy here! ┐(ﾟ∀ﾟ)┌\n2016-02-03T23:05:00+01:00   @<example <http://example.org/twtxt.txt>> welcome to twtxt!\n2016-02-01T11:00:00+01:00   This is just another example.\n2015-12-12T12:00:00+01:00   Fiat lux!\nYou can “tweet” from your domain to the world… It is a good idea but I don’t like it.I was using it for a time but I prefer to use mastodon\nor webmention.Also it isn’t compatible with my stack for the blog (my github pages builder aren’t compatible with twtxt without rewrite all my stack) and I don’t like the way it is implemented: it is a good idea to have a decentralized timeline but I prefere something easy to use anda update with a mobile phone or a tablet unlike twtxt.So I decided to study the others tecnologies.WebmentionMy favorite tecnology of the article.\nWebmention is a simple way to notify any URL when you mention it on your site. From the receiver’s perspective, it’s a way to request notifications when other sites mention it.\nWebmention w3c specification\nThis is a wonderfull way to interact between two websites. You can use it to send a notification to a third party when you mention it on your site or to send a notification to your site when you mention it on a third party site.You can use to check also interaction with your twitter, mastodon, reddit and github with some tools like Bridgy\n.ImplementationThanks to Jamie’s post\n,Jamie’s post\nand Paul’s post\nI implemented my own display section for the webmentions.I wrote and rewrote the code for the display section but now it’s something simple:for getting the webmentions from Webmention.io\nI use the js package PlaidWeb/webmention.js\nwith some changes for the rendering.theme/layouts/partials/webmentions.html<script src=\"/webmention.min.js\" data-wordcount=\"100\" async=\"\" data-add-urls=\"https://fundor333.com{{ .RelPermalink}}\">\n</script>\n\n<div id=\"webmentions\" class=\"row\">\n</div>\nI suggest to download and edit the webmention.min.js\nfile for adding some customizations for the rendering and add some CSS because the basic theme is minimal.With this code imported, you can show the webmention feed on your site in real time.IndiwebRealy the big thing and the last thing I studied and implement.\nIt is “a people-focused alternative to the corporate web” and it has three core concepts:Your content is yours\nYou are better connected\nYou are in control\nI \nit.So I rewrote all my templates to implement the Indiweb concept:Find a domain for my space\nAdding an h-card/microformat\nto my homepage\nAdding an h-card/microformat\nto my posts’ articles\nAdding the social media profiles for implementing the IndieAuth identity\n\nAdding RSS feeds and/or other type of feeds\nAfter one or two month of work on my template the work was done and I was happy.\nAnd I search for more posts about indiweb and webmentions because I WANT MORE, so I find a lot of articles, posts and tweet about this stack of tecnologies.One of my favorite posts about indiweb is AM I ON THE INDIEWEB YET? by Miriam Suzanne\n.Here are some more articles I find about webmentions:Adding Webmention Support to a Static Site\nAdding Webmentions to My Static Hugo Site\nAdding Webmentions to my blog\nAdding Webmentions to My Static Hugo Site\nMicroblogging\nIf you liked this article,please share it on or webmention it"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://fundor333.com/post/2022/indieweb-webmention-and-h-entry-in-my-blog/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara Soueidan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d99094f0d8c3eeb239c1d7425606924b8861e383534239e03ac34beab0fd6484.jpg",
+        "url": "https://twitter.com/SaraSoueidan"
+      },
+      "url": "https://twitter.com/SaraSoueidan/status/1537373119370895360",
+      "published": "2022-06-16T09:54:49+00:00",
+      "wm-received": "2022-06-16T11:26:06Z",
+      "wm-id": 1417789,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1537373119370895360",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "html": "Complex vs Compound Selectors in <a href=\"https://twitter.com/search?q=%23CSS\">#CSS</a>  <a href=\"https://www.miriamsuzanne.com/2022/06/15/complex-compound/\">miriamsuzanne.com/2022/06/15/com…</a>",
+        "text": "Complex vs Compound Selectors in #CSS  miriamsuzanne.com/2022/06/15/com…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marta Radziszewska",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/659a9ac90da4fbb24f2e3a06994637634d7f39bbd0274f250f48b1ba37574fe8.jpg",
+        "url": "https://twitter.com/mradziszewska_"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-1093236611184320514",
+      "published": null,
+      "wm-received": "2022-06-16T11:25:44Z",
+      "wm-id": 1417787,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/1093236611184320514",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "benoit-kogut.es5",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9b954fd1951cd811691cc51c8a20f0630280c00174c6caeb2f1c539ba944be0c.png",
+        "url": "https://twitter.com/agggka"
+      },
+      "url": "https://twitter.com/agggka/status/1537338765764616192",
+      "published": "2022-06-16T07:38:18+00:00",
+      "wm-received": "2022-06-16T11:25:44Z",
+      "wm-id": 1417788,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1537222094827663360/1537338765764616192",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "text": "In CSS, there are *compound selectors* and also *complex selectors* - but I never remember which is which.\n\nDo you need to learn the difference? Probably not. But I'm tired of looking it up. Maybe if I write it down…\n\nmiriamsuzanne.com/2022/06/15/com…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Dallas",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/238eac687bf46230e6a9bc596115628d79f21b190995c7f9e614941ef7ce5f47.jpg",
+        "url": "https://twitter.com/doctype_jon"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-1159494277",
+      "published": null,
+      "wm-received": "2022-06-16T11:25:43Z",
+      "wm-id": 1417785,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/1159494277",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Santiago Medina",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b7dbc8cdbef4f62cccebb10f9b93f75e94f680cd6ab900425899780431c5ed22.jpg",
+        "url": "https://twitter.com/santidays94"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-1509270634672672778",
+      "published": null,
+      "wm-received": "2022-06-16T11:25:43Z",
+      "wm-id": 1417786,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/1509270634672672778",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sam Aragón",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/dff9b78678fe7b40a70db42c46821c98e7a662d517b51dc888c584233cfa18db.jpg",
+        "url": "https://twitter.com/TioSamAragon"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-373636565",
+      "published": null,
+      "wm-received": "2022-06-16T11:25:42Z",
+      "wm-id": 1417783,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/373636565",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Altuğ Başaran",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/76c2606cc74e2ff4e33927d6c8faede0e5fa346f3ef1022283c6b7db1694be13.jpg",
+        "url": "https://twitter.com/Gb7alt"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-2598278424",
+      "published": null,
+      "wm-received": "2022-06-16T11:25:42Z",
+      "wm-id": 1417784,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/2598278424",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stefan Bauer",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8b781508e73bc37d8c242f131d237399e98ceecce80eed4cb59e2d1ac811acba.png",
+        "url": "https://twitter.com/StfBauer"
+      },
+      "url": "https://twitter.com/StfBauer/status/1537361137775390722",
+      "published": "2022-06-16T09:07:12+00:00",
+      "wm-received": "2022-06-16T11:25:41Z",
+      "wm-id": 1417781,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1537361137775390722",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "html": "Complex vs Compound Selectors | Miriam Eric Suzanne - i was not aware of that! Thanks ⁦<a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a>⁩  <a href=\"https://www.miriamsuzanne.com/2022/06/15/complex-compound/\">miriamsuzanne.com/2022/06/15/com…</a>",
+        "text": "Complex vs Compound Selectors | Miriam Eric Suzanne - i was not aware of that! Thanks ⁦@TerribleMia⁩  miriamsuzanne.com/2022/06/15/com…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "benoit-kogut.es5",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9b954fd1951cd811691cc51c8a20f0630280c00174c6caeb2f1c539ba944be0c.png",
+        "url": "https://twitter.com/agggka"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-308834183",
+      "published": null,
+      "wm-received": "2022-06-16T11:25:41Z",
+      "wm-id": 1417782,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/308834183",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sami Keijonen",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/563596f12242cf865eb4f8e914701e8f0caf82935d92809ac5c342cfadf247fe.jpg",
+        "url": "https://twitter.com/samikeijonen"
+      },
+      "url": "https://twitter.com/samikeijonen/status/1537323971082915841",
+      "published": "2022-06-16T06:39:31+00:00",
+      "wm-received": "2022-06-16T07:18:07Z",
+      "wm-id": 1417699,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1537222094827663360/1537323971082915841",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "text": "In CSS, there are *compound selectors* and also *complex selectors* - but I never remember which is which.\n\nDo you need to learn the difference? Probably not. But I'm tired of looking it up. Maybe if I write it down…\n\nmiriamsuzanne.com/2022/06/15/com…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nick Gard",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/712a2c992afb152d5cb0dc9df0ec494ae8efbfa70e6e2c8aed237166654d76cc.jpg",
+        "url": "https://twitter.com/ntgard"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-3099696425",
+      "published": null,
+      "wm-received": "2022-06-16T07:18:05Z",
+      "wm-id": 1417697,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/3099696425",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ana Tudor 🐯🖤🌻",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/22cbd15658a37d7a71075d69fd1649fe66f5f1cb2f4e2a87f87c9bdb800f054b.jpg",
+        "url": "https://twitter.com/anatudor"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-90221168",
+      "published": null,
+      "wm-received": "2022-06-16T07:18:05Z",
+      "wm-id": 1417698,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/90221168",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chelsea8999",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/6c941cfc11225cd0c714c9b0d86b26ed185a54942bf2f586db96c454005a36e1.jpg",
+        "url": "https://twitter.com/chelsea89999"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-1076833946153902080",
+      "published": null,
+      "wm-received": "2022-06-16T07:18:04Z",
+      "wm-id": 1417695,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/1076833946153902080",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "theswayambhu",
+        "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+        "url": "https://twitter.com/theswayambhu"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-1062980721025810432",
+      "published": null,
+      "wm-received": "2022-06-16T07:18:04Z",
+      "wm-id": 1417696,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/1062980721025810432",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ст. 122 УК РБ",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/883f516cf2d99e9a5fafe1e11bee721afb88c463a5deb168904514015a8fe12a.jpg",
+        "url": "https://twitter.com/SelenIT2"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-455700025",
+      "published": null,
+      "wm-received": "2022-06-16T07:18:03Z",
+      "wm-id": 1417693,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/455700025",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "modeerf",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/89e5aa7cef1c17899a06291d40c2dee66c32dbf83d91cf8ed831544df433356d.jpg",
+        "url": "https://twitter.com/modeerf"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-15188409",
+      "published": null,
+      "wm-received": "2022-06-16T07:18:03Z",
+      "wm-id": 1417694,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/15188409",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Laker Ockovsky",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d65bd404d2e141f4acc63ad594f845703c8faf93115ced08a9a82c6c3ec5d91d.jpg",
+        "url": "https://twitter.com/laker_faker"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-51694361",
+      "published": null,
+      "wm-received": "2022-06-16T07:18:02Z",
+      "wm-id": 1417692,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/51694361",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stefan Krieger",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0de2346012e93222000880ffe7bc70f26b682d9f51bb7e03890a54f7e84bf74f.jpg",
+        "url": "https://twitter.com/StefKrie"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-18218820",
+      "published": null,
+      "wm-received": "2022-06-16T07:18:01Z",
+      "wm-id": 1417690,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/18218820",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "HTeuMeuLeu",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a3f52bc11a57e232513ba87a3b96a7149a1266c700ebe28056bb981f3b01e6b1.jpg",
+        "url": "https://twitter.com/HTeuMeuLeu"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-117100379",
+      "published": null,
+      "wm-received": "2022-06-16T07:18:01Z",
+      "wm-id": 1417691,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/117100379",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ivan Bila",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/45eef0b81c898f60153d30fada2c9f9695cd5e8076fbc9430f44f6dab159de22.jpg",
+        "url": "https://twitter.com/ivanbila"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-217093065",
+      "published": null,
+      "wm-received": "2022-06-16T07:18:00Z",
+      "wm-id": 1417689,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/217093065",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Maarten Van Hoof - 🗣️ Full Stack Antwerp 29/6",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/df01242625ecdae8b66c18fefc0cdac235e5992786dc6ef0d2cd53f6f24b03f2.jpg",
+        "url": "https://twitter.com/mrtnvh"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-119420157",
+      "published": null,
+      "wm-received": "2022-06-16T07:17:59Z",
+      "wm-id": 1417687,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/119420157",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara Soueidan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d99094f0d8c3eeb239c1d7425606924b8861e383534239e03ac34beab0fd6484.jpg",
+        "url": "https://twitter.com/SaraSoueidan"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-717654410",
+      "published": null,
+      "wm-received": "2022-06-16T07:17:59Z",
+      "wm-id": 1417688,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/717654410",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ahmad Shadeed",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b092097026feb385c4f6d0ab45adb537da81f96c862a12faa426a016a3a8e1aa.jpg",
+        "url": "https://twitter.com/shadeed9"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-170265794",
+      "published": null,
+      "wm-received": "2022-06-16T07:17:58Z",
+      "wm-id": 1417685,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/170265794",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Berglund",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c5cebdd3dff388c0ae51fb36b1607bbbe22a191a1ef03cb60fd33461cd386091.jpg",
+        "url": "https://twitter.com/macbruker"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-14276282",
+      "published": null,
+      "wm-received": "2022-06-16T07:17:58Z",
+      "wm-id": 1417686,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/14276282",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ron S. Doyle",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5d63750a4e7891dd35704bb8bb6d3c3d1346ff6223880f324502e8fc429d6dd3.jpg",
+        "url": "https://twitter.com/rondoyleco"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-14972258",
+      "published": null,
+      "wm-received": "2022-06-16T07:17:55Z",
+      "wm-id": 1417684,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/14972258",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "dana-byerly.html",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ae11da462767995f7225b0a4162a2f6e767ab8f6d21dc9435b22a76aa40568fc.jpg",
+        "url": "https://twitter.com/superterrific"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1537222094827663360#favorited-by-4094721",
+      "published": null,
+      "wm-received": "2022-06-16T02:48:40Z",
+      "wm-id": 1417626,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1537222094827663360/4094721",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "like-of",
       "wm-private": false
     }
   ]

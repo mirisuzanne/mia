@@ -45,6 +45,17 @@ a:focus > .icon { … }
 .only.with ~ .all.of ~ .these.siblings { … }
 ```
 
+_Simple selectors_ describe element properties,
+that can get merged together
+into _compound selectors_ describing entire elements,
+and then joined into _complex selectors_
+that put those elements in the context of relationships.
+And we can string all that together into _selector lists_,
+targeting multiple elements
+based on a variety of properties and relationships.
+It's a big world out there, kids.
+A big, declarative, cascading world.
+
 Now ~~you~~ I know.
 Now ~~you~~ I can forget again,
 and know exactly where to look.
