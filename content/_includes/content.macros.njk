@@ -108,9 +108,10 @@
 #}
 {% macro fig(
   data=none,
-  caption=none
+  caption=none,
+  content=none
 ) -%}
-{%- set content = _fig_content(data) if data else caller() | mdInline -%}
+{%- set content = _fig_content(data) if data else content or caller() | mdInline -%}
 <figure data-pattern="figure">
 <div data-figure="content">
 {{ content | safe }}

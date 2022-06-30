@@ -51,7 +51,7 @@ img {
     width: 100%;
   }
 
-  [style] {
+  > [style] {
     grid-column: var(--span, initial);
     width: var(--width, 100%);
   }

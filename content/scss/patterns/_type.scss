@@ -1,6 +1,19 @@
 @use '../config/patterns';
 @use '../config/fonts';
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+}
+
+p:empty {
+  display: none;
+}
+
 b,
 strong {
   @include fonts.var('bold' 'fun');
@@ -50,6 +63,7 @@ dfn {
   ul,
   ol,
   pre,
+  table,
   blockquote {
     margin: 0 0 var(--gutter);
   }
@@ -129,6 +143,7 @@ tt {
   }
 }
 
+code:not(pre *),
 mark {
   background: var(--callout);
   color: var(--text);
