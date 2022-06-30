@@ -101,7 +101,7 @@ It may be a bit strange
 that we have access to
 so many duplicate grays in HWB,
 but there tends to be some duplication
-in any color-format using hue-angles.
+in any color format using hue angles.
 In HSL colors, for example,
 a `lightness` of either `0%` or `100%`
 will wash out both `hue` and `saturation`.
@@ -202,7 +202,7 @@ to notate a [_'missing'_ channel](https://drafts.csswg.org/css-color/#missing):
 
 ```css
 /* full black, the hue and saturation are powerless */
-html { background: hsl(none none 100%); }
+html { background: hsl(none none 0%); }
 ```
 
 Browsers are instructed
