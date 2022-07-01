@@ -236,7 +236,7 @@ are clamped to the boundaries of that range:
 ```css
 html {
   --red: hsl(0deg 100% 50%);
-  --same-red-clamped: hsl(0deg 2530% 100%);
+  --same-red-clamped: hsl(0deg 2530% 50%);
 }
 ```
 
@@ -285,9 +285,16 @@ At first that seemed like a mistake --
 why not maintain the ratio where we can? --
 but in practice it makes sense.
 We have to clamp the lower boundary,
-since negative values don't make sense,
+since negative values have no meaning,
 so it's reasonable to start by treating the upper boundary
 in the same way.
+
+Out-of-range percentages are meaningless,
+and corrected like a typo,
+but redundant grays
+are a natural outcome of the math --
+still meaningful,
+even if they aren't that useful.
 
 ## The answer to my question
 
