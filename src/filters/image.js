@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 'use strict';
 
 const path = require('path');
@@ -84,18 +85,23 @@ const image = (
 
   // We need to know what the resultant files for each format
   // and size will be called. Let's take a peep.
-  for (const [format] of Object.entries(metadata)) {
+  // eslint-disable-next-line no-unused-vars
+  for (const [format, options] of Object.entries(metadata)) {
     // for each format, let's look at each file size and get its outputPath
     metadata[format].forEach((thisSize) => {
       // If the file has already been added to the build directory,
-      // or this image has been requested for processing already,
-      // let's not duplicate effort.
-      if (
-        // eslint-disable-next-line no-sync
-        !fs.existsSync(thisSize.outputPath) &&
-        !imageTransformIndex.includes(thisSize.filename)
-      ) {
-        // eslint-disable-next-line no-console
+      // we won't repeat that effort
+      // eslint-disable-next-line no-sync
+      if (fs.existsSync(thisSize.outputPath)) {
+        console.log(`Skipping cached image: ${src} (${thisSize.filename})`);
+      }
+      // If this image has been requested for processing already,
+      // let's not duplicate effort
+      else if (imageTransformIndex.includes(thisSize.filename)) {
+        console.log(`Skipping duplicate image: ${src} (${thisSize.filename})`);
+      }
+      // generate images; this is async but we don’t wait
+      else {
         console.log(`Processing image: ${src} (${thisSize.filename})`);
         // Make a note that we're generating this image to avoid dupes
         imageTransformIndex.push(thisSize.filename);
