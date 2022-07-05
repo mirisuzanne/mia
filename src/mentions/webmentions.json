@@ -1,6 +1,710 @@
 {
-  "lastFetched": "2022-06-30T01:51:07.567Z",
+  "lastFetched": "2022-07-05T00:11:26.146Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://tamsome.club/2022/07/04/menghilangkan-kebingungan-indieweb-di-situs-wordpress-css-trik/",
+      "published": null,
+      "wm-received": "2022-07-04T20:32:14Z",
+      "wm-id": 1427358,
+      "wm-source": "https://tamsome.club/2022/07/04/menghilangkan-kebingungan-indieweb-di-situs-wordpress-css-trik/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Frontend Dogma",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7fef0c3e728e532d829ec49a8f7129557bd31cf0d3585fad94ecb61c3e79fa8d.jpg",
+        "url": "https://twitter.com/frontenddogma"
+      },
+      "url": "https://twitter.com/frontenddogma/status/1543620164532436995",
+      "published": "2022-07-03T15:38:20+00:00",
+      "wm-received": "2022-07-03T16:17:27Z",
+      "wm-id": 1426733,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1543620164532436995",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "html": "Complex vs. Compound Selectors, by <a href=\"https://twitter.com/TerribleMia\">@terriblemia</a>:\n\n<a href=\"https://www.miriamsuzanne.com/2022/06/15/complex-compound/\">miriamsuzanne.com/2022/06/15/com…</a>",
+        "text": "Complex vs. Compound Selectors, by @terriblemia:\n\nmiriamsuzanne.com/2022/06/15/com…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Wouter Groeneveld",
+        "photo": "https://webmention.io/avatar/brainbaking.com/4966f3a2a3d4594117a1a709c48bc3d9dc079f6fe32ae92e91acecde0127a5ec.jpg",
+        "url": ""
+      },
+      "url": "https://brainbaking.com/",
+      "published": "2022-07-03T16:43:00",
+      "wm-received": "2022-07-03T15:00:20Z",
+      "wm-id": 1426718,
+      "wm-source": "https://brainbaking.com/notes/2022/07/03h16m43s16/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "content": {
+        "html": "<p>Yeah that sucks, I’ve also encountered spam like this, and it ain’t all sourced via a Pingback, see <a href=\"https://brainbaking.com/post/2022/04/fighting-webmention-and-pingback-spam/\">https://brainbaking.com/post/2022/04/fighting-webmention-and-pingback-spam/</a>. I “solved” this by blacklisting/whitelisting and a moderation queue but I have my own webmention server implementation.\nI honestly always get a little upset when people say “just unplug pingbacks”—I’ve had a few genuinely good interactions through that, and every Wordpress user automatically has support for that as opposed to Webmentions. Disabling something does not fix the spammers.</p>",
+        "text": "Yeah that sucks, I’ve also encountered spam like this, and it ain’t all sourced via a Pingback, see https://brainbaking.com/post/2022/04/fighting-webmention-and-pingback-spam/. I “solved” this by blacklisting/whitelisting and a moderation queue but I have my own webmention server implementation.\nI honestly always get a little upset when people say “just unplug pingbacks”—I’ve had a few genuinely good interactions through that, and every Wordpress user automatically has support for that as opposed to Webmentions. Disabling something does not fix the spammers."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/09/the-spam/",
+      "wm-property": "in-reply-to",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://brainbaking.com/notes/2022/07/03h16m43s16/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pawel Grzybek",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8d54fcc2460cfec90768a8f79d37aff7f22a20519d4fd09e5ad90d91f27618a9.jpg",
+        "url": "https://twitter.com/pawelgrzybek"
+      },
+      "url": "https://twitter.com/pawelgrzybek/status/1543561509753741315",
+      "published": "2022-07-03T11:45:16+00:00",
+      "wm-received": "2022-07-03T12:01:39Z",
+      "wm-id": 1426691,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1543561509753741315",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "photo": ["https://pbs.twimg.com/media/FWvU4v5XEAE0Cda.jpg"],
+      "content": {
+        "html": "🧠 TIL 🧠\n\nThe difference between compound and complex CSS selectors. Thanks <a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a>\n\n<a href=\"https://www.miriamsuzanne.com/2022/06/15/complex-compound/\">miriamsuzanne.com/2022/06/15/com…</a>\n\n<a href=\"https://twitter.com/search?q=%23css\">#css</a>",
+        "text": "🧠 TIL 🧠\n\nThe difference between compound and complex CSS selectors. Thanks @TerribleMia\n\nmiriamsuzanne.com/2022/06/15/com…\n\n#css"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Roy Tang",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fcb179eefc747c3a760fbea4b2b3693db8983b79e2a43dcb9c059d0f3ddcff5a.jpg",
+        "url": "https://twitter.com/roytang"
+      },
+      "url": "https://twitter.com/roytang/status/1543469050780471296",
+      "published": "2022-07-03T05:37:52+00:00",
+      "wm-received": "2022-07-03T06:00:53Z",
+      "wm-id": 1426614,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1543469050780471296",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "content": {
+        "html": "Shared via web: Am I on the IndieWeb Yet? | Miriam Eric Suzanne <a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\">miriamsuzanne.com/2022/06/04/ind…</a>.",
+        "text": "Shared via web: Am I on the IndieWeb Yet? | Miriam Eric Suzanne miriamsuzanne.com/2022/06/04/ind…."
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tanner Hodges",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4e7629321df1a9b6dd424ef45f5709cbd97ea1f39b8446f49faf2795e75054d5.jpg",
+        "url": "https://twitter.com/atannerhodges"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-357701344",
+      "published": null,
+      "wm-received": "2022-07-02T00:34:52Z",
+      "wm-id": 1426039,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/357701344",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://una.im/style-queries/",
+      "published": null,
+      "wm-received": "2022-07-01T16:16:45Z",
+      "wm-id": 1425848,
+      "wm-source": "https://una.im/style-queries/",
+      "wm-target": "https://www.miriamsuzanne.com/speaking/responsive-components/",
+      "mention-of": "https://www.miriamsuzanne.com/speaking/responsive-components/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "DrJume",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5a0cfd4621519ba77659ff48b93cc838b413466a1af00077fd76eb9db854d2eb.jpg",
+        "url": "https://twitter.com/DrJume"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-822211216802217984",
+      "published": null,
+      "wm-received": "2022-07-01T12:07:00Z",
+      "wm-id": 1425751,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/822211216802217984",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sana",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/053fe6695df3490e62d4109bae15115dcfc5b07da4d3e72d709bf5f4b4bbd12f.jpg",
+        "url": "https://twitter.com/sanacodes"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-2872663025",
+      "published": null,
+      "wm-received": "2022-07-01T07:06:40Z",
+      "wm-id": 1425666,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/2872663025",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "CSS {IRL}",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/18cc05bb841dc1e9808263eb14eb1931263921e414673920d572eb4f6ee2a340.jpg",
+        "url": "https://twitter.com/CSSInRealLife"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-984162487544242176",
+      "published": null,
+      "wm-received": "2022-07-01T07:06:39Z",
+      "wm-id": 1425665,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/984162487544242176",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Justin Arnold",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5b5e7898dafc203302712c98e9049b80e69ffdc7e2496bc7f0775bac5bdf0c7c.jpg",
+        "url": "https://twitter.com/ItsJustinArnold"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-1453840907833327626",
+      "published": null,
+      "wm-received": "2022-07-01T04:58:51Z",
+      "wm-id": 1425627,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/1453840907833327626",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Yohan J. Rodríguez",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7e6f903bb1f4d6522292e6686c5090a87c87fbf9cae501f1495bc1262d7da966.jpg",
+        "url": "https://twitter.com/hasdid"
+      },
+      "url": "https://twitter.com/hasdid/status/1542686268013813760",
+      "published": "2022-07-01T01:47:22+00:00",
+      "wm-received": "2022-07-01T02:20:55Z",
+      "wm-id": 1425600,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1542686268013813760",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "content": {
+        "html": "<a href=\"https://twitter.com/search?q=%23CSS\">#CSS</a>  <a href=\"https://twitter.com/search?q=%23Automated\">#Automated</a> | Complex vs Compound Selectors <a href=\"https://www.miriamsuzanne.com/2022/06/15/complex-compound/?utm_source=CSS-Weekly&amp;utm_campaign=Issue-511&amp;utm_medium=web\">miriamsuzanne.com/2022/06/15/com…</a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/06/15/complex-compound/\"></a>",
+        "text": "#CSS  #Automated | Complex vs Compound Selectors miriamsuzanne.com/2022/06/15/com…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "rafa zero 🏳️‍🌈",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9225cd87ebf58a9c9a61ddce187b715a5d774801d6f966eb531c8e66a2660eb4.jpg",
+        "url": "https://twitter.com/racascou"
+      },
+      "url": "https://twitter.com/racascou/status/1542637944040734720",
+      "published": "2022-06-30T22:35:21+00:00",
+      "wm-received": "2022-06-30T23:23:05Z",
+      "wm-id": 1425571,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1542523489072009216/1542637944040734720",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "content": {
+        "html": "Somewhere between color theory &amp; CSS hwb() syntax, there is a field of duplicate &amp; un-useful grays – thanks to powerless color components, clamped ranges, and scaled ratios.\n\nA stroll through the gray areas of the hwb() function:\n\nmiriamsuzanne.com/2022/06/29/hwb…",
+        "text": "Somewhere between color theory & CSS hwb() syntax, there is a field of duplicate & un-useful grays – thanks to powerless color components, clamped ranges, and scaled ratios.\n\nA stroll through the gray areas of the hwb() function:\n\nmiriamsuzanne.com/2022/06/29/hwb…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "rafa zero 🏳️‍🌈",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9225cd87ebf58a9c9a61ddce187b715a5d774801d6f966eb531c8e66a2660eb4.jpg",
+        "url": "https://twitter.com/racascou"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-1393103288",
+      "published": null,
+      "wm-received": "2022-06-30T23:23:03Z",
+      "wm-id": 1425570,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/1393103288",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Berglund",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c5cebdd3dff388c0ae51fb36b1607bbbe22a191a1ef03cb60fd33461cd386091.jpg",
+        "url": "https://twitter.com/macbruker"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-14276282",
+      "published": null,
+      "wm-received": "2022-06-30T19:50:48Z",
+      "wm-id": 1425491,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/14276282",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Dallas",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/238eac687bf46230e6a9bc596115628d79f21b190995c7f9e614941ef7ce5f47.jpg",
+        "url": "https://twitter.com/doctype_jon"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-1159494277",
+      "published": null,
+      "wm-received": "2022-06-30T18:06:06Z",
+      "wm-id": 1425432,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/1159494277",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "tails 🏳️‍🌈",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b65ebd49c658efb324cef4880deec9d941ab94b040d333d05fc7b864b1f1e697.png",
+        "url": "https://twitter.com/The_Only_Tails"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-1217509158238507008",
+      "published": null,
+      "wm-received": "2022-06-30T17:16:40Z",
+      "wm-id": 1425416,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/1217509158238507008",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jordan Dingle",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/311c4568a8f8a7d6d3fe2ae5d48e353124091e3420a36bed7b20a3adf7915e7e.jpg",
+        "url": "https://twitter.com/dinglestein"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-246959199",
+      "published": null,
+      "wm-received": "2022-06-30T17:16:14Z",
+      "wm-id": 1425415,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/246959199",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stephanie Eckles",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ae7aebb65ddcb23a79323ff61cd61bae74c1845d99b7f9380f9dd3852c2e4245.jpg",
+        "url": "https://twitter.com/5t3ph"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-18636799",
+      "published": null,
+      "wm-received": "2022-06-30T17:16:13Z",
+      "wm-id": 1425414,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/18636799",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mateo",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/6e50583c7bdd044e37adebf5b0d74cb06d0be843512d5b483bf44d2e6d6851da.jpg",
+        "url": "https://twitter.com/sryo"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-6303662",
+      "published": null,
+      "wm-received": "2022-06-30T17:16:12Z",
+      "wm-id": 1425413,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/6303662",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam Argyle",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ecb57ab7c7fc113262d8bdbe1e11c6aa95146a7184ae4e596b9eefe48e5558a8.jpg",
+        "url": "https://twitter.com/argyleink"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-129940111",
+      "published": null,
+      "wm-received": "2022-06-30T16:26:47Z",
+      "wm-id": 1425375,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/129940111",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Shay Davidson",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/efbf1ece13d16d6b335969d1864f9e7b5c7fa6c1c0f97d3056be90b10d79175c.jpg",
+        "url": "https://twitter.com/ShayHDavidson"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-90017191",
+      "published": null,
+      "wm-received": "2022-06-30T16:26:47Z",
+      "wm-id": 1425376,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/90017191",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Craig Webb",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f292097caadb15f328de0b0cb3437aaf523bb787518d4b83d89435484bc4f364.jpg",
+        "url": "https://twitter.com/cwebba1"
+      },
+      "url": "https://twitter.com/cwebba1/status/1542535097034866691",
+      "published": "2022-06-30T15:46:40+00:00",
+      "wm-received": "2022-06-30T16:26:22Z",
+      "wm-id": 1425373,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1542523489072009216/1542535097034866691",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "content": {
+        "html": "Somewhere between color theory &amp; CSS hwb() syntax, there is a field of duplicate &amp; un-useful grays – thanks to powerless color components, clamped ranges, and scaled ratios.\n\nA stroll through the gray areas of the hwb() function:\n\nmiriamsuzanne.com/2022/06/29/hwb…",
+        "text": "Somewhere between color theory & CSS hwb() syntax, there is a field of duplicate & un-useful grays – thanks to powerless color components, clamped ranges, and scaled ratios.\n\nA stroll through the gray areas of the hwb() function:\n\nmiriamsuzanne.com/2022/06/29/hwb…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Shay Davidson",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/efbf1ece13d16d6b335969d1864f9e7b5c7fa6c1c0f97d3056be90b10d79175c.jpg",
+        "url": "https://twitter.com/ShayHDavidson"
+      },
+      "url": "https://twitter.com/ShayHDavidson/status/1542543294315601920",
+      "published": "2022-06-30T16:19:15+00:00",
+      "wm-received": "2022-06-30T16:26:22Z",
+      "wm-id": 1425374,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1542543294315601920",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "content": {
+        "html": "מאמר ממש טוב על color spaces ודפדפנים\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/\"></a>\n<a href=\"https://twitter.com/terriblemia/status/1542523489072009216\">twitter.com/terriblemia/st…</a>",
+        "text": "מאמר ממש טוב על color spaces ודפדפנים\n\ntwitter.com/terriblemia/st…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam Argyle",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ecb57ab7c7fc113262d8bdbe1e11c6aa95146a7184ae4e596b9eefe48e5558a8.jpg",
+        "url": "https://twitter.com/argyleink"
+      },
+      "url": "https://twitter.com/argyleink/status/1542539328265416704",
+      "published": "2022-06-30T16:03:29+00:00",
+      "wm-received": "2022-06-30T16:26:21Z",
+      "wm-id": 1425372,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1542523489072009216/1542539328265416704",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "content": {
+        "html": "Somewhere between color theory &amp; CSS hwb() syntax, there is a field of duplicate &amp; un-useful grays – thanks to powerless color components, clamped ranges, and scaled ratios.\n\nA stroll through the gray areas of the hwb() function:\n\nmiriamsuzanne.com/2022/06/29/hwb…",
+        "text": "Somewhere between color theory & CSS hwb() syntax, there is a field of duplicate & un-useful grays – thanks to powerless color components, clamped ranges, and scaled ratios.\n\nA stroll through the gray areas of the hwb() function:\n\nmiriamsuzanne.com/2022/06/29/hwb…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vikram⚡️",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/16463b158ac5cb158492f5a9ab4e9f36108e750f42ea80a83f2b482843a7fafd.jpg",
+        "url": "https://twitter.com/VikramCodes"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-1276084844720787458",
+      "published": null,
+      "wm-received": "2022-06-30T16:26:20Z",
+      "wm-id": 1425371,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/1276084844720787458",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "CSS {IRL}",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/18cc05bb841dc1e9808263eb14eb1931263921e414673920d572eb4f6ee2a340.jpg",
+        "url": "https://twitter.com/CSSInRealLife"
+      },
+      "url": "https://twitter.com/CSSInRealLife/status/1542530091334238208",
+      "published": "2022-06-30T15:26:47+00:00",
+      "wm-received": "2022-06-30T15:34:33Z",
+      "wm-id": 1425298,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1542530091334238208",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "content": {
+        "html": "Super interesting read!\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/\"></a>",
+        "text": "Super interesting read!"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "탭",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/dadae40cd9bdff893c4851f2e4bbd4c4001966230a32f86b34f9d46c0caad76d.png",
+        "url": "https://twitter.com/tabatkins"
+      },
+      "url": "https://twitter.com/tabatkins/status/1542526127259848704",
+      "published": "2022-06-30T15:11:02+00:00",
+      "wm-received": "2022-06-30T15:34:32Z",
+      "wm-id": 1425296,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1542523489072009216/1542526127259848704",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "content": {
+        "html": "Somewhere between color theory &amp; CSS hwb() syntax, there is a field of duplicate &amp; un-useful grays – thanks to powerless color components, clamped ranges, and scaled ratios.\n\nA stroll through the gray areas of the hwb() function:\n\nmiriamsuzanne.com/2022/06/29/hwb…",
+        "text": "Somewhere between color theory & CSS hwb() syntax, there is a field of duplicate & un-useful grays – thanks to powerless color components, clamped ranges, and scaled ratios.\n\nA stroll through the gray areas of the hwb() function:\n\nmiriamsuzanne.com/2022/06/29/hwb…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael Dowden",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2b00f1a9d9284d7ca1b6807b6d8629e9080c2135547f189386d938810cc58e30.jpg",
+        "url": "https://twitter.com/mrdowden"
+      },
+      "url": "https://twitter.com/mrdowden/status/1542524667021250562",
+      "published": "2022-06-30T15:05:13+00:00",
+      "wm-received": "2022-06-30T15:34:32Z",
+      "wm-id": 1425297,
+      "wm-source": "https://brid.gy/repost/twitter/TerribleMia/1542523489072009216/1542524667021250562",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "content": {
+        "html": "Somewhere between color theory &amp; CSS hwb() syntax, there is a field of duplicate &amp; un-useful grays – thanks to powerless color components, clamped ranges, and scaled ratios.\n\nA stroll through the gray areas of the hwb() function:\n\nmiriamsuzanne.com/2022/06/29/hwb…",
+        "text": "Somewhere between color theory & CSS hwb() syntax, there is a field of duplicate & un-useful grays – thanks to powerless color components, clamped ranges, and scaled ratios.\n\nA stroll through the gray areas of the hwb() function:\n\nmiriamsuzanne.com/2022/06/29/hwb…"
+      },
+      "repost-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Johannes Odland 🏳️‍🌈",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a9882e9b684f606ecedd1f140e7a763e553db6b6aa60ce95cc34869979926210.jpg",
+        "url": "https://twitter.com/mrodland"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-109487800",
+      "published": null,
+      "wm-received": "2022-06-30T15:34:31Z",
+      "wm-id": 1425295,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/109487800",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dohány Tamás",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7dadbfa0cab46870a99912f6bbf506f64ac5ef97bf6774a06eb65deaf2113246.jpg",
+        "url": "https://twitter.com/iamdtms"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-2118861",
+      "published": null,
+      "wm-received": "2022-06-30T15:34:30Z",
+      "wm-id": 1425293,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/2118861",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Malinda",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/39f81f8595e3d236eddea8676a8042be2de151db339cafbfd3faeba7f172abb9.jpg",
+        "url": "https://twitter.com/BeerAndBlank"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-267425302",
+      "published": null,
+      "wm-received": "2022-06-30T15:34:30Z",
+      "wm-id": 1425294,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/267425302",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michelle Barker",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/46365cd70695ca723991011a6c5a8058ec0108b4b9b31244511b9dff925663c2.jpg",
+        "url": "https://twitter.com/MicheBarks"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-205775928",
+      "published": null,
+      "wm-received": "2022-06-30T15:34:29Z",
+      "wm-id": 1425290,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/205775928",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tom Finley 🌻",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/55fc5568999306c1ae73747d6cf61394b71164298b8f27eadabf8155ca861562.jpg",
+        "url": "https://twitter.com/tomfinley"
+      },
+      "url": "https://twitter.com/tomfinley/status/1542526302426636288",
+      "published": "2022-06-30T15:11:43+00:00",
+      "wm-received": "2022-06-30T15:34:29Z",
+      "wm-id": 1425291,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1542523489072009216/1542526302426636288",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "content": {
+        "html": "This is what makes me laugh at ding-songs who like to boastfully proclaim CSS is not a programming language.\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>",
+        "text": "This is what makes me laugh at ding-songs who like to boastfully proclaim CSS is not a programming language."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chad Henderson",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/6daee68ce4b7403a063a8b42ac7eb95c5811c5762683dd257ff37d2018d58a51.jpg",
+        "url": "https://twitter.com/elmofromok"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-4444",
+      "published": null,
+      "wm-received": "2022-06-30T15:34:29Z",
+      "wm-id": 1425292,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/4444",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Scott Kellum",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4f1f45e4bc0fc740621c71058f1297152626ad37cbb4be9e7ac61f248b4d0953.jpg",
+        "url": "https://twitter.com/ScottKellum"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1542523489072009216#favorited-by-14958412",
+      "published": null,
+      "wm-received": "2022-06-30T15:34:28Z",
+      "wm-id": 1425289,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1542523489072009216/14958412",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "like-of": "https://www.miriamsuzanne.com/2022/06/29/hwb-clamping/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

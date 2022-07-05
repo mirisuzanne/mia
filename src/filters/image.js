@@ -17,7 +17,7 @@ const imgOptions = {
   formats: ['avif', 'jpeg'],
 };
 const IMG_SRC = './content/images/';
-let imageTransformIndex = [];
+const imageTransformIndex = [];
 
 /* @docs
 label: image
@@ -84,19 +84,18 @@ const image = (
 
   // We need to know what the resultant files for each format
   // and size will be called. Let's take a peep.
-  for (const [format, options] of Object.entries(metadata)) {
+  for (const [format] of Object.entries(metadata)) {
     // for each format, let's look at each file size and get its outputPath
     metadata[format].forEach((thisSize) => {
-      // If the file has already been added to the build directory, we won't repeat that effort
-      if (fs.existsSync(thisSize.outputPath)) {
-        console.log(`Skipping processing for cached image: ${src} (${thisSize.filename})`);
-      }
-      // If this image has been requested for processing already, let's not duplicate effort
-      else if (imageTransformIndex.includes(thisSize.filename)) {
-        console.log(`Skipping processing for duplicate image: ${src} (${thisSize.filename})` );
-      }
-      // generate images; this is async but we don’t wait
-      else {
+      // If the file has already been added to the build directory,
+      // or this image has been requested for processing already,
+      // let's not duplicate effort.
+      if (
+        // eslint-disable-next-line no-sync
+        !fs.existsSync(thisSize.outputPath) &&
+        !imageTransformIndex.includes(thisSize.filename)
+      ) {
+        // eslint-disable-next-line no-console
         console.log(`Processing image: ${src} (${thisSize.filename})`);
         // Make a note that we're generating this image to avoid dupes
         imageTransformIndex.push(thisSize.filename);
@@ -104,7 +103,6 @@ const image = (
       }
     });
   }
-
 
   if (getUrl) {
     const data = metadata.jpeg[metadata.jpeg.length - 1];

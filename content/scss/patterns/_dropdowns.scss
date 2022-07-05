@@ -40,7 +40,7 @@
   }
 }
 
-[open] summary {
+[data-anchor][open] summary {
   z-index: 10;
 
   &::before {
