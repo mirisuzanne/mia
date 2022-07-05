@@ -42,7 +42,7 @@ there's no visual differentiation between
 a link, a paragraph, a heading, or a list.
 We can see that
 by using the
-[Ultimate CSS Reset](http://localhost:8888/2019/11/02/most-normal/):
+[Ultimate CSS Reset](/2019/11/02/most-normal/):
 
 ```css
 /* you can't get any more 'reset' than this */
