@@ -159,7 +159,18 @@ const domainblocklist = [
   // dont end any of these with  trailing slashes, as the DOM's URL.origin api doesn't give it to you so it will fail to filter
 ];
 
-const additions = ['websuite.info', 'thedevnews.com', 'hostingtom.com'];
+const additions = [
+  'websuite.info',
+  'thedevnews.com',
+  'hostingtom.com',
+  'aayugcreation.com',
+  'biharigraphic.com',
+  'www.indiatoday.host',
+  'tamsome.club',
+  'feedsbuzzs.com',
+  'thewebprice.com',
+  'codegeekslab.com',
+];
 
 const blocklist = _.uniq(
   [...domainblocklist, ...additions].map((source) =>

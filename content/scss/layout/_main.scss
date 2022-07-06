@@ -8,6 +8,7 @@
     [main-end] minmax(0, 0.5fr)
     [hero-end pull-end] minmax(var(--gutter), 1fr)
     [full-end];
+  overflow-wrap: break-word;
 
   > * {
     grid-column: var(--main-column, main);
