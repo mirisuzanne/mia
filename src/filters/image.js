@@ -13,8 +13,7 @@ category: File
 */
 
 const imgOptions = {
-  // widths: [480, 960, 1600],
-  widths: [960, 1600],
+  widths: [640, 960, 1600],
   formats: ['avif', 'jpeg'],
 };
 const IMG_SRC = './content/images/';

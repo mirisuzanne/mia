@@ -1,8 +1,9 @@
+@use '../tools';
 @use 'sass:math';
 @use 'sass:list';
 @use 'sass:string';
 
-$count: 15;
+$count: 5, 10, 15;
 $colors: ();
 
 html {
@@ -17,9 +18,11 @@ html {
   }
 }
 
-$circles: ();
+$small: ();
+$medium: ();
+$large: ();
 
-@for $i from 1 through $count {
+@for $i from 1 through list.nth($count, -1) {
   $x: math.random(100) * 1vw;
   $y: math.random(100) * 1vh;
   $r: math.random(15) + 5vmin;
@@ -29,11 +32,21 @@ $circles: ();
     hsl(var($color) / #{5% + math.random(10)}) $r,
     transparent calc(#{$r} + 2px)
   );
-  $circles: list.append($circles, fixed $grad, 'comma');
+  $small: if(
+    $i > list.nth($count, 1),
+    $small,
+    list.append($small, $grad, 'comma')
+  );
+  $medium: if(
+    $i > list.nth($count, 2),
+    $medium,
+    list.append($medium, fixed $grad, 'comma')
+  );
+  $large: list.append($large, fixed $grad, 'comma');
 }
 
 body {
-  background: $circles,
+  background: var(--circles, $small),
     radial-gradient(
         ellipse at top right,
         var(--ccs-accent--bg4),
@@ -49,4 +62,12 @@ body {
       )
       scroll;
   background-repeat: no-repeat;
+
+  @include tools.above('medium') {
+    --circles: #{$medium};
+  }
+
+  @include tools.above('wide') {
+    --circles: #{$large};
+  }
 }

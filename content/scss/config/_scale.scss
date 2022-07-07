@@ -1,4 +1,4 @@
-@use '../../../node_modules/accoutrement/sass/tools';
+@use '../tools';
 @use '../../../node_modules/sassdoc-theme-herman/scss/utilities' as herman;
 
 /// # Scale Configuration
@@ -10,16 +10,11 @@
 // -----------
 /// @sizes {ruler-large}
 /// @group config-scale
-$break: (
-  'page': 36em,
-  'medium': 54em,
-  'wide': 72em,
-);
+tools.$breakpoints: ('page': 36em, 'medium': 54em, 'wide': 72em);
 
-@include tools.add-sizes($break);
 @include herman.add(
   'sizes',
   'break',
-  $break,
+  tools.$breakpoints,
   get-function('size', $module: 'tools')
 );
