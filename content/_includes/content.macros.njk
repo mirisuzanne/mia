@@ -65,13 +65,14 @@
   embed=false,
   class=none,
   content=none,
-  img_class=''
+  img_class='',
+  attrs={}
 ) %}
 {%- set content = content if (content != none) else caller() -%}
 {%- set align = ('--align: %s;' % align) if align else none -%}
 {%- set attrs = {
   'class': [img_class, 'media-image'] | join(' ')
-} -%}
+} | merge(attrs) -%}
 <div data-media="" {{ utility.attr_if('style', align) }} {{ utility.attr_if('class', class) }}>
 {%- if embed -%}
 <div class="media-image">

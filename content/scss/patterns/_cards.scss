@@ -4,6 +4,8 @@
 
 [data-card-group] {
   border-inline-start: var(--border-width) solid var(--border);
+  content-visibility: auto;
+  contain-intrinsic-size: 0 5000px;
   display: flow-root;
   font-size: var(--font-small);
   margin: 0 var(--gutter);
@@ -102,7 +104,7 @@
 
 [data-card='inner'] {
   background: var(--overlay);
-  border: var(--border-width) solid var(--ccs-neutral--bg-full);
+  border: var(--border-width) solid var(--callout);
   max-width: clamp(45ch, 50vw, 60ch);
   padding: var(--gutter);
 

@@ -1,6 +1,525 @@
 {
-  "lastFetched": "2022-07-07T04:47:14.031Z",
+  "lastFetched": "2022-07-09T05:06:03.214Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hacker News 150",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e2b1d71bc586c7da470fded2d12c784d46da96f85d870f1cebceb147c3fe13e6.gif",
+        "url": "https://twitter.com/newsyc150"
+      },
+      "url": "https://twitter.com/newsyc150/status/1545507989184036867",
+      "published": "2022-07-08T20:39:53+00:00",
+      "wm-received": "2022-07-08T21:14:14Z",
+      "wm-id": 1430344,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545507989184036867",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "Body Margin 8px <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a> (<a href=\"https://bit.ly/3uwjyRy\">bit.ly/3uwjyRy</a>)",
+        "text": "Body Margin 8px miriamsuzanne.com/2022/07/04/bod… (bit.ly/3uwjyRy)"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Presbot",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/984b5bb0e3d8d0a257606002834e7c21e6c5e6267df9a3d14ebca9a243c3b5a5.jpg",
+        "url": "https://twitter.com/Presbot1"
+      },
+      "url": "https://twitter.com/Presbot1/status/1545483162742038528",
+      "published": "2022-07-08T19:01:14+00:00",
+      "wm-received": "2022-07-08T19:20:31Z",
+      "wm-id": 1430304,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545483162742038528",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "Body Margin 8px <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a> <a href=\"https://twitter.com/search?q=%23technews\">#technews</a> <a href=\"https://twitter.com/search?q=%23chatbots\">#chatbots</a> <a href=\"https://twitter.com/search?q=%23automation\">#automation</a> <a href=\"https://twitter.com/search?q=%23AI\">#AI</a> <a href=\"https://twitter.com/search?q=%23ML\">#ML</a>",
+        "text": "Body Margin 8px miriamsuzanne.com/2022/07/04/bod… #technews #chatbots #automation #AI #ML"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Wayne Kessler",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a8753b946265395def324760071afab3028298d751ecfaf77b45c3385cdcb776.jpg",
+        "url": "https://twitter.com/KFIweb"
+      },
+      "url": "https://twitter.com/KFIweb/status/1545461727252316161",
+      "published": "2022-07-08T17:36:03+00:00",
+      "wm-received": "2022-07-08T18:05:46Z",
+      "wm-id": 1430267,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545461727252316161",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "\"Nothing ever goes away completely.\"\n\nTrue true.\n\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "\"Nothing ever goes away completely.\"\n\nTrue true.\n\nmiriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adrian Nowicki",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d8242585ab726b6ab5d2a08cd8f1f6a5d3bd62853ec7a9745424493080ed8898.jpg",
+        "url": "https://twitter.com/AdrianNowicki"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1544333446981500928#favorited-by-364500878",
+      "published": null,
+      "wm-received": "2022-07-08T16:39:20Z",
+      "wm-id": 1430235,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1544333446981500928/364500878",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "like-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthias Ott",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a34d0a855d4336e07245950e108a3d322445dabff46cfb01e805208ca3d8abcc.jpg",
+        "url": "https://twitter.com/m_ott"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1544333446981500928#favorited-by-58448784",
+      "published": null,
+      "wm-received": "2022-07-08T16:39:20Z",
+      "wm-id": 1430236,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1544333446981500928/58448784",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "like-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "雑u Bot",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4e9193c3510664baab80796606098ff58721f4c958ec01e87e65a88b13cd3233.jpg",
+        "url": "https://twitter.com/matsuu_zatsu"
+      },
+      "url": "https://twitter.com/matsuu_zatsu/status/1545429493447270409",
+      "published": "2022-07-08T15:27:58+00:00",
+      "wm-received": "2022-07-08T15:49:30Z",
+      "wm-id": 1430223,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545429493447270409",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "Body Margin 8px <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "Body Margin 8px miriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "La Voix du Chat Artiste",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b6d74155f24a7402474810318c7a6f5c1d24300453363bf25377b23170efb70e.jpg",
+        "url": "https://twitter.com/42s_video"
+      },
+      "url": "https://twitter.com/42s_video/status/1545373005395681280",
+      "published": "2022-07-08T11:43:30+00:00",
+      "wm-received": "2022-07-08T11:51:29Z",
+      "wm-id": 1430121,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545373005395681280",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "The origin story for a style no one wants \n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "The origin story for a style no one wants \nmiriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Max Glenister",
+        "photo": "https://webmention.io/avatar/social.omgmog.net/b4dc6ceb5e9ac4030bb6bdc007c4b6193808420c2a44f1561ed5f28182f65d36.png",
+        "url": "https://social.omgmog.net/profile/max"
+      },
+      "url": "https://social.omgmog.net/2022/one-of-many-default-browser-styles-that",
+      "published": "2022-07-08T10:48:18+00:00",
+      "wm-received": "2022-07-08T10:48:20Z",
+      "wm-id": 1430108,
+      "wm-source": "https://social.omgmog.net/2022/one-of-many-default-browser-styles-that",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "syndication": ["https://indieweb.social/@omgmog/108611325063660784"],
+      "content": {
+        "html": "<p>One of many default browser styles that I always change!</p>\n<blockquote>\n<p>All browsers add an 8px margin on the body element – it’s part of the w3c-recommended default stylesheet which browsers generally use as a starting point for their own ‘user agent’ styles. But why 8px? Where does that come from?</p>\n</blockquote>\n<p><a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/</a></p>",
+        "text": "One of many default browser styles that I always change!\n\nAll browsers add an 8px margin on the body element – it’s part of the w3c-recommended default stylesheet which browsers generally use as a starting point for their own ‘user agent’ styles. But why 8px? Where does that come from?\n\nhttps://www.miriamsuzanne.com/2022/07/04/body-margin-8px/"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Teal þemme Starsong",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ea9a53aa16019d386e2886b8694fdb9682b69273f79542aa8c01e44491e6fddf.jpg",
+        "url": "https://twitter.com/teal_is"
+      },
+      "url": "https://twitter.com/teal_is/status/1545303765879758852",
+      "published": "2022-07-08T07:08:22+00:00",
+      "wm-received": "2022-07-08T07:31:51Z",
+      "wm-id": 1430058,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545303765879758852",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "The iron grip of legacy\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "The iron grip of legacy\nmiriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matteo � Pescarin",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cba514597fc3a8295af68024a26f7b0113796df93fa24898ad450a8a55c151b2.jpg",
+        "url": "https://twitter.com/ilpeach"
+      },
+      "url": "https://twitter.com/ilpeach/status/1545288151643586560",
+      "published": "2022-07-08T06:06:20+00:00",
+      "wm-received": "2022-07-08T06:28:50Z",
+      "wm-id": 1430042,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545288151643586560",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "Nice history on the origin of the default browser style Body Margin 8px - <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "Nice history on the origin of the default browser style Body Margin 8px - miriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hacker News",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/dbbe43a420ab5dbb48af9555b26f0626d8415b0bcb6dca601876bc6ed45ff0ac.png",
+        "url": "https://twitter.com/Hacker__News"
+      },
+      "url": "https://twitter.com/Hacker__News/status/1545289961871736834",
+      "published": "2022-07-08T06:13:31+00:00",
+      "wm-received": "2022-07-08T06:28:45Z",
+      "wm-id": 1430041,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545289961871736834",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "photo": ["https://pbs.twimg.com/media/FXH5CC-XEAAD7fw.jpg"],
+      "content": {
+        "html": "Body Margin 8px\n\n<a href=\"https://twitter.com/search?q=%23default\">#default</a> <a href=\"https://twitter.com/search?q=%23ul\">#ul</a> <a href=\"https://twitter.com/search?q=%23dir\">#dir</a> <a href=\"https://twitter.com/search?q=%23menu\">#menu</a> <a href=\"https://twitter.com/search?q=%23ol\">#ol</a> <a href=\"https://twitter.com/search?q=%23body\">#body</a> <a href=\"https://twitter.com/search?q=%23margin\">#margin</a> <a href=\"https://twitter.com/search?q=%23display\">#display</a> <a href=\"https://twitter.com/search?q=%23styles\">#styles</a> <a href=\"https://twitter.com/search?q=%238px\">#8px</a> <a href=\"https://twitter.com/search?q=%23browsers\">#browsers</a> <a href=\"https://twitter.com/search?q=%23css\">#css</a>\n\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "Body Margin 8px\n\n#default #ul #dir #menu #ol #body #margin #display #styles #8px #browsers #css\n\nmiriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hacker News 100",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/84ed93bbecd6a27883192a0f2c680b32c35e4d17fe2004465c80cd34957a4440.gif",
+        "url": "https://twitter.com/newsyc100"
+      },
+      "url": "https://twitter.com/newsyc100/status/1545283760119316483",
+      "published": "2022-07-08T05:48:53+00:00",
+      "wm-received": "2022-07-08T05:54:12Z",
+      "wm-id": 1430028,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545283760119316483",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "Body Margin 8px <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a> (<a href=\"https://bit.ly/3uwjyRy\">bit.ly/3uwjyRy</a>)",
+        "text": "Body Margin 8px miriamsuzanne.com/2022/07/04/bod… (bit.ly/3uwjyRy)"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "新山祐介 (Yusuke Shinyama)",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/395041bdf0ca5efa42cb80dc9cce6a1e0acabec6124d3a84e1882059f387feeb.jpg",
+        "url": "https://twitter.com/mootastic"
+      },
+      "url": "https://twitter.com/mootastic/status/1545236122791727104",
+      "published": "2022-07-08T02:39:35+00:00",
+      "wm-received": "2022-07-08T03:02:54Z",
+      "wm-id": 1430004,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545236122791727104",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "W3C勧告によれば、すべてのブラウザはデフォルトでbodyタグの内側に8pxのマージンを入れている。これはCSS2.2で規定されているが、もとは一体どこから来たのか? 追跡の結果、これはCSSが発明される前の Mosaicの仕様がそのまま標準になっていたことが判明。\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "W3C勧告によれば、すべてのブラウザはデフォルトでbodyタグの内側に8pxのマージンを入れている。これはCSS2.2で規定されているが、もとは一体どこから来たのか? 追跡の結果、これはCSSが発明される前の Mosaicの仕様がそのまま標準になっていたことが判明。\nmiriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jeremy Lu",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4309754539e4b7efc50b0e762f37c31beaf9e42825f8f0a753c4dffe5aeae0ab.png",
+        "url": "https://twitter.com/thecat"
+      },
+      "url": "https://twitter.com/thecat/status/1545233671359148033",
+      "published": "2022-07-08T02:29:50+00:00",
+      "wm-received": "2022-07-08T03:02:54Z",
+      "wm-id": 1430005,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545233671359148033",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "等等 任何有尊嚴的設計師與前端不早都用 rm 取代 px 了嗎？🤗\n\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "等等 任何有尊嚴的設計師與前端不早都用 rm 取代 px 了嗎？🤗\n\nmiriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Presbot",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/984b5bb0e3d8d0a257606002834e7c21e6c5e6267df9a3d14ebca9a243c3b5a5.jpg",
+        "url": "https://twitter.com/Presbot1"
+      },
+      "url": "https://twitter.com/Presbot1/status/1545241530339844097",
+      "published": "2022-07-08T03:01:04+00:00",
+      "wm-received": "2022-07-08T03:02:53Z",
+      "wm-id": 1430003,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545241530339844097",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "Body Margin 8px <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a> <a href=\"https://twitter.com/search?q=%23technews\">#technews</a> <a href=\"https://twitter.com/search?q=%23chatbots\">#chatbots</a> <a href=\"https://twitter.com/search?q=%23automation\">#automation</a> <a href=\"https://twitter.com/search?q=%23AI\">#AI</a> <a href=\"https://twitter.com/search?q=%23ML\">#ML</a>",
+        "text": "Body Margin 8px miriamsuzanne.com/2022/07/04/bod… #technews #chatbots #automation #AI #ML"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ivan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d629b470776662c04ab3a094fa0cf0a2e5d491150c90ee8dcca6774df0f7daa2.jpg",
+        "url": "https://twitter.com/notegone"
+      },
+      "url": "https://twitter.com/notegone/status/1545214792192778240",
+      "published": "2022-07-08T01:14:49+00:00",
+      "wm-received": "2022-07-08T01:32:23Z",
+      "wm-id": 1429981,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545214792192778240",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a> body { margin: 8px; } origin story",
+        "text": "miriamsuzanne.com/2022/07/04/bod… body { margin: 8px; } origin story"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "HackerNewsTop10",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4e5aa34303522645198859652b35d618aba11e86363fc63b03ad229df9caae33.jpg",
+        "url": "https://twitter.com/HackerNewsTop10"
+      },
+      "url": "https://twitter.com/HackerNewsTop10/status/1545208906665889794",
+      "published": "2022-07-08T00:51:26+00:00",
+      "wm-received": "2022-07-08T01:32:23Z",
+      "wm-id": 1429982,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545208906665889794",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "Body Margin 8px\nLink: <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a>\nComments: <a href=\"https://news.ycombinator.com/item?id=32012171\">news.ycombinator.com/item?id=320121…</a>",
+        "text": "Body Margin 8px\nLink: miriamsuzanne.com/2022/07/04/bod…\nComments: news.ycombinator.com/item?id=320121…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrew Malek",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fdd48ae8688c95e8aa68bba7153f360227d7df7a3c8f1e5a0e21389f91c11864.jpg",
+        "url": "https://twitter.com/malekontheweb"
+      },
+      "url": "https://twitter.com/malekontheweb/status/1545215749035261954",
+      "published": "2022-07-08T01:18:37+00:00",
+      "wm-received": "2022-07-08T01:32:22Z",
+      "wm-id": 1429980,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545215749035261954",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "\"It makes some sense to me that we would want some default spacing around the edges of our document, but why 8px? Where did that come from?\" <a href=\"https://twitter.com/search?q=%23history\">#history</a> <a href=\"https://twitter.com/search?q=%23web\">#web</a> <a href=\"https://twitter.com/search?q=%23css\">#css</a> <a href=\"https://twitter.com/search?q=%23browsers\">#browsers</a> <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "\"It makes some sense to me that we would want some default spacing around the edges of our document, but why 8px? Where did that come from?\" #history #web #css #browsers miriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Winson Tang",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a4b4ceb1e1566f3e65d866ac64d8d7c1d615f927ebd0c31a7395b8fe5d2be852.jpg",
+        "url": "https://twitter.com/winsontang"
+      },
+      "url": "https://twitter.com/winsontang/status/1545200265191600129",
+      "published": "2022-07-08T00:17:06+00:00",
+      "wm-received": "2022-07-08T00:39:49Z",
+      "wm-id": 1429974,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545200265191600129",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "photo": ["https://pbs.twimg.com/media/FXGnc9gUsAAj6xw.jpg"],
+      "content": {
+        "html": "Body Margin 8px <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner&amp;utm_source=dlvr.it&amp;utm_medium=twitter\">miriamsuzanne.com/2022/07/04/bod…</a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\"></a>",
+        "text": "Body Margin 8px miriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "HN Front Page",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f62929d0a92700ab725c84e5ab3bef64ae5cfc1d462934d3eb81ae6559c63412.png",
+        "url": "https://twitter.com/hn_frontpage"
+      },
+      "url": "https://twitter.com/hn_frontpage/status/1545198030739103746",
+      "published": "2022-07-08T00:08:13+00:00",
+      "wm-received": "2022-07-08T00:39:48Z",
+      "wm-id": 1429973,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545198030739103746",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "Body Margin 8px\nL: <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a>\nC: <a href=\"https://news.ycombinator.com/item?id=32012171\">news.ycombinator.com/item?id=320121…</a>",
+        "text": "Body Margin 8px\nL: miriamsuzanne.com/2022/07/04/bod…\nC: news.ycombinator.com/item?id=320121…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hacker News",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bd356e0cf7174aed2286323e5c0af0fbd2ba52cddb77eadd4520eb5f7f4a27b8.png",
+        "url": "https://twitter.com/HNTweets"
+      },
+      "url": "https://twitter.com/HNTweets/status/1545198490166460416",
+      "published": "2022-07-08T00:10:03+00:00",
+      "wm-received": "2022-07-08T00:39:47Z",
+      "wm-id": 1429972,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545198490166460416",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "Body Margin 8px: <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a> Comments: <a href=\"https://news.ycombinator.com/item?id=32012171\">news.ycombinator.com/item?id=320121…</a>",
+        "text": "Body Margin 8px: miriamsuzanne.com/2022/07/04/bod… Comments: news.ycombinator.com/item?id=320121…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Wellington Mendoza",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/46be1d46ba013f45646595ed9e9a21b24bffd9beef3ac9adade49dcf9b80a3ae.jpg",
+        "url": "https://twitter.com/well1791"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1544333446981500928#favorited-by-1388920030398660610",
+      "published": null,
+      "wm-received": "2022-07-07T20:48:17Z",
+      "wm-id": 1429905,
+      "wm-source": "https://brid.gy/like/twitter/TerribleMia/1544333446981500928/1388920030398660610",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "like-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Heilmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0eb944c23ebf6172e3bdf2b6d210afb30c0d19a90752469c31a2e470d4d5d577.jpg",
+        "url": "https://twitter.com/codepo8"
+      },
+      "url": "https://twitter.com/codepo8/status/1545043899206344705",
+      "published": "2022-07-07T13:55:45+00:00",
+      "wm-received": "2022-07-07T14:32:29Z",
+      "wm-id": 1429702,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1545043899206344705",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "BODY MARGIN 8PX\nThe origin story for a style no one wants\n\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a> \n\nBy <a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a>",
+        "text": "BODY MARGIN 8PX\nThe origin story for a style no one wants\n\nmiriamsuzanne.com/2022/07/04/bod… \n\nBy @TerribleMia"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Frédéric C",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c06acc6e91776b5ed837b5497dde65df112dc74b1feb36f5d5e7a33d0cc7d3b6.jpg",
+        "url": "https://twitter.com/Frederic_C"
+      },
+      "url": "https://twitter.com/Frederic_C/status/1544917133125107712",
+      "published": "2022-07-07T05:32:02+00:00",
+      "wm-received": "2022-07-07T05:34:58Z",
+      "wm-id": 1429351,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1544917133125107712",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "La passionnante archéologie du webdesign. 🤩\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\"></a>",
+        "text": "La passionnante archéologie du webdesign. 🤩"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

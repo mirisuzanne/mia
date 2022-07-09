@@ -2,6 +2,8 @@
 
 [data-section='mentions'] {
   --face-pile: calc(var(--gutter) * 3);
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
   display: grid;
   grid-template-columns:
     minmax(var(--gutter), 1fr)
@@ -96,16 +98,6 @@
     @include fonts.var('italic');
     color: var(--text-light);
     font-size: var(--font-small);
-  }
-
-  [href*='twitter.com']:empty {
-    color: var(--text-light);
-    display: inline-block;
-    font-size: var(--font-small);
-
-    &::before {
-      content: '» ' attr(href);
-    }
   }
 }
 

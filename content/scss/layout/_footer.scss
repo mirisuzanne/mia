@@ -1,4 +1,6 @@
 [data-layout='footer'] {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 1000px;
   display: grid;
   grid:
     auto auto 1fr / 2fr [content-start] minmax(min-content, var(--double-page))

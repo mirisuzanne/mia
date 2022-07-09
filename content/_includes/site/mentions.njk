@@ -29,7 +29,7 @@
   {%- if facepile | length -%}
     <div class="webmentions-facepile">
       {%- for author in facepile | reverse -%}
-        {%- set photo %}<img src="{{ author.photo }}" title="{{ author.name }}" alt="" class="webmentions-face" />{% endset -%}
+        {%- set photo %}<img src="{{ author.photo }}" alt="{{ author.name }}" class="webmentions-face" width="48" height="48" loading="lazy"/>{% endset -%}
         {{ utility.link_if(
           photo,
           author.url,
@@ -55,7 +55,8 @@
         src=webmention.author.photo or 'icons/webmention-avatar-default.svg',
         alt=webmention.author.name if webmention.author.photo else '',
         class=class,
-        img_class=img_class
+        img_class=img_class,
+        attrs={'width': '48', 'height': '48'}
       ) %}
         <h3 class="webmention-author{% if webmention.author %} p-name{% endif %}">
           <a class="u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">

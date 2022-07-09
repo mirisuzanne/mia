@@ -1,6 +1,8 @@
 @use '../config/fonts';
 
 [data-orgs='section'] {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 1000px;
   grid-row-gap: var(--gutter);
   margin-bottom: var(--spacer);
 }

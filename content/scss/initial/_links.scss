@@ -30,10 +30,14 @@ a {
     --link-color: var(--ccs-accent--fg2);
     --link-hover: var(--ccs-accent--fg4);
   }
+
+  &:empty {
+    display: none;
+  }
 }
 
 :where([href*='://'], [data-offsite]) {
-  &:not(:empty)::after {
+  &::after {
     content: '↗';
     text-decoration: none;
     font-size: var(--font-smaller);
