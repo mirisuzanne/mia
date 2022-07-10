@@ -1,0 +1,21 @@
+---
+title: Drafts
+draft: false
+---
+
+{% import "utility.macros.njk" as utility %}
+{% set drafts = collections.all | filter('data.draft') %}
+
+{% if drafts.length > 0 %}
+<ul>
+  {% for draft in drafts %}
+  <li>
+    <strong>{{ utility.datetime(draft.data.date) }}</strong> —
+    <em>{{ utility.link_if(
+      content=(draft.data.banner or draft.data.title) | mdInline,
+      url=draft.url
+    ) }}</em>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
