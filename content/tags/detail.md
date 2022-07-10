@@ -6,9 +6,8 @@ pagination:
   alias: tag
 permalink: /tags/{{ tag | slug }}/
 eleventyComputed:
-  title: 'Just {{ tag }}'
-  banner: 'Just {{ tag }} and Nothing Else'
-  calendar: '{{ tag }}'
+  title: 'All {{ tag }}'
+  index: '{{ tag }}'
 eleventyExcludeFromCollections: true
 ---
 

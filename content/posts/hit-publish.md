@@ -5,7 +5,6 @@ date: 2022-06-17
 tags:
   - indieweb
   - writing
-  - notes
 summary: |
   This post has been written
   and published,

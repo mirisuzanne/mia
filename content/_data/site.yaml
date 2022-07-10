@@ -11,7 +11,6 @@ icon: icons/miriam.svg
 nav:
   home: /
   about: /who/
-  tags: /tags/
   contact: /contact/
   rss: /feed.xml
 og:

@@ -38,7 +38,7 @@ const webMentions = (mentions) => {
   // define which types of webmentions should be included per URL.
   // possible values listed here:
   // https://github.com/aaronpk/webmention.io#find-links-of-a-specific-type-to-a-specific-page
-  const allowedTypes = ['mention-of', 'in-reply-to', 'bookmark-of'];
+  const allowedTypes = ['mention-of', 'in-reply-to'];
 
   // clean webmention content for output
   const clean = (entry) => {

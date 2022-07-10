@@ -1,5 +1,5 @@
 ---
-title: Browse Everything by Tags
+title: Browse by Tags
 show_tags: true
 eleventyExcludeFromCollections: true
 ---

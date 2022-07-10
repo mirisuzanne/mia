@@ -68,7 +68,7 @@
   tag,
   all
 ) %}
-  {% set data = all[tag] | withTag('_calendar') %}
+  {% set data = all[tag] | getPublic %}
   {% if data %}
     <ul>
     {% for item in data | byDate | only(0, 5) %}

@@ -9,9 +9,9 @@
 ) %}
   {% set section_title = 'episodes' %}
   {% set org_title = 'current orgs' %}
-  {% set page = collections.all | getPage(page) %}
-  {% set events = page | getEvents %}
-  {% set page = page | first %}
+  {% set pages = collections.all | getPage(page) %}
+  {% set page = pages | first %}
+  {% set events = pages | getEvents if (page.data.events) else none %}
   {% set all_orgs = (events_group == 'all_orgs') %}
 
   {% if events_group == 'all' %}

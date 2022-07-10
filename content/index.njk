@@ -2,7 +2,7 @@
 title: art & code
 banner: Miriam Suzanne
 sub: show_tags
-calendar: recent
+index: recent
 summary: |
   **Hello lovely** --- \
   I'm [Miriam](/who/).
@@ -10,29 +10,3 @@ summary: |
   that celebrate queerness & diversity.
   One size never fits all.
 ---
-{% import "content.macros.njk" as content %}
-
-<div class="home-cards">
-  <a href="/orgs/oddbird/" data-home="logo">
-    {{ content.svg('icons/oddbird', 'OddBird') }}
-  </a>
-  <div data-home="video">
-    {{ content.iframe('https://player.vimeo.com/video/203945682') }}
-  </div>
-  <a href="/books/sidesaddle/" data-home="image">
-    {{ 'writing/sidesaddle/box.jpg' | img(
-      'Riding SideSaddle*, Miriam Eric Suzanne, a novel (in a 3x5 box)'
-    ) | safe }}
-  </a>
-  <div data-home="video">
-    {{ content.iframe('https://player.vimeo.com/video/691514550') }}
-  </div>
-  <a href="/orgs/grapefruit-lab/" data-home="image">
-    {{ 'art/theater/pity/18-20-39.jpg' | img(
-      'Miriam in Pity+Fear, lit from below, with her hands pulling away from her chest.'
-    ) | safe }}
-  </a>
-  <div data-home="video">
-    {{ content.iframe('https://www.youtube.com/embed/aHUtMbJw8iA') }}
-  </div>
-</div>
