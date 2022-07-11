@@ -50,7 +50,7 @@
           {% if webmention.author.photo %}
             {% face webmention.author.photo, webmention.author.name, img_class %}
           {% else %}
-            {{ 'icons/webmention-avatar-default.svg' | img('default avatar', 'media', {'class': img_class}) }}
+            {{ 'icons/webmention-avatar-default.svg' | img('default avatar', 'media', {'class': img_class}) | safe }}
           {% endif %}
         </div>
           <div class="media-text">
