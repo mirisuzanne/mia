@@ -21,7 +21,7 @@
       <sy:updateFrequency>1</sy:updateFrequency>
       <generator>Eleventy</generator>
       <image>
-        <url>{{ 'headshots/rss.jpg' | img('','default',{},true) | absoluteUrl(site.url) }}</url>
+        <url>{{ 'headshots/rss.jpg' | imgSrc | absoluteUrl(site.url) }}</url>
         <title>{{ site.title }}</title>
         <link>{{ site.url | url }}</link>
         <width>144</width>

@@ -7,8 +7,8 @@
   <id>{{ site.url }}</id>
   <link href="{{ page.url | absoluteUrl(site.url) }}" rel="self"/>
   <link href="{{ site.url }}"/>
-  <icon>{{ 'headshots/rss.jpg' | img('','default',{},true) | absoluteUrl(site.url) }}</icon>
-  <logo>{{ 'headshots/atom.jpg' | img('','default',{},true) | absoluteUrl(site.url) }}</logo>
+  <icon>{{ 'headshots/rss.jpg' | imgSrc | absoluteUrl(site.url) }}</icon>
+  <logo>{{ 'headshots/atom.jpg' | imgSrc | absoluteUrl(site.url) }}</logo>
   <updated>{{ posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <rights>© {% getDate 'year' %} {{ site.author }}</rights>
   <generator>Eleventy</generator>

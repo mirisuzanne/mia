@@ -1,3 +1,4 @@
+/* eslint-disable no-sync */
 /* eslint-disable no-console */
 'use strict';
 
@@ -12,12 +13,38 @@ label: Responsive Images
 category: File
 */
 
+const imgAttrs = {
+  loading: 'lazy',
+  decoding: 'async',
+};
+
 const imgOptions = {
   widths: [640, 960, 1600],
   formats: ['avif', 'jpeg'],
+  sharpJpegOptions: {
+    quality: 80, // default
+    progressive: true,
+  },
+  sharpAvifOptions: {
+    quality: 80,
+  },
 };
 const IMG_SRC = './content/images/';
 const imageTransformIndex = [];
+
+const getSizes = (sizes) => {
+  const defaultSizes = {
+    default: '(min-width: 65em) 60vw, 95vw',
+    hero: '(min-width: 75em) 75vw, 95vw',
+    gallery: '(min-width: 65em) 30vw, (min-width: 30em) 45vw, 95vw',
+    media: '(min-width: 65em) 15vw, (min-width: 30em) 30vw, 50vw',
+    face: '250w',
+  };
+
+  return sizes && defaultSizes[sizes]
+    ? defaultSizes[sizes]
+    : sizes || defaultSizes.default;
+};
 
 /* @docs
 label: image
@@ -47,7 +74,7 @@ params:
     note: |
       Returns url to largest jpeg image instead of full HTML
 */
-const image = (
+const getImage = (
   src,
   alt = '',
   sizes = 'default',
@@ -66,17 +93,11 @@ const image = (
     // eslint-disable-next-line no-console
     console.warn(`Unexpected image source path: "${src}"`);
   }
+
   const opts = {
     ...imgOptions,
     outputDir,
     urlPath,
-    sharpJpegOptions: {
-      quality: 80, // default
-      progressive: true,
-    },
-    sharpAvifOptions: {
-      quality: 80,
-    },
   };
 
   // eslint-disable-next-line no-sync
@@ -91,16 +112,10 @@ const image = (
       // If the file has already been added to the build directory,
       // we won't repeat that effort
       // eslint-disable-next-line no-sync
-      if (fs.existsSync(thisSize.outputPath)) {
-        console.log(`Skipping cached image: ${src} (${thisSize.filename})`);
-      }
-      // If this image has been requested for processing already,
-      // let's not duplicate effort
-      else if (imageTransformIndex.includes(thisSize.filename)) {
-        console.log(`Skipping duplicate image: ${src} (${thisSize.filename})`);
-      }
-      // generate images; this is async but we don’t wait
-      else {
+      if (
+        !fs.existsSync(thisSize.outputPath) &&
+        !imageTransformIndex.includes(thisSize.filename)
+      ) {
         console.log(`Processing image: ${src} (${thisSize.filename})`);
         // Make a note that we're generating this image to avoid dupes
         imageTransformIndex.push(thisSize.filename);
@@ -114,24 +129,11 @@ const image = (
     return data.url;
   }
 
-  const defaultSizes = {
-    default: '(min-width: 65em) 60vw, 95vw',
-    hero: '(min-width: 75em) 75vw, 95vw',
-    gallery: '(min-width: 65em) 30vw, (min-width: 30em) 45vw, 95vw',
-    media: '(min-width: 65em) 15vw, (min-width: 30em) 30vw, 50vw',
-  };
-
-  const imgSizes =
-    sizes && defaultSizes[sizes]
-      ? defaultSizes[sizes]
-      : sizes || defaultSizes.default;
-
   const imageAttributes = _.merge(
     {
+      ...imgAttrs,
       alt,
-      sizes: imgSizes,
-      loading: 'lazy',
-      decoding: 'async',
+      sizes: getSizes(sizes),
     },
     attrs || {},
   );
@@ -141,6 +143,38 @@ const image = (
   });
 };
 
+const face = async (src, alt, className = null) => {
+  const outputDir = './_site/images/_ext/';
+  const urlPath = '/images/_ext/';
+
+  const opts = {
+    ...imgOptions,
+    outputDir,
+    urlPath,
+  };
+
+  const metadata = await eleventyImg(src, opts);
+
+  const imageAttributes = {
+    ...imgAttrs,
+    alt,
+    class: className,
+    sizes: getSizes('face'),
+  };
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return eleventyImg.generateHTML(metadata, imageAttributes, {
+    whitespaceMode: 'inline',
+  });
+};
+
+const image = (src, alt = '', sizes = 'default', attrs = {}) =>
+  getImage(src, alt, sizes, attrs);
+
+const imgSrc = (src) => getImage(src, null, null, {}, true);
+
 module.exports = {
   image,
+  imgSrc,
+  face,
 };

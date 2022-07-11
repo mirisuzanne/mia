@@ -66,7 +66,8 @@
   class=none,
   content=none,
   img_class='',
-  attrs={}
+  attrs={},
+  size=none
 ) %}
 {%- set content = content if (content != none) else caller() -%}
 {%- set align = ('--align: %s;' % align) if align else none -%}
@@ -74,16 +75,14 @@
   'class': [img_class, 'media-image'] | join(' ')
 } | merge(attrs) -%}
 <div data-media="" {{ utility.attr_if('style', align) }} {{ utility.attr_if('class', class) }}>
-{%- if embed -%}
+{%- if embed == 'src' -%}
+{{ src | safe }}
+{%- elif embed -%}
 <div class="media-image">
 {%- include src -%}
 </div>
 {%- else -%}
-{%- if '://' in src -%}
-<img src="{{ src | url }}" alt="{{ alt }}" {{ utility.show_attrs(attrs) }} />
-{%- else -%}
-{{ src | img(alt, 'media', attrs) | safe }}
-{%- endif -%}
+{{ src | img(alt, 'media', attrs, size) | safe }}
 {%- endif -%}
 <div class="media-text">
 {{ content | safe }}
@@ -282,7 +281,8 @@ params:
     {{- item.img | img(
       item.alt,
       none if full_width else 'gallery',
-      {'style': style}
+      {'style': style},
+      [item.width, item.height]
     ) | safe -}}
   {%- elif item.svg -%}
     {{- svg(item.svg, item.alt) | safe -}}

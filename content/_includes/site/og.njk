@@ -1,4 +1,4 @@
-{%- set og_image = (hero.img or site.og.img) | img('','default',{},true) | absoluteUrl(site.url)  -%}
+{%- set og_image = (hero.img or site.og.img) | imgSrc | absoluteUrl(site.url)  -%}
 
 <meta property="og:locale" content="{{ site.og.locale }}" />
 <meta property="og:type" content="{{ og.type or site.og.type }}" />

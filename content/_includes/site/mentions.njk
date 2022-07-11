@@ -29,16 +29,11 @@
   {%- if facepile | length -%}
     <div class="webmentions-facepile">
       {%- for author in facepile | reverse -%}
-        {%- set photo %}<img src="{{ author.photo }}" alt="{{ author.name }}" class="webmentions-face" width="48" height="48" loading="lazy"/>{% endset -%}
-        {{ utility.link_if(
-          photo,
-          author.url,
-          {
-            'class': 'facepile-url',
-            'rel': 'noopener noreferrer',
-            'data-mention': author.property | join(' ')
-          }
-        ) }}
+        {% if author.url %}
+          <a href="{{ author.url }}" rel="noopener noreferrer" class="facepile-url" data-mention="{{ author.property | join(' ') }}">{% face author.photo, author.name, 'webmentions-face' %}</a>
+        {% else %}
+          <span class="facepile-url" data-mention="{{ author.property | join(' ') }}">{% face author.photo, author.name, 'webmentions-face' %}</span>
+        {% endif %}
       {%- endfor -%}
     </div>
   {%- endif -%}
@@ -50,29 +45,31 @@
 
       {%- set img_class = 'webmention-author-photo' -%}
       {%- set img_class = [img_class, 'u-photo'] | join(' ') if webmention.author.photo else img_class -%}
-
-      {%- call content.media(
-        src=webmention.author.photo or 'icons/webmention-avatar-default.svg',
-        alt=webmention.author.name if webmention.author.photo else '',
-        class=class,
-        img_class=img_class,
-        attrs={'width': '48', 'height': '48'}
-      ) %}
-        <h3 class="webmention-author{% if webmention.author %} p-name{% endif %}">
-          <a class="u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-            {{- webmention.author.name -}}
-          </a>
-        </h3>
-
-        {{ utility.datetime(
-          pubdate=webmention.published,
-          format='long'
-        ) }}
-
-        <div class="webmention-content p-content">
-          {{ webmention.content.value | safe }}
+      <div data-media="" class="{{ class }}">
+        <div class="media-image">
+          {% if webmention.author.photo %}
+            {% face webmention.author.photo, webmention.author.name, img_class %}
+          {% else %}
+            {{ 'icons/webmention-avatar-default.svg' | img('default avatar', 'media', {'class': img_class}) }}
+          {% endif %}
         </div>
-      {% endcall %}
+          <div class="media-text">
+          <h3 class="webmention-author{% if webmention.author %} p-name{% endif %}">
+            <a class="u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+              {{- webmention.author.name -}}
+            </a>
+          </h3>
+
+          {{ utility.datetime(
+            pubdate=webmention.published,
+            format='long'
+          ) }}
+
+          <div class="webmention-content p-content">
+            {{ webmention.content.value | safe }}
+          </div>
+        </div>
+      </div>
 
     </article>
   {% endfor %}

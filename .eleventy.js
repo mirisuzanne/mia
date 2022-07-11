@@ -57,6 +57,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('date', time.date);
 
   eleventyConfig.addFilter('img', image.image);
+  eleventyConfig.addFilter('imgSrc', image.imgSrc);
+  eleventyConfig.addNunjucksAsyncShortcode('face', image.face);
 
   eleventyConfig.addFilter('mentionsForUrl', mentions.forUrl);
   eleventyConfig.addFilter('webLikes', mentions.likes);
