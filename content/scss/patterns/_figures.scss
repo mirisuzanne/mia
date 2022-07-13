@@ -43,7 +43,7 @@ img {
   display: grid;
   grid-gap: var(--shim);
   grid-template-columns:
-    [full-start] repeat(auto-fit, minmax(min(12em + 2vw, 100%), 1fr))
+    [full-start] repeat(auto-fit, minmax(min(14em + 3vw, 100%), 1fr))
     [full-end];
 
   img,
@@ -58,8 +58,9 @@ img {
 }
 
 [data-figure='caption'] {
+  --block-spacing: 0;
   font-size: var(--font-small);
-  margin-top: var(--half-shim);
+  margin-top: var(--shim);
 }
 
 [data-place] {

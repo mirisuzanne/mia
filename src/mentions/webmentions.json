@@ -1,6 +1,255 @@
 {
-  "lastFetched": "2022-07-11T02:32:22.719Z",
+  "lastFetched": "2022-07-13T03:27:36.171Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://web-design-weekly.com/wdw-423/",
+      "published": null,
+      "wm-received": "2022-07-12T23:03:01Z",
+      "wm-id": 1432809,
+      "wm-source": "https://web-design-weekly.com/wdw-423/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?utm_source=Web-Design-Weekly.com&utm_medium=Newsletter&utm_campaign=423",
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?utm_source=Web-Design-Weekly.com&utm_medium=Newsletter&utm_campaign=423",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://web-design-weekly.com/wdw-423/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Angsuman Chakraborty",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1a8054082780c6da9a83c984f4727ae4eef7612ba55537c3f1f7c9f1043bbe7e.jpg",
+        "url": "https://twitter.com/angsuman"
+      },
+      "url": "https://twitter.com/angsuman/status/1546969809438789632",
+      "published": "2022-07-12T21:28:38+00:00",
+      "wm-received": "2022-07-12T22:05:41Z",
+      "wm-id": 1432787,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1546969809438789632",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "Body Margin 8px <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "Body Margin 8px miriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Friday Front-End",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/855b6918a24f0b54d1366b6d3ed735bcf41580e64169aeb29872229b6e37b1d1.jpg",
+        "url": "https://twitter.com/fridayfrontend"
+      },
+      "url": "https://twitter.com/fridayfrontend/status/1546902436736122883",
+      "published": "2022-07-12T17:00:55+00:00",
+      "wm-received": "2022-07-12T17:12:43Z",
+      "wm-id": 1432657,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1546902436736122883",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "Body margin 8px: The origin story for a style no one wants, by <a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a> <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "Body margin 8px: The origin story for a style no one wants, by @TerribleMia miriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pinboard Popular",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/de70cc4973e180a14044184f3ab73c006fca55cd9ae79dfa8c4dae696e6915d8.jpg",
+        "url": "https://twitter.com/pinboard_pop"
+      },
+      "url": "https://twitter.com/pinboard_pop/status/1546902231294906370",
+      "published": "2022-07-12T17:00:06+00:00",
+      "wm-received": "2022-07-12T17:12:14Z",
+      "wm-id": 1432656,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1546902231294906370",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "Body Margin 8px | Miriam Eric Suzanne <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "Body Margin 8px | Miriam Eric Suzanne miriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "WE3design  Melb Au",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1f1c6900a35882042ce5278264e19c6ed398446e8e915e9f8654d6a18a86c3ff.jpg",
+        "url": "https://twitter.com/WE3design"
+      },
+      "url": "https://twitter.com/WE3design/status/1546783211329830913",
+      "published": "2022-07-12T09:07:10+00:00",
+      "wm-received": "2022-07-12T09:39:18Z",
+      "wm-id": 1432359,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1546783211329830913",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "Body Margin 8px | Miriam Eric Suzanne <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "Body Margin 8px | Miriam Eric Suzanne miriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "HJ Chen | 陈慧晶",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8a1b4eae10cff541cb3cb18b297f3e17812b3ca8acff198732233a1a0b4e11e1.png",
+        "url": "https://twitter.com/hj_chen"
+      },
+      "url": "https://twitter.com/hj_chen/status/1546709676040998912",
+      "published": "2022-07-12T04:14:57+00:00",
+      "wm-received": "2022-07-12T04:28:58Z",
+      "wm-id": 1432243,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1546709676040998912",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "absolutely a fan of posts like this one by <a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a>  which investigate the origins of things, especially CSS things like the default 8px body margin\n<a href=\"https://twitter.com/search?q=%23css\">#css</a> <a href=\"https://twitter.com/search?q=%23specifications\">#specifications</a> <a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a> \n\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "absolutely a fan of posts like this one by @TerribleMia  which investigate the origins of things, especially CSS things like the default 8px body margin\n#css #specifications #webdev \n\nmiriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Prototypr 👁️✨",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d76394ff03919ec80fd4791b097824813bee43bed2e56279e100dee10de9a901.jpg",
+        "url": "https://twitter.com/Prototypr"
+      },
+      "url": "https://twitter.com/Prototypr/status/1546519185425108993",
+      "published": "2022-07-11T15:38:01+00:00",
+      "wm-received": "2022-07-11T15:56:39Z",
+      "wm-id": 1431990,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1546519185425108993",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "Body margin 8px ✨ \n\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a> by <a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a>",
+        "text": "Body margin 8px ✨ \n\nmiriamsuzanne.com/2022/07/04/bod… by @TerribleMia"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "FullStack Bulletin",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3704dca248c3d9c00a5f50b5e009639cb4224d1d2e29be0e81ed4cd7c98619af.jpg",
+        "url": "https://twitter.com/fstackbulletin"
+      },
+      "url": "https://twitter.com/fstackbulletin/status/1546523464579833856",
+      "published": "2022-07-11T15:55:01+00:00",
+      "wm-received": "2022-07-11T15:56:38Z",
+      "wm-id": 1431989,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1546523464579833856",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "Body Margin 8px | Miriam Eric Suzanne <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "Body Margin 8px | Miriam Eric Suzanne miriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Author: Ritu",
+        "photo": "",
+        "url": "http://carrierhosting.biz/author/Ritu/"
+      },
+      "url": "http://carrierhosting.biz/am-i-on-the-indieweb-yet-css-tricks/",
+      "published": null,
+      "wm-received": "2022-07-11T13:13:43Z",
+      "wm-id": 1431852,
+      "wm-source": "http://carrierhosting.biz/am-i-on-the-indieweb-yet-css-tricks/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "name": "Am I on the IndieWeb yet? | CSS-Tricks",
+      "content": {
+        "html": "<a href=\"http://carrierhosting.biz/am-i-on-the-indieweb-yet-css-tricks/\" title=\"Permanent Link to Am I on the IndieWeb yet? | CSS-Tricks\"><img width=\"728\" height=\"364\" src=\"http://carrierhosting.biz/wp-content/uploads/2022/07/wp-indieweb-webmentions-728x364.jpg\" alt=\"Diagram of IndieWeb integration on a WordPress site.\" /></a>\n                <p></p>\n\n<p>Can’t smash the Like button hard enough for what <a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\">Miriam Suzanne has to say</a> on the challenging technical hurdles of implementing Webmentions:</p>\n<blockquote>\n<p>The first round required several online services along with HTML &amp; JS changes to my static site, just to verify my indieweb identity. Then more changes to the site and more online services to help fetch any mentions (so far, nothing to see, but that’s probably expected). It seems the only way to test the setup is to launch all those changes publicly, and then ask for other devs to send you mentions.</p>\n<p>[…]</p>\n<p>I’m an experienced web developer, and I can figure it out. But the steps aren’t simple, and most of my friends <em>are not web developers</em>. So, to me, this all feels like the prototype of an idea – a proof of concept.</p>\n</blockquote>\n<p>A proof of concept for sure. And one that has been around for quite some time. The <a href=\"https://indieweb.org\">IndieWeb</a> idea of owning your own data and using your website as a social hub is right up my alley — and likely yours, too, as someone working on the front end.</p>\n<p><span></span></p>\n<p><strong>Update!</strong> David Shanske is one of the developers of the WordPress plugins that support IndieWeb features and he not only published a wonderful explanation of <a href=\"https://david.shanske.com/2022/06/12/indiewebifying-a-wordpress-site-2022-edition/\">how everything fits together</a>, but also reached out directly and helped me wrap it all around my head.</p>\n<p>Yet, I’ve tinkered on and off with it — specifically <a href=\"https://indieweb.org/Webmention\">Webmentions</a> — over the past like three years with little to show for it. The problem isn’t so much the documentation of getting started because <a href=\"https://indieweb.org/Getting_Started\">it’s all there</a>. It’s more a combination of things…</p>\n<ul><li>\n<strong>The wiki is confusing.</strong> Wikis are super cool in general, but the non-linear nature of it makes it tough to know where to start and where to end.</li>\n<li>\n<strong>The plugin ecosystem is complex.</strong> My personal site is on WordPress and there’s a plugin designed to make it easy to integrate IndieWeb features on it. Except that it’s really one plugin that steers you to install several others, each one introducing a technology that I honestly struggle to understand.</li>\n<li>\n<strong>There’s a bunch of terms to learn.</strong> I mean, “IndieWeb” and “Webmention” are already difficult to grok. Toss in things like “Micropub,” “Microformats,” “IndieAuth,” and “Semantic Linkbacks,” and suddenly it feels like a bunch of puzzle pieces from different puzzles trying to fit together.</li>\n<li>\n<strong>Some middleware seems necessary?</strong> For example, I had to give a service called <a href=\"https://brid.gy\">Bridgy</a> access to my Twitter to get that activity going. It <a href=\"https://indieweb.org/rel-me#Twitter\">apparently</a> has something to do with Twitter’s shortened <code>t.co</code> URLs and making them play well with microformats.</li>\n</ul><p>But, like Miriam, I struggled my way through it and got something working in the end. This is the sort of visual I wish I had when I was first getting started, and maybe it’ll help you too.</p>\n<img width=\"1200\" height=\"1092\" alt=\"Diagram of IndieWeb integration on a WordPress site.\" src=\"https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/06/wp-indieweb-webmentions.jpg?resize=1670%2C1092&amp;is-pending-load=1#038;ssl=1\" /><img width=\"1200\" height=\"1092\" src=\"https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/06/wp-indieweb-webmentions.jpg?resize=1670%2C1092&amp;ssl=1\" alt=\"Diagram of IndieWeb integration on a WordPress site.\" /><p>Feels like a lot to get Webmentions going, but maybe that’s only because I have such a light grasp of the tech and how it all fits together. All the pieces are there, though, and even with the initial struggle, I love the IndieWeb concept, er prototype.</p>\n<p>\n              <a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\"><br />\n                Direct Link →<br /></a>\n            </p>",
+        "text": "Can’t smash the Like button hard enough for what Miriam Suzanne has to say on the challenging technical hurdles of implementing Webmentions:\n\nThe first round required several online services along with HTML & JS changes to my static site, just to verify my indieweb identity. Then more changes to the site and more online services to help fetch any mentions (so far, nothing to see, but that’s probably expected). It seems the only way to test the setup is to launch all those changes publicly, and then ask for other devs to send you mentions.\n[…]\nI’m an experienced web developer, and I can figure it out. But the steps aren’t simple, and most of my friends are not web developers. So, to me, this all feels like the prototype of an idea – a proof of concept.\n\nA proof of concept for sure. And one that has been around for quite some time. The IndieWeb idea of owning your own data and using your website as a social hub is right up my alley — and likely yours, too, as someone working on the front end.\n\nUpdate! David Shanske is one of the developers of the WordPress plugins that support IndieWeb features and he not only published a wonderful explanation of how everything fits together, but also reached out directly and helped me wrap it all around my head.\nYet, I’ve tinkered on and off with it — specifically Webmentions — over the past like three years with little to show for it. The problem isn’t so much the documentation of getting started because it’s all there. It’s more a combination of things…\n\nThe wiki is confusing. Wikis are super cool in general, but the non-linear nature of it makes it tough to know where to start and where to end.\n\nThe plugin ecosystem is complex. My personal site is on WordPress and there’s a plugin designed to make it easy to integrate IndieWeb features on it. Except that it’s really one plugin that steers you to install several others, each one introducing a technology that I honestly struggle to understand.\n\nThere’s a bunch of terms to learn. I mean, “IndieWeb” and “Webmention” are already difficult to grok. Toss in things like “Micropub,” “Microformats,” “IndieAuth,” and “Semantic Linkbacks,” and suddenly it feels like a bunch of puzzle pieces from different puzzles trying to fit together.\n\nSome middleware seems necessary? For example, I had to give a service called Bridgy access to my Twitter to get that activity going. It apparently has something to do with Twitter’s shortened t.co URLs and making them play well with microformats.\nBut, like Miriam, I struggled my way through it and got something working in the end. This is the sort of visual I wish I had when I was first getting started, and maybe it’ll help you too.\nFeels like a lot to get Webmentions going, but maybe that’s only because I have such a light grasp of the tech and how it all fits together. All the pieces are there, though, and even with the initial struggle, I love the IndieWeb concept, er prototype.\n\n              \n\n                Direct Link →"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "http://carrierhosting.biz/am-i-on-the-indieweb-yet-css-tricks/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "dailydevlinks.",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/520761d627ebc8dac3e344323011fe0cf765981dcfd9b5ac60dbd1ecb40f26a8.jpg",
+        "url": "https://twitter.com/dailydevlinks"
+      },
+      "url": "https://twitter.com/dailydevlinks/status/1546440299689508864",
+      "published": "2022-07-11T10:24:33+00:00",
+      "wm-received": "2022-07-11T10:28:45Z",
+      "wm-id": 1431777,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1546440299689508864",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=dailydevlinks.com",
+      "content": {
+        "html": "📝 Body Margin 8px\n\n🔗 <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?utm_source=dailydevlinks.com&amp;utm_medium=link_post_dailydevlinks.com&amp;utm_campaign=link_post_dailydevlinks.com&amp;ref=dailydevlinks.com\">miriamsuzanne.com/2022/07/04/bod…</a>\n\n<a href=\"https://twitter.com/search?q=%23html\">#html</a> <a href=\"https://twitter.com/search?q=%23css\">#css</a> <a href=\"https://twitter.com/search?q=%23javascript\">#javascript</a> <a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a>\n\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=dailydevlinks.com\"></a>",
+        "text": "📝 Body Margin 8px\n\n🔗 miriamsuzanne.com/2022/07/04/bod…\n\n#html #css #javascript #webdev"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=dailydevlinks.com",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Falguni",
+        "photo": "",
+        "url": ""
+      },
+      "url": "http://freewebdirectory.net/am-i-on-the-indieweb-yet-css-tricks/",
+      "published": "2022-07-11T10:02:20+00:00",
+      "wm-received": "2022-07-11T10:02:41Z",
+      "wm-id": 1431769,
+      "wm-source": "http://freewebdirectory.net/am-i-on-the-indieweb-yet-css-tricks/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "name": "Am I on the IndieWeb yet? | CSS-Tricks",
+      "content": {
+        "html": "<p></p>\n\n<p>Can’t smash the Like button hard enough for what <a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\">Miriam Suzanne has to say</a> on the challenging technical hurdles of implementing Webmentions:</p>\n<blockquote>\n<p>The first round required several online services along with HTML &amp; JS changes to my static site, just to verify my indieweb identity. Then more changes to the site and more online services to help fetch any mentions (so far, nothing to see, but that’s probably expected). It seems the only way to test the setup is to launch all those changes publicly, and then ask for other devs to send you mentions.</p>\n<p>[…]</p>\n<p>I’m an experienced web developer, and I can figure it out. But the steps aren’t simple, and most of my friends <em>are not web developers</em>. So, to me, this all feels like the prototype of an idea – a proof of concept.</p>\n</blockquote>\n<p>A proof of concept for sure. And one that has been around for quite some time. The <a href=\"https://indieweb.org\">IndieWeb</a> idea of owning your own data and using your website as a social hub is right up my alley — and likely yours, too, as someone working on the front end.</p>\n<p><span></span></p>\n<p><strong>Update!</strong> David Shanske is one of the developers of the WordPress plugins that support IndieWeb features and he not only published a wonderful explanation of <a href=\"https://david.shanske.com/2022/06/12/indiewebifying-a-wordpress-site-2022-edition/\">how everything fits together</a>, but also reached out directly and helped me wrap it all around my head.</p>\n<p>Yet, I’ve tinkered on and off with it — specifically <a href=\"https://indieweb.org/Webmention\">Webmentions</a> — over the past like three years with little to show for it. The problem isn’t so much the documentation of getting started because <a href=\"https://indieweb.org/Getting_Started\">it’s all there</a>. It’s more a combination of things…</p>\n<ul><li>\n<strong>The wiki is confusing.</strong> Wikis are super cool in general, but the non-linear nature of it makes it tough to know where to start and where to end.</li>\n<li>\n<strong>The plugin ecosystem is complex.</strong> My personal site is on WordPress and there’s a plugin designed to make it easy to integrate IndieWeb features on it. Except that it’s really one plugin that steers you to install several others, each one introducing a technology that I honestly struggle to understand.</li>\n<li>\n<strong>There’s a bunch of terms to learn.</strong> I mean, “IndieWeb” and “Webmention” are already difficult to grok. Toss in things like “Micropub,” “Microformats,” “IndieAuth,” and “Semantic Linkbacks,” and suddenly it feels like a bunch of puzzle pieces from different puzzles trying to fit together.</li>\n<li>\n<strong>Some middleware seems necessary?</strong> For example, I had to give a service called <a href=\"https://brid.gy\">Bridgy</a> access to my Twitter to get that activity going. It <a href=\"https://indieweb.org/rel-me#Twitter\">apparently</a> has something to do with Twitter’s shortened <code>t.co</code> URLs and making them play well with microformats.</li>\n</ul><p>But, like Miriam, I struggled my way through it and got something working in the end. This is the sort of visual I wish I had when I was first getting started, and maybe it’ll help you too.</p>\n<img width=\"1200\" height=\"1092\" alt=\"Diagram of IndieWeb integration on a WordPress site.\" src=\"https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/06/wp-indieweb-webmentions.jpg?resize=1670%2C1092&amp;is-pending-load=1#038;ssl=1\" /><img width=\"1200\" height=\"1092\" src=\"https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/06/wp-indieweb-webmentions.jpg?resize=1670%2C1092&amp;ssl=1\" alt=\"Diagram of IndieWeb integration on a WordPress site.\" /><p>Feels like a lot to get Webmentions going, but maybe that’s only because I have such a light grasp of the tech and how it all fits together. All the pieces are there, though, and even with the initial struggle, I love the IndieWeb concept, er prototype.</p>\n<p>\n              <a href=\"https://www.miriamsuzanne.com/2022/06/04/indiweb/\"><br />\n                Direct Link →<br /></a>\n            </p>",
+        "text": "Can’t smash the Like button hard enough for what Miriam Suzanne has to say on the challenging technical hurdles of implementing Webmentions:\n\nThe first round required several online services along with HTML & JS changes to my static site, just to verify my indieweb identity. Then more changes to the site and more online services to help fetch any mentions (so far, nothing to see, but that’s probably expected). It seems the only way to test the setup is to launch all those changes publicly, and then ask for other devs to send you mentions.\n[…]\nI’m an experienced web developer, and I can figure it out. But the steps aren’t simple, and most of my friends are not web developers. So, to me, this all feels like the prototype of an idea – a proof of concept.\n\nA proof of concept for sure. And one that has been around for quite some time. The IndieWeb idea of owning your own data and using your website as a social hub is right up my alley — and likely yours, too, as someone working on the front end.\n\nUpdate! David Shanske is one of the developers of the WordPress plugins that support IndieWeb features and he not only published a wonderful explanation of how everything fits together, but also reached out directly and helped me wrap it all around my head.\nYet, I’ve tinkered on and off with it — specifically Webmentions — over the past like three years with little to show for it. The problem isn’t so much the documentation of getting started because it’s all there. It’s more a combination of things…\n\nThe wiki is confusing. Wikis are super cool in general, but the non-linear nature of it makes it tough to know where to start and where to end.\n\nThe plugin ecosystem is complex. My personal site is on WordPress and there’s a plugin designed to make it easy to integrate IndieWeb features on it. Except that it’s really one plugin that steers you to install several others, each one introducing a technology that I honestly struggle to understand.\n\nThere’s a bunch of terms to learn. I mean, “IndieWeb” and “Webmention” are already difficult to grok. Toss in things like “Micropub,” “Microformats,” “IndieAuth,” and “Semantic Linkbacks,” and suddenly it feels like a bunch of puzzle pieces from different puzzles trying to fit together.\n\nSome middleware seems necessary? For example, I had to give a service called Bridgy access to my Twitter to get that activity going. It apparently has something to do with Twitter’s shortened t.co URLs and making them play well with microformats.\nBut, like Miriam, I struggled my way through it and got something working in the end. This is the sort of visual I wish I had when I was first getting started, and maybe it’ll help you too.\nFeels like a lot to get Webmentions going, but maybe that’s only because I have such a light grasp of the tech and how it all fits together. All the pieces are there, though, and even with the initial struggle, I love the IndieWeb concept, er prototype.\n\n              \n\n                Direct Link →"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/04/indiweb/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "http://freewebdirectory.net/am-i-on-the-indieweb-yet-css-tricks/"
+      }
+    },
     {
       "type": "entry",
       "author": {

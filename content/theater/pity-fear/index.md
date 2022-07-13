@@ -23,6 +23,15 @@ tags:
   - grapefruit lab
   - pity+fear
 press:
+  - title: Live Show Review
+    venue: Queen City Sounds & Art
+    url: https://queencitysoundsandart.wordpress.com/2022/07/10/live-show-review-pityfear-a-travesty-at-buntport-theater-5-27-22/
+    text: |
+      Pity+Fear (a travesty) was,
+      beginning to end,
+      incisive, insightful, sensitive
+      and at keen times humorous
+      without trivializing anyone’s struggles and challenges.
   - title: |
       Through Pity+Fear,
       Denver artists use Greek mythology
