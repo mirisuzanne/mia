@@ -1,6 +1,6 @@
 @mixin css {
   html {
-    font-size: 1.25em;
+    font-size: max(1em, 20px);
   }
 
   body {

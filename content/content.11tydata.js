@@ -8,6 +8,11 @@ const link = (text, url, category = true) => {
 };
 
 const replaceTags = async (source, data, text = false) => {
+  if (source === 'show_tags_text') {
+    source = 'show_tags';
+    text = true;
+  }
+
   if (source !== 'show_tags') {
     return source;
   }

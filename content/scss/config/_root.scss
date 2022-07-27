@@ -1,0 +1,24 @@
+@use 'colors';
+@use 'fonts';
+@use 'sizes';
+
+@mixin css {
+  html {
+    @include colors.ui;
+    @include fonts.ui;
+    @include sizes.text;
+    @include sizes.space;
+
+    background-color: var(--Canvas);
+    color: var(--CanvasText);
+    color-scheme: dark light;
+    font-family: var(--font-body, var(--var-serif, var(--ui-serif)));
+    font-size: var(--root, 1.25em);
+    line-height: var(--line-height, 1.4);
+  }
+
+  body {
+    margin: var(--line, var(--gap, 1em)) var(--margin, var(--gap, 1em));
+    max-width: var(--measure, 75ch);
+  }
+}

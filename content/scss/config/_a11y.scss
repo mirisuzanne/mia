@@ -1,9 +1,9 @@
 @mixin css {
-  body > [href='#main-content'] {
+  body > [href='#content'] {
     background-color: var(--button-bg, var(--ButtonFace));
     color: var(--button-text, var(--ButtonText));
-    inset: 0.5em auto auto 1em;
-    padding: 0.25em 1em;
+    inset: var(--shim, 0.5em) auto auto var(--line, 1em);
+    padding: var(--half-shim, 0.25em) var(--gap, 1em);
     position: absolute;
     z-index: 2;
   }
@@ -14,7 +14,7 @@
 
   :focus-visible {
     outline: medium solid var(--focus-ring, var(--AccentColorText));
-    outline-offset: 0.25em;
+    outline-offset: var(--half-shim, 0.25em);
   }
 
   .visually-hidden:not(:focus) {

@@ -1,6 +1,8 @@
 ---
-title: show_tags
+title: Miriam Eric Suzanne
+banner: show_tags
 sub: Towards a [more queer](/why/) world, together.
+description: show_tags_text
 summary: |
   Hi, I'm [Miriam](/who/) (she/her) --
 

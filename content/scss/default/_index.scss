@@ -1,6 +1,5 @@
 @use 'fonts';
 @use 'base';
-@use 'a11y';
 @use 'links';
 @use 'media';
 @use 'type';
@@ -10,7 +9,6 @@
   @include fonts.files;
   @include fonts.css;
   @include base.css;
-  @include a11y.css;
   @include links.css;
   @include media.css;
   @include type.css;
