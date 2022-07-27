@@ -89,8 +89,14 @@ to the (non-normative)
 [default style sheet](https://drafts.csswg.org/css2/#html-stylesheet)
 provided in the CSS specifications.
 
-I'm not sure if there's a more recent version somewhere,
-but I couldn't find it?
+~~I'm not sure if there's a more recent version somewhere,
+but I couldn't find it?~~
+
+**Update:**
+The recommended default styles
+are now part of the
+[HTML Living Standard](https://html.spec.whatwg.org/multipage/rendering.html#rendering),
+rather than the CSS specification.
 
 <details data-pattern="figure">
 <summary>CSS 2.2 default style sheet</summary>
