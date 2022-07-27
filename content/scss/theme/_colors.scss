@@ -1,0 +1,40 @@
+@use 'sass:color';
+
+$accent-light: hotpink;
+$complement-light: paleturquoise;
+$accent-dark: mediumvioletred;
+$complement-dark: teal;
+$dark: color.scale(darkslategray, $lightness: -75%);
+$light: azure;
+
+@mixin theme {
+  // base colors
+  --accent-light: #{$accent-light};
+  --accent-dark: #{$accent-dark};
+  --complement-light: #{$complement-light};
+  --complement-dark: #{$complement-dark};
+  --dark: #{$dark};
+  --light: #{$light};
+
+  // mode configuration
+  --bg: var(--dark);
+  --text: var(--light);
+  --accent-bg: var(--accent-dark);
+  --accent: var(--accent-light);
+  --complement-bg: var(--complement-dark);
+  --complement: var(--complement-light);
+  --shadow: hsl(0deg 0% 0% / #{0.25});
+
+  @media (prefers-color-scheme: light) {
+    --bg: var(--light);
+    --text: var(--dark);
+    --accent-bg: var(--accent-light);
+    --accent: var(--accent-dark);
+    --complement-bg: var(--complement-light);
+    --complement: var(--complement-dark);
+    --shadow: hsl(0deg 0% 0% / #{0.125});
+  }
+
+  // applications
+  --border: var(--complement, currentColor);
+}

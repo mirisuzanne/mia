@@ -1,6 +1,24 @@
-@forward 'actions';
-@forward 'color';
-@forward 'fonts';
-@forward 'focus';
-@forward 'patterns';
-@forward 'scale';
+@use 'colors';
+@use 'fonts';
+@use 'sizes';
+
+@layer config {
+  html {
+    @include colors.ui;
+    @include fonts.ui;
+    @include sizes.text;
+    @include sizes.space;
+
+    background-color: var(--Canvas);
+    color: var(--CanvasText);
+    color-scheme: dark light;
+    font-family: var(--font-body, var(--var-serif, var(--ui-serif)));
+    font-size: var(--root, 1.25em);
+    line-height: var(--line-height, 1.4);
+    padding: var(--line, var(--gap, 1em)) var(--margin, var(--gap, 1em));
+  }
+
+  body {
+    max-width: var(--no-style-measure, auto);
+  }
+}

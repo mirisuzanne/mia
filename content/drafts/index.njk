@@ -4,16 +4,16 @@ draft: false
 ---
 
 {% import "utility.macros.njk" as utility %}
-{% set drafts = collections.all | filter('data.draft') %}
+{% set draft_posts = collections.all | filter('data.draft') %}
 
-{% if drafts.length > 0 %}
+{% if draft_posts.length > 0 %}
 <ul>
-  {% for draft in drafts %}
+  {% for item in draft_posts %}
   <li>
-    <strong>{{ utility.datetime(draft.data.date) }}</strong> —
+    <strong>{{ utility.datetime(item.data.date) }}</strong> —
     <em>{{ utility.link_if(
-      content=(draft.data.banner or draft.data.title) | mdInline,
-      url=draft.url
+      content=(item.data.banner or item.data.title) | mdInline,
+      url=item.url
     ) }}</em>
   </li>
   {% endfor %}

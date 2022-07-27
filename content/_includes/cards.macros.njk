@@ -46,31 +46,25 @@
 ) %}
 {% set name = name | typogr %}
 {% set id = [name | striptags | slug, index] | join('-') %}
-<article
-  data-card="item"
-  aria-labelledby="{{ id }}"
-  class="h-entry"
-  {{ utility.attr_if('data-feature', feature) }}
-  {{ utility.attr_if('data-old', is_old) }}
->
-  <div data-card="inner">
-    {% if meta %}
-      <div data-meta="card">
-        {{ meta | safe }}
-      </div>
-    {% endif %}
-
+<article aria-labelledby="{{ id }}" class="h-entry{% if feature %} feature{% endif %}">
+  <header>
     {% if name %}
-      <h4 class="p-name" data-card="title" id="{{ id }}">
+      <h4 class="p-name" id="{{ id }}">
         {{ name | safe }}
       </h4>
     {% endif %}
 
-    {% if summary %}
-      <div data-card="summary" class="p-summary entry-summary">
-        {{ summary | safe }}
+    {% if meta %}
+      <div>
+        {{ meta | safe }}
       </div>
     {% endif %}
-  </div>
+  </header>
+
+  {% if summary %}
+    <div class="p-summary entry-summary">
+      {{ summary | safe }}
+    </div>
+  {% endif %}
 </article>
 {% endmacro %}

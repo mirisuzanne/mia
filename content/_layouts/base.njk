@@ -1,36 +1,25 @@
-{%- import 'utility.macros.njk' as utility -%}
-{%- import 'site/macros.njk' as show -%}
-{%- import 'events/macros.njk' as cal -%}
 <!doctype html>
-<html lang="en" data-ccs="root" data-ccs-theme="{{ ccs.themes[0] }}" data-ccs-colors>
-  {%- set desc = sub or summary or content or '' -%}
-  {%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') -%}
-  {%- set meta_desc = description or desc or site.description -%}
-  {%- set meta_desc = show.tag_title(collections, true) if (meta_desc == 'show_tags') else meta_desc -%}
-  {%- set full_title = banner or title -%}
-  {%- set full_title = show.tag_title(collections) if (full_title == 'show_tags') else full_title | mdInline(false) -%}
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>{{ [title, site.title] | join(' | ') }}</title>
-    <meta name="description" content="{{ meta_desc }}" />
+    <meta name="description" content="{{ description }}" />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="/fonts/Recursive_VF_1.043--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin>
+    {# <link rel="preload" href="/fonts/Recursive_VF_1.043--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin> #}
 
     <meta name="color-scheme" content="dark light">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e0cbd6">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1f2f34">
 
-    {% for url in site.styles %}
-      <link rel="stylesheet" href="/css/{{ url }}" />
+    {% for theme, color in site.theme %}
+      <meta name="theme-color" media="(prefers-color-scheme: {{ theme }})" content="{{ color }}">
     {% endfor %}
 
-    <script type="text/javascript" src="/assets/js/fonts.js"></script>
-
-    {% for url in extra_styles %}
-      <link rel="stylesheet" href="/css/{{ url }}" />
+    {% set styles = site.styles | concat(styles) if styles else site.styles %}
+    {% for url in styles %}
+      {% set url = url if '://' in url | string else ['/css/', url] | join %}
+      <link rel="stylesheet" href="{{ url }}" />
     {% endfor %}
 
     {% include 'site/og.njk' %}
@@ -38,29 +27,41 @@
     {% include 'site/auth.njk' %}
   </head>
 
-  {%- set hentry = (summary or content) and not eleventyExcludeFromCollections -%}
-  {%- set classes = classes | concat('h-entry' if hentry else []) -%}
+  {%- import 'utility.macros.njk' as utility -%}
 
-  <body {% if classes %}class="{{ classes | join(' ') }}"{% endif %}>
-    <div class="meta">
+  <body id="miriam.codes">
+    <a href="#content" class="visually-hidden">skip to content</a>
+
+    {% if draft %}
+      {% set input_path = (page.inputPath or '') | replace('./', '') %}
+      <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}" class="edit-draft">
+        Edit this draft on GitHub
+      </a>
+    {% endif %}
+
+    {% if message %}
+      <div id="message">
+        {{ message | md | safe }}
+      </div>
+    {% endif %}
+
+    <header id="banner">
+      <a href="/" rel="home" class="h-card">{{ site.title }}</a>
       {% include 'site/nav.njk' %}
-      {% include 'site/settings.njk' %}
-    </div>
+    </header>
 
-    {% include 'site/banner.njk' %}
-
-    <main aria-labelledby="title">
-      {% include 'site/page.njk' %}
-      {% include 'site/mentions.njk' %}
-      {% include 'site/calendar.njk' %}
+    <main id="content" tabindex="-1" {{ utility.attr_if('class', class) }}>
+      {{ content | safe }}
     </main>
 
     {% include 'site/footer.njk' %}
 
-    <a href="{{ page.url | url }}" class="u-url" hidden>{{ full_title | safe }}</a>
+    <a href="{{ page.url | url }}" class="u-url" hidden></a>
 
-    {% for script in site.scripts %}
-      <script type="text/javascript" src="/assets/js/{{ script }}"></script>
+    {% set scripts = site.scripts | concat(scripts) if scripts else site.scripts %}
+    {% for url in scripts %}
+      {% set url = url if '://' in url | string else ['/assets/js/', url] | join %}
+      <script type="text/javascript" src="{{ url | url }}"></script>
     {% endfor %}
   </body>
 </html>

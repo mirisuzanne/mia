@@ -1,0 +1,33 @@
+@mixin css {
+  dd,
+  dir,
+  menu,
+  ol,
+  ul,
+  blockquote,
+  figure {
+    padding-inline: 1em;
+  }
+
+  nav,
+  header,
+  main,
+  footer,
+  section,
+  article {
+    margin-block: 1em;
+  }
+
+  main {
+    border-block: thin solid;
+    padding-block: 1em;
+  }
+
+  details {
+    border-block: thin solid;
+  }
+
+  summary {
+    cursor: pointer;
+  }
+}

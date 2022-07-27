@@ -71,6 +71,7 @@
 {% macro style_if(
   style
 ) -%}
+  {%- set style = style | compactObject -%}
   {%- if style -%}
     style="{%- for prop, val in style -%}{{ prop }}: {{ val }};{%- endfor -%}"
   {%- endif -%}
@@ -108,50 +109,74 @@
 
 {% macro datetime(
   pubdate,
-  start,
-  end,
-  format='long',
+  start=none,
+  end=none,
+  format=none,
   attrs={}
 ) %}
-  {%- set ranges = {
-    'same-y': {
-      'start': 'mon',
-      'end': 'range'
-    },
-    'same-m': {
-      'start': 'no-year',
-      'end': 'day' if (format == 'no-year') else 'no-month'
-    }
-  } -%}
+  {%- set start = pubdate or start -%}
+  {%- set is_range = start and end and (start != end) -%}
 
+  {%- set human -%}
+    {%- if is_range -%}
+      {{ _get_range(start, end, format) }}
+    {%- else -%}
+      {{ start | date(format or 'long') }}
+    {%- endif -%}
+  {%- endset -%}
+
+  {%- if is_range -%}
+    <span class="time" {{ show_attrs(attrs) }}>{{ human | safe }}</span>
+  {%- else -%}
+    {%- set pub = start == pubdate -%}
+    {%- set hpub = 'dt-published' if pub else none -%}
+    {%- set class = [attrs.class, hpub] | join(' ') if (attrs.class and hpub) else hpub -%}
+    {%- set attrs = attrs | merge({
+      'datetime': start | date('iso'),
+      'pubdate': pub,
+      'class': class
+    }) %}
+
+    <time {{ show_attrs(attrs) }}>{{ human | safe }}</time>
+  {%- endif -%}
+{% endmacro %}
+
+{% macro _get_range(start, end, format) %}
   {%- set ongoing = (end == 'ongoing') or (end | groupName == 'ongoing') -%}
+  {%- set start_y = start | date('year') -%}
+  {%- set default_format = 'year' if (start_y == start) else 'range' -%}
 
-  {% set attrs = {
-    'pubdate': not not pubdate,
-    'class': 'dt-published' if pubdate else none
-  } | merge(attrs) %}
+  {%- if ongoing -%}
+    since {{ start | date(format or default_format) }}
+  {%- else  -%}
+    {%- set start_format = format -%}
+    {%- set end_format = format -%}
 
-  <time
-    datetime="{{ (pubdate or start) | date('iso') }}"
-    {{ show_attrs(attrs) }}>
-    {% set start_y = start | date('year') %}
+    {%- if format != 'years' -%}
+      {%- set range_formats = {
+        'same-y': {
+          'start': 'month',
+          'end': 'range'
+        },
+        'same-m': {
+          'start': 'no-year',
+          'end': 'day' if (format == 'no-year') else 'no-month'
+        }
+      } -%}
+      {%- set start_m = start | date('month') -%}
+      {%- set end_m = end | date('month') -%}
+      {%- set end_y = end | date('year') -%}
 
-    {% if ongoing %}
-      since {{ start | date('range') }}
-    {% elif (start and end) and (start != end) %}
-      {% set start_m = start | date('month') %}
-      {% set end_m = end | date('month') %}
-      {% set end_y = end | date('year') %}
+      {%- set same = 'same-y' if (start_y == end_y) else none -%}
+      {%- set same = 'same-m' if same and (start_m == end_m) else same -%}
 
-      {% set same = 'same-y' if (start_y == end_y) else none %}
-      {% set same = 'same-m' if same and (start_m == end_m) else same %}
 
-      {{ start | date(ranges[same].start or 'range') }}
-      {{- '---' | typogr | safe -}}
-      {{ end | date(ranges[same].end or 'range') }}
+      {%- set start_format = range_formats[same].start or default_format -%}
+      {%- set end_format = range_formats[same].end or default_format -%}
+    {%- endif -%}
 
-    {% else %}
-      {{ start | date(format) }}
-    {% endif %}
-  </time>
+    {{ start | date(start_format) }}
+    {{- '--' | typogr | safe -}}
+    {{ end | date(end_format) }}
+  {%- endif -%}
 {% endmacro %}

@@ -1,6 +1,7 @@
 'use strict';
 
 /* eslint-disable no-sync */
+/* eslint-disable no-console */
 
 const fs = require('fs');
 

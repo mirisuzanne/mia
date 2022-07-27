@@ -8,7 +8,7 @@ const isPublic = (page) => {
 
 const getPublic = (collection) => collection.filter((page) => isPublic(page));
 
-const fromCollection = (collection, page) => {
+const getPage = (collection, page) => {
   const pageURL = typeof page === 'string' ? page : page.url;
   return collection.filter((doc) => doc.url === pageURL);
 };
@@ -28,14 +28,10 @@ const seriesNav = (page, collection) => {
 
 const byDate = (collection) => collection.sort((a, b) => b.date - a.date);
 
-const titleSort = (collection) =>
-  collection.sort((a, b) => a.data.title - b.data.title);
-
 module.exports = {
   isPublic,
   getPublic,
-  fromCollection,
+  getPage,
   seriesNav,
   byDate,
-  titleSort,
 };

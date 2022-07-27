@@ -77,11 +77,11 @@
     "sass": "^1.50.0",
     "sassdoc": "^2.7.1",
     "sassdoc-theme-herman": "^4.0.2",
-    "stylelint": "^13.2.1",
-    "stylelint-config-prettier": "^8.0.1",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-prettier": "^1.1.1",
-    "stylelint-scss": "^3.11.1"
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0"
   },
   "husky": {
     "hooks": {
@@ -101,6 +101,8 @@
     ]
   },
   "dependencies": {
+    "@fontsource/alegreya": "^4.5.7",
+    "@fontsource/jetbrains-mono": "^4.5.9",
     "dotenv": "^16.0.1",
     "sanitize-html": "^2.7.0"
   }

@@ -1,0 +1,30 @@
+@mixin css {
+  form {
+    display: grid;
+    gap: var(--gap);
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: var(--Field);
+    border: thin solid var(--field-border, currentColor);
+    color: var(--FieldText);
+    padding: var(--half-shim);
+  }
+
+  textarea {
+    min-height: calc(var(--line, 1.4em) * 6);
+  }
+
+  button {
+    background-color: var(--button-bg, var(--ButtonFace));
+    border: medium solid var(--button-border, var(--ButtonText));
+    color: var(--button-text, var(--ButtonText));
+    padding: var(--half-shim) var(--gap);
+  }
+
+  [data-fieldgroup] {
+    display: contents;
+  }
+}

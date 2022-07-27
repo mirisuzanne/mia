@@ -1,0 +1,18 @@
+body {
+  --warning-message: 'Styles rely on the @layer rule, supported in all modern browsers (but not yours).';
+  --show-warning: var(--layer-warning, block);
+
+  @layer {
+    --layer-warning: none;
+  }
+}
+
+body::before {
+  background-color: var(--warning-bg, maroon);
+  color: var(--warning, white);
+  content: var(--warning-message, none);
+  border: medium solid black;
+  display: var(--show-warning, none);
+  margin: var(--line, 1em) 0;
+  padding: var(--gap, 1em);
+}

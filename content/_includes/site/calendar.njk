@@ -1,6 +1,5 @@
 {% import "events/macros.njk" as cal %}
 {% import "tags/macros.njk" as tag %}
-{% import 'site/macros.njk' as show %}
 
 {% set taglist = tag.section(collections) if show_tags else none %}
 {% set events = index or series or 'self' %}

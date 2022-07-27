@@ -1,0 +1,18 @@
+@mixin ui {
+  --Canvas: var(--bg, Canvas);
+  --CanvasText: var(--text, CanvasText);
+  --Link: var(--accent, LinkText);
+  --VisitedText: var(--accent, VisitedText);
+  --ActiveText: var(--accent, ActiveText);
+  --ButtonFace: var(--accent-bg, ButtonFace);
+  --ButtonText: var(--text, ButtonText);
+  --ButtonBorder: var(--text, ButtonBorder);
+  --Field: var(--bg, Field);
+  --FieldText: var(--text, FieldText);
+  --SelectedItem: var(--complement-bg, SelectedItem);
+  --SelectedItemText: var(--text, SelectedItemText);
+  --Highlight: var(--complement-bg, Highlight);
+  --HighlightText: var(--text, HighlightText);
+  --AccentColor: var(--accent-bg, AccentColor);
+  --AccentColorText: var(--text, AccentColorText);
+}

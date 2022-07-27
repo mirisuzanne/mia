@@ -1,10 +1,11 @@
-// Layout
-// ======
+@use 'nav';
 
-@forward 'initial';
-@forward 'nav';
-@forward 'settings';
-@forward 'banner';
-@forward 'main';
-@forward 'hero';
-@forward 'footer';
+@layer layout {
+  @include nav.css;
+
+  // @@@ temporary
+  [data-layout='cards'],
+  [data-layout='footer'] {
+    max-width: var(--measure);
+  }
+}

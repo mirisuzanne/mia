@@ -1,38 +1,6 @@
-{%- import 'utility.macros.njk' as utility -%}
+<header>
+  {% include 'page/title.njk' %}
+  {% include 'page/meta.njk' %}
+</header>
 
-{% if (content or summary) %}
-  <div
-    data-main
-    data-typeset="{{ type }}"
-    class="e-content"
-    {{ utility.attr_if('data-erase', 'off' if erasure else none) }}>
-    {% include 'site/hero.njk' %}
-    {% include 'site/page-meta.njk' %}
-
-    {% if draft %}
-      <aside>
-        <a href="{{ [site.source.repo, site.source.branch, page.inputPath | replace('./', '')] | join }}">
-          Edit this draft on GitHub
-        </a>
-      </aside>
-    {% endif %}
-
-    {% if summary %}
-      <div class='intro p-summary'>
-        {{ summary | md | safe }}
-      </div>
-    {% endif %}
-
-    {% if content or tags %}
-      {{ content | typogr | safe }}
-
-      {% if tags and ('elsewhere' in tags) %}
-        <p>
-          <a rel="bookmark" href="{{ url }}">
-            More at {{ venue }}
-          </a>
-        </p>
-      {% endif %}
-    {% endif %}
-  </div>
-{% endif %}
+{% include 'page/content.njk' %}

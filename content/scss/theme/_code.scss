@@ -1,0 +1,88 @@
+[class*='language-'] {
+  .namespace {
+    opacity: 0.7;
+  }
+
+  .token {
+    &.comment,
+    &.prolog,
+    &.doctype,
+    &.cdata {
+      color: $code-color-comment;
+    }
+
+    &.null,
+    &.operator,
+    &.boolean,
+    &.number {
+      color: $code-color-number;
+    }
+
+    &.attr-name,
+    &.string {
+      color: $code-color-string;
+    }
+
+    &.entity,
+    &.url,
+    .language-css &.string,
+    .style &.string {
+      color: $code-color-string;
+    }
+
+    &.selector {
+      color: $code-color-selector;
+    }
+
+    &.atrule,
+    &.attr-value,
+    &.keyword,
+    &.control,
+    &.directive,
+    &.important,
+    &.unit {
+      color: $code-color-keyword;
+    }
+
+    &.regex,
+    &.statement {
+      color: $code-color-value;
+    }
+
+    &.placeholder,
+    &.variable {
+      color: $code-color-variable;
+    }
+
+    &.property,
+    &.tag {
+      @include fonts.var('italic');
+    }
+
+    &.important,
+    &.statement {
+      font-weight: bold;
+    }
+
+    // todo ?
+    // &.mixin
+    // &.gradient
+    // &.abslength
+    // &.easing
+    // &.time
+    // &.angle
+    // &.fontfamily
+    &.punctuation {
+      color: $code-color-punctuation;
+    }
+
+    &.entity {
+      cursor: help;
+    }
+
+    // for dev :)
+    &.debug {
+      color: red;
+    }
+  }
+}

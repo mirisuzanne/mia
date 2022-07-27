@@ -3,8 +3,7 @@ title: About
 banner: Miriam Suzanne
 sub: (this is my website)
 calendar: all_orgs
-classes:
-  - h-card
+class: h-card
 hero:
   img: headshots/mia-smashing.jpg
   alt: |

@@ -1,9 +1,7 @@
-// Styles
-// ======
+@use 'reset';
+@use 'warning';
 
-@use '../../node_modules/cssremedy/css/remedy';
-@use 'config';
-@use 'props';
-@use 'initial';
-@use 'patterns';
-@use 'layout';
+// @use 'config';
+// @use 'default';
+// @use 'theme';
+// @use 'layout';

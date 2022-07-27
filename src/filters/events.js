@@ -49,7 +49,7 @@ const buildEvent = (page, event, index) => {
   const now_iso = time.date(null, 'iso');
   let group = time.date(date, 'year');
 
-  if (end_iso >= now_iso) {
+  if (end_iso >= now_iso && end_iso !== start_iso) {
     const endYear = `${time.date(end, 'year')}`;
     if (groupNames[endYear]) {
       group = endYear;

@@ -1,0 +1,15 @@
+@mixin css {
+  img,
+  video,
+  audio,
+  iframe,
+  picture {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto var(--ratio, 16 / 9);
+  }
+
+  svg {
+    fill: currentcolor;
+  }
+}

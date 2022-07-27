@@ -1,0 +1,37 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+{% set tags_public = tags | publicTags %}
+
+{% if tags_public or org %}
+  <div class="meta">
+    {{ utility.datetime(
+      pubdate=pubdate or page.date,
+      start=start or date or page.date,
+      end=end
+    ) }}
+
+    {% if org %}
+      as
+      <strong>
+        {{ org | mdInline | safe }}
+      </strong>
+    {% endif %}
+
+    {% if adr %}
+      in
+      <span>
+        {{ adr | typogr | safe }}
+      </span>
+    {% endif %}
+
+    {% if tags_public | length > 0 %}
+      <ul data-list="tags">
+        {%- for tag in tags_public -%}
+          <li>
+            {{ utility.tag_link(tag, collections) }}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {% endif %}
+  </div>
+{% endif %}

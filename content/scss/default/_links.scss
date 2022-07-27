@@ -1,0 +1,7 @@
+@mixin css {
+  a {
+    &:where(:any-link) {
+      color: var(--action, var(--Link));
+    }
+  }
+}

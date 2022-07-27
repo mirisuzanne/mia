@@ -1,0 +1,31 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+{% if (content or summary) %}
+  {% set content_attrs = {
+    'class': 'e-content measure',
+    'data-erase': 'off' if erasure else none
+  } %}
+
+  <div {{ utility.show_attrs(content_attrs) }}>
+    {% include 'site/hero.njk' %}
+
+    {% if summary %}
+      <div class='intro p-summary'>
+        {{ summary | md | safe }}
+      </div>
+    {% endif %}
+
+    {% if content %}
+      {% if summary %}<hr />{% endif %}
+      {{ content | typogr | safe }}
+    {% endif %}
+
+    {% if tags and ('elsewhere' in tags) %}
+      <p>
+        <a rel="bookmark" href="{{ url }}">
+          More at {{ venue }}
+        </a>
+      </p>
+    {% endif %}
+  </div>
+{% endif %}

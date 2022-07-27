@@ -1,0 +1,18 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+<h1 class="p-name">{{ banner | mdInline | safe }}</h1>
+
+{% if sub or (venue and url) %}
+  <p aria-roledescription="subtitle">
+    {% if sub %}
+      {{ sub | mdInline | safe }}
+    {% endif %}
+
+    {% if (venue and url) %}
+      @
+      <a href="{{ url | url }}" class="h-card org">
+        {{ (venue or 'the interwebz') | mdInline | safe }}
+      </a>
+    {% endif %}
+  </p>
+{% endif %}

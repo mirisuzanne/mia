@@ -1,0 +1,18 @@
+@use 'fonts';
+@use 'base';
+@use 'a11y';
+@use 'links';
+@use 'media';
+@use 'type';
+@use 'forms';
+
+@layer default {
+  @include fonts.files;
+  @include fonts.css;
+  @include base.css;
+  @include a11y.css;
+  @include links.css;
+  @include media.css;
+  @include type.css;
+  @include forms.css;
+}

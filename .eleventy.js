@@ -78,11 +78,10 @@ module.exports = (eleventyConfig) => {
     (count) => typeof count === 'number' && count <= tags.topCount,
   );
 
-  eleventyConfig.addFilter('getPage', pages.fromCollection);
+  eleventyConfig.addFilter('getPage', pages.getPage);
   eleventyConfig.addFilter('getPublic', pages.getPublic);
   eleventyConfig.addFilter('seriesNav', pages.seriesNav);
   eleventyConfig.addFilter('byDate', pages.byDate);
-  eleventyConfig.addFilter('titleSort', pages.titleSort);
 
   eleventyConfig.addFilter('getEvents', events.get);
   eleventyConfig.addFilter('countEvents', events.count);
@@ -114,14 +113,54 @@ module.exports = (eleventyConfig) => {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addFilter('compactObject', (obj) => {
+    const filtered = {};
+
+    Object.keys(obj).forEach((key) => {
+      const val = obj[key];
+
+      if (val) {
+        filtered[key] = val;
+      }
+    });
+
+    return Object.entries(filtered).length < 1 ? null : filtered;
+  });
+
   // shortcodes
   eleventyConfig.addShortcode('img', image.image);
   eleventyConfig.addPairedShortcode('md', type.render);
   eleventyConfig.addPairedShortcode('mdInline', type.inline);
+
   eleventyConfig.addShortcode(
     'getDate',
     (format) => `${time.date(null, format)}`,
   );
+
+  // From https://github.com/11ty/eleventy/issues/813#issuecomment-1037805869
+  // Create a "semi-global" `$pages` array (which will be populated later via a custom "shadow" collection).
+  let $pages = [];
+
+  eleventyConfig.addShortcode('page_url', (slug = '') => {
+    // Try and find the specified page slug in our `$pages[]` array by matching the
+    // template's `filePathStem`.
+    const page = $pages.find((item) => item.filePathStem.includes(slug));
+    // No match found, hard error (again, no idea how Jekyll works, but I liked the idea
+    // of failing fast-and-furious if we have bad links.
+    if (!page) {
+      throw new Error(`Unknown page slug: "${slug}"`);
+    }
+    // We had a match, so return the page's `url`.
+    return page.url;
+  });
+
+  // Create a custom "__pages" collection with all pages.
+  // Seems silly, but we really are just using this to copy the collection into our semi-global
+  // `$pages[]` array for lookup by our custom shortcode.
+  eleventyConfig.addCollection('__pages', (collectionApi) => {
+    $pages = [...collectionApi.getAll()];
+    return $pages;
+  });
 
   // config
   eleventyConfig.setLibrary('md', type.mdown);

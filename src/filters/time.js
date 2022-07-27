@@ -18,12 +18,11 @@ const date = (dateObj, format) => {
   const formats = {
     short: DateTime.DATE_MED,
     long: DateTime.DATE_FULL,
-    range: { month: 'short', year: 'numeric' },
+    range: { month: 'long', year: 'numeric' },
     month: { month: 'long' },
-    mon: { month: 'short' },
     year: { year: 'numeric' },
     day: { day: 'numeric' },
-    'no-year': { month: 'short', day: 'numeric' },
+    'no-year': { month: 'long', day: 'numeric' },
   };
 
   const knownFormat = formats[format] || DateTime[format];
