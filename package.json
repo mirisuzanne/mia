@@ -35,10 +35,10 @@
     "watch:js:compile": "rollup -c --watch",
     "watch:js": "run-p watch:js:*",
     "assets:clean": "rm -rf ./_built/",
-    "serve": "npm-run-all build:assets build:site -p eleventy:serve watch:js watch:sass",
-    "build:site": "run-s sass sassdoc",
+    "serve": "npm-run-all build:assets build:styles -p eleventy:serve watch:js watch:sass",
+    "build:styles": "run-s sass",
     "build:assets": "npm-run-all assets:clean -p js",
-    "build": "run-s build:assets build:site eleventy"
+    "build": "run-s build:assets build:styles eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
