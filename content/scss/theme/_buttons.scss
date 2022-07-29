@@ -1,0 +1,27 @@
+@mixin css {
+  [data-options] {
+    display: flex;
+    flex-wrap: wrap;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      flex: 1 1 100%;
+      margin: 0;
+    }
+  }
+
+  [data-set] {
+    --button-border: var(--ActiveText);
+
+    &:focus-visible {
+      z-index: 2;
+    }
+
+    &:nth-of-type(n + 2) {
+      border-inline-start: 0;
+    }
+  }
+}

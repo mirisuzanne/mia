@@ -1,7 +1,5 @@
 @use 'root';
-@use 'a11y';
 
-@layer config {
+@layer default.config {
   @include root.css;
-  @include a11y.css;
 }

@@ -1,15 +1,11 @@
 @mixin css {
   .measure {
-    max-width: var(--measure, 70ch);
+    max-width: var(--measure, 75ch);
   }
 
   // headers
   header {
     margin-block: var(--spacer, 2em);
-
-    > * {
-      margin-block: 0;
-    }
   }
 
   // lists
@@ -25,14 +21,13 @@
   // block
   blockquote {
     border-inline-start: thick solid var(--border, var(--AccentColor));
-    margin-inline: 0;
     padding-inline: var(--gap, 1em);
   }
 
   details,
   figure,
   pre {
-    background-color: var(--shadow, hsl(0deg 0 0 / #{0.125}));
+    background-color: var(--shadow, hsl(0deg 0% 0% / 12.5%));
     margin-inline: var(--outset, 0);
     padding: var(--gap, 1em);
 
@@ -51,8 +46,16 @@
   }
 
   hr {
-    border-color: var(--border, currentColor);
-    margin: var(--spacer, 2em) var(--outset, 0);
+    border: 0;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: var(--spacer, 2em) 0;
+
+    &::after {
+      content: var(--hr, '* * *');
+      color: var(--border, inherit);
+    }
   }
 
   // inline

@@ -3,8 +3,6 @@
     --margin: var(--gap, 1em);
     --outset: 0;
 
-    border-block: thick solid var(--AccentColor);
-
     @media (min-width: 40em) {
       --margin: var(--spacer, 2em);
       --outset: calc(var(--gap, 1em) * -1);

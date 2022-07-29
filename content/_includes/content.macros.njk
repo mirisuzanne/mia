@@ -97,9 +97,9 @@
 {%- macro erase(
   content
 ) -%}
-<button data-toggle="erase">
+<mark data-make="button" data-toggle="erase">
 {{ content | mdInline | safe }}
-</button>
+</mark>
 {%- endmacro -%}
 
 {#
@@ -112,16 +112,15 @@
   content=none
 ) -%}
 {%- set content = _fig_content(data) if data else content or caller() | mdInline -%}
-<figure data-pattern="figure">
-<div data-figure="content">
-{{ content | safe }}
-</div>
-
-{%- if caption -%}
-<figcaption data-figure="caption">
-{{ caption | mdInline | safe }}
-</figcaption>
-{%- endif -%}
+<figure>
+  <div>
+    {{- content | safe -}}
+  </div>
+  {%- if caption -%}
+    <figcaption>
+      {{- caption | mdInline | safe -}}
+    </figcaption>
+  {%- endif -%}
 </figure>
 {%- endmacro %}
 
@@ -138,7 +137,7 @@ params:
   alt=none
 ) -%}
   {%- include path + '.svg' -%}
-  {% if alt %}<span class="sr-only">{{ alt }}</span>{% endif %}
+  {% if alt %}<span class="visually-hidden">{{ alt }}</span>{% endif %}
 {%- endmacro %}
 
 
@@ -238,6 +237,7 @@ params:
   data
 ) -%}
 {%- for item in data -%}
+  {%- set item_content -%}
   {%- if item.img -%}
     {%- set style = {
       '--width': item.width,
@@ -266,6 +266,10 @@ params:
     </div>
   {%- elif item.pen -%}
     {{- codepen(item.pen, item.title, item.user, item.tab, item.height, item.theme, item.preview, item.attrs) -}}
+  {%- endif -%}
+  {%- endset -%}
+  {%- if item.url -%}
+    <a href="{{ item.url | url }}">{{ item_content | safe }}</a>
   {%- endif -%}
 {%- endfor -%}
 {%- endmacro %}

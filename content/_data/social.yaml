@@ -9,8 +9,5 @@
   user: '@miriamsuzanne'
 - site: RSS feed
   url: https://www.miriamsuzanne.com/feed.xml
-- site: StackOverflow
-  url: https://stackoverflow.com/users/1930386/
-- site: KeyBase
-  url: https://keybase.io/mirisuzanne
-
+# - site: StackOverflow
+#   url: https://stackoverflow.com/users/1930386/

@@ -1,44 +1,10 @@
-{% import 'utility.macros.njk' as utility %}
-{% import 'content.macros.njk' as content %}
 {% import 'contact.macros.njk' as contact %}
 
-{% set colophon %}
-{% md %}
-Made by **Miriam Suzanne**
-with love and care and reckless abandon
-using
-[Eleventy](https://11ty.dev),
-[Sass](https://sass-lang.com),
-and [Cascading Colors](https://cascading-colors.netlify.com/).
-Hosted on
-[Netlify](https://www.netlify.com/).
-
-Take care of each other.
-{% endmd %}
-{% endset %}
-
 <footer>
-  {% set is_about = (page.url | url == '/who/') %}
-  {% set is_contact = (page.url | url == '/contact/') %}
-
   <div class="h-card p-author">
-    {% call content.media(
-      src='icons/miriam.svg',
-      embed=true
-    ) %}
-      <strong class="p-name">
-        <a href="https://miariamsuzanne.com/who/" rel="author" class="u-url u-uid">{{ site.author }}</a>
-      </strong>
-
-      {% if not is_about %}
-        {% set who = collections.all | getPage('/who/') | first %}
-        <div class="p-note">
-          {{ who.data.summary | md | safe }}
-        </div>
-      {% endif %}
-
-      {{ contact.links(social) }}
-    {% endcall %}
+    Copyright &copy; {% getDate 'year' %}
+    <a href="https://miariamsuzanne.com/who/" rel="author" class="p-name u-url u-uid">{{ site.author }}</a>
+    {{ contact.links(social) }}
   </div>
 
   {% if not is_contact %}
@@ -48,10 +14,9 @@ Take care of each other.
     ) }}
   {% endif %}
 
-  {% if is_about or is_contact %}
-    <div data-footer="colophon">
-      {{ colophon | safe }}
-    </div>
-  {% endif %}
+  <div data-footer="colophon">
+
+  {{ colophon | md | safe }}
+  </div>
 </footer>
 

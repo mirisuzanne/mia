@@ -1,30 +1,62 @@
 ---
+layout: format/h-card
 title: About
-banner: Miriam Suzanne
-sub: (this is my website)
+banner: |
+  [Miriam Eric Suzanne]{.p-name}
+sub: |
+  a.k.a Mia -- [Author, Artist, and Web Developer]{.p-role}
+description: Author, Artist, and Web Developer
 calendar: all_orgs
-class: h-card
 hero:
   img: headshots/mia-smashing.jpg
   alt: |
-    Mia with a laptop and water bottle,
+    Miriam with a laptop and water bottle,
     wearing a bright yellow leather jacket,
     trans lightning earrings,
     and a headset mic
     while speaking at a conference.
-  caption: |
-    Let's all get together in a big room
-    so I can talk at you about code for an hour.
+eleventyComputed:
+  headshots:
+    - img: headshots/mia-smashing.jpg
+      url: |
+        {{ 'headshots/mia-smashing.jpg' | imgSrc }}
+      alt: |
+        Miriam with a laptop and water bottle,
+        wearing a bright yellow leather jacket,
+        trans lightning earrings,
+        and a headset mic
+        while speaking at a conference.
+    - img: headshots/from-the-hip.jpg
+      url: |
+        {{ 'headshots/from-the-hip.jpg' | imgSrc }}
+      alt: |
+        Miriam in a spotlight,
+        standing at a mic and holding papers,
+        in front of a large blank screen.
+        From The Hip Photo watermark logo.
+    - img: headshots/mia-speaking.jpg
+      url: |
+        {{ 'headshots/mia-speaking.jpg' | imgSrc }}
+      alt: |
+        Miriam close up at a mic, smiling,
+        in a brown flannel,
+        in front of a blue screen.
+    - img: headshots/syntax.jpg
+      url: |
+        {{ 'headshots/syntax.jpg' | imgSrc }}
+      alt: |
+        Miriam on stage with a bass under red lights,
+        singing into a mic,
+        with Dan on his knees playing guitar,
+        and a drum set behind them.
 summary: |
-  I'm an artist, activist,
-  teacher, and web developer.
   As a co-founder of
   <a class="h-card p-org" href="/orgs/oddbird/">OddBird</a>,
   <a class="h-card p-org" href="/orgs/teacup-gorilla/">Teacup Gorilla</a>,
   and
   <a class="h-card p-org" href="/orgs/grapefruit-lab/">Grapefruit Lab</a>
   I hope to create art & software
-  that celebrate the queerness & complexity
+  that [celebrate the queerness](/why/)
   of human experience.
 ---
 
@@ -36,3 +68,28 @@ and presented at conferences around the world --
 but I've never been promoted at a job,
 done a whiteboard interview,
 or graduated from college.
+{.p-note}
+
+{% import 'contact.macros.njk' as contact %}
+
+{{ contact.links(social) }}
+
+## Bios & Photos for Publication
+
+{% for name, bio in bios %}
+{% if name != 'intro' %}
+### {{ name | capitalize }} Bio
+
+<div class="p-note">
+{{ bio | md | safe }}
+</div>
+{% endif %}
+{% endfor %}
+
+### Photos
+
+{% import 'content.macros.njk' as content %}
+
+{{ content.fig(
+  headshots
+) }}

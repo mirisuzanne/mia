@@ -9,7 +9,7 @@ email: miriam@miriamsuzanne.com
 images: /images/
 icon: icons/miriam.svg
 nav:
-  home: /
+  tags: /tags/
   about: /who/
   rss: /feed.xml
 og:
@@ -24,9 +24,16 @@ feed:
     type: atom+xml
     url: feed.atom
 styles:
-  - screen.css
-# scripts:
-#   - scripts.js
+  - title: reset
+    url: alt-reset.css
+    alt: true
+  - title: defaults
+    url: alt-default.css
+    alt: true
+  - title: all
+    url: all.css
+scripts:
+  - scripts.js
 theme:
   light: 'hotpink'
   dark: 'mediumvioletred'

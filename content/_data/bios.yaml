@@ -1,14 +1,51 @@
 intro: |
-  I'm an [artist](/tags/art/)
-  who enjoys [writing code](/tags/code/)
-  and [playing with words](/tags/writing/).
   I make [music](/tags/music/)
-  with [Teacup Gorilla](/orgs/teacup-gorilla/),
+  with [Teacup Gorilla](/orgs/teacup-gorilla/){.h-card .p-org},
   [theater](/tags/theater/)
-  with [Grapefruit Lab](/orgs/grapefruit-lab/),
-  and web software
-  with [OddBird](/orgs/oddbird/),
-  the [Sass](/orgs/sass/) team,
-  and the [CSS Working Group](/orgs/w3c/).
-  I also enjoy [speaking](/tags/speaking/)
-  about all of the above.
+  with [Grapefruit Lab](/orgs/grapefruit-lab/){.h-card .p-org},
+  and web software with [OddBird](/orgs/oddbird/){.h-card .p-org}.
+  I'm an Invited Expert
+  on the [CSS Working Group](/orgs/w3c/){.h-card .p-org},
+  a core contributor
+  to the [Sass](/orgs/sass/){.h-card .p-org} language,
+  and a regular [speaker](/tags/speaking/)
+  at conferences around the world.
+  {.p-note}
+code: |
+  Miriam is an artist, developer, and open-web advocate.
+  As a [co-founder]{.p-job-title} of [OddBird](https://oddbird.net){.h-card .p-org},
+  [Invited Expert]{.p-job-title} with the
+  [W3C CSS Working Group](https://www.w3.org/Style/CSS/members){.h-card .p-org},
+  and [Sass](https://sass-lang.com/){.h-card .p-org}
+  [core contributor]{.p-job-title},
+  She has spent the last 15+ years building,
+  teaching, and helping push the boundaries of web technology.
+
+  Miriam created the popular
+  [Susy](https://oddbird.net/susy/),
+  grid library for Sass in 2009,
+  and then [True](https://oddbird.net/susy/),
+  the leading Sass tool for unit testing.
+  These days she's working on extending the Sass color module
+  to support wide-gamut color-spaces,
+  while guiding the development of
+  Container Queries, Scope, and Cascade Layers in CSS.
+art: |
+  Miriam is an artist and developer
+  working across a range of media.
+  She makes [music](/tags/music/)
+  with [Teacup Gorilla](/orgs/teacup-gorilla/){.h-card .p-org},
+  and [theater](/tags/theater/)
+  with [Grapefruit Lab](/orgs/grapefruit-lab/){.h-card .p-org} --
+  in addition to being a published novelist,
+  visual artist, and digital poet.
+
+  Miriam won the 2017 True West Award
+  for _10 Myths on the Proper Application of Beauty Products_
+  (Buntport Theater, 2016),
+  the stage adaptation of her debut novel
+  _Riding SideSaddle*_ (SpringGun Press, 2015).
+  Recent productions include
+  _Jane/Eyre_ a queer adaptation of the classic novel,
+  and _Pity+Fear_ an exploration of identity and storytelling --
+  both with Grapefruit Lab.

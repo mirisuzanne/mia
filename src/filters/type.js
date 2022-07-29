@@ -9,7 +9,9 @@ const mdown = require('markdown-it')({
 })
   .disable('code')
   .use(require('markdown-it-mark'))
-  .use(require('markdown-it-footnote'));
+  .use(require('markdown-it-footnote'))
+  .use(require('markdown-it-bracketed-spans'))
+  .use(require('markdown-it-attrs'));
 
 const amp = (s) => {
   const r = '<span class="amp">&</span>';

@@ -1,30 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="auto" data-css="all">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>{{ [title, site.title] | join(' | ') }}</title>
+    <title>{{ title if (page.url == '/') else [title, site.title] | join(' | ') }}</title>
     <meta name="description" content="{{ description }}" />
-
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    {# <link rel="preload" href="/fonts/Recursive_VF_1.043--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin> #}
-
     <meta name="color-scheme" content="dark light">
 
-    {% for theme, color in site.theme %}
+    {%- for theme, color in site.theme -%}
       <meta name="theme-color" media="(prefers-color-scheme: {{ theme }})" content="{{ color }}">
-    {% endfor %}
+    {%- endfor -%}
 
-    {% set styles = site.styles | concat(styles) if styles else site.styles %}
-    {% for url in styles %}
-      {% set url = url if '://' in url | string else ['/css/', url] | join %}
-      <link rel="stylesheet" href="{{ url }}" />
-    {% endfor %}
+    {%- set styles = site.styles | concat(styles) if styles else site.styles -%}
+    {%- for link in styles -%}
+      {%- set url = link.url if '://' in link.url | string else ['/css/', link.url] | join -%}
+      {%- set rel = 'alternate stylesheet' if link.alt else 'stylesheet' -%}
+      <link rel="{{ rel }}" href="{{ url }}" {% if link.title %}title="{{ link.title }}"{% endif %} />
+    {%- endfor -%}
 
-    {% include 'site/og.njk' %}
-    {% include 'site/feed.njk' %}
-    {% include 'site/auth.njk' %}
+    {%- include 'site/og.njk' -%}
+    {%- include 'site/feed.njk' -%}
+    {%- include 'site/auth.njk' -%}
   </head>
 
   {%- import 'utility.macros.njk' as utility -%}
@@ -48,6 +45,7 @@
     <header id="banner">
       <a href="/" rel="home" class="h-card">{{ site.title }}</a>
       {% include 'site/nav.njk' %}
+      {% include 'site/settings.njk' %}
     </header>
 
     <main id="content" tabindex="-1" {{ utility.attr_if('class', class) }}>

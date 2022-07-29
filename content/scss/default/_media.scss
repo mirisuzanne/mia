@@ -3,6 +3,20 @@
     display: grid;
     gap: var(--gap, 1em);
 
+    > div {
+      display: grid;
+      gap: var(--gap, 1em);
+
+      @media (min-width: 35em) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    figcaption,
+    :only-child {
+      grid-column: 1 / -1;
+    }
+
     svg {
       width: 100%;
       height: auto;
@@ -15,16 +29,5 @@
     > * {
       margin: 0;
     }
-  }
-
-  [style*='--ratio:'] {
-    aspect-ratio: auto var(--ratio, 16 / #{9});
-    display: grid;
-    place-items: stretch;
-  }
-
-  // @@temp
-  [data-figure='content'] {
-    display: contents;
   }
 }

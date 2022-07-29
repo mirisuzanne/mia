@@ -9,7 +9,7 @@
     {% for segment in all | groupTags %}
       {%- set title -%}
         {{ segment.group }}
-        <span class="sr-only">tags</span>
+        <span class="visually-hidden">tags</span>
       {%- endset -%}
 
       {{ group(

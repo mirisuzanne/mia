@@ -1,7 +1,36 @@
 @use 'colors';
+@use 'fonts';
+@use 'buttons';
+@use 'erase';
 
 @layer theme {
+  @include fonts.files;
+  @include fonts.css;
+
   html {
     @include colors.theme;
+
+    border-block: thick solid var(--AccentColor);
+  }
+
+  @include buttons.css;
+  @include colors.css;
+  @include erase.css;
+
+  html::after {
+    background: linear-gradient(
+        var(--flag-angle, to bottom right),
+        powderblue 0% 20%,
+        pink 20% 40%,
+        white 40% 60%,
+        pink 60% 80%,
+        powderblue 80% 100%
+      )
+      no-repeat scroll;
+    border-block-start: inherit;
+    content: '';
+    display: block;
+    height: max(50vh, var(--spacer));
+    margin-block-start: var(--gap, 1em);
   }
 }

@@ -14,17 +14,14 @@
   main,
   footer,
   section,
-  article {
+  article,
+  details {
     margin-block: 1em;
   }
 
   main {
-    border-block: thin solid;
+    border-block: thick double;
     padding-block: 1em;
-  }
-
-  details {
-    border-block: thin solid;
   }
 
   summary {

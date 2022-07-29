@@ -1,0 +1,19 @@
+@mixin css {
+  button {
+    background-color: var(--button-bg, var(--ButtonFace));
+    border: medium solid var(--button-border, currentColor);
+    color: var(--button-text, var(--ButtonText));
+    padding: var(--half-shim) var(--gap);
+  }
+
+  [aria-pressed='false'] {
+    --button-bg: var(--Canvas);
+    --button-border: var(--ActiveText);
+  }
+
+  [aria-pressed='true'] {
+    --button-bg: var(--ActiveText);
+    --button-border: var(--AccentColor);
+    --button-text: var(--Canvas);
+  }
+}

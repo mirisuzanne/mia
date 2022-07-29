@@ -1,9 +1,20 @@
-<details id="user-settings" data-anchor="settings">
-  <summary>
-    <span class="summary-text">Customize</span>
-  </summary>
-  <div data-dropdown="pad">
-    {% include 'site/ccs.njk' %}
-    {% include 'site/type.njk' %}
-  </div>
+<details id="settings" data-init="show" hidden>
+  <summary>Theme settings</summary>
+
+  <section data-options="theme" style="display: var(--display-init, none);">
+    <h2>Color Scheme</h2>
+    <button data-set="auto" aria-pressed="true">auto</button>
+    <button data-set="light" aria-pressed="false">light</button>
+    <button data-set="dark" aria-pressed="false">dark</button>
+  </section>
+
+  <section data-options="css">
+    <h2>Style Layers</h2>
+    <button data-set="none" aria-pressed="false">none</button>
+    {%- for link in site.styles -%}
+      <button data-set="{{ link.title }}" aria-pressed="{{ 'false' if alt else 'true' }}">
+        {{- link.title -}}
+      </button>
+    {%- endfor -%}
+  </section>
 </details>
