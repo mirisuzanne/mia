@@ -1,6 +1,8 @@
 @use 'colors';
 @use 'fonts';
 @use 'buttons';
+@use 'content';
+@use 'media';
 @use 'erase';
 
 @layer theme {
@@ -13,11 +15,15 @@
     border-block: thick solid var(--AccentColor);
   }
 
-  @include buttons.css;
   @include colors.css;
+  @include buttons.css;
+  @include content.css;
+  @include media.css;
   @include erase.css;
 
   html::after {
+    @include media.dim;
+
     background: linear-gradient(
         var(--flag-angle, to bottom right),
         powderblue 0% 20%,

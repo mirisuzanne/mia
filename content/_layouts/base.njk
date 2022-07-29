@@ -1,65 +1,75 @@
 <!doctype html>
 <html lang="en" data-theme="auto" data-css="all">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title if (page.url == '/') else [title, site.title] | join(' | ') }}</title>
-    <meta name="description" content="{{ description }}" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <meta name="color-scheme" content="dark light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title if (page.url == '/') else [title, site.title] | join(' | ') }}</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="color-scheme" content="dark light">
 
-    {%- for theme, color in site.theme -%}
-      <meta name="theme-color" media="(prefers-color-scheme: {{ theme }})" content="{{ color }}">
-    {%- endfor -%}
+  {%- for theme, color in site.theme -%}
+    <meta name="theme-color" media="(prefers-color-scheme: {{ theme }})" content="{{ color }}">
+  {%- endfor -%}
 
-    {%- set styles = site.styles | concat(styles) if styles else site.styles -%}
-    {%- for link in styles -%}
-      {%- set url = link.url if '://' in link.url | string else ['/css/', link.url] | join -%}
-      {%- set rel = 'alternate stylesheet' if link.alt else 'stylesheet' -%}
-      <link rel="{{ rel }}" href="{{ url }}" {% if link.title %}title="{{ link.title }}"{% endif %} />
-    {%- endfor -%}
+  {%- set styles = site.styles | concat(styles) if styles else site.styles -%}
+  {%- for link in styles -%}
+    {%- set url = link.url if '://' in link.url | string else ['/css/', link.url] | join -%}
+    {%- set rel = 'alternate stylesheet' if link.alt else 'stylesheet' -%}
+    <link rel="{{ rel }}" href="{{ url }}" {% if link.title %}title="{{ link.title }}"{% endif %} />
+  {%- endfor -%}
 
-    {%- include 'site/og.njk' -%}
-    {%- include 'site/feed.njk' -%}
-    {%- include 'site/auth.njk' -%}
-  </head>
+  {%- include 'site/og.njk' -%}
+  {%- include 'site/feed.njk' -%}
+  {%- include 'site/auth.njk' -%}
+</head>
 
-  {%- import 'utility.macros.njk' as utility -%}
+{%- import 'utility.macros.njk' as utility -%}
 
-  <body id="miriam.codes">
-    <a href="#content" class="visually-hidden">skip to content</a>
+<body id="miriam.codes">
+  <a href="#content" class="visually-hidden">skip to content</a>
 
-    {% if draft %}
-      {% set input_path = (page.inputPath or '') | replace('./', '') %}
-      <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}" class="edit-draft">
-        Edit this draft on GitHub
-      </a>
-    {% endif %}
+  {% if draft %}
+    {% set input_path = (page.inputPath or '') | replace('./', '') %}
+    <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}" class="edit-draft">
+      Edit this draft on GitHub
+    </a>
+  {% endif %}
 
-    {% if message %}
-      <div id="message">
-        {{ message | md | safe }}
-      </div>
-    {% endif %}
+  {% if message %}
+    <div id="message">
+      {{ message | md | safe }}
+    </div>
+  {% endif %}
 
-    <header id="banner">
-      <a href="/" rel="home" class="h-card">{{ site.title }}</a>
-      {% include 'site/nav.njk' %}
-      {% include 'site/settings.njk' %}
-    </header>
+  <header id="banner">
+    {% include 'site/nav.njk' %}
+  </header>
 
-    <main id="content" tabindex="-1" {{ utility.attr_if('class', class) }}>
-      {{ content | safe }}
-    </main>
+  <main id="content" tabindex="-1" {{ utility.attr_if('class', class) }}>
+    {{ content | safe }}
+  </main>
 
-    {% include 'site/footer.njk' %}
+  <nav aria-label="secondary">
+    <details id="tag-nav">
+      <summary>Featured Tags</summary>
+      <ul>
+        {%- for tag in top_tags -%}
+          <li>{{- tag.link | safe -}}</li>
+        {%- endfor -%}
+      </ul>
+    </details>
+  </nav>
 
-    <a href="{{ page.url | url }}" class="u-url" hidden></a>
+  {% include 'site/settings.njk' %}
+  {% include 'site/footer.njk' %}
 
-    {% set scripts = site.scripts | concat(scripts) if scripts else site.scripts %}
-    {% for url in scripts %}
-      {% set url = url if '://' in url | string else ['/assets/js/', url] | join %}
-      <script type="text/javascript" src="{{ url | url }}"></script>
-    {% endfor %}
-  </body>
+  <a href="{{ page.url | url }}" class="u-url" hidden></a>
+
+  {% set scripts = site.scripts | concat(scripts) if scripts else site.scripts %}
+  {% for url in scripts %}
+    {% set url = url if '://' in url | string else ['/assets/js/', url] | join %}
+    <script type="text/javascript" src="{{ url | url }}"></script>
+  {% endfor %}
+</body>
 </html>

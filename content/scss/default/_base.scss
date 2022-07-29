@@ -8,10 +8,4 @@
       --outset: calc(var(--gap, 1em) * -1);
     }
   }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--gap, 1em);
-  }
 }

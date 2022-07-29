@@ -15,6 +15,7 @@ $light: azure;
   --complement-bg: var(--complement-light);
   --complement: var(--complement-dark);
   --shadow: hsl(0deg 0% 0% / 12.5%);
+  --image-brightness: 100%;
 }
 
 @mixin dark {
@@ -25,6 +26,7 @@ $light: azure;
   --complement-bg: var(--complement-dark);
   --complement: var(--complement-light);
   --shadow: hsl(0deg 0% 0% / 25%);
+  --image-brightness: 80%;
 }
 
 @mixin theme {
@@ -39,12 +41,12 @@ $light: azure;
   // mode configuration
   @include dark;
 
-  &[data-theme='dark'] {
-    @include dark;
-  }
-
   @media (prefers-color-scheme: light) {
     @include light;
+  }
+
+  &[data-theme='dark'] {
+    @include dark;
   }
 
   &[data-theme='light'] {

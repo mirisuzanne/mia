@@ -1,0 +1,14 @@
+@mixin dim {
+  filter: brightness(var(--image-brightness, 100%));
+
+  &:hover {
+    --image-brightness: 100%;
+  }
+}
+
+@mixin css {
+  img,
+  picture {
+    @include dim;
+  }
+}

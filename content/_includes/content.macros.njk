@@ -1,15 +1,5 @@
 {% import "utility.macros.njk" as utility %}
 
-{#
-  Intro
-  -----
-#}
-{% macro intro(
-  content=none
-) -%}
-{%- set content = content if (content != none) else caller() -%}
-<div class='intro'>{{ content | md | safe }}</div>
-{%- endmacro %}
 
 {#
   Quote
@@ -270,6 +260,8 @@ params:
   {%- endset -%}
   {%- if item.url -%}
     <a href="{{ item.url | url }}">{{ item_content | safe }}</a>
+  {%- else -%}
+    {{ item_content | safe }}
   {%- endif -%}
 {%- endfor -%}
 {%- endmacro %}

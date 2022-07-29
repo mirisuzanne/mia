@@ -1,21 +1,17 @@
 {% import "utility.macros.njk" as utility %}
 
-<nav id="main-nav" aria-label="Primary">
-  {% set page = collections.all | getPage(page) | first or page %}
-  {% set at_name %}Miriam <span data-above="medium">Suzanne</span>{% endset %}
+<nav aria-label="Primary">
+  <a href="/" rel="home" class="h-card">{{ site.title }}</a>
 
   {% for name, url in site.nav %}
-    {% set name = at_name if (name == '__name') else name %}
     {% set attrs = {
       'data-nav': name | slug,
       'aria-current': ('page' if (page.url == url) else none),
       'rel': ('home' if (url == '/') else none)
     } %}
     <div>
-      <a
-        href="{{ url | url }}"
-        {{ utility.show_attrs(attrs) }}>
-        {{ name | safe }}
+      <a href="{{ url | url }}" {{ utility.show_attrs(attrs) }}>
+        {{- name -}}
       </a>
     </div>
   {% endfor %}
