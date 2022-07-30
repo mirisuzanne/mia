@@ -17,7 +17,7 @@ media:
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption="Learn what's new in the CSS `display` property"
 ) }}

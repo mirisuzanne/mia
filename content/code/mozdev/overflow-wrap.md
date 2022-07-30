@@ -23,7 +23,7 @@ The solutions aren't perfect yet,
 but I'll walk you through the options we have,
 and how to use them.
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Overflow-Wrap is the proper way to break words in CSS'
 ) }}

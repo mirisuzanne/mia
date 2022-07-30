@@ -26,7 +26,7 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   video,
   'Promotional video of the event'
 ) }}

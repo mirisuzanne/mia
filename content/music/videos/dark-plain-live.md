@@ -18,7 +18,7 @@ video:
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=video,
   caption='A Dark Plain at Seventh Circle'
 ) }}

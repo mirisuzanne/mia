@@ -23,4 +23,4 @@ summary: |
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(album) }}
+{{ content.figure(album) }}

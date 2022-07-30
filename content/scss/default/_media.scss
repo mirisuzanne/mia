@@ -12,14 +12,19 @@
       }
     }
 
+    img,
+    video,
+    audio,
+    iframe,
+    picture,
+    svg {
+      width: var(--media-width, 100%);
+      height: var(--media-height, auto);
+    }
+
     figcaption,
     :only-child {
       grid-column: 1 / -1;
-    }
-
-    svg {
-      width: 100%;
-      height: auto;
     }
   }
 

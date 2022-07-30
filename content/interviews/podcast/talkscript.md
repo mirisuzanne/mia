@@ -14,7 +14,7 @@ media:
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Listen to the podcast…'
 ) }}

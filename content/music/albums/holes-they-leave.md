@@ -50,7 +50,7 @@ and a tour across the midwest.
 [tg]: /orgs/teacup-gorilla/
 [sidesaddle]: /books/sidesaddle/
 
-{{ content.fig(
+{{ content.figure(
   audio,
   caption='Stream or buy on bandcamp, itunes, spotify, etc…'
 ) }}

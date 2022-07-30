@@ -1,5 +1,5 @@
 {%- import "feed.macros.njk" as feed -%}
-{%- set posts = collections._post | getPublic | reverse | onlyShow(15) -%}
+{%- set posts = collections._post | getPublic | reverse | slice(15) -%}
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ site.title }}</title>

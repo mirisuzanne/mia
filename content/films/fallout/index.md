@@ -31,7 +31,7 @@ media:
 
 [Read the script »](script/)
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Made for shortfilmfest05 at New World Arts'
 ) }}

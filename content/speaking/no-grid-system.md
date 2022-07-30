@@ -119,7 +119,7 @@ and how to get started with only a few lines of code.
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos…'
 ) }}

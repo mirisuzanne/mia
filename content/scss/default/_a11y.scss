@@ -1,5 +1,5 @@
 @mixin css {
-  body > [href='#content'] {
+  body > [href='#main'] {
     background-color: var(--button-bg, var(--ButtonFace));
     color: var(--button-text, var(--ButtonText));
     inset: var(--half-gap, 0.5em) auto auto var(--line, 1em);

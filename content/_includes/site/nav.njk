@@ -3,7 +3,7 @@
 <nav aria-label="Primary">
   <a href="/" rel="home" class="h-card">{{ site.title }}</a>
 
-  {% for name, url in site.nav %}
+  {% for name, url in nav.site %}
     {% set attrs = {
       'data-nav': name | slug,
       'aria-current': ('page' if (page.url == url) else none),

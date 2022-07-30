@@ -24,7 +24,7 @@ We also address scoping, how CSS is defined, debugging, layout models,
 how to provide as much information as possible to the browser,
 and the worst things we've done with CSS.
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Listen to the podcast…'
 ) }}

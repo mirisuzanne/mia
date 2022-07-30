@@ -67,16 +67,11 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('webMentions', mentions.webMentions);
 
   eleventyConfig.addFilter('publicTags', tags.publicTags);
-  eleventyConfig.addFilter('getTags', tags.getTags);
-  eleventyConfig.addFilter('groupTags', tags.groupTags);
   eleventyConfig.addFilter('hasTag', tags.hasTag);
   eleventyConfig.addFilter('withTag', tags.withTag);
   eleventyConfig.addFilter('displayName', tags.displayName);
   eleventyConfig.addFilter('tagLink', tags.tagLink);
-  eleventyConfig.addFilter(
-    'inTopTagCount',
-    (count) => typeof count === 'number' && count <= tags.topCount,
-  );
+  eleventyConfig.addFilter('navTags', tags.navTags);
 
   eleventyConfig.addFilter('getPage', pages.getPage);
   eleventyConfig.addFilter('getPublic', pages.getPublic);
@@ -97,15 +92,15 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter('concat', _.concat);
   eleventyConfig.addFilter('merge', _.merge);
-  eleventyConfig.addFilter('loSlice', _.slice);
   eleventyConfig.addFilter('sortBy', _.sortBy);
   eleventyConfig.addFilter('filter', _.filter);
+  eleventyConfig.addFilter('find', _.find);
   eleventyConfig.addFilter('includes', (array, key) =>
     _.includes(array || [], key),
   );
 
   // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter('onlyShow', (array, n) => {
+  eleventyConfig.addFilter('slice', (array, n) => {
     if (n < 0) {
       return array.slice(n);
     }

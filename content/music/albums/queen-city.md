@@ -33,4 +33,4 @@ most notably:
 - Last Bullet (also on our [debut EP](/2015/07/09/holes-they-leave/)
 - Charlie's Engine
 
-{{ content.fig(album) }}
+{{ content.figure(album) }}

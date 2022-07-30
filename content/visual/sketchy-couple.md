@@ -12,7 +12,7 @@ gallery:
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=gallery,
   caption="Dan Eisenstat & Sondra Eby, a sketchy couple"
 ) }}

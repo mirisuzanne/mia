@@ -1,9 +1,18 @@
 {% import 'contact.macros.njk' as contact %}
 
 <footer>
-  <div class="h-card p-author">
-    Copyright &copy; {% getDate 'year' %}
-    <a href="https://miariamsuzanne.com/who/" rel="author" class="p-name u-url u-uid">{{ site.author }}</a>
+  <div class="h-card p-author vcard">
+    {% img
+      'headshots/rss.jpg',
+      'Miriam with asymmetrical orange hair at a mic, smiling',
+      'face',
+      {'class': 'photo u-photo'}
+    %}
+
+    <a href="https://miariamsuzanne.com/who/" rel="author" class="p-name u-url u-uid fn url uid">
+      {{- site.author -}}
+    </a>
+
     {{ contact.links(social) }}
   </div>
 
@@ -14,9 +23,9 @@
     ) }}
   {% endif %}
 
-  <div data-footer="colophon">
-
-  {{ colophon | md | safe }}
+  <div>
+    <p>Copyright &copy; {% getDate 'year' %} {{ site.author }}</p>
+    {{ colophon | md | safe }}
   </div>
 </footer>
 

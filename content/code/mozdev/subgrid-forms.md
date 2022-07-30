@@ -21,7 +21,7 @@ and you can use it already in Firefox Nightly --
 but there's no need to wait.
 Subgrid works great as a quick enhancement on top of you existing layouts!
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Dont wait for full browser support to start using subgrids'
 ) }}

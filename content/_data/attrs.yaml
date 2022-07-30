@@ -1,0 +1,7 @@
+main:
+  tabindex: -1
+  data-erase: off
+h1:
+  class: p-name
+summary:
+  class: p-summary

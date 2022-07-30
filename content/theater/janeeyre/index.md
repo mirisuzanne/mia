@@ -88,4 +88,4 @@ featured opening acts by lovely local musicians…
 
 ------
 
-{{ content.fig(gallery, 'production photos, 2018') }}
+{{ content.figure(gallery, 'production photos, 2018') }}

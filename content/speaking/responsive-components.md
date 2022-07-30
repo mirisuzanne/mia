@@ -75,7 +75,7 @@ and responsive CSS.
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos...'
 ) }}

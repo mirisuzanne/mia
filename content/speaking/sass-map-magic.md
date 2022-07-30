@@ -54,7 +54,7 @@ before we push them to their limits.
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos…'
 ) }}

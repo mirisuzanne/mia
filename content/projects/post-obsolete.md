@@ -139,7 +139,7 @@ and music by [The Widow's Bane][bane].
 
 ---
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption="Production video and photos"
 ) }}

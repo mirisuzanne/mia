@@ -89,7 +89,7 @@ without extensive maintenance.
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos…'
 ) }}

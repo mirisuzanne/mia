@@ -22,7 +22,7 @@ Watch the video, and go play with the [demo on codepen][pen].
 
 [pen]: https://codepen.io/miriamsuzanne/pen/BaBKowO?editors=0100
 
-{{ content.fig(
+{{ content.figure(
   data=embed,
   caption='Style list markers, and add your own counters!'
 ) }}

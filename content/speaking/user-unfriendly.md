@@ -96,7 +96,7 @@ and designing for edge-cases with integrated teams.
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos…'
 ) }}

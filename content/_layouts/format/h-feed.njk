@@ -1,13 +1,8 @@
 ---
 layout: base
-class:
-  - h-feed
+attrs:
+  main:
+    class: h-feed
 ---
 
-<header>
-  {% include 'page/title.njk' %}
-  {% include 'page/meta.njk' %}
-</header>
-
-{% include 'page/content.njk' %}
-{% include 'site/calendar.njk' %}
+{% include 'page/default.njk' %}

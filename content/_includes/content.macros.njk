@@ -96,7 +96,7 @@
   Figures
   -------
 #}
-{% macro fig(
+{% macro figure(
   data=none,
   caption=none,
   content=none
@@ -237,7 +237,7 @@ params:
     {{- item.img | img(
       item.alt,
       none if full_width else 'gallery',
-      {'style': style},
+      {'style': style} | merge(item.attrs),
       [item.width, item.height]
     ) | safe -}}
   {%- elif item.svg -%}
@@ -298,7 +298,7 @@ params:
   url='https://codepen.io'
 ) }}.</p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 {%- endset -%}
-{{ fig(content) }}
+{{ figure(content) }}
 {%- endmacro %}
 
 {% macro caniuse(

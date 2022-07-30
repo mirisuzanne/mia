@@ -72,7 +72,7 @@ living design systems in an agile and integrated process?
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos…'
 ) }}

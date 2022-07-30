@@ -24,7 +24,7 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   video.src,
   video.caption
 ) }}

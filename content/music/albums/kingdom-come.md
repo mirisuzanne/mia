@@ -30,4 +30,4 @@ album:
 
 ------
 
-{{ content.fig(album) }}
+{{ content.figure(album) }}

@@ -28,7 +28,9 @@
       <ul data-list="tags">
         {%- for tag in tags_public -%}
           <li>
-            {{ utility.tag_link(tag, collections) }}
+            <a href="{{ tag | tagLink(collections) }}" class="p-category">
+              {{- tag | displayName -}}
+            </a>
           </li>
         {%- endfor -%}
       </ul>

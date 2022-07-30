@@ -17,7 +17,7 @@ video:
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   video,
   caption='Jordan, live at Comedy Works'
 ) }}
@@ -37,7 +37,7 @@ making sure I was ok.
 I know I wasn't the only trans woman she helped.
 Jordan saved lives.
 
-{{ content.fig(
+{{ content.figure(
   audio,
   caption='Estrogentrification comedy album'
 ) }}

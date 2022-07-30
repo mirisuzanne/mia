@@ -38,7 +38,7 @@ World,” filtered through the mind of an obsessive, self-proclaimed
 prophet. Created by Adam Stone & Erin Rollman at Buntport Theatre, with
 contributions from myself and many others.
 
-{{ content.fig(
+{{ content.figure(
   data=gallery,
   caption=caption
 ) }}

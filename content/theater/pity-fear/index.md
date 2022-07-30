@@ -180,7 +180,7 @@ and what to order for dinner.
 
 ## Photos
 
-{{ content.fig(photos, 'Production photos by Kenny Storms') }}
+{{ content.figure(photos, 'Production photos by Kenny Storms') }}
 
 ## Credits
 

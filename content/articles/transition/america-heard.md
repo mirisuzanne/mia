@@ -33,7 +33,7 @@ for joining in the fun!
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=film,
   caption='Transitions, by Maureen Maloney'
 ) }}

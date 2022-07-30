@@ -12,7 +12,7 @@ track:
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   track,
   caption='Demo recording of Five(5)'
 ) }}

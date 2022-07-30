@@ -1,12 +1,10 @@
 ---
 layout: base
-class:
-  - h-card
+attrs:
+  main:
+    class: h-card
+  summary:
+    class: p-note
 ---
 
-<header>
-  {% include 'page/title.njk' %}
-  {% include 'page/meta.njk' %}
-</header>
-
-{% include 'page/content.njk' %}
+{% include 'page/default.njk' %}

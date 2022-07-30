@@ -1,12 +1,11 @@
 ---
 layout: format/h-card
 title: About
-banner: |
-  [Miriam Eric Suzanne]{.p-name}
+banner: Miriam Eric Suzanne
 sub: |
-  a.k.a Mia -- [Author, Artist, and Web Developer]{.p-role}
+  a.k.a [Mia]{.p-nickname} --
+  [Author, Artist, and Web Developer]{.p-role}
 description: Author, Artist, and Web Developer
-calendar: all_orgs
 hero:
   img: headshots/mia-smashing.jpg
   alt: |
@@ -20,6 +19,8 @@ eleventyComputed:
     - img: headshots/mia-smashing.jpg
       url: |
         {{ 'headshots/mia-smashing.jpg' | imgSrc }}
+      attrs:
+        class: u-photo
       alt: |
         Miriam with a laptop and water bottle,
         wearing a bright yellow leather jacket,
@@ -29,6 +30,8 @@ eleventyComputed:
     - img: headshots/from-the-hip.jpg
       url: |
         {{ 'headshots/from-the-hip.jpg' | imgSrc }}
+      attrs:
+        class: u-photo
       alt: |
         Miriam in a spotlight,
         standing at a mic and holding papers,
@@ -37,6 +40,8 @@ eleventyComputed:
     - img: headshots/mia-speaking.jpg
       url: |
         {{ 'headshots/mia-speaking.jpg' | imgSrc }}
+      attrs:
+        class: u-photo
       alt: |
         Miriam close up at a mic, smiling,
         in a brown flannel,
@@ -44,6 +49,8 @@ eleventyComputed:
     - img: headshots/syntax.jpg
       url: |
         {{ 'headshots/syntax.jpg' | imgSrc }}
+      attrs:
+        class: u-photo
       alt: |
         Miriam on stage with a bass under red lights,
         singing into a mic,
@@ -90,6 +97,6 @@ or graduated from college.
 
 {% import 'content.macros.njk' as content %}
 
-{{ content.fig(
+{{ content.figure(
   headshots
 ) }}

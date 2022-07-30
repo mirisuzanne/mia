@@ -33,7 +33,7 @@ video:
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=video,
   caption='Just Like That music video'
 ) }}

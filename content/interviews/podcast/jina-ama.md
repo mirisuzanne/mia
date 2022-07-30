@@ -18,7 +18,7 @@ media:
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Not sure why my audio came out so quiet…'
 ) }}

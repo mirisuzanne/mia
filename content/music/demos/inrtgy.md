@@ -19,7 +19,7 @@ this one features Daniel Rule on the second guitar & vocals.
 Daniel has started playing with us regularly these days —
 we're excited to have him in the band!
 
-{{ content.fig(
+{{ content.figure(
   track,
   caption
 ) }}

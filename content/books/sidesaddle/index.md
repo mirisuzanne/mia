@@ -126,7 +126,7 @@ or
 
 ---
 
-{{ content.fig(
+{{ content.figure(
   video.src,
   video.caption
 ) }}
@@ -157,7 +157,7 @@ The Teacup Gorilla EP includes several songs based on the novel:
 
 {% set ep = collections.all | getPage('/2015/07/09/holes-they-leave/') | first %}
 
-{{ content.fig(ep.data.audio) }}
+{{ content.figure(ep.data.audio) }}
 
 ---
 
@@ -169,7 +169,7 @@ and several [gallery shows](art/)…
 
 {% set show = collections.all | getPage('/books/sidesaddle/art/') | first %}
 
-{{ content.fig(
+{{ content.figure(
   show.data.gallery.images,
   show.data.gallery.caption
 ) }}

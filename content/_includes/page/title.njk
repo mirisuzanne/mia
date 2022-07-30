@@ -1,6 +1,6 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-<h1 class="p-name">{{ banner | mdInline | safe }}</h1>
+<h1 {{ utility.show_attrs(attrs.h1) }}>{{ banner | mdInline | safe }}</h1>
 
 {% if sub or (venue and url) %}
   <p aria-roledescription="subtitle">

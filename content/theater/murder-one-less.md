@@ -53,7 +53,7 @@ Performed as *Vicious Trap*.
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=gallery,
   caption='Julie Rada & Brandon Krum in A Murder One Less, 2009'
 ) }}

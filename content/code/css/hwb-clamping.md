@@ -77,7 +77,7 @@ are less than or equal to `100%` --
 but we also see a reflected grayscale triangle
 where the combined values are greater than `100%`:
 
-{{ content.fig(
+{{ content.figure(
   content=colors.hwb(),
   caption='An HWB table of colors using 180deg `hue`, incrementing `whiteness` and `blackness` from `0` to `100%`.'
 ) }}
@@ -110,7 +110,7 @@ is identical to `hsl(0deg 60% 100%)`
 and `hsl(0deg 100% 100%)`.
 Still, that's a much smaller portion of the table:
 
-{{ content.fig(
+{{ content.figure(
   content=colors.hsl(),
   caption='An HSL table of colors using 180deg `hue`, incrementing `lightness` and `saturation` from `0` to `100%`.'
 ) }}

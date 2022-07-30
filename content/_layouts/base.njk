@@ -26,8 +26,8 @@
 
 {%- import 'utility.macros.njk' as utility -%}
 
-<body id="miriam.codes">
-  <a href="#content" class="visually-hidden">skip to content</a>
+<body id="miriam.codes" {{ utility.show_attrs(attrs.body) }}>
+  <a href="#main" class="visually-hidden">skip to content</a>
 
   {% if draft %}
     {% set input_path = (page.inputPath or '') | replace('./', '') %}
@@ -46,7 +46,7 @@
     {% include 'site/nav.njk' %}
   </header>
 
-  <main id="content" tabindex="-1" {{ utility.attr_if('class', class) }}>
+  <main id="main" {{ utility.show_attrs(attrs.main) }}>
     {{ content | safe }}
   </main>
 
@@ -54,7 +54,7 @@
     <details id="tag-nav">
       <summary>Featured Tags</summary>
       <ul>
-        {%- for tag in top_tags -%}
+        {%- for tag in collections | navTags -%}
           <li>{{- tag.link | safe -}}</li>
         {%- endfor -%}
       </ul>

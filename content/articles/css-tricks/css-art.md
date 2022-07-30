@@ -60,7 +60,7 @@ But her process is much more “normal” and “practical” than I even realiz
 a number of reasonably layered, sized,
 and positioned background gradients.
 
-{{ content.fig(art) }}
+{{ content.figure(art) }}
 
 Wait. I know how to do that.
 It’s not the *technique* that’s magical --
@@ -82,7 +82,7 @@ where a custom SVG feels *just slightly* too bulky.
 Here’s the effect I created, for a personal project,
 with a few custom properties to make adjustment easier:
 
-{{ content.fig(demo) }}
+{{ content.figure(demo) }}
 
 Last week we used a similar trick
 as part of a Very Practical & Official

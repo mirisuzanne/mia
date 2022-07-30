@@ -29,7 +29,7 @@ and Mozilla is here to help.
 
 {% set weird = collections.all | getPage('/2019/10/03/css-is-weird/') | first %}
 
-{{ content.fig(
+{{ content.figure(
   data=weird.data.media,
   caption='Featured Video: Why Is CSS So Weird?'
 ) }}

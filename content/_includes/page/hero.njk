@@ -1,19 +1,17 @@
 {% if hero %}
 {% set hero_type = 'svg' if hero.svg else 'img' %}
 
-<figure data-pattern="figure" data-hero="{{ hero_type }}">
-  <div data-figure="content" class="hero-content">
+<figure id="hero">
+  <div>
     {% if hero.img %}
-      {{ hero.img | img(hero.alt, 'hero', {class: 'hero-img'}) | safe }}
+      {{ hero.img | img(hero.alt, 'hero', {class: 'u-photo'}) | safe }}
     {% elif hero.svg %}
       {% include "icons/" + hero.svg %}
     {% endif %}
   </div>
 
   {% if hero.caption %}
-    <figcaption
-      data-figure="caption"
-      class="hero-caption">
+    <figcaption>
       {{ hero.caption | mdInline | safe }}
     </figcaption>
   {% endif %}

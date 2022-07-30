@@ -122,10 +122,10 @@ summary: |
 
 ------
 
-{{ content.fig(award.fig, award.caption) }}
+{{ content.figure(award.fig, award.caption) }}
 
 {{ content.quotes(press) }}
 
 ------
 
-{{ content.fig(gallery, 'production photos, 2016') }}
+{{ content.figure(gallery, 'production photos, 2016') }}

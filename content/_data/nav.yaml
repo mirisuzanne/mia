@@ -1,0 +1,16 @@
+site:
+  about: /who/
+  rss: /feed.xml
+tags:
+  - art
+  - code
+  - writing
+  - speaking
+  - music
+  - theater
+  - more
+types:
+  post: /post/
+  project: /project/
+  talk: /talk/
+  org: /org/

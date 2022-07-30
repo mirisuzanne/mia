@@ -61,7 +61,7 @@ summary: |
 
 {% set ep = collections.all | getPage('/2015/07/09/holes-they-leave/') | first %}
 
-{{ content.fig(
+{{ content.figure(
   data=ep.data.audio,
   caption='The Holes They Leave EP'
 ) }}
@@ -86,7 +86,7 @@ with theaters, writers, dancers, and other artists.
 
 {% set darkplain = collections.all | getPage('/2019/04/14/dark-plain-live/') | first %}
 
-{{ content.fig(
+{{ content.figure(
   data=darkplain.data.video,
   caption='A Dark Plain at Seventh Circle Session'
 ) }}
@@ -99,7 +99,7 @@ with theaters, writers, dancers, and other artists.
 
 {% set justlike = collections.all | getPage('/2017/02/13/just-like-that/') | first %}
 
-{{ content.fig(
+{{ content.figure(
   data=justlike.data.video,
   caption='Just Like That official music video'
 ) }}

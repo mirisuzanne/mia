@@ -27,7 +27,7 @@ Erin originally told this story on 17 October 2018
 at Buntport Theater in Denver, Colorado.
 The theme of the evening was "Guts."
 
-{{ content.fig(
+{{ content.figure(
   track,
   'a call for empathy'
 ) }}

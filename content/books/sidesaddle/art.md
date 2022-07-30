@@ -110,4 +110,4 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(gallery.images, gallery.caption) }}
+{{ content.figure(gallery.images, gallery.caption) }}

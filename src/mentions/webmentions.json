@@ -1,6 +1,72 @@
 {
-  "lastFetched": "2022-07-29T06:21:50.352Z",
+  "lastFetched": "2022-07-30T00:46:23.456Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David Votrubec",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a13c66c4ef2880feb791e0954ffaf92f051890ff15850df36d5d1639ca9f3bb3.jpg",
+        "url": "https://twitter.com/DavidVotrubec"
+      },
+      "url": "https://twitter.com/DavidVotrubec/status/1553004484158279682",
+      "published": "2022-07-29T13:08:17+00:00",
+      "wm-received": "2022-07-29T13:19:39Z",
+      "wm-id": 1445210,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1553004484158279682",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "The origin of default 8px margin in web sites. Interesting lesson in browser history. TLDR: The 8px predates CSS and originated in how scientitifc papers were printed.\n\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a> <a href=\"https://twitter.com/search?q=%23browsers\">#browsers</a> <a href=\"https://twitter.com/search?q=%23webdevelopment\">#webdevelopment</a>",
+        "text": "The origin of default 8px margin in web sites. Interesting lesson in browser history. TLDR: The 8px predates CSS and originated in how scientitifc papers were printed.\n\nmiriamsuzanne.com/2022/07/04/bod… #browsers #webdevelopment"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tom Doe",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4658f04a7eebc446d9b3b11711b0e442e586934e585c8f8b48a668af4bb6973c.jpg",
+        "url": "https://twitter.com/thet0m"
+      },
+      "url": "https://twitter.com/thet0m/status/1553005048438951938",
+      "published": "2022-07-29T13:10:31+00:00",
+      "wm-received": "2022-07-29T13:19:38Z",
+      "wm-id": 1445209,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1553005048438951938",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "Good read: <a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "Good read: miriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Juan Martín",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/777f26e9315053afac92bbf21df67d549db903fe8f9fac9596bba8d6bd995e90.jpg",
+        "url": "https://twitter.com/nauj27"
+      },
+      "url": "https://twitter.com/nauj27/status/1552929844652032006",
+      "published": "2022-07-29T08:11:41+00:00",
+      "wm-received": "2022-07-29T08:16:32Z",
+      "wm-id": 1444984,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1552929844652032006",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "Body Margin 8px\n\nThe origin story for a style no one wants\n\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "Body Margin 8px\n\nThe origin story for a style no one wants\n\nmiriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

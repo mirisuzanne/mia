@@ -1,8 +1,10 @@
 ---
 eleventyExcludeFromCollections: true
 title: Everything
-sub: show_tags
 calendar: all
+eleventyComputed:
+  sub: |
+    {{ collections | navTags('html') }}
 summary: |
   a very long list
   of everything on this site

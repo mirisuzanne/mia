@@ -41,4 +41,4 @@ summary: |
 
 ------
 
-{{ content.fig(gallery, 'production photos, 2010') }}
+{{ content.figure(gallery, 'production photos, 2010') }}

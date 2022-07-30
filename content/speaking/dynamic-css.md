@@ -151,7 +151,7 @@ without all the invasive Javascript.
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos…'
 ) }}

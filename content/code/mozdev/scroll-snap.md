@@ -18,7 +18,7 @@ media:
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption="The fallback even works well in old browsers!"
 ) }}

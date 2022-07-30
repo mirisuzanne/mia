@@ -24,7 +24,7 @@ This is a great opportunity to
 quickly enhance our designs for modern browsers,
 without losing anything in the browsers without subgrid support.
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Dont wait for full browser support to start using subgrids'
 ) }}

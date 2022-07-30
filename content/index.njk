@@ -1,0 +1,33 @@
+---
+layout: format/h-card
+title: Miriam Eric Suzanne
+sub: Towards [a queer world](/why/), together.
+attrs:
+  h1:
+    class: p-role
+  summary:
+    class: false
+  content:
+    class: p-note
+eleventyComputed:
+  summary: |
+    {{ taglines | random | md | safe }}
+---
+
+{% md %}
+Hi, I'm
+[Miriam Suzanne](/who/){.p-name .u-url .u-uid} --
+{% endmd %}
+
+{{ bios.intro | md | safe }}
+
+{%- set show_feed = collections._post | getPublic | slice(-5)  -%}
+{%- if show_feed | length > 0 -%}
+<hr />
+<section class="h-feed">
+  <h2 class="p-name">Recent content</h2>
+  {%- set feed_article_heading = 'h3' -%}
+  {%- include 'page/feed.njk' -%}
+</section>
+{%- endif -%}
+

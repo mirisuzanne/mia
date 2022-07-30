@@ -12,7 +12,7 @@ gallery:
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=gallery,
   caption='My good friend, Kitten Karlyle'
 ) }}

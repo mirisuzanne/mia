@@ -28,7 +28,7 @@ media:
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='The Better Selfs - Live at Bitter Sh*tty Studio, February 2022'
 ) }}

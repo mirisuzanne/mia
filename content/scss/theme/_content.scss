@@ -1,6 +1,13 @@
 @mixin css {
-  .intro {
+  #summary {
     font-size: 1.4em;
+  }
+
+  .p-summary {
     font-style: italic;
+
+    em {
+      background-color: var(--shadow);
+    }
   }
 }
