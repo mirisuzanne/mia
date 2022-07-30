@@ -1,5 +1,5 @@
 @use 'root';
 
-@layer config {
+@layer default {
   @include root.css;
 }
