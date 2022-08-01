@@ -1,5 +1,5 @@
 ---
-title: No Demo Reno, Website Edition
+title: No Demo [Website] Reno
 sub: A slow remodel of my HTML & CSS
 date: 2022-07-24
 series: redesign 2022

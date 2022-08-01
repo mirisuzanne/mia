@@ -1,7 +1,7 @@
 ---
 layout: base
 attrs:
-  main:
+  body:
     class: h-entry
   content:
     class: e-content
@@ -9,12 +9,14 @@ attrs:
 
 {% include 'page/default.njk' %}
 
-{%- set show_feed = collections[index] | sortBy('data.date') | getPublic if index else none -%}
-{%- if show_feed | length > 0 -%}
+{%- set feed = (collections[index] or []) | getPublic if index else none -%}
+{%- if feed | length > 0 -%}
 <hr />
 <section class="h-feed">
   <h2 class="p-name">'{{ index | displayName | capitalize }}' content</h2>
-  {%- set feed_article_heading = 'h3' -%}
-  {%- include 'page/feed.njk' -%}
+  {%- set hentry_heading = 'h3' -%}
+  {%- for item in feed | sortBy('data.date') | reverse | slice(5) -%}
+    {%- include 'part/hentry.njk' -%}
+  {%- endfor -%}
 </section>
 {%- endif -%}

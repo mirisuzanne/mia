@@ -9,13 +9,14 @@ hero:
     Truth emerging from her well,
     ripped along the bust to reveal tattoos and coveralls,
     and text with the show title & dates.
-venue: Buntport Theater
+date: 2022-04-08
 url: https://grapefruitlab.com/shows/pity-fear/
-date: 2022-05-13
-end: 2022-05-28
+events:
+  - venue: Buntport Theater
+    date: 2022-05-13
+    end: 2022-05-28
 index: pity+fear
 tags:
-  - _calendar
   - _post
   - writing
   - acting

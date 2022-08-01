@@ -79,7 +79,12 @@
   {%- endif -%}
 {% endmacro %}
 
-{% macro _get_range(start, end, format) %}
+{% macro _get_range(
+  start,
+  end,
+  format,
+  pubdate=false
+) %}
   {%- set ongoing = (end == 'ongoing') or (end | groupName == 'ongoing') -%}
   {%- set start_y = start | date('year') -%}
   {%- set default_format = 'year' if (start_y == start) else 'range' -%}
@@ -107,7 +112,6 @@
 
       {%- set same = 'same-y' if (start_y == end_y) else none -%}
       {%- set same = 'same-m' if same and (start_m == end_m) else same -%}
-
 
       {%- set start_format = range_formats[same].start or default_format -%}
       {%- set end_format = range_formats[same].end or default_format -%}

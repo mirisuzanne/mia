@@ -44,7 +44,7 @@
 
   {% include 'site/nav.njk' %}
 
-  <main id="main" {{ utility.show_attrs(attrs.main) }}>
+  <main id="main" {% if erasure %}data-erase="off"{% endif %} {{ utility.show_attrs(attrs.main) }}>
     {{ content | safe }}
   </main>
 

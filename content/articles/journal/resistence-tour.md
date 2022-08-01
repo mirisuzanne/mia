@@ -3,8 +3,9 @@ title: Some Kind of Resistance Tour
 date: 2016-12-09
 hero:
   img: 2016/resistence.jpg
-index: _resistance tour
+events_index: _resistance tour
 tags:
+  - _post
   - speaking
   - riding sidesaddle
   - art
