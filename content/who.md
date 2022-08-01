@@ -1,7 +1,9 @@
 ---
+nav_only: true
 layout: format/h-card
 title: About
 banner: Miriam Eric Suzanne
+date: 1982-07-24
 sub: |
   a.k.a [Mia]{.p-nickname} --
   [Author, Artist, and Web Developer]{.p-role}

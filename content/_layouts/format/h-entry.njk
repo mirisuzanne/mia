@@ -9,11 +9,11 @@ attrs:
 
 {% include 'page/default.njk' %}
 
-{%- set show_feed = collections[index] if index else none -%}
+{%- set show_feed = collections[index] | sortBy('data.date') | getPublic if index else none -%}
 {%- if show_feed | length > 0 -%}
 <hr />
 <section class="h-feed">
-  <h2 class="p-name">More '{{ index | displayName }}' content</h2>
+  <h2 class="p-name">'{{ index | displayName | capitalize }}' content</h2>
   {%- set feed_article_heading = 'h3' -%}
   {%- include 'page/feed.njk' -%}
 </section>

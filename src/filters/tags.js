@@ -55,6 +55,21 @@ const navTags = (collections, as) => {
   return topTags;
 };
 
+const tagData = (collections) => {
+  const tags = Object.keys(collections)
+    .filter(isPublic)
+    .map((tag) => ({
+      name: tag,
+      display: displayName(tag),
+      url: tagLink(tag, collections),
+      pages: collections[tag],
+      count: collections[tag].length,
+      top: nav.tags.includes(tag),
+    }));
+
+  return tags;
+};
+
 module.exports = {
   isPublic,
   publicTags,
@@ -63,4 +78,5 @@ module.exports = {
   displayName,
   tagLink,
   navTags,
+  tagData,
 };

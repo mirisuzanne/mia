@@ -24,10 +24,10 @@ feed:
     url: feed.atom
 styles:
   - title: reset
-    url: alt-reset.css
+    url: layer-reset.css
     alt: true
   - title: defaults
-    url: alt-default.css
+    url: layer-default.css
     alt: true
   - title: all
     url: all.css

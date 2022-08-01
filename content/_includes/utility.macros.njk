@@ -51,13 +51,11 @@
 {%- endmacro %}
 
 {% macro datetime(
-  pubdate,
   start=none,
   end=none,
   format=none,
   attrs={}
 ) %}
-  {%- set start = pubdate or start -%}
   {%- set is_range = start and end and (start != end) -%}
 
   {%- set human -%}
@@ -71,13 +69,8 @@
   {%- if is_range -%}
     <span class="time" {{ show_attrs(attrs) }}>{{ human | safe }}</span>
   {%- else -%}
-    {%- set pub = start == pubdate -%}
-    {%- set hpub = 'dt-published' if pub else none -%}
-    {%- set class = [attrs.class, hpub] | join(' ') if (attrs.class and hpub) else hpub -%}
     {%- set attrs = attrs | merge({
-      'datetime': start | date('iso'),
-      'pubdate': pub,
-      'class': class
+      'datetime': start | date('iso')
     }) %}
 
     <time {{ show_attrs(attrs) }}>{{ human | safe }}</time>

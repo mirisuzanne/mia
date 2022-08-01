@@ -4,11 +4,16 @@
 
 {% if tags_public or org %}
   <div class="meta">
-    {{ utility.datetime(
-      pubdate=pubdate or page.date,
-      start=start or date or page.date,
-      end=end
-    ) }}
+    {% if date and not nav_only %}
+      {{ utility.datetime(
+        start=date,
+        end=end,
+        attrs={
+          'pubdate': true,
+          'class': 'dt-published'
+        } if is_post else {}
+      ) }}
+    {% endif %}
 
     {% if org %}
       as

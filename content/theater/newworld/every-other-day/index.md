@@ -8,7 +8,7 @@ tags:
   - directing
 events:
   - venue: New World Arts
-    start: 2004-09-09
+    date: 2004-09-09
     end: 2004-09-18
   - venue: shortfilmfest03
     date: 2003-05-09

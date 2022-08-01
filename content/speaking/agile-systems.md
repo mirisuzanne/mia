@@ -11,22 +11,22 @@ events:
   - venue: Agile Alliance
     url: https://www.agilealliance.org/agile2019/program/
     adr: Washington, DC
-    start: 2019-08-06
+    date: 2019-08-06
   - venue: Agile Denver
     url: https://www.meetup.com/Agile-Denver2/events/251897187/
     adr: Denver, CO
     slides: https://talks.oddbird.net/agile-systems/agiledenver18/
-    start: 2018-10-22
+    date: 2018-10-22
   - venue: Front-End Front Range
     url: https://www.meetup.com/front-range-front-end/events/zwjmwlyxgbhb/
     adr: Denver, CO
     slides: https://oddbooksapp.com/book/agile-design-vue
-    start: 2018-04-05
+    date: 2018-04-05
   - venue: VueConf US
     url: http://vueconf.us/
     adr: New Orleans, LA
     slides: https://oddbooksapp.com/release/9edb34c9-8789-4201-9f14-64bf5ab11b0a
-    start: 2018-03-26
+    date: 2018-03-26
     video: https://www.vuemastery.com/conferences/vueconf-2018/agile-design-systems-in-vue-miriam-suzanne/
     tags:
       - code video
@@ -38,7 +38,7 @@ events:
     url: https://www.meetup.com/TechConfluence/events/nxcfhlyxfbcc/
     adr: Denver, CO
     slides: https://www.oddbooksapp.com/book/design-systems-10m
-    start: 2018-03-21
+    date: 2018-03-21
 press:
   - text: |
       Every time I hear Miriam talk, I learn a ton and laugh a ton…

@@ -2,6 +2,7 @@
 layout: format/h-card
 title: Miriam Eric Suzanne
 sub: Towards [a queer world](/why/), together.
+eleventyExcludeFromCollections: true
 attrs:
   h1:
     class: p-role
@@ -20,7 +21,7 @@ eleventyComputed:
 
 {{ bios.intro | md | safe }}
 
-{%- set show_feed = collections._post | getPublic | slice(-5)  -%}
+{%- set show_feed = collections._post | sortBy('data.date') | getPublic | slice(-5)  -%}
 {%- if show_feed | length > 0 -%}
 <hr />
 <section class="h-feed">

@@ -1,4 +1,5 @@
 ---
+nav_only: true
 title: Education
 sub: I studied some things
 index: education

@@ -1,7 +1,7 @@
 'use strict';
 
 const isPublic = (page) => {
-  const live = page.data.draft !== true;
+  const live = page.data.draft !== true && !page.data.nav_only;
   const title = page.data && page.data.title;
   return live && title;
 };

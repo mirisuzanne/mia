@@ -72,6 +72,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('displayName', tags.displayName);
   eleventyConfig.addFilter('tagLink', tags.tagLink);
   eleventyConfig.addFilter('navTags', tags.navTags);
+  eleventyConfig.addFilter('tagData', tags.tagData);
 
   eleventyConfig.addFilter('getPage', pages.getPage);
   eleventyConfig.addFilter('getPublic', pages.getPublic);

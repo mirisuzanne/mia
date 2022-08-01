@@ -1,0 +1,6 @@
+@forward 'layer-default';
+@use 'theme';
+
+@layer theme {
+  @include theme.css;
+}

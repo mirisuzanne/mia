@@ -1,0 +1,5 @@
+@use 'reset';
+
+@layer reset {
+  @include reset.css;
+}

@@ -1,11 +1,12 @@
 @use 'colors';
 @use 'fonts';
 @use 'buttons';
+@use 'nav';
 @use 'content';
 @use 'media';
 @use 'erase';
 
-@layer theme {
+@mixin css {
   @include fonts.files;
   @include fonts.css;
 
@@ -17,6 +18,7 @@
 
   @include colors.css;
   @include buttons.css;
+  @include nav.css;
   @include content.css;
   @include media.css;
   @include erase.css;

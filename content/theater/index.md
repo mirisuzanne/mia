@@ -3,6 +3,7 @@ title: Theater
 banner: Live Theater
 sub: Artistic Director, Playwright, & Lighting Design
 index: theater
+override:tags: []
 hero:
   img: /art/theater/jane/DSC_0362.jpg
 summary: |

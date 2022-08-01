@@ -1,0 +1,5 @@
+@mixin css {
+  [aria-current='page'] {
+    color: var(--CanvasText);
+  }
+}

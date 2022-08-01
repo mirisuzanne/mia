@@ -9,5 +9,5 @@ permalink: /tags/{{ tag | slug }}/
 eleventyExcludeFromCollections: true
 ---
 
-{%- set show_feed = collections[index] -%}
+{%- set show_feed = collections[index] | sortBy('data.date') -%}
 {% include "page/feed.njk" %}

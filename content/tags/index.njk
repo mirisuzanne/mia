@@ -2,3 +2,16 @@
 title: Browse by Tags
 eleventyExcludeFromCollections: true
 ---
+
+{% set tagData = collections | tagData %}
+
+{% if tagData %}
+<ol>
+  {% for tag in tagData | sortBy('count') | sortBy('top') | reverse %}
+    <li>
+      <a href="{{ tag.url | url }}">{{ tag.display }}</a>
+      ({{ tag.count }} pages)
+    </li>
+  {% endfor %}
+</ol>
+{% endif %}

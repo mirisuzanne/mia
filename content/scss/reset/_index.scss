@@ -4,7 +4,7 @@
 @use 'media';
 @use 'sass:meta';
 
-@layer reset {
+@mixin css {
   @include meta.load-css('../npm/remedy');
 
   @include root.css;

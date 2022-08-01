@@ -42,9 +42,7 @@
     </div>
   {% endif %}
 
-  <header id="banner">
-    {% include 'site/nav.njk' %}
-  </header>
+  {% include 'site/nav.njk' %}
 
   <main id="main" {{ utility.show_attrs(attrs.main) }}>
     {{ content | safe }}

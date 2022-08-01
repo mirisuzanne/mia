@@ -1,6 +1,28 @@
 {
-  "lastFetched": "2022-07-30T04:29:49.804Z",
+  "lastFetched": "2022-08-01T04:56:21.781Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "KᗩTᕼ 👩🏻‍💻🌿",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a6c3c1053e0e5fe8b320c2543992d861b460375aaa62533227442f60567943a9.jpg",
+        "url": "https://twitter.com/bio_kath"
+      },
+      "url": "https://twitter.com/bio_kath/status/1553730788943958019",
+      "published": "2022-07-31T13:14:21+00:00",
+      "wm-received": "2022-07-31T13:21:30Z",
+      "wm-id": 1446408,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1553730788943958019",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "content": {
+        "html": "\"All browsers add an 8px margin on the body element – it’s part of the w3c-recommended default stylesheet which browsers generally use as a starting point for their own ‘user agent’ styles. \nBut why 8px? Where does that come from?\"\n<a href=\"https://twitter.com/search?q=%23CSS\">#CSS</a> \n\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "\"All browsers add an 8px margin on the body element – it’s part of the w3c-recommended default stylesheet which browsers generally use as a starting point for their own ‘user agent’ styles. \nBut why 8px? Where does that come from?\"\n#CSS \n\nmiriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

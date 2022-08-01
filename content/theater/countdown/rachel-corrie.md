@@ -11,54 +11,54 @@ tags:
   - tour
 events:
   - venue: BINDERY | space
-    start: 2007-09-28
+    date: 2007-09-28
     end: 2007-11-17
     adr: Denver, CO
-  - start: 2008-01-24
+  - date: 2008-01-24
     adr: Lincoln, NB
   - venue: First Unitarian Church
-    start: 2008-01-25
+    date: 2008-01-25
     adr: Omaha, NB
   - venue: Grace United Methodist Church
-    start: 2008-01-26
+    date: 2008-01-26
     adr: Des Moines, IA
-  - start: 2008-01-27
+  - date: 2008-01-27
     adr: Iowa City, IA
   - venue: Out ch’YondA Art Space
-    start: 2008-02-15
+    date: 2008-02-15
     end: 2008-02-16
     adr: Albuquerque, NM
   - venue: First Christian Church
-    start: 2008-04-12
+    date: 2008-04-12
     adr: Estherville, IA
   - venue: University of Nebraska at Lincoln
-    start: 2008-04-13
+    date: 2008-04-13
     adr: Lincoln, NB
   - venue: Lincoln High School
-    start: 2008-04-14
+    date: 2008-04-14
     adr: Lincoln, NB
   - venue: Pizza Collective
-    start: 2008-04-14
+    date: 2008-04-14
     adr: Omaha, NB
   - venue: Cedar Falls Mennonite Church
-    start: 2008-04-15
+    date: 2008-04-15
     adr: Cedar Falls, IA
   - venue: Stevens College
-    start: 2008-04-17
+    date: 2008-04-17
     adr: Columbia, MO
   - venue: Mosque Community Foundation
-    start: 2008-04-20
+    date: 2008-04-20
     adr: Bridgeview, IL
   - venue: Indiana University
-    start: 2008-04-22
+    date: 2008-04-22
     adr: Ft. Wayne, IN
   - venue: Goshen College
-    start: 2008-04-24
+    date: 2008-04-24
     adr: Goshen, IN
   - venue: Heidelberg College
-    start: 2008-04-25
+    date: 2008-04-25
     adr: Tiffin, OH
-  - start: 2008-05-03
+  - date: 2008-05-03
     adr: Las Vegas, NV
     feature: true
 summary: |

@@ -8,11 +8,11 @@ events:
   - venue: Boost Biz Ed
     url: https://boostbized.com/events/how-to-plan-a-web-project
     adr: Westminster, CO
-    start: 2018-07-11
+    date: 2018-07-11
   - venue: EdTech Colorado
     url: https://www.meetup.com/EducelerateCO/
     adr: Denver, CO
-    start: 2017-12-12
+    date: 2017-12-12
 summary: |
   A **non-technical guide**
   for taking your project from concept to launch,

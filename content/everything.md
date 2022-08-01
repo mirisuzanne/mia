@@ -1,11 +1,11 @@
 ---
-eleventyExcludeFromCollections: true
 title: Everything
-calendar: all
+index: all
+eleventyExcludeFromCollections: true
 eleventyComputed:
   sub: |
-    {{ collections | navTags('html') }}
+    {{ collections | navTags('html') | safe }}
 summary: |
-  a very long list
-  of everything on this site
+  A very long list
+  of everything on this site...
 ---

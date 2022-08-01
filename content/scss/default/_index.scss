@@ -6,7 +6,7 @@
 @use 'type';
 @use 'forms';
 
-@layer default {
+@mixin css {
   @include base.css;
   @include a11y.css;
   @include links.css;
