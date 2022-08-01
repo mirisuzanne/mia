@@ -10,7 +10,7 @@
     %}
 
     <h2>
-      <a href="/who/" rel="author" class="p-name u-url u-uid fn url uid">
+      <a href="{{ [site.url, 'who/'] | join | url }}" rel="author" class="p-name u-url u-uid fn url uid">
         {{- site.author -}}
       </a>
     </h2>
