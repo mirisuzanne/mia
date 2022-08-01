@@ -15,7 +15,9 @@
       </a>
     </h2>
 
-    {{ bios.intro | md | safe }}
+    <div class="p-note">
+      {{ bios.intro | md | safe }}
+    </div>
 
     {{ contact.links(social) }}
   </article>
