@@ -54,13 +54,14 @@
   start=none,
   end=none,
   format=none,
-  attrs={}
+  attrs={},
+  pubdate=false
 ) %}
   {%- set is_range = start and end and (start != end) -%}
 
   {%- set human -%}
     {%- if is_range -%}
-      {{ _get_range(start, end, format) }}
+      {{ _get_range(start, end, format, pubdate) }}
     {%- else -%}
       {{ start | date(format or 'long') }}
     {%- endif -%}
@@ -70,7 +71,8 @@
     <span class="time" {{ show_attrs(attrs) }}>{{ human | safe }}</span>
   {%- else -%}
     {%- set attrs = attrs | merge({
-      'datetime': start | date('iso')
+      'datetime': start | date('iso'),
+      'class': 'dt-published' if pubdate else none
     }) %}
 
     <time {{ show_attrs(attrs) }}>{{ human | safe }}</time>
@@ -111,8 +113,17 @@
       {%- set end_format = range_formats[same].end or default_format -%}
     {%- endif -%}
 
-    {{ start | date(start_format) }}
+    {%- set start_attrs = {
+      'datetime': start | date('iso'),
+      'class': ['dt-start dt-published'] if pubdate else 'dt-start'
+    } %}
+
+    <time {{ show_attrs(start_attrs) }}>
+      {{- start | date(start_format) -}}
+    </time>
     {{- '--' | typogr | safe -}}
-    {{ end | date(end_format) }}
+    <time class="dt-end" datetime="{{ end | date('iso') }}">
+      {{- end | date(end_format) -}}
+    </time>
   {%- endif -%}
 {% endmacro %}

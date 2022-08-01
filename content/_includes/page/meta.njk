@@ -8,10 +8,7 @@
       {{ utility.datetime(
         start=date,
         end=end,
-        attrs={
-          'pubdate': true,
-          'class': 'dt-published'
-        } if is_post else {}
+        pubdate=true
       ) }}
     {% endif %}
 

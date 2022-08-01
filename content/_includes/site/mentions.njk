@@ -60,7 +60,10 @@
             </a>
           </h3>
 
-          {{ utility.datetime(webmention.published) }}
+          {{ utility.datetime(
+            start=webmention.published,
+            pubdate=true
+          ) }}
 
           <div class="webmention-content p-content">
             {{ webmention.content.value | safe }}

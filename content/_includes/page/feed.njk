@@ -14,10 +14,7 @@
       {{ utility.datetime(
         item.data.date,
         item.data.end,
-        attrs={
-          'pubdate': true,
-          'class': 'dt-published'
-        } if ('_post' in (item.data.tags or [])) else {}
+        pubdate=true
       ) }}
     </header>
 

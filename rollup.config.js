@@ -17,16 +17,4 @@ module.exports = [
       format: 'iife',
     },
   },
-  {
-    input: 'src/js/fonts.js',
-    plugins: [
-      nodeResolve(),
-      babel({ babelHelpers: 'bundled' }),
-      rollupCommonjs(),
-    ],
-    output: {
-      file: '_built/js/fonts.js',
-      format: 'iife',
-    },
-  },
 ];
