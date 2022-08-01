@@ -1,7 +1,7 @@
 {% import 'contact.macros.njk' as contact %}
 
-<footer>
-  <div class="h-card p-author vcard">
+{% if not (page.url == '/who/') %}
+  <article class="h-card p-author vcard">
     {% img
       'headshots/rss.jpg',
       'Miriam with asymmetrical orange hair at a mic, smiling',
@@ -9,23 +9,27 @@
       {'class': 'photo u-photo'}
     %}
 
-    <a href="https://miariamsuzanne.com/who/" rel="author" class="p-name u-url u-uid fn url uid">
-      {{- site.author -}}
-    </a>
+    <h2>
+      <a href="/who/" rel="author" class="p-name u-url u-uid fn url uid">
+        {{- site.author -}}
+      </a>
+    </h2>
+
+    {{ bios.intro | md | safe }}
 
     {{ contact.links(social) }}
-  </div>
+  </article>
+{% endif %}
 
-  {% if not is_contact %}
-    {{ contact.form(
-      attrs={'data-footer': 'contact'},
-      url=page.url
-    ) }}
-  {% endif %}
+{% if not (page.url == '/contact/') %}
+  {{ contact.form(
+    attrs={'data-footer': 'contact'},
+    url=page.url
+  ) }}
+{% endif %}
 
-  <div>
-    <p>Copyright &copy; {% getDate 'year' %} {{ site.author }}</p>
-    {{ colophon | md | safe }}
-  </div>
+<footer>
+  <p>Copyright &copy; {% getDate 'year' %} {{ site.author }}</p>
+  {{ colophon | md | safe }}
 </footer>
 
