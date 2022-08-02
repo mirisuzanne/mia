@@ -10,7 +10,7 @@ hero:
     behind a synth
 url: https://www.facebook.com/TheBetterSelfs
 date: 2022-01-27
-end: ongoing
+end: 2022-06-15
 index: better selfs
 tags:
   - art
