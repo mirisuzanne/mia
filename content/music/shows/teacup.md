@@ -349,7 +349,6 @@ events:
         url: http://thetruthandspectacle.com/
 
   - venue: Lion's Lair
-    venue_url: http://www.lionslairlounge.squarespace.com/
     date: 2015-11-05
     image: shows/deadwoods.jpg
     adr: Denver, CO
@@ -360,7 +359,6 @@ events:
         url: https://www.facebook.com/Rocket-to-Nowhere-366076513438547/
 
   - venue: Lion's Lair
-    venue_url: http://www.lionslairlounge.squarespace.com/
     date: 2015-09-10
     adr: Denver, CO
     image: shows/jack-coax.jpg
@@ -382,7 +380,6 @@ events:
 
   - venue: G***y House Cafe
     url: https://www.facebook.com/events/1438931603085393/
-    venue_url: https://www.facebook.com/GypsyHouse
     date: 2015-05-11
     image: shows/walkbysea.jpg
     adr: Denver, CO

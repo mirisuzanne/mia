@@ -17,7 +17,7 @@
   // lists
   ul,
   ol {
-    padding-inline-start: calc(var(--outset, 0) + var(--gap, 1em));
+    padding-inline-start: calc(var(--outset, 0) * 1px + var(--gap, 1em));
   }
 
   li {

@@ -77,10 +77,11 @@ are less than or equal to `100%` --
 but we also see a reflected grayscale triangle
 where the combined values are greater than `100%`:
 
-{{ content.figure(
+{{- content.figure(
   content=colors.hwb(),
+  grid=false,
   caption='An HWB table of colors using 180deg `hue`, incrementing `whiteness` and `blackness` from `0` to `100%`.'
-) }}
+) -}}
 
 That extended grayscale triangle
 is useless.
@@ -110,10 +111,11 @@ is identical to `hsl(0deg 60% 100%)`
 and `hsl(0deg 100% 100%)`.
 Still, that's a much smaller portion of the table:
 
-{{ content.figure(
+{{- content.figure(
   content=colors.hsl(),
+  grid=false,
   caption='An HSL table of colors using 180deg `hue`, incrementing `lightness` and `saturation` from `0` to `100%`.'
-) }}
+) -}}
 
 In both HWB & HSL colors,
 we can describe `white` and `black`
@@ -164,7 +166,7 @@ adjusting each channel along the way --
 we have to go through a full range of hues
 just to get from black to cyan:
 
-{{ colors.gradient(
+{{- colors.gradient(
   stops=[
     'hsl(0deg 100% 0%)',
     'hsl(45deg 100% 12.5%)',
@@ -173,19 +175,19 @@ just to get from black to cyan:
     'hsl(180deg 100% 50%)'
   ],
   alt='A gradient from black to cyan, passing through several other hues on the way.'
-) }}
+) -}}
 
 Lucky for us,
 browsers don't generally render gradients
 using naive HSL math:
 
-{{ colors.gradient(
+{{- colors.gradient(
   stops=[
     'hsl(0deg 100% 0%)',
     'hsl(180deg 100% 50%)'
   ],
   alt='A smooth gradient from black to cyan.'
-) }}
+) -}}
 
 Currently browsers convert everything to `sRGB` before mixing.
 Gradients in RGB can still get muddy at times,
@@ -307,14 +309,14 @@ one needing to be scaled,
 and a final version that needs
 both clamping and scaling:
 
-{{ colors.gradient(
+{{- colors.gradient(
   stops=[
     'hwb(0deg 80% 20%)',
     'hwb(0deg 100% 25%)',
     'hwb(0deg 2530% 25%)'
   ],
   alt='A gradient that is actually just the same gray all the way along'
-) }}
+) -}}
 
 Sass will soon be adding support
 for all these new color features,

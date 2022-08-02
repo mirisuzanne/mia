@@ -10,11 +10,21 @@
       </a>
     </{{ hentry_heading }}>
 
-    {{ utility.datetime(
-      item.data.date,
-      item.data.end,
-      pubdate=true
-    ) }}
+    <p>
+      {{ utility.datetime(
+        item.data.date,
+        item.data.end,
+        pubdate=true
+      ) }}
+
+      {% if item.data.venue %}
+        @
+        {{ utility.link_if(
+          item.data.venue,
+          item.data.url
+        ) }}
+      {% endif %}
+    </p>
   </header>
 
   {%- set item_summary = item.data.summary or item.data.sub -%}

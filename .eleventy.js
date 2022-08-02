@@ -32,17 +32,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addCollection('orgs', (collection) =>
     collection
       .getAll()
-      .filter((item) => item.data.org && item.data.end === 'ongoing')
-      .sort((a, b) => events.startDate(a) - events.startDate(b)),
-  );
-  eleventyConfig.addCollection('all_orgs', (collection) =>
-    collection
-      .getAll()
       .filter((item) => item.data.org)
-      .sort((a, b) =>
-        a.data.end === b.data.end
-          ? events.startDate(a) - events.startDate(b)
-          : events.endDate(b) - events.endDate(a),
+      .sort(
+        (a, b) => (b.data.end || b.data.date) - (a.data.end || a.data.date),
       ),
   );
 
@@ -78,11 +70,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('getPublic', pages.getPublic);
   eleventyConfig.addFilter('seriesNav', pages.seriesNav);
   eleventyConfig.addFilter('byDate', pages.byDate);
+  eleventyConfig.addFilter('withPageTense', pages.withPageTense);
 
-  eleventyConfig.addFilter('getEvents', events.get);
-  eleventyConfig.addFilter('countEvents', events.count);
-  eleventyConfig.addFilter('recentEvents', events.recentEvents);
-  eleventyConfig.addFilter('groupName', (group) => events.groupNames[group]);
+  eleventyConfig.addFilter('publicEvents', events.publicEvents);
+  eleventyConfig.addFilter('eventTense', events.eventTense);
+  eleventyConfig.addFilter('pageEvents', events.pageEvents);
+  eleventyConfig.addFilter('getEvents', events.getEvents);
 
   eleventyConfig.addFilter('amp', type.amp);
   eleventyConfig.addFilter('typogr', type.set);
@@ -94,6 +87,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('concat', _.concat);
   eleventyConfig.addFilter('merge', _.merge);
   eleventyConfig.addFilter('sortBy', _.sortBy);
+  eleventyConfig.addFilter('groupBy', _.groupBy);
   eleventyConfig.addFilter('filter', _.filter);
   eleventyConfig.addFilter('find', _.find);
   eleventyConfig.addFilter('includes', (array, key) =>

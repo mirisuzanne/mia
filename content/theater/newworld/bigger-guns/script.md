@@ -1,5 +1,5 @@
 ---
-title: Bigger Guns III
+title: 'Script: Bigger Guns III'
 sub: Revenge of the Apocalypse, Again
 type: script
 date: 2007-04-20

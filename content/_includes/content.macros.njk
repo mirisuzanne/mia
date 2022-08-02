@@ -99,13 +99,18 @@
 {% macro figure(
   data=none,
   caption=none,
+  grid=true,
   content=none
 ) -%}
 {%- set content = _fig_content(data) if data else content or caller() | mdInline -%}
 <figure>
-  <div>
+  {% if grid %}
+    <section>
+      {{- content | safe -}}
+    </section>
+  {% else %}
     {{- content | safe -}}
-  </div>
+  {% endif %}
   {%- if caption -%}
     <figcaption>
       {{- caption | mdInline | safe -}}

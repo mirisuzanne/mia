@@ -1,4 +1,5 @@
 ---
+layout: format/h-feed
 title: Theater
 banner: Live Theater
 sub: Artistic Director, Playwright, & Lighting Design
@@ -24,3 +25,20 @@ Since moving to Denver,
 I've worked with a number of ensemble companies,
 and started one of my own:
 [Grapefruit Lab](/orgs/grapefruit-lab/).
+
+{% set event_groups = collections.speaking | getEvents | groupBy('tense') %}
+
+{% if event_groups.ongoing | length > 0 %}
+  <h2>Happening Now</h2>
+  {% for item in event_groups.ongoing %}
+    {% include 'part/hevent.njk' %}
+  {% endfor %}
+{% endif %}
+
+{% if event_groups.future | length > 0 %}
+  <h2>Happening Now</h2>
+  {% for item in event_groups.future %}
+    {% include 'part/hevent.njk' %}
+  {% endfor %}
+{% endif %}
+

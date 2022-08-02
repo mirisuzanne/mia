@@ -30,7 +30,6 @@ events:
   - adr: Goshen, IN
     url: https://www.facebook.com/events/866567246712267/
     venue: Art House
-    venue_url: http://gah.mobi/
     date: 2015-08-08
     with:
       - name: Shiny Shiny Black
@@ -41,7 +40,6 @@ events:
   - adr: Chicago, IL
     url: https://www.facebook.com/events/663487130418255/
     venue: Red Line Tap
-    venue_url: http://www.redlinetap.com/
     date: 2015-08-07
     with:
       - name: WaxWorks
@@ -53,7 +51,6 @@ events:
   - adr: Duluth, MN
     url: http://redherringlounge.com/events/space-carpet/
     venue: Red Herring Lounge
-    venue_url: http://redherringlounge.com/
     date: 2015-08-06
     with:
       - name: Space Carpet
@@ -68,7 +65,6 @@ events:
   - adr: Lawrence, KS
     url: https://www.facebook.com/events/900783029958277/
     venue: Eighth Street Taproom
-    venue_url: http://eighthstreettaproom.com/
     date: 2015-08-03
     with:
       - name: 88er
@@ -78,7 +74,6 @@ events:
   - adr: Wichita, KS
     url: https://www.facebook.com/events/879491972144066/
     venue: Kirby's Beer Store
-    venue_url: http://www.kirbysbeerstore.com/
     date: 2015-08-02
     with:
       - name: Hot Books

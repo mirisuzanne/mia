@@ -27,7 +27,7 @@ No matter your experience level or job description,
 we’re all working together towards the future health of the web,
 and Mozilla is here to help.
 
-{% set weird = collections.all | getPage('/2019/10/03/css-is-weird/') | first %}
+{% set weird = collections.all | getPage('/2019/10/03/css-is-weird/') %}
 
 {{ content.figure(
   data=weird.data.media,

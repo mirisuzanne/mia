@@ -102,3 +102,10 @@ or graduated from college.
 {{ content.figure(
   headshots
 ) }}
+
+### Affiliations
+
+{%- set orgs = collections.orgs | getPublic | withPageTense('ongoing') -%}
+{% for item in orgs | sortBy('data.date') %}
+  {%- include 'part/hentry.njk' -%}
+{% endfor %}

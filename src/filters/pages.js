@@ -1,16 +1,37 @@
 'use strict';
 
+const time = require('./time');
+
 const isPublic = (page) => {
   const live = page.data.draft !== true && !page.data.nav_only;
   const title = page.data && page.data.title;
   return live && title;
 };
 
-const getPublic = (collection) => collection.filter((page) => isPublic(page));
+const getPublic = (collection) => (collection || []).filter(isPublic);
+
+const pageTense = (page) => {
+  const now = time.date(null, 'iso');
+  const start = time.date(page.data.date, 'iso');
+  const end = time.date(page.data.end || page.data.date, 'iso');
+
+  if (end < now) {
+    return 'past';
+  }
+
+  if (start >= now) {
+    return 'future';
+  }
+
+  return 'ongoing';
+};
+
+const withPageTense = (collection, only = 'ongoing') =>
+  collection.filter((page) => pageTense(page) === only);
 
 const getPage = (collection, page) => {
   const pageURL = typeof page === 'string' ? page : page.url;
-  return collection.filter((doc) => doc.url === pageURL);
+  return collection.find((doc) => doc.url === pageURL);
 };
 
 const seriesNav = (page, collection) => {
@@ -34,4 +55,5 @@ module.exports = {
   getPage,
   seriesNav,
   byDate,
+  withPageTense,
 };

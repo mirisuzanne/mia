@@ -1,5 +1,5 @@
 ---
-title: Fallout
+title: 'Script: Fallout'
 sub: a glimpse of the aftermath
 type: script
 date: 2003-03-14

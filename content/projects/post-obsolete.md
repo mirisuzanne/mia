@@ -24,7 +24,6 @@ events:
     date: 2014-06-19
     video: https://youtu.be/yt37eIen7JU
     press: http://www.huffingtonpost.com/illya-szilak/
-    venue_title: true
     tags:
       - reading
       - post-obsolete
@@ -32,25 +31,21 @@ events:
     url: http://www.colorado.edu/brakhagecenter/2013/08/10/bc-luncheon-series-welcomes-eric-meyer-october-7th
     date: 2013-10-07
     video: https://vimeo.com/86628115
-    venue_title: true
     tags:
       - reading
       - post-obsolete
   - venue: Media Archeology Lab | &Now Festival
     url: http://mediaarchaeologylab.com/past-artist-in-residence/eric-meyer-2/
     date: 2013-09-28
-    venue_title: true
     tags:
       - reading
       - post-obsolete
   - venue: SpringGun Journal, Issue 8
     url: http://www.springgunpress.com/issue-8-2013/eric-meyer/
     date: 2013-09-01
-    venue_title: true
   - venue: Boulder Writer’s Workshop
     url: http://www.boulderwritersworkshop.com/2013/04/17/post-obsolete-a-bww-salon/
     date: 2013-04-17
-    venue_title: true
     tags:
       - reading
       - post-obsolete
@@ -61,7 +56,6 @@ events:
     end: 2012-09-29
     video: https://youtu.be/FnHsQRUQ1x8?t=1h11m11s
     note: ELO juried elit performance
-    venue_title: true
     tags:
       - reading
       - post-obsolete
@@ -79,7 +73,6 @@ events:
   - venue: 'Leon Presents a Reading Series #6'
     url: https://www.facebook.com/events/415657695136519/permalink/417120971656858/
     date: 2012-07-21
-    venue_title: true
 press:
   - text: I was impressed by the purest form of outrageous creation.
     credit: Judy Rose

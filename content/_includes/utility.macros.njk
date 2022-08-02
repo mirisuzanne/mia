@@ -85,7 +85,12 @@
   format,
   pubdate=false
 ) %}
-  {%- set ongoing = (end == 'ongoing') or (end | groupName == 'ongoing') -%}
+  {%- set tense = {
+    'start': start,
+    'end': end
+  } | eventTense -%}
+  {%- set ongoing = (end == 'ongoing') or (tense == 'ongoing') -%}
+
   {%- set start_y = start | date('year') -%}
   {%- set default_format = 'year' if (start_y == start) else 'range' -%}
 

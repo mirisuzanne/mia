@@ -1,0 +1,12 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+{% set full_page = collections.all | getPage(page.url) if events else none %}
+{% set page_events = full_page | pageEvents if full_page else [] %}
+{% if page_events | length > 0 %}
+  <section class="events">
+    <h2>Events</h2>
+    {% for item in page_events %}
+      {% include 'part/hevent.njk' %}
+    {% endfor %}
+  </section>
+{% endif %}

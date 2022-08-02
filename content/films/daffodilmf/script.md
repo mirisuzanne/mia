@@ -1,5 +1,5 @@
 ---
-title: Daffodil MF
+title: 'Script: Daffodil MF'
 sub: a ten minute play, and short film
 date: 2005-11-14
 type: script

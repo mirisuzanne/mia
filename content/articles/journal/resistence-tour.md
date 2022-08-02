@@ -16,14 +16,12 @@ events:
     adr: Brooklyn, NY
     venue: The Operating System
     url: https://www.facebook.com/events/306828783046470/
-    venue_title: true
     tags:
       - _resistance tour
   - date: 2017-01-15
     adr: Washington, DC
     venue: in your ear
     url: https://www.facebook.com/events/641655696042941/
-    venue_title: true
     with:
       - '[Valerie Hsiung](https://flowersintheirmouths.com/)'
     tags:
@@ -32,39 +30,33 @@ events:
     adr: Philadelphia, PA
     venue: Wooden Shoe Books
     url: http://woodenshoebooks.com/home.html
-    venue_title: true
     tags:
       - _resistance tour
   - date: 2017-01-17
     adr: Baltimore, MD
     venue: House Show
-    venue_title: true
     tags:
       - _resistance tour
   - date: 2017-01-18
     adr: Silver Spring, MD
     venue: House Show
-    venue_title: true
     tags:
       - _resistance tour
   - date: 2017-01-19
     adr: Fredrick, MD
     venue: Small Rain #2
-    venue_title: true
     tags:
       - _resistance tour
   - date: 2017-01-21
     adr: Washington, DC
     venue: Women's March
     url: https://www.womensmarch.com/
-    venue_title: true
     tags:
       - _resistance tour
   - date: 2017-01-23
     adr: Charlottesville, VA
     venue: Open Grounds
     url: http://opengrounds.virginia.edu/
-    venue_title: true
     tags:
       - _resistance tour
 summary: |
