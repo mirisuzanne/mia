@@ -21,7 +21,7 @@
   }
 
   li {
-    --outset: 0;
+    --outset: 0px;
   }
 
   // block
@@ -42,7 +42,7 @@
     padding: var(--gap, 1em);
 
     > * {
-      --outset: 0;
+      --outset: 0px;
     }
   }
 

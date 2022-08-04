@@ -24,6 +24,10 @@ rules:
   no-descending-specificity: null
 
   # limit language features
+  length-zero-no-unit:
+    - true
+    - ignore:
+        - custom-properties
   at-rule-no-vendor-prefix: true
   color-named: always-where-possible
   declaration-block-no-redundant-longhand-properties:

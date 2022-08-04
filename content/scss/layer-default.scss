@@ -1,11 +1,6 @@
-@forward 'layer-reset';
-@use 'config';
+@forward 'layer-config';
 @use 'default';
 
 @layer default {
-  @layer config {
-    @include config.css;
-  }
-
   @include default.css;
 }
