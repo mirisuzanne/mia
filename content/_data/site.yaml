@@ -24,13 +24,13 @@ feed:
     url: feed.atom
 styles:
   - title: reset
-    url: layer-reset.css
+    url: layer/reset.css
     alt: true
   - title: config
-    url: layer-config.css
+    url: layer/config.css
     alt: true
   - title: default
-    url: layer-default.css
+    url: layer/default.css
     alt: true
   - title: all
     url: all.css

@@ -1,5 +1,5 @@
-@forward 'layer-reset';
-@use 'config';
+@forward 'reset';
+@use '../config';
 
 @layer config {
   @include config.css;

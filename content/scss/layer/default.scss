@@ -1,5 +1,5 @@
-@forward 'layer-config';
-@use 'default';
+@forward 'config';
+@use '../default';
 
 @layer default {
   @include default.css;
