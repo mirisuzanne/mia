@@ -2,37 +2,13 @@
   figure {
     display: grid;
     gap: var(--gap, 1em);
-
-    > section {
-      display: grid;
-      gap: var(--gap, 1em);
-
-      @media (min-width: 35em) {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    img,
-    video,
-    audio,
-    iframe,
-    picture,
-    svg {
-      width: var(--media-width, 100%);
-      height: var(--media-height, auto);
-    }
-
-    figcaption,
-    :only-child {
-      grid-column: 1 / -1;
-    }
   }
 
   figcaption {
     font-style: italic;
 
     > * {
-      margin: 0;
+      margin-block: 0;
     }
   }
 }

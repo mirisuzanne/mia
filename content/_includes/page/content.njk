@@ -9,7 +9,7 @@
     {%- endif -%}
 
     {%- if elsewhere -%}
-      <p><a rel="bookmark" href="{{ url }}">More at {{ venue }} »</a></p>
+      <p><a href="{{ url | url }}" class="u-repost-of u-uid">Reposted from {{ venue }} »</a></p>
     {%- endif -%}
   </div>
 {%- endif -%}

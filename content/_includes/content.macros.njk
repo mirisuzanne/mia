@@ -105,9 +105,9 @@
 {%- set content = _fig_content(data) if data else content or caller() | mdInline -%}
 <figure>
   {%- if grid -%}
-    <section>
+    <div class="gallery">
       {{- content | safe -}}
-    </section>
+    </div>
   {%- else -%}
     {{- content | safe -}}
   {%- endif -%}

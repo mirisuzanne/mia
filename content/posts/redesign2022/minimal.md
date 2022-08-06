@@ -20,30 +20,47 @@ the Black Canyon of the Gunnison,
 and so on.
 It was absolutely beautiful.
 
+This post isn't about our vacation,
+or any of the amazing places we visited.
+
 Every night we would end up in a hotel room,
 where we turn on the Food Network
 (back-to-back _Diners, Drive-Ins, and Dives_)
 or whatever is showing on HGTV.
-Nested between extensive house remodels,
+Nested between extensive house remodeling shows,
 _No Demo Reno_ starts with the premise
-that all the walls of a house
-will stay exactly where they started.
+that you can make big upgrades to a home
+without moving a single wall.
 
-This post isn't about HGTV or home renovations.
+This post isn't about HGTV or home renovations, either.
 I've seen a total of two or three episodes
 while knitting, winding down,
 and getting ready for bed.
+
 But that's my goal with this site redesign.
+How much can I change,
+_without moving any of the walls_?
 
-## Some background, and some goals
+## Some background, and goals
 
-I first built this site in 2015
-using [rstBlog](https://github.com/mitsuhiko/rstblog) --
+I've had a number of 'personal' sites over the years,
+but landed on this URL in 2015.
+The first version of this site
+used [rstBlog](https://github.com/mitsuhiko/rstblog) --
 a small Python static-site generator
 without any documentation.
 
-Since 2015
-there's been one single major re-design.
+<!--
+2002--2006 » goshen college student page?
+2006--2010 » [wordpress] meyerbros.org
+2008--2011 » [static] eric.dirtcircle.com
+2011--2012 » [tumblr] eric.andmeyer.com
+2012--2014 » [rstBlog] eric.andmeyer.com
+2014--2015 » [rstBlog] ericsuzanne.com
+2015--2019 » [rstBlog] miriamsuzanne.com
+2019--.... » [Eleventy] miriamsuzanne.com
+-->
+
 In early 2019,
 I migrated from rstBlog
 onto my current [Eleventy](https://www.11ty.dev/) setup --
@@ -53,59 +70,20 @@ The demolition was extensive,
 and I likely
 [broke a few promises]({% page_url 'posts/hit-publish' %}).
 
-<details>
-<summary>
-Before that...
-</summary>
-
-My name changed on several occasions,
-and so did my URL & tech stack:
-
-- **<span data-font="tnum">2002--2006</span>**
-  » static HTML _[url missing]_
-  <!-- goshen college student page -->
-- **<span data-font="tnum">2006--2010</span>**
-  » Wordpress _[url changed]_
-  <!-- meyerbros.org -->
-- **<span data-font="tnum">2008--2011</span>**
-  » static HTML _[url changed]_
-  <!-- eric.dirtcircle.com -->
-- **<span data-font="tnum">2011--2012</span>**
-  » Tumblr _[url changed]_
-  <!-- eric.andmeyer.com -->
-- **<span data-font="tnum">2012--2014</span>**
-  » rstBlog _[same url, new site]_
-  <!-- eric.andmeyer.com -->
-- **<span data-font="tnum">2014--2015</span>**
-  » rstBlog _[same site, name & url changed]_
-  <!-- ericsuzanne.com -->
-- **<span data-font="tnum">2015--2019</span>**
-  » rstBlog _[miriamsuzanne.com]_
-- **<span data-font="tnum">since 2019</span>**
-  » Eleventy _[you are here]_
-
-</details>
-
 This time
 I plan to leave all the
-content and infrastructure
+content and Eleventy infrastructure
 _basically_ intact.
 Here are the goals:
 
 ### Clarify the information architecture
 
-I decided a while back
-not to try separating
-my 'personal' & 'work' personas online.
-It's not how my mind works,
-or the way I've structured my life.
-
 I've always found it hard
 to sort my activities
-into the usual website categories,
+into organized 'categories',
 so I've been treating basically everything
 as an _event_
-with basically the same data, look, and feel.
+with the same data, look, and feel.
 Something happens --
 a presentation, performance, album release, novel, article, spec --
 on a particular date,
@@ -113,19 +91,23 @@ with any number of relevant tags.
 
 I like some things about that --
 embracing the mess of my ADHD life --
-but I haven't yet found a solution I like
+but I haven't yet found a great solution
 for navigating & displaying it.
+Part of the problem is simply that
+everything looks the same.
+It would help if site visitors
+can more easily see the different types of content
+reflected in the design and navigation of the site.
 
-The previous design relied heavily
+The previous design also relied heavily
 on extra-long 'calendars' of content
 at the bottom of every page.
-But that solution felt very bulky to me --
+That solution felt very bulky to me --
 both in terms of page-load,
 and user scrolling.
 It may have been
 technically [Finite](https://humanebydesign.com/principles/finite/),
-but it didn't always _feel_
-as finite
+but it didn't always _feel_ as finite
 (or as easy to navigate)
 as I'd like.
 
@@ -153,20 +135,14 @@ that I can treat more like a
 or
 [Style Stage](https://stylestage.dev/)
 for my CSS.
-
-My first websites
-(back in the early 00s)
+My early websites
+(back in the 00s)
 all had multiple
 '[alternate stylesheets](https://alistapart.com/article/alternate/)'
 to choose from,
 and I would love to do that again.
 
-For now, WebMentions are hidden
-while I figure out what to do with them.
-But they're still _happening_ behind the scenes,
-and I'll figure out how I want to display them again soon.
-
-### Make RSS a first class part of the site
+### Make RSS a first-class part of the site
 
 While I was working on WebMentions last month,
 I also made major updates to my RSS feed.
@@ -231,8 +207,7 @@ I launched
 [Cascading Color Systems](https://www.oddbird.net/cascading-colors/) --
 a tool for giving users
 total control over the colors on the site.
-
-I was inspired by Håkon Lie's
+That was inspired by Håkon Lie's
 [original 1994 CSS proposal](https://www.w3.org/People/howcome/p/cascade.html),
 which includes the following
 text-art diagram:
@@ -246,10 +221,9 @@ text-art diagram:
 ```
 
 I still want to explore that idea
-of making the site design itself interactive,
+of making the site design interactive,
 but I don't want to keep relying on
-unreliable HSL colors
-to make it happen.
+HSL colors to make it happen.
 For now, I've removed Cascading Colors,
 while I rethink the approach.
 
@@ -260,26 +234,44 @@ from specified initial values,
 resets, global typography,
 layouts, components, etc.
 _It's a cascade!_
-
 What if users could turn on and off
 the various Cascade _origins_,
 and _layers_
 to see how the site looks
 at different steps of the process?
+Check out the [Theme Settings](#settings) below,
+for a first-draft of the idea.
+
+<figure>
+<section data-options="css" aria-label="style layers">
+  {%- for link in site.styles %}
+    <button data-set="{{ link.title }}" aria-pressed="{{ 'false' if alt else 'true' }}">
+      {{- link.title -}}
+    </button>
+  {%- endfor -%}
+</section>
+<figcaption>
+  Try turning CSS layers on and off...
+  These settings are also saved in `loaclStorage`,
+  so they persist across visits.
+</figcaption>
+</figure>
 
 This idea is absolutely
 inspired by the personal site of
-[Nils Binder](https://ichimnetz.com/) --
-which provides a slider from 0 to 865 lines of CSS.
-I recommend checking it out.
+[Nils Binder](https://ichimnetz.com/).
+Nils provides a slider from 0 to 865 lines of CSS,
+with animated transitions between the styles.
+It's a lot of fun,
+and I recommend checking it out.
 
 ## The order of things
 
 My instinct was to strip out all CSS,
-and then work on getting the HTML cleaned up.
+and then work on getting the HTML cleaned up
+while my site remains 'naked' of style.
 I didn't quite do that,
 but I'm aiming for something close.
-
 Here's what I've done so far:
 
 - Remove the old CSS (done)
@@ -302,22 +294,13 @@ as I try to figure out what I'm doing.
 I'll keep adjusting the `reset` and `default` styles as I go,
 but hope to leave the `theme` layer
 as minimal as possible,
-while I focus on:
+while I focus on the architectural issues.
 
-- Minimal, accessible HTML
-- Better information architecture & navigation
-- Reliable microformats
-- Styled RSS page
-
-From there,
-I can start thinking about
-more complex layouts & themes & features --
-more user customizations,
-navigation,
-WebMentions,
-etc.
-
-We'll see where it goes.
+For now, WebMentions are hidden,
+RSS isn't highlighted in the nav,
+and all content still looks the same --
+but I have to start somewhere.
+We'll see where it goes (slowly).
 
 ## Some links I've been keeping open while I work
 

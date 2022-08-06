@@ -46,10 +46,14 @@ const toggleBtns = (name, btns, store) => {
   }
 };
 
-const toggleGroup = (group, store) => {
-  const name = group.dataset.options;
+const toggleGroups = (name, groups, store) => {
   const groupTarget = document.querySelector(`[data-${name}]`);
-  const groupBtns = group.querySelectorAll(`[data-set]`);
+  let groupBtns = [];
+
+  groups.forEach((group) => {
+    const btns = group.querySelectorAll(`[data-set]`);
+    groupBtns = [...groupBtns, ...btns];
+  });
 
   const getState = () => {
     const storedState = store ? localStorage.getItem(name) : null;
@@ -86,11 +90,26 @@ const toggleGroup = (group, store) => {
 };
 
 export default function(store = []) {
+  // grouped toggles
   const findGroups = document.querySelectorAll(`[data-options]`);
-  findGroups.forEach((group) => {
-    toggleGroup(group, store.includes(group.dataset.options));
+  const sortedGroups = Object.values(findGroups).reduce((result, group) => {
+    const name = group.dataset.options;
+
+    // Create new group
+    if (!result[name]) {
+      result[name] = [];
+    }
+
+    // Append to group
+    result[name].push(group);
+    return result;
+  }, {});
+
+  Object.keys(sortedGroups).forEach((name) => {
+    toggleGroups(name, sortedGroups[name], store.includes(name));
   });
 
+  // individual toggles
   const findToggles = document.querySelectorAll(`button[data-toggle]`);
   const togglesByName = {};
   findToggles.forEach((toggle) => {

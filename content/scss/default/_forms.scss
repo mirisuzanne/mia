@@ -11,8 +11,4 @@
   textarea {
     min-height: calc(var(--line, 1.4em) * 6);
   }
-
-  [data-fieldgroup] {
-    display: contents;
-  }
 }

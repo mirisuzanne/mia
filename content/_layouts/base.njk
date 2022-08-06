@@ -47,12 +47,24 @@
 
   <main id="main" {% if erasure %}data-erase="off"{% endif %} {{ utility.show_attrs(attrs.main) }}>
     {{ content | safe }}
+
+    <a href="{{ page.url | url }}" class="u-url" hidden></a>
+
+    {% if rel %}
+      {% set rel_attrs = {
+        'reply': {'class': 'u-in-reply-to'},
+        'syndication': {'class': 'u-syndication', 'rel': 'syndication'},
+        'bookmark': {'class': 'u-bookmark-of'},
+        'like': {'class': 'u-like-of'}
+      } %}
+      {% for type, target in rel %}
+        <a href="{{ target | url }}" {{ utility.show_attrs(rel_attrs[type]) }} hidden></a>
+      {% endfor %}
+    {% endif %}
   </main>
 
   {% include 'site/settings.njk' %}
   {% include 'site/footer.njk' %}
-
-  <a href="{{ page.url | url }}" class="u-url" hidden></a>
 
   {% set scripts = site.scripts | concat(scripts) if scripts else site.scripts %}
   {% for url in scripts %}

@@ -6,33 +6,32 @@
   attrs={},
   url='/contact/'
 ) %}
-<form
-  name="contact"
-  method="POST"
-  action="{{ next }}"
-  netlify-honeypot="subject"
-  data-netlify="true"
-  {{ utility.show_attrs(attrs) }}>
-  <div data-fieldgroup="contact-info">
-    <label data-field="name">
-      <span data-label>Name:</span>
-      <input
-        data-input="text"
-        type="text"
-        name="name"
-        required />
-    </label>
-    <label data-field="email">
-      <span data-label>Email:</span>
-      <input
-        data-input="text"
-        type="email"
-        name="email"
-        required />
-    </label>
-  </div>
-  <label data-field="message">
-    <span data-label>Message:</span>
+{% set attrs = {
+  'name': 'contact',
+  'method': 'POST',
+  'action': next,
+  'netlify-honeypot': 'subject',
+  'data-netlify': true
+} | merge(attrs) %}
+<form {{ utility.show_attrs(attrs) }}>
+  <label>
+    <span>Name:</span>
+    <input
+      data-input="text"
+      type="text"
+      name="name"
+      required />
+  </label>
+  <label>
+    <span>Email:</span>
+    <input
+      data-input="text"
+      type="email"
+      name="email"
+      required />
+  </label>
+  <label>
+    <span>Message:</span>
     <textarea
       data-input="text area"
       name="message"
@@ -46,10 +45,8 @@
     <span>URL:</span>
     <input name="url" value="{{ url }}" />
   </label>
-  <div data-actions>
-    <button
-      data-btn="submit"
-      type="submit">
+  <div class="form-actions">
+    <button type="submit">
       {{ submit }}
     </button>
   </div>
