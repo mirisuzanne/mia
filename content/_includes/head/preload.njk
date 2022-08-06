@@ -1,0 +1,12 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+{%- for item in site.preload -%}
+  {%- set item_attrs = {
+    'rel': 'preload',
+    'href': item.url | url,
+    'as': item.as,
+    'type': item.type,
+    'crossorigin': item.as == 'font' or item.cors
+  } -%}
+  <link {{ utility.show_attrs(item_attrs) }}>
+{%- endfor -%}

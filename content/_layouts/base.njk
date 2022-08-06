@@ -6,22 +6,12 @@
   <title>{{ title if (page.url == '/') else [title, site.title] | join(' | ') }}</title>
   <meta name="description" content="{{ description }}" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <meta name="color-scheme" content="dark light">
-
-  {%- for theme, color in site.theme -%}
-    <meta name="theme-color" media="(prefers-color-scheme: {{ theme }})" content="{{ color }}">
-  {%- endfor -%}
-
-  {%- set styles = site.styles | concat(styles) if styles else site.styles -%}
-  {%- for link in styles | selectattr('url') -%}
-    {%- set url = link.url if '://' in link.url | string else ['/css/', link.url] | join -%}
-    {%- set rel = 'alternate stylesheet' if link.alt else 'stylesheet' -%}
-    <link rel="{{ rel }}" href="{{ url }}" {% if link.title %}title="{{ link.title }}"{% endif %} />
-  {%- endfor -%}
-
-  {%- include 'site/og.njk' -%}
-  {%- include 'site/feed.njk' -%}
-  {%- include 'site/auth.njk' -%}
+  {%- include "head/theme.njk" -%}
+  {%- include "head/styles.njk" -%}
+  {%- include "head/preload.njk" -%}
+  {%- include 'head/og.njk' -%}
+  {%- include 'head/feed.njk' -%}
+  {%- include 'head/auth.njk' -%}
 </head>
 
 {%- import 'utility.macros.njk' as utility -%}

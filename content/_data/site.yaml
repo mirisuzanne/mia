@@ -41,3 +41,10 @@ scripts:
 theme:
   light: 'hotpink'
   dark: 'mediumvioletred'
+preload:
+  - as: font
+    type: font/woff2
+    url: /fonts/alegreya-latin-variable-wghtOnly-normal.woff2
+  - as: font
+    type: font/woff2
+    url: /fonts/alegreya-latin-variable-wghtOnly-italic.woff2

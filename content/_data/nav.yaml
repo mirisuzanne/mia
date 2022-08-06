@@ -8,7 +8,8 @@ tags:
   - speaking
   - music
   - theater
-  - more
+  - more tags
+more: more tags
 types:
   post: /post/
   project: /project/

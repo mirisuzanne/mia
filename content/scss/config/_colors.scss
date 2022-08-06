@@ -15,7 +15,7 @@
   --Field: var(--field-bg, #2b2a33);
   --FieldText: var(--field-text, #fbfbfe);
   --Highlight: var(--highlight, #3f638b);
-  --HighlightText: var(--highlight-text, currentColor);
+  --HighlightText: var(--highlight-text, var(--Canvas));
   --SelectedItem: var(--selected, skyblue);
   --SelectedItemText: var(--selected-text, black);
   --AccentColor: var(--accent, #ff5ce4);
@@ -35,7 +35,7 @@
   --Field: var(--field-bg, #f8f9fa);
   --FieldText: var(--field-text, #1c1c1c);
   --Highlight: var(--highlight, #b3d8ff);
-  --HighlightText: var(--highlight-text, currentColor);
+  --HighlightText: var(--highlight-text, var(--Canvas));
   --SelectedItem: var(--selected, #0063e1);
   --SelectedItemText: var(--selected-text, white);
   --AccentColor: var(--accent, #7d004f);

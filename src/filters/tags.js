@@ -33,8 +33,8 @@ const tagLink = (tag, collections) => {
 const navTags = (collections, as) => {
   const topTags = nav.tags.map((tag) => {
     const display = displayName(tag);
-    const url = tag === 'more' ? '/tags/' : tagLink(tag, collections);
-    const attr = tag === 'more' ? '' : 'class="p-category"';
+    const url = tag === nav.more ? '/tags/' : tagLink(tag, collections);
+    const attr = tag === nav.more ? '' : 'class="p-category"';
 
     return {
       name: tag,

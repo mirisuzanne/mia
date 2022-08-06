@@ -11,7 +11,6 @@ export default function() {
     if (set) {
       cssLinks.forEach((link) => {
         const isActive = link.getAttribute('title') === set;
-        link.disabled = true;
         link.disabled = !isActive;
       });
     }

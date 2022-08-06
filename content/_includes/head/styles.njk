@@ -1,0 +1,11 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+{%- set styles = site.styles | concat(styles) if styles else site.styles -%}
+{%- for link in styles | selectattr('url') -%}
+  {% set link_attrs = {
+    'rel': 'alternate stylesheet' if link.alt else 'stylesheet',
+    'href': link.url if '://' in link.url | string else ['/css/', link.url] | join,
+    'title': link.title
+  } %}
+  <link {{ utility.show_attrs(link_attrs) }}/>
+{%- endfor -%}
