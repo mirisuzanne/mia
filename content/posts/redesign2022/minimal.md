@@ -1,7 +1,7 @@
 ---
 title: No Demo [Website] Reno
 sub: A slow remodel of my HTML & CSS
-date: 2022-07-24
+date: 2022-08-05
 series: redesign 2022
 summary: |
   I want to re-think the front-end of my site,
@@ -11,7 +11,7 @@ summary: |
 ---
 {% import "utility.macros.njk" as utility %}
 
-Erin & I had a lovely vacation this month,
+Erin & I had a lovely vacation last month,
 driving around southwest Colorado --
 Bishop Castle, the Great Sand Dunes,
 Chimney Rock, the Durango-Silverton Railroad,
@@ -24,12 +24,12 @@ Every night we would end up in a hotel room,
 where we turn on the Food Network
 (back-to-back _Diners, Drive-Ins, and Dives_)
 or whatever is showing on HGTV.
-Most of the shows involve massive home renovation,
-but one (_No Demo Reno_) comes with the premise
+Nested between extensive house remodels,
+_No Demo Reno_ starts with the premise
 that all the walls of a house
 will stay exactly where they started.
 
-This post isn't about the HGTV show.
+This post isn't about HGTV or home renovations.
 I've seen a total of two or three episodes
 while knitting, winding down,
 and getting ready for bed.
@@ -37,7 +37,8 @@ But that's my goal with this site redesign.
 
 ## Some background, and some goals
 
-I first built this site in 2015 using rstBlog --
+I first built this site in 2015
+using [rstBlog](https://github.com/mitsuhiko/rstblog) --
 a small Python static-site generator
 without any documentation.
 
@@ -46,9 +47,11 @@ there's been one single major re-design.
 In early 2019,
 I migrated from rstBlog
 onto my current [Eleventy](https://www.11ty.dev/) setup --
-a complete overhaul of the site.
-At that point,
-I likely broke a [few promises]({% page_url 'posts/hit-publish' %}).
+a complete overhaul of the site,
+inside and out.
+The demolition was extensive,
+and I likely
+[broke a few promises]({% page_url 'posts/hit-publish' %}).
 
 <details>
 <summary>
@@ -91,54 +94,72 @@ Here are the goals:
 
 ### Clarify the information architecture
 
-I find it very hard to sort my life into clear
-and meaningfully distinct 'categories',
-so I rely heavily on dates and tags.
-An event
-(talk, performance, album release, article)
-happened (or was-published) a particular date,
-and has any number of relevant tags.
+I decided a while back
+not to try separating
+my 'personal' & 'work' personas online.
+It's not how my mind works,
+or the way I've structured my life.
 
-I like that as a way of approaching my content --
+I've always found it hard
+to sort my activities
+into the usual website categories,
+so I've been treating basically everything
+as an _event_
+with basically the same data, look, and feel.
+Something happens --
+a presentation, performance, album release, novel, article, spec --
+on a particular date,
+with any number of relevant tags.
+
+I like some things about that --
 embracing the mess of my ADHD life --
 but I haven't yet found a solution I like
-for navigating that content.
+for navigating & displaying it.
 
 The previous design relied heavily
-on long 'calendars' of
-somewhat-related content
+on extra-long 'calendars' of content
 at the bottom of every page.
 But that solution felt very bulky to me --
 both in terms of page-load,
-and in terms of scrolling.
+and user scrolling.
 It may have been
 technically [Finite](https://humanebydesign.com/principles/finite/),
-but it didn't always _feel_ finite.
+but it didn't always _feel_
+as finite
+(or as easy to navigate)
+as I'd like.
 
 ### Clean up the HTML (& Nunjucks)
 
 Technical debt often builds up in HTML over time --
 extra wrapping divs, stray classes,
-and complexity that was tied to style.
-It's just nice to start fresh on occasion.
-But I specifically want to:
+and other complexities
+that originate more from style than _content_.
+It feels good to clean that out and start fresh.
+Specifically, I want to:
 
 - Simplify complex Nunjucks templates
 - Strip out any HTML that is not absolutely essential
 - Improve my use of [Microformats](microformats.org/)
 - Rethink how [WebMentions]({% page_url 'indieweb/indiweb' %}) are displayed
-- Rethink how user design customization is handled
+- Rethink how user design customizations are provided
 - Always improve accessibility where I can
 
 I hope to end up with an HTML architecture
-that feels like a minimal blank canvas,
-where I can treat it a bit like a
+that feels more minimal --
+a blank canvas,
+that I can treat more like a
 [Zen Garden](http://www.csszengarden.com/)
 or
-[Style Stage](https://stylestage.dev/).
-My first websites all had multiple themes to choose from,
-and I would love to take that approach
-on my next redesign.
+[Style Stage](https://stylestage.dev/)
+for my CSS.
+
+My first websites
+(back in the early 00s)
+all had multiple
+'[alternate stylesheets](https://alistapart.com/article/alternate/)'
+to choose from,
+and I would love to do that again.
 
 For now, WebMentions are hidden
 while I figure out what to do with them.
@@ -148,8 +169,7 @@ and I'll figure out how I want to display them again soon.
 ### Make RSS a first class part of the site
 
 While I was working on WebMentions last month,
-I also made major updates to my RSS feed --
-and then added an RSS link to my main navigation.
+I also made major updates to my RSS feed.
 But I don't love the way browsers
 display a raw xml file.
 Developers may be my biggest audience,
@@ -166,22 +186,21 @@ as a part of the site.
 ### Try out new CSS features (slowly)
 
 It's been fun
-_designing_ new CSS features
-[with the CSSWG]({% page_url 'orgs/w3c' %}),
+working on new CSS features
+[with the CSSWG](/orgs/w3c),
 but now that those features
 (and more)
 are starting to roll out in browsers
-_I want to play with them_.
+I want to use them on my site.
 
-Some of those new toys
+Some of features
 are available already,
 or even a few years old.
 Things like
 `is()` & `:where()`,
 `min()`/`max()` & `clamp()`,
 variable fonts,
-`color-scheme`/`accent-color`
-& [system colors](https://drafts.csswg.org/css-color/#css-system-colors),
+`color-scheme`/`accent-color`,
 and [Cascade Layers]({% page_url 'css-tricks/layers-guide' %}).
 Some of those were already
 being used in the old design,
@@ -189,17 +208,17 @@ but this time I get to design around them from the start.
 
 Over the next months and years
 I also hope to start playing with
-Container Queries & query units,
-Scope,
+size-based container queries & query units,
+scope,
 subgrid,
-[new color formats](https://lea.verou.me/2020/04/lch-colors-in-css-what-why-and-how/)
-(`okLCH`) & spaces (`display-P3`),
+[new color spaces](https://lea.verou.me/2020/04/lch-colors-in-css-what-why-and-how/)
+(`okLCH`/`display-P3`),
 and more.
 
-I want to take this slow --
-start simple,
-and build in these new features
-as they arrive.
+I want to take this slow.
+Start simple,
+and build more interesting themes
+as the various features arrive.
 That means keeping things simple
 for as long as possible,
 so it's easy to integrate new ideas
@@ -213,8 +232,8 @@ I launched
 a tool for giving users
 total control over the colors on the site.
 
-I was inspired by Håkon Lie's original
-[1994 CSS proposal](https://www.w3.org/People/howcome/p/cascade.html),
+I was inspired by Håkon Lie's
+[original 1994 CSS proposal](https://www.w3.org/People/howcome/p/cascade.html),
 which includes the following
 text-art diagram:
 
@@ -228,13 +247,15 @@ text-art diagram:
 
 I still want to explore that idea
 of making the site design itself interactive,
-but I don't want to keep relying on HSL colors
+but I don't want to keep relying on
+unreliable HSL colors
 to make it happen.
 For now, I've removed Cascading Colors,
 while I rethink the approach.
 
-I'd also like to expose the way a CSS design is _layered_ --
-specified initial values,
+I'd also like to expose the ways
+a CSS design is _layered_ --
+from specified initial values,
 [user agent defaults]({% page_url 'css/body-margin-8px' %}),
 resets, global typography,
 layouts, components, etc.
@@ -247,56 +268,53 @@ to see how the site looks
 at different steps of the process?
 
 This idea is absolutely
-inspired by
-(or directly ripping off?)
-[Nils Binder](https://ichimnetz.com/),
-who has a lovely personal site.
+inspired by the personal site of
+[Nils Binder](https://ichimnetz.com/) --
+which provides a slider from 0 to 865 lines of CSS.
 I recommend checking it out.
-
-The only difference here
-is that I want to tie this idea
-more directly to _how the cascade works_.
 
 ## The order of things
 
 My instinct was to strip out all CSS,
 and then work on getting the HTML cleaned up.
 I didn't quite do that,
-but I'm aiming for something close --
-while keeping a bit more _style_ along the way.
+but I'm aiming for something close.
 
 Here's what I've done so far:
 
 - Remove the old CSS (done)
-- Cleanup the site-header/nav HTML
-- `@layer reset` » work in progress,
-  starting from [CSS Remedy](https://github.com/jensimmons/cssremedy)
-- `@layer default` » work in progress, basic typography
-- `@layer theme` » work in progress, minimal fonts & colors
-- `@layer layout` » just enough for the nav to feel usable
+- Begin re-arranging the HTML & Nunjucks templates
+- `@layer reset` »
+  just the bare minimum needed
+  for HTML tags and attributes to work the way I expect,
+  starting from [CSS Remedy](https://github.com/jensimmons/cssremedy).
+- `@layer default` »
+  just enough colors & typography
+  to make the site feel usable to me,
+  without making decisions about
+  how I'm going to theme it long-term.
+- `@layer theme` »
+  adds a few site-specific features and opinions
+  on top of the typographic defaults.
 
-The goal is to leave the `theme` and `layout` layers
+The distinction between layers is still fluid,
+as I try to figure out what I'm doing.
+I'll keep adjusting the `reset` and `default` styles as I go,
+but hope to leave the `theme` layer
 as minimal as possible,
-while I focus on the basics:
+while I focus on:
 
-- Style the RSS page
-- Cleanup the site footer HTML
-- Cleanup the page header HTML
-- Cleanup the page content HTML
-- Cleanup the information architecture & related HTML
+- Minimal, accessible HTML
+- Better information architecture & navigation
+- Reliable microformats
+- Styled RSS page
 
-Along the way,
-I'll keep tweaking the `reset` and `default` styles
-to improve readability in broad strokes
-(more tags than classes).
-
-Once that's done,
-I'll slowly start bringing back features --
-user customizations,
+From there,
+I can start thinking about
+more complex layouts & themes & features --
+more user customizations,
+navigation,
 WebMentions,
-additional layout & theming,
-more component details
-(like grids for images),
 etc.
 
 We'll see where it goes.
@@ -316,6 +334,8 @@ Sites:
 
 - [tink](https://tink.uk/)
   (Léonie did a lovely simple redesign recently, with tags for navigation)
+- [IndieWebify.Me](https://indiewebify.me/)
+- [Microformats](https://microformats.org/wiki/microformats2)
 - [Humane by Design](https://humanebydesign.com/)
 - [Sorted Colors](https://enes.in/sorted-colors/)
   (I'm starting with named colors for everything,

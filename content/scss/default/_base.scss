@@ -8,4 +8,8 @@
       --outset: calc(var(--gap, 1em) * -1);
     }
   }
+
+  [data-options='theme'] {
+    --display-init: block;
+  }
 }

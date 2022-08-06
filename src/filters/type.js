@@ -4,7 +4,6 @@ const typogr = require('typogr');
 const mdown = require('markdown-it')({
   html: true,
   breaks: false,
-  linkify: true,
   typographer: true,
 })
   .disable('code')

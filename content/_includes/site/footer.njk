@@ -1,28 +1,5 @@
 {% import 'contact.macros.njk' as contact %}
 
-{% if not (page.url == '/who/') %}
-  <article class="h-card p-author vcard">
-    {% img
-      'headshots/rss.jpg',
-      'Miriam with asymmetrical orange hair at a mic, smiling',
-      'face',
-      {'class': 'photo u-photo'}
-    %}
-
-    <h2>
-      <a href="{{ [site.url, 'who/'] | join | url }}" rel="author" class="p-name u-url u-uid fn url uid">
-        {{- site.author -}}
-      </a>
-    </h2>
-
-    <div class="p-note">
-      {{ bios.intro | md | safe }}
-    </div>
-
-    {{ contact.links(social) }}
-  </article>
-{% endif %}
-
 {% if not (page.url == '/contact/') %}
   {{ contact.form(
     attrs={'data-footer': 'contact'},
@@ -31,7 +8,10 @@
 {% endif %}
 
 <footer>
-  <p>Copyright &copy; {% getDate 'year' %} {{ site.author }}</p>
+  <p>
+    Copyright &copy; {% getDate 'year' %}
+    <strong>{{ site.author }}</strong>
+  </p>
   {{ colophon | md | safe }}
 </footer>
 

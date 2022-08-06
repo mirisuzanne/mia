@@ -1,0 +1,10 @@
+<nav aria-label="secondary">
+  <details id="tag-nav">
+    <summary>Featured Tags</summary>
+    <ul>
+      {%- for tag in collections | navTags -%}
+        <li>{{- tag.link | safe -}}</li>
+      {%- endfor -%}
+    </ul>
+  </details>
+</nav>

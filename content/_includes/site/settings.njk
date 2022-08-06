@@ -10,8 +10,7 @@
 
   <section data-options="css">
     <h2>Style Layers</h2>
-    <button data-set="none" aria-pressed="false">none</button>
-    {%- for link in site.styles -%}
+    {%- for link in site.styles %}
       <button data-set="{{ link.title }}" aria-pressed="{{ 'false' if alt else 'true' }}">
         {{- link.title -}}
       </button>

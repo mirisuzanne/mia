@@ -13,7 +13,7 @@
   {%- endfor -%}
 
   {%- set styles = site.styles | concat(styles) if styles else site.styles -%}
-  {%- for link in styles -%}
+  {%- for link in styles | selectattr('url') -%}
     {%- set url = link.url if '://' in link.url | string else ['/css/', link.url] | join -%}
     {%- set rel = 'alternate stylesheet' if link.alt else 'stylesheet' -%}
     <link rel="{{ rel }}" href="{{ url }}" {% if link.title %}title="{{ link.title }}"{% endif %} />
@@ -43,21 +43,11 @@
   {% endif %}
 
   {% include 'site/nav.njk' %}
+  {% include 'site/tags.njk' %}
 
   <main id="main" {% if erasure %}data-erase="off"{% endif %} {{ utility.show_attrs(attrs.main) }}>
     {{ content | safe }}
   </main>
-
-  <nav aria-label="secondary">
-    <details id="tag-nav">
-      <summary>Featured Tags</summary>
-      <ul>
-        {%- for tag in collections | navTags -%}
-          <li>{{- tag.link | safe -}}</li>
-        {%- endfor -%}
-      </ul>
-    </details>
-  </nav>
 
   {% include 'site/settings.njk' %}
   {% include 'site/footer.njk' %}

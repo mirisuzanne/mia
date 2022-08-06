@@ -31,7 +31,12 @@ and then white and black in the other corners.
 This is how the old Chrome color picker
 used to show HWB color:
 
-{{ '2022/hwb-picker.png' | img('color picker with an outer wheel for selecting hue, and an inner triangle for selecting relative amounts of white and black') | safe }}
+{{- content.figure(
+  data=[{
+    'img': '2022/hwb-picker.png',
+    'alt': 'color picker with an outer wheel for selecting hue, and an inner triangle for selecting relative amounts of white and black'
+  }]
+) -}}
 
 The side of the triangle
 across from our saturated-hue corner
@@ -166,27 +171,31 @@ adjusting each channel along the way --
 we have to go through a full range of hues
 just to get from black to cyan:
 
-{{- colors.gradient(
-  stops=[
-    'hsl(0deg 100% 0%)',
-    'hsl(45deg 100% 12.5%)',
-    'hsl(90deg 100% 25%)',
-    'hsl(135deg 100% 37.5%)',
-    'hsl(180deg 100% 50%)'
-  ],
-  alt='A gradient from black to cyan, passing through several other hues on the way.'
+{{- content.figure(
+  content=colors.gradient(
+    stops=[
+      'hsl(0deg 100% 0%)',
+      'hsl(45deg 100% 12.5%)',
+      'hsl(90deg 100% 25%)',
+      'hsl(135deg 100% 37.5%)',
+      'hsl(180deg 100% 50%)'
+    ],
+    alt='A gradient from black to cyan, passing through several other hues on the way.'
+  )
 ) -}}
 
 Lucky for us,
 browsers don't generally render gradients
 using naive HSL math:
 
-{{- colors.gradient(
-  stops=[
-    'hsl(0deg 100% 0%)',
-    'hsl(180deg 100% 50%)'
-  ],
-  alt='A smooth gradient from black to cyan.'
+{{- content.figure(
+  content=colors.gradient(
+    stops=[
+      'hsl(0deg 100% 0%)',
+      'hsl(180deg 100% 50%)'
+    ],
+    alt='A smooth gradient from black to cyan.'
+  )
 ) -}}
 
 Currently browsers convert everything to `sRGB` before mixing.
@@ -309,13 +318,15 @@ one needing to be scaled,
 and a final version that needs
 both clamping and scaling:
 
-{{- colors.gradient(
-  stops=[
-    'hwb(0deg 80% 20%)',
-    'hwb(0deg 100% 25%)',
-    'hwb(0deg 2530% 25%)'
-  ],
-  alt='A gradient that is actually just the same gray all the way along'
+{{- content.figure(
+  content=colors.gradient(
+    stops=[
+      'hwb(0deg 80% 20%)',
+      'hwb(0deg 100% 25%)',
+      'hwb(0deg 2530% 25%)'
+    ],
+    alt='A gradient that is actually just the same gray all the way along'
+  )
 ) -}}
 
 Sass will soon be adding support

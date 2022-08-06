@@ -4,7 +4,7 @@
 
 @mixin css {
   html {
-    @include colors.ui;
+    @include colors.props;
     @include fonts.ui;
     @include sizes.text;
     @include sizes.space;

@@ -104,13 +104,13 @@
 ) -%}
 {%- set content = _fig_content(data) if data else content or caller() | mdInline -%}
 <figure>
-  {% if grid %}
+  {%- if grid -%}
     <section>
       {{- content | safe -}}
     </section>
-  {% else %}
+  {%- else -%}
     {{- content | safe -}}
-  {% endif %}
+  {%- endif -%}
   {%- if caption -%}
     <figcaption>
       {{- caption | mdInline | safe -}}

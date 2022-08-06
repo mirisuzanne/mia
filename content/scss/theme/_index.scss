@@ -2,7 +2,6 @@
 @use 'sizes';
 @use 'fonts';
 @use 'headings';
-@use 'buttons';
 @use 'nav';
 @use 'content';
 @use 'media';
@@ -19,8 +18,6 @@
     border-block: thick solid var(--AccentColor);
   }
 
-  @include colors.css;
-  @include buttons.css;
   @include headings.css;
   @include nav.css;
   @include content.css;

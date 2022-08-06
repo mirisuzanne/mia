@@ -2,6 +2,7 @@
 title: Not All Zeros are Equal
 sub: And every 'best practice' comes with caveats
 date: 2022-08-04
+url: https://www.oddbird.net/2022/08/04/zero-units/
 image:
   src: 2022/slip-hazard.jpg
   alt: |

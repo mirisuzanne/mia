@@ -1,6 +1,6 @@
 {% import "utility.macros.njk" as utility %}
 
-<nav aria-label="Primary">
+<nav aria-label="primary">
   {% for name, url in nav.site %}
     {% set attrs = {
       'aria-current': ('page' if (page.url == url) else none),

@@ -23,11 +23,13 @@ feed:
     type: atom+xml
     url: feed.atom
 styles:
+  - title: spec
+    url: layer/spec.css
+    alt: true
+  - title: browser
+    alt: true
   - title: reset
     url: layer/reset.css
-    alt: true
-  - title: config
-    url: layer/config.css
     alt: true
   - title: default
     url: layer/default.css

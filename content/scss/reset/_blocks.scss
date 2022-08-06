@@ -31,4 +31,8 @@
   summary {
     cursor: pointer;
   }
+
+  p:empty {
+    display: none;
+  }
 }

@@ -3,7 +3,7 @@
   select,
   textarea {
     background-color: var(--Field);
-    border: thin solid var(--field-border, currentColor);
+    border: medium solid var(--field-border, var(--border, currentColor));
     color: var(--FieldText);
     padding: var(--shim);
   }

@@ -1,19 +1,19 @@
 @use 'sass:color';
 
 $accent-light: hotpink;
-$complement-light: paleturquoise;
+$complement-light: darkturquoise;
 $accent-dark: color.scale(mediumvioletred, $lightness: -25%);
 $complement-dark: teal;
-$dark: color.scale(darkslategray, $lightness: -75%);
-$light: azure;
+$dark: color.scale(darkslategray, $lightness: -70%);
+$light: powderblue;
 
 @mixin light {
   --bg: var(--light);
   --text: var(--dark);
-  --accent-bg: var(--accent-light);
   --accent: var(--accent-dark);
-  --complement-bg: var(--complement-light);
+  --accent-text: var(--bg);
   --complement: var(--complement-dark);
+  --complement-text: var(--bg);
   --shadow: hsl(0deg 0% 0% / 12.5%);
   --image-brightness: 100%;
 }
@@ -21,10 +21,10 @@ $light: azure;
 @mixin dark {
   --bg: var(--dark);
   --text: var(--light);
-  --accent-bg: var(--accent-dark);
   --accent: var(--accent-light);
-  --complement-bg: var(--complement-dark);
+  --accent-text: var(--bg);
   --complement: var(--complement-light);
+  --complement-text: var(--bg);
   --shadow: hsl(0deg 0% 0% / 25%);
   --image-brightness: 80%;
 }
@@ -55,10 +55,10 @@ $light: azure;
 
   // applications
   --border: var(--complement, currentColor);
-}
-
-@mixin css {
-  [data-options='theme'] {
-    --display-init: flex;
-  }
+  --action: var(--accent);
+  --active: var(--complement);
+  --highlight: var(--accent);
+  --selected: var(--complement);
+  --field-bg: var(--shadow);
+  --btn-bg: var(--shadow);
 }

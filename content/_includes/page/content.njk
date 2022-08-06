@@ -1,23 +1,23 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-{% if summary %}
-  <div id="summary" {{ utility.show_attrs(attrs.summary) }}>
-    {{ summary | md | safe }}
-  </div>
-{% endif %}
+{%- set elsewhere = tags and url and ('elsewhere' in tags) -%}
 
-{% if content %}
-  {% if summary %}<hr />{% endif %}
+{%- if summary or elsewhere -%}
+  <div id="summary" {{ utility.show_attrs(attrs.summary) }}>
+    {%- if summary -%}
+      {{ summary | md | safe }}
+    {%- endif -%}
+
+    {%- if elsewhere -%}
+      <p><a rel="bookmark" href="{{ url }}">More at {{ venue }} »</a></p>
+    {%- endif -%}
+  </div>
+{%- endif -%}
+
+{%- if content -%}
+  {%- if summary %}<hr />{% endif -%}
 
   <div id="content" {{ utility.show_attrs(attrs.content) }}>
     {{ content | typogr | safe }}
-
-    {% if tags and ('elsewhere' in tags) %}
-      <p>
-        <a rel="bookmark" href="{{ url }}">
-          More at {{ venue }} »
-        </a>
-      </p>
-    {% endif %}
   </div>
-{% endif %}
+{%- endif -%}

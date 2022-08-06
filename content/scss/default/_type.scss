@@ -1,23 +1,29 @@
 @mixin css {
   // headers
-  header {
-    :is(body, main) > & {
+  header,
+  section,
+  footer {
+    :where(body, main) > & {
       margin-block: var(--spacer, 2em);
-    }
-
-    > * {
-      margin-block: 0;
     }
   }
 
-  section {
-    margin-block: var(--spacer);
+  header {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin-block: 0;
+    }
   }
 
   // lists
   ul,
   ol {
-    padding-inline-start: calc(var(--outset, 0) * 1px + var(--gap, 1em));
+    padding-inline-start: calc(var(--outset, 0px) + var(--gap, 1em));
   }
 
   li {
@@ -26,7 +32,7 @@
 
   // block
   blockquote {
-    border-inline-start: thick solid var(--border, var(--AccentColor));
+    border-inline-start: thick solid var(--border, currentColor);
     padding-inline: var(--gap, 1em);
   }
 
@@ -77,8 +83,8 @@
   }
 
   ::selection {
-    background-color: var(--SelectedItem);
-    color: var(--SelectedItemText);
+    background-color: var(--Highlight);
+    color: var(--HighlightText);
   }
 
   mark {
