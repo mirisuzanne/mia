@@ -59,7 +59,7 @@
   {% set scripts = site.scripts | concat(scripts) if scripts else site.scripts %}
   {% for url in scripts %}
     {% set url = url if '://' in url | string else ['/assets/js/', url] | join %}
-    <script type="text/javascript" src="{{ url | url }}"></script>
+    <script src="{{ url | url }}"></script>
   {% endfor %}
 </body>
 </html>

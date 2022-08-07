@@ -1,7 +1,7 @@
 ---
 title: No Demo [Website] Reno
 sub: A slow remodel of my HTML & CSS
-date: 2022-08-05
+date: 2022-08-07T14:57:46-06:00
 series: redesign 2022
 summary: |
   I want to re-think the front-end of my site,
@@ -10,6 +10,7 @@ summary: |
   And I want to do it slowly.
 ---
 {% import "utility.macros.njk" as utility %}
+{% import "demos/colors.njk" as colors %}
 
 Erin & I had a lovely vacation last month,
 driving around southwest Colorado --
@@ -51,14 +52,14 @@ a small Python static-site generator
 without any documentation.
 
 <!--
-2002--2006 » goshen college student page?
-2006--2010 » [wordpress] meyerbros.org
-2008--2011 » [static] eric.dirtcircle.com
-2011--2012 » [tumblr] eric.andmeyer.com
-2012--2014 » [rstBlog] eric.andmeyer.com
-2014--2015 » [rstBlog] ericsuzanne.com
-2015--2019 » [rstBlog] miriamsuzanne.com
-2019--.... » [Eleventy] miriamsuzanne.com
+2002-2006 » goshen college student page?
+2006-2010 » [Wordpress] meyerbros.org
+2008-2011 » [static] eric.dirtcircle.com
+2011-2012 » [tumblr] eric.andmeyer.com
+2012-2014 » [rstBlog] eric.andmeyer.com
+2014-2015 » [rstBlog] ericsuzanne.com
+2015-2019 » [rstBlog] miriamsuzanne.com
+2019-.... » [Eleventy] miriamsuzanne.com
 -->
 
 In early 2019,
@@ -122,7 +123,7 @@ Specifically, I want to:
 
 - Simplify complex Nunjucks templates
 - Strip out any HTML that is not absolutely essential
-- Improve my use of [Microformats](microformats.org/)
+- Improve my use of [microformats](https://microformats.org/)
 - Rethink how [WebMentions]({% page_url 'indieweb/indiweb' %}) are displayed
 - Rethink how user design customizations are provided
 - Always improve accessibility where I can
@@ -252,7 +253,7 @@ for a first-draft of the idea.
 </section>
 <figcaption>
   Try turning CSS layers on and off...
-  These settings are also saved in `loaclStorage`,
+  These settings are also saved in `localStorage`,
   so they persist across visits.
 </figcaption>
 </figure>
@@ -296,9 +297,32 @@ but hope to leave the `theme` layer
 as minimal as possible,
 while I focus on the architectural issues.
 
-For now, WebMentions are hidden,
-RSS isn't highlighted in the nav,
-and all content still looks the same --
+For now,
+the `default` layer has colors based roughly on Firefox
+[CSS System Colors](https://www.w3.org/TR/css-color-4/#css-system-colors).
+I experimented briefly with using
+the System Colors directly,
+but support seems a bit inconsistent,
+and there are additional accessibility considerations
+with that approach.
+I might revisit in the future.
+
+The `theme` layer colors
+are based on [Named Colors](https://www.w3.org/TR/css-color-4/#named-colors),
+with some minor adjustments for accessible contrast.
+While {{ colors.swatch('darkslategray') }}
+works fine as a text `color`
+over {{ colors.swatch('azure') }}
+in `light` mode,
+I used Sass to darken it
+as a `background-color` in `dark` mode,
+providing enough contrast for my accent colors as well.
+The result is {{ colors.swatch('hsl(180deg 25% 6%)') }}.
+
+There's a lot more to do.
+WebMentions are temporarily hidden,
+RSS isn't highlighted in the nav or styled,
+and all content still looks the same in a list --
 but I have to start somewhere.
 We'll see where it goes (slowly).
 
@@ -316,10 +340,9 @@ Articles:
 Sites:
 
 - [tink](https://tink.uk/)
-  (Léonie did a lovely simple redesign recently, with tags for navigation)
+  (Léonie did a lovely redesign recently, with tags for navigation)
 - [IndieWebify.Me](https://indiewebify.me/)
-- [Microformats](https://microformats.org/wiki/microformats2)
+- [microformats](https://microformats.org/wiki/microformats2)
 - [Humane by Design](https://humanebydesign.com/)
 - [Sorted Colors](https://enes.in/sorted-colors/)
-  (I'm starting with named colors for everything,
-  except that I had to darken `darkslategray` for the sake of contrast)
+- [Contrast Ratio](https://contrast-ratio.com/)

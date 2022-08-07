@@ -30,7 +30,7 @@ const date = (dateObj, format) => {
   if (format === 'rss') {
     return obj.toRFC2822();
   } else if (format === 'iso') {
-    return obj.toISODate();
+    return obj.toISO();
   } else if (format && !knownFormat) {
     const custom = {
       url: "yyyy'/'MM'/'dd",

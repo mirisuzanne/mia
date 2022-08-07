@@ -63,3 +63,7 @@
   {%- set gradient -%}linear-gradient(to right, {{ stops | join(', ') }}){%- endset -%}
   <div style="background: {{ gradient }} no-repeat scroll; height: var(--spacer); margin-bottom: var(--gutter);" role="img" aria-label="{{ alt }}"></div>
 {%- endmacro %}
+
+{% macro swatch(color) %}
+  <code style="--swatch: {{ color }};">{{ color }}</code>
+{% endmacro %}

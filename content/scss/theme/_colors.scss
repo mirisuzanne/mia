@@ -2,10 +2,11 @@
 
 $accent-light: hotpink;
 $complement-light: darkturquoise;
-$accent-dark: color.scale(mediumvioletred, $lightness: -25%);
+$accent-dark: mediumvioletred;
 $complement-dark: teal;
-$dark: color.scale(darkslategray, $lightness: -70%);
-$light: powderblue;
+$dark: darkslategray;
+$darker: color.scale(darkslategray, $lightness: -75%);
+$light: azure;
 
 @mixin light {
   --bg: var(--light);
@@ -19,7 +20,7 @@ $light: powderblue;
 }
 
 @mixin dark {
-  --bg: var(--dark);
+  --bg: var(--darker);
   --text: var(--light);
   --accent: var(--accent-light);
   --accent-text: var(--bg);
@@ -36,6 +37,7 @@ $light: powderblue;
   --complement-light: #{$complement-light};
   --complement-dark: #{$complement-dark};
   --dark: #{$dark};
+  --darker: #{$darker};
   --light: #{$light};
 
   // mode configuration

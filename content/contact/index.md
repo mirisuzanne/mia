@@ -7,7 +7,3 @@ eleventyExcludeFromCollections: true
 
 {% import "contact.macros.njk" as contact %}
 {{ contact.form() }}
-
-## Feeling Social…
-
-{{ contact.links(social) }}

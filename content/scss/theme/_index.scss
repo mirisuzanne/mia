@@ -6,6 +6,7 @@
 @use 'content';
 @use 'media';
 @use 'erase';
+@use 'swatch';
 
 @mixin css {
   @include fonts.files;
@@ -23,6 +24,7 @@
   @include content.css;
   @include media.css;
   @include erase.css;
+  @include swatch.css;
 
   html::after {
     @include media.dim;
