@@ -18,7 +18,7 @@ events:
     url: https://www.facebook.com/events/1845576042369221/
     image: shows/release17.jpg
     venue: Lost Lake
-    start: 2017-04-27
+    date: 2017-04-27
     adr: Denver, CO
     with:
       - name: The Raven & The Writing Desk
@@ -33,7 +33,7 @@ video:
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=video,
   caption='Just Like That music video'
 ) }}

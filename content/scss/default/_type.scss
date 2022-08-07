@@ -1,0 +1,98 @@
+@mixin css {
+  // headers
+  header,
+  section,
+  footer {
+    :where(body, main) > & {
+      margin-block: var(--spacer, 2em);
+    }
+  }
+
+  header {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin-block: 0;
+    }
+  }
+
+  // lists
+  ul,
+  ol {
+    padding-inline-start: calc(var(--outset, 0px) + var(--gap, 1em));
+  }
+
+  li {
+    --outset: 0px;
+  }
+
+  // block
+  blockquote {
+    border-inline-start: thick solid var(--border, currentColor);
+    padding-inline: var(--gap, 1em);
+  }
+
+  article + article {
+    margin-block-start: var(--spacer);
+  }
+
+  details,
+  figure,
+  pre {
+    background-color: var(--shadow, hsl(0deg 0% 0% / 12.5%));
+    margin-inline: var(--outset, 0);
+    padding: var(--gap, 1em);
+
+    > * {
+      --outset: 0px;
+    }
+  }
+
+  pre code {
+    display: block;
+    overflow: auto;
+  }
+
+  summary {
+    font-weight: bold;
+  }
+
+  hr {
+    border: 0;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: var(--spacer, 2em) 0;
+
+    &::after {
+      content: var(--hr, '* * *');
+      color: var(--border, inherit);
+    }
+  }
+
+  // inline
+  tt,
+  code,
+  kbd,
+  samp {
+    font-family: var(--font-code, var(--var-mono, var(--ui-mono)));
+
+    &:not(pre > *) {
+      font-size: 0.8em;
+    }
+  }
+
+  ::selection {
+    background-color: var(--Highlight);
+    color: var(--HighlightText);
+  }
+
+  mark {
+    background-color: var(--Highlight);
+    color: var(--HighlightText);
+  }
+}

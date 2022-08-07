@@ -1,0 +1,7 @@
+{%- for feed in site.feed -%}
+<link
+  rel="alternate"
+  type="application/{{ feed.type }}"
+  title="{{ site.title }} {{ feed.format }} feed"
+  href="{{ feed.url | absoluteUrl(site.url) }}" />
+{%- endfor -%}

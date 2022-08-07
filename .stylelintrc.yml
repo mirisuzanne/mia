@@ -2,7 +2,7 @@
 # Also https://github.com/kristerkari/stylelint-scss#list-of-rules
 
 extends:
-  - stylelint-config-recommended
+  - stylelint-config-standard-scss
   - stylelint-prettier/recommended
 plugins:
   - stylelint-scss
@@ -17,25 +17,17 @@ ignoreFiles:
 rules:
   prettier/prettier: true
 
-  unit-no-unknown:
-    - true
-    - ignoreUnits:
-        - 'svh'
-        - 'lvh'
-        - 'dvh'
-
-  at-rule-no-unknown: null
-  scss/at-rule-no-unknown:
-    - true
-    - ignoreAtRules:
-        - use
-        - forward
+  custom-property-pattern: null
+  declaration-no-important: null
 
   # possible errors (these are all on by default)
   no-descending-specificity: null
-  property-no-unknown: null
 
   # limit language features
+  length-zero-no-unit:
+    - true
+    - ignore:
+        - custom-properties
   at-rule-no-vendor-prefix: true
   color-named: always-where-possible
   declaration-block-no-redundant-longhand-properties:
@@ -43,7 +35,6 @@ rules:
     - ignoreShorthands:
         - grid-template
   declaration-block-single-line-max-declarations: 1
-  declaration-no-important: true
   function-url-no-scheme-relative: true
   media-feature-name-no-vendor-prefix: true
   property-no-vendor-prefix: true

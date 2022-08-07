@@ -1,0 +1,15 @@
+@mixin css {
+  code[style*='--swatch']::before {
+    background: repeating-linear-gradient(
+      45deg,
+      var(--swatch, black) 10%,
+      var(--swatch, white) 10% 20%
+    );
+    border: thin solid var(--border, currentColor);
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    margin-inline: 0.2em;
+  }
+}

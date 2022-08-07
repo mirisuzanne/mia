@@ -20,7 +20,7 @@ gallery:
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(gallery, 'a few important slides…') }}
+{{ content.figure(gallery, 'a few important slides…') }}
 
 ## The Full Script:
 

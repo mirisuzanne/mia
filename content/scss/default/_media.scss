@@ -1,0 +1,14 @@
+@mixin css {
+  figure {
+    display: grid;
+    gap: var(--gap, 1em);
+  }
+
+  figcaption {
+    font-style: italic;
+
+    > * {
+      margin-block: 0;
+    }
+  }
+}

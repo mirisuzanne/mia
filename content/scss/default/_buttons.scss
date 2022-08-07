@@ -1,0 +1,27 @@
+@mixin css {
+  button {
+    background-color: var(--btn-bg, var(--ButtonFace));
+    border: medium solid var(--btn-border, var(--ButtonBorder));
+    color: var(--btn-text, var(--ButtonText));
+    padding: var(--half-shim) var(--gap);
+
+    &:hover,
+    &:focus {
+      --btn-border: var(--AccentColor);
+    }
+
+    &:active {
+      --btn-bg: var(--ActiveText);
+      --btn-text: var(--bg);
+    }
+  }
+
+  [aria-pressed] {
+    --btn-border: var(--SelectedItem);
+  }
+
+  [aria-pressed='true'] {
+    --btn-bg: var(--SelectedItem);
+    --btn-text: var(--SelectedItemText);
+  }
+}

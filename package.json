@@ -35,13 +35,13 @@
     "watch:js:compile": "rollup -c --watch",
     "watch:js": "run-p watch:js:*",
     "assets:clean": "rm -rf ./_built/",
-    "serve": "npm-run-all build:assets build:site -p eleventy:serve watch:js watch:sass",
-    "build:site": "run-s sass sassdoc",
+    "serve": "npm-run-all build:assets build:styles -p eleventy:serve watch:js watch:sass",
+    "build:styles": "run-s sass",
     "build:assets": "npm-run-all assets:clean -p js",
-    "build": "run-s build:assets build:site eleventy"
+    "build": "run-s build:assets build:styles eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^2.0.0",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
@@ -68,20 +68,22 @@
     "lodash": "^4.17.15",
     "lunr": "^2.3.8",
     "markdown-it": "^12.3.2",
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-bracketed-spans": "^1.0.1",
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-mark": "^3.0.0",
     "netlify-plugin-cache": "^1.0.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "rollup": "^2.1.0",
-    "sass": "^1.50.0",
+    "sass": "^1.54.0",
     "sassdoc": "^2.7.1",
     "sassdoc-theme-herman": "^4.0.2",
-    "stylelint": "^13.2.1",
-    "stylelint-config-prettier": "^8.0.1",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-prettier": "^1.1.1",
-    "stylelint-scss": "^3.11.1"
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0"
   },
   "husky": {
     "hooks": {
@@ -101,6 +103,8 @@
     ]
   },
   "dependencies": {
+    "@fontsource/alegreya": "^4.5.7",
+    "@fontsource/jetbrains-mono": "^4.5.9",
     "dotenv": "^16.0.1",
     "sanitize-html": "^2.7.0"
   }

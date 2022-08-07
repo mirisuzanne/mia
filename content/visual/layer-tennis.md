@@ -48,7 +48,7 @@ but here are the volleys:
 
 [blog]: http://www.theoperatingsystem.org/layer-tennis-live-stream-print-vol-3-ole/
 
-{{ content.fig(
+{{ content.figure(
   data=gallery,
   caption='A game of Layer Tennis used to design a journal cover'
 ) }}

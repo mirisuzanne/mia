@@ -1,0 +1,59 @@
+// roughly based on the Firefox System Colors
+// https://www.w3.org/TR/css-color-4/#css-system-colors
+
+@mixin dark {
+  --Canvas: var(--bg, #1c1c1c);
+  --CanvasText: var(--text, #f8f9fa);
+  --Link: var(--action, #8c8cff);
+  --VisitedText: var(--action, #ffadff);
+  --ActiveText: var(--active, #f66);
+  --ButtonFace: var(--btn-bg, #2b2a33);
+  --ButtonFaceHover: var(--btn-hover-bg, #52525e);
+  --ButtonText: var(--btn-text, #fbfbfe);
+  --ButtonTextHover: var(--btn-hover-text, var(--ButtonText));
+  --ButtonBorder: var(--btn-border, var(--border, currentColor));
+  --Field: var(--field-bg, #2b2a33);
+  --FieldText: var(--field-text, #fbfbfe);
+  --Highlight: var(--highlight, #3f638b);
+  --HighlightText: var(--highlight-text, var(--Canvas));
+  --SelectedItem: var(--selected, skyblue);
+  --SelectedItemText: var(--selected-text, black);
+  --AccentColor: var(--accent, #ff5ce4);
+  --AccentColorText: var(--accent-text, black);
+}
+
+@mixin light {
+  --Canvas: var(--bg, #f8f9fa);
+  --CanvasText: var(--text, #1c1c1c);
+  --Link: var(--action, #00e);
+  --VisitedText: var(--action, #551a8b);
+  --ActiveText: var(--active, #e00);
+  --ButtonFace: var(--btn-bg, #e9e9ed);
+  --ButtonText: var(--btn-text, #1c1c1c);
+  --ButtonTextHover: var(--btn-hover-text, var(--ButtonText));
+  --ButtonBorder: var(--btn-border, var(--border, currentColor));
+  --Field: var(--field-bg, #f8f9fa);
+  --FieldText: var(--field-text, #1c1c1c);
+  --Highlight: var(--highlight, #b3d8ff);
+  --HighlightText: var(--highlight-text, var(--Canvas));
+  --SelectedItem: var(--selected, #0063e1);
+  --SelectedItemText: var(--selected-text, white);
+  --AccentColor: var(--accent, #7d004f);
+  --AccentColorText: var(--accent-text, white);
+}
+
+@mixin props {
+  @include dark;
+
+  @media (prefers-color-scheme: light) {
+    @include light;
+  }
+
+  &[data-theme='dark'] {
+    @include dark;
+  }
+
+  &[data-theme='light'] {
+    @include light;
+  }
+}

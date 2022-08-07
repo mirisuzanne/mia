@@ -19,7 +19,7 @@ after putting so much into it,
 but neither can you force it through.
 The only way forward is to take a step back.
 
-{{ content.fig(
+{{ content.figure(
   data=cycle,
   caption='How to everything ([again](/2012/11/08/creative-cycles/))'
 ) }}

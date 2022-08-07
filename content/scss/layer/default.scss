@@ -1,0 +1,6 @@
+@forward 'config';
+@use '../default';
+
+@layer default {
+  @include default.css;
+}

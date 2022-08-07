@@ -1,0 +1,25 @@
+---
+layout: format/h-feed
+title: Speaking
+sub: A mix of teaching and story-telling
+index: speaking
+type: none
+override:tags: []
+---
+
+{% set event_groups = collections.speaking | getEvents | groupBy('tense') %}
+
+{% if event_groups.ongoing | length > 0 %}
+  <h2>Happening Now</h2>
+  {% for item in event_groups.ongoing %}
+    {% include 'part/hevent.njk' %}
+  {% endfor %}
+{% endif %}
+
+{% if event_groups.future | length > 0 %}
+  <h2>Happening Now</h2>
+  {% for item in event_groups.future %}
+    {% include 'part/hevent.njk' %}
+  {% endfor %}
+{% endif %}
+

@@ -31,7 +31,7 @@ the "seed" of a project.
 
 ## A Range of Specimen
 
-{{ content.fig(
+{{ content.figure(
   data=specimen,
   caption='what do we have against these cute little insects?'
 ) }}
@@ -49,7 +49,7 @@ starting with a question and related hypothesis.
 2. Do *background research*
 3. Construct a *hypothesis*
 
-{{ content.fig(
+{{ content.figure(
   data=circle,
   caption="Simon Sinek's *golden circle*"
 ) }}
@@ -100,7 +100,7 @@ started with a quote I found on the internet:
 
 [hetero]: http://books.google.com/books?id=S8BB1K361SUC&lpg=PP1&pg=PA15#v=onepage&q&f=false
 
-{{ content.fig(
+{{ content.figure(
   data=science,
   caption='Out-of-body studies are super weird, yall'
 ) }}
@@ -123,7 +123,7 @@ the other pieces fell into place.
 [wiki]: http://en.wikipedia.org/
 [tattered]: http://tatteredcover.com/
 
-{{ content.fig(
+{{ content.figure(
   data=herm,
   caption='a herm (named for Hermes) is a statue with carved genitals on un-carved block legs'
 ) }}

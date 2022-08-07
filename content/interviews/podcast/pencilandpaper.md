@@ -32,7 +32,7 @@ significant handoff moment during a sprint.
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='The fireside chat...'
 ) }}

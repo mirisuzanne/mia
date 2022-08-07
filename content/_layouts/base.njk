@@ -1,66 +1,65 @@
-{%- import 'utility.macros.njk' as utility -%}
-{%- import 'site/macros.njk' as show -%}
-{%- import 'events/macros.njk' as cal -%}
 <!doctype html>
-<html lang="en" data-ccs="root" data-ccs-theme="{{ ccs.themes[0] }}" data-ccs-colors>
-  {%- set desc = sub or summary or content or '' -%}
-  {%- set desc = desc | mdInline | striptags | truncate | replace('&nbsp;', ' ') | replace('&amp;', '&') -%}
-  {%- set meta_desc = description or desc or site.description -%}
-  {%- set meta_desc = show.tag_title(collections, true) if (meta_desc == 'show_tags') else meta_desc -%}
-  {%- set full_title = banner or title -%}
-  {%- set full_title = show.tag_title(collections) if (full_title == 'show_tags') else full_title | mdInline(false) -%}
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" data-theme="auto" data-css="all" id="miriam-codes">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title if (page.url == '/') else [title, site.title] | join(' | ') }}</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  {%- include "head/theme.njk" -%}
+  {%- include "head/styles.njk" -%}
+  {%- include "head/preload.njk" -%}
+  {%- include 'head/og.njk' -%}
+  {%- include 'head/feed.njk' -%}
+  {%- include 'head/auth.njk' -%}
+</head>
 
-    <title>{{ [title, site.title] | join(' | ') }}</title>
-    <meta name="description" content="{{ meta_desc }}" />
+{%- import 'utility.macros.njk' as utility -%}
 
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="/fonts/Recursive_VF_1.043--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin>
+<body {{ utility.show_attrs(attrs.body) }}>
+  <a href="#main" class="visually-hidden">skip to content</a>
 
-    <meta name="color-scheme" content="dark light">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e0cbd6">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1f2f34">
+  {% if draft %}
+    {% set input_path = (page.inputPath or '') | replace('./', '') %}
+    <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}" class="edit-draft">
+      Edit this draft on GitHub
+    </a>
+  {% endif %}
 
-    {% for url in site.styles %}
-      <link rel="stylesheet" href="/css/{{ url }}" />
-    {% endfor %}
-
-    <script type="text/javascript" src="/assets/js/fonts.js"></script>
-
-    {% for url in extra_styles %}
-      <link rel="stylesheet" href="/css/{{ url }}" />
-    {% endfor %}
-
-    {% include 'site/og.njk' %}
-    {% include 'site/feed.njk' %}
-    {% include 'site/auth.njk' %}
-  </head>
-
-  {%- set hentry = (summary or content) and not eleventyExcludeFromCollections -%}
-  {%- set classes = classes | concat('h-entry' if hentry else []) -%}
-
-  <body {% if classes %}class="{{ classes | join(' ') }}"{% endif %}>
-    <div class="meta">
-      {% include 'site/nav.njk' %}
-      {% include 'site/settings.njk' %}
+  {% if message %}
+    <div id="message">
+      {{ message | md | safe }}
     </div>
+  {% endif %}
 
-    {% include 'site/banner.njk' %}
+  {% include 'site/nav.njk' %}
+  {% include 'site/tags.njk' %}
 
-    <main aria-labelledby="title">
-      {% include 'site/page.njk' %}
-      {% include 'site/mentions.njk' %}
-      {% include 'site/calendar.njk' %}
-    </main>
+  <main id="main" {% if erasure %}data-erase="off"{% endif %} {{ utility.show_attrs(attrs.main) }}>
+    {{ content | safe }}
 
-    {% include 'site/footer.njk' %}
+    <a href="{{ page.url | url }}" class="u-url" hidden></a>
 
-    <a href="{{ page.url | url }}" class="u-url" hidden>{{ full_title | safe }}</a>
+    {% if rel %}
+      {% set rel_attrs = {
+        'reply': {'class': 'u-in-reply-to'},
+        'syndication': {'class': 'u-syndication', 'rel': 'syndication'},
+        'bookmark': {'class': 'u-bookmark-of'},
+        'like': {'class': 'u-like-of'}
+      } %}
+      {% for type, target in rel %}
+        <a href="{{ target | url }}" {{ utility.show_attrs(rel_attrs[type]) }} hidden></a>
+      {% endfor %}
+    {% endif %}
+  </main>
 
-    {% for script in site.scripts %}
-      <script type="text/javascript" src="/assets/js/{{ script }}"></script>
-    {% endfor %}
-  </body>
+  {% include 'site/settings.njk' %}
+  {% include 'site/footer.njk' %}
+
+  {% set scripts = site.scripts | concat(scripts) if scripts else site.scripts %}
+  {% for url in scripts %}
+    {% set url = url if '://' in url | string else ['/assets/js/', url] | join %}
+    <script src="{{ url | url }}"></script>
+  {% endfor %}
+</body>
 </html>

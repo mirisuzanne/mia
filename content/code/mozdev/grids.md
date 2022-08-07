@@ -20,7 +20,7 @@ media:
 Learn how to build some previously-complex layouts in under 10 minutes,
 with only a few lines of code.
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Check out this practical demo'
 ) }}

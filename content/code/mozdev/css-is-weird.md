@@ -18,7 +18,7 @@ media:
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='CSS is for documents, and also for apps, on a universally accessible web.'
 ) }}

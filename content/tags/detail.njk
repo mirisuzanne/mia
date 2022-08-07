@@ -1,0 +1,14 @@
+---
+layout: format/h-feed
+sub: '[see all tags](/tags/)'
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag | slug }}/
+eleventyExcludeFromCollections: true
+---
+
+{%- for item in collections[index] | sortBy('data.date') | reverse -%}
+  {%- include "part/hentry.njk" -%}
+{%- endfor -%}

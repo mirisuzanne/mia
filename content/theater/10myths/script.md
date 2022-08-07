@@ -1,6 +1,6 @@
 ---
 title: 10 Myths Script
-banner: 10 Myths on the Proper Application of Beauty Products
+banner: 'Script: 10 Myths...'
 type: script
 sub: |
   Award-winning stage adaptation of

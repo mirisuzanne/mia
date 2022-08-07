@@ -32,17 +32,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addCollection('orgs', (collection) =>
     collection
       .getAll()
-      .filter((item) => item.data.org && item.data.end === 'ongoing')
-      .sort((a, b) => events.startDate(a) - events.startDate(b)),
-  );
-  eleventyConfig.addCollection('all_orgs', (collection) =>
-    collection
-      .getAll()
       .filter((item) => item.data.org)
-      .sort((a, b) =>
-        a.data.end === b.data.end
-          ? events.startDate(a) - events.startDate(b)
-          : events.endDate(b) - events.endDate(a),
+      .sort(
+        (a, b) => (b.data.end || b.data.date) - (a.data.end || a.data.date),
       ),
   );
 
@@ -67,27 +59,23 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('webMentions', mentions.webMentions);
 
   eleventyConfig.addFilter('publicTags', tags.publicTags);
-  eleventyConfig.addFilter('getTags', tags.getTags);
-  eleventyConfig.addFilter('groupTags', tags.groupTags);
   eleventyConfig.addFilter('hasTag', tags.hasTag);
   eleventyConfig.addFilter('withTag', tags.withTag);
   eleventyConfig.addFilter('displayName', tags.displayName);
   eleventyConfig.addFilter('tagLink', tags.tagLink);
-  eleventyConfig.addFilter(
-    'inTopTagCount',
-    (count) => typeof count === 'number' && count <= tags.topCount,
-  );
+  eleventyConfig.addFilter('navTags', tags.navTags);
+  eleventyConfig.addFilter('tagData', tags.tagData);
 
-  eleventyConfig.addFilter('getPage', pages.fromCollection);
+  eleventyConfig.addFilter('getPage', pages.getPage);
   eleventyConfig.addFilter('getPublic', pages.getPublic);
   eleventyConfig.addFilter('seriesNav', pages.seriesNav);
   eleventyConfig.addFilter('byDate', pages.byDate);
-  eleventyConfig.addFilter('titleSort', pages.titleSort);
+  eleventyConfig.addFilter('withPageTense', pages.withPageTense);
 
-  eleventyConfig.addFilter('getEvents', events.get);
-  eleventyConfig.addFilter('countEvents', events.count);
-  eleventyConfig.addFilter('recentEvents', events.recentEvents);
-  eleventyConfig.addFilter('groupName', (group) => events.groupNames[group]);
+  eleventyConfig.addFilter('publicEvents', events.publicEvents);
+  eleventyConfig.addFilter('eventTense', events.eventTense);
+  eleventyConfig.addFilter('pageEvents', events.pageEvents);
+  eleventyConfig.addFilter('getEvents', events.getEvents);
 
   eleventyConfig.addFilter('amp', type.amp);
   eleventyConfig.addFilter('typogr', type.set);
@@ -98,15 +86,16 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter('concat', _.concat);
   eleventyConfig.addFilter('merge', _.merge);
-  eleventyConfig.addFilter('loSlice', _.slice);
   eleventyConfig.addFilter('sortBy', _.sortBy);
+  eleventyConfig.addFilter('groupBy', _.groupBy);
   eleventyConfig.addFilter('filter', _.filter);
+  eleventyConfig.addFilter('find', _.find);
   eleventyConfig.addFilter('includes', (array, key) =>
     _.includes(array || [], key),
   );
 
   // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter('onlyShow', (array, n) => {
+  eleventyConfig.addFilter('slice', (array, n) => {
     if (n < 0) {
       return array.slice(n);
     }
@@ -114,14 +103,54 @@ module.exports = (eleventyConfig) => {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addFilter('compactObject', (obj) => {
+    const filtered = {};
+
+    Object.keys(obj).forEach((key) => {
+      const val = obj[key];
+
+      if (val) {
+        filtered[key] = val;
+      }
+    });
+
+    return Object.entries(filtered).length < 1 ? null : filtered;
+  });
+
   // shortcodes
   eleventyConfig.addShortcode('img', image.image);
   eleventyConfig.addPairedShortcode('md', type.render);
   eleventyConfig.addPairedShortcode('mdInline', type.inline);
+
   eleventyConfig.addShortcode(
     'getDate',
     (format) => `${time.date(null, format)}`,
   );
+
+  // From https://github.com/11ty/eleventy/issues/813#issuecomment-1037805869
+  // Create a "semi-global" `$pages` array (which will be populated later via a custom "shadow" collection).
+  let $pages = [];
+
+  eleventyConfig.addShortcode('page_url', (slug = '') => {
+    // Try and find the specified page slug in our `$pages[]` array by matching the
+    // template's `filePathStem`.
+    const page = $pages.find((item) => item.filePathStem.includes(slug));
+    // No match found, hard error (again, no idea how Jekyll works, but I liked the idea
+    // of failing fast-and-furious if we have bad links.
+    if (!page) {
+      throw new Error(`Unknown page slug: "${slug}"`);
+    }
+    // We had a match, so return the page's `url`.
+    return page.url;
+  });
+
+  // Create a custom "__pages" collection with all pages.
+  // Seems silly, but we really are just using this to copy the collection into our semi-global
+  // `$pages[]` array for lookup by our custom shortcode.
+  eleventyConfig.addCollection('__pages', (collectionApi) => {
+    $pages = [...collectionApi.getAll()];
+    return $pages;
+  });
 
   // config
   eleventyConfig.setLibrary('md', type.mdown);

@@ -62,7 +62,7 @@ some of the biggest challenges in CSS today.
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos...'
 ) }}

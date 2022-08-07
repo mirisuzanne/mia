@@ -1,0 +1,36 @@
+{%- import "utility.macros.njk" as utility -%}
+
+<article class="h-entry">
+  <header>
+    {%- set hentry_heading = hentry_heading or 'h2' -%}
+
+    <{{ hentry_heading }} class="p-name">
+      <a href="{{ item.url | url }}" class="u-url">
+        {{- item.data.banner | mdInline | safe -}}
+      </a>
+    </{{ hentry_heading }}>
+
+    <p>
+      {{ utility.datetime(
+        item.data.date,
+        item.data.end,
+        pubdate=true
+      ) }}
+
+      {% if item.data.venue %}
+        @
+        {{ utility.link_if(
+          item.data.venue,
+          item.data.url
+        ) }}
+      {% endif %}
+    </p>
+  </header>
+
+  {%- set item_summary = item.data.summary or item.data.sub -%}
+  {%- if item_summary -%}
+    <div class="p-summary">
+      {{- item_summary | md | safe -}}
+    </div>
+  {%- endif -%}
+</article>

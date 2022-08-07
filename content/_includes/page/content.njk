@@ -1,0 +1,23 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+{%- set elsewhere = tags and url and ('elsewhere' in tags) -%}
+
+{%- if summary or elsewhere -%}
+  <div id="summary" {{ utility.show_attrs(attrs.summary) }}>
+    {%- if summary -%}
+      {{ summary | md | safe }}
+    {%- endif -%}
+
+    {%- if elsewhere -%}
+      <p><a href="{{ url | url }}" class="u-repost-of u-uid">Reposted from {{ venue }} »</a></p>
+    {%- endif -%}
+  </div>
+{%- endif -%}
+
+{%- if content -%}
+  {%- if summary %}<hr />{% endif -%}
+
+  <div id="content" {{ utility.show_attrs(attrs.content) }}>
+    {{ content | typogr | safe }}
+  </div>
+{%- endif -%}

@@ -1,73 +1,18 @@
-{% import 'utility.macros.njk' as utility %}
-{% import 'content.macros.njk' as content %}
 {% import 'contact.macros.njk' as contact %}
 
-{% set colophon %}
-{% md %}
-Made by **Miriam Suzanne**
-with love and care and reckless abandon
-using
-[Eleventy](https://11ty.dev),
-[Sass](https://sass-lang.com),
-and [Cascading Colors](https://cascading-colors.netlify.com/).
-Hosted on
-[Netlify](https://www.netlify.com/).
+{% if not (page.url == '/contact/') %}
+  <h2>Contact me</h2>
+  {{ contact.form(
+    attrs={'data-footer': 'contact'},
+    url=page.url
+  ) }}
+{% endif %}
 
-Take care of each other.
-{% endmd %}
-{% endset %}
-
-<footer
-  data-layout="footer">
-
-  {% set title %}
-    Copyright © {% getDate 'year' %}
-  {% endset %}
-
-  <div class="section-header">
-    <h2 class="section-title">
-      {{ title | typogr | safe }}
-    </h2>
-  </div>
-
-  <div data-footer="content">
-    {% set is_about = (page.url | url == '/who/') %}
-    {% set is_contact = (page.url | url == '/contact/') %}
-
-    {% if not is_about %}
-      <section data-footer="bio" class="h-card p-author">
-        {% call content.media(
-          src='icons/miriam.svg',
-          embed=true
-        ) %}
-          <h3 class="p-name">
-            <a href="https://miriamsuzanne.com/" rel="author" class="u-url u-uid">{{ site.author }}</a>
-          </h3>
-
-          {% set who = collections.all | getPage('/who/') | first %}
-          <div class="p-note">
-            {{ who.data.summary | md | safe }}
-          </div>
-
-          {{ contact.links(social) }}
-        {% endcall %}
-      </section>
-    {% endif %}
-
-    {% if not is_contact %}
-      {{ contact.form(
-        attrs={'data-footer': 'contact'},
-        url=page.url
-      ) }}
-    {% endif %}
-
-    {% if is_about or is_contact %}
-      <div data-footer="colophon">
-        {{ colophon | safe }}
-      </div>
-    {% endif %}
-  </div>
-
-  <div data-layout="flag"></div>
+<footer>
+  <p>
+    Copyright &copy; {% getDate 'year' %}
+    <strong>{{ site.author }}</strong>
+  </p>
+  {{ colophon | md | safe }}
 </footer>
 

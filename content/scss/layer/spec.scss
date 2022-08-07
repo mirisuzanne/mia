@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  all: initial;
+}
+
+[data-options='css'] {
+  border: thick solid red;
+  display: block;
+  margin: 2em;
+  padding: 2em;
+
+  &::before {
+    background: maroon;
+    color: white;
+    content: '⚠️ Exit this way ⚠️';
+    display: block;
+  }
+
+  button {
+    all: revert;
+  }
+}

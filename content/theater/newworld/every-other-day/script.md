@@ -1,5 +1,5 @@
 ---
-title: Every Other Day
+title: 'Script: Every Other Day'
 sub: a play in one act, and a short film
 venue: Pinchpenny Press
 type: script

@@ -9,9 +9,7 @@ email: miriam@miriamsuzanne.com
 images: /images/
 icon: icons/miriam.svg
 nav:
-  home: /
   about: /who/
-  contact: /contact/
   rss: /feed.xml
 og:
   locale: en_US
@@ -25,6 +23,28 @@ feed:
     type: atom+xml
     url: feed.atom
 styles:
-  - screen.css
+  - title: spec
+    url: layer/spec.css
+    alt: true
+  - title: browser
+    alt: true
+  - title: reset
+    url: layer/reset.css
+    alt: true
+  - title: default
+    url: layer/default.css
+    alt: true
+  - title: all
+    url: all.css
 scripts:
   - scripts.js
+theme:
+  light: 'hotpink'
+  dark: 'mediumvioletred'
+preload:
+  - as: font
+    type: font/woff2
+    url: /fonts/alegreya-latin-variable-wghtOnly-normal.woff2
+  - as: font
+    type: font/woff2
+    url: /fonts/alegreya-latin-variable-wghtOnly-italic.woff2

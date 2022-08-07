@@ -1,0 +1,11 @@
+{%- set feed = (collections[index] or []) | getPublic if index else none -%}
+{%- if feed | length > 0 -%}
+<hr />
+<section class="h-feed">
+  <h2 class="p-name">'{{ index | displayName | capitalize }}' content</h2>
+  {%- set hentry_heading = 'h3' -%}
+  {%- for item in feed | sortBy('data.date') | reverse -%}
+    {%- include 'part/hentry.njk' -%}
+  {%- endfor -%}
+</section>
+{%- endif -%}

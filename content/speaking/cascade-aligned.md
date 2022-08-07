@@ -45,7 +45,7 @@ developed for controlled environments.
 What might it look like to create a new,
 cascade-informed, approach to writing code?
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos…'
 ) }}

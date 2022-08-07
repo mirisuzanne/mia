@@ -237,7 +237,7 @@ along with some videos about
 the school and the converted train car.
 {% endset %}
 
-{{ content.fig(
+{{ content.figure(
   location,
   caption
 ) }}
@@ -292,7 +292,7 @@ were worried about how it would come together.
 My cut leather & fabric at the end of day 1.
 {% endset %}
 
-{{ content.fig(
+{{ content.figure(
   day_one,
   caption
 ) }}
@@ -331,7 +331,7 @@ and sew straight through the paper.
 Sewing, gluing, and building on day 2.
 {% endset %}
 
-{{ content.fig(
+{{ content.figure(
   day_two,
   caption
 ) }}
@@ -358,7 +358,7 @@ Trying them on in the workshop,
 and some closeups on the ride home.
 {% endset %}
 
-{{ content.fig(
+{{ content.figure(
   lacing,
   caption
 ) }}
@@ -378,7 +378,7 @@ on scraps of leather.
 Only the black is consistently visible,
 so I went with it.
 
-{{ content.fig(test) }}
+{{ content.figure(test) }}
 
 Now I've been wearing the shoes for a week,
 and I love them.
@@ -391,7 +391,7 @@ in the hotel room:
 Two-weeks worn in, now with more arrows.
 {% endset %}
 
-{{ content.fig(
+{{ content.figure(
   worn,
   caption
 ) }}

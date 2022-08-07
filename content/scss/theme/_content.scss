@@ -1,0 +1,14 @@
+@mixin css {
+  #summary {
+    font-size: 1.4em;
+  }
+
+  #summary,
+  .p-summary {
+    font-style: italic;
+
+    em {
+      font-style: normal;
+    }
+  }
+}

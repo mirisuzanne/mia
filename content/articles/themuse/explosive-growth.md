@@ -34,7 +34,7 @@ Now it's time to go shopping.
 
 ## Surround Yourself with Material
 
-{{ content.fig(
+{{ content.figure(
   data=hoarding,
   caption="It's time to get your hoarding on"
 ) }}
@@ -81,7 +81,7 @@ or just take notes.
 When ideas start to merge and you are inspired to say something,
 then say it.
 
-{{ content.fig(
+{{ content.figure(
   data=cutup,
   caption='Cut it up. You can put it back together later'
 ) }}

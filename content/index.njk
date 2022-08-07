@@ -1,12 +1,22 @@
 ---
-title: art & code
-banner: Miriam Suzanne
-sub: show_tags
-index: recent
-summary: |
-  **Hello lovely** --- \
-  I'm [Miriam](/who/).
-  I make art & software
-  that celebrate queerness & diversity.
-  One size never fits all.
+layout: format/h-feed
+title: Miriam Eric Suzanne
+sub: |
+  [Miriam Suzanne](/who/){.h-card .u-uid} »
+  *[towards a queer world](/why/)*
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  summary: |
+    {{ taglines | random | md | safe }}
 ---
+
+{%- set hfeed = collections._post | getPublic  -%}
+{%- set hentry_heading = 'h3' -%}
+{%- if hfeed | length > 0 -%}
+<section class="h-feed">
+  <h2 class="p-name">Recent content</h2>
+  {%- for item in hfeed | sortBy('data.date') | reverse | slice(5) -%}
+    {%- include 'part/hentry.njk' -%}
+  {%- endfor -%}
+</section>
+{%- endif -%}

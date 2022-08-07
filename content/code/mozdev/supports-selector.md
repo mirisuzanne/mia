@@ -25,7 +25,7 @@ and provide targeted styles only where they are supported.
 Now we can do the same with new selectors,
 like `::marker` or `:focus-visible`!
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Selector queries allow us to finesse browser-support in new ways'
 ) }}

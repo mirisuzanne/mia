@@ -13,8 +13,7 @@ events:
   - title: EP Release Party
     url: http://www.hi-dive.com/event/864133-teacup-gorilla-denver/
     venue: Hi Dive
-    venue_url: http://www.hi-dive.com/
-    start: 2015-07-09
+    date: 2015-07-09
     adr: Denver, CO
     image: shows/blc.jpg
     with:
@@ -50,7 +49,7 @@ and a tour across the midwest.
 [tg]: /orgs/teacup-gorilla/
 [sidesaddle]: /books/sidesaddle/
 
-{{ content.fig(
+{{ content.figure(
   audio,
   caption='Stream or buy on bandcamp, itunes, spotify, etc…'
 ) }}

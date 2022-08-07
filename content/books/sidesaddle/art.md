@@ -13,12 +13,12 @@ events:
   - venue: Buntport Theater
     adr: Denver, CO
     url: http://buntport.com/
-    start: 2016-03-04
+    date: 2016-03-04
     end: 2016-03-26
   - venue: Huckleberry Roasters
     adr: 2500 Larimer St, Denver
     url: http://huckleberryroasters.com/
-    start: 2015-10-10
+    date: 2015-10-10
     end: 2015-11-13
     feature: true
 gallery:
@@ -110,4 +110,4 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(gallery.images, gallery.caption) }}
+{{ content.figure(gallery.images, gallery.caption) }}

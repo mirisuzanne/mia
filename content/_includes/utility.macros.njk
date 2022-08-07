@@ -1,51 +1,3 @@
-{# Titles #}
-{% macro section_title(
-  title,
-  hfeed=false
-) %}
-  <header
-    class="section-header">
-    <h2 class="section-title{% if hfeed %} p-name{% endif %}">
-      {{ title | typogr | safe }}
-    </h2>
-  </header>
-{% endmacro %}
-
-{# Tags #}
-{% macro tag_link(
-  tag,
-  all
-) -%}
-  {{ link_if(
-    tag | displayName,
-    tag | tagLink(all),
-    {'class': 'p-category'}
-  ) }}
-{%- endmacro %}
-
-{% macro tag_list(
-  tags,
-  all,
-  separator=', '
-) -%}
-{% set tags = tags | publicTags %}
-{% if tags | length > 0 %}
-  {% if (separator == 'ul') %}
-    <ul>
-      {%- for tag in tags -%}
-        <li>
-          {{ tag_link(tag, all) }}
-        </li>
-      {%- endfor -%}
-    </ul>
-  {% else %}
-    {%- for tag in tags -%}
-      {{ tag_link(tag, all) }}{%-if not loop.last %}{{ separator }}{% endif -%}
-    {%- endfor -%}
-  {% endif %}
-{% endif %}
-{%- endmacro -%}
-
 {# Attributes #}
 {% macro attr_if(
   attr,
@@ -71,6 +23,7 @@
 {% macro style_if(
   style
 ) -%}
+  {%- set style = style | compactObject -%}
   {%- if style -%}
     style="{%- for prop, val in style -%}{{ prop }}: {{ val }};{%- endfor -%}"
   {%- endif -%}
@@ -97,61 +50,89 @@
   {%- endif -%}
 {%- endmacro %}
 
-{% macro prev_next(to, is) %}
-  {% if to %}
-    <li>
-      {{ is }}:
-      {{ link_if(to.data.title | mdInline, to.url) }}
-    </li>
-  {% endif %}
+{% macro datetime(
+  start=none,
+  end=none,
+  format=none,
+  attrs={},
+  pubdate=false
+) %}
+  {%- set is_range = start and end and (start != end) -%}
+
+  {%- set human -%}
+    {%- if is_range -%}
+      {{ _get_range(start, end, format, pubdate) }}
+    {%- else -%}
+      {{ start | date(format or 'long') }}
+    {%- endif -%}
+  {%- endset -%}
+
+  {%- if is_range -%}
+    <span class="time" {{ show_attrs(attrs) }}>{{ human | safe }}</span>
+  {%- else -%}
+    {%- set attrs = attrs | merge({
+      'datetime': start | date('iso'),
+      'class': 'dt-published' if pubdate else none
+    }) %}
+
+    <time {{ show_attrs(attrs) }}>{{ human | safe }}</time>
+  {%- endif -%}
 {% endmacro %}
 
-{% macro datetime(
-  pubdate,
+{% macro _get_range(
   start,
   end,
-  format='long',
-  attrs={}
+  format,
+  pubdate=false
 ) %}
-  {%- set ranges = {
-    'same-y': {
-      'start': 'mon',
-      'end': 'range'
-    },
-    'same-m': {
-      'start': 'no-year',
-      'end': 'day' if (format == 'no-year') else 'no-month'
-    }
-  } -%}
+  {%- set tense = {
+    'start': start,
+    'end': end
+  } | eventTense -%}
+  {%- set ongoing = (end == 'ongoing') or (tense == 'ongoing') -%}
 
-  {%- set ongoing = (end == 'ongoing') or (end | groupName == 'ongoing') -%}
+  {%- set start_y = start | date('year') -%}
+  {%- set default_format = 'year' if (start_y == start) else 'range' -%}
 
-  {% set attrs = {
-    'pubdate': not not pubdate,
-    'class': 'dt-published' if pubdate else none
-  } | merge(attrs) %}
+  {%- if ongoing -%}
+    since {{ start | date(format or default_format) }}
+  {%- else  -%}
+    {%- set start_format = format -%}
+    {%- set end_format = format -%}
 
-  <time
-    datetime="{{ (pubdate or start) | date('iso') }}"
-    {{ show_attrs(attrs) }}>
-    {% set start_y = start | date('year') %}
+    {%- if format != 'years' -%}
+      {%- set range_formats = {
+        'same-y': {
+          'start': 'month',
+          'end': 'range'
+        },
+        'same-m': {
+          'start': 'no-year',
+          'end': 'day' if (format == 'no-year') else 'no-month'
+        }
+      } -%}
+      {%- set start_m = start | date('month') -%}
+      {%- set end_m = end | date('month') -%}
+      {%- set end_y = end | date('year') -%}
 
-    {% if ongoing %}
-      since {{ start | date('range') }}
-    {% elif (start and end) and (start != end) %}
-      {% set start_m = start | date('month') %}
-      {% set end_m = end | date('month') %}
-      {% set end_y = end | date('year') %}
+      {%- set same = 'same-y' if (start_y == end_y) else none -%}
+      {%- set same = 'same-m' if same and (start_m == end_m) else same -%}
 
-      {% set same = 'same-y' if (start_y == end_y) else none %}
-      {% set same = 'same-m' if same and (start_m == end_m) else same %}
+      {%- set start_format = range_formats[same].start or default_format -%}
+      {%- set end_format = range_formats[same].end or default_format -%}
+    {%- endif -%}
 
-      {{ start | date(ranges[same].start or 'range') }}
-      {{- '---' | typogr | safe -}}
-      {{ end | date(ranges[same].end or 'range') }}
+    {%- set start_attrs = {
+      'datetime': start | date('iso'),
+      'class': ['dt-start dt-published'] if pubdate else 'dt-start'
+    } %}
 
-    {% else %}
-      {{ start | date(format) }}
-    {% endif %}
-  </time>
+    <time {{ show_attrs(start_attrs) }}>
+      {{- start | date(start_format) -}}
+    </time>
+    {{- '--' | typogr | safe -}}
+    <time class="dt-end" datetime="{{ end | date('iso') }}">
+      {{- end | date(end_format) -}}
+    </time>
+  {%- endif -%}
 {% endmacro %}

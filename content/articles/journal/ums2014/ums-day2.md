@@ -57,7 +57,7 @@ This was a wonderful night of live/local music, but my favorite
 discovery was the intricate shoegazing soundscapes of
 [Dave Devine Relay](http://davedevine.com/relay).
 
-{{ content.fig(
+{{ content.figure(
   data=gallery,
   caption='Photos from UMS day 2'
 ) }}

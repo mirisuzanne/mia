@@ -11,7 +11,7 @@ tags:
   - assistant director
 events:
   - venue: BINDERY | space
-    start: 2008-05-16
+    date: 2008-05-16
     end: 2008-06-14
   - venue: BINDERY | space
     date: 2008-08-26

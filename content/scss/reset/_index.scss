@@ -1,0 +1,18 @@
+@use 'root';
+@use 'blocks';
+@use 'forms';
+@use 'media';
+@use 'sass:meta';
+
+@mixin css {
+  @include meta.load-css('../npm/remedy');
+
+  @include root.css;
+  @include blocks.css;
+  @include forms.css;
+  @include media.css;
+
+  [hidden] {
+    display: none !important;
+  }
+}

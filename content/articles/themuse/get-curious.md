@@ -29,7 +29,7 @@ but I think you can do even better:
 *Write shitty piles of shit,
 and leave the drafting for later.*
 
-{{ content.fig(
+{{ content.figure(
   data=bull,
   caption='I often refer to this as the fertilizer or *bullshit* stage.'
 ) }}
@@ -59,7 +59,7 @@ images, and aesthetics I am working with.
 I want to soak up inspirations,
 and understand my constraints.
 
-{{ content.fig(
+{{ content.figure(
   data=posture,
   caption='Final cover design for *The Posture of Contour*'
 ) }}
@@ -114,7 +114,7 @@ you have enough to get started.
 
 ## Sparking Curiosity
 
-{{ content.fig(
+{{ content.figure(
   data=bodies,
   caption='Bodies. A diagram.'
 ) }}

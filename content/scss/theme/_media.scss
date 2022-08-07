@@ -1,0 +1,38 @@
+@mixin dim {
+  filter: brightness(var(--image-brightness, 100%));
+
+  &:hover {
+    --image-brightness: 100%;
+  }
+}
+
+@mixin css {
+  img,
+  picture {
+    @include dim;
+  }
+
+  .gallery {
+    display: grid;
+    gap: var(--gap, 1em);
+
+    @media (min-width: 35em) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    img,
+    video,
+    audio,
+    iframe,
+    picture,
+    svg {
+      width: var(--media-width, 100%);
+      height: var(--media-height, auto);
+    }
+
+    :only-child,
+    :last-child:nth-child(odd):not([style*='--span'] ~ *) {
+      grid-column: 1 / -1;
+    }
+  }
+}

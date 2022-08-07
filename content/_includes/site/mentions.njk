@@ -23,7 +23,7 @@
 
 {% if show_mentions %}
 <section id="webmentions" data-section="mentions">
-  {{- utility.section_title('WebMentions') -}}
+  <h2>WebMentions</h2>
 
   {%- set facepile = url_mentions | webAuthors -%}
   {%- if facepile | length -%}
@@ -61,8 +61,8 @@
           </h3>
 
           {{ utility.datetime(
-            pubdate=webmention.published,
-            format='long'
+            start=webmention.published,
+            pubdate=true
           ) }}
 
           <div class="webmention-content p-content">

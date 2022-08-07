@@ -1,4 +1,4 @@
-{%- macro hwb(h='180deg') -%}
+{% macro hwb(h='180deg') -%}
   <table>
     <thead>
       <tr>
@@ -25,9 +25,9 @@
     {%- endfor -%}
     </tbody>
   </table>
-{%- endmacro -%}
+{%- endmacro %}
 
-{%- macro hsl(h='180deg') -%}
+{% macro hsl(h='180deg') -%}
   <table>
     <thead>
       <tr>
@@ -54,12 +54,16 @@
     {%- endfor -%}
     </tbody>
   </table>
-{%- endmacro -%}
+{%- endmacro %}
 
 {% macro gradient(
   stops,
   alt=none
-) %}
+) -%}
   {%- set gradient -%}linear-gradient(to right, {{ stops | join(', ') }}){%- endset -%}
   <div style="background: {{ gradient }} no-repeat scroll; height: var(--spacer); margin-bottom: var(--gutter);" role="img" aria-label="{{ alt }}"></div>
+{%- endmacro %}
+
+{% macro swatch(color) %}
+  <code style="--swatch: {{ color }};">{{ color }}</code>
 {% endmacro %}

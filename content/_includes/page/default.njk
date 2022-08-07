@@ -1,0 +1,16 @@
+<header>
+  {% include 'page/title.njk' %}
+  {% include 'page/meta.njk' %}
+</header>
+
+{# content #}
+{% include 'page/hero.njk' %}
+{% include 'page/content.njk' %}
+{% include 'page/events.njk' %}
+{% include 'page/feed.njk' %}
+
+{# footer #}
+{% if not (page.url == '/who/') %}
+  <hr />
+  {% include 'page/author.njk' %}
+{% endif %}

@@ -152,7 +152,7 @@ Laugh break!
 
 [carina]: https://www.carinamagyar.com/
 
-{{ content.fig(
+{{ content.figure(
   data=carina,
   caption='Carina Magyar performs in the FPIA 2017 finals'
 ) }}

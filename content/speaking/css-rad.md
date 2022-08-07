@@ -38,7 +38,7 @@ events:
   - venue: Smashing Conf NY
     feature: true
     url: https://smashingconf.com/ny-2019/
-    start: 2019-10-15
+    date: 2019-10-15
     end: 2019-10-16
     adr: New York, NY
     video: https://vimeo.com/367890815
@@ -82,7 +82,7 @@ now and into the future.
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos…'
 ) }}

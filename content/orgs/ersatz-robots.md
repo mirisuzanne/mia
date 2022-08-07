@@ -31,7 +31,7 @@ including 90s indie rock,
 punk, and emo --
 but only the good emo, we promise.
 
-{{ content.fig(
+{{ content.figure(
   data=[{
     img: 'art/music/ersatz3kings.jpg',
     alt: 'Brittany Strummer memorial show at 3 Kings Tavern – May 2, 2019'

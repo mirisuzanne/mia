@@ -35,7 +35,7 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(podcast) }}
+{{ content.figure(podcast) }}
 
 Last week,
 my dad sent me a newspaper ==clipping==

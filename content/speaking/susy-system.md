@@ -11,12 +11,12 @@ events:
   - venue: Bmore Sass
     url: http://bmore-sass.com/
     adr: Baltimore, MD
-    start: 2014-04-24
+    date: 2014-04-24
     video: http://vimeo.com/miriamsuzanne/susy-2-system
   - venue: The Mixin
     url: https://themixin.eventbrite.com/
     adr: San Francisco, CA
-    start: 2014-04-16
+    date: 2014-04-16
 ---
 
 **Susy isn't a grid-system like most others**,

@@ -51,7 +51,7 @@ cultivate the open mode of operating.
 
 [creativity]: https://vimeo.com/176474304
 
-{{ content.fig(
+{{ content.figure(
   data=cleese,
   caption='John Cleese is full of dad jokes'
 ) }}
@@ -73,7 +73,7 @@ on the [Divided Brain][Divided Brain]:
 [Divided Brain]: https://www.youtube.com/watch?v=dFs9WO2B8uI
 [RSA]: http://www.thersa.org/
 
-{{ content.fig(
+{{ content.figure(
   data=divided,
   caption='Both sides of your brain, together at last'
 ) }}
@@ -88,7 +88,7 @@ You have to know when to set down your hammer
 and pick up a chainsaw.
 That's where cycles become useful.
 
-{{ content.fig(
+{{ content.figure(
   data=cycle,
   caption='How to everything'
 ) }}
@@ -127,7 +127,7 @@ Often, an obstacle to the open mind
 can be overcome with a closed mind,
 and vice versa.
 
-{{ content.fig(
+{{ content.figure(
   data=elmo,
   caption='Let Elmo explain distance to you'
 ) }}
@@ -165,7 +165,7 @@ Getting new ideas into your head is part of the work.
 
 ## Stay Agile
 
-{{ content.fig(
+{{ content.figure(
   data=different,
   caption='And now for a callback framed as a diversion'
 ) }}

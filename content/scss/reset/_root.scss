@@ -1,0 +1,10 @@
+@mixin css {
+  html {
+    font-size: max(1em, 20px);
+  }
+
+  body {
+    margin: 1em;
+    max-width: 75ch;
+  }
+}

@@ -1,0 +1,33 @@
+@mixin css {
+  body > [href='#main'] {
+    background-color: var(--btn-link-bg, var(--Link));
+    color: var(--btn-link-text, var(--Canvas));
+    font-weight: bold;
+    inset: var(--line, 1em) auto auto var(--line, 1em);
+    padding: var(--half-gap, 0.5em) var(--gap, 1em);
+    position: absolute;
+    z-index: 2;
+  }
+
+  :is(main, nav):focus {
+    outline: 0;
+  }
+
+  :focus-visible {
+    outline: medium solid var(--focus-ring, var(--AccentColor));
+    outline-offset: var(--shim, 0.25em);
+    z-index: 2;
+  }
+
+  .visually-hidden:not(:focus) {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+  }
+}

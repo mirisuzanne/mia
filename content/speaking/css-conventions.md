@@ -44,7 +44,7 @@ or re-write these conventions to meet our needs.
 ------
 
 {% import 'content.macros.njk' as content %}
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference video...'
 ) }}

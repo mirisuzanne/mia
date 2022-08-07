@@ -1,0 +1,14 @@
+@mixin css {
+  input,
+  select,
+  textarea {
+    background-color: var(--Field);
+    border: medium solid var(--field-border, var(--border, currentColor));
+    color: var(--FieldText);
+    padding: var(--shim);
+  }
+
+  textarea {
+    min-height: calc(var(--line, 1.4em) * 6);
+  }
+}

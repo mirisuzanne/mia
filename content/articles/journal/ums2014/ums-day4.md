@@ -58,7 +58,7 @@ home, and discovering the wonderful noise of
 
 Thank you, Denver!
 
-{{ content.fig(
+{{ content.figure(
   data=gallery,
   caption='Photos from UMS day 4'
 ) }}

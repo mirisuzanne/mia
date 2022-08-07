@@ -20,7 +20,7 @@ a stand-in to replace a person you miss,
 a re-creation of an experience you can't stop thinking about,
 nostalgia for a place that perhaps never existed.
 
-{{ content.fig(
+{{ content.figure(
   video,
   'Promotional video for the event'
 ) }}

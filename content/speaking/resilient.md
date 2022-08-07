@@ -16,12 +16,12 @@ events:
     venue: Generate New York
     url: https://www.generateconf.com/
     adr: San Francisco, CA
-    start: 2019-04-24
+    date: 2019-04-24
   - title: Advanced CSS & Sass
     venue: Smashing Conf
     url: https://www.smashingconf.com/sf-2019/
     adr: San Francisco, CA
-    start: 2019-04-18
+    date: 2019-04-18
     feature: true
 press:
   - text: |

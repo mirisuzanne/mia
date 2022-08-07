@@ -32,7 +32,7 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=gallery.art,
   caption=gallery.caption
 ) }}

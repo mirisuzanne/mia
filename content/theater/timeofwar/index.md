@@ -13,20 +13,20 @@ tags:
   - writing
 events:
   - venue: New World Arts
-    start: 2005-04-22
+    date: 2005-04-22
     end: 2005-05-23
     tags:
       - new world arts
   - title: Senior Theater Recital
     venue: Goshen College
     url: /education/goshen/
-    start: 2005-04-21
+    date: 2005-04-21
     tags:
       - goshen college
   - title: International Peace Play Contest
     venue: Goshen College
     url: /education/goshen/
-    start: 2004-10-01
+    date: 2004-10-01
     end: 2004-10-03
     tags:
       - goshen college

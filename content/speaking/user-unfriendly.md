@@ -14,11 +14,11 @@ events:
   - venue: Agnes Scott College
     url: https://calendar.agnesscott.edu/event/user_unfriendlynotes_toward_a_queer_web
     adr: Atlanta, GA
-    start: 2019-09-17
+    date: 2019-09-17
   - venue: Design 4 Drupal [keynote]
     url: https://design4drupal.org/
     adr: Boston, MA
-    start: 2019-06-26
+    date: 2019-06-26
     slides: https://talks.oddbird.net/user-unfriendly/design4drupal19
     video: https://drupal.tv/external-video/2019-06-28/user-unfriendly-practical-guide-losing-control
     tags:
@@ -30,31 +30,31 @@ events:
   - venue: Open Source Conference
     url: https://www.comcastlabsconnect.com/open-source-2019
     adr: Denver, CO
-    start: 2019-06-20
+    date: 2019-06-20
     slides: https://talks.oddbird.net/user-unfriendly/opensource19
   - venue: Agile Denver
     url: https://www.meetup.com/Agile-Denver2/events/258957862/
     adr: Denver, CO
-    start: 2019-03-18
+    date: 2019-03-18
     slides: https://talks.oddbird.net/user-unfriendly/agiledenver19
   - venue: AIGA Colorado
     url: https://colorado.aiga.org/event/04-26-18-rethinking-ux-design/
     adr: Denver, CO
-    start: 2018-04-26
+    date: 2018-04-26
     slides: https://oddbooksapp.com/release/e5bd52de-a9db-4e59-a2af-ffa8a68f9100
   - venue: Creative Connections
     url: https://www.meetup.com/Creative-Connections/events/dcwhhpyxgbjb/
     adr: Denver, CO
-    start: 2018-04-16
+    date: 2018-04-16
     slides: https://oddbooksapp.com/release/650ad542-a9c9-4036-8f91-af34ae449d3c
   - venue: Metro State Mobile Prototyping
     adr: Denver, CO
-    start: 2018-04-05
+    date: 2018-04-05
     slides: https://www.oddbooksapp.com/book/mobile-prototype
   - venue: SassConf 2015
     url: http://sassconf.com
     adr: Austin, TX
-    start: 2015-11-11
+    date: 2015-11-11
     slides: https://www.oddbooksapp.com/book/user-unfriendly
 press:
   - text: |
@@ -96,7 +96,7 @@ and designing for edge-cases with integrated teams.
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos…'
 ) }}

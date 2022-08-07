@@ -1,6 +1,5 @@
-@forward 'actions';
-@forward 'color';
-@forward 'fonts';
-@forward 'focus';
-@forward 'patterns';
-@forward 'scale';
+@use 'root';
+
+@mixin css {
+  @include root.css;
+}

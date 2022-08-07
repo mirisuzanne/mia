@@ -37,7 +37,7 @@ I talked to them about pairing designers with developers,
 and finding the right levels of fidelity for a mockup
 depending on the situation:
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Short clips from our longer interview'
 ) }}

@@ -1,0 +1,17 @@
+site:
+  Miriam Eric Suzanne: /
+  about: /who/
+tags:
+  - art
+  - code
+  - writing
+  - speaking
+  - music
+  - theater
+  - more tags
+more: more tags
+types:
+  post: /post/
+  project: /project/
+  talk: /talk/
+  org: /org/

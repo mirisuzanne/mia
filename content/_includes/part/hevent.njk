@@ -1,0 +1,40 @@
+{%- import "utility.macros.njk" as utility -%}
+
+<article class="h-event">
+  {%- set hevent_heading = hevent_heading or 'h3' -%}
+  {% set is_self = page.url == item.page.url %}
+  {% set show_title = item.title or (not is_self) %}
+  {% set title_class = 'p-name' %}
+  {% set venue_class = 'h-card p-org u-url' %}
+
+  <{{ hevent_heading }}>
+    {% if show_title %}
+      {{ utility.link_if(
+        item.title or page.data.banner,
+        none if is_self else page.url,
+        { 'class': title_class }
+      ) }}
+    {% endif %}
+    @
+    {{ utility.link_if(
+      item.venue,
+      item.url,
+      {
+        'class': venue_class if show_title else [title_class, venue_class] | join(' ')
+      }
+    ) }}
+  </{{ hevent_heading }}>
+
+  <p>
+    {% if item.adr %}
+      <span class="p-location">{{ item.adr }}</span>
+      {{ '--' | mdInline }}
+    {% endif %}
+
+    {{ utility.datetime(
+      item.date,
+      item.end,
+      pubdate=true
+    ) }}
+  </p>
+</article>

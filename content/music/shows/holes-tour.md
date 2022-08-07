@@ -17,11 +17,11 @@ events:
   - adr: Iowa City, IA
     venue: Gabe's Iowa City
     url: http://www.icgabes.com/
-    start: 2015-08-11
+    date: 2015-08-11
   - adr: Madison, WI
     url: http://www.high-noon.com/event/913673-deeps-teacup-gorilla-madison/
     venue: High Noon Saloon
-    start: 2015-08-10
+    date: 2015-08-10
     with:
       - name: The Deeps
         url: https://thedeeps.bandcamp.com/releases
@@ -30,8 +30,7 @@ events:
   - adr: Goshen, IN
     url: https://www.facebook.com/events/866567246712267/
     venue: Art House
-    venue_url: http://gah.mobi/
-    start: 2015-08-08
+    date: 2015-08-08
     with:
       - name: Shiny Shiny Black
         url: http://www.shinyshinyblack.com/
@@ -41,8 +40,7 @@ events:
   - adr: Chicago, IL
     url: https://www.facebook.com/events/663487130418255/
     venue: Red Line Tap
-    venue_url: http://www.redlinetap.com/
-    start: 2015-08-07
+    date: 2015-08-07
     with:
       - name: WaxWorks
         url: https://waxworksmusic.bandcamp.com/
@@ -53,8 +51,7 @@ events:
   - adr: Duluth, MN
     url: http://redherringlounge.com/events/space-carpet/
     venue: Red Herring Lounge
-    venue_url: http://redherringlounge.com/
-    start: 2015-08-06
+    date: 2015-08-06
     with:
       - name: Space Carpet
         url: https://www.facebook.com/SpaceCarpetJams
@@ -64,12 +61,11 @@ events:
         url: https://www.facebook.com/lowforms
   - adr: New Buffalo, MI
     venue: Private Beach Party
-    start: 2015-08-04
+    date: 2015-08-04
   - adr: Lawrence, KS
     url: https://www.facebook.com/events/900783029958277/
     venue: Eighth Street Taproom
-    venue_url: http://eighthstreettaproom.com/
-    start: 2015-08-03
+    date: 2015-08-03
     with:
       - name: 88er
         url: http://www.88er.bandcamp.com/
@@ -78,8 +74,7 @@ events:
   - adr: Wichita, KS
     url: https://www.facebook.com/events/879491972144066/
     venue: Kirby's Beer Store
-    venue_url: http://www.kirbysbeerstore.com/
-    start: 2015-08-02
+    date: 2015-08-02
     with:
       - name: Hot Books
         url: https://soundcloud.com/hot-books/sets/hot-books-demo

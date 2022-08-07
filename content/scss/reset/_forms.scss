@@ -1,0 +1,25 @@
+@mixin css {
+  input,
+  select,
+  textarea {
+    display: block;
+    font: inherit;
+    margin-block-end: 1em;
+    width: 100%;
+  }
+
+  textarea {
+    min-height: 6em;
+  }
+
+  button {
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    padding: 0.25em 1em;
+  }
+
+  [aria-pressed='true'] {
+    border: medium solid;
+  }
+}

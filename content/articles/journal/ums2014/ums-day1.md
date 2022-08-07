@@ -31,7 +31,7 @@ is worth checking out
 if you like Fugazi-style noise
 coming from an aluminum guitar.
 
-{{ content.fig(
+{{ content.figure(
   data=gallery,
   caption='Photos from UMS day 1'
 ) }}

@@ -1,0 +1,6 @@
+main:
+  tabindex: -1
+h1:
+  class: p-name
+summary:
+  class: p-summary

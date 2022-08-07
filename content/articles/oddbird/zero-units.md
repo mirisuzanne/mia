@@ -2,8 +2,9 @@
 title: Not All Zeros are Equal
 sub: And every 'best practice' comes with caveats
 date: 2022-08-04
-image:
-  src: 2022/slip-hazard.jpg
+url: https://www.oddbird.net/2022/08/04/zero-units/
+hero:
+  img: 2022/slip-hazard.jpg
   alt: |
     Black text on bright yellow sign,
     Caution, slip hazard,

@@ -1,6 +1,7 @@
 'use strict';
 
 /* eslint-disable no-sync */
+/* eslint-disable no-console */
 
 const fs = require('fs');
 
@@ -45,13 +46,17 @@ const fetchWebmentions = async (since, perPage = 10000) => {
     url = `${url}&since=${since}`;
   }
 
-  const response = await fetch(url);
-  if (response.ok) {
-    const feed = await response.json();
-    console.log(
-      `>>> ${feed.children.length} new webmentions fetched from ${API}`,
-    );
-    return feed;
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const feed = await response.json();
+      console.log(
+        `>>> ${feed.children.length} new webmentions fetched from ${API}`,
+      );
+      return feed;
+    }
+  } catch (err) {
+    console.warn('>>> unable to fetch webmentions: request failed.');
   }
 
   return null;

@@ -47,7 +47,6 @@ events:
     venue: Syntax Physic Opera
     url: http://physicopera.com/
     date: 2015-04-02
-    venue_title: true
     with:
       - Buntport Theater
       - Jen Korte
@@ -126,7 +125,7 @@ or
 
 ---
 
-{{ content.fig(
+{{ content.figure(
   video.src,
   video.caption
 ) }}
@@ -155,9 +154,9 @@ with original music by [Teacup Gorilla][tg].
 
 The Teacup Gorilla EP includes several songs based on the novel:
 
-{% set ep = collections.all | getPage('/2015/07/09/holes-they-leave/') | first %}
+{% set ep = collections.all | getPage('/2015/07/09/holes-they-leave/') %}
 
-{{ content.fig(ep.data.audio) }}
+{{ content.figure(ep.data.audio) }}
 
 ---
 
@@ -167,9 +166,9 @@ The novel has gone vertical
 with art prints,
 and several [gallery shows](art/)…
 
-{% set show = collections.all | getPage('/books/sidesaddle/art/') | first %}
+{% set show = collections.all | getPage('/books/sidesaddle/art/') %}
 
-{{ content.fig(
+{{ content.figure(
   show.data.gallery.images,
   show.data.gallery.caption
 ) }}

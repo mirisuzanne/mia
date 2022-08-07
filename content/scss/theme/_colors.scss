@@ -1,0 +1,66 @@
+@use 'sass:color';
+
+$accent-light: hotpink;
+$complement-light: darkturquoise;
+$accent-dark: mediumvioletred;
+$complement-dark: teal;
+$dark: darkslategray;
+$darker: color.scale(darkslategray, $lightness: -75%);
+$light: azure;
+
+@mixin light {
+  --bg: var(--light);
+  --text: var(--dark);
+  --accent: var(--accent-dark);
+  --accent-text: var(--bg);
+  --complement: var(--complement-dark);
+  --complement-text: var(--bg);
+  --shadow: hsl(0deg 0% 0% / 12.5%);
+  --image-brightness: 100%;
+}
+
+@mixin dark {
+  --bg: var(--darker);
+  --text: var(--light);
+  --accent: var(--accent-light);
+  --accent-text: var(--bg);
+  --complement: var(--complement-light);
+  --complement-text: var(--bg);
+  --shadow: hsl(0deg 0% 0% / 25%);
+  --image-brightness: 80%;
+}
+
+@mixin theme {
+  // base colors
+  --accent-light: #{$accent-light};
+  --accent-dark: #{$accent-dark};
+  --complement-light: #{$complement-light};
+  --complement-dark: #{$complement-dark};
+  --dark: #{$dark};
+  --darker: #{$darker};
+  --light: #{$light};
+
+  // mode configuration
+  @include dark;
+
+  @media (prefers-color-scheme: light) {
+    @include light;
+  }
+
+  &[data-theme='dark'] {
+    @include dark;
+  }
+
+  &[data-theme='light'] {
+    @include light;
+  }
+
+  // applications
+  --border: var(--complement, currentColor);
+  --action: var(--accent);
+  --active: var(--complement);
+  --highlight: var(--accent);
+  --selected: var(--complement);
+  --field-bg: var(--shadow);
+  --btn-bg: var(--shadow);
+}

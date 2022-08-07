@@ -1,0 +1,12 @@
+@mixin css {
+  [data-erase='off'] {
+    mark {
+      background-color: transparent;
+      color: inherit;
+    }
+  }
+
+  [data-erase='on'] {
+    color: transparent;
+  }
+}

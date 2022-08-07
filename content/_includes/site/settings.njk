@@ -1,9 +1,6 @@
-<details id="user-settings" data-anchor="settings">
-  <summary>
-    <span class="summary-text">Customize</span>
-  </summary>
-  <div data-dropdown="pad">
-    {% include 'site/ccs.njk' %}
-    {% include 'site/type.njk' %}
-  </div>
+<details id="settings" data-init="show" hidden>
+  <summary>Theme settings</summary>
+
+  {% include "settings/scheme.njk" %}
+  {% include "settings/css.njk" %}
 </details>

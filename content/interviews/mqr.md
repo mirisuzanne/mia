@@ -3,7 +3,6 @@ title: On Riding SideSaddle*
 date: 2015-06-16
 venue: Michigan Quarterly Review
 url: https://sites.lsa.umich.edu/mqr/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/
-venue_title: true
 hero:
   img: writing/sidesaddle/box.jpg
   caption: A novel on 250 note-cards

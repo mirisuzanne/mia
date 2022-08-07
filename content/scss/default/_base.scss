@@ -1,0 +1,15 @@
+@mixin css {
+  html {
+    --margin: var(--gap, 1em);
+    --outset: 0px;
+
+    @media (min-width: 40em) {
+      --margin: var(--spacer, 2em);
+      --outset: calc(var(--gap, 1em) * -1);
+    }
+  }
+
+  [data-options='theme'] {
+    --display-init: block;
+  }
+}

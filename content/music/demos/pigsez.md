@@ -17,7 +17,7 @@ caption: |
 
 The last demo of new material (for now):
 
-{{ content.fig(
+{{ content.figure(
   track,
   caption
 ) }}

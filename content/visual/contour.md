@@ -65,11 +65,11 @@ using my iPad as a light table.
 
 [blind contours]: http://en.wikipedia.org/wiki/Blind_contour_drawing
 
-{{ content.fig(process.items, process.caption) }}
+{{ content.figure(process.items, process.caption) }}
 
 ## Final(ish) Design
 
 In the end,
 James decided on the abstract jawbone pattern in red arrows.
 
-{{ content.fig(final.items, final.caption) }}
+{{ content.figure(final.items, final.caption) }}

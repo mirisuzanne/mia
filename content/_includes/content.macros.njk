@@ -1,15 +1,5 @@
 {% import "utility.macros.njk" as utility %}
 
-{#
-  Intro
-  -----
-#}
-{% macro intro(
-  content=none
-) -%}
-{%- set content = content if (content != none) else caller() -%}
-<div class='intro'>{{ content | md | safe }}</div>
-{%- endmacro %}
 
 {#
   Quote
@@ -97,31 +87,35 @@
 {%- macro erase(
   content
 ) -%}
-<button data-toggle="erase">
+<mark data-make="button" data-toggle="erase">
 {{ content | mdInline | safe }}
-</button>
+</mark>
 {%- endmacro -%}
 
 {#
   Figures
   -------
 #}
-{% macro fig(
+{% macro figure(
   data=none,
   caption=none,
+  grid=true,
   content=none
 ) -%}
 {%- set content = _fig_content(data) if data else content or caller() | mdInline -%}
-<figure data-pattern="figure">
-<div data-figure="content">
-{{ content | safe }}
-</div>
-
-{%- if caption -%}
-<figcaption data-figure="caption">
-{{ caption | mdInline | safe }}
-</figcaption>
-{%- endif -%}
+<figure>
+  {%- if grid -%}
+    <div class="gallery">
+      {{- content | safe -}}
+    </div>
+  {%- else -%}
+    {{- content | safe -}}
+  {%- endif -%}
+  {%- if caption -%}
+    <figcaption>
+      {{- caption | mdInline | safe -}}
+    </figcaption>
+  {%- endif -%}
 </figure>
 {%- endmacro %}
 
@@ -138,7 +132,7 @@ params:
   alt=none
 ) -%}
   {%- include path + '.svg' -%}
-  {% if alt %}<span class="sr-only">{{ alt }}</span>{% endif %}
+  {% if alt %}<span class="visually-hidden">{{ alt }}</span>{% endif %}
 {%- endmacro %}
 
 
@@ -174,6 +168,11 @@ params:
 ) %}
   {%- set width = width or 560 -%}
   {%- set height = height or 315 -%}
+  {%- set style = {
+    '--ratio': [width, height] | join('/'),
+    '--span': span
+  } -%}
+
   {%- set attrs = {
     'src': src,
     'title': title,
@@ -184,8 +183,7 @@ params:
     'mozallowfullscreen': true,
     'allowfullscreen': true
   } -%}
-  {%- set content %}<iframe {{ utility.show_attrs(attrs) }}></iframe>{% endset -%}
-  {{- ratio(width, height, span, content) | safe -}}
+  <iframe {{ utility.show_attrs(attrs) }} {{ utility.style_if(style) }}></iframe>
 {% endmacro %}
 
 {# @docs
@@ -212,44 +210,6 @@ params:
 {%- endmacro %}
 
 
-{# @docs
-label: ratio
-category: Layout
-note: Maintain aspect ratio for embedded media
-params:
-  width:
-    type: number
-    default: 'none'
-  height:
-    type: number
-    default: 'none'
-  span:
-    type: number | 'full'
-    default: 'none'
-    note: Span multiple columns of a gallery
-  content:
-    type: html
-    default: 'none'
-    note: The content to embed (can also be a `caller()` block)
-#}
-{% macro ratio(
-  width=none,
-  height=none,
-  span=none,
-  content=none
-) %}
-{%- set content = content if (content != none) else caller() -%}
-{%- if width | typeCheck('number') and height | typeCheck('number') -%}
-  {%- set style = {
-    '--ratio': (width / height),
-    '--span': span
-  } -%}
-<div class="ratio" {{ utility.style_if(style) }}>{{ content | safe }}</div>
-  {%- else -%}
-    {{- content | safe -}}
-  {%- endif -%}
-{%- endmacro %}
-
 {#
   Placement
   ---------
@@ -272,6 +232,7 @@ params:
   data
 ) -%}
 {%- for item in data -%}
+  {%- set item_content -%}
   {%- if item.img -%}
     {%- set style = {
       '--width': item.width,
@@ -281,7 +242,7 @@ params:
     {{- item.img | img(
       item.alt,
       none if full_width else 'gallery',
-      {'style': style},
+      {'style': style} | merge(item.attrs),
       [item.width, item.height]
     ) | safe -}}
   {%- elif item.svg -%}
@@ -300,6 +261,12 @@ params:
     </div>
   {%- elif item.pen -%}
     {{- codepen(item.pen, item.title, item.user, item.tab, item.height, item.theme, item.preview, item.attrs) -}}
+  {%- endif -%}
+  {%- endset -%}
+  {%- if item.url -%}
+    <a href="{{ item.url | url }}">{{ item_content | safe }}</a>
+  {%- else -%}
+    {{ item_content | safe }}
   {%- endif -%}
 {%- endfor -%}
 {%- endmacro %}
@@ -336,7 +303,7 @@ params:
   url='https://codepen.io'
 ) }}.</p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 {%- endset -%}
-{{ fig(content) }}
+{{ figure(content) }}
 {%- endmacro %}
 
 {% macro caniuse(

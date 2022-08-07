@@ -1,0 +1,19 @@
+{% if hero %}
+{% set hero_type = 'svg' if hero.svg else 'img' %}
+
+<figure id="hero">
+  <div>
+    {% if hero.img %}
+      {{ hero.img | img(hero.alt, 'hero', {class: 'u-photo'}) | safe }}
+    {% elif hero.svg %}
+      {% include "icons/" + hero.svg %}
+    {% endif %}
+  </div>
+
+  {% if hero.caption %}
+    <figcaption>
+      {{ hero.caption | mdInline | safe }}
+    </figcaption>
+  {% endif %}
+</figure>
+{% endif %}

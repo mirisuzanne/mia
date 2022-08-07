@@ -8,7 +8,7 @@ events:
   - venue: CSSConf 2016
     url: https://2016.cssconf.com/
     adr: Boston, MA
-    start: 2016-09-26
+    date: 2016-09-26
     slides: https://oddbooksapp.com/release/b71e6e5d-e956-42ff-a4dd-b70bf3b13a2a
     tags:
       - code video
@@ -19,18 +19,18 @@ events:
   - venue: CSS Summit
     url: http://environmentsforhumans.com/2015/css-summit/
     adr: Online
-    start: 2015-07-07
+    date: 2015-07-07
   - venue: Future Insights Live
     adr: Las Vegas, NV
-    start: 2015-06-02
+    date: 2015-06-02
   - venue: SassConf 2014
     adr: New York, NY
     url: http://sassconf.com
-    start: 2014-10-02
+    date: 2014-10-02
   - venue: BlendConf
     adr: Charlotte, NC
     url: http://www.blendconf.com/
-    start: 2014-09-12
+    date: 2014-09-12
     video: http://teamtreehouse.com/library/sass-map-magic
 summary: |
   Maps are a powerful data type in Sass --
@@ -54,7 +54,7 @@ before we push them to their limits.
 
 ------
 
-{{ content.fig(
+{{ content.figure(
   data=media,
   caption='Conference videos…'
 ) }}

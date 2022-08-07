@@ -8,7 +8,7 @@ tags:
 events:
   - url: /2015/07/02/species/
     venue: The Bakery
-    start: 2015-07-10
+    date: 2015-07-10
     adr: Denver, CO
     with:
       - name: Face Man
@@ -31,7 +31,7 @@ summary: |
 
 {% import "content.macros.njk" as content %}
 
-{{ content.fig(
+{{ content.figure(
   data=video,
   caption='Concert live stream'
 ) }}
