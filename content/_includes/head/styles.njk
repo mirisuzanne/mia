@@ -1,11 +1,14 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-{%- set styles = site.styles | concat(styles) if styles else site.styles -%}
-{%- for link in styles | selectattr('url') -%}
+<style>@layer reset, default, theme;</style>
+
+{%- for link in site.styles | selectattr('url') -%}
   {% set link_attrs = {
-    'rel': 'alternate stylesheet' if link.alt else 'stylesheet',
+    'rel': 'stylesheet',
     'href': link.url if '://' in link.url | string else ['/css/', link.url] | join,
-    'title': link.title
+    'data-layer': link.layer,
+    'data-alt': link.alt,
+    'media': 'print'
   } %}
   <link {{ utility.show_attrs(link_attrs) }}/>
 {%- endfor -%}

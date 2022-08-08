@@ -1,7 +1,7 @@
 <section data-options="css">
   <h2>Style Layers</h2>
   {%- for link in site.styles %}
-    <button data-set="{{ link.title }}" aria-pressed="{{ 'false' if alt else 'true' }}">
+    <button data-set="{{ link.layer or link.alt or link.title }}" aria-pressed="{{ loop.last }}">
       {{- link.title -}}
     </button>
   {%- endfor -%}

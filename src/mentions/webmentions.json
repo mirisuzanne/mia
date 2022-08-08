@@ -1,6 +1,160 @@
 {
-  "lastFetched": "2022-08-07T21:06:22.036Z",
+  "lastFetched": "2022-08-08T16:50:22.995Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Frontend Dogma",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7fef0c3e728e532d829ec49a8f7129557bd31cf0d3585fad94ecb61c3e79fa8d.jpg",
+        "url": "https://twitter.com/frontenddogma"
+      },
+      "url": "https://twitter.com/frontenddogma/status/1556539130280034304",
+      "published": "2022-08-08T07:13:42+00:00",
+      "wm-received": "2022-08-08T07:38:15Z",
+      "wm-id": 1453185,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1556539130280034304",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "content": {
+        "html": "No Demo [Website] Reno, by <a href=\"https://twitter.com/TerribleMia\">@terriblemia</a>:\n\n<a href=\"https://www.miriamsuzanne.com/2022/08/07/minimal/\">miriamsuzanne.com/2022/08/07/min…</a>",
+        "text": "No Demo [Website] Reno, by @terriblemia:\n\nmiriamsuzanne.com/2022/08/07/min…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hubert Souchaud",
+        "photo": "",
+        "url": "https://hubertsouchaud.wordpress.com/author/djdmsr/"
+      },
+      "url": "https://hubertsouchaud.wordpress.com/2022/08/08/no-demo-website-reno/",
+      "published": "2022-08-08T08:25:52+02:00",
+      "wm-received": "2022-08-08T06:25:58Z",
+      "wm-id": 1453156,
+      "wm-source": "https://hubertsouchaud.wordpress.com/2022/08/08/no-demo-website-reno/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "name": "No Demo [Website] Reno",
+      "content": {
+        "html": "<p><a href=\"https://www.miriamsuzanne.com/2022/08/07/minimal/\" title=\"No Demo [Website] Reno\"><img src=\"https://hubertsouchaud.wordpress.com/2022/08/08/no-demo-website-reno/\" alt=\"No Demo [Website] Reno - Miriam Eric Suzanne [en] @TerribleMia\" /></a></p>\n<p>Bookmarké: « <a href=\"https://www.miriamsuzanne.com/2022/08/07/minimal/\">No Demo [Website] Reno</a> » via <i><a href=\"https://www.miriamsuzanne.com/\">Miriam Eric Suzanne [en] @TerribleMia</a></i></p>\n<p>Reblog, August 7, 2022 at 11:20PM in: <b>webmaster_en</b></p>\n\n\n<h3>Partager :</h3>\n\n<ul><li><a href=\"https://hubertsouchaud.wordpress.com/2022/08/08/no-demo-website-reno/?share=facebook\" title=\"Cliquez pour partager sur Facebook\"><span></span><span>Cliquez pour partager sur Facebook(ouvre dans une nouvelle fenêtre)</span></a></li>\n<li><a href=\"https://hubertsouchaud.wordpress.com/2022/08/08/no-demo-website-reno/?share=twitter\" title=\"Cliquez pour partager sur Twitter\"><span></span><span>Cliquez pour partager sur Twitter(ouvre dans une nouvelle fenêtre)</span></a></li>\n<li><a href=\"https://hubertsouchaud.wordpress.com/2022/08/08/no-demo-website-reno/?share=linkedin\" title=\"Cliquez pour partager sur LinkedIn\"><span></span><span>Cliquez pour partager sur LinkedIn(ouvre dans une nouvelle fenêtre)</span></a></li>\n<li><a href=\"https://hubertsouchaud.wordpress.com/2022/08/08/no-demo-website-reno/#\"><span>Plus</span></a></li>\n<li>\n</li></ul><ul><li><a href=\"mailto:?subject=%5BArticle%20partag%C3%A9%5D%20No%20Demo%20%5BWebsite%5D%20Reno&amp;body=https%3A%2F%2Fhubertsouchaud.wordpress.com%2F2022%2F08%2F08%2Fno-demo-website-reno%2F&amp;share=email\" title=\"Cliquer pour envoyer un lien par e-mail à un ami\"><span></span><span>Cliquer pour envoyer un lien par e-mail à un ami(ouvre dans une nouvelle fenêtre)</span></a></li>\n<li><a href=\"https://hubertsouchaud.wordpress.com/2022/08/08/no-demo-website-reno/#print\" title=\"Cliquer pour imprimer\"><span></span><span>Cliquer pour imprimer(ouvre dans une nouvelle fenêtre)</span></a></li>\n<li>\n</li><li>\n</li></ul>\n\n\n\n\t<h3><em>Articles similaires</em></h3>",
+        "text": "Bookmarké: « No Demo [Website] Reno » via Miriam Eric Suzanne [en] @TerribleMia\nReblog, August 7, 2022 at 11:20PM in: webmaster_en\n\n\nPartager :\n\nCliquez pour partager sur Facebook(ouvre dans une nouvelle fenêtre)\nCliquez pour partager sur Twitter(ouvre dans une nouvelle fenêtre)\nCliquez pour partager sur LinkedIn(ouvre dans une nouvelle fenêtre)\nPlus\n\nCliquer pour envoyer un lien par e-mail à un ami(ouvre dans une nouvelle fenêtre)\nCliquer pour imprimer(ouvre dans une nouvelle fenêtre)\n\n\nArticles similaires"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://hubertsouchaud.wordpress.com/2022/08/08/no-demo-website-reno/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Donna Becerra",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bd7616e7a34b1bb376b675b597acec913b93b1aea61bd547c1d3133ac2e2caa8.jpg",
+        "url": "https://twitter.com/D3ecerra"
+      },
+      "url": "https://twitter.com/D3ecerra/status/1556485760668286978",
+      "published": "2022-08-08T03:41:38+00:00",
+      "wm-received": "2022-08-08T04:02:41Z",
+      "wm-id": 1453132,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1556485760668286978",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "content": {
+        "html": "\"All browsers add an 8px margin on the body element – it’s part of the w3c-recommended default stylesheet which browsers generally use as a starting point for their own ‘user agent’ styles.\n\nBut why 8px? Where does that come from?\" 🤔 \n\n<a href=\"https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner\">miriamsuzanne.com/2022/07/04/bod…</a>",
+        "text": "\"All browsers add an 8px margin on the body element – it’s part of the w3c-recommended default stylesheet which browsers generally use as a starting point for their own ‘user agent’ styles.\n\nBut why 8px? Where does that come from?\" 🤔 \n\nmiriamsuzanne.com/2022/07/04/bod…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Robin Rendle",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ed6369c786391576b4ed9fa6f65d1f6f325f9ba2d7d2eb8af564bb10c954829b.jpg",
+        "url": "https://twitter.com/robinrendle"
+      },
+      "url": "https://twitter.com/robinrendle/status/1556394795907444737",
+      "published": "2022-08-07T21:40:10+00:00",
+      "wm-received": "2022-08-07T22:04:36Z",
+      "wm-id": 1453044,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1556392099188051969/1556394795907444737",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "content": {
+        "html": "Heck yes!\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/geoffreygraham\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/08/07/minimal/\"></a>",
+        "text": "Heck yes!"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/31fcfd6282b72379bdececa7d23a188489aa4cf4f63f576928d87f6a3df9064b.jpg",
+        "url": "https://twitter.com/TerribleMia"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1556392099188051969",
+      "published": "2022-08-07T21:29:27+00:00",
+      "wm-received": "2022-08-07T22:04:35Z",
+      "wm-id": 1453042,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1556392099188051969",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "content": {
+        "html": "I caught the public redesign bug from <a href=\"https://twitter.com/robinrendle\">@robinrendle</a> &amp; <a href=\"https://twitter.com/geoffreygraham\">@geoffreygraham</a>. I want to do it slowly, &amp; use new CSS features.\n\nSo far: Cascade Layers, with an option to turn layers on/off (see 'Theme Settings' in the footer).\n\nVery much a work-in-progress:\n\n<a href=\"https://www.miriamsuzanne.com/2022/08/07/minimal/\">miriamsuzanne.com/2022/08/07/min…</a>",
+        "text": "I caught the public redesign bug from @robinrendle & @geoffreygraham. I want to do it slowly, & use new CSS features.\n\nSo far: Cascade Layers, with an option to turn layers on/off (see 'Theme Settings' in the footer).\n\nVery much a work-in-progress:\n\nmiriamsuzanne.com/2022/08/07/min…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Deborah Edwards-Oñoro",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/68f1d3bd586b0258769e6504fedcd446d5673df441a75cd96fb4404bdf74aaf5.jpg",
+        "url": "https://twitter.com/redcrew"
+      },
+      "url": "https://twitter.com/redcrew/status/1556398575738929152",
+      "published": "2022-08-07T21:55:11+00:00",
+      "wm-received": "2022-08-07T22:04:35Z",
+      "wm-id": 1453043,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1556398575738929152",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/12bf29c49f4519399f5b7022c1ff1b156aa6e597a75f31dfd0d5a884ed35b341.jpg",
+        "url": "https://twitter.com/davatron5000"
+      },
+      "url": "https://twitter.com/davatron5000/status/1556395832248860676",
+      "published": "2022-08-07T21:44:17+00:00",
+      "wm-received": "2022-08-07T22:04:34Z",
+      "wm-id": 1453041,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1556392099188051969/1556395832248860676",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "content": {
+        "html": "Lovely use of Layers.\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/geoffreygraham\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/robinrendle\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/08/07/minimal/\"></a>",
+        "text": "Lovely use of Layers."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

@@ -1,6 +1,0 @@
-@use 'sass:list';
-
-// ordering
-$layers: ('reset', 'config', 'default', 'theme', 'all');
-
-@layer #{$layers};

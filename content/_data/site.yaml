@@ -25,16 +25,16 @@ feed:
 styles:
   - title: spec
     url: layer/spec.css
-    alt: true
+    alt: spec
   - title: browser
-    alt: true
   - title: reset
     url: layer/reset.css
-    alt: true
+    layer: reset
   - title: default
     url: layer/default.css
-    alt: true
-  - title: all
+    layer: default
+  - title: theme
+    layer: all
     url: all.css
 scripts:
   - scripts.js
