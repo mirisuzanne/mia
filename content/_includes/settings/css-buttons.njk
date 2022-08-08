@@ -1,0 +1,5 @@
+{%- for link in site.styles %}
+  <button data-set="{{ link.layer or link.alt or link.title }}" aria-pressed="{{ loop.last }}">
+    {{- link.title -}}
+  </button>
+{%- endfor -%}

@@ -245,11 +245,7 @@ for a first-draft of the idea.
 
 <figure>
 <section data-options="css" aria-label="style layers">
-  {%- for link in site.styles %}
-    <button data-set="{{ link.title }}" aria-pressed="{{ 'false' if alt else 'true' }}">
-      {{- link.title -}}
-    </button>
-  {%- endfor -%}
+  {%- include "settings/css-buttons.njk" -%}
 </section>
 <figcaption>
   Try turning CSS layers on and off...
