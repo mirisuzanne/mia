@@ -3,7 +3,6 @@ title: CSS Container Queries, Layers, Scoping and More
 venue: Syntax.fm
 date: 2021-06-16
 canonical: https://syntax.fm/show/362/css-container-queries-layers-scoping-and-more-with-miriam-suzanne
-author: miriam
 hero:
   img: elsewhere/syntaxfm.jpg
   alt: Syntax.

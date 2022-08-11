@@ -7,6 +7,7 @@ date: 2004-06-14
 events:
   - title: Best One-Act Play [finalist]
     venue: Kennedy Center ACTF
+    date: 2004-06-14
 tags:
   - _calendar
   - writing

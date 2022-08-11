@@ -1,12 +1,20 @@
 {%- import 'utility.macros.njk' as utility -%}
 
 {% set full_page = collections.all | getPage(page.url) if events else none %}
-{% set page_events = full_page | pageEvents if full_page else [] %}
-{% if page_events | length > 0 %}
-  <section class="events">
-    <h2>Events</h2>
-    {% for item in page_events %}
-      {% include 'part/hevent.njk' %}
-    {% endfor %}
-  </section>
-{% endif %}
+{% set page_events = (full_page | pageEvents if full_page else []) | groupBy('tense') %}
+{% set tense_titles = {
+  'ongoing': 'Ongoing Events',
+  'future': 'Upcoming Events',
+  'past': 'Past Events'
+} %}
+
+{% for tense, event_list in page_events %}
+  {% if event_list | length > 0 %}
+    <section class="events">
+      <h2>{{ tense_titles[tense] or tense }}</h2>
+      {% for item in event_list %}
+        {% include 'part/hevent.njk' %}
+      {% endfor %}
+    </section>
+  {% endif %}
+{% endfor %}

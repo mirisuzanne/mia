@@ -1,5 +1,5 @@
 ---
-title: Turtles `vs` Backpacks
+title: Turtles vs Backpacks
 date: 2020-02-18
 hero:
   img: debate/turtles/slide.012.jpeg

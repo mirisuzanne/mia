@@ -1,5 +1,5 @@
 ---
-title: Mona Lisa `vs` KC Masterpiece
+title: Mona Lisa vs KC Masterpiece
 date: 2018-07-17
 ---
 

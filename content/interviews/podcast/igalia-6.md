@@ -3,7 +3,6 @@ title: Web Ecosystem Health Part VI
 venue: Igalia Chats
 date: 2021-06-21
 canonical: https://www.igalia.com/chats/ecosystem-health-vi
-author: miriam
 hero:
   img: elsewhere/igalia.jpg
   alt: Back of a head, out of focus, looking at code

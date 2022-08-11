@@ -1,7 +1,6 @@
 ---
 title: Cascade Aligned Programming
 sub: What does it mean to style a universal medium?
-author: miriam
 date: 2020-07-15
 hero:
   img: talks/cascade.jpg

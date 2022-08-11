@@ -2,6 +2,17 @@
 layout: format/h-feed
 title: Speaking
 sub: A mix of teaching and story-telling
+hero:
+  img: headshots/mia-smashing.jpg
+  alt: |
+    Miriam with a laptop and water bottle,
+    wearing a bright yellow leather jacket,
+    trans lightning earrings,
+    and a headset mic
+    while speaking at a conference.
+  caption: |
+    I do a lot of talking,
+    on a range of different stages.
 index: speaking
 type: none
 override:tags: []
@@ -9,17 +20,13 @@ override:tags: []
 
 {% set event_groups = collections.speaking | getEvents | groupBy('tense') %}
 
-{% if event_groups.ongoing | length > 0 %}
-  <h2>Happening Now</h2>
-  {% for item in event_groups.ongoing %}
-    {% include 'part/hevent.njk' %}
-  {% endfor %}
-{% endif %}
-
-{% if event_groups.future | length > 0 %}
-  <h2>Happening Now</h2>
-  {% for item in event_groups.future %}
-    {% include 'part/hevent.njk' %}
-  {% endfor %}
-{% endif %}
-
+{% for tense, event_list in event_groups %}
+  {% if (tense != 'past') and event_list | length > 0 %}
+    <section class="events">
+      <h2>{{ hevent.titles[tense] or tense }}</h2>
+      {% for item in event_list %}
+        {% include 'part/hevent.njk' %}
+      {% endfor %}
+    </section>
+  {% endif %}
+{% endfor %}

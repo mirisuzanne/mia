@@ -3,7 +3,6 @@ title: CSSWG, Container Queries, Scope, and Layers
 venue: Word Wrap Show
 date: 2021-05-17
 canonical: https://wordwrap.dev/episodes/011/
-author: miriam
 hero:
   img: elsewhere/wordwrap.jpg
   alt: F-Word

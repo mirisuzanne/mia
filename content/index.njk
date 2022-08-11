@@ -10,6 +10,20 @@ eleventyComputed:
     {{ taglines | random | md | safe }}
 ---
 
+{% set event_groups = collections.all | getEvents | groupBy('tense') %}
+
+{% for tense, event_list in event_groups %}
+  {% if (tense != 'past') and event_list | length > 0 %}
+    <section class="events">
+      <h2>{{ hevent.titles[tense] or tense }}</h2>
+      {% for item in event_list %}
+        {% include 'part/hevent.njk' %}
+      {% endfor %}
+    </section>
+    <hr />
+  {% endif %}
+{% endfor %}
+
 {%- set hfeed = collections._post | getPublic  -%}
 {%- set hentry_heading = 'h3' -%}
 {%- if hfeed | length > 0 -%}

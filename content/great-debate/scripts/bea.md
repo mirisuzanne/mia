@@ -1,5 +1,5 @@
 ---
-title: Bea Arthur `vs` Knights of the Round Table
+title: Bea Arthur vs Knights of the Round Table
 date: 2019-02-19
 ---
 

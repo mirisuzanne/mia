@@ -1,12 +1,7 @@
-permalink: /{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html
-sub: lively debates of the inconsequential
-venue: Buntport
+venue: Buntport Theater
 url: https://buntport.com/2018/09/third-tuesdays/
-type: debate
-series: great debate
 tags:
-  - _calendar
   - art
   - speaking
+  - writing
   - buntport
-  - great debate

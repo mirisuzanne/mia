@@ -14,7 +14,7 @@ events:
     url: https://smashingconf.com/sf-2022/
     date: 2022-06-21
     end: 2022-06-22
-    adr: San Francisco, CA
+    adr: San Francisco, CA (hybrid)
   - venue: An Event Apart Fall Summit
     url: https://aneventapart.com/event/fall-summit-2021
     date: 2021-10-11

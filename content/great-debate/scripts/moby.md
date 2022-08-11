@@ -1,5 +1,5 @@
 ---
-title: Moby Dick `vs` Alfred Hitchcock
+title: Moby Dick vs Alfred Hitchcock
 date: 2017-09-17
 ---
 
