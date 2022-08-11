@@ -38,6 +38,16 @@ module.exports = (eleventyConfig) => {
       ),
   );
 
+  eleventyConfig.addCollection('feeds', (collection) =>
+    collection
+      .getAll()
+      .filter(
+        (item) =>
+          _.intersection(item.data.tags || [], ['_post', '_note', '_feed'])
+            .length,
+      ),
+  );
+
   // filters
   eleventyConfig.addFilter('typeCheck', utils.typeCheck);
   eleventyConfig.addFilter('objectKeys', utils.objectKeys);
@@ -76,6 +86,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('eventTense', events.eventTense);
   eleventyConfig.addFilter('pageEvents', events.pageEvents);
   eleventyConfig.addFilter('getEvents', events.getEvents);
+  eleventyConfig.addFilter('sortEvents', events.sortEvents);
 
   eleventyConfig.addFilter('amp', type.amp);
   eleventyConfig.addFilter('typogr', type.set);

@@ -23,10 +23,13 @@ const eventTense = (event) => {
   return 'ongoing';
 };
 
-const sortEvents = (events) =>
-  events.length > 0
-    ? events.sort((a, b) => (b.end || b.date) - (a.end || a.date))
-    : [];
+const sortEvents = (events, tense) => {
+  if (!(events.length > 0)) {
+    return events;
+  }
+  const sorted = events.sort((a, b) => (b.end || b.date) - (a.end || a.date));
+  return tense === 'past' ? sorted : sorted.reverse();
+};
 
 const pageEvents = (page) =>
   page.data.events
@@ -57,4 +60,5 @@ module.exports = {
   eventTense,
   pageEvents,
   getEvents,
+  sortEvents,
 };

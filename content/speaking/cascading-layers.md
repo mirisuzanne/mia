@@ -7,6 +7,7 @@ events:
     adr: Denver, CO
     date: 2022-10-10
     end: 2022-10-12
+    slug: 2022-aea-denver
 summary: |
   Earlier this year,
   all the major browsers released Cascade Layers,

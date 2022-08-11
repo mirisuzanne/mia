@@ -16,7 +16,7 @@ eleventyComputed:
   {% if (tense != 'past') and event_list | length > 0 %}
     <section class="events">
       <h2>{{ hevent.titles[tense] or tense }}</h2>
-      {% for item in event_list %}
+      {% for item in event_list | sortEvents(tense) %}
         {% include 'part/hevent.njk' %}
       {% endfor %}
     </section>

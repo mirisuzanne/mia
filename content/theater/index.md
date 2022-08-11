@@ -30,14 +30,14 @@ and started one of my own:
 
 {% if event_groups.ongoing | length > 0 %}
   <h2>Happening Now</h2>
-  {% for item in event_groups.ongoing %}
+  {% for item in event_groups.ongoing | sortEvents %}
     {% include 'part/hevent.njk' %}
   {% endfor %}
 {% endif %}
 
 {% if event_groups.future | length > 0 %}
   <h2>Happening Now</h2>
-  {% for item in event_groups.future %}
+  {% for item in event_groups.future | sortEvents %}
     {% include 'part/hevent.njk' %}
   {% endfor %}
 {% endif %}

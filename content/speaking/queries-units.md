@@ -6,10 +6,12 @@ events:
     url: https://jamstack.org/conf/
     date: 2022-11-07
     end: 2022-11-08
+    slug: 2022-jamstack
   - venue: W3C Developer Meetup
     adr: Vancouver, Canada
     url: https://www.w3.org/2022/09/meetup/
     date: 2022-09-13
+    slug: 2022-tpac
 summary: |
   Container queries & units have a lot to offer
   as we enter a more content-out era of Intrinsic Web Design,

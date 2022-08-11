@@ -1,0 +1,21 @@
+---
+title: Several upcoming events
+date: 2022-08-11T11:17:36-06:00
+summary: |
+  I just added a few upcoming events --
+  three tech conferences,
+  and a comedy debate…
+---
+
+{% set all_events = collections.all | getEvents %}
+
+{% set show_events = [
+  all_events | find(['slug', '2022-jamstack']),
+  all_events | find(['slug', '2022-tpac']),
+  all_events | find(['slug', '2022-aea-denver']),
+  all_events | find(['slug', 'knives-debate'])
+] %}
+
+{% for item in show_events | sortEvents %}
+  {% include 'part/hevent.njk' %}
+{% endfor %}

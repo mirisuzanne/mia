@@ -1,7 +1,3 @@
 type: note
-calendar: note
-syndicate:
-  to: https://brid.gy/publish/twitter
-  backlink: maybe
 tags:
-  - note
+  - _note

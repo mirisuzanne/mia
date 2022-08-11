@@ -17,6 +17,7 @@ events:
     adr: Denver, CO
     venue: *venue
     url: *url
+    slug: knives-debate
 tags:
   - art
   - speaking
