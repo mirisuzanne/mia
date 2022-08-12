@@ -1,6 +1,11 @@
 ---
 title: Bea Arthur vs Knights of the Round Table
-date: 2019-02-19
+date: &date 2019-02-19
+event:
+  - venue: Buntport Theater
+    url: https://buntport.com/2018/09/third-tuesdays/
+    adr: Denver, CO
+    date: *date
 ---
 
 Hi, I'm here to tell you about Bea Arthur--

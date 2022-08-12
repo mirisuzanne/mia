@@ -1,6 +1,11 @@
 ---
 title: Moby Dick vs Alfred Hitchcock
-date: 2017-09-17
+date: &date 2017-09-17
+event:
+  - venue: Buntport Theater
+    url: https://buntport.com/2018/09/third-tuesdays/
+    adr: Denver, CO
+    date: *date
 ---
 
 *I lost the images for this one.
