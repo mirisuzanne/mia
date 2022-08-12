@@ -1,6 +1,5 @@
 'use strict';
 
-const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite');
 const hljs = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rss = require('@11ty/eleventy-plugin-rss');
 const yaml = require('js-yaml');
@@ -18,7 +17,6 @@ const type = require('./src/filters/type');
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.addPlugin(EleventyVitePlugin);
   eleventyConfig.addPlugin(hljs);
   eleventyConfig.addPlugin(rss);
 

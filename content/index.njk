@@ -10,6 +10,8 @@ eleventyComputed:
     {{ taglines | random | md | safe }}
 ---
 
+hello
+
 {% set event_groups = collections.all | getEvents | groupBy('tense') %}
 
 {% for tense, event_list in event_groups %}
