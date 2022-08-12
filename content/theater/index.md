@@ -1,4 +1,5 @@
 ---
+nav_only: true
 layout: format/h-feed
 title: Theater
 banner: Live Theater
