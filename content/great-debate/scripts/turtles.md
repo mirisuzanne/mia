@@ -1,28 +1,72 @@
 ---
 title: Turtles vs Backpacks
-date: 2020-02-18
+date: &date 2020-02-18
 hero:
   img: debate/turtles/slide.012.jpeg
+  alt: |
+    Victoria's Secret website
+    Weekend of Love,
+    with queen Victoria in all the photos
+event:
+  - venue: Buntport Theater
+    url: https://buntport.com/2018/09/third-tuesdays/
+    adr: Denver, CO
+    date: *date
 gallery:
   - img: debate/turtles/slide.001.jpeg
-  - img: debate/turtles/slide.012.jpeg
+    alt: |
+      Powerpoint slide,
+      Turtles v Rucksacks (crossed off)
+      Dr.* Suzanne
   - img: debate/turtles/slide.016.jpeg
+    alt: |
+      Google Translate detecting
+      Rem Brandt as Danish,
+      and translating it to
+      Brake Is On.
   - img: debate/turtles/slide.025.jpeg
+    alt: |
+      Illustration of an old man
+      sleeping under a tree,
+      with large fantasy-style text saying
+      Rob Van Winkle
   - img: debate/turtles/slide.026.jpeg
+    alt: |
+      Queen II album cover
+      with four faces on a black background,
+      but Vanilla Ice is doing turtle-hands
+      where it should be Freddie Mercury
   - img: debate/turtles/slide.038.jpeg
+    alt: |
+      1984, Big brothers watching you,
+      George Orwell book cover,
+      with the Ninja Turtles added,
+      jumping out towards you
   - img: debate/turtles/slide.039.jpeg
+    alt: |
+      A ninja turtle running towards you
+      with nunchucks,
+      in the 1984 Apple commercial
   - img: debate/turtles/slide.040.jpeg
+    alt: |
+      A ninja turtle meditating with an Apple computer,
+      like the Rolling Stone photo
+      of Steve Jobs
   - img: debate/turtles/slide.045.jpeg
+    alt: |
+      American flag in the shape of a turtle,
+      paid for by Turtles For America
+      Action Committee
   - img: debate/turtles/slide.047.jpeg
+    alt: |
+      A tan backpack, half open,
+      revealing a cutout of Michael Bloomberg
   - img: debate/turtles/slide.056.jpeg
-  - img: debate/turtles/slide.057.jpeg
+    alt: |
+      A bowl of vanilla ice cream
 ---
 
 {% import "content.macros.njk" as content %}
-
-{{ content.figure(gallery, 'a few important slides…') }}
-
-## The Full Script:
 
 *[`»` denotes slide-change…]*
 
@@ -98,6 +142,10 @@ So that’s a bit of historic perspective on the issue. As you can see, history 
 
 » VIDEO
 
-## The Full Deck:
+## Some of the slides
+
+{{ content.figure(gallery, 'a few important slides…') }}
+
+## The full deck
 
 <script async class="speakerdeck-embed" data-id="6e877c2c50a3446599ab94b2e28ef3bc" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>

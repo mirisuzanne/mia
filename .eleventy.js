@@ -45,7 +45,8 @@ module.exports = (eleventyConfig) => {
         (item) =>
           _.intersection(item.data.tags || [], ['_post', '_note', '_feed'])
             .length,
-      ),
+      )
+      .sort((a, b) => a.date - b.date),
   );
 
   // filters

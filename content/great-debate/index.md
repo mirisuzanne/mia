@@ -1,4 +1,5 @@
 ---
+nav_only: true
 layout: format/h-feed
 title: The Great Debate
 sub: lively debates of the inconsequential

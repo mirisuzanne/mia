@@ -45,7 +45,7 @@ const getEvents = (collection) => {
   const events = [];
 
   collection
-    .filter((page) => pages.isPublic(page))
+    .filter((page) => pages.isPublic(page, false))
     .forEach((page) => {
       if (page.data.events) {
         Array.prototype.push.apply(events, pageEvents(page));

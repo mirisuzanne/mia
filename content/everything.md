@@ -1,4 +1,5 @@
 ---
+nav_only: true
 title: Everything
 index: all
 eleventyExcludeFromCollections: true

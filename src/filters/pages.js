@@ -2,8 +2,9 @@
 
 const time = require('./time');
 
-const isPublic = (page) => {
-  const live = page.data.draft !== true && !page.data.nav_only;
+const isPublic = (page, page_list = true) => {
+  const nav_only = page_list ? page.data.nav_only : false;
+  const live = page.data.draft !== true && !nav_only;
   const title = page.data && page.data.title;
   return live && title;
 };
