@@ -28,6 +28,10 @@
 
   li {
     --outset: 0px;
+
+    &:where(:not(:first-child)) {
+      margin-block-start: var(---half-shim, 0.125em);
+    }
   }
 
   // block

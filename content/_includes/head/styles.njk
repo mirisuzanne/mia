@@ -8,7 +8,7 @@
     'href': link.url if '://' in link.url | string else ['/css/', link.url] | join,
     'data-layer': link.layer,
     'data-alt': link.alt,
-    'media': 'print'
+    'media': 'all' if link.layer else 'print'
   } %}
   <link {{ utility.show_attrs(link_attrs) }}/>
 {%- endfor -%}
