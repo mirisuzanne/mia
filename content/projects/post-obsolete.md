@@ -28,20 +28,19 @@ events:
       - reading
       - post-obsolete
   - venue: Brakhage Center Media Arts
-    url: https://www.colorado.edu/brakhagecenter/2013/08/10/bc-luncheon-series-welcomes-eric-meyer-october-7th
     date: 2013-10-07
     video: https://vimeo.com/86628115
     tags:
       - reading
       - post-obsolete
   - venue: Media Archeology Lab | &Now Festival
-    url: https://mediaarchaeologylab.com/past-artist-in-residence/eric-meyer-2/
+    url: https://web.archive.org/web/20190327061344/https://mediaarchaeologylab.com/past-artist-in-residence/miriam-suzanne-2/
     date: 2013-09-28
     tags:
       - reading
       - post-obsolete
   - venue: SpringGun Journal, Issue 8
-    url: https://www.springgunpress.com/issue-8-2013/eric-meyer/
+    url: https://web.archive.org/web/20211018225949/http://www.springgunpress.com/issue-8-2013/eric-meyer/
     date: 2013-09-01
   - venue: Boulder Writer’s Workshop
     url: https://www.boulderwritersworkshop.com/2013/04/17/post-obsolete-a-bww-salon/
@@ -91,7 +90,7 @@ press:
     date: 2015-11-15
     credit: Mél Hogan
     venue: Media Archeology Blog
-    url: https://mediaarchaeologylab.com/blog/miriam-suzanne-ideas-process-obsolescence-iterative-interview-mel-hogan/
+    url: https://web.archive.org/web/20200216191839/https://mediaarchaeologylab.com/blog/miriam-suzanne-ideas-process-obsolescence-iterative-interview-mel-hogan/
 media:
   - iframe: https://www.youtube.com/embed/yt37eIen7JU
     width: 800

@@ -23,7 +23,7 @@ summary: |
   Art installation
   featuring a mix of
   [pieces from Riding SideSaddle*](/books/sidesaddle/art/),
-  [PROPHETIA VETITUM MUNDI](/2019/07/05/screwtooth/),
+  [PROPHETIA VETITUM MUNDI](/2014/08/02/screwtooth/),
   [Gods on the Lam](/2017/06/02/gods-on-the-lam/),
   and elsewhere.
   I also put together
@@ -39,4 +39,4 @@ summary: |
 
 [buy prints from the show »][buy]
 
-[buy]: https://art.miriamsuzanne.com
+[buy]: https://miriamsuzanne.square.site/

@@ -7,7 +7,7 @@ hero:
 date: 2018-02-23
 end: 2018-03-03
 venue: The Bakery
-url: https://www.grapefruitlab.com/shows/janeeyre/
+url: https://www.grapefruitlab.com/shows/jane-eyre/
 tags:
   - _calendar
   - theater

@@ -1,7 +1,7 @@
 ---
 title: What's the job of a "design engineer"?
 sub: A fireside chat
-url: https://labs.pencilandpaper.io/blog/what-s-the-job-of-a-design-engineer
+url: https://pencilandpaper.io/articles/whats-the-job-of-a-design-engineer/
 venue: Pencil & Paper
 date: 2021-10-04
 hero:

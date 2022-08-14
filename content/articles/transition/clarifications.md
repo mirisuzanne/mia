@@ -195,7 +195,7 @@ voices, or movements —
 assuming that's what we mean by *transition*.
 
 There's a ==history== to that idea,
-[enforced by the medical community](https://www.pqmonthly.com/gatekeeping-the-dark-history-of-trans-health-care/22368)
+[enforced by the medical community](https://web.archive.org/web/20170706131302/http://www.pqmonthly.com/gatekeeping-the-dark-history-of-trans-health-care/22368)
 since the 60's when hormone replacement therapy
 started to become a medically-accepted treatment.
 Doctors established themselves as gender gatekeepers,
@@ -245,7 +245,7 @@ That's not
 Where are the [gender outlaws](https://www.huffingtonpost.com/entry/kate-bornstein-queer-icon-reflects-on-queer-and-trans-identity-in-2015_us_561823aae4b0e66ad4c7ff37), the fluid identities, ==the femme boys
 and butch women== who have always faced the brunt of harassment? Where
 are the trans people who are complex and confused, or happy to mix up
-our [notions of gender](https://www.washingtonpost.com/news/speaking-of-sci)?
+our notions of gender?
 When we ==argue for== bathroom rights
 based only on ==our ability== to conform,
 we're throwing ==our own community== under the bus.

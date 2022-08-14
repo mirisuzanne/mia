@@ -2,7 +2,7 @@
 title: Ideas, Process, Obsolescence, and the Iterative
 date: 2015-11-15
 venue: Media Archeology Blog
-url: https://mediaarchaeologylab.com/blog/miriam-suzanne-ideas-process-obsolescence-iterative-interview-mel-hogan/
+url: https://web.archive.org/web/20200216191839/https://mediaarchaeologylab.com/blog/miriam-suzanne-ideas-process-obsolescence-iterative-interview-mel-hogan/
 tags:
   - art
   - writing

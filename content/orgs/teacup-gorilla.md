@@ -82,7 +82,7 @@ with theaters, writers, dancers, and other artists.
   which received the True West Award.
 - **Spring 2018**
   we collaborated with Grapefruit Lab
-  to create [JANE/EYRE](https://localhost:8888/theater/janeeyre/),
+  to create [JANE/EYRE](/theater/janeeyre/),
   a concert/theater adaptation of the classic novel.
 
 Since then,

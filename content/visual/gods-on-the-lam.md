@@ -22,5 +22,5 @@ to provide custom artwork
 for the cover of this great new book.
 They were particularly drawn
 to imagery and style
-from my [Screwtooth](https://mia.hexxie.com:8080/2019/01/10/screwtooth/)
+from my [Screwtooth](/2014/08/02/screwtooth/)
 instsallation.

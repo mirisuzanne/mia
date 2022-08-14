@@ -6,27 +6,24 @@ hero:
 gallery:
   - img: ums/14-24/rossonian.jpg
     alt: Rossonian
-    url: https://www.rossonianmusic.com/
   - img: ums/14-24/safe-boating.jpg
     alt: Safe Boating is no Accident
-    url: https://safeboatingisnoaccident.com/
   - img: ums/14-24/pan-astral.jpg
     alt: Pan Astral
-    url: https://www.panastral.com/
     span: full
 ---
 {% import "content.macros.njk" as content %}
 
 So many people! So much music!
-And [Elin Palmer](https://elinpalmer.com/) is a badass on the
-[Nyckelharpa](https://en.wikipedia.org/wiki/Nyckelharpa).
+And **Elin Palmer** is a badass on the
+Nyckelharpa.
 
 Tonight — Daniel is playing with both
-[Raven Jane](https://www.ravenjane.com/) (7pm @ Moes Original BBQ),
-and [The Truth & Spectacle](https://thetruthandspectacle.com/)
+**Raven Jane** (7pm @ Moes Original BBQ),
+and **The Truth & Spectacle**
 (midnight @ The Hornet).
 Also at midnight,
-[Accordion Crimes](https://accordion-crimes.blogspot.com/)
+**Accordion Crimes**
 is worth checking out
 if you like Fugazi-style noise
 coming from an aluminum guitar.

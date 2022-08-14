@@ -25,7 +25,6 @@ events:
     tags:
       - _resistance tour
   - venue: CSSDay.io
-    url: https://cssday.io/
     adr: Chandler, AZ
     date: 2016-12-03
     slides: https://oddbooksapp.com/release/1f08a0cb-198f-4c5f-ac85-93e55daa471d
@@ -36,7 +35,7 @@ events:
     tags:
       - code video
   - venue: CascadiaFest
-    url: https://2016.cascadiafest.org/
+    url: https://2016.cascadiajs.com/
     date: 2016-08-03
     slides: https://oddbooksapp.com/release/3964dd55-982a-4171-a46b-6dd0354eac27
     embed: &cascadia
@@ -58,10 +57,6 @@ events:
     adr: San Francisco, CA
     date: 2016-03-31
     slides: https://oddbooksapp.com/release/ab1987b6-7d5f-42e4-b0ff-e7312cb345f6
-    embed: &clarity
-      iframe: https://www.youtube.com/embed/b4vSy1e1ai8
-      width: 560
-      height: 315
     tags:
       - code video
 summary: |
@@ -69,10 +64,8 @@ summary: |
   for documenting the relationships between code and design,
   but beautiful docs are only half the battle.
 media:
-  - span: full
-    <<: *cssday
+  - <<: *cssday
   - <<: *cascadia
-  - <<: *clarity
 ---
 {% import "content.macros.njk" as content %}
 

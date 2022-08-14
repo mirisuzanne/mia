@@ -25,7 +25,6 @@ events:
     end: 2020-08-21
     adr: Online
   - venue: Front Range Front End
-    url: https://www.meetup.com/front-range-front-end/events/bxrfwqyzpbkb/
     date: 2019-11-07
     adr: Denver, CO
     video: https://youtu.be/bSITeqDKkb8

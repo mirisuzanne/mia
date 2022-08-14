@@ -9,7 +9,6 @@ tags:
   - sass
 events:
   - venue: Agile Alliance
-    url: https://www.agilealliance.org/agile2019/program/
     adr: Washington, DC
     date: 2019-08-06
   - venue: Agile Denver
@@ -18,7 +17,6 @@ events:
     slides: https://talks.oddbird.net/agile-systems/agiledenver18/
     date: 2018-10-22
   - venue: Front-End Front Range
-    url: https://www.meetup.com/front-range-front-end/events/zwjmwlyxgbhb/
     adr: Denver, CO
     slides: https://oddbooksapp.com/book/agile-design-vue
     date: 2018-04-05

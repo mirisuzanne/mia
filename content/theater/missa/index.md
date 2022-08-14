@@ -2,7 +2,7 @@
 title: Missa Populi
 sub: a modern mass
 venue: PackingHouse Center for the Arts
-url: https://www.grapefruitlab.com/shows/2010/3/12/missa-populi
+url: https://www.grapefruitlab.com/shows/missa-populi/
 date: 2010-03-12
 end: 2010-03-14
 hero:

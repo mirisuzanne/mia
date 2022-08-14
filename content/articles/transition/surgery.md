@@ -166,9 +166,7 @@ along with a euphoria of new discovery.
 
 In the spring of 2017
 I begin to consider bottom surgery more seriously.
-I do my research on [how it works][video]
-(*warning: this animated video is still graphic,
-and uses outdated "MtF" language*),
+I do my research on how it works,
 and learn about the development
 of genital tissue.
 I begin to see my body in new ways,
@@ -180,7 +178,6 @@ I research [available surgeons][surgeons],
 and eventually send an application to [Dr. Marci Bowers][marci] --
 a ground-breaking expert in the field.
 
-[video]: https://www.youtube.com/watch?v=d90SaWlODlQ
 [surgeons]: https://www.transhealthcare.org/vaginoplasty/
 [marci]: https://marcibowers.com/
 
@@ -328,7 +325,7 @@ any amount will help make a difference.
 
 <iframe class='gfm-media-widget' image='1' coinfo='1' width='100%' height='100%' frameborder='0' id='mias-medical-upgrade'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
 
-[art]: https://squareup.com/store/mirisuzanne
+[art]: https://miriamsuzanne.square.site/
 [gift]: https://www.gofundme.com/mias-medical-upgrade
 
 

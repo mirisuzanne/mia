@@ -2,7 +2,6 @@
 title: Vagina Monologues
 sub: unofficial, autobiographical, trans-femme monologue
 venue: It Grows Wild
-url: https://www.itgrowswild.com/
 date: 2018-11-02
 hero:
   img: art/theater/vm/vm.jpg
@@ -60,12 +59,10 @@ Here it is,
 my rogue monologue --
 performed as part of the
 brilliant production
-by [It Grows Wild][igw] theater company.
+by **It Grows Wild** theater company.
 It was a real pleasure
 to work with such a great
 group of women.
-
-[igw]: https://www.itgrowswild.com/
 
 Despite undergoing bottom surgery recently,
 I didn't want to perpetuate a
