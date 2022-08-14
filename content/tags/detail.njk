@@ -9,6 +9,6 @@ permalink: /tags/{{ tag | slug }}/
 eleventyExcludeFromCollections: true
 ---
 
-{%- for item in collections[index] | sortBy('data.date') | reverse -%}
+{%- for item in collections[index] | getPublic | sortBy('data.date') | reverse -%}
   {%- include "part/hentry.njk" -%}
 {%- endfor -%}

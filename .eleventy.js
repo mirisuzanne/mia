@@ -49,6 +49,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('tagData', tags.tagData);
 
   eleventyConfig.addFilter('getPage', pages.getPage);
+  eleventyConfig.addFilter('isPublic', pages.isPublic);
   eleventyConfig.addFilter('getPublic', pages.getPublic);
   eleventyConfig.addFilter('seriesNav', pages.seriesNav);
   eleventyConfig.addFilter('byDate', pages.byDate);

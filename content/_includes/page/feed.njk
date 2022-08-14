@@ -2,7 +2,7 @@
 {%- if feed | length > 0 -%}
 <hr />
 <section class="h-feed">
-  <h2 class="p-name">'{{ index | displayName | capitalize }}' content</h2>
+  <h2 class="p-name">Everything '{{ index | displayName | capitalize }}'</h2>
   {%- set hentry_heading = 'h3' -%}
   {%- for item in feed | sortBy('data.date') | reverse -%}
     {%- include 'part/hentry.njk' -%}
