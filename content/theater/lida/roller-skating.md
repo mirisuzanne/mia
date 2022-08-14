@@ -2,7 +2,7 @@
 title: Roller Skating With My Cousin
 sub: A devised work of The LIDA Project
 venue: BINDERY | space
-url: http://lida.org/roller-skating-with-my-cousin/
+url: https://lida.org/roller-skating-with-my-cousin/
 adr: Denver, CO
 date: 2010-01-15
 end: 2010-02-20
@@ -34,7 +34,6 @@ summary: |
   in which synchronized roller skaters
   build a tower under a star-flecked mirror ball sky.
 ---
-{% import "content.macros.njk" as content %}
 
 Combining the biblical Tower of Babel
 with the sexual revolutionary act of roller skating --
@@ -45,4 +44,5 @@ why did Ronald Reagan fail as the anti-Christ?
 
 ------
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}

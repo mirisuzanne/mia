@@ -49,7 +49,7 @@ events:
         width: 640
         height: 360
   - venue: VueConf US
-    url: http://vueconf.us/
+    url: https://vueconf.us/
     adr: Tampa, FL
     date: 2019-03-26
     end: 2019-03-27
@@ -128,6 +128,7 @@ media:
   - <<: *fsfest
   - <<: *jsconf
 ---
+
 {% import "content.macros.njk" as content %}
 
 It's time to start moving style logic
@@ -147,7 +148,8 @@ without all the invasive Javascript.
 
 ------
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

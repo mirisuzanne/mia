@@ -1,4 +1,4 @@
-{%- for link in site.styles %}
+{%- for link in meta.styles %}
   <button data-set="{{ link.layer or link.alt or link.title }}" aria-pressed="{{ loop.last }}">
     {{- link.title -}}
   </button>

@@ -3,7 +3,15 @@
 const utils = require('./utils');
 const { nav } = require('./nav');
 
-const isPublic = (tag) => (tag ? tag !== 'all' && !tag.startsWith('_') : null);
+const isPublic = (tag) => {
+  if (typeof tag === 'string') {
+    const isAll = tag === 'all';
+    const isPrivate = tag.startsWith('_');
+    return !isAll && !isPrivate;
+  }
+
+  return false;
+};
 const publicTags = (tags) =>
   tags ? tags.filter((tag) => isPublic(tag)) : tags;
 

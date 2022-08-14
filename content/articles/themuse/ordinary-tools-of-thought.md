@@ -2,7 +2,7 @@
 title: Ordinary Tools of Thought
 sub: Part 2 of [Fuck the Muse](/2012/10/16/muse-intro/)
 venue: The Operating System
-url: http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-2-ordinary-tools-of-thought/
+url: https://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-2-ordinary-tools-of-thought/
 date: 2012-10-23
 ---
 
@@ -40,7 +40,7 @@ are actually the foundation of all creative process.
 He refers to these techniques as the
 "Elements of Creativity".
 
-[remix]: http://everythingisaremix.info/
+[remix]: https://everythingisaremix.info/
 
 I won't go into the details of his argument,
 but you should.
@@ -78,7 +78,7 @@ sparking off ideas and slipping towards other ideas —
 copying, transforming, & combining
 into new ideas.
 
-[Metamagical Themas]: http://books.google.com/books/about/Metamagical_Themas.html?id=o8jzWF7rD6oC
+[Metamagical Themas]: https://books.google.com/books/about/Metamagical_Themas.html?id=o8jzWF7rD6oC
 
 
 ## The Art is Inevitable
@@ -109,5 +109,5 @@ and we'll borrow from them regularly —
 but I want to show that the conceptual/remix process is essential
 for *every* medium and *every* genre.
 
-[conceptual artists]: http://en.wikipedia.org/wiki/Conceptual_art
-[remix artists]: http://en.wikipedia.org/wiki/Remix
+[conceptual artists]: https://en.wikipedia.org/wiki/Conceptual_art
+[remix artists]: https://en.wikipedia.org/wiki/Remix

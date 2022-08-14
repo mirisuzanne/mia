@@ -2,22 +2,10 @@
 
 const _ = require('lodash');
 
-const groupBy = (objectArray, property) =>
-  objectArray.reduce((acc, obj) => {
-    const key = obj[property];
-    if (!acc[key]) {
-      acc[key] = [];
-    }
-    acc[key].push(obj);
-    return acc;
-  }, {});
-
 const typeCheck = (val, is) => {
   const type = typeof val;
   return is ? type === is : type;
 };
-
-const objectKeys = (obj) => Object.keys(obj);
 
 const slugify = (text) =>
   text
@@ -28,45 +16,14 @@ const slugify = (text) =>
     .replace(/--+/g, '-') // Replace multiple - with single -
     .replace(/^-+/, '') // Trim - from start of text
     .replace(/-+$/, ''); // Trim - from end of text
-const unique = (array) =>
-  array.filter((value, index, self) => self.indexOf(value) === index);
 
-const jsonString = (item) => JSON.stringify(item);
-
-const only = (list, start, end) => list.slice(start, end);
-
-const domain = (url) =>
-  url
-    .replace('http://', '')
-    .replace('https://', '')
-    .split(/[/?#]/)[0];
-
-/* @docs
-label: styles
-category: Formatting
-note: |
-  Convert an object of property-value pairs
-  into valid CSS for an inline-style.
-example: |
-  <div style="{{ style_dict | styles }}">
-params:
-  dict:
-    type: object
-    note: CSS property-value pairs
-*/
 const styles = (dict) =>
   _(dict)
     .map((val, prop) => (val ? `${prop}:${val};` : ''))
     .reduce((all, one) => `${all}${one}`, '');
 
 module.exports = {
-  groupBy,
   typeCheck,
-  objectKeys,
   slugify,
-  unique,
-  jsonString,
-  only,
-  domain,
   styles,
 };

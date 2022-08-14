@@ -3,7 +3,7 @@ title: Celebration, Florida
 date: 2019-02-02
 sub: an un-rehearsed play by Greg Wohead
 venue: square product theatre
-url: http://www.squareproducttheatre.org/history
+url: https://www.squareproducttheatre.org/history
 tags:
   - _calendar
   - acting

@@ -8,3 +8,4 @@ coverage/
 htmlcov/
 jscache/
 node_modules/
+netlify/

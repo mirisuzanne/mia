@@ -56,7 +56,7 @@
   {% include 'site/settings.njk' %}
   {% include 'site/footer.njk' %}
 
-  {% set scripts = site.scripts | concat(scripts) if scripts else site.scripts %}
+  {% set scripts = meta.scripts | concat(scripts) if scripts else meta.scripts %}
   {% for url in scripts %}
     {% set url = url if '://' in url | string else ['/assets/js/', url] | join %}
     <script src="{{ url | url }}"></script>

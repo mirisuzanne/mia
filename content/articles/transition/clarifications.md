@@ -16,8 +16,8 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-(See also [Julia Serano](http://juliaserano.com/)’s
-wonderful [Transgender Glossary](http://juliaserano.com/terminology.html)
+(See also [Julia Serano](https://juliaserano.com/)’s
+wonderful [Transgender Glossary](https://juliaserano.com/terminology.html)
 if you are interested in more.
 I link to it throughout.)
 
@@ -46,7 +46,7 @@ and without distinction.
 2.  Our vague and ==often-elusive== sense of innate gender —
     something most people seem to have,
     but trans people spend more time dealing with.
-    [Subconscious sex](http://juliaserano.com/terminology.html#subconscioussex)
+    [Subconscious sex](https://juliaserano.com/terminology.html#subconscioussex)
     is really a better term for understanding trans identities.
     This is not a conscious or curated self-labeling,
     but more like the sensation of being angry ==because you are hungry== —
@@ -60,8 +60,8 @@ and without distinction.
 
     Cis people also have subconscious gender identities,
     though it's more easy to assume that your sex is completely
-    [constructed](http://juliaserano.com/terminology.html#genderartifactualism)
-    or [flows seamlessly](http://juliaserano.com/terminology.html#genderdeterminism)
+    [constructed](https://juliaserano.com/terminology.html#genderartifactualism)
+    or [flows seamlessly](https://juliaserano.com/terminology.html#genderdeterminism)
     from your genitalia
     when it has never been ==called into question==.
 
@@ -105,10 +105,10 @@ masculine-associated facial hair etc) and gender presentation. Our lived
 do ==with genitals== or gonads.
 
 Organizations like the
-[International Olympic Committee](http://www.nytimes.com/2016/07/03/magazine/the-humiliating-practice-of-sex-testing-female-athletes.html)
+[International Olympic Committee](https://www.nytimes.com/2016/07/03/magazine/the-humiliating-practice-of-sex-testing-female-athletes.html)
 have gone further,
 attempting to find a definable "biological sex" in
-[chromosomes](http://www.vox.com/2014/6/3/5776396/why-theyre-not-really-sex-chromosomes)
+[chromosomes](https://www.vox.com/2014/6/3/5776396/why-theyre-not-really-sex-chromosomes)
 and hormone levels.
 The results are the same wherever you look:
 our biology ==is a complicated== mix
@@ -195,7 +195,7 @@ voices, or movements —
 assuming that's what we mean by *transition*.
 
 There's a ==history== to that idea,
-[enforced by the medical community](http://www.pqmonthly.com/gatekeeping-the-dark-history-of-trans-health-care/22368)
+[enforced by the medical community](https://www.pqmonthly.com/gatekeeping-the-dark-history-of-trans-health-care/22368)
 since the 60's when hormone replacement therapy
 started to become a medically-accepted treatment.
 Doctors established themselves as gender gatekeepers,
@@ -240,9 +240,9 @@ Even the ==true stories== are limited to rich and beautiful women who fit
 easily into our existing binary categories: men and women, *just like
 you*. Those stories are important, but they aren't the whole picture.
 That's not
-[how we all do trans](http://www.mtv.com/news/1962946/gender-non-conforming-identity-trans/).
+[how we all do trans](https://www.mtv.com/news/1962946/gender-non-conforming-identity-trans/).
 
-Where are the [gender outlaws](http://www.huffingtonpost.com/entry/kate-bornstein-queer-icon-reflects-on-queer-and-trans-identity-in-2015_us_561823aae4b0e66ad4c7ff37), the fluid identities, ==the femme boys
+Where are the [gender outlaws](https://www.huffingtonpost.com/entry/kate-bornstein-queer-icon-reflects-on-queer-and-trans-identity-in-2015_us_561823aae4b0e66ad4c7ff37), the fluid identities, ==the femme boys
 and butch women== who have always faced the brunt of harassment? Where
 are the trans people who are complex and confused, or happy to mix up
 our [notions of gender](https://www.washingtonpost.com/news/speaking-of-sci)?
@@ -269,7 +269,7 @@ my femme interests or traits that used to make me ==queer== now make me
 invisible. It's easy for me to disappear into this over-simplified
 binary trans identity that doesn't really reflect my experience. I want
 to be a proud gender-bending ==dyke==, but that's often used as ==proof==
-that I'm *really a man*, not [trans enough](http://www.huffingtonpost.com/mia-violet/yes-youre-trans-enough-to_b_9318754.html), or in need of
+that I'm *really a man*, not [trans enough](https://www.huffingtonpost.com/mia-violet/yes-youre-trans-enough-to_b_9318754.html), or in need of
 ==gender-assimilating== guidance.
 
 Just because some of us are in the ==spotlight== doesn't mean we're all

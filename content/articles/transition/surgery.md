@@ -181,8 +181,8 @@ and eventually send an application to [Dr. Marci Bowers][marci] --
 a ground-breaking expert in the field.
 
 [video]: https://www.youtube.com/watch?v=d90SaWlODlQ
-[surgeons]: http://www.transhealthcare.org/vaginoplasty/
-[marci]: http://marcibowers.com/
+[surgeons]: https://www.transhealthcare.org/vaginoplasty/
+[marci]: https://marcibowers.com/
 
 One week later,
 I get a phone call from her office:

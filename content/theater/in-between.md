@@ -5,10 +5,10 @@ hero:
   img: art/theater/inbetween.jpg
 events:
   - venue: Rio Mesa Center
-    url: http://www.julierada.com/#/the-in-between/
+    url: https://www.julierada.com/#/the-in-between/
     date: 2015-09-06
   - venue: Rio Mesa Center
-    url: http://www.julierada.com/#/the-in-between/
+    url: https://www.julierada.com/#/the-in-between/
     date: 2016-05-21
 tags:
   - grapefruit lab

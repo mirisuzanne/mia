@@ -5,7 +5,7 @@ title: Riding SideSaddle*
 sub: A queer novel, in fragments of memory…
 date: 2015-04-02
 venue: SpringGun Press
-url: http://springgunpress.com
+url: https://springgunpress.com
 hero:
   img: writing/sidesaddle/box.jpg
   alt:
@@ -29,23 +29,23 @@ events:
     type: reading
     venue: Buntport
     adr: Denver, CO
-    url: http://tracyshaffer.com/the-card-table/
+    url: https://tracyshaffer.com/the-card-table/
     date: 2016-03-19
   - title: Fucking Fabulous Fiction Festival
     type: reading
     venue: Oriental Theater
-    url: http://www.theorientaltheater.com/event/214770/fiction-fest
+    url: https://www.theorientaltheater.com/event/214770/fiction-fest
     adr: Denver, CO
     date: 2015-07-31
     with:
       - name: BookBar
-        url: http://bookbardenver.com/
+        url: https://bookbardenver.com/
       - name: High Fiction
-        url: http://highfiction.com/
+        url: https://highfiction.com/
   - title: SideSaddle Book Release
     type: reading
     venue: Syntax Physic Opera
-    url: http://physicopera.com/
+    url: https://physicopera.com/
     date: 2015-04-02
     with:
       - Buntport Theater
@@ -68,7 +68,7 @@ press:
       and the friendship and love they find with each other.
     credit: Ryo Yamaguchi
     venue: Michigan Quarterly Review
-    url: http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/
+    url: https://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/
     date: 2015-06-01
   - text: |
       The characters, ideas, story are exposed, raw, alive --
@@ -86,14 +86,14 @@ press:
       and didnt want the night to be over.
     credit: Sam O’Daniel
     venue: Your Older Brother
-    url: http://www.yourolderbrother.com/2015/07/riding-sidesaddle-with-teacup-gorilla.html
+    url: https://www.yourolderbrother.com/2015/07/riding-sidesaddle-with-teacup-gorilla.html
     date: 2015-07-21
   - venue: Denver Westword
-    url: http://www.westword.com/arts/music-art-and-words-are-in-the-cards-at-the-riding-sidesaddle-book-launch-6626798
+    url: https://www.westword.com/arts/music-art-and-words-are-in-the-cards-at-the-riding-sidesaddle-book-launch-6626798
     credit: Luke Leavitt
     date: 2015-04-02
   - venue: Colorado Music Buzz
-    url: http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/
+    url: https://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/
     credit: Tim Wenger
     date: 2015-04-01
 actions:
@@ -117,6 +117,7 @@ summary: |
   Inspired by Margaret Clap,
   and the many myths of Hermaphroditus.
 ---
+
 {% import "content.macros.njk" as content %}
 
 [Buy the book](https://miriamsuzanne.square.site/)
@@ -130,7 +131,8 @@ or
   video.caption
 ) }}
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ---
 
@@ -145,7 +147,7 @@ with original music by [Teacup Gorilla][tg].
 [Read the script »](script/)
 
 [10myths]: /theater/10myths/
-[buntport]: http://buntport.com/
+[buntport]: https://buntport.com/
 [tg]: /orgs/teacup-gorilla/
 
 ---
@@ -178,11 +180,11 @@ and several [gallery shows](art/)…
 ## Publishing Credits
 
 Riding SideSaddle* is an
-[open source text](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+[open source text](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 published by
-[SpringGun Press](http://springgunpress.com),
+[SpringGun Press](https://springgunpress.com),
 [released online](https://ridingsidesaddle.com)
 by [OddBird](https://oddbird.net/),
 and [adapted for the stage](/theater/10myths/)
-by [Buntport Theater](http://buntport.com/) and
-[Teacup Gorilla](http://teacupgorilla.com/).
+by [Buntport Theater](https://buntport.com/) and
+[Teacup Gorilla](https://teacupgorilla.com/).

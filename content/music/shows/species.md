@@ -14,7 +14,7 @@ events:
       - name: Face Man
         url: https://www.facebook.com/pages/Face-Man/121419593563
       - name: Open to the Hound
-        url: http://www.opentothehound.com
+        url: https://www.opentothehound.com
       - name: Carly Howard and the Youthnicorns
         url: https://www.facebook.com/carly.howard
 video:
@@ -26,7 +26,7 @@ summary: |
   **Species of the Stars** by our good friends
   [Open to the Hound][otth]!
 
-  [otth]: http://www.opentothehound.com
+  [otth]: https://www.opentothehound.com
 ---
 
 {% import "content.macros.njk" as content %}

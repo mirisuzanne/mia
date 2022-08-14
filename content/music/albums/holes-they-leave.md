@@ -4,14 +4,14 @@ title: The Holes They Leave
 sub: Teacup Gorilla's debut album
 date: 2015-07-09
 venue: BandCamp
-url: http://teacupgorilla.bandcamp.com/album/the-holes-they-leave
+url: https://teacupgorilla.bandcamp.com/album/the-holes-they-leave
 hero:
   img: art/music/thtl.jpg
 tags:
   - teacup gorilla
 events:
   - title: EP Release Party
-    url: http://www.hi-dive.com/event/864133-teacup-gorilla-denver/
+    url: https://www.hi-dive.com/event/864133-teacup-gorilla-denver/
     venue: Hi Dive
     date: 2015-07-09
     adr: Denver, CO
@@ -22,7 +22,7 @@ events:
       - name: Coastal Wives
         url: https://www.facebook.com/Coastalwives
       - name: Jen Korte
-        url: http://jkandtheloss.com
+        url: https://jkandtheloss.com
 press:
   - text: |
       The Holes They Leave occupies a middle place
@@ -44,7 +44,7 @@ In the summer of 2015,
 in conjunction with [Riding SideSaddle*][sidesaddle]
 and a tour across the midwest.
 
-[Buy the album](http://teacupgorilla.bandcamp.com/album/the-holes-they-leave)
+[Buy the album](https://teacupgorilla.bandcamp.com/album/the-holes-they-leave)
 
 [tg]: /orgs/teacup-gorilla/
 [sidesaddle]: /books/sidesaddle/

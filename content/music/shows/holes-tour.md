@@ -16,26 +16,26 @@ tags:
 events:
   - adr: Iowa City, IA
     venue: Gabe's Iowa City
-    url: http://www.icgabes.com/
+    url: https://www.icgabes.com/
     date: 2015-08-11
   - adr: Madison, WI
-    url: http://www.high-noon.com/event/913673-deeps-teacup-gorilla-madison/
+    url: https://www.high-noon.com/event/913673-deeps-teacup-gorilla-madison/
     venue: High Noon Saloon
     date: 2015-08-10
     with:
       - name: The Deeps
         url: https://thedeeps.bandcamp.com/releases
       - name: Tween Wolf
-        url: http://tweenwolff.bandcamp.com/
+        url: https://tweenwolff.bandcamp.com/
   - adr: Goshen, IN
     url: https://www.facebook.com/events/866567246712267/
     venue: Art House
     date: 2015-08-08
     with:
       - name: Shiny Shiny Black
-        url: http://www.shinyshinyblack.com/
+        url: https://www.shinyshinyblack.com/
       - name: Lookout Mountain
-        url: http://www.soundcloud.com/lookoutmountain-1
+        url: https://www.soundcloud.com/lookoutmountain-1
       - name: Sara Wakefield
   - adr: Chicago, IL
     url: https://www.facebook.com/events/663487130418255/
@@ -45,11 +45,11 @@ events:
       - name: WaxWorks
         url: https://waxworksmusic.bandcamp.com/
       - name: Craig Scott
-        url: http://www.craigscottmusic.net/
+        url: https://www.craigscottmusic.net/
       - name: Troy Petty
-        url: http://www.troypettymusic.com
+        url: https://www.troypettymusic.com
   - adr: Duluth, MN
-    url: http://redherringlounge.com/events/space-carpet/
+    url: https://redherringlounge.com/events/space-carpet/
     venue: Red Herring Lounge
     date: 2015-08-06
     with:
@@ -68,9 +68,9 @@ events:
     date: 2015-08-03
     with:
       - name: 88er
-        url: http://www.88er.bandcamp.com/
+        url: https://www.88er.bandcamp.com/
       - name: Megan Kaminski
-        url: http://www.megankaminski.com/
+        url: https://www.megankaminski.com/
   - adr: Wichita, KS
     url: https://www.facebook.com/events/879491972144066/
     venue: Kirby's Beer Store
@@ -79,7 +79,7 @@ events:
       - name: Hot Books
         url: https://soundcloud.com/hot-books/sets/hot-books-demo
       - name: MariaElena
-        url: http://www.elcucomusic.com/
+        url: https://www.elcucomusic.com/
 summary: |
   A joint tour for [Teacup Gorilla](/orgs/teacup-gorilla/)'s
   debut album [*The Holes They Leave*](/2015/07/09/holes-they-leave/),

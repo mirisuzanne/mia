@@ -5,7 +5,7 @@ sub: Ensemble theater, gallery, and event space
 org: Artistic Director
 type: theater
 adr: Goshen, IN
-url: https://web.archive.org/web/20100810193456/http://newworldarts.org/events/history.php
+url: https://web.archive.org/web/20100810193456/https://newworldarts.org/events/history.php
 date: 2001-01-01
 end: 2007-08-14
 index: new world arts

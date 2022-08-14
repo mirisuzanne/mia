@@ -12,7 +12,7 @@ tags:
   - riding sidesaddle
 summary: |
   An interview with the insightful
-  [Ryo Yamaguchi](http://plotsandoaths.com/)
+  [Ryo Yamaguchi](https://plotsandoaths.com/)
   at **Michigan Quarterly Review**.
 ---
 
@@ -27,5 +27,5 @@ summary: |
 > based on the myth of Hermaphroditus —
 > and it’s a story about magic and the slipperiness of categories.
 >
-> ---[Ryo Yamaguchi](http://plotsandoaths.com/)
+> ---[Ryo Yamaguchi](https://plotsandoaths.com/)
 

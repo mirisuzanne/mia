@@ -5,10 +5,16 @@ sub: |
   [Miriam Suzanne](/who/){.h-card .u-uid} »
   *[towards a queer world](/why/)*
 eleventyExcludeFromCollections: true
-eleventyComputed:
-  summary: |
-    {{ taglines | random | md | safe }}
 ---
+
+<div id="summary" class="p-summary">
+  {% edge "njk,md", {'welcome': welcome} %}
+  **Welcome** — \
+  {{ welcome | random | safe }}
+  {% endedge %}
+</div>
+
+<hr />
 
 {% set event_groups = collections.all | getEvents | groupBy('tense') %}
 
@@ -28,7 +34,7 @@ eleventyComputed:
 {%- set hentry_heading = 'h3' -%}
 {%- if hfeed | length > 0 -%}
 <section class="h-feed">
-  <h2 class="p-name">Recent content</h2>
+  <h2 class="p-name">Recent Posts</h2>
   {%- for item in hfeed | sortBy('data.date') | reverse | slice(5) -%}
     {%- include 'part/hentry.njk' -%}
   {%- endfor -%}

@@ -13,7 +13,7 @@ summary: |
 
 Twined Fragments is an ongoing collaboration
 between authors **Miriam Suzanne** and
-[Allison Washington](http://allisonwashington.net).
+[Allison Washington](https://allisonwashington.net).
 Each fragment is sparked by the previous,
 as trans women of different generations
 pass their memories back and forth,

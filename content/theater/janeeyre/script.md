@@ -2612,5 +2612,5 @@ Under the following conditions:
   under the same license as the original.
 
 Any of the above conditions can be waived with my permission.
-See the [full license](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+See the [full license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 for legal details.

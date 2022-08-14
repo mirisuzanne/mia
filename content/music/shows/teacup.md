@@ -1,9 +1,6 @@
 ---
-title: Teacup Gorilla
-banner: Teacup Gorilla Show Archive
-date: 2010-03-25
-tags:
-  - teacup gorilla
+nav_only: true
+title: Teacup Gorilla Show Archive
 events:
   - title: Music & Poetry Showcase
     image: shows/2019/joel.jpg
@@ -103,7 +100,7 @@ events:
       - name: Meet The Giant
 
   - title: Weird Wednesday!
-    url: http://www.3kingstavern.com/event/290158
+    url: https://www.3kingstavern.com/event/290158
     venue: 3 Kings Tavern
     image: shows/3kings.jpg
     date: 2017-10-04
@@ -118,7 +115,7 @@ events:
     adr: Denver, CO
     with:
       - name: Electric LoveGods
-        url: http://electriclovegods.com
+        url: https://electriclovegods.com
 
   - venue: Globe Hall
     image: shows/stereo-no-aware.jpg
@@ -172,14 +169,14 @@ events:
         url: https://www.facebook.com/spaceintimedenver/
       - name: Lisa Matthews
 
-  - url: http://www.lost-lake.com/event/1435150-electric-lovegods-denver/
+  - url: https://www.lost-lake.com/event/1435150-electric-lovegods-denver/
     image: shows/elgods.jpg
     venue: Lost Lake
     date: 2017-03-05
     adr: Denver, CO
     with:
       - name: Electric LoveGods
-        url: http://electriclovegods.com/
+        url: https://electriclovegods.com/
       - name: GALLERIES
         url: https://www.facebook.com/GALLERIESmusic/
       - name: GhostPulse
@@ -227,9 +224,9 @@ events:
     adr: Denver, CO
     with:
       - name: The Patient Zeros
-        url: http://www.thepatientzeros.com/
+        url: https://www.thepatientzeros.com/
       - name: The Maykit
-        url: http://themaykit.com/
+        url: https://themaykit.com/
 
   - venue: Syntax Physic Opera
     date: 2016-09-08
@@ -238,9 +235,9 @@ events:
     adr: Denver, CO
     with:
       - name: Altas
-        url: http://altasiscoming.com/
+        url: https://altasiscoming.com/
       - name: Open To The Hound
-        url: http://opentothehound.com/
+        url: https://opentothehound.com/
 
   - title: Sunday BBQ Series
     url: https://www.facebook.com/events/1246370012082183/
@@ -264,12 +261,12 @@ events:
     adr: Denver, CO
     with:
       - name: ...And The Black Feathers
-        url: http://andtheblackfeathers.com/index.php
+        url: https://andtheblackfeathers.com/index.php
       - name: Vehicles
         url: https://www.facebook.com/vehicles.fb/
 
   - title: Beat Soft Pop Album Release
-    url: http://lost-lake.com/event_details.cfm?blogid=968
+    url: https://lost-lake.com/event_details.cfm?blogid=968
     venue: Lost Lake Lounge
     date: 2016-06-30
     adr: Denver, CO
@@ -288,12 +285,12 @@ events:
       - name: Flight Kamikaze
         url: https://www.facebook.com/flightkamikaze/
       - name: Granny Tweed
-        url: http://grannytweed.com/
+        url: https://grannytweed.com/
       - name: Enemy Myself
         url: https://www.facebook.com/enemymyself/
 
   - title: MoonConf
-    url: http://moonconf.org/
+    url: https://moonconf.org/
     date: 2016-05-26
     image: shows/moonconf.jpg
     venue: Galvanize Boulder
@@ -307,7 +304,7 @@ events:
     adr: Denver, CO
     with:
       - name: Before The Bulb
-        url: http://www.beforethebulb.com/
+        url: https://www.beforethebulb.com/
       - name: Hello Mountain
         url: https://hellomountain.bandcamp.com/
 
@@ -346,7 +343,7 @@ events:
       - name: NORTH BY NORTH
         url: www.northbynorth.bandcamp.com
       - name: The Truth & Spectacle
-        url: http://thetruthandspectacle.com/
+        url: https://thetruthandspectacle.com/
 
   - venue: Lion's Lair
     date: 2015-11-05
@@ -364,7 +361,7 @@ events:
     image: shows/jack-coax.jpg
     with:
       - name: Jack And The Coax
-        url: http://www.jackandthecoax.com/
+        url: https://www.jackandthecoax.com/
 
   - title: Departure Tour
     venue: Tennyson's Tap
@@ -374,9 +371,9 @@ events:
     adr: Denver, CO
     with:
       - name: Troy Petty
-        url: http://www.troypettymusic.com
+        url: https://www.troypettymusic.com
       - name: Black Market Translation
-        url: http://www.blackmarkettranslation.com/
+        url: https://www.blackmarkettranslation.com/
 
   - venue: G***y House Cafe
     url: https://www.facebook.com/events/1438931603085393/
@@ -395,11 +392,11 @@ events:
     adr: Denver, CO
     with:
       - name: Black Market Translation
-        url: http://www.blackmarkettranslation.com/
+        url: https://www.blackmarkettranslation.com/
       - name: Tom Waits For No Man
-        url: http://tomwaitsfornoman.com/
+        url: https://tomwaitsfornoman.com/
       - name: Open to the Hound
-        url: http://www.opentothehound.com
+        url: https://www.opentothehound.com
 
   - title: Gorilla Hound Party
     url: https://www.facebook.com/events/978753592154777/
@@ -409,11 +406,11 @@ events:
     adr: Denver, CO
     with:
       - name: Open to the Hound
-        url: http://www.opentothehound.com
+        url: https://www.opentothehound.com
 
   - title: Denver Indie/Alt Fest
     venue: Merchant's Mile High Saloon
-    url: http://facebook.com/MerchantsMileHighSaloon
+    url: https://facebook.com/MerchantsMileHighSaloon
     date: 2015-01-09
     adr: Denver, CO
     with:
@@ -422,10 +419,10 @@ events:
       - name: Blind Tomorrow
         url: facebook.com/BlindTomorrow
       - name: 3Piece Special
-        url: http://facebook.com/3PieceSpecial
+        url: https://facebook.com/3PieceSpecial
 
   - venue: Larimer Lounge
-    url: http://www.larimerlounge.com/event_details.cfm?blogid=1499
+    url: https://www.larimerlounge.com/event_details.cfm?blogid=1499
     date: 2014-11-29
     adr: Denver, CO
     with:
@@ -437,16 +434,16 @@ events:
         url: https://www.facebook.com/ReverbandTheVerse
 
   - venue: Lion's Lair
-    url: http://www.lionslairlounge.com/events/
+    url: https://www.lionslairlounge.com/events/
     date: 2014-11-09
     adr: Denver, CO
     with:
       - name: See-You-Home-Wolf
-        url: http://see-you-home-wolf.bandcamp.com/
+        url: https://see-you-home-wolf.bandcamp.com/
       - name: Drunkin Relatives
 
   - venue: Pikes Peak Brewing Co.
-    url: http://pikespeakbrewing.com/
+    url: https://pikespeakbrewing.com/
     date: 2014-08-23
     adr: Monument, CO
     with:
@@ -455,27 +452,27 @@ events:
 
   - title: 'Mile High Erotic Spoken Word (#4)'
     venue: The Bakery
-    url: http://www.thebakerydenver.com/4th-mile-high-erotic-spoken-word-amurika/
+    url: https://www.thebakerydenver.com/4th-mile-high-erotic-spoken-word-amurika/
     adr: Denver, CO
     date: 2014-07-05
 
   - title: Bouldering Poets Two Year Anniversary
-    url: http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/
+    url: https://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/
     venue: Trident Booksellers & Cafe
     adr: Boulder, CO
     date: 2014-05-17
     with:
       - name: Alan Mudd
       - name: Chris Shugrue
-        url: http://twocrowsonawire.blogspot.com/
+        url: https://twocrowsonawire.blogspot.com/
 
   - venue: Pikes Peak Brewing Co.
-    url: http://pikespeakbrewing.com/fall-music-schedule-updated-november-19th/
+    url: https://pikespeakbrewing.com/fall-music-schedule-updated-november-19th/
     date: 2014-04-05
     adr: Monument, CO
     with:
       - name: The Truth & Spectacle
-        url: http://thetruthandspectacle.com/
+        url: https://thetruthandspectacle.com/
 
   - venue: Larimer Lounge
     url: https://www.facebook.com/events/352732091534807
@@ -483,20 +480,20 @@ events:
     adr: Denver, CO
     with:
       - name: Arthur Lawrence
-        url: http://www.reverbnation.com/arthurlawrence
+        url: https://www.reverbnation.com/arthurlawrence
       - name: Black Wool
-        url: http://blackwool.bandcamp.com
+        url: https://blackwool.bandcamp.com
 
   - title: Bad Shadow Affair
     venue: Lost Lake Lounge
-    url: http://badshadowaffair.blogspot.com/2013/11/november-16th-douglas-cook-meyer.html
+    url: https://badshadowaffair.blogspot.com/2013/11/november-16th-douglas-cook-meyer.html
     date: 2013-11-16
     adr: Denver, CO
     with:
       - name: Marcia Douglas
       - name: Matt Cook
       - name: Teacup Gorilla
-        url: http://teacupgorilla.com
+        url: https://teacupgorilla.com
 
   - venue: Toad Tavern
     date: 2013-10-24
@@ -509,7 +506,7 @@ events:
       - name: Timothy Lee Houston Band
 
   - venue: Larimer Lounge
-    url: http://www.larimerlounge.com/event_details.cfm?blogid=1278
+    url: https://www.larimerlounge.com/event_details.cfm?blogid=1278
     date: 2013-09-30
     adr: Denver, CO
     with:
@@ -519,16 +516,16 @@ events:
         url: https://www.facebook.com/pages/Mark-Risius-Music/209451469137272
 
   - venue: Herman’s Hideaway
-    url: http://www.hermanshideaway.com/
+    url: https://www.hermanshideaway.com/
     date: 2013-09-19
     adr: Denver, CO
     with:
       - name: 'Nikol&Zack'
-        url: http://www.ourstage.com/epk/nikolzack/
+        url: https://www.ourstage.com/epk/nikolzack/
       - name: Blame Gravity
-        url: http://www.blamegravity.com/
+        url: https://www.blamegravity.com/
       - name: Lindsey Saunders Band
-        url: http://lindseysaundersmusic.com/
+        url: https://lindseysaundersmusic.com/
 
   - venue: Zach’s Garage
     date: 2013-07-27
@@ -539,17 +536,17 @@ events:
       - name: '[empty brackets]'
 
   - title: Bouldering Poets
-    url: http://boulderingpoets.wordpress.com/2013/02/
+    url: https://boulderingpoets.wordpress.com/2013/02/
     venue: 303 Vodka
     date: 2013-03-22
     adr: Boulder, CO
     with:
       - name: Georgia Van Gunten
-        url: http://naropa.digication.com/GeorgiaVangunten
+        url: https://naropa.digication.com/GeorgiaVangunten
       - name: Ellen Orleans
-        url: http://www.corvidwriters.org/ellen/index.html
+        url: https://www.corvidwriters.org/ellen/index.html
       - name: Asalott
-        url: http://asalott.com/
+        url: https://asalott.com/
 
   - title: 'Leon Presents a Reading Series #6'
     url: https://www.facebook.com/leongallery
@@ -557,7 +554,7 @@ events:
     adr: Denver, CO
     with:
       - name: Miriam Suzanne
-        url: http://ericsuzanne.com/
+        url: https://ericsuzanne.com/
       - name: Kelly Dulaney
 
   - title: Fundraiser

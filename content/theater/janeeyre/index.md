@@ -7,7 +7,7 @@ hero:
 date: 2018-02-23
 end: 2018-03-03
 venue: The Bakery
-url: http://www.grapefruitlab.com/shows/janeeyre/
+url: https://www.grapefruitlab.com/shows/janeeyre/
 tags:
   - _calendar
   - theater
@@ -62,8 +62,8 @@ under the [Grapefruit Lab][lab] name
 was a huge success.
 thanks to our wonderful ensemble:
 
-[lab]: http://grapefruitlab.com/
-[teacup]: http://teacupgorilla.com/
+[lab]: https://grapefruitlab.com/
+[teacup]: https://teacupgorilla.com/
 
 - **Lindsey Pierce** as Jane
 - **Meghan Frank** as Mrs Reed/Helen/Rochester/Diana

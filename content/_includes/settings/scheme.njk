@@ -1,6 +1,9 @@
 <section data-options="theme" style="display: var(--display-init, none);">
   <h2>Color Scheme</h2>
-  <button data-set="auto" aria-pressed="true">auto</button>
-  <button data-set="light" aria-pressed="false">light</button>
-  <button data-set="dark" aria-pressed="false">dark</button>
+  {%- for theme in ['auto', 'light', 'dark'] -%}
+    {% set isCurrent = 'true' if theme == 'auto' else 'false' %}
+    <button data-set="{{ theme }}" aria-pressed="{{ isCurrent }}">
+      {{- theme -}}
+    </button>
+  {% endfor -%}
 </section>

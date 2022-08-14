@@ -1213,11 +1213,6 @@ a-sync-waterfall@^1.0.0:
   resolved "https://registry.yarnpkg.com/a-sync-waterfall/-/a-sync-waterfall-1.0.1.tgz#75b6b6aa72598b497a125e7a2770f14f4c8a1fa7"
   integrity sha512-RYTOHHdWipFUliRFMCS4X2Yn2X8M87V/OpSqWzKKOGhzqyUxzyVmhHDH9sAvG+ZuQf/TAOFsLCpMw09I1ufUnA==
 
-accoutrement@^4.0.0:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/accoutrement/-/accoutrement-4.0.3.tgz#161dd304f4feffe1222bb85080d2b1210ae7f45a"
-  integrity sha512-bnsbz2kP/MxFgiQIRTrJNH19r1ap6e5VoJUkAlZuRd8ze5CkRsqcoO+GwC5Fir+TUhyPY2lh4gECxzyVHfxuDA==
-
 acorn-jsx@^5.2.0:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
@@ -1695,11 +1690,6 @@ caniuse-lite@^1.0.30001370:
   version "1.0.30001374"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001374.tgz#3dab138e3f5485ba2e74bd13eca7fe1037ce6f57"
   integrity sha512-mWvzatRx3w+j5wx/mpFN5v5twlPrabG8NqX2c6e45LCpymdoGqNvRkRutFUqpRTXKFQFNQJasvK0YT7suW6/Hw==
-
-cascading-color-systems@^0.1.0-beta.14:
-  version "0.1.0-beta.15"
-  resolved "https://registry.yarnpkg.com/cascading-color-systems/-/cascading-color-systems-0.1.0-beta.15.tgz#ad6a72ba00e3d44374909f76970f6525ca2d1140"
-  integrity sha512-3ewhBemhB5g1dbH7vG8Xzi0S4bkR6DCrDbFjqxsdoLO8RojIycwdCUVKyVEZ3HFjDPjcC8w7jsI4ig7WaTWqbQ==
 
 cdocparser@^0.13.0:
   version "0.13.0"
@@ -2998,11 +2988,6 @@ flush-write-stream@^1.0.2:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
-
-fontfaceobserver@^2.1.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/fontfaceobserver/-/fontfaceobserver-2.3.0.tgz#5fb392116e75d5024b7ec8e4f2ce92106d1488c8"
-  integrity sha512-6FPvD/IVyT4ZlNe7Wcn5Fb/4ChigpucKYSvD6a+0iMoLn2inpo711eyIcKjmDtE5XNcgAkSH9uN/nfAeZzHEfg==
 
 fs-constants@^1.0.0:
   version "1.0.0"

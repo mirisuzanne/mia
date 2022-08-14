@@ -49,8 +49,8 @@ I recommend a trip down her [rabbit hole][hole].
 Is that gross?
 It sounds gross.
 
-[writer]: http://harlot.media/articles/1385/on-the-joys-of-cis-people-telling-me-how-well-i-pass
-[hole]: http://wieleblog.tumblr.com
+[writer]: https://harlot.media/articles/1385/on-the-joys-of-cis-people-telling-me-how-well-i-pass
+[hole]: https://wieleblog.tumblr.com
 
 > I look in the mirror
 > and see a person looking back at me every day,
@@ -69,4 +69,4 @@ It sounds gross.
 >
 > ---Jordan Wieleba, [The Happiest Place on Earth][happy]
 
-[happy]: http://wieleblog.tumblr.com/post/145865299161/the-happiest-place-on-earth
+[happy]: https://wieleblog.tumblr.com/post/145865299161/the-happiest-place-on-earth

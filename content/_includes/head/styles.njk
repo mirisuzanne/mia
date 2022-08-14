@@ -2,7 +2,7 @@
 
 <style>@layer reset, default, theme;</style>
 
-{%- for link in site.styles | selectattr('url') -%}
+{%- for link in meta.styles | selectattr('url') -%}
   {% set link_attrs = {
     'rel': 'stylesheet',
     'href': link.url if '://' in link.url | string else ['/css/', link.url] | join,

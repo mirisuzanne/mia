@@ -11,7 +11,7 @@ track:
 caption: |
   Pig Sez demo,
   including words from CA Conrad's
-  [Book of Frank](http://wavepoetry.myshopify.com/products/the-book-of-frank)
+  [Book of Frank](https://wavepoetry.myshopify.com/products/the-book-of-frank)
 ---
 {% import "content.macros.njk" as content %}
 

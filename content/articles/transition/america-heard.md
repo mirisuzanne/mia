@@ -15,7 +15,7 @@ summary: |
   my reaction to the 2016 election,
   as part of the [America Heard][ah] film series.
 
-  [mm]: http://maureenleemaloney.com/
+  [mm]: https://maureenleemaloney.com/
   [ah]: https://americaheard.com/
 film:
   - iframe: https://player.vimeo.com/video/198228746?color=c30062
@@ -28,7 +28,7 @@ Working with Dana Forsberg and Katie Cook,
 we put together this short documentary —
 talking about trans rights,
 and completing one step of my legal name change.
-Thanks to [Teacup Gorilla](http://teacupgorilla.com/) and Erin Rollman
+Thanks to [Teacup Gorilla](https://teacupgorilla.com/) and Erin Rollman
 for joining in the fun!
 
 {% import "content.macros.njk" as content %}

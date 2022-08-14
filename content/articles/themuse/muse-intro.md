@@ -3,7 +3,7 @@ feature: true
 title: Fuck The Muse
 sub: a series of articles on creative process
 venue: The Operating System
-url: http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-creativity-mini-series-lesson-1/
+url: https://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-creativity-mini-series-lesson-1/
 date: 2012-10-16
 index: fuck the muse
 ---
@@ -71,9 +71,9 @@ queer theory,
 and many years of working with
 ensemble theaters and bands.
 
-[Viewpoints]: http://en.wikipedia.org/wiki/Viewpoints
-[(re)making project]: http://www.charlesmee.org/indexf.html
-[The LIDA Project]: http://lida.org/
-[Writing Your Way]: http://donfry.wordpress.com/
+[Viewpoints]: https://en.wikipedia.org/wiki/Viewpoints
+[(re)making project]: https://www.charlesmee.org/indexf.html
+[The LIDA Project]: https://lida.org/
+[Writing Your Way]: https://donfry.wordpress.com/
 [Steal Like An Artist]: https://austinkleon.com/steal/
 [Everything is a Remix]: https://www.everythingisaremix.info/

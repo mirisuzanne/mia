@@ -8,7 +8,7 @@ sub: |
 hero:
   img: art/theater/10myths.jpg
 venue: Buntport Theater
-url: http://buntport.com/archive/10myths.htm
+url: https://buntport.com/archive/10myths.htm
 date: 2016-03-04
 end: 2016-03-26
 tags:
@@ -40,47 +40,47 @@ press:
       the usual categories of "male" and "female" are just too simplistic.
     credit: Juliet Wittman
     venue: Westword
-    url: http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439
+    url: https://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439
     date: 2016-03-09
   - text: |
       Definitely a production worth writing about,
       talking about, and going to see.
     credit: Berlin Sylvestre
     venue: Out Front
-    url: http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/
+    url: https://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/
     date: 2016-03-07
   - text: |
       An oddly satisfying dark comedy,
       a meditation on bodies, humanity, love and loss.
     credit: Joanne Ostrow
     venue: The Denver Post
-    url: http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying
+    url: https://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying
     date: 2016-03-07
   - text: |
       The soul of the piece lies in the gender-blending love and acceptance
       that flows like water through these relationships.
     credit: Tracy Shaffer
     venue: Huffington Post
-    url: http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html
+    url: https://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html
     date: 2016-03-07
   - venue: North Denver Tribune
-    url: http://www.northdenvertribune.com/2016/03/buntports-10-myths-a-mashup-of-myth-gender-loss-and-music/
+    url: https://www.northdenvertribune.com/2016/03/buntports-10-myths-a-mashup-of-myth-gender-loss-and-music/
     credit: Craig Williamson
     date: 2016-03-17
   - venue: Colorado Drama
-    url: http://coloradodrama.com/10_myths.html
+    url: https://coloradodrama.com/10_myths.html
     credit: Bob Bows
     date: 2016-03-17
   - venue: 5280 Magazine
-    url: http://www.5280.com/digital/2016/03/hinging-myth
+    url: https://www.5280.com/digital/2016/03/hinging-myth
     credit: Gina Gresko
     date: 2016-03-04
   - venue: Met Media
-    url: http://mymetmedia.com/the-metropolitan/features/long-time-friends-provide-one-kind-shows/
+    url: https://mymetmedia.com/the-metropolitan/features/long-time-friends-provide-one-kind-shows/
     credit: Keenan McCall
     date: 2016-03-05
   - venue: Westword
-    url: http://www.westword.com/event/10-myths-on-the-proper-application-of-beauty-products-7582171
+    url: https://www.westword.com/event/10-myths-on-the-proper-application-of-beauty-products-7582171
     credit: Luke Leavitt
     date: 2016-03-04
 gallery:
@@ -113,9 +113,10 @@ summary: |
   and [Teacup Gorilla][teacup].
 
   [sidesaddle]: /books/sidesaddle/
-  [buntport]: http://buntport.com
-  [teacup]: http://teacupgorilla.com
+  [buntport]: https://buntport.com
+  [teacup]: https://teacupgorilla.com
 ---
+
 {% import "content.macros.njk" as content %}
 
 [Read the script »](script/)
@@ -124,7 +125,8 @@ summary: |
 
 {{ content.figure(award.fig, award.caption) }}
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

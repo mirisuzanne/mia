@@ -9,11 +9,6 @@ const fs = require('fs');
 const eleventyImg = require('@11ty/eleventy-img');
 const _ = require('lodash');
 
-/* @docs
-label: Responsive Images
-category: File
-*/
-
 const imgAttrs = {
   loading: 'lazy',
   decoding: 'async',
@@ -47,34 +42,6 @@ const getSizes = (sizes) => {
     : sizes || defaultSizes.default;
 };
 
-/* @docs
-label: image
-category: responsive images
-note: Generate responsive image using eleventy img plugin
-example: |
-  {%- image src, "alt text", {"class":"my-image"}, "media" -%}
-params:
-  src:
-    type: string
-  alt:
-    type: string | none
-    default: none
-  sizes:
-    type: string | none
-    default: none
-    note: |
-      Only required for small images, since the default is 100vw.
-      See taxonomy data for named sizes
-      like "card", "media", and "gallery".
-  attrs:
-    type: object
-    default: '{}'
-  getUrl:
-    type: boolean | none
-    default: none
-    note: |
-      Returns url to largest jpeg image instead of full HTML
-*/
 const getImage = (
   src,
   alt = '',
@@ -174,8 +141,10 @@ const image = (src, alt = '', sizes = 'default', attrs = {}) =>
 
 const imgSrc = (src) => getImage(src, null, null, {}, true);
 
-module.exports = {
-  image,
-  imgSrc,
-  face,
+module.exports = (eleventyConfig) => {
+  eleventyConfig.addFilter('img', image);
+  eleventyConfig.addFilter('imgSrc', imgSrc);
+
+  eleventyConfig.addShortcode('img', image);
+  eleventyConfig.addNunjucksAsyncShortcode('face', face);
 };

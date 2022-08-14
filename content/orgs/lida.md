@@ -4,7 +4,7 @@ sub: Art theatre designed to infect the mind
 adr: Denver, CO
 org: Technical Director
 type: theater
-url: http://lida.org/
+url: https://lida.org/
 date: 2008-05-01
 end: 2010-03-01
 hero:

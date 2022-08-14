@@ -71,7 +71,7 @@ on the [Divided Brain][Divided Brain]:
 > for imagination you need both hemispheres.
 
 [Divided Brain]: https://www.youtube.com/watch?v=dFs9WO2B8uI
-[RSA]: http://www.thersa.org/
+[RSA]: https://www.thersa.org/
 
 {{ content.figure(
   data=divided,
@@ -140,7 +140,7 @@ If I've been writing stream-of-conscious (expanding),
 I start editing with a vengeance (contracting).
 [Creativity is subtraction][subtraction] as much as creation.
 
-[subtraction]: http://www.austinkleon.com/2010/01/19/creativity-is-subtraction/
+[subtraction]: https://www.austinkleon.com/2010/01/19/creativity-is-subtraction/
 
 
 ## Garbage In (Please)

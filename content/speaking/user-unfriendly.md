@@ -52,7 +52,7 @@ events:
     date: 2018-04-05
     slides: https://www.oddbooksapp.com/book/mobile-prototype
   - venue: SassConf 2015
-    url: http://sassconf.com
+    url: https://sassconf.com
     adr: Austin, TX
     date: 2015-11-11
     slides: https://www.oddbooksapp.com/book/user-unfriendly
@@ -72,6 +72,7 @@ media:
   - span: full
     <<: *drupal
 ---
+
 {% import "content.macros.njk" as content %}
 
 The web is more than a technology platform,
@@ -92,7 +93,8 @@ and designing for edge-cases with integrated teams.
 
 ------
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

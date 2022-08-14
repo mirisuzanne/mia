@@ -1,6 +1,6 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-{%- for item in site.preload -%}
+{%- for item in meta.preload -%}
   {%- set item_attrs = {
     'rel': 'preload',
     'href': item.url | url,

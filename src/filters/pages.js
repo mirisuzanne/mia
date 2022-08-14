@@ -4,12 +4,13 @@ const time = require('./time');
 
 const isPublic = (page, page_list = true) => {
   const nav_only = page_list ? page.data.nav_only : false;
-  const live = page.data.draft !== true && !nav_only;
+  const live = !page.data.draft && !nav_only;
   const title = page.data && page.data.title;
-  return live && title;
+  return title ? live : false;
 };
 
-const getPublic = (collection) => (collection || []).filter(isPublic);
+const getPublic = (collection) =>
+  (collection || []).filter((item) => isPublic(item));
 
 const pageTense = (page) => {
   const now = time.date(null, 'iso');

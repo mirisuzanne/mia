@@ -3,7 +3,7 @@ feature: true
 title: Dirt Circle Dogs
 sub: Blues-inflected bright/dark music
 org: Multi-Instrumetalist
-url: http://www.dirtcircledogs.com/
+url: https://www.dirtcircledogs.com/
 date: 2007-08-14
 end: 2010-01-14
 hero:
@@ -24,9 +24,8 @@ press:
     venue: Denver Syntax
 ---
 
-{% import "content.macros.njk" as content %}
-
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

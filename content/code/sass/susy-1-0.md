@@ -14,7 +14,7 @@ but don't let that fool you.
 Susy has become shockingly simple to use.
 See the [website][susy] for more details and demonstrations.
 
-[susy]: http://susy.oddbird.net/
+[susy]: https://susy.oddbird.net/
 
 The interface and syntax have been simplified
 so that the language is consistent and easy to understand.

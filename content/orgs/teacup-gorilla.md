@@ -24,7 +24,7 @@ press:
       And it sounds like nothing much else in this highly imitative era.
     venue: The Westword
     credit: Tom Murphy
-    url: http://www.westword.com/music/jen-korte-miriam-suzanne-daniel-eisenstat-sondra-eby-of-teacup-gorilla-release-music-video-9001887
+    url: https://www.westword.com/music/jen-korte-miriam-suzanne-daniel-eisenstat-sondra-eby-of-teacup-gorilla-release-music-video-9001887
   - text: |
       Reminiscent of late ‘90s punk
       with elements of spoken word combed through,
@@ -44,12 +44,12 @@ press:
       Expect performances that blend mediums, styles and disciplines.
     venue: The Westword
     credit: Luke Leavitt
-    url: http://www.westword.com/arts/music-art-and-words-are-in-the-cards-at-the-riding-sidesaddle-book-launch-6626798
+    url: https://www.westword.com/arts/music-art-and-words-are-in-the-cards-at-the-riding-sidesaddle-book-launch-6626798
   - text: |
       One of the most ambitious projects that has come across our desk recently.
     venue: Colorado Music Buzz
     credit: Tim Wenger
-    url: http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/
+    url: https://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/
 summary: |
   Teacup Gorilla inhabits the venues of Denver, CO
   with dark indie-rock soundscapes and evocative poetry --
@@ -60,7 +60,6 @@ summary: |
 {% import "content.macros.njk" as content %}
 
 {% set ep = collections.all | getPage('/2015/07/09/holes-they-leave/') %}
-
 {{ content.figure(
   data=ep.data.audio,
   caption='The Holes They Leave EP'
@@ -69,18 +68,29 @@ summary: |
 We also enjoy collaborating across media
 with theaters, writers, dancers, and other artists.
 
-- In the summer of 2015 we released our debut EP,
-  The Holes They Leave,
-  along with the multimedia novel
-  Riding SideSaddle*.
-- In 2015 and 2016, we collaborated with Buntport Theater to crerate
-  ReTriplicate for the Clyfford Still Museum,
-  and a full-length play --
-  10 Myths on the Proper Application of Beauty Products --
-  which recieved a True West Award.
-- In 2018, we collaboratted with Grapefruit Lab
-  to create JANE/EYRE,
-  a concert/theater adaptation of the classic.
+- **Summer 2015**
+  we released our debut EP,
+  [The Holes They Leave](/2015/07/09/holes-they-leave/)
+- **Fall 2015**
+  we created
+  [ReTriplicate](/theater/retriplicate/)
+  with Buntport Theater and the Clyfford Still Museum.
+- **Spring 2016**
+  we collaborated with Buntport again
+  to create a full-length show --
+  [10 Myths on the Proper Application of Beauty Products][10myths] --
+  which received the True West Award.
+- **Spring 2018**
+  we collaborated with Grapefruit Lab
+  to create [JANE/EYRE](https://localhost:8888/theater/janeeyre/),
+  a concert/theater adaptation of the classic novel.
+
+Since then,
+we've had a baby and a global pandemic --
+but we're working on new material.
+Hope to see you soon!
+
+[10myths]: /theater/10myths/
 
 ---
 
@@ -91,12 +101,6 @@ with theaters, writers, dancers, and other artists.
   caption='A Dark Plain at Seventh Circle Session'
 ) }}
 
----
-
-{{ content.quotes(press) }}
-
----
-
 {% set justlike = collections.all | getPage('/2017/02/13/just-like-that/') %}
 
 {{ content.figure(
@@ -106,7 +110,15 @@ with theaters, writers, dancers, and other artists.
 
 ---
 
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
+
+---
+
 Teacup Gorilla is Daniel Eisenstat,
 Sondra Eby,
-Miriam Suzanne,
-and Josselyn Cool.
+and Miriam Suzanne.
+Former members include
+Josie Cool,
+Jen Korte,
+and Daniel Rule.

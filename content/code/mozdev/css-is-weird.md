@@ -48,6 +48,6 @@ Design on the web will always be weird --
 but CSS is a [living document][living],
 and we have the power to [keep making it better][better].
 
-[cern]: http://info.cern.ch/hypertext/WWW/MarkUp/HTMLConstraints.html
+[cern]: https://info.cern.ch/hypertext/WWW/MarkUp/HTMLConstraints.html
 [living]: https://www.w3.org/Style/CSS/specs.en.html
 [better]: https://github.com/w3c/csswg-drafts/
