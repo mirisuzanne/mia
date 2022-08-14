@@ -6,8 +6,7 @@ date: 2015-07-10
 tags:
   - teacup gorilla
 events:
-  - url: /2015/07/02/species/
-    venue: The Bakery
+  - venue: The Bakery
     date: 2015-07-10
     adr: Denver, CO
     with:

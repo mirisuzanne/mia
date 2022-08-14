@@ -14,7 +14,7 @@ album:
     height: 307
 summary: |
   For a few years,
-  [Teacup Gorilla](../teacup-gorilla/)
+  [Teacup Gorilla](/orgs/teacup-gorilla/)
   performed & recorded music with
   Rachel Eisenstat --
   initially as **Iron City**,

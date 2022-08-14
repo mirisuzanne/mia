@@ -20,7 +20,6 @@ tags:
   - elit
 events:
   - venue: ELO Conference
-    url: https://conference.eliterature.org/archive/2014
     date: 2014-06-19
     video: https://youtu.be/yt37eIen7JU
     press: https://www.huffingtonpost.com/illya-szilak/
@@ -43,7 +42,7 @@ events:
     url: https://web.archive.org/web/20211018225949/http://www.springgunpress.com/issue-8-2013/eric-meyer/
     date: 2013-09-01
   - venue: Boulder Writer’s Workshop
-    url: https://www.boulderwritersworkshop.com/2013/04/17/post-obsolete-a-bww-salon/
+    url: https://web.archive.org/web/20190329025227/https://www.boulderwritersworkshop.com/2013/04/17/post-obsolete-a-bww-salon/
     date: 2013-04-17
     tags:
       - reading
@@ -76,7 +75,7 @@ press:
   - text: I was impressed by the purest form of outrageous creation.
     credit: Judy Rose
     venue: Boulder Writer’s Workshop
-    url: https://www.boulderwritersworkshop.com/2013/04/17/post-obsolete-a-bww-salon/
+    url: https://web.archive.org/web/20190329025227/https://www.boulderwritersworkshop.com/2013/04/17/post-obsolete-a-bww-salon/
     date: 2013-04-17
   - text: |
       Follow your bliss, Mia.
@@ -123,7 +122,7 @@ handouts,
 and music by [The Widow's Bane][bane].
 
 [post-obsolete]: https://www.post-obsolete.com
-[michelle]: https://michelleellsworth.com/
+[michelle]: http://michelleellsworth.com/
 [bane]: https://www.facebook.com/thewidowsbane/
 
 ---

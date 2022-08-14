@@ -29,7 +29,6 @@ events:
   - date: 2017-01-16
     adr: Philadelphia, PA
     venue: Wooden Shoe Books
-    url: https://woodenshoebooks.com/home.html
     tags:
       - _resistance tour
   - date: 2017-01-17

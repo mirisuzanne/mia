@@ -24,7 +24,7 @@ gallery:
 
 {% import "content.macros.njk" as content %}
 
-[Layer tennis](https://layertennis.com/)
+[Layer tennis](http://layertennis.com/)
 is a design game
 made popular by
 [Coudal Partners](https://www.coudal.com/).
@@ -35,7 +35,7 @@ Each 30-minute "volley" is posted live as it is created,
 along with commentary
 thanks to [Jacob Liechty](https://jacobliechty.tumblr.com/).
 
-[Sondra Eisenstat](https://sondraedesign.tumblr.com/)
+[Sondra Eisenstat](https://sondraeby.com/)
 agreed to help us
 with the thankless task of posting it all online,
 since the rest of us were pre-occupied

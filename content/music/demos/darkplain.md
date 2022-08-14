@@ -24,4 +24,4 @@ The first in a new set of demos:
 
 Hear studio recording of this track
 on our debut EP:
-[The Holes They Leave](/projects/holes-they-leave/)
+[The Holes They Leave](/2015/07/09/holes-they-leave/)

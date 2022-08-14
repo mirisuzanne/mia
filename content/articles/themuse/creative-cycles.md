@@ -17,11 +17,6 @@ divided:
 cycle:
   - img: muse/cycle-diagram.jpg
     alt: Is your approach working? Keep doing it, or try something else.
-elmo:
-  - iframe: https://www.youtube.com/embed/iZhEcRrMA-M
-    title: video of Elmo
-    width: 520
-    height: 390
 different:
   - iframe: https://www.youtube.com/embed/K2P86C-1x3o
     title: Monty Python video
@@ -126,11 +121,6 @@ When you hit a snag, step back and consider your approach.
 Often, an obstacle to the open mind
 can be overcome with a closed mind,
 and vice versa.
-
-{{ content.figure(
-  data=elmo,
-  caption='Let Elmo explain distance to you'
-) }}
 
 If I've been looking at the details,
 I step back and look at the project from a distance.

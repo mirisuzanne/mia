@@ -89,7 +89,7 @@ Somehow that all leads us here.
 An attempt at reviving
 something more alive
 _inside the archive itself_.
-[Adding WebMentions](indiweb/),
+[Adding WebMentions](/2022/06/04/indiweb/),
 cleaning up the RSS feed,
 and writing more...
 short notes?

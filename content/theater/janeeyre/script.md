@@ -1,6 +1,6 @@
 ---
 title: 'Script: JANE/EYRE'
-sub: A [queer adaptation](../) of the classic novel
+sub: A [queer adaptation](/theater/janeeyre/) of the classic novel
 type: script
 date: 2018-03-03
 hero:

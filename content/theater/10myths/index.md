@@ -47,7 +47,7 @@ press:
       talking about, and going to see.
     credit: Berlin Sylvestre
     venue: Out Front
-    url: https://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/
+    url: https://web.archive.org/web/20170622210402/http://www.outfrontonline.com:80/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/
     date: 2016-03-07
   - text: |
       An oddly satisfying dark comedy,
