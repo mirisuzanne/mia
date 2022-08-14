@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
 
 {% if tagData %}
 <ol>
-  {% for tag in tagData | publicTags | sortBy('count') | sortBy('top') | reverse %}
+  {% for tag in tagData | sortBy('count') | sortBy('top') | reverse %}
     <li>
       <a href="{{ tag.url | url }}">{{ tag.display }}</a>
       ({{ tag.count }} pages)

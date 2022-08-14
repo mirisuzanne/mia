@@ -14,7 +14,7 @@ module.exports = (eleventyConfig) => {
       ),
   );
 
-  eleventyConfig.addCollection('xml', (collection) =>
+  eleventyConfig.addCollection('_xml', (collection) =>
     collection
       .getAll()
       .filter((item) => intersection(item.data.tags || [], xmlTags).length)
