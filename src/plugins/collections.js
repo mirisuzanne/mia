@@ -1,6 +1,8 @@
 'use strict';
 
-const _ = require('lodash');
+const { intersection } = require('lodash');
+
+const xmlTags = ['_post', '_note', '_feed'];
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addCollection('orgs', (collection) =>
@@ -12,14 +14,10 @@ module.exports = (eleventyConfig) => {
       ),
   );
 
-  eleventyConfig.addCollection('feeds', (collection) =>
+  eleventyConfig.addCollection('xml', (collection) =>
     collection
       .getAll()
-      .filter(
-        (item) =>
-          _.intersection(item.data.tags || [], ['_post', '_note', '_feed'])
-            .length,
-      )
+      .filter((item) => intersection(item.data.tags || [], xmlTags).length)
       .sort((a, b) => a.date - b.date),
   );
 };
