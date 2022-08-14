@@ -38,7 +38,6 @@ events:
     date: 2019-03-18
     slides: https://talks.oddbird.net/user-unfriendly/agiledenver19
   - venue: AIGA Colorado
-    url: https://colorado.aiga.org/event/04-26-18-rethinking-ux-design/
     adr: Denver, CO
     date: 2018-04-26
     slides: https://oddbooksapp.com/release/e5bd52de-a9db-4e59-a2af-ffa8a68f9100

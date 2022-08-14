@@ -5,7 +5,6 @@ title: Riding SideSaddle*
 sub: A queer novel, in fragments of memory…
 date: 2015-04-02
 venue: SpringGun Press
-url: https://springgunpress.com
 hero:
   img: writing/sidesaddle/box.jpg
   alt:
@@ -29,7 +28,6 @@ events:
     type: reading
     venue: Buntport
     adr: Denver, CO
-    url: https://tracyshaffer.com/the-card-table/
     date: 2016-03-19
   - title: Fucking Fabulous Fiction Festival
     type: reading
@@ -144,7 +142,7 @@ Riding SideSaddle was
 [adapted for the stage][10myths] by [Buntport Theater][buntport],
 with original music by [Teacup Gorilla][tg].
 
-[Read the script »](script/)
+[Read the script »](/theater/10myths/script/)
 
 [10myths]: /theater/10myths/
 [buntport]: https://buntport.com/
@@ -182,7 +180,7 @@ and several [gallery shows](art/)…
 Riding SideSaddle* is an
 [open source text](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 published by
-[SpringGun Press](https://springgunpress.com),
+**SpringGun Press**,
 [released online](https://ridingsidesaddle.com)
 by [OddBird](https://oddbird.net/),
 and [adapted for the stage](/theater/10myths/)

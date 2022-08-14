@@ -23,7 +23,6 @@ events:
     slides: https://mirisuzanne.github.io/pres/show-yr-work/
   - title: Show Your Work & Share Your Toys
     venue: SassConf 2013
-    url: https://sassconf.com/2013/
     adr: New York, NY
     date: 2013-10-12
     slides: https://mirisuzanne.github.io/pres/show-yr-work/

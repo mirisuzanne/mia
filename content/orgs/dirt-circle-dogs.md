@@ -38,4 +38,4 @@ Aaron Liechty,
 and Miriam Suzanne.
 
 Daniel, Sondra, and Miriam have since become
-[Teacup Gorilla](../teacup-gorilla/).
+[Teacup Gorilla](/orgs/teacup-gorilla/).

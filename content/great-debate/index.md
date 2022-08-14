@@ -4,7 +4,7 @@ layout: format/h-feed
 title: The Great Debate
 sub: lively debates of the inconsequential
 venue: &venue Buntport Theater
-url: &url https://buntport.com/2018/09/third-tuesdays/
+url: &url https://buntport.com/2022/06/third-tuesdays-2/
 index: great debate
 hero:
   img: debate/frost-nixon.jpg
