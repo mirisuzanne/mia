@@ -1,7 +1,7 @@
 ---
 title: A Night of Grand Guignol
 venue: The Bakery
-url: http://www.pandemiccollective.org/2015---2016-season.html
+url: https://www.pandemiccollective.org/2015---2016-season.html
 date: 2016-08-18
 end: 2016-08-27
 tags:

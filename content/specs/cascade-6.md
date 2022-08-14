@@ -59,7 +59,7 @@ In Cascade Level 6
 we are developing a new native CSS approach to scope.
 
 [initial-spec]: https://www.w3.org/TR/css-scoping-1/
-[BEM]: http://getbem.com/
+[BEM]: https://getbem.com/
 [CSS Modules]: https://github.com/css-modules/css-modules
 [Styled Components]: https://styled-components.com/
 [Vue Scoped Styles]: https://vue-loader.vuejs.org/guide/scoped-css.html

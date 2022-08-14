@@ -33,7 +33,7 @@ summary: |
 > to be a play about what it means to be a woman.
 > It is and always has been a play about what it means to have a vagina.
 >
-> --[Eve Ensler](http://time.com/3672912/eve-ensler-vagina-monologues-mount-holyoke-college/)
+> --[Eve Ensler](https://time.com/3672912/eve-ensler-vagina-monologues-mount-holyoke-college/)
 
 In 2004,
 Eve Ensler wrote a trans monologue

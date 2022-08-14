@@ -23,7 +23,7 @@ events:
     slides: https://oddbooksapp.com/book/agile-design-vue
     date: 2018-04-05
   - venue: VueConf US
-    url: http://vueconf.us/
+    url: https://vueconf.us/
     adr: New Orleans, LA
     slides: https://oddbooksapp.com/release/9edb34c9-8789-4201-9f14-64bf5ab11b0a
     date: 2018-03-26

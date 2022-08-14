@@ -1,6 +1,6 @@
 ---
 title: Organizing Sass Partials
-slides: http://mirisuzanne.github.io/pres/sass-partials/
+slides: https://mirisuzanne.github.io/pres/sass-partials/
 tags:
   - code
   - sass

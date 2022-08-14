@@ -18,7 +18,7 @@ in order to run.
 
 [jina]: https://twitter.com/jina/status/225811628338323458
 [code]: https://gist.github.com/3140730
-[sass3]: http://rubygems.org/gems/sass
+[sass3]: https://rubygems.org/gems/sass
 
 
 ## Stripes Function
@@ -65,7 +65,7 @@ And how to use it:
 Jina has posted a demo and explanation
 on [CodePen][cp].
 
-[cp]: http://codepen.io/jina/pen/iosjp
+[cp]: https://codepen.io/jina/pen/iosjp
 
 (The real lesson here
 is that all the colors of the rainbow

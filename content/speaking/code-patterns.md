@@ -25,7 +25,7 @@ events:
     tags:
       - _resistance tour
   - venue: CSSDay.io
-    url: http://cssday.io/
+    url: https://cssday.io/
     adr: Chandler, AZ
     date: 2016-12-03
     slides: https://oddbooksapp.com/release/1f08a0cb-198f-4c5f-ac85-93e55daa471d
@@ -36,7 +36,7 @@ events:
     tags:
       - code video
   - venue: CascadiaFest
-    url: http://2016.cascadiafest.org/
+    url: https://2016.cascadiafest.org/
     date: 2016-08-03
     slides: https://oddbooksapp.com/release/3964dd55-982a-4171-a46b-6dd0354eac27
     embed: &cascadia
@@ -46,15 +46,15 @@ events:
     tags:
       - code video
   - venue: CSS Summit
-    url: http://environmentsforhumans.com/2016/css-summit/
+    url: https://environmentsforhumans.com/2016/css-summit/
     date: 2016-07-26
     slides: https://oddbooksapp.com/release/1f76aa54-df02-4f83-8a7b-c54e1c745fbf
   - venue: DublinCSS
-    url: http://www.meetup.com/DublinCSS/events/230011902/
+    url: https://www.meetup.com/DublinCSS/events/230011902/
     date: 2016-05-19
     slides: https://oddbooksapp.com/book/sass-patterns
   - venue: Clarity
-    url: http://clarityconf.com/
+    url: https://clarityconf.com/
     adr: San Francisco, CA
     date: 2016-03-31
     slides: https://oddbooksapp.com/release/ab1987b6-7d5f-42e4-b0ff-e7312cb345f6

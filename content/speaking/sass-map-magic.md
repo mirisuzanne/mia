@@ -17,7 +17,7 @@ events:
       width: 560
       height: 315
   - venue: CSS Summit
-    url: http://environmentsforhumans.com/2015/css-summit/
+    url: https://environmentsforhumans.com/2015/css-summit/
     adr: Online
     date: 2015-07-07
   - venue: Future Insights Live
@@ -25,13 +25,13 @@ events:
     date: 2015-06-02
   - venue: SassConf 2014
     adr: New York, NY
-    url: http://sassconf.com
+    url: https://sassconf.com
     date: 2014-10-02
   - venue: BlendConf
     adr: Charlotte, NC
-    url: http://www.blendconf.com/
+    url: https://www.blendconf.com/
     date: 2014-09-12
-    video: http://teamtreehouse.com/library/sass-map-magic
+    video: https://teamtreehouse.com/library/sass-map-magic
 summary: |
   Maps are a powerful data type in Sass --
   perfect for managing color and scale palettes,

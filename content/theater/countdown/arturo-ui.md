@@ -2,7 +2,7 @@
 title: (\#9) The Resistible Rise of Arturo Ui
 sub: A parable by Bertolt Brecht
 venue: Countdown to Zero
-url: http://countdowntozero.org/arturo-ui/
+url: https://countdowntozero.org/arturo-ui/
 date: 2008-05-16
 hero:
   img: art/theater/ctz/ui.png

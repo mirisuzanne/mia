@@ -14,7 +14,7 @@ tags:
 press:
   - credit: Eden Lane
     venue: 9 News
-    url: http://legacy.9news.com/story/life/2015/09/22/museum-and-theater-team-up-for-unique-collaboration/72653748/
+    url: https://legacy.9news.com/story/life/2015/09/22/museum-and-theater-team-up-for-unique-collaboration/72653748/
     date: 2015-09--22
 ---
 
@@ -26,7 +26,7 @@ created with [Buntport Theater][bt],
 and [Teacup Gorilla][tg].
 
 [museum]: https://clyffordstillmuseum.org/
-[bt]: http://buntport.com
-[tg]: http://teacupgorilla.com
-[hs]: http://lauraannsamuelson.com/LAURA_ANN_SAMUELSON/about.html
-[st]: http://screwtooth.com
+[bt]: https://buntport.com
+[tg]: https://teacupgorilla.com
+[hs]: https://lauraannsamuelson.com/LAURA_ANN_SAMUELSON/about.html
+[st]: https://screwtooth.com

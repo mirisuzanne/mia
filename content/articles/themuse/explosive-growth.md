@@ -94,7 +94,7 @@ If you can't think of anything to make,
 [find something to steal][steal].
 
 [cycles]: /2012/11/08/creative-cycles
-[steal]: http://www.austinkleon.com/steal/
+[steal]: https://www.austinkleon.com/steal/
 
 ## For Example
 
@@ -114,7 +114,7 @@ along with a number of images and songs.
 Some are stolen, and some are my own,
 but all of them will be useful when I come back to start drafting.
 
-[NaNoWriMo]: http://www.nanowrimo.org/
+[NaNoWriMo]: https://www.nanowrimo.org/
 
 ## Checking it Twice
 

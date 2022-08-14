@@ -12,7 +12,7 @@ press:
       of care and consideration.
     credit: Jack Walton
     venue: South Bend Tribune
-    _url: http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
+    _url: https://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
     date: 2006-01-29
 summary: |
   A sister and brother dig through the rubble of their lives…

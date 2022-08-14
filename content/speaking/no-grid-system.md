@@ -15,7 +15,7 @@ events:
     date: 2019-02-12
     slides: https://talks.oddbird.net/no-grid-system/covalence19/
   - venue: Covalence Conf
-    url: http://www.covalenceconf.com/
+    url: https://www.covalenceconf.com/
     adr: San Francisco, CA
     date: 2019-01-16
   - venue: Beyond Tellerand
@@ -43,7 +43,7 @@ events:
       width: 560
       height: 315
   - venue: CSS Dev Conf
-    url: http://2017.cssdevconf.com/
+    url: https://2017.cssdevconf.com/
     adr: New Orleans, LA
     date: 2017-10-09
     slides: https://oddbooksapp.com/release/0434d9c1-4e89-4827-abfc-4d3942fa305d

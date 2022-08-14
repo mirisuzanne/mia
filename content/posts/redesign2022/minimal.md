@@ -132,7 +132,7 @@ I hope to end up with an HTML architecture
 that feels more minimal --
 a blank canvas,
 that I can treat more like a
-[Zen Garden](http://www.csszengarden.com/)
+[Zen Garden](https://www.csszengarden.com/)
 or
 [Style Stage](https://stylestage.dev/)
 for my CSS.

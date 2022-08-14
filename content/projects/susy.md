@@ -32,7 +32,7 @@ press:
   - text: I like the idea of grids-on-demand, rather than a strict framework.
     credit: Chris Coyier
     venue: CSS Tricks
-    url: http://css-tricks.com/build-web-layouts-easily-susy/
+    url: https://css-tricks.com/build-web-layouts-easily-susy/
   - text: |
       My experiments have left me impressed.
       The current state of CSS layout
@@ -48,7 +48,7 @@ press:
       be sure to look at Susy's source code!
     credit: Kitty Giraudel
     venue: SitePoint
-    url: http://www.sitepoint.com/my-favorite-sass-tools/
+    url: https://www.sitepoint.com/my-favorite-sass-tools/
   - text: |
       Susy & Zendesk have been getting along magically…
       It's precisely what you need and nothing more.

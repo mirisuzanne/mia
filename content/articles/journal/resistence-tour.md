@@ -29,7 +29,7 @@ events:
   - date: 2017-01-16
     adr: Philadelphia, PA
     venue: Wooden Shoe Books
-    url: http://woodenshoebooks.com/home.html
+    url: https://woodenshoebooks.com/home.html
     tags:
       - _resistance tour
   - date: 2017-01-17
@@ -56,7 +56,7 @@ events:
   - date: 2017-01-23
     adr: Charlottesville, VA
     venue: Open Grounds
-    url: http://opengrounds.virginia.edu/
+    url: https://opengrounds.virginia.edu/
     tags:
       - _resistance tour
 summary: |
@@ -88,7 +88,7 @@ and find my people.
 [todo]: /2017/01/01/2017/
 
 Any profits will go to
-[one of these rad organizations](http://togetherlist.com/)
+[one of these rad organizations](https://togetherlist.com/)
 committed to empowering
 women, people of color, immigrants, queers, Muslims, and disabled people —
 or fighting climate change.

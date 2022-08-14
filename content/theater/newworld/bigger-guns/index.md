@@ -10,7 +10,7 @@ press:
   - title: Lights, No Cameras, Plenty of Action
     credit: Jeremy D. Bonfiglio
     venue: South Bend Tribune
-    url: http://articles.southbendtribune.com/2007-04-20/news/26771959_1_kung-fu-michelle-milne-lab-work
+    url: https://articles.southbendtribune.com/2007-04-20/news/26771959_1_kung-fu-michelle-milne-lab-work
     date: 2007-04-20
 summary: |
   A live action comedy,

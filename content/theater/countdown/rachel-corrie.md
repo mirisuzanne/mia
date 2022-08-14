@@ -2,7 +2,7 @@
 title: (\#10) My Name Is Rachel Corrie
 sub: Taken from the writings of Rachel Corrie
 venue: Countdown to Zero
-url: http://countdowntozero.org/rachel-corrie/
+url: https://countdowntozero.org/rachel-corrie/
 date: 2007-09-28
 hero:
   img: art/theater/ctz/rachel.png

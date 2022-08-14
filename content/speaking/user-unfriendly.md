@@ -52,7 +52,7 @@ events:
     date: 2018-04-05
     slides: https://www.oddbooksapp.com/book/mobile-prototype
   - venue: SassConf 2015
-    url: http://sassconf.com
+    url: https://sassconf.com
     adr: Austin, TX
     date: 2015-11-11
     slides: https://www.oddbooksapp.com/book/user-unfriendly

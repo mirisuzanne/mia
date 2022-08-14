@@ -2,7 +2,7 @@
 title: Starting from a Seed
 sub: Part 4 of [Fuck the Muse](/2012/10/16/muse-intro/)
 venue: The Operating System
-url: http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-4-starting-from-a-seed/
+url: https://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-4-starting-from-a-seed/
 date: 2012-12-13
 specimen:
   - img: muse/seed/specimen.jpg
@@ -42,8 +42,8 @@ define, and refine your seed.
 borrows from [Scientific Method][sci],
 starting with a question and related hypothesis.
 
-[lida]: http://lida.org/
-[sci]: http://en.wikipedia.org/wiki/Scientific_method
+[lida]: https://lida.org/
+[sci]: https://en.wikipedia.org/wiki/Scientific_method
 
 1. Formulate a *question*
 2. Do *background research*
@@ -58,12 +58,12 @@ starting with a question and related hypothesis.
 "why" then "how" and finally "what" -
 statements of belief, values, and finally product.
 
-[sinek]: http://startwithwhy.com/
+[sinek]: https://startwithwhy.com/
 
 [Anne Bogart][bogart] covers similar territory
 with her three-part seed:
 
-[bogart]: http://www.siti.org/
+[bogart]: https://www.siti.org/
 
 1. What is the *question* that motivates the piece?
 2. Who or what is the *anchor* through which we explore the question?
@@ -98,7 +98,7 @@ started with a quote I found on the internet:
 >
 > ---Jonathan Ned Katz, [The Invention of Heterosexuality][hetero]
 
-[hetero]: http://books.google.com/books?id=S8BB1K361SUC&lpg=PP1&pg=PA15#v=onepage&q&f=false
+[hetero]: https://books.google.com/books?id=S8BB1K361SUC&lpg=PP1&pg=PA15#v=onepage&q&f=false
 
 {{ content.figure(
   data=science,
@@ -109,7 +109,7 @@ I combined that with an article
 describing the [science of out-of-body experience][body].
 It raised some questions for me:
 
-[body]: http://www.scientificamerican.com/article.cfm?id=real-outof-body-experiences
+[body]: https://www.scientificamerican.com/article.cfm?id=real-outof-body-experiences
 
 - How do we relate to these bodies we live in?
 - What does it mean to identify with a body, let alone a sex or gender?
@@ -120,8 +120,8 @@ With a little *background research*
 (I used [Wikipedia][wiki], Google, and [my local bookstore][tattered]),
 the other pieces fell into place.
 
-[wiki]: http://en.wikipedia.org/
-[tattered]: http://tatteredcover.com/
+[wiki]: https://en.wikipedia.org/
+[tattered]: https://tatteredcover.com/
 
 {{ content.figure(
   data=herm,
@@ -138,9 +138,9 @@ The transformation of [Hermaphroditus][herm],
 [Mother Clap][molly]'s 18th-century [Molly Houses][house],
 and the songs of Tom Waits & Lou Reed.
 
-[herm]: http://en.wikipedia.org/wiki/Hermaphroditos
-[molly]: http://en.wikipedia.org/wiki/Mother_Clap
-[house]: http://en.wikipedia.org/wiki/Molly_house
+[herm]: https://en.wikipedia.org/wiki/Hermaphroditos
+[molly]: https://en.wikipedia.org/wiki/Mother_Clap
+[house]: https://en.wikipedia.org/wiki/Molly_house
 
 ## DI*yourself*
 

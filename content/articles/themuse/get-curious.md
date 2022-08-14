@@ -45,7 +45,7 @@ Don't start with drafts.
 Start with curiosity.
 
 [seed]: /2012/12/13/starting-from-a-seed/
-[draft]: http://www.humnet.ucla.edu/humnet/english/wwwroot2/ta/hyperteach/pdfs/shitty.pdf
+[draft]: https://www.humnet.ucla.edu/humnet/english/wwwroot2/ta/hyperteach/pdfs/shitty.pdf
 
 ## A Shitty Shopping List
 
@@ -109,8 +109,8 @@ That's not always the case,
 but if you have a seed,
 you have enough to get started.
 
-[springgun]: http://www.springgunpress.com/
-[network]: http://www.fenceportal.org/?page_id=422
+[springgun]: https://www.springgunpress.com/
+[network]: https://www.fenceportal.org/?page_id=422
 
 ## Sparking Curiosity
 

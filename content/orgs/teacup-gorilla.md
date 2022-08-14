@@ -24,7 +24,7 @@ press:
       And it sounds like nothing much else in this highly imitative era.
     venue: The Westword
     credit: Tom Murphy
-    url: http://www.westword.com/music/jen-korte-miriam-suzanne-daniel-eisenstat-sondra-eby-of-teacup-gorilla-release-music-video-9001887
+    url: https://www.westword.com/music/jen-korte-miriam-suzanne-daniel-eisenstat-sondra-eby-of-teacup-gorilla-release-music-video-9001887
   - text: |
       Reminiscent of late ‘90s punk
       with elements of spoken word combed through,
@@ -44,12 +44,12 @@ press:
       Expect performances that blend mediums, styles and disciplines.
     venue: The Westword
     credit: Luke Leavitt
-    url: http://www.westword.com/arts/music-art-and-words-are-in-the-cards-at-the-riding-sidesaddle-book-launch-6626798
+    url: https://www.westword.com/arts/music-art-and-words-are-in-the-cards-at-the-riding-sidesaddle-book-launch-6626798
   - text: |
       One of the most ambitious projects that has come across our desk recently.
     venue: Colorado Music Buzz
     credit: Tim Wenger
-    url: http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/
+    url: https://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/
 summary: |
   Teacup Gorilla inhabits the venues of Denver, CO
   with dark indie-rock soundscapes and evocative poetry --
@@ -82,7 +82,7 @@ with theaters, writers, dancers, and other artists.
   which received the True West Award.
 - **Spring 2018**
   we collaborated with Grapefruit Lab
-  to create [JANE/EYRE](http://localhost:8888/theater/janeeyre/),
+  to create [JANE/EYRE](https://localhost:8888/theater/janeeyre/),
   a concert/theater adaptation of the classic novel.
 
 Since then,

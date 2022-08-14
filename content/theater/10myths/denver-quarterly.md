@@ -11,10 +11,10 @@ tags:
 hero:
   img: 2017/denver-quarterly.jpg
 summary: |
-  The [Denver Quarterly](http://www.du.edu/denverquarterly/)
+  The [Denver Quarterly](https://www.du.edu/denverquarterly/)
   `vol 51 no 2` features
   side-by-side excerpts from
   [Riding SideSaddle*](/books/sidesaddle/),
-  and [Buntport](http://buntport.com)'s adaptation:
+  and [Buntport](https://buntport.com)'s adaptation:
   [10 Myths on the Proper Application of Beauty Products](/theater/10myths/).
 ---

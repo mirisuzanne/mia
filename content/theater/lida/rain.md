@@ -2,7 +2,7 @@
 title: RAIN/ of terror
 sub: Adapted from Georg Büchner’s Danton’s Death by Julie Rada
 venue: BINDERY | space
-url: http://lida.org/rain-of-terror/
+url: https://lida.org/rain-of-terror/
 adr: Denver, CO
 date: 2009-02-27
 end: 2009-03-21
@@ -23,7 +23,7 @@ press:
       Denver Post Ovation Award Nomination,
       Best Lighting Design
     credit: The Denver Post
-    url: http://www.denverpost.com/theater/ci_13971871
+    url: https://www.denverpost.com/theater/ci_13971871
 summary: |
   The citizens are easily roused and swayed,
   as a culture of fear infects the city

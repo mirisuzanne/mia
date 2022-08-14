@@ -1,7 +1,7 @@
 ---
 title: Your Own Damn [Susy] System
 sub: an introduction to the Susy layout toolkit
-url: http://mirisuzanne.github.io/pres/susy2/
+url: https://mirisuzanne.github.io/pres/susy2/
 tags:
   - code
   - susy
@@ -9,10 +9,10 @@ tags:
   - sass
 events:
   - venue: Bmore Sass
-    url: http://bmore-sass.com/
+    url: https://bmore-sass.com/
     adr: Baltimore, MD
     date: 2014-04-24
-    video: http://vimeo.com/miriamsuzanne/susy-2-system
+    video: https://vimeo.com/miriamsuzanne/susy-2-system
   - venue: The Mixin
     url: https://themixin.eventbrite.com/
     adr: San Francisco, CA

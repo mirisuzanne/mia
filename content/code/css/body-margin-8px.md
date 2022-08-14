@@ -410,7 +410,7 @@ Todd Fahrner in March of 1998 --
 >
 > ...
 >
-> [1] http://www.verso.com/agitprop/corestyle/base.html
+> [1] https://www.verso.com/agitprop/corestyle/base.html
 
 It's an email thread
 about the proper handling
@@ -427,10 +427,10 @@ to see if there was an archived copy --
 and there are several!
 
 First, I landed on
-[The Base Stylesheet - February 22, 1999](https://web.archive.org/web/19990222082453/http://www.verso.com/agitprop/corestyle/base.html),
+[The Base Stylesheet - February 22, 1999](https://web.archive.org/web/19990222082453/https://www.verso.com/agitprop/corestyle/base.html),
 which claims it was _last modified 7 November 1998_.
 Then I clicked through to the earliest archive of the page --
-[The Base Stylesheet - January 30, 1998](https://web.archive.org/web/19990222082453/http://www.verso.com/agitprop/corestyle/base.html) --
+[The Base Stylesheet - January 30, 1998](https://web.archive.org/web/19990222082453/https://www.verso.com/agitprop/corestyle/base.html) --
 which says it was _last modified 07/04/2022 16:39:51 GMT_
 (the exact moment I loaded the page).
 
@@ -453,7 +453,7 @@ every time we load the page?
 ### Final answer: the base stylesheet
 
 This is what we've been looking for:
-the [original default style sheet](https://web.archive.org/web/19990222082453/http://www.verso.com/agitprop/corestyle/base.html),
+the [original default style sheet](https://web.archive.org/web/19990222082453/https://www.verso.com/agitprop/corestyle/base.html),
 still under development.
 There are a few quotes that stand out:
 

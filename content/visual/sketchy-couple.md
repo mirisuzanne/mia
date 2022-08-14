@@ -28,5 +28,5 @@ by accidentally viewing all my sketches
 layered on top of each other.
 The rest was just a matter of cleanup.
 
-[tg]: http://teacupgorilla.com/
+[tg]: https://teacupgorilla.com/
 [kk]: /2012/10/18/kitten-karlyle/

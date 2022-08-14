@@ -2,9 +2,9 @@
 feature: true
 type: cover art
 title: The Posture of Contour
-sub: by [James Belflower](http://www.pw.org/content/james_belflower)
+sub: by [James Belflower](https://www.pw.org/content/james_belflower)
 venue: SpringGun Press
-url: http://www.springgunpress.com/posture/
+url: https://www.springgunpress.com/posture/
 date: 2013-01-22
 hero:
   img: art/design/contour.jpg
@@ -52,8 +52,8 @@ a new book by
 I used the opportunity to get my mind out of an all-digital space,
 and spent most of my time with pen, paper, and oil pastel.
 
-[springgun]: http://www.springgunpress.com/
-[james]: http://www.pw.org/content/james_belflower
+[springgun]: https://www.springgunpress.com/
+[james]: https://www.pw.org/content/james_belflower
 
 ## Sketches
 
@@ -63,7 +63,7 @@ over homemade (oil-pastel) carbon paper,
 then arrows traced on a third layer
 using my iPad as a light table.
 
-[blind contours]: http://en.wikipedia.org/wiki/Blind_contour_drawing
+[blind contours]: https://en.wikipedia.org/wiki/Blind_contour_drawing
 
 {{ content.figure(process.items, process.caption) }}
 

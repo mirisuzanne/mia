@@ -26,7 +26,7 @@ groups:
 herman:
   extraLinks:
     - name: 'Eleventy'
-      url: http://www.11ty.io
+      url: https://www.11ty.dev
     - name: 'Accoutrement'
       url: https://oddbird.net/accoutrement/
     - name: 'Herman'

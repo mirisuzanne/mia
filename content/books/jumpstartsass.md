@@ -31,7 +31,7 @@ summary: |
 {% import "macros/quote.njk" as quote %}
 {{ quote.list(press) }}
 
-[buy the book](http://shop.oreilly.com/product/9780994182678.do)
+[buy the book](https://shop.oreilly.com/product/9780994182678.do)
 or [download the e-book »](https://www.sitepoint.com/premium/books/jump-start-sass)
 
 ------

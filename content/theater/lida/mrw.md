@@ -4,7 +4,7 @@ sub: |
   a devised work of [The LIDA Project](/orgs/lida/)
   based on Georg Büchner’s *Woyzeck*
 venue: BINDERY | space
-url: http://lida.org/the-anonymous-mr-w/
+url: https://lida.org/the-anonymous-mr-w/
 adr: Denver, CO
 date: 2008-12-12
 end: 2008-12-13

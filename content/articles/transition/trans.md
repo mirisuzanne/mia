@@ -49,7 +49,7 @@ If ==you== do have appropriate questions,
 I'd love to talk!
 Some questions are better in person,
 but I'm always hanging out on
-[Twitter](http://twitter.com/TerribleMia) as well,
+[Twitter](https://twitter.com/TerribleMia) as well,
 and I have a [nifty contact form](/contact/)
 if you need it.
 
@@ -133,7 +133,7 @@ If you slip up,
 you may feel nervous or upset with yourself.
 ==I'm== not ==thinking about you== —
 I'm feeling guilty, sad, and worried about
-[what's going to happen next](http://www.jennamcwilliams.com/2016/08/07/what-do-to-if-you-use-the-wrong-pronouns-for-me/).
+[what's going to happen next](https://www.jennamcwilliams.com/2016/08/07/what-do-to-if-you-use-the-wrong-pronouns-for-me/).
 
 - Best case scenario, you correct yourself and move on.
 - Hopefully you'll slip the correct name/pronoun
@@ -223,14 +223,14 @@ I posted it on the internet for anyone to read.
 If you are interested in the specific meanings
 and political debates around trans terminology,
 I recommend starting with
-[Julia Serano](http://www.juliaserano.com/terminology.html)’s
+[Julia Serano](https://www.juliaserano.com/terminology.html)’s
 extensive writing on the topic.
 ==I recommend everything== Julia has written,
 especially her first book:
 [Whipping Girl](https://www.amazon.com/dp/1580056229/ref=pd_lpo_sbs_dp_ss_1/151-5666770-2045969).
-You can also read [Jennifer Boylan](http://www.jenniferboylan.net/),
-[Kate Bornstein](http://katebornstein.com/),
-and [Janet Mock](http://janetmock.com/),
+You can also read [Jennifer Boylan](https://www.jenniferboylan.net/),
+[Kate Bornstein](https://katebornstein.com/),
+and [Janet Mock](https://janetmock.com/),
 to list a few popular ones.
 Books and articles by cis people,
 ==about transgender people==,
@@ -252,7 +252,7 @@ and neither of them is binary.
 There is only gender,
 and it is always ==a rough approximation of==
 a million different factors:
-[social, biological, and experienced](http://juliaserano.blogspot.com/2013/11/what-is-gender-artifactualism.html).
+[social, biological, and experienced](https://juliaserano.blogspot.com/2013/11/what-is-gender-artifactualism.html).
 
 ==Sex is== something else entirely,
 and I recommend it,

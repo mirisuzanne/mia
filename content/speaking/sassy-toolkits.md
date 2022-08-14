@@ -7,26 +7,26 @@ tags:
   - sass
 events:
   - venue: Frontend Zurich
-    url: http://frontendconf.ch
+    url: https://frontendconf.ch
     adr: Zurich, Switzerland
     date: 2015-08-28
     video: https://www.youtube.com/watch?v=9w0pgUTYy5k
   - venue: WordCamp Denver
-    url: http://denver.wordcamp.org/2015/
+    url: https://denver.wordcamp.org/2015/
     adr: Denver, CO
     date: 2015-06-13
   - title: Show Your Work & Share Your Toys
     venue: Camp Sass
-    url: http://campsass.com/2014/
+    url: https://campsass.com/2014/
     adr: San Francisco, CA
     date: 2014-04-19
-    slides: http://mirisuzanne.github.io/pres/show-yr-work/
+    slides: https://mirisuzanne.github.io/pres/show-yr-work/
   - title: Show Your Work & Share Your Toys
     venue: SassConf 2013
-    url: http://sassconf.com/2013/
+    url: https://sassconf.com/2013/
     adr: New York, NY
     date: 2013-10-12
-    slides: http://mirisuzanne.github.io/pres/show-yr-work/
+    slides: https://mirisuzanne.github.io/pres/show-yr-work/
     video: https://vimeo.com/channels/sassconf2013/86306775
 ---
 

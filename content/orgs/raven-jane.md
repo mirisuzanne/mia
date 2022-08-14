@@ -3,7 +3,7 @@ title: Raven Jane
 sub: indie roots-rock featuring Rachel Eisenstat
 org: Multi-Instrumetalist
 venue: BandCamp
-url: http://www.ravenjane.com/
+url: https://www.ravenjane.com/
 date: 2010-09-14
 end: 2012-03-24
 hero:

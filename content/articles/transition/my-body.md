@@ -485,7 +485,7 @@ Nat says
 *Women can be anything.
 Transition first, then explore*.
 
-[kate]: http://www.huffingtonpost.com/entry/kate-bornstein-queer-icon-reflects-on-queer-and-trans-identity-in-2015_561823aae4b0e66ad4c7ff37
+[kate]: https://www.huffingtonpost.com/entry/kate-bornstein-queer-icon-reflects-on-queer-and-trans-identity-in-2015_561823aae4b0e66ad4c7ff37
 
 ------
 
@@ -598,7 +598,7 @@ My body was trans as a kid. \
 My body is trans now. \
 My body will always be trans.
 
-[male]: http://www.slate.com/blogs/outward/2016/07/19/there_s_no_such_thing_as_a_male_body.html
+[male]: https://www.slate.com/blogs/outward/2016/07/19/there_s_no_such_thing_as_a_male_body.html
 
 ------
 

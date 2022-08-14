@@ -3,7 +3,7 @@ title: Speaking of Pride
 sub: Minimalist music with fragments of memoir
 date: 2018-06-09
 adr: Denver, CO
-url: http://playgroundensemble.org/2018/05/speaking-of-pride/
+url: https://playgroundensemble.org/2018/05/speaking-of-pride/
 tags:
   - writing
   - transition
@@ -24,7 +24,7 @@ summary: |
   by the [Playground Ensemble][pe],
   with three works by LGBT authors and the composers.
 
-  [pe]: http://playgroundensemble.org/
+  [pe]: https://playgroundensemble.org/
 ---
 
 {% import "content.macros.njk" as content %}
