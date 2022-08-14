@@ -45,12 +45,12 @@ Jordan saved lives.
 I only saw her perform once,
 and it was amazing.
 She's also a great [writer][writer].
-I recommend a trip down her [rabbit hole][hole].
+I recommend a trip down the [rabbit hole][hole].
 Is that gross?
 It sounds gross.
 
-[writer]: https://harlot.media/articles/1385/on-the-joys-of-cis-people-telling-me-how-well-i-pass
-[hole]: https://wieleblog.tumblr.com
+[writer]: https://web.archive.org/web/20160317185330/https://harlot.media/articles/1385/on-the-joys-of-cis-people-telling-me-how-well-i-pass
+[hole]: https://web.archive.org/web/20161125111837/http://wieleblog.tumblr.com/
 
 > I look in the mirror
 > and see a person looking back at me every day,
@@ -69,4 +69,4 @@ It sounds gross.
 >
 > ---Jordan Wieleba, [The Happiest Place on Earth][happy]
 
-[happy]: https://wieleblog.tumblr.com/post/145865299161/the-happiest-place-on-earth
+[happy]: https://web.archive.org/web/20161021060932/http://wieleblog.tumblr.com/post/145865299161/the-happiest-place-on-earth

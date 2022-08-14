@@ -6,11 +6,9 @@ tags:
   - process
 events:
   - venue: Boost Biz Ed
-    url: https://boostbized.com/events/how-to-plan-a-web-project
     adr: Westminster, CO
     date: 2018-07-11
   - venue: EdTech Colorado
-    url: https://www.meetup.com/EducelerateCO/
     adr: Denver, CO
     date: 2017-12-12
 summary: |

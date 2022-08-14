@@ -12,10 +12,8 @@ tags:
   - lighting
 events:
   - venue: Boulder International Fringe Festival
-    url: https://www.boulderfringe.com/
     date: 2009-08-14
   - venue: BINDERY | space
-    url: https://www.boulderfringe.com/
     date: 2009-09-27
 gallery:
   - img: art/theater/murder/amol-2.jpg

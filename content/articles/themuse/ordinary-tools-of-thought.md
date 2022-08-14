@@ -78,7 +78,7 @@ sparking off ideas and slipping towards other ideas —
 copying, transforming, & combining
 into new ideas.
 
-[Metamagical Themas]: https://books.google.com/books/about/Metamagical_Themas.html?id=o8jzWF7rD6oC
+[Metamagical Themas]: https://en.wikipedia.org/wiki/Metamagical_Themas
 
 
 ## The Art is Inevitable

@@ -4,7 +4,7 @@ type: cover art
 title: The Posture of Contour
 sub: by [James Belflower](https://www.pw.org/content/james_belflower)
 venue: SpringGun Press
-url: https://www.springgunpress.com/posture/
+url: https://web.archive.org/web/20211018235743/https://www.springgunpress.com/posture/
 date: 2013-01-22
 hero:
   img: art/design/contour.jpg
@@ -44,7 +44,7 @@ final:
 {% import "content.macros.njk" as content %}
 
 The editors at
-[SpringGun Press][springgun] asked me
+SpringGun Press asked me
 to design cover art
 for _The Posture of Contour_,
 a new book by
@@ -52,7 +52,6 @@ a new book by
 I used the opportunity to get my mind out of an all-digital space,
 and spent most of my time with pen, paper, and oil pastel.
 
-[springgun]: https://www.springgunpress.com/
 [james]: https://www.pw.org/content/james_belflower
 
 ## Sketches

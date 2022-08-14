@@ -25,7 +25,6 @@ events:
     media: &csscafe
       iframe: https://www.youtube.com/embed/ilR9KlsHMGk
   - venue: Front Range Front-End
-    url: https://www.meetup.com/front-range-front-end/events/kvckcsyccjbfb/
     date: 2021-06-03
     adr: Online
     slides: https://slides.oddbird.net/css-next/front-range/

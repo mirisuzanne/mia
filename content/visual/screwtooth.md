@@ -11,24 +11,24 @@ hero:
   caption: The full sci-fi art installation at Buntport Theater
 gallery:
   - img: prophetia/st01.jpg
-    url: https://miriamsuzanne.square.site/item/the-monster-print
+    url: https://miriamsuzanne.square.site/product/the-monster-print/3?cs=true&cst=custom
   - img: prophetia/st02.jpg
-    url: https://miriamsuzanne.square.site/item/the-scientist-print
+    url: https://miriamsuzanne.square.site/product/the-scientist-print/11?cs=true&cst=custom
   - img: prophetia/st03.jpg
-    url: https://miriamsuzanne.square.site/item/the-man-print
+    url: https://miriamsuzanne.square.site/product/the-man-print/1?cs=true&cst=custom
   - img: prophetia/st04.jpg
-    url: https://miriamsuzanne.square.site/item/the-humans-print
+    url: https://miriamsuzanne.square.site/product/the-humans-print/2?cs=true&cst=custom
   - img: prophetia/st05.jpg
-    url: https://miriamsuzanne.square.site/item/the-threat-print
+    url: https://miriamsuzanne.square.site/product/the-threat-print/10?cs=true&cst=custom
   - img: prophetia/st06.jpg
-    url: https://miriamsuzanne.square.site/item/the-cancer-print
+    url: https://miriamsuzanne.square.site/product/the-cancer-print/8?cs=true&cst=custom
   - img: prophetia/st07.jpg
-    url: https://miriamsuzanne.square.site/item/the-battle-print
+    url: https://miriamsuzanne.square.site/product/the-battle-print/17?cs=true&cst=custom
   - img: prophetia/st08.jpg
-    url: https://miriamsuzanne.square.site/item/the-survivors-print
+    url: https://miriamsuzanne.square.site/product/the-survivors-print/18?cs=true&cst=custom
 summary: |
   Story panels for PROPHETIA VETITUM MUNDI
-  ([available as prints](htps://art.miriamsuzanne.com))
+  ([available as prints](https://miriamsuzanne.square.site/))
 ---
 {% import "content.macros.njk" as content %}
 

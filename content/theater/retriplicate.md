@@ -2,7 +2,7 @@
 title: ReTriplicate
 hero:
   img: projects/clyffordstill.jpg
-url: https://clyffordstillmuseum.org/retriplicate-reflects-on-clyfford-stills-replicates-and-the-artistic-process/
+url: https://buntport.com/
 venue: Buntport Theater
 date: 2015-09-24
 tags:
@@ -16,6 +16,10 @@ press:
     venue: 9 News
     url: https://legacy.9news.com/story/life/2015/09/22/museum-and-theater-team-up-for-unique-collaboration/72653748/
     date: 2015-09--22
+  - credit: Kristin Feldkamp
+    venue: Clyfford Still Museum
+    url: https://clyffordstillmuseum.org/blog/retriplicate-reflects-on-clyfford-stills-replicas-and-the-artistic-process/
+    date: 2015-09-25
 ---
 
 A multimedia reflection on the
@@ -28,5 +32,5 @@ and [Teacup Gorilla][tg].
 [museum]: https://clyffordstillmuseum.org/
 [bt]: https://buntport.com
 [tg]: https://teacupgorilla.com
-[hs]: https://lauraannsamuelson.com/LAURA_ANN_SAMUELSON/about.html
+[hs]: https://lauraannsamuelson.com/about
 [st]: https://screwtooth.com

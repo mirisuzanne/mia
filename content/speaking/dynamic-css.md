@@ -55,7 +55,6 @@ events:
     end: 2019-03-27
     slides: https://talks.oddbird.net/dynamic-css/vueconf19/
   - venue: Front Range Front-End
-    url: https://www.meetup.com/front-range-front-end/events/chtxtpyxpbcb/
     adr: Denver, CO
     date: 2018-11-01
     slides: https://talks.oddbird.net/dynamic-css/frontrange18/

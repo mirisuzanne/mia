@@ -8,7 +8,7 @@ sub: |
 hero:
   img: art/theater/10myths.jpg
 venue: Buntport Theater
-url: https://buntport.com/archive/10myths.htm
+url: https://buntport.com/2016/03/10-myths-proper-application-beauty-products/
 date: 2016-03-04
 end: 2016-03-26
 tags:
@@ -72,7 +72,7 @@ press:
     credit: Bob Bows
     date: 2016-03-17
   - venue: 5280 Magazine
-    url: https://www.5280.com/digital/2016/03/hinging-myth
+    url: https://www.5280.com/2016/03/hinging-on-a-myth/
     credit: Gina Gresko
     date: 2016-03-04
   - venue: Met Media

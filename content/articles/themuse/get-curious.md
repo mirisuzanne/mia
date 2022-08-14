@@ -79,7 +79,7 @@ Based on their answers, I ended up with these lists:
 **What already exists?**
 
 - Dimensions: 5.5" x 8.5"
-- [SpringGun Press][springgun] wordmarks
+- SpringGun Press wordmarks
 - ISBN & bar code (on white background)
 - Title: The Posture of Contour
 - Subtitle: A Public Primer
@@ -109,7 +109,6 @@ That's not always the case,
 but if you have a seed,
 you have enough to get started.
 
-[springgun]: https://www.springgunpress.com/
 [network]: https://www.fenceportal.org/?page_id=422
 
 ## Sparking Curiosity
