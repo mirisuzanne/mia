@@ -1,85 +1,5 @@
 {% import "utility.macros.njk" as utility %}
 
-
-{#
-  Quote
-  -----
-#}
-{% macro quote(
-  data
-) -%}
-<blockquote>
-{{ data.text | md | safe }}
-<p>{{ '---' | mdInline }}<cite>{{ cite(data) | mdInline | safe }}</cite></p>
-</blockquote>
-{%- endmacro %}
-
-
-{% macro cite(
-  data
-) -%}
-{%- set where -%}
-{{ data.venue | safe }}{% if data.venue and data.title %}: {% endif %}{{ data.title | safe }}
-{%- endset -%}
-{%- set where = where if (data.venue or data.title) else none -%}
-
-{%- if data.credit and where and data.url -%}
-{{ data.credit }}, [{{ where }}]({{ data.url }})
-{%- elif data.credit and where -%}
-{{ data.credit }}, {{ where }}
-{%- elif data.credit and data.url -%}
-[{{ data.credit }}]({{ data.url }})
-{%- elif where and data.url -%}
-[{{ where }}]({{ data.url }})
-{%- else -%}
-{{ data.credit or where or data.url }}
-{%- endif -%}
-{%- endmacro %}
-
-
-{% macro quotes(
-  data
-) %}
-{% for item in data -%}
-{%- if item.text -%}
-{{ quote(item) }}
-{%- endif -%}
-{% endfor -%}
-{% endmacro %}
-
-
-{% macro media(
-  src,
-  alt='',
-  align=none,
-  embed=false,
-  class=none,
-  content=none,
-  img_class='',
-  attrs={},
-  size=none
-) %}
-{%- set content = content if (content != none) else caller() -%}
-{%- set align = ('--align: %s;' % align) if align else none -%}
-{%- set attrs = {
-  'class': [img_class, 'media-image'] | join(' ')
-} | merge(attrs) -%}
-<div data-media="" {{ utility.attr_if('style', align) }} {{ utility.attr_if('class', class) }}>
-{%- if embed == 'src' -%}
-{{ src | safe }}
-{%- elif embed -%}
-<div class="media-image">
-{%- include src -%}
-</div>
-{%- else -%}
-{{ src | img(alt, 'media', attrs, size) | safe }}
-{%- endif -%}
-<div class="media-text">
-{{ content | safe }}
-</div>
-</div>
-{% endmacro %}
-
 {#
   Erase
   -----
@@ -102,7 +22,7 @@
   grid=true,
   content=none
 ) -%}
-{%- set content = _fig_content(data) if data else content or caller() | mdInline -%}
+{%- set content = _fig_content(data) if data else content -%}
 <figure>
   {%- if grid -%}
     <div class="gallery">
@@ -132,7 +52,9 @@ params:
   alt=none
 ) -%}
   {%- include path + '.svg' -%}
-  {% if alt %}<span class="visually-hidden">{{ alt }}</span>{% endif %}
+  {%- if alt -%}
+    <span class="visually-hidden">{{ alt }}</span>
+  {%- endif -%}
 {%- endmacro %}
 
 
@@ -171,7 +93,7 @@ params:
   {%- set style = {
     '--ratio': [width, height] | join('/'),
     '--span': span
-  } -%}
+  } | styles -%}
 
   {%- set attrs = {
     'src': src,
@@ -181,9 +103,10 @@ params:
     'frameborder': '0',
     'webkitallowfullscreen': true,
     'mozallowfullscreen': true,
-    'allowfullscreen': true
+    'allowfullscreen': true,
+    'style': style
   } -%}
-  <iframe {{ utility.show_attrs(attrs) }} {{ utility.style_if(style) }}></iframe>
+  <iframe {{ utility.show_attrs(attrs) }}></iframe>
 {% endmacro %}
 
 {# @docs

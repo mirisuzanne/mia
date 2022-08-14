@@ -25,8 +25,9 @@ album:
 ---
 
 {% import "content.macros.njk" as content %}
+{% import "macros/quote.njk" as quote %}
 
-{{ content.quotes(press) }}
+{{ quote.list(press) }}
 
 ------
 

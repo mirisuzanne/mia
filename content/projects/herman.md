@@ -24,7 +24,6 @@ summary: |
   but often rely on dedicated
   teams and extended budgets.
 ---
-{% import "content.macros.njk" as content %}
 
 We wanted a tool that helps create and maintain
 living style guides & pattern libraries in an
@@ -35,4 +34,5 @@ as you iterate on patterns and scale over time.
 
 ------
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}

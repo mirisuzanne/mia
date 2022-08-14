@@ -29,7 +29,6 @@ summary: |
   as a culture of fear infects the city
   with the constant threat of execution.
 ---
-{% import "content.macros.njk" as content %}
 
 During the chaos of the Revolution,
 a man in isolation has left the political scene
@@ -48,4 +47,5 @@ corruption, and bloodshed.
 
 ------
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}

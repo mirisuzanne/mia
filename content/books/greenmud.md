@@ -33,8 +33,8 @@ summary: |
   A love story, and an after-love story --
   told wiith poetry and pictures.
 ---
-{% import "content.macros.njk" as content %}
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 [Read the novel »](http://greengreenmud.com/)

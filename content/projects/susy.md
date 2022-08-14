@@ -70,11 +70,9 @@ summary: |
   Susy has become one of the
   most popular layout frameworks on the web.
 ---
-{% import "content.macros.njk" as content %}
 
-------
-
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

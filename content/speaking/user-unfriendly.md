@@ -72,6 +72,7 @@ media:
   - span: full
     <<: *drupal
 ---
+
 {% import "content.macros.njk" as content %}
 
 The web is more than a technology platform,
@@ -92,7 +93,8 @@ and designing for edge-cases with integrated teams.
 
 ------
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

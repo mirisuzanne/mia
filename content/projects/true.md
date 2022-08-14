@@ -24,8 +24,6 @@ summary: |
   Advanced features are available
   with our JS test-runner integration.
 ---
-{% import "content.macros.njk" as content %}
 
-------
-
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}

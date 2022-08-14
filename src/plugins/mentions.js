@@ -83,10 +83,10 @@ const webMentions = (mentions) => {
     .map(clean);
 };
 
-module.exports = {
-  forUrl,
-  authors,
-  likes,
-  reposts,
-  webMentions,
+module.exports = (eleventyConfig) => {
+  eleventyConfig.addFilter('mentionsForUrl', forUrl);
+  eleventyConfig.addFilter('webLikes', likes);
+  eleventyConfig.addFilter('webReposts', reposts);
+  eleventyConfig.addFilter('webAuthors', authors);
+  eleventyConfig.addFilter('webMentions', webMentions);
 };

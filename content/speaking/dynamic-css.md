@@ -128,6 +128,7 @@ media:
   - <<: *fsfest
   - <<: *jsconf
 ---
+
 {% import "content.macros.njk" as content %}
 
 It's time to start moving style logic
@@ -147,7 +148,8 @@ without all the invasive Javascript.
 
 ------
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

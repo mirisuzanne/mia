@@ -49,7 +49,6 @@ summary: |
   and performant web applications
   with a human-centered design.
 ---
-{% import "content.macros.njk" as content %}
 
 Over the years, we’ve become industry leaders --
 creating and contributing to
@@ -78,4 +77,5 @@ to follow that work as it develops.
 
 ---
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}

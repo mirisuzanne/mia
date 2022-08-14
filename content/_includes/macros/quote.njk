@@ -1,0 +1,54 @@
+{% macro list(
+  data
+) %}
+{%- for item in data -%}
+  {{- block(item) -}}
+{%- endfor -%}
+{% endmacro %}
+
+{% macro block(
+  data
+) -%}
+{%- if data.text -%}
+  <blockquote>
+    {{- data.text | md | safe -}}
+    {{- cite(data) -}}
+  </blockquote>
+{%- endif -%}
+{%- endmacro %}
+
+{% macro cite(
+  data
+) %}
+{%- set citation = _cite(data) -%}
+{%- if citation -%}
+  <p class='cite'>&mdash;{{ _cite(data) | mdInline | safe }}</p>
+{%- endif -%}
+{% endmacro %}
+
+{% macro _cite(
+  data
+) -%}
+{%- set where = _where(data) -%}
+{%- if data.credit and where and data.url -%}
+{{ data.credit }}, [{{ where }}]({{ data.url }})
+{%- elif data.credit and where -%}
+{{ data.credit }}, {{ where }}
+{%- elif data.credit and data.url -%}
+[{{ data.credit }}]({{ data.url }})
+{%- elif where and data.url -%}
+[{{ where }}]({{ data.url }})
+{%- else -%}
+{{ data.credit or where or data.url }}
+{%- endif -%}
+{%- endmacro %}
+
+{% macro _where(
+  data
+) %}
+{%- if (data.venue or data.title) -%}
+  {{- data.venue | safe -}}
+  {%- if data.venue and data.title %}: {% endif -%}
+  {{- data.title | safe -}}
+{%- endif -%}
+{% endmacro %}

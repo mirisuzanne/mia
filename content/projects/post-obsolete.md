@@ -108,6 +108,7 @@ summary: |
   documented on the cloud,
   and open-sourced as a defense against post-post-obsolescence.
 ---
+
 {% import "content.macros.njk" as content %}
 
 The Post-Obsolete Book is
@@ -128,7 +129,8 @@ and music by [The Widow's Bane][bane].
 
 ---
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ---
 

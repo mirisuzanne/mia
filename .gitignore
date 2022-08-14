@@ -2,6 +2,12 @@ _site
 _built
 .cache
 
+# Netlify generated stuff
+.netlify/
+
+# Eleventy Edge Build Data files
+netlify/edge-functions/_generated
+
 # Logs
 logs
 *.log
@@ -63,6 +69,3 @@ typings/
 
 # next.js build output
 .next
-
-# Local Netlify folder
-.netlify

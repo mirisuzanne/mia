@@ -24,9 +24,8 @@ press:
     venue: Denver Syntax
 ---
 
-{% import "content.macros.njk" as content %}
-
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

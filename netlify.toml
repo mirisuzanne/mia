@@ -14,5 +14,6 @@ package = "netlify-plugin-cache"
     ".cache" # Remote Asset Cache
   ]
 
-[[plugins]]
-package = "netlify-plugin-debug-cache"
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/"

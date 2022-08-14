@@ -1,9 +1,6 @@
 ---
-title: Teacup Gorilla
-banner: Teacup Gorilla Show Archive
-date: 2010-03-25
-tags:
-  - teacup gorilla
+nav_only: true
+title: Teacup Gorilla Show Archive
 events:
   - title: Music & Poetry Showcase
     image: shows/2019/joel.jpg

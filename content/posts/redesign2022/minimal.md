@@ -69,7 +69,7 @@ a complete overhaul of the site,
 inside and out.
 The demolition was extensive,
 and I likely
-[broke a few promises]({% page_url 'posts/hit-publish' %}).
+[broke a few promises](/2022/06/17/hit-publish/).
 
 This time
 I plan to leave all the
@@ -124,7 +124,7 @@ Specifically, I want to:
 - Simplify complex Nunjucks templates
 - Strip out any HTML that is not absolutely essential
 - Improve my use of [microformats](https://microformats.org/)
-- Rethink how [WebMentions]({% page_url 'indieweb/indiweb' %}) are displayed
+- Rethink how [WebMentions](/2022/06/04/indiweb/) are displayed
 - Rethink how user design customizations are provided
 - Always improve accessibility where I can
 
@@ -178,7 +178,7 @@ Things like
 `min()`/`max()` & `clamp()`,
 variable fonts,
 `color-scheme`/`accent-color`,
-and [Cascade Layers]({% page_url 'css-tricks/layers-guide' %}).
+and [Cascade Layers](/2022/02/21/layers-guide/).
 Some of those were already
 being used in the old design,
 but this time I get to design around them from the start.
@@ -231,7 +231,7 @@ while I rethink the approach.
 I'd also like to expose the ways
 a CSS design is _layered_ --
 from specified initial values,
-[user agent defaults]({% page_url 'css/body-margin-8px' %}),
+[user agent defaults](/2022/07/04/body-margin-8px/),
 resets, global typography,
 layouts, components, etc.
 _It's a cascade!_

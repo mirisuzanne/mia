@@ -100,6 +100,7 @@ media:
   - <<: *clarity
   - <<: *django
 ---
+
 {% import "content.macros.njk" as content %}
 
 For those few cases where a grid really is required,
@@ -115,7 +116,8 @@ and how to get started with only a few lines of code.
 
 ------
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

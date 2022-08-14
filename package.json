@@ -48,20 +48,20 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
+    "@fontsource/alegreya": "^4.5.7",
+    "@fontsource/jetbrains-mono": "^4.5.9",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.0-14",
     "@rollup/plugin-node-resolve": "^13.1.3",
-    "accoutrement": "^4.0.0",
-    "cascading-color-systems": "^0.1.0-beta.14",
     "chokidar-cli": "^2.0.0",
     "core-js": "^3.3.2",
     "cssremedy": "^0.1.0-beta.2",
+    "dotenv": "^16.0.1",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-simple-import-sort": "^5.0.2",
-    "fontfaceobserver": "^2.1.0",
     "husky": "^4.2.3",
     "js-yaml": "^3.13.1",
     "lint-staged": "^10.0.8",
@@ -75,6 +75,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "rollup": "^2.1.0",
+    "sanitize-html": "^2.7.0",
     "sass": "^1.54.0",
     "sassdoc": "^2.7.1",
     "sassdoc-theme-herman": "^4.0.2",
@@ -100,11 +101,5 @@
     "*.{json,yml}": [
       "prettier --write"
     ]
-  },
-  "dependencies": {
-    "@fontsource/alegreya": "^4.5.7",
-    "@fontsource/jetbrains-mono": "^4.5.9",
-    "dotenv": "^16.0.1",
-    "sanitize-html": "^2.7.0"
   }
 }

@@ -23,10 +23,8 @@
 {% macro style_if(
   style
 ) -%}
-  {%- set style = style | compactObject -%}
-  {%- if style -%}
-    style="{%- for prop, val in style -%}{{ prop }}: {{ val }};{%- endfor -%}"
-  {%- endif -%}
+  {%- set style = style | styles -%}
+  {%- if style -%}style="{{ style }}"{%- endif -%}
 {%- endmacro %}
 
 {% macro link_if(
@@ -130,7 +128,7 @@
     <time {{ show_attrs(start_attrs) }}>
       {{- start | date(start_format) -}}
     </time>
-    {{- '--' | typogr | safe -}}
+    &ndash;
     <time class="dt-end" datetime="{{ end | date('iso') }}">
       {{- end | date(end_format) -}}
     </time>

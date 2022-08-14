@@ -27,9 +27,9 @@ summary: |
   Co-writen with my friend
   [Kitty Giraudel](https://kittygiraudel.com/).
 ---
-{% import "content.macros.njk" as content %}
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 [buy the book](http://shop.oreilly.com/product/9780994182678.do)
 or [download the e-book »](https://www.sitepoint.com/premium/books/jump-start-sass)

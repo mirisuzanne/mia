@@ -116,6 +116,7 @@ summary: |
   [buntport]: http://buntport.com
   [teacup]: http://teacupgorilla.com
 ---
+
 {% import "content.macros.njk" as content %}
 
 [Read the script »](script/)
@@ -124,7 +125,8 @@ summary: |
 
 {{ content.figure(award.fig, award.caption) }}
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

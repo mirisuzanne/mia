@@ -54,6 +54,7 @@ media:
   - span: full
     <<: *vue
 ---
+
 {% import "content.macros.njk" as content %}
 
 We don’t all have dedicated teams and budgets
@@ -64,11 +65,12 @@ living design systems in an agile and integrated process?
 
 - Using templates and pre-processors for pattern-making in CSS and HTML.
 - Designing and integrating toolkits that force pattern-making.
-- Examples of what weve done, where weve failed, and where were headed.
+- Examples of what we've done, where we've failed, and where we're headed.
 
 ------
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ------
 

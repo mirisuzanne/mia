@@ -8,6 +8,7 @@ summary: |
   ==We fall== between meanings,
   and explore outside them.
 ---
+
 {% import "content.macros.njk" as content %}
 
 That, to me, is ==beautiful.==
@@ -20,11 +21,7 @@ that remains —
 what manifestos can never say.
 Because understanding is not a pre-requisite for humanity.
 
-We must abolish the police in every corner,
-and continue to fight together
-for the liberation of everyone.
-_Freedom is a constant struggle._
+Abolish the police,
+and the concept of policing.
 
-{% call content.place(width='50%') %}
 {% include 'icons/miriam-sig.svg' %}
-{% endcall %}

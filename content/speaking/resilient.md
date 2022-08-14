@@ -39,7 +39,8 @@ summary: |
 ---
 
 {% import "content.macros.njk" as content %}
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 Join Miriam for a deep-dive into the heart of CSS:
 how it works, what makes it special,

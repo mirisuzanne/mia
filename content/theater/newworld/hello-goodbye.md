@@ -18,6 +18,5 @@ summary: |
   A sister and brother dig through the rubble of their lives…
 ---
 
-{% import "content.macros.njk" as content %}
-
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}

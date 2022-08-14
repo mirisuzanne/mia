@@ -4,83 +4,143 @@ title: Swiss Army knives vs Octopuses
 date: 2022-08-10T17:22:20-06:00
 ---
 
-Did you know the Swiss have an army?
-I kinda thought they didn't,
-which would be cool.
-But they do,
-it's just really small
-and frankly
-(thanks to Victorinox & Wenger):
-_well-prepared_.
+Did you know the Swiss have an Army?
+They do.
+And frankly,
+they're _really well well-prepared_.
 
-Yeah, there's two companies involved here --
-or there were.
-Victorinox made the first model for the Swiss Army,
-later splitting the contract with Wenger,
-and eventually buying them out.
+img: search result watches & knives
 
-There have been 5 primary models
-of the _soldier knife_ --
-let's please try to be specific with our language here --
-since it was first issued in 1891.
-And still today,
-they're considered _essential for survival_ --
-issued to every recruit or member
-of the Swiss Army.
+For _anything_.
 
-You can use one of these
-practical suckers
-to cut, saw, open, strip, punch, and screw
-to your hearts delight.
-And it all fits on a keychain!
+img: watch on surfer
 
-The American colloquial term 'Swiss Army Knife'
-was coined by soldiers in World War Two,
-out of admiration for these handy devices --
-and now refers to basically any penknife
-with more than a single blade,
-as long as you put a little red cross on it.
+They know what time it is,
 
-And clearly Victorinox & Wenger both
-have a great sense of humor about this --
-making a wide variety of
-action-packed penknife multitools,
-like the one with a thumb drive and laser pointer,
-several with butane lighters,
-or barometers and alarm clocks,
-and then this 'champ',
-and the world-record-holding Giant.
+img: opening wine bottle
 
----
+And they know how to open a
+bottle of wine.
 
-But this isn't an episode of Survivor!
-It's some weird mashup cross-over where
-_MacGyver-does-Tool Time_ meets
+img: Karl
+
+All thanks to Karl Elsener,
+who basically invented knives.
+
+You can do just about anything
+with one of these --
+
+img: woman-apple
+
+Cut an apple, sure.
+
+img: woman-radio
+
+Fix a radio.
+
+img: woman-skateboard
+
+Carve a skateboard by hand.
+Oh, and don't worry boys --
+
+img: unisex
+
+the latest model is unisex,
+
+img: mcg-confused
+
+so you can get in on the action, too.
+
+img: mcg-nose
+
+Just don't stick em up your nose.
+That's not safe.
+
+------
+
+img: website-attitude
+
+> Karl Elsener didn’t just invent a knife,
+> he invented an attitude.
+
+img: attitude-men
+
+Before Karl, people sat around
+with basically no attitude at all,
+then he comes along --
+
+img: model-1890
+
+adds a reamer to a penknife,
+and boom.
+
+img: attitude-eyes
+
+Attitude.
+
+imgs: all the attitude pics
+
+img: octo-wine-mom
+
+No, Karen,
+that's not an attitude,
+that's a t-shirt.
+
+Victorinox made the first _Soldier knife_ --
+let's please try to be specific with our language here.
+It was commissioned by the Swiss Army in 1891,
+and is still considered
+
+img: survivor
+
+_essential for survival_.
+
+But honestly,
+this debate isn't about
+Swiss military history,
+or brilliant inventors,
+it's more like --
+
+img: macgyver tool time
+
+_MacGyver's Tool Time_ vs --
+
+img: naked and afraid
+
 _Shark-Week, Naked and Afraid_.
 
-MacGyver loves these things,
-and always has.
-There are websites dedicated
-to all the different Victorinox
-models used in every episode of the show.
+They do look afraid, don't they?
+What's in the box?
 
-https://www.macgyveronline.com/macgyververse/equipmenttech/saks-used-in-each-episode/
-https://forum.multitool.org/index.php?topic=79050.0
+img: naked-afraid-octo
 
-You know what show I like?
+Oh fuck!
 
----
-
-But let's talk about this 'debate'
+Anyway,
+let's talk about this 'debate'
 for a bit.
 
-Octopus vs Swiss Army Knife.
+On the one hand,
+Swiss Army Knife… knives?
+Yeah, Swiss Army Knives.
+vs, uh…
+Octo… pus? -puses?
+Octopods? - podes?
+Octopi?
 
-Both are pretty cool,
+No that would require
+a latin second declension,
+and I think we're dealing with
+a Greek third?
+
+Fuck it, whatever.
+
+On the surface,
+both seem pretty cool --
 but you're only gonna take one of them along
 when you go camping.
 
-Ok, let's approach this logically.
+Let's approach this logically.
 Just the facts, please, everyone.
 
 An octopus has 8 limbs.
@@ -90,44 +150,49 @@ An octopus with eight Swiss Army Knives
 has a eight tools _per limb_.
 Each limb is basically sentient,
 and now --
-thanks to Victorinox & Werner --
-each limb is _prepared_!
+thanks to Victorinox --
+each limb is _prepared for anything_!
 
-What's better than an octopus?
-A prepared octopus!
+Just like the Swiss.
 
-You might think it's hard to compare a tool,
-with the person using the tool?
-I mean, don't you need both?
+And you might think it's hard to compare a
+beloved multitool,
+with a squishy boi who has 8 limbs?
+I mean, don't you need both
+the tool, and the limbs to use it?
 Sure you do!
 I get that.
 I have nothing against an octopus --
-unless it's complicit in
-some sketchy fortune-telling scam.
-Hashtag not all octopy, I know.
+unless it's trying to sell me
+on some sketchy fortune-telling scam.
+
 But we can still ask --
-who's bringing more to the equation?
-That's easy to answer.
+who's bringing more to the party?
+And that's easy to answer.
 
 Does the octopus make the knife better?
 Not really.
-It's still the same knife,
-being used as intended.
+Now you just have squishy
+limbs in your pocket.
 
 Does the knife make the octopus better?
-Oh hell yeah,
-check this guy out.
+Oh hell yeah.
+
+Did American Soldiers in World War Two,
+return home from the battlefield
+with a soft-bodied, eight-limbed mollusc,
+turning it into an overnight sensation,
+and a colloquial shorthand
+for multi-tools?
+No.
 
 Does the Swiss Army
-issue one of these knives
-to every recruit or member of the
-Swiss Armed Forces?
-Hell yeah.
+issue anyone an octopus,
+or consider one essential for survival?
+No.
 
-Does the Swiss Army
-issue anyone an octopus?
-Nope.
-An octopus is not considered
-'essential for survival'.
-
-An octopus isn't even allowed to join the Swiss Army!
+Can an octopus
+join the Swiss Army?
+Fuck no.
+Switzerland is landlocked.
+Come on.

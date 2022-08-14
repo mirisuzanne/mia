@@ -18,6 +18,6 @@
   {%- if summary %}<hr />{% endif -%}
 
   <div id="content" {{ utility.show_attrs(attrs.content) }}>
-    {{ content | typogr | safe }}
+    {{ content | safe }}
   </div>
 {%- endif -%}

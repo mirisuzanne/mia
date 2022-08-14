@@ -117,6 +117,7 @@ summary: |
   Inspired by Margaret Clap,
   and the many myths of Hermaphroditus.
 ---
+
 {% import "content.macros.njk" as content %}
 
 [Buy the book](https://miriamsuzanne.square.site/)
@@ -130,7 +131,8 @@ or
   video.caption
 ) }}
 
-{{ content.quotes(press) }}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ---
 
