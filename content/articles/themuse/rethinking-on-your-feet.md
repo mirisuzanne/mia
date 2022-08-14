@@ -47,8 +47,8 @@ That's where I went wrong.
 
 [series]: /2012/10/16/muse-intro/
 [pressing]: /2012/10/23/ordinary-tools-of-thought/
-[thoughts]: /2012/11/08/creative-cycles
-[process]: /2012/10/16/muse-intro/#class-overview
+[thoughts]: /2012/11/08/creative-cycles/
+[process]: /2012/10/16/muse-intro/
 [one end]: /2012/12/13/starting-from-a-seed/
 [outline]: /2013/02/07/get-curious/
 

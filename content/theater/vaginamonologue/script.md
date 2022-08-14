@@ -13,7 +13,7 @@ tags:
   - script
   - transition
 summary: |
-  Script for [My Body, My Gender](../)
+  Script for [My Body, My Gender](/theater/vaginamonologue/)
   rogue Vagina Monologue.
 ---
 

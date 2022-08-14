@@ -93,7 +93,7 @@ If research isn't working, make shit up.
 If you can't think of anything to make,
 [find something to steal][steal].
 
-[cycles]: /2012/11/08/creative-cycles
+[cycles]: /2012/11/08/creative-cycles/
 [steal]: https://www.austinkleon.com/steal/
 
 ## For Example

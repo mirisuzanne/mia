@@ -22,7 +22,7 @@ summary: |
   I can't thank you enough,
   but I'll keep trying.
 
-  [surgery]: /2018/07/17/surgery
+  [surgery]: /2018/07/17/surgery/
 ---
 
 Wow, you all are so wonderful and generous.

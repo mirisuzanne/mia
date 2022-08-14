@@ -10,7 +10,7 @@ tags:
   - code
   - w3c
   - oddbird
-  - syntax.fm
+  - syntax-fm
   - cascade layers
   - css scope
   - container queries
