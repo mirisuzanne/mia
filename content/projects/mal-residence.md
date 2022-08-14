@@ -20,7 +20,7 @@ tags:
 summary: |
   An artist residency at the **Media Archeology Lab**,
   working on development of
-  [The Post-Obsolete Book](../post-obsolete/).
+  [The Post-Obsolete Book](/projects/post-obsolete/).
 ---
 
 The piece requires a few props:

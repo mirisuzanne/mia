@@ -141,7 +141,7 @@ Sometimes you don't know the pain is real
 
 ------
 
-I first [call myself trans](/2016/08/17/trans)
+I first [call myself trans](/2016/08/17/trans/)
 while speaking to 60-some relatives at a family reunion.
 Sometimes I do things the hard way.
 ==Everyone is== supportive,
@@ -282,7 +282,7 @@ Nothing is ==set in stone.==
 
 ------
 
-I'm still [learning to identify](/2016/12/24/clarifications)
+I'm still [learning to identify](/2016/12/24/clarifications/)
 as a woman,
 and as a lesbian.
 ==Both are== over-simplifications.
@@ -711,7 +711,7 @@ In Colorado,
 your chosen name [has to sue][sue] your given name
 ==for the right to exist.==
 
-[sue]: /2017/01/19/america-heard
+[sue]: /2017/01/19/america-heard/
 
 ------
 

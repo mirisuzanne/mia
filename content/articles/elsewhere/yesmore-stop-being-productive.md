@@ -8,8 +8,6 @@ tags:
   - writing
   - productivity
   - SuperYesMore
-hero:
-  img: 2017/neck.jpg
 summary: |
   A reflection on the nature and value of productivity for the
   SuperYesMore series: *The Human in the Machine*.

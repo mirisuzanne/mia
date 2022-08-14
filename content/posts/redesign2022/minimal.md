@@ -164,7 +164,7 @@ as a part of the site.
 
 It's been fun
 working on new CSS features
-[with the CSSWG](/orgs/w3c),
+[with the CSSWG](/orgs/w3c/),
 but now that those features
 (and more)
 are starting to roll out in browsers

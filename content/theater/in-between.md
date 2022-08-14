@@ -47,4 +47,4 @@ indistinguishable from the magnificence of the setting.
 Influenced by the writings of Edward Abbey,
 and *As Eve Said to the Serpent: On Landscape, Gender, and Art*
 by Rebecca Solnit.
-Created by [Grapefuit Lab](/orgs/grapefruit-lab).
+Created by [Grapefuit Lab](/orgs/grapefruit-lab/).

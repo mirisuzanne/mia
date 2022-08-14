@@ -21,5 +21,5 @@ summary: |
 ---
 
 These tools integrate with
-[Herman](../herman/),
+[Herman](/projects/herman/),
 the OddBird pattern-library generator.
