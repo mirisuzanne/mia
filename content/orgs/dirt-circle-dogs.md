@@ -10,7 +10,6 @@ hero:
   img: art/music/dcd.png
 index: dirt circle dogs
 tags:
-  - _calendar
   - music
   - art
   - dirt circle dogs

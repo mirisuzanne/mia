@@ -6,7 +6,6 @@ hero:
   img: 2020/fallout.jpg
   alt: tv static
 tags:
-  - _calendar
   - _post
   - writing
   - directing

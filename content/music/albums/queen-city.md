@@ -30,7 +30,7 @@ we composed several of the songs as a band,
 most notably:
 
 - The Hunted
-- Last Bullet (also on our [debut EP](/2015/07/09/holes-they-leave/)
+- Last Bullet (also on our [debut EP](/music/albums/holes-they-leave/)
 - Charlie's Engine
 
 {{ content.figure(album) }}

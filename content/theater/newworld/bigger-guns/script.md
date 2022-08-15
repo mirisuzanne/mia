@@ -4,7 +4,6 @@ sub: Revenge of the Apocalypse, Again
 type: script
 date: 2007-04-20
 tags:
-  - _calendar
   - writing
   - script
 summary: |

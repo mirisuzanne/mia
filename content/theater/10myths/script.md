@@ -14,7 +14,6 @@ hero:
     with Herman and Sam brushing their teeth,
     and Teacup Gorilla playing instruments in the bathtub.
 tags:
-  - _calendar
   - writing
   - riding sidesaddle
   - buntport

@@ -11,7 +11,6 @@ hero:
   caption: A novel on 250 note-cards
 index: riding sidesaddle
 tags:
-  - _calendar
 events:
   - title: Queer Art
     type: reading
@@ -154,7 +153,7 @@ with original music by [Teacup Gorilla][tg].
 
 The Teacup Gorilla EP includes several songs based on the novel:
 
-{% set ep = collections.all | getPage('/2015/07/09/holes-they-leave/') %}
+{% set ep = collections.all | getPage('/music/albums/holes-they-leave/') %}
 
 {{ content.figure(ep.data.audio) }}
 

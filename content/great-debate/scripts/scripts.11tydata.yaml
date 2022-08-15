@@ -1,6 +1,0 @@
-permalink: /{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html
-type: debate
-series: great debate
-tags:
-  - _post
-  - great debate

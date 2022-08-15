@@ -5,7 +5,6 @@ sub: an un-rehearsed play by Greg Wohead
 venue: square product theatre
 url: https://www.squareproducttheatre.org/history
 tags:
-  - _calendar
   - acting
 video:
   - iframe: https://www.youtube.com/embed/FDbrHv-zLGU

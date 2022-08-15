@@ -8,7 +8,6 @@ hero:
   img: art/theater/vm/vm.jpg
 series: transition
 tags:
-  - _calendar
   - writing
   - script
   - transition

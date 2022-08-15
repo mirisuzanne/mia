@@ -1,8 +1,6 @@
 layout: base
 permalink: "/{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html"
-calendar: inspiration
 type: link
 tags:
-  - _calendar
   - inspiration
 

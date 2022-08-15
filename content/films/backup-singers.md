@@ -8,7 +8,6 @@ hero:
   img: 2020/alcohol.jpg
   alt: close up of eyes, black and white
 tags:
-  - _calendar
   - _post
   - poem
 summary: |

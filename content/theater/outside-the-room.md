@@ -9,7 +9,6 @@ end: 2018-11-18
 hero:
   img: art/theater/outsidetheroom.jpg
 tags:
-  - _calendar
   - directing
   - grapefruit lab
 video:

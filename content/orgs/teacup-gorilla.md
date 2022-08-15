@@ -59,7 +59,7 @@ summary: |
 ---
 {% import "content.macros.njk" as content %}
 
-{% set ep = collections.all | getPage('/2015/07/09/holes-they-leave/') %}
+{% set ep = collections.all | getPage('/music/albums/holes-they-leave/') %}
 {{ content.figure(
   data=ep.data.audio,
   caption='The Holes They Leave EP'
@@ -70,7 +70,7 @@ with theaters, writers, dancers, and other artists.
 
 - **Summer 2015**
   we released our debut EP,
-  [The Holes They Leave](/2015/07/09/holes-they-leave/)
+  [The Holes They Leave](/music/albums/holes-they-leave/)
 - **Fall 2015**
   we created
   [ReTriplicate](/theater/retriplicate/)

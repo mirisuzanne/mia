@@ -13,7 +13,6 @@ hero:
     Photo by Kenny Storms.
 index: raven jane
 tags:
-  - _calendar
   - music
   - art
   - raven jane

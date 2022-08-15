@@ -4,7 +4,6 @@ type: documentary short
 title: 'America Heard: Transitions'
 date: 2017-01-19
 tags:
-  - _calendar
   - transition
   - interview
   - film

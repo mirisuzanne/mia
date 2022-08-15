@@ -1,9 +1,7 @@
 permalink: "/{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html"
 type: poem
-calendar: poem
 tags:
   - _post
-  - _calendar
   - art
   - writing
   - poem

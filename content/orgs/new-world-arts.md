@@ -10,7 +10,6 @@ date: 2001-01-01
 end: 2007-08-14
 index: new world arts
 tags:
-  - _calendar
   - new world arts
   - theater
   - artistic director

@@ -3,7 +3,6 @@ title: Danny and the Deep Blue Sea
 date: 2006-09-15
 end: 2006-09-24
 tags:
-  - _calendar
   - directing
 press:
   - credit: Andrew S. Hughes

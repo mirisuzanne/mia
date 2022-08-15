@@ -6,7 +6,6 @@ url: https://buntport.com/
 venue: Buntport Theater
 date: 2015-09-24
 tags:
-  - _calendar
   - teacup gorilla
   - buntport
   - devising

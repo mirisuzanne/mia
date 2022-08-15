@@ -1,0 +1,96 @@
+@use '../../../../node_modules/@fontsource/alegreya/scss/mixins' as alegreya;
+@use '../../../../node_modules/@fontsource/jetbrains-mono/scss/mixins' as jetbrains;
+@use 'sass:map';
+
+$-fonts-dir: '../fonts';
+$-chars: ('latin', 'latin-ext');
+$-uni-serif: ();
+$-uni-mono: ();
+
+@each $char in $-chars {
+  $-uni-serif: map.set(
+    $-uni-serif,
+    $char,
+    map.get(alegreya.$unicodeMap, $char)
+  );
+  $-uni-mono: map.set($-uni-mono, $char, map.get(jetbrains.$unicodeMap, $char));
+}
+
+@mixin files {
+  @include alegreya.fontFaceVariable(
+    $fontDir: $-fonts-dir,
+    $unicodeMap: $-uni-serif
+  );
+
+  @include jetbrains.fontFaceVariable(
+    $fontDir: $-fonts-dir,
+    $unicodeMap: $-uni-mono
+  );
+
+  @include alegreya.fontFaceVariable(
+    $fontDir: $-fonts-dir,
+    $style: italic,
+    $unicodeMap: $-uni-serif
+  );
+
+  @include jetbrains.fontFaceVariable(
+    $fontDir: $-fonts-dir,
+    $style: italic,
+    $unicodeMap: $-uni-mono
+  );
+}
+
+@mixin css {
+  @supports (font-variation-settings: normal) {
+    html {
+      --var-serif: 'AlegreyaVariable', var(--ui-serif);
+      --var-mono: 'JetBrains MonoVariable', var(--ui-mono);
+
+      // fractions
+      --frac: off;
+      --dnom: off;
+      --numr: off;
+
+      // numbers
+      --lnum: off;
+      --tnum: off;
+      --pnum: off;
+    }
+
+    html,
+    [data-font] {
+      font-feature-settings: (
+        'frac' var(--frac),
+        'dnom' var(--dnom),
+        'numr' var(--numr),
+        'lnum' var(--lnum),
+        'pnum' var(--pnum),
+        'tnum' var(--tnum)
+      );
+    }
+
+    [data-font~='frac'] {
+      --frac: on;
+    }
+
+    [data-font~='dnom'] {
+      --dnom: on;
+    }
+
+    [data-font~='numr'] {
+      --numr: on;
+    }
+
+    [data-font~='lnum'] {
+      --lnum: on;
+    }
+
+    [data-font~='tnum'] {
+      --tnum: on;
+    }
+
+    [data-font~='pnum'] {
+      --pnum: on;
+    }
+  }
+}
