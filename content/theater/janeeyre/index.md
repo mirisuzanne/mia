@@ -9,8 +9,6 @@ end: 2018-03-03
 venue: The Bakery
 url: https://www.grapefruitlab.com/shows/jane-eyre/
 tags:
-  - theater
-  - art
   - directing
   - writing
   - acting

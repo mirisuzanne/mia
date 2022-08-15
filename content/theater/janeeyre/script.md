@@ -6,8 +6,6 @@ date: 2018-03-03
 hero:
   img: /art/theater/jane/DSC_0362.jpg
 tags:
-  - theater
-  - art
   - writing
   - music
   - grapefruit lab
@@ -2073,7 +2071,8 @@ Never once did I hear from Diana one syllable of regret or suspicion.
 Meantime a month was gone.
 
 **Jane:**
-*[to audience]* The more I know Diana, dear reader,  the better I like her.
+*[to audience]* The more I know Diana, dear reader,
+the better I like her.
 I can join in all her occupations,
 and converse with her as much as she wishes.
 There is a reviving pleasure in this intercourse,
