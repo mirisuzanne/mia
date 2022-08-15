@@ -10,7 +10,6 @@ hero:
     and another hugging her from behind
   caption: Lindsay Nance & Mallory Parsons as Annie, 2005
 tags:
-  - _calendar
   - writing
   - script
   - new world arts

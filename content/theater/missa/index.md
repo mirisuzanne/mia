@@ -8,7 +8,6 @@ end: 2010-03-14
 hero:
   img: art/theater/missa.jpg
 tags:
-  - _calendar
   - teacup gorilla
   - grapefruit lab
   - writing

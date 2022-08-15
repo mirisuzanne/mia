@@ -4,7 +4,6 @@ sub: directed by Diana Phillips
 date: 2001-06-08
 end: 2001-07-08
 tags:
-  - _calendar
   - lighting
   - assistant director
 summary: |

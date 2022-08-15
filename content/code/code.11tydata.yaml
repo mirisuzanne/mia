@@ -1,7 +1,0 @@
-permalink: "/{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html"
-type: code
-calendar: code
-tags:
-  - _calendar
-  - _post
-  - code

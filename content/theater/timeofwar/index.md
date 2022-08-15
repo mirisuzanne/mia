@@ -8,7 +8,6 @@ hero:
     a woman with bandage over her eyes,
     and another hugging her from behind
   caption: Lindsay Nance & Mallory Parsons as Annie, 2005
-calendar: self
 tags:
   - writing
 events:

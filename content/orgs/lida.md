@@ -11,7 +11,6 @@ hero:
   img: art/theater/lida/skatingpromo.jpg
 index: _LIDA
 tags:
-  - _calendar
   - theater
   - art
   - technical director

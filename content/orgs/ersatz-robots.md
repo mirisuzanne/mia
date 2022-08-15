@@ -14,7 +14,6 @@ events:
     date: 2019-05-02
     venue: 3 Kings Tavern
     url: https://www.facebook.com/events/420883858658162/
-calendar: music
 tags:
   - art
   - music

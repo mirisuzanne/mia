@@ -9,7 +9,6 @@ events:
     venue: Kennedy Center ACTF
     date: 2004-06-14
 tags:
-  - _calendar
   - writing
   - script
 ---

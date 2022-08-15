@@ -69,16 +69,6 @@ summary: |
   of human experience.
 ---
 
-Over the last 15 years
-I've published novels & albums & technical manuals;
-created award-winning theater & open-source tools;
-cleaned my bedroom more than once;
-and presented at conferences around the world --
-but I've never been promoted at a job,
-done a whiteboard interview,
-or graduated from college.
-{.p-note}
-
 {% import 'contact.macros.njk' as contact %}
 
 {{ contact.links(social) }}

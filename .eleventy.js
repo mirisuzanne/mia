@@ -33,11 +33,10 @@ module.exports = (eleventyConfig) => {
 
   // pass-through
   eleventyConfig.addPassthroughCopy({ _built: 'assets' });
-  eleventyConfig.addPassthroughCopy('./content/css');
-  eleventyConfig.addPassthroughCopy('./content/fonts');
-  eleventyConfig.addPassthroughCopy('content/**/*.txt');
+  eleventyConfig.addPassthroughCopy({ './content/_assets/fonts': 'fonts' });
+  eleventyConfig.addPassthroughCopy({ './content/_includes/icons': 'icons' });
   eleventyConfig.addPassthroughCopy('content/favicon.svg');
-  eleventyConfig.addPassthroughCopy({ 'content/_includes/icons': 'icons' });
+  eleventyConfig.addPassthroughCopy('content/**/*.txt');
 
   // filters
   eleventyConfig.addFilter('publicTags', tags.publicTags);

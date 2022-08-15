@@ -12,7 +12,6 @@ hero:
   alt: The 2003 OSF website with broken images, thanks to the Web Archive
   caption: At least the tiny logo for my show is still there…
 tags:
-  - _calendar
   - oregon shakespeare
   - education
   - intern

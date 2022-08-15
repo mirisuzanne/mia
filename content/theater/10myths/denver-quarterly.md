@@ -4,7 +4,6 @@ venue: Denver Quarterly v51.2
 url: https://www.du.edu/denverquarterly/past/index.html
 date: 2017-01-10
 tags:
-  - _calendar
   - riding sidesaddle
   - writing
   - buntport

@@ -1,7 +1,7 @@
 intro: |
-  I make [music](/tags/music/)
+  I make [music](/music/)
   with [Teacup Gorilla](/orgs/teacup-gorilla/){.h-card .p-org},
-  [theater](/tags/theater/)
+  [theater](/theater/)
   with [Grapefruit Lab](/orgs/grapefruit-lab/){.h-card .p-org},
   and web software with [OddBird](/orgs/oddbird/){.h-card .p-org}.
   I'm an Invited Expert
@@ -21,9 +21,9 @@ code: |
   teaching, and helping push the boundaries of web technology.
 
   Miriam created the popular
-  [Susy](https://oddbird.net/susy/),
+  [Susy](/projects/susy/),
   grid library for Sass in 2009,
-  and then [True](https://oddbird.net/susy/),
+  and then [True](/projects/true/),
   the leading Sass tool for unit testing.
   These days she's working on extending the Sass color module
   to support wide-gamut color-spaces,
@@ -32,19 +32,22 @@ code: |
 art: |
   Miriam is an artist and developer
   working across a range of media.
-  She makes [music](/tags/music/)
+  She makes [music](/music/)
   with [Teacup Gorilla](/orgs/teacup-gorilla/){.h-card .p-org},
-  and [theater](/tags/theater/)
+  and [theater](/theater/)
   with [Grapefruit Lab](/orgs/grapefruit-lab/){.h-card .p-org} --
   in addition to being a published novelist,
   visual artist, and digital poet.
 
-  Miriam won the 2017 True West Award
-  for _10 Myths on the Proper Application of Beauty Products_
+  Miriam won a 2016 True West Award for
+  [10 Myths on the Proper Application of Beauty Products](/theater/10myths/)
   (Buntport Theater, 2016),
   the stage adaptation of her debut novel
-  _Riding SideSaddle*_ (SpringGun Press, 2015).
+  [Riding SideSaddle*](/books/sidesaddle/)
+  (SpringGun Press, 2015).
   Recent productions include
-  _Jane/Eyre_ a queer adaptation of the classic novel,
-  and _Pity+Fear_ an exploration of identity and storytelling --
+  [Jane/Eyre](/theater/janeeyre/)
+  a queer adaptation of the classic novel,
+  and [Pity+Fear](/theater/pity-fear/)
+  an exploration of identity and storytelling --
   both with Grapefruit Lab.

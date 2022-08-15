@@ -1,6 +1,28 @@
 {
-  "lastFetched": "2022-08-14T21:25:41.050Z",
+  "lastFetched": "2022-08-15T01:25:58.147Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jim Nielsen",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/44728920f07defc757fb7b8277972def0e464c56e1a2434bac650dc2e92334e7.jpg",
+        "url": "https://twitter.com/jimniels"
+      },
+      "url": "https://twitter.com/jimniels/status/1558930654904983552",
+      "published": "2022-08-14T21:36:46+00:00",
+      "wm-received": "2022-08-14T22:05:50Z",
+      "wm-id": 1459106,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1558930654904983552",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "content": {
+        "html": "I could spend a couple weeks exploring all the ideas outlined here by <a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a> \n\nStyling your RSS feed? A control to increase/decrease the fidelity of your site’s styles (accomplished via css layers nonetheless)?\n\nYes plz to all of them!\n\n<a href=\"https://www.miriamsuzanne.com/2022/08/07/minimal/\">miriamsuzanne.com/2022/08/07/min…</a>",
+        "text": "I could spend a couple weeks exploring all the ideas outlined here by @TerribleMia \n\nStyling your RSS feed? A control to increase/decrease the fidelity of your site’s styles (accomplished via css layers nonetheless)?\n\nYes plz to all of them!\n\nmiriamsuzanne.com/2022/08/07/min…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

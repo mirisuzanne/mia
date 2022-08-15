@@ -6,7 +6,6 @@ date: 2012-02-21
 venue: greengreenmud.com
 url: https://greengreenmud.com/
 tags:
-  - _calendar
   - art
   - design
   - code

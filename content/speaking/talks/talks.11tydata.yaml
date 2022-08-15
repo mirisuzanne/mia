@@ -1,0 +1,5 @@
+type: talk
+permalink: '/speaking/{{ page.fileSlug }}/index.html'
+tags:
+  - oddbird
+  - code

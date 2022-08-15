@@ -12,7 +12,6 @@ url: https://buntport.com/2016/03/10-myths-proper-application-beauty-products/
 date: 2016-03-04
 end: 2016-03-26
 tags:
-  - _calendar
   - writing
   - riding sidesaddle
   - teacup gorilla

@@ -4,7 +4,6 @@ sub: Revenge of the Apocalypse, Again
 date: 2007-04-20
 end: 2007-04-28
 tags:
-  - _calendar
   - directing
 press:
   - title: Lights, No Cameras, Plenty of Action
