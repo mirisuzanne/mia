@@ -1,6 +1,6 @@
 'use strict';
 
-const time = require('../filters/time');
+const time = require('../utils/time');
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('date', time.date);

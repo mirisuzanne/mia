@@ -97,5 +97,5 @@ summary: |
 
 {%- set orgs = collections.orgs | getPublic | withPageTense('ongoing') -%}
 {% for item in orgs | sortBy('data.date') %}
-  {%- include 'part/hentry.njk' -%}
+  {% include 'part/hentry.njk' %}
 {% endfor %}

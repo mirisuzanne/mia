@@ -1,6 +1,24 @@
 {
-  "lastFetched": "2022-08-15T01:25:58.147Z",
+  "lastFetched": "2022-08-18T15:45:11.031Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://assuagetech.net/2022/07/16/weekly-news-for-designers-%e2%84%96-652/",
+      "published": null,
+      "wm-received": "2022-08-16T10:59:28Z",
+      "wm-id": 1459995,
+      "wm-source": "https://assuagetech.net/2022/07/16/weekly-news-for-designers-%e2%84%96-652/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

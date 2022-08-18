@@ -2,7 +2,7 @@
   <details id="tag-nav">
     <summary>Featured Tags</summary>
     <ul>
-      {%- for tag in collections | navTags -%}
+      {%- for tag in collections | topTags -%}
         <li>{{- tag.link | safe -}}</li>
       {%- endfor -%}
     </ul>

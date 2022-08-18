@@ -1,0 +1,81 @@
+body {
+  --grid-margin: minmax(var(--margin), 1fr);
+
+  display: grid;
+  grid-template-columns:
+    [full-start] var(--grid-margin)
+    [main-start] minmax(0, var(--measure))
+    [main-end] var(--grid-margin)
+    [full-end];
+  margin: 0;
+  max-width: none;
+
+  > * {
+    grid-column: var(--body-column, main);
+  }
+}
+
+#message {
+  --body-column: full;
+  --opacity: 0.8;
+
+  background: var(--shadow);
+  font-style: italic;
+  padding-inline: var(--margin);
+  text-align: center;
+
+  &:hover,
+  &:focus-within {
+    --opacity: 1;
+  }
+
+  p {
+    margin-block: var(--shim);
+    opacity: var(--opacity);
+  }
+
+  a:any-link {
+    color: currentcolor;
+  }
+}
+
+[aria-label='primary'] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-block-start: var(--spacer);
+
+  div::before {
+    content: '// ';
+  }
+}
+
+main {
+  border: 0;
+
+  > header {
+    margin-block-start: 0;
+  }
+
+  &::after {
+    color: var(--border);
+    content: '***';
+    display: block;
+    text-align: center;
+  }
+}
+
+[aria-label='secondary'] {
+  margin: 0;
+}
+
+form[name='contact'],
+body > footer {
+  &::before {
+    color: var(--border);
+    content: '***';
+    display: block;
+    margin-block: var(--spacer);
+    text-align: center;
+  }
+}

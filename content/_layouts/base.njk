@@ -19,13 +19,6 @@
 <body {{ utility.show_attrs(attrs.body) }}>
   <a href="#main" class="visually-hidden">skip to content</a>
 
-  {% if draft %}
-    {% set input_path = (page.inputPath or '') | replace('./', '') %}
-    <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}" class="edit-draft">
-      Edit this draft on GitHub
-    </a>
-  {% endif %}
-
   {% if message %}
     <div id="message">
       {{ message | md | safe }}
@@ -33,9 +26,15 @@
   {% endif %}
 
   {% include 'site/nav.njk' %}
-  {% include 'site/tags.njk' %}
 
   <main id="main" {% if erasure %}data-erase="off"{% endif %} {{ utility.show_attrs(attrs.main) }}>
+    {% if draft %}
+      {% set input_path = (page.inputPath or '') | replace('./', '') %}
+      <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}" class="edit-draft">
+        Edit this draft on GitHub
+      </a>
+    {% endif %}
+
     {{ content | safe }}
 
     <a href="{{ page.url | url }}" class="u-url" hidden></a>
@@ -53,6 +52,7 @@
     {% endif %}
   </main>
 
+  {% include 'site/tags.njk' %}
   {% include 'site/settings.njk' %}
   {% include 'site/footer.njk' %}
 

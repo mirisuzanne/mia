@@ -27,7 +27,7 @@ I've worked with a number of ensemble companies,
 and started one of my own:
 [Grapefruit Lab](/orgs/grapefruit-lab/).
 
-{% set event_groups = collections.speaking | getEvents | groupBy('tense') %}
+{% set event_groups = collections.theater | getEvents | groupBy('tense') %}
 
 {% if event_groups.ongoing | length > 0 %}
   <h2>Happening Now</h2>
@@ -37,7 +37,7 @@ and started one of my own:
 {% endif %}
 
 {% if event_groups.future | length > 0 %}
-  <h2>Happening Now</h2>
+  <h2>{{ hevent.titles.future }}</h2>
   {% for item in event_groups.future | sortEvents %}
     {% include 'part/hevent.njk' %}
   {% endfor %}

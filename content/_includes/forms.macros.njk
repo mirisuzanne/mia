@@ -179,7 +179,7 @@ params:
   attrs={}
 ) %}
   {%- set content = content if (content != none) else caller() -%}
-  <fieldset data-fieldset="{{ name or legend | slug }}">
+  <fieldset data-fieldset="{{ name or legend | slugify }}">
     {%- if legend -%}
       <legend>{{ legend | mdInline | safe }}</legend>
     {%- endif -%}
@@ -294,7 +294,7 @@ params:
   field_attrs={},
   input_attrs={}
 ) %}
-  {%- set name = name or label | slug -%}
+  {%- set name = name or label | slugify -%}
   {%- set id = id or ['field', name] | join('-') -%}
   {%- set content -%}
     {{- field_label(

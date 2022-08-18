@@ -2,12 +2,19 @@
 
 const _ = require('lodash');
 
-const utils = require('../filters/utils');
+const typeCheck = (val, is) => {
+  const type = typeof val;
+  return is ? type === is : type;
+};
+
+const styles = (dict) =>
+  _(dict)
+    .map((val, prop) => (val ? `${prop}:${val};` : ''))
+    .reduce((all, one) => `${all}${one}`, '');
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addFilter('typeCheck', utils.typeCheck);
-  eleventyConfig.addFilter('domain', utils.domain);
-  eleventyConfig.addFilter('styles', utils.styles);
+  eleventyConfig.addFilter('typeCheck', typeCheck);
+  eleventyConfig.addFilter('styles', styles);
 
   eleventyConfig.addFilter('concat', _.concat);
   eleventyConfig.addFilter('merge', _.merge);
