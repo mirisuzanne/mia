@@ -2,7 +2,7 @@
   --root: clamp(max(1em, 20px), 1em + 0.75vw, 2em);
   --line-height: 1.5;
   --line: calc(1rem * var(--line-height));
-  --measure: 68ch;
+  --measure: 60ch;
 }
 
 @mixin space {

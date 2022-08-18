@@ -6,4 +6,4 @@ eleventyExcludeFromCollections: true
 ---
 
 {% import "contact.macros.njk" as contact %}
-{{ contact.form() }}
+{{ contact.form(heading=none) }}

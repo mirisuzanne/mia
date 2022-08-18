@@ -2,16 +2,11 @@
 layout: format/h-feed
 title: Miriam Eric Suzanne
 eleventyExcludeFromCollections: true
+eleventyComputed:
+  summary: |
+    **Welcome** -- \
+    {{ welcome | random }}
 ---
-
-<div id="summary" class="p-summary">
-  {% edge "njk,md", {'welcome': welcome} %}
-  **Welcome** — \
-  {{ welcome | random | safe }}
-  {% endedge %}
-</div>
-
-<hr />
 
 {% set event_groups = collections.all | getEvents | groupBy('tense') %}
 
