@@ -1,6 +1,6 @@
 'use strict';
 
-const time = require('../../src/filters/time');
+const time = require('../../src/utils/time');
 
 module.exports = {
   eleventyComputed: {

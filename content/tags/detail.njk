@@ -5,7 +5,7 @@ pagination:
   data: collections
   size: 1
   alias: tag
-permalink: /tags/{{ tag | slug }}/
+permalink: /tags/{{ tag | slugify }}/
 eleventyExcludeFromCollections: true
 ---
 
