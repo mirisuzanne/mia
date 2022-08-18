@@ -3,10 +3,11 @@
   user: '@TerribleMia'
 - site: Github
   url: https://github.com/mirisuzanne
-  user: '@mirisuzanne'
+  user: '@MiriSuzanne'
 - site: Codepen
   url: https://codepen.io/miriamsuzanne/
-  user: '@miriamsuzanne'
+  user: '@MiriamSuzanne'
+- email: miriam@miriamsuzanne.com
 - site: RSS feed
   url: https://www.miriamsuzanne.com/feed.xml
 # - site: StackOverflow

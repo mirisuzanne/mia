@@ -1,6 +1,7 @@
 {% import "utility.macros.njk" as utility %}
 
 {% macro form(
+  heading='## Contact me',
   next='/contact/thanks/',
   submit='send',
   attrs={},
@@ -14,6 +15,10 @@
   'data-netlify': true
 } | merge(attrs) %}
 <form {{ utility.show_attrs(attrs) }}>
+  {% if heading %}
+    {{ heading | md | safe }}
+  {% endif %}
+
   <label>
     <span>Name:</span>
     <input
@@ -55,18 +60,22 @@
 
 {% macro links(social) %}
 <ul>
-  {% for item in social %}
-  {% set content %}{% if item.user %}{{ item.user }} on {% endif %}{{ item.site }}{% endset %}
-  <li>
-    {{ utility.link_if(
-      content,
-      item.url,
-      {
-        'rel': 'me',
-        'class': ['u-url', item.class] | join(' ')
-      }
-    ) }}
-  </li>
-  {% endfor %}
+  {% for item in social -%}
+    {%- set content -%}
+      {%- if item.user %}{{ item.user }} on {% endif -%}
+      {{- item.site or item.email -}}
+    {%- endset -%}
+    {%- set url = ['mailto:', item.email] if item.email else item.url -%}
+    <li>
+      {{- utility.link_if(
+        content,
+        url,
+        {
+          'rel': 'me',
+          'class': 'u-email' if item.email else 'u-url'
+        }
+      ) -}}
+    </li>
+  {%- endfor %}
 </ul>
 {% endmacro %}
