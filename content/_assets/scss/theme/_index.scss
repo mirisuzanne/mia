@@ -1,13 +1,11 @@
 @use 'colors';
 @use 'sizes';
 @use 'fonts';
+@use 'type';
 @use 'headings';
 @use 'nav';
 @use 'content';
 @use 'media';
-@use 'erase';
-@use 'swatch';
-@use 'layout';
 
 @mixin css {
   @include fonts.files;
@@ -20,12 +18,11 @@
     border-block: thick solid var(--AccentColor);
   }
 
+  @include type.css;
   @include headings.css;
   @include nav.css;
   @include content.css;
   @include media.css;
-  @include erase.css;
-  @include swatch.css;
 
   html::after {
     @include media.dim;

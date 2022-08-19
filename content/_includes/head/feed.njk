@@ -1,4 +1,4 @@
-{%- for feed in collections._xml -%}
+{%- for feed in collections.__feed_pages -%}
 <link
   rel="alternate"
   type="application/{{ feed.data.type }}"

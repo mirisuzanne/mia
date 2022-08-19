@@ -12,6 +12,13 @@
       ) }}
     {% endif %}
 
+    {% if (venue and url) %}
+      @
+      <a href="{{ url | url }}" class="h-card org">
+        {{ (venue or 'the interwebz') | mdInline | safe }}
+      </a>
+    {% endif %}
+
     {% if org %}
       as
       <strong>

@@ -3,7 +3,7 @@ feature: true
 title: On Sass & CSS
 venue: Shop Talk Show
 date: 2019-10-28
-url: https://shoptalkshow.com/episodes/384/
+url: https://shoptalkshow.com/384/
 tags:
   - code
   - sass

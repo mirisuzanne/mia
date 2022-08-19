@@ -1,0 +1,5 @@
+@use '../layout';
+
+@layer layout {
+  @include layout.css;
+}

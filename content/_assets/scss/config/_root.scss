@@ -9,6 +9,8 @@
     @include sizes.text;
     @include sizes.space;
 
+    --hr: '~ & ~';
+
     background-color: var(--Canvas);
     color: var(--CanvasText);
     color-scheme: dark light;

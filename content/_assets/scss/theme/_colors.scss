@@ -63,4 +63,9 @@ $light: azure;
   --selected: var(--complement);
   --field-bg: var(--shadow);
   --btn-bg: var(--shadow);
+  --text-gradient: radial-gradient(
+    farthest-corner at bottom left,
+    var(--accent),
+    var(--complement)
+  );
 }

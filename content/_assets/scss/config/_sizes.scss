@@ -1,5 +1,5 @@
 @mixin text {
-  --root: clamp(max(1em, 20px), 1em + 0.75vw, 2em);
+  --root: clamp(max(1em, 20px), 1.2em + 0.5vw, 2em);
   --line-height: 1.5;
   --line: calc(1rem * var(--line-height));
   --measure: 60ch;
