@@ -30,6 +30,6 @@ eleventyComputed:
   {%- for item in hfeed | sortBy('data.date') | reverse | slice(5) -%}
     {%- include 'part/hentry.njk' -%}
   {%- endfor -%}
-  <p><a href="/tags/_post/">See all posts »</a></p>
+  <p><a href="/tags/post/">See all posts »</a></p>
 </section>
 {%- endif -%}

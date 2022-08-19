@@ -5,6 +5,8 @@ const { readFileSync } = require('fs');
 const { safeLoad } = require('js-yaml');
 const slugify = require('@sindresorhus/slugify');
 
+const tagSlug = (tag) => slugify(tag, { decamelize: false, lower: true });
+
 const data = safeLoad(
   // eslint-disable-next-line no-sync
   readFileSync('./content/_data/nav.yaml', 'utf8'),
@@ -19,7 +21,7 @@ const displayName = (tag) => {
 };
 
 const tagLink = (tag, collections) => {
-  const fallback = collections[tag] ? `/tags/${slugify(tag)}/` : null;
+  const fallback = collections[tag] ? `/tags/${tagSlug(tag)}/` : null;
   const page = collections.all
     ? collections.all.find((item) => item.data.index === tag)
     : null;
