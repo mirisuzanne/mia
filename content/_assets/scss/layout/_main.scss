@@ -1,0 +1,37 @@
+@mixin css {
+  main {
+    border: 0;
+
+    > header {
+      margin-block-start: 0;
+    }
+
+    &::after,
+    ~ :not(footer)::after {
+      content: var(--hr);
+      display: block;
+      margin-block-start: var(--spacer);
+      text-align: center;
+    }
+  }
+
+  [aria-roledescription='subtitle'] {
+    font-style: italic;
+    margin-block-end: var(--spacer);
+  }
+
+  [data-list='tags'] {
+    flex-wrap: wrap;
+    gap: var(--gap);
+    list-style: none;
+    margin-block: 0;
+
+    li {
+      display: inline;
+    }
+
+    li:not(:last-child)::after {
+      content: ' & ';
+    }
+  }
+}

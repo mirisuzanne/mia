@@ -1,0 +1,20 @@
+@mixin css {
+  body {
+    --grid-margin: minmax(var(--margin), 1fr);
+
+    display: grid;
+    gap: var(--spacer);
+    grid-template-columns:
+      [full-start] var(--grid-margin)
+      [main-start] minmax(0, var(--measure))
+      [main-end] var(--grid-margin)
+      [full-end];
+    margin: 0;
+    max-width: none;
+
+    > * {
+      grid-column: var(--body-column, main);
+      margin-block: 0;
+    }
+  }
+}

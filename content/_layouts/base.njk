@@ -52,8 +52,11 @@
     {% endif %}
   </main>
 
-  {% include 'site/tags.njk' %}
-  {% include 'site/settings.njk' %}
+  <div>
+    {% include 'site/tags.njk' %}
+    {% include 'site/settings.njk' %}
+  </div>
+
   {% include 'site/footer.njk' %}
 
   {% set scripts = meta.scripts | concat(scripts) if scripts else meta.scripts %}

@@ -1,0 +1,18 @@
+@mixin css {
+  [data-options] {
+    --display-init: flex;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--shim);
+
+    h2,
+    h3 {
+      flex: 0 0 100%;
+    }
+
+    button {
+      flex: auto;
+    }
+  }
+}

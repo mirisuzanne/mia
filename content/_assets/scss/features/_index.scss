@@ -1,0 +1,11 @@
+@use 'options';
+@use 'erase';
+@use 'gallery';
+@use 'swatch';
+
+@mixin css {
+  @include options.css;
+  @include erase.css;
+  @include gallery.css;
+  @include swatch.css;
+}

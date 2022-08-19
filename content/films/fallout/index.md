@@ -1,7 +1,7 @@
 ---
 title: Fallout
 sub: a play in one page, and a short short film
-date: 2020-03-30
+date: 2003-08-14
 hero:
   img: 2020/fallout.jpg
   alt: tv static

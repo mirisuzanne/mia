@@ -5,7 +5,7 @@ eleventyExcludeFromCollections: true
 eleventyComputed:
   summary: |
     **Welcome** -- \
-    {{ welcome | random }}
+    {{ welcome | random | safe }}
 ---
 
 {% set event_groups = collections.all | getEvents | groupBy('tense') %}

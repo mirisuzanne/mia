@@ -1,0 +1,10 @@
+@mixin css {
+  hr::after,
+  main::after,
+  main ~ :not(footer)::after {
+    background: var(--text-gradient);
+    background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

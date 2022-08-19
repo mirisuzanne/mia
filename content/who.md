@@ -71,13 +71,13 @@ summary: |
 
 {% import 'contact.macros.njk' as contact %}
 
-{{ contact.links(social) }}
+## Where to find me
 
-## Bios & Photos for Publication
+{{ contact.links(social) }}
 
 {% for name, bio in bios %}
 {% if name != 'intro' %}
-### {{ name | capitalize }} Bio
+## {{ name | capitalize }} Bio
 
 <div class="p-note">
 {{ bio | md | safe }}
@@ -85,7 +85,7 @@ summary: |
 {% endif %}
 {% endfor %}
 
-### Photos
+## Photos
 
 {% import 'content.macros.njk' as content %}
 
@@ -93,7 +93,7 @@ summary: |
   headshots
 ) }}
 
-### Affiliations
+## Affiliations
 
 {%- set orgs = collections.orgs | getPublic | withPageTense('ongoing') -%}
 {% for item in orgs | sortBy('data.date') %}
