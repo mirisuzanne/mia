@@ -1,7 +1,7 @@
 ---
 title: 18 designers predict UI/UX trends for 2018
 date: 2017-12-15
-url: https://blog.figma.com/18-designers-predict-ui-ux-trends-for-2018-2d04d41361c6
+url: https://www.figma.com/blog/eighteen-designers-predict-ui-ux-trends-for-2018/
 venue: Figma Design
 hero:
   img: 2017/figma.png
@@ -23,4 +23,4 @@ In the end, a designer’s obsession always circles back
 to one simple question:
 How can we improve the user’s experience?
 
-[Read the interview](https://blog.figma.com/18-designers-predict-ui-ux-trends-for-2018-2d04d41361c6)
+[Read the interview]({{ url }})

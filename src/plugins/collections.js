@@ -20,4 +20,8 @@ module.exports = (eleventyConfig) => {
       .filter((item) => intersection(item.data.tags || [], xmlTags).length)
       .sort((a, b) => a.date - b.date),
   );
+
+  eleventyConfig.addCollection('__feed_pages', (collection) =>
+    collection.getAll().filter((item) => item.data.layout.startsWith('xml/')),
+  );
 };

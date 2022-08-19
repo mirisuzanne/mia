@@ -2,7 +2,7 @@
 title: Ethics, ES6 in Practice, and Dynamic CSS
 venue: TalkScript
 date: 2018-09-06
-url: https://www.sitepen.com/blog/episode-18-ethics-es6-in-practice-dynamic-css-live-at-jsconf-us/
+url: https://talkscript.sitepen.com/episode-18-ethics-es6-in-practice-dynamic-css-live-at-jsconf-us/
 tags:
   - code
 summary: |

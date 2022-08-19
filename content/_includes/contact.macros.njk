@@ -65,7 +65,7 @@
       {%- if item.user %}{{ item.user }} on {% endif -%}
       {{- item.site or item.email -}}
     {%- endset -%}
-    {%- set url = ['mailto:', item.email] if item.email else item.url -%}
+    {%- set url = ['mailto:', item.email] | join if item.email else item.url -%}
     <li>
       {{- utility.link_if(
         content,
