@@ -4,6 +4,7 @@ sub: Revenge of the Apocalypse, Again
 date: 2007-04-20
 end: 2007-04-28
 tags:
+  - writing
   - directing
 press:
   - title: Lights, No Cameras, Plenty of Action
@@ -18,3 +19,6 @@ summary: |
 ---
 
 [Read the script »](script/)
+
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}

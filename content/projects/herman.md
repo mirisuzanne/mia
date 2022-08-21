@@ -1,5 +1,5 @@
 ---
-type: web tooling
+type: open source
 title: Herman
 sub: Automate design-system documentation directly from your Sass
 venue: OddBird
@@ -12,6 +12,7 @@ tags:
   - code
   - open source
   - sass
+  - stuff
 press:
   - text: |
       Herman is my documentation dream come true,

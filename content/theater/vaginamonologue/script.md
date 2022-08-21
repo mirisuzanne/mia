@@ -16,8 +16,6 @@ summary: |
   rogue Vagina Monologue.
 ---
 
-------
-
 We have a story in my family.
 My brother is young,
 nursing his favorite doll.

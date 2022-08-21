@@ -1,5 +1,5 @@
 ---
-type: sass tooling
+type: open source
 feature: true
 title: Susy
 sub: |
@@ -16,7 +16,6 @@ index: susy
 tags:
   - oddbird
   - code
-  - susy
   - open source
   - sass
 press:

@@ -4,7 +4,8 @@ title: Resilient Web Systems
 sub: with CSS & Sass
 tags:
   - workshop
-  - code
+  - css
+  - cascade
   - sass
 events:
   - venue: Smashing Workshops

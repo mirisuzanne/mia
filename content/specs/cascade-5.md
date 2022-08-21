@@ -6,7 +6,7 @@ date: 2020-09-15
 type: css spec
 index: cascade layers
 tags:
-  - w3c
+  - csswg
   - cascade layers
 events:
   - venue: PostCSS Polyfill

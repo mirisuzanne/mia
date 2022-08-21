@@ -6,7 +6,7 @@ date: 2020-09-15
 type: css spec
 index: css scope
 tags:
-  - w3c
+  - csswg
   - css scope
 events:
   - venue: Working Draft

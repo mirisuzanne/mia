@@ -4,6 +4,7 @@ sub: I haven't signed to any major web labels.
 date: 2022-06-04
 tags:
   - webmentions
+  - code
 summary: |
   I'm really into the [IndieWeb](https://indieweb.org/),
   or the ideas behind it.

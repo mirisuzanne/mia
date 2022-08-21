@@ -8,7 +8,6 @@ date: 2015-09-24
 tags:
   - teacup gorilla
   - buntport
-  - devising
   - music
 press:
   - credit: Eden Lane
@@ -19,17 +18,20 @@ press:
     venue: Clyfford Still Museum
     url: https://clyffordstillmuseum.org/blog/retriplicate-reflects-on-clyfford-stills-replicas-and-the-artistic-process/
     date: 2015-09-25
+summary: |
+  A multimedia reflection on the
+  [Clyfford Still Museum][museum]
+  *Repeat/Recreate* installation --
+  created with [Buntport Theater][bt],
+  [Hoarded Stuff][hs], [Screw Tooth][st]
+  and [Teacup Gorilla][tg].
+
+  [museum]: https://clyffordstillmuseum.org/
+  [bt]: https://buntport.com
+  [tg]: https://teacupgorilla.com
+  [hs]: https://lauraannsamuelson.com/about
+  [st]: https://screwtooth.com
 ---
 
-A multimedia reflection on the
-[Clyfford Still Museum][museum]
-*Repeat/Recreate* installation --
-created with [Buntport Theater][bt],
-[Hoarded Stuff][hs], [Screw Tooth][st]
-and [Teacup Gorilla][tg].
-
-[museum]: https://clyffordstillmuseum.org/
-[bt]: https://buntport.com
-[tg]: https://teacupgorilla.com
-[hs]: https://lauraannsamuelson.com/about
-[st]: https://screwtooth.com
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}

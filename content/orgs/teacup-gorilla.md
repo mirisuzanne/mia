@@ -2,7 +2,7 @@
 title: Teacup Gorilla
 sub: Dark indie-rock soundscapes with evocative poetry
 org: Bass & Vocals
-type: music
+type: band
 hero:
   img: art/music/video-meta.jpg
 url: https://teacupgorilla.com/
@@ -13,7 +13,6 @@ tags:
   - art
   - music
   - writing
-  - teacup gorilla
   - band
 press:
   - text: |

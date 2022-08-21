@@ -14,11 +14,8 @@ hero:
     with Herman and Sam brushing their teeth,
     and Teacup Gorilla playing instruments in the bathtub.
 tags:
-  - writing
-  - riding sidesaddle
-  - buntport
-  - teacup gorilla
   - script
+  - 10myths
 ---
 
 *[Lights up. A bathroom surrounded by emptiness. Sam is in the bathroom --

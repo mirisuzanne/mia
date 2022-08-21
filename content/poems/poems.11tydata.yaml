@@ -1,7 +1,0 @@
-permalink: "/{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html"
-type: poem
-tags:
-  - _post
-  - art
-  - writing
-  - poem

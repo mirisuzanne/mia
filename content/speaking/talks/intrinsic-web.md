@@ -7,8 +7,11 @@ hero:
   height: 696
   position: top
 tags:
-  - code
-  - w3c
+  - css
+  - csswg
+  - cascade layers
+  - container queries
+  - css scope
 events:
   - venue: Smashing Conf
     url: https://smashingconf.com/sf-2022/

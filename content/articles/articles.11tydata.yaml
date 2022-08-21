@@ -1,5 +1,0 @@
-permalink: "/{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html"
-type: article
-tags:
-  - _post
-  - writing

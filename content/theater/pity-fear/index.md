@@ -17,7 +17,6 @@ events:
     end: 2022-05-28
 index: pity+fear
 tags:
-  - _post
   - writing
   - acting
   - lighting
@@ -175,9 +174,8 @@ and what to order for dinner.
 
 ## Press
 
-{% for item in press %}
-- **{{ item.venue }}**: _[{{ item.title }}]({{ item.url }})_ {{ ['by ', item.credit] | join if item.credit }}
-{%- endfor %}
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}
 
 ## Photos
 

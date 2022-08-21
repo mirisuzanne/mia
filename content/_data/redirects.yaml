@@ -1,0 +1,12 @@
+- from: /films/daffodilmf/
+  to: /theater/daffodilmf/
+- from: /films/daffodilmf/script/
+  to: /theater/daffodilmf/script/
+
+- from: /films/fallout/
+  to: /theater/fallout/
+- from: /films/fallout/script/
+  to: /theater/fallout/script/
+
+- from: /projects/mal-residence/
+  to: /art/mal-residence/

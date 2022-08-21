@@ -2,10 +2,13 @@
 feature: true
 title: Outside The Room
 sub: bite-size production of Kafka's metamorphoses
-venue: Denver Center for the Performing Arts
-url: https://www.denvercenter.org/tickets-events/bite-size/
+venue: Grapefruit Lab
+url: https://www.grapefruitlab.com/shows/outside-room/
 date: 2018-10-23
-end: 2018-11-18
+events:
+  - venue: Denver Center for the Performing Arts
+    url: https://www.denvercenter.org/tickets-events/bite-size/
+    end: 2018-11-18
 hero:
   img: art/theater/outsidetheroom.jpg
 tags:

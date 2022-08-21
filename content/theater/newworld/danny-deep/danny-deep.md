@@ -10,3 +10,6 @@ press:
     url: https://articles.southbendtribune.com/2006-09-17/news/26981141_1_danny-and-roberta-dance-characters
     date: 2006-09-17
 ---
+
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}

@@ -1,7 +1,8 @@
 ---
 title: Sadomasochism
-sub: part of the *Fall New Arts Festival*
 date: 2005-09-13
+event:
+  - venue: Fall New Arts Festival
 tags:
   - writing
   - directing

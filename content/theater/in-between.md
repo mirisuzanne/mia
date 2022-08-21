@@ -1,11 +1,11 @@
 ---
 title: The In-Between
-sub: a site-specific performance in the Utah desert
+sub: a site-specific performance in the Utah desert, by Julie Rada
+url: https://www.julierada.com/#/the-in-between/
 hero:
   img: art/theater/inbetween.jpg
 events:
   - venue: Rio Mesa Center
-    url: https://www.julierada.com/#/the-in-between/
     date: 2015-09-06
   - venue: Rio Mesa Center
     url: https://www.julierada.com/#/the-in-between/

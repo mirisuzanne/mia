@@ -32,8 +32,8 @@ const tagLink = (tag, collections) => {
 const topTags = (collections, as) => {
   const top = data.tags.map((tag) => {
     const display = displayName(tag);
-    const url = tag === data.more ? '/tags/' : tagLink(tag, collections);
-    const attr = tag === data.more ? '' : 'class="p-category"';
+    const url = tagLink(tag, collections);
+    const attr = 'class="p-category"';
 
     return {
       name: tag,
@@ -43,15 +43,24 @@ const topTags = (collections, as) => {
     };
   });
 
+  const more = {
+    name: data.more,
+    display: data.more,
+    url: '/tags/',
+    link: `<a href="/tags/">${data.more}</a>`,
+  };
+
+  const all = [...top, more];
+
   if (as === 'html') {
-    return top.map((tag) => tag.link).join(' & ');
+    return all.map((tag) => tag.link).join(' & ');
   }
 
   if (as === 'text') {
-    return top.map((tag) => tag.display).join(' & ');
+    return all.map((tag) => tag.display).join(' & ');
   }
 
-  return top;
+  return all;
 };
 
 module.exports = {

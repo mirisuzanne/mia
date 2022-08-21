@@ -5,11 +5,10 @@ slides: https://www.oddbooksapp.com/book/software-for-humans
 hero:
   img: talks/user-unfriendly.png
 tags:
-  - code
+  - css
   - art
   - design
   - process
-  - collaboration
 events:
   - venue: Agnes Scott College
     url: https://calendar.agnesscott.edu/event/user_unfriendlynotes_toward_a_queer_web
@@ -22,7 +21,7 @@ events:
     slides: https://talks.oddbird.net/user-unfriendly/design4drupal19
     video: https://drupal.tv/external-video/2019-06-28/user-unfriendly-practical-guide-losing-control
     tags:
-      - code video
+      - video
     embed: &drupal
       iframe: https://www.youtube.com/embed/2MkQBQb43gE
       width: 560

@@ -2,6 +2,7 @@
 title: Mozilla Developer Channel
 sub: Videos, articles, & tools from Mozilla (and OddBird)
 org: DevRel Contractor
+type: contract
 url: https://www.youtube.com/MozillaDeveloper
 date: 2019-07-01
 end: 2020-01-01
@@ -9,11 +10,9 @@ hero:
   img: mozdev/mozilla-youtube.jpg
 index: mozilla developer
 tags:
-  - writing
   - code
-  - code video
+  - video
   - speaking
-  - mozilla developer
 summary: |
   I've been working with Mozilla
   to help create a new resource

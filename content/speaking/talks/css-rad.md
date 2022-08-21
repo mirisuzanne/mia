@@ -9,7 +9,8 @@ hero:
     (which fits the box just fine)
   caption: CSS is better than "awesome"
 tags:
-  - code
+  - css
+  - cascade
 events:
   - venue: Design 4 Drupal Webinar Series
     url: https://design4drupal.org/webinar-series
@@ -29,7 +30,7 @@ events:
     adr: Denver, CO
     video: https://youtu.be/bSITeqDKkb8
     tags:
-      - code video
+      - video
     embed: &frfe
       - iframe: https://www.youtube.com/embed/bSITeqDKkb8
         width: 560
@@ -42,7 +43,7 @@ events:
     adr: New York, NY
     video: https://vimeo.com/367890815
     tags:
-      - code video
+      - video
     embed: &smashing
       - iframe: https://player.vimeo.com/video/367890815
         width: 640

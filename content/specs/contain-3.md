@@ -6,7 +6,7 @@ date: 2020-09-15
 type: css spec
 index: container queries
 tags:
-  - w3c
+  - csswg
   - container queries
 events:
   # - venue: Released in Browsers

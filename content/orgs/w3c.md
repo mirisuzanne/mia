@@ -2,14 +2,14 @@
 title: W3C CSS Working Group
 sub: Developing specifications for the CSS language
 org: Invited Expert
+type: open source
 url: https://css-tricks.com/author/miriam/
 date: 2020-03-01
 end: ongoing
-index: w3c
 hero:
   svg: w3c.svg
+index: csswg
 tags:
-  - w3c
   - oddbird
   - code
   - open source

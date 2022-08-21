@@ -3,15 +3,15 @@ title: Losing Control
 banner: A Practical Guide to Losing Control
 slides: https://www.oddbooksapp.com/book/losing-control
 tags:
-  - code
   - art
+  - process
 events:
   - venue: UVA Scholars’ Lab
     url: https://cal.lib.virginia.edu/event/3088981
     adr: Charlottesville, VA
     date: 2017-01-23
     tags:
-      - _resistance tour
+      - resistance tour
 ---
 
 **As creators, it’s tempting to grab and consolidate our power**,

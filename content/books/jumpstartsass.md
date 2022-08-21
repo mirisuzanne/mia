@@ -1,5 +1,4 @@
 ---
-feature: true
 title: Jump Start Sass
 sub: Get up to speed with Sass in a weekend…
 venue: SitePoint

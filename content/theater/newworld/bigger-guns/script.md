@@ -15,8 +15,6 @@ summary: |
   I don't believe this is the final script…
 ---
 
-------
-
 ## Scene 1: Hostages
 
 *The doors of the theatre don't open and don't open and they still

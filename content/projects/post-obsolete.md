@@ -1,14 +1,13 @@
 ---
 feature: true
-type: code art
 title: The Post-Obsolete Book
 banner: The Obsolete Book
-hero:
-  img: elo14/dancesex.jpg
-  caption: Say "ooooooooo" while you dance
 sub: |
   in a Post-Obsolete World,
   as Represented by a Post-Obsolete Book About Dance
+hero:
+  img: elo14/dancesex.jpg
+  caption: Say "ooooooooo" while you dance
 venue: post-obsolete.com
 url: https://post-obsolete.com
 date: 2012-07-08
@@ -17,7 +16,7 @@ tags:
   - writing
   - art
   - theater
-  - elit
+  - electronic literature
 events:
   - venue: ELO Conference
     date: 2014-06-19

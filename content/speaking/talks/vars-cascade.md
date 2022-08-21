@@ -6,7 +6,9 @@ hero:
   width: 2898
   height: 1522
 tags:
-  - code
+  - css
+  - cascade
+  - custom properties
 slides: https://slides.oddbird.net/variables/
 events:
   - venue: SmashingConf Austin/NY

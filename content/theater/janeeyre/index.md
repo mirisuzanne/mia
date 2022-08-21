@@ -2,20 +2,18 @@
 feature: true
 title: JANE/EYRE
 sub: A queer adaptation of the classic novel, with music…
+date: 2018-02-23
 hero:
   img: art/theater/jane.jpg
-date: 2018-02-23
-end: 2018-03-03
-venue: The Bakery
-url: https://www.grapefruitlab.com/shows/jane-eyre/
+events:
+  - date: 2018-02-23
+    end: 2018-03-03
+    venue: The Bakery
 tags:
   - directing
-  - writing
   - acting
   - lighting
   - music
-  - grapefruit lab
-  - teacup gorilla
 gallery:
   - img: /art/theater/jane/DSC_0412.jpg
   - img: /art/theater/jane/DSC_0430.jpg
@@ -47,9 +45,10 @@ summary: |
   but we believe in the existence of other,
   and more vivid kinds of goodness.
 ---
+
 {% import "content.macros.njk" as content %}
 
-[Read the script »](script/)
+[Read the script »](./script/)
 
 ------
 

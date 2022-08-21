@@ -4,7 +4,9 @@ sub: Pushing past global design tokens
 hero:
   img: talks/vars-cascade.jpg
 tags:
-  - code
+  - css
+  - custom properties
+  - cascade
 events:
   - venue: An Event Apart Spring Summit
     url: https://aneventapart.com/event/spring-summit-2021

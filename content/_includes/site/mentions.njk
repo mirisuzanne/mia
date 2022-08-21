@@ -17,7 +17,7 @@
     hide | includes('mentions')
     or (page.url == '/')
     or eleventyExcludeFromCollections
-    or (not '_post' in (tags or []))
+    or (not 'post' in (tags or []))
   )
 -%}
 

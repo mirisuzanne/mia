@@ -6,10 +6,7 @@ date: 2018-03-03
 hero:
   img: /art/theater/jane/DSC_0362.jpg
 tags:
-  - writing
-  - music
-  - grapefruit lab
-  - teacup gorilla
+  - script
 ---
 
 ## Gateshead Hall

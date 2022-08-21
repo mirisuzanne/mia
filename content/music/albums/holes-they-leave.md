@@ -10,6 +10,10 @@ hero:
 tags:
   - teacup gorilla
 events:
+  - title: Midwest Tour
+    url: /2015/08/01/holes-tour/
+    date: 2015-08-02
+    end: 2015-08-11
   - title: EP Release Party
     venue: Hi Dive
     date: 2015-07-09
@@ -38,7 +42,7 @@ audio:
 In the summer of 2015,
 [Teacup Gorilla][tg] released our debut EP
 in conjunction with [Riding SideSaddle*][sidesaddle]
-and a tour across the midwest.
+and a [tour across the midwest](/2015/08/01/holes-tour/).
 
 [Buy the album](https://teacupgorilla.bandcamp.com/album/the-holes-they-leave)
 
@@ -49,3 +53,8 @@ and a tour across the midwest.
   audio,
   caption='Stream or buy on bandcamp, itunes, spotify, etc…'
 ) }}
+
+------
+
+{% import "macros/quote.njk" as quote %}
+{{ quote.list(press) }}

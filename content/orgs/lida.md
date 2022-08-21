@@ -9,13 +9,10 @@ date: 2008-05-01
 end: 2010-03-01
 hero:
   img: art/theater/lida/skatingpromo.jpg
-index: _LIDA
+index: lida project
 tags:
   - theater
   - art
-  - technical director
-  - ensemble
-  - devising
 summary: |
   Founded in 1995,
   The LIDA Project is a meta-media art collective

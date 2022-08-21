@@ -2,8 +2,8 @@
 title: Sass Map Magic
 slides: https://www.oddbooksapp.com/book/sass-map-magic
 tags:
-  - code
   - sass
+  - process
 events:
   - venue: CSSConf 2016
     url: https://2016.cssconf.com/
@@ -11,7 +11,7 @@ events:
     date: 2016-09-26
     slides: https://oddbooksapp.com/release/b71e6e5d-e956-42ff-a4dd-b70bf3b13a2a
     tags:
-      - code video
+      - video
     embed: &cssconf
       iframe: https://www.youtube.com/embed/MdwtoFt2LOI
       width: 560

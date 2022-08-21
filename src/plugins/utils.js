@@ -22,8 +22,21 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('groupBy', _.groupBy);
   eleventyConfig.addFilter('filter', _.filter);
   eleventyConfig.addFilter('find', _.find);
-  eleventyConfig.addFilter('includes', (array, key) =>
-    _.includes(array || [], key),
+
+  eleventyConfig.addFilter('includes', (array, find, all = false) => {
+    if (typeof find === 'string') {
+      return _.includes(array || [], find);
+    }
+
+    if (all) {
+      return find.every((item) => _.includes(array || [], item));
+    }
+
+    return _.intersection(array || [], find).length > 0;
+  });
+
+  eleventyConfig.addFilter('intersection', (array, compare) =>
+    _.intersection(array || [], compare),
   );
 
   // Get the first `n` elements of a collection.

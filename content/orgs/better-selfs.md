@@ -2,7 +2,7 @@
 title: The Better Selfs
 sub: Denver-based rock/punk/americana
 org: Bass
-type: music
+type: band
 hero:
   img: art/music/better-selfs.jpg
   alt: |
@@ -15,7 +15,6 @@ index: better selfs
 tags:
   - art
   - music
-  - better selfs
   - band
 summary: |
   A Denver-based rock/punk/Americana band

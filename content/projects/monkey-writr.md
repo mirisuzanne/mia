@@ -15,7 +15,7 @@ tags:
   - writing
   - code
   - art
-  - elit
+  - electronic literature
   - monkey-writr
 summary: |
   A monkey hitting keys at random

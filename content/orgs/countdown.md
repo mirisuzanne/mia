@@ -9,11 +9,8 @@ date: 2007-09-20
 end: 2010-01-14
 index: countdown to zero
 tags:
-  - countdown to zero
   - theater
   - art
-  - ensemble
-  - technical director
 summary: |
   Countdown to Zero is a political theatre collective
   established in 2007 by Brian Freeland & Julie Rada.

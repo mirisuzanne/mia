@@ -3,10 +3,10 @@ title: Agile Design Systems
 sub: with meaningful code and automation
 slides: https://talks.oddbird.net/agile-systems/
 tags:
-  - code
   - agile
   - design systems
   - sass
+  - css
 events:
   - venue: Agile Alliance
     adr: Washington, DC
@@ -27,7 +27,7 @@ events:
     date: 2018-03-26
     video: https://www.vuemastery.com/conferences/vueconf-2018/agile-design-systems-in-vue-miriam-suzanne/
     tags:
-      - code video
+      - video
     embed: &vue
       - iframe: https://player.vimeo.com/video/264296381
         width: 640

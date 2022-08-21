@@ -2,11 +2,11 @@
 title: Untitled \#39 | Dresden Dolls
 sub: a site specific opening act
 venue: Bluebird Theater
-adr: Denver, CO
 date: 2008-05-16
+events:
+  - adr: Denver, CO
 tags:
   - acting
-  - devising
 summary: |
   We created this site-specific
   and interactive performance

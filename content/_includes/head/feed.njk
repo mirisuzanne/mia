@@ -1,7 +1,7 @@
 {%- for feed in collections.__feed_pages -%}
 <link
   rel="alternate"
-  type="application/{{ feed.data.type }}"
+  type="application/{{ feed.data.feed }}"
   title="{{ feed.data.title }}: {{ site.description }}"
-  href="{{ feed.data.url | absoluteUrl(site.url) }}" />
+  href="{{ feed.url | absoluteUrl(site.url) }}" />
 {%- endfor -%}
