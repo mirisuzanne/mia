@@ -436,7 +436,7 @@ which says it was _last modified 07/04/2022 16:39:51 GMT_
 
 Wait, what?
 Inspecting the source code,
-I found thtype:
+I found this:
 
 ```html
 <p>
