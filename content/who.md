@@ -77,7 +77,7 @@ summary: |
 
 {% for name, bio in bios %}
 {% if name != 'intro' %}
-## {{ name | capitalize }} Bio
+## {{ name | capitalize }} bio {id=bio-{{name | slugify }}}
 
 <div class="p-note">
 {{ bio | md | safe }}
@@ -85,7 +85,7 @@ summary: |
 {% endif %}
 {% endfor %}
 
-## Photos
+## Photos {id=photos}
 
 {% import 'content.macros.njk' as content %}
 
