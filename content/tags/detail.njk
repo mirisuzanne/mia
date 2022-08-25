@@ -11,6 +11,6 @@ attrs:
     class: h-feed
 ---
 
-{%- for item in collections[index] | getPublic | sortBy('data.date') | reverse -%}
+{%- for item in collections[tag] | getPublic | sortBy('data.date') | reverse -%}
   {%- include "part/hentry.njk" -%}
 {%- endfor -%}

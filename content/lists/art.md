@@ -8,7 +8,6 @@ hero:
     of black-and-white medical and electrical diagrams,
     with red arrows
     and text that says "a longing"
-
 sub: |
   [writing](/tags/writing/),
   [music](/music/),
@@ -17,12 +16,10 @@ sub: |
   and more...
 summary: |
   I make music
-  with [Teacup Gorilla](/orgs/teacup-gorilla/) and
-  theater with [Grapefruit Lab](/orgs/grapefruit-lab/) --
-  as well as
-  designing [book covers](/tags/book-design/),
-  [publishing a novel](/books/sidesaddle/),
-  and more.
+  with [Teacup Gorilla](/orgs/teacup-gorilla/),
+  theater with [Grapefruit Lab](/orgs/grapefruit-lab/),
+  and have a variety of other
+  artistic projects underway.
 ---
 
 {%- set hfeed = collections.stuff | intersection(collections.art) | getPublic | filter('data.feature')  -%}

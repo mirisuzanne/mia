@@ -1,6 +1,111 @@
 {
-  "lastFetched": "2022-08-21T22:28:55.562Z",
+  "lastFetched": "2022-08-25T07:57:13.288Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.reddit.com/r/css/comments/vecm6u/complex_vs_compound_selectors/",
+      "published": null,
+      "wm-received": "2022-08-24T15:58:53Z",
+      "wm-id": 1474201,
+      "wm-source": "https://www.reddit.com/r/css/comments/vecm6u/complex_vs_compound_selectors/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.reddit.com/r/css/comments/vecm6u/complex_vs_compound_selectors/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.reddit.com/r/Frontend/comments/vecm8y/complex_vs_compound_selectors/",
+      "published": null,
+      "wm-received": "2022-08-24T15:58:49Z",
+      "wm-id": 1474199,
+      "wm-source": "https://www.reddit.com/r/Frontend/comments/vecm8y/complex_vs_compound_selectors/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.reddit.com/r/Frontend/comments/vecm8y/complex_vs_compound_selectors/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.reddit.com/r/webdev/comments/vecmdm/complex_vs_compound_selectors/",
+      "published": null,
+      "wm-received": "2022-08-24T15:38:09Z",
+      "wm-id": 1473476,
+      "wm-source": "https://www.reddit.com/r/webdev/comments/vecmdm/complex_vs_compound_selectors/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.reddit.com/r/webdev/comments/vecmdm/complex_vs_compound_selectors/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.reddit.com/r/web_design/comments/vecmam/complex_vs_compound_selectors/",
+      "published": null,
+      "wm-received": "2022-08-24T15:25:41Z",
+      "wm-id": 1473049,
+      "wm-source": "https://www.reddit.com/r/web_design/comments/vecmam/complex_vs_compound_selectors/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/06/15/complex-compound/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.reddit.com/r/web_design/comments/vecmam/complex_vs_compound_selectors/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.reddit.com/r/hackernews/comments/vu75ol/body_margin_8px/",
+      "published": null,
+      "wm-received": "2022-08-24T06:01:20Z",
+      "wm-id": 1468469,
+      "wm-source": "https://www.reddit.com/r/hackernews/comments/vu75ol/body_margin_8px/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "mention-of": "https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/?ref=heydesigner",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.reddit.com/r/hackernews/comments/vu75ol/body_margin_8px/"
+      }
+    },
     {
       "type": "entry",
       "author": {

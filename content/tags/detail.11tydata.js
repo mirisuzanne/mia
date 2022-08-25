@@ -23,6 +23,5 @@ module.exports = {
         '[${data.tag_page.data.banner}](${data.tag_page.url})'
         for more details.`
         : null,
-    index: (data) => data.tag,
   },
 };
