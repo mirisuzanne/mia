@@ -35,7 +35,7 @@ eleventyComputed:
 </section>
 {%- endif -%}
 
-{%- set hfeed = collections.stuff | getPublic | filter('data.feature')  -%}
+{%- set hfeed = collections.artifact | getPublic | filter('data.feature')  -%}
 {%- if hfeed | length > 0 -%}
 <hr />
 <section class="h-feed">

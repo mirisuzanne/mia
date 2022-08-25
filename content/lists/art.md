@@ -22,7 +22,7 @@ summary: |
   artistic projects underway.
 ---
 
-{%- set hfeed = collections.stuff | intersection(collections.art) | getPublic | filter('data.feature')  -%}
+{%- set hfeed = collections.artifact | intersection(collections.art) | getPublic | filter('data.feature')  -%}
 {%- if hfeed | length > 0 -%}
 <section class="h-feed">
   <h2 class="p-name">Featured Stuff</h2>

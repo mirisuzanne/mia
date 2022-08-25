@@ -12,7 +12,7 @@ tags:
   - code
   - open source
   - sass
-  - stuff
+  - artifact
 press:
   - text: |
       Herman is my documentation dream come true,

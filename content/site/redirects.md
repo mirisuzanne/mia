@@ -9,7 +9,6 @@ pagination:
 permalink: '{{ redirect.from }}'
 ---
 
-{% set to = collections.all | getPage(redirect.to) %}
-
-Redirecting you to [{{ to.banner or to.title }}]({{ to.url }}).
-If you are not redirected shortly, please click the link.
+Redirecting you to
+[{{ redirect.to }}]({{ redirect.to }}).
+If you are not redirected shortly, follow the link.

@@ -12,7 +12,7 @@ tags:
   - code
   - open source
   - sass
-  - stuff
+  - artifact
 summary: |
   Design systems must be
   meaningful to both humans and machines
