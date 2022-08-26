@@ -3,10 +3,10 @@ title: Your Own Damn [Susy] System
 sub: an introduction to the Susy layout toolkit
 url: https://mirisuzanne.github.io/pres/susy2/
 tags:
-  - code
+  - css
+  - sass
   - susy
   - layout
-  - sass
 events:
   - venue: Bmore Sass
     url: https://bmore-sass.com/

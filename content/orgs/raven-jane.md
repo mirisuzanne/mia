@@ -2,6 +2,7 @@
 title: Raven Jane
 sub: indie roots-rock featuring Rachel Eisenstat
 org: Multi-Instrumetalist
+type: band
 venue: BandCamp
 url: https://www.ravenjane.com/
 date: 2010-09-14
@@ -15,8 +16,6 @@ index: raven jane
 tags:
   - music
   - art
-  - raven jane
-  - audio
   - band
 summary: |
   For a few years,

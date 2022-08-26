@@ -1,11 +1,12 @@
 ---
 title: Roller Skating With My Cousin
 sub: A devised work of The LIDA Project
-venue: BINDERY | space
 url: https://lida.org/roller-skating-with-my-cousin/
-adr: Denver, CO
 date: 2010-01-15
-end: 2010-02-20
+events:
+  - adr: Denver, CO
+    date: 2010-01-15
+    end: 2010-02-20
 hero:
   img: art/theater/lida/rollerskating.jpg
   caption: |

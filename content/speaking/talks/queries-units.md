@@ -12,6 +12,10 @@ events:
     url: https://www.w3.org/2022/09/meetup/
     date: 2022-09-13
     slug: 2022-tpac
+tags:
+  - css
+  - csswg
+  - container queries
 summary: |
   Container queries & units have a lot to offer
   as we enter a more content-out era of Intrinsic Web Design,

@@ -6,8 +6,9 @@ slides: https://talks.oddbird.net/dynamic-css/
 hero:
   img: talks/miriam.jpg
 tags:
-  - code
+  - css
   - layout
+  - custom properties
 events:
   # - venue: Webconf.asia
   #   url: https://webconf.asia/
@@ -24,7 +25,7 @@ events:
     end: 2019-08-16
     adr: Denver, CO
     tags:
-      - code video
+      - video
     embed: &dvlpdnvr
       - iframe: https://www.youtube.com/embed/JnvkjhwcMcM
         width: 560
@@ -43,7 +44,7 @@ events:
     slides: https://talks.oddbird.net/dynamic-css/smashingsf19/
     video: https://vimeo.com/331571593
     tags:
-      - code video
+      - video
     embed: &smashing
       - iframe: https://player.vimeo.com/video/331571593
         width: 640
@@ -66,7 +67,7 @@ events:
     slides: https://talks.oddbird.net/dynamic-css/fullstack18/
     video: https://youtu.be/9fTUeLsR2Hc
     tags:
-      - code video
+      - video
     embed: &fsfest
       iframe: https://www.youtube.com/embed/9fTUeLsR2Hc
       width: 560
@@ -78,7 +79,7 @@ events:
     slides: https://talks.oddbird.net/dynamic-css/jsconfus18/
     video: https://www.youtube.com/watch?v=uwgBz748t-g
     tags:
-      - code video
+      - video
     embed: &jsconf
       iframe: https://www.youtube.com/embed/uwgBz748t-g
       width: 560

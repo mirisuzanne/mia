@@ -5,19 +5,15 @@ sub: |
   Award-winning stage adaptation of
   [Riding SideSaddle*](/books/sidesaddle/)
   weaving myth with everyday ritual
+date: 2016-03-04
 hero:
   img: art/theater/10myths.jpg
-venue: Buntport Theater
-url: https://buntport.com/2016/03/10-myths-proper-application-beauty-products/
-date: 2016-03-04
-end: 2016-03-26
-tags:
-  - writing
-  - riding sidesaddle
-  - teacup gorilla
-  - music
-  - buntport
+index: 10myths
 events:
+  - venue: Buntport Theater
+    url: https://buntport.com/2016/03/10-myths-proper-application-beauty-products/
+    date: 2016-03-04
+    end: 2016-03-26
   - title: 2016 True West Award
     venue: Denver Center for the Performing Arts
     url: https://www.denvercenter.org/news-center/2016-true-west-award-miriam-suzanne/
@@ -118,7 +114,7 @@ summary: |
 
 {% import "content.macros.njk" as content %}
 
-[Read the script »](script/)
+[Read the script »](./script/)
 
 ------
 

@@ -9,6 +9,7 @@ summary: |
   the (Eleventy/Markdown) content that drives it.
   And I want to do it slowly.
 ---
+
 {% import "utility.macros.njk" as utility %}
 {% import "demos/colors.njk" as colors %}
 
@@ -164,7 +165,7 @@ as a part of the site.
 
 It's been fun
 working on new CSS features
-[with the CSSWG](/orgs/w3c/),
+[with the CSSWG](/orgs/csswg/),
 but now that those features
 (and more)
 are starting to roll out in browsers

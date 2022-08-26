@@ -4,6 +4,7 @@ sub: Now I remember why we stopped putting comment forms on everything.
 date: 2022-06-09
 tags:
   - webmentions
+  - code
 summary: |
   The other day, I posted an article about
   [implementing webmentions](/2022/06/04/indiweb/)

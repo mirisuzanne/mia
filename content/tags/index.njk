@@ -8,10 +8,12 @@ eleventyExcludeFromCollections: true
 {% if tagData %}
 <ol>
   {% for tag in tagData | sortBy('count') | sortBy('top') | reverse %}
-    <li>
-      <a href="{{ tag.url | url }}">{{ tag.display }}</a>
-      ({{ tag.count }} pages)
-    </li>
+    {% if tag.count > 1 %}
+      <li>
+        <a href="{{ tag.url | url }}">{{ tag.display }}</a>
+        ({{ tag.count }} pages)
+      </li>
+    {% endif %}
   {% endfor %}
 </ol>
 {% endif %}

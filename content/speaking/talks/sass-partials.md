@@ -2,8 +2,8 @@
 title: Organizing Sass Partials
 slides: https://mirisuzanne.github.io/pres/sass-partials/
 tags:
-  - code
   - sass
+  - process
 events:
   - venue: NYCSass Meetup
     url: https://www.meetup.com/nyc-sass/events/146898452/

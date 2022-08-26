@@ -11,11 +11,9 @@ hero:
   img: /art/theater/jane/DSC_0362.jpg
 index: grapefruit lab
 tags:
-  - grapefruit lab
   - theater
   - writing
   - art
-  - ensemble
 summary: |
   We want to make art without assumptions --
   art that humanizes
@@ -41,4 +39,4 @@ compelling artistic work embeded in our communities.
 > ---Yoko Ono
 
 See our shows below,
-for photos, scripts, and press:
+for photos, scripts, and press...

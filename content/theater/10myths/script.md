@@ -1,4 +1,5 @@
 ---
+feature: true
 title: 10 Myths Script
 banner: 'Script: 10 Myths...'
 type: script
@@ -14,11 +15,9 @@ hero:
     with Herman and Sam brushing their teeth,
     and Teacup Gorilla playing instruments in the bathtub.
 tags:
-  - writing
-  - riding sidesaddle
-  - buntport
-  - teacup gorilla
   - script
+  - artifact
+  - 10myths
 ---
 
 *[Lights up. A bathroom surrounded by emptiness. Sam is in the bathroom --

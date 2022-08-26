@@ -1,5 +1,5 @@
 ---
-type: sass tooling
+type: open source
 title: Accoutrement
 sub: Open-source tools for mainaining design system "tokens" in Sass
 venue: OddBird
@@ -12,6 +12,7 @@ tags:
   - code
   - open source
   - sass
+  - artifact
 summary: |
   Design systems must be
   meaningful to both humans and machines

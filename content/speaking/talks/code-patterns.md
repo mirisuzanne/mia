@@ -3,9 +3,9 @@ title: Code Patterns
 banner: Code Patterns for Pattern Making
 slides: https://oddbooksapp.com/book/pattern-making
 tags:
-  - code
-  - design systems
+  - css
   - sass
+  - design systems
 events:
   - venue: Refresh Denver
     url: https://www.meetup.com/refreshdenver/events/241230495/?from=ref
@@ -23,7 +23,7 @@ events:
     date: 2017-01-12
     slides: https://oddbooksapp.com/release/e063d143-df07-4392-a6f3-3ae53e7fa2ca
     tags:
-      - _resistance tour
+      - resistance tour
   - venue: CSSDay.io
     adr: Chandler, AZ
     date: 2016-12-03
@@ -33,7 +33,7 @@ events:
       width: 560
       height: 315
     tags:
-      - code video
+      - video
   - venue: CascadiaFest
     url: https://2016.cascadiajs.com/
     date: 2016-08-03
@@ -43,7 +43,7 @@ events:
       width: 560
       height: 315
     tags:
-      - code video
+      - video
   - venue: CSS Summit
     url: https://environmentsforhumans.com/2016/css-summit/
     date: 2016-07-26
@@ -58,7 +58,7 @@ events:
     date: 2016-03-31
     slides: https://oddbooksapp.com/release/ab1987b6-7d5f-42e4-b0ff-e7312cb345f6
     tags:
-      - code video
+      - video
 summary: |
   Style Guides & Pattern Libraries are great tools
   for documenting the relationships between code and design,

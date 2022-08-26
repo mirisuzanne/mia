@@ -1,5 +1,0 @@
-permalink: "/{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html"
-type: music
-tags:
-  - art
-  - music

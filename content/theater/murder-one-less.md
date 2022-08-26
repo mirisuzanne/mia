@@ -1,6 +1,6 @@
 ---
 title: A Murder One Less
-sub: A [Grarpefruit Lab](/orgs/grapefruit-lab/) production
+sub: by Julie Rada
 date: 2009-08-14
 hero:
   img: art/theater/murder/amol-3.jpg
@@ -8,7 +8,6 @@ hero:
   caption: Julie Rada as a plain and pensive woman
 tags:
   - grapefruit lab
-  - ensemble
   - lighting
 events:
   - venue: Boulder International Fringe Festival

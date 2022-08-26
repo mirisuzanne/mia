@@ -3,11 +3,12 @@ title: The Anonymous Mr. W.
 sub: |
   a devised work of [The LIDA Project](/orgs/lida/)
   based on Georg Büchner’s *Woyzeck*
-venue: BINDERY | space
-url: https://lida.org/the-anonymous-mr-w/
-adr: Denver, CO
 date: 2008-12-12
-end: 2008-12-13
+url: https://lida.org/the-anonymous-mr-w/
+events:
+  - adr: Denver, CO
+    date: 2008-12-12
+    end: 2008-12-13
 hero:
   img: art/theater/lida/mrw.jpg
 tags:

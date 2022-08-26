@@ -1,6 +1,0 @@
-permalink: "/{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html"
-type: interview
-tags:
-  - _post
-  - interview
-  - elsewhere

@@ -9,7 +9,7 @@ tags:
   - art
   - design
   - code
-  - elit
+  - electronic literature
 hero:
   img: greenmud/cover.jpg
 press:

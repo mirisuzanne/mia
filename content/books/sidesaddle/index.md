@@ -10,7 +10,6 @@ hero:
   alt:
   caption: A novel on 250 note-cards
 index: riding sidesaddle
-tags:
 events:
   - title: Queer Art
     type: reading

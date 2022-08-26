@@ -2,7 +2,6 @@
 title: Planning Your Web Project
 slides: https://www.oddbooksapp.com/book/web-projects
 tags:
-  - code
   - process
 events:
   - venue: Boost Biz Ed

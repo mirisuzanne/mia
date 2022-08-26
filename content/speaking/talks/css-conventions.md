@@ -6,7 +6,8 @@ hero:
   width: 2000
   height: 1687
 tags:
-  - code
+  - css
+  - cascade
 events:
   - venue: An Event Apart Fall Summit
     url: https://aneventapart.com/event/online-1020

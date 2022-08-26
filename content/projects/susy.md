@@ -1,12 +1,11 @@
 ---
-type: sass tooling
-feature: true
+type: open source
 title: Susy
 sub: |
   Popular CSS layout framework
-  used by **Virgin America**,
+  used (at one point) by **Virgin America**,
   **The Smithsonian**,
-  and others
+  and others.
 venue: OddBird
 url: https://oddbird.net/susy/
 date: 2009-07-13
@@ -16,7 +15,6 @@ index: susy
 tags:
   - oddbird
   - code
-  - susy
   - open source
   - sass
 press:
@@ -63,12 +61,11 @@ press:
     credit: Zell Liew
     url: https://learnsusy.zellwk.com/
 summary: |
-  Susy is a lightweight grid-layout engine for Sass,
-  designed to simplify and clarify responsive grid layouts
-  without ever getting in your way.
-  Originally released in 2009,
-  Susy has become one of the
-  most popular layout frameworks on the web.
+  Susy was a lightweight grid-layout engine for Sass,
+  originally released in 2009.
+  Over time, it became one of the
+  most popular layout frameworks on the web,
+  before retiring in 2020.
 ---
 
 {% import "macros/quote.njk" as quote %}

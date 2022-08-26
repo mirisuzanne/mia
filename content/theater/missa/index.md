@@ -1,19 +1,17 @@
 ---
 title: Missa Populi
 sub: a modern mass
-venue: PackingHouse Center for the Arts
-url: https://www.grapefruitlab.com/shows/missa-populi/
 date: 2010-03-12
-end: 2010-03-14
 hero:
   img: art/theater/missa.jpg
+events:
+  - venue: PackingHouse Center for the Arts
+    url: https://www.grapefruitlab.com/shows/missa-populi/
+    date: 2010-03-12
+    end: 2010-03-14
 tags:
-  - teacup gorilla
-  - grapefruit lab
-  - writing
   - music
   - directing
-  - devising
 gallery:
   - img: /art/theater/missa/missa407.jpg
   - img: /art/theater/missa/missa543.jpg

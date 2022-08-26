@@ -6,6 +6,7 @@ const mdIt = require('markdown-it')({
   typographer: true,
 })
   .disable('code')
+  .use(require('markdown-it-ins'))
   .use(require('markdown-it-mark'))
   .use(require('markdown-it-footnote'))
   .use(require('markdown-it-bracketed-spans'))

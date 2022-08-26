@@ -7,13 +7,15 @@ tags:
   - film
   - directing
 events:
-  - venue: New World Arts
+  - title: Directed by Michael Natoli
+    venue: New World Arts
     date: 2004-09-09
     end: 2004-09-18
-  - venue: shortfilmfest03
+  - title: Audience Choice Award
+    venue: ShortFilmFest03
     date: 2003-05-09
 summary: |
   My first one-act play...
 ---
 
-[Read the script »](script/)
+[Read the script »](./script/)

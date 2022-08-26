@@ -6,10 +6,8 @@ date: 2010-03-16
 hero:
   img: art/theater/missa.jpg
 tags:
-  - teacup gorilla
-  - grapefruit lab
-  - writing
   - script
+  - artifact
 summary: |
   A modern, theatrical interpretation
   of the Catholic Mass --

@@ -2,10 +2,8 @@
 draft: true
 title: Sass Color Spaces [WIP]
 sub: Support for wide-gamut color spaces in Sass
-venue: OddBird Sandbox
-url: https://css.oddbird.net/sass/color-spaces/proposal/
+venue: Sass
 date: 2022-06-12
-type: css spec
 tags:
   - sass
   - color spaces

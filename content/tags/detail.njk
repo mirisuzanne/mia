@@ -1,5 +1,4 @@
 ---
-layout: format/h-feed
 sub: '[see all tags](/tags/)'
 pagination:
   data: collections
@@ -7,8 +6,11 @@ pagination:
   alias: tag
 permalink: /tags/{{ tag | slugify }}/
 eleventyExcludeFromCollections: true
+attrs:
+  main:
+    class: h-feed
 ---
 
-{%- for item in collections[index] | getPublic | sortBy('data.date') | reverse -%}
+{%- for item in collections[tag] | getPublic | sortBy('data.date') | reverse -%}
   {%- include "part/hentry.njk" -%}
 {%- endfor -%}

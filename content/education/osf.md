@@ -3,7 +3,6 @@ feature: true
 title: Oregon Shakespeare Festival
 sub: Among the oldest & largest professional non-profit theatres in the nation.
 org: Stage Management Intern
-type: theater
 url: https://www.osfashland.org/
 date: 2003-02-06
 end: 2003-04-26

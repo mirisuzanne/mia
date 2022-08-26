@@ -187,7 +187,8 @@ params:
   {%- endif -%}
   {%- endset -%}
   {%- if item.url -%}
-    <a href="{{ item.url | url }}">{{ item_content | safe }}</a>
+    {%- set url = item.img | imgSrc if item.url | typeCheck('boolean') else item.url -%}
+    <a href="{{ url | url }}">{{ item_content | safe }}</a>
   {%- else -%}
     {{ item_content | safe }}
   {%- endif -%}

@@ -5,7 +5,7 @@ url: https://tabatkins.github.io/css-toggle/
 date: 2022-06-12
 type: unofficial draft spec
 tags:
-  - w3c
+  - csswg
   - state toggles
 index: state toggles
 events:

@@ -1,5 +1,5 @@
 ---
-type: sass tooling
+type: open source
 feature: true
 title: 'True'
 sub: Popular Sass unit-testing framework

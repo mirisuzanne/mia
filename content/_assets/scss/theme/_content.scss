@@ -8,7 +8,11 @@
     font-style: italic;
 
     em {
-      font-style: normal;
+      background: linear-gradient(
+        to top,
+        var(--shadow) 0.6em,
+        transparent 0.6em
+      );
     }
   }
 }

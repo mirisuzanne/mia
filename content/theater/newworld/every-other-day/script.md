@@ -11,6 +11,7 @@ events:
 tags:
   - writing
   - script
+  - artifact
 ---
 
 *A basement apartment. Milo is playing with a single playing card, making it appear and disappear in his hand and so forth. He is full of energy but board, waiting for something to happen. Sam enters, slamming the door in a hurry. Milo jumps up excited to talk to Sam, but Sam is focused on other things.*

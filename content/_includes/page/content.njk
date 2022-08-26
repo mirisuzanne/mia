@@ -1,6 +1,8 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-{%- set elsewhere = tags and url and ('elsewhere' in tags) -%}
+{%- set elsewhere =
+  tags and url and tags | includes(['elsewhere', 'link'])
+-%}
 
 {%- if summary or elsewhere -%}
   <div id="summary" {{ utility.show_attrs(attrs.summary) }}>

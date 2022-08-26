@@ -8,11 +8,11 @@ date: 2007-08-14
 end: 2010-01-14
 hero:
   img: art/music/dcd.png
+type: band
 index: dirt circle dogs
 tags:
   - music
   - art
-  - dirt circle dogs
   - band
 press:
   - text: |

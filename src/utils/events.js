@@ -37,6 +37,7 @@ const pageEvents = (page) =>
     .map((event) => {
       event.page = page;
       event.tense = eventTense(event);
+      event.date = event.date || page.data.date;
       return event;
     })
     .sort(sortEvents);

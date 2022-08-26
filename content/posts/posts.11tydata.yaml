@@ -1,4 +1,4 @@
-permalink: /{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html
+permalink: "/{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html"
 type: post
 tags:
-  - _post
+  - post

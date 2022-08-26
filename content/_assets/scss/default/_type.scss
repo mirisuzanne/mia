@@ -37,7 +37,12 @@
   // block
   blockquote {
     border-inline-start: thick solid var(--border, currentColor);
+    margin-inline: 0;
     padding-inline: var(--gap, 1em);
+
+    & > * {
+      --outset: 0px;
+    }
   }
 
   article + article {

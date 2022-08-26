@@ -2,6 +2,7 @@
 title: Sass
 sub: CSS with superpowers
 org: Core Contributor
+type: open source
 url: https://sass-lang.com/
 date: 2017-07-05
 end: ongoing
@@ -9,7 +10,7 @@ hero:
   svg: sass.svg
 index: sass
 tags:
-  - sass
+  - oddbird
   - code
   - open source
 summary: |

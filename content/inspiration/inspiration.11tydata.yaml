@@ -1,6 +1,0 @@
-layout: base
-permalink: "/{{ page.date | date('url') }}/{{ page.fileSlug }}/index.html"
-type: link
-tags:
-  - inspiration
-

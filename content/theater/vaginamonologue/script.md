@@ -1,5 +1,4 @@
 ---
-feature: true
 title: 'Script: My Body, My Gender'
 sub: a trans vagina monologue
 type: script
@@ -10,13 +9,12 @@ series: transition
 tags:
   - writing
   - script
+  - artifact
   - transition
 summary: |
   Script for [My Body, My Gender](/theater/vaginamonologue/)
   rogue Vagina Monologue.
 ---
-
-------
 
 We have a story in my family.
 My brother is young,

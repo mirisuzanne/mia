@@ -1,5 +1,4 @@
 ---
-feature: true
 title: New World Arts
 sub: Ensemble theater, gallery, and event space
 org: Artistic Director
@@ -10,10 +9,7 @@ date: 2001-01-01
 end: 2007-08-14
 index: new world arts
 tags:
-  - new world arts
   - theater
-  - artistic director
-  - technical director
   - art
 summary: |
   Founded in 1998 as New World Players,

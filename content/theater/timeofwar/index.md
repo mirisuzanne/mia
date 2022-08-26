@@ -10,6 +10,8 @@ hero:
   caption: Lindsay Nance & Mallory Parsons as Annie, 2005
 tags:
   - writing
+  - new world arts
+  - goshen college
 events:
   - venue: New World Arts
     date: 2005-04-22

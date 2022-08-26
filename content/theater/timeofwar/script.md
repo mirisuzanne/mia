@@ -12,15 +12,12 @@ hero:
 tags:
   - writing
   - script
-  - new world arts
-  - goshen college
+  - artifact
 summary: |
   Reflections of a Mennonite
   holocaust survivor
   after the war
 ---
-
-------
 
 *[The stage is bare except for a screen showing images and video footage of war. Any and all war. The screen goes black]*
 
