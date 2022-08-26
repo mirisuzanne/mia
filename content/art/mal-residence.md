@@ -1,4 +1,5 @@
 ---
+type: show
 title: Artist in Residence
 sub: The book is dead. Long live the book.
 venue: Media Archeology Lab

@@ -1,5 +1,5 @@
 ---
-title: Styling the intrinsic web
+title: Styling the Intrinsic Web
 sub: A web development podcast from LogRocket
 date: 2022-08-16
 venue: PodRocket

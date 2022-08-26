@@ -1,4 +1,5 @@
 ---
+feature: true
 title: 10 Myths Script
 banner: 'Script: 10 Myths...'
 type: script
@@ -15,6 +16,7 @@ hero:
     and Teacup Gorilla playing instruments in the bathtub.
 tags:
   - script
+  - artifact
   - 10myths
 ---
 

@@ -12,6 +12,7 @@ hero:
 tags:
   - writing
   - script
+  - artifact
 summary: |
   Reflections of a Mennonite
   holocaust survivor

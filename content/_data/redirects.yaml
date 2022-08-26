@@ -8,3 +8,6 @@
 
 - from: /projects/mal-residence/
   to: /art/mal-residence/
+
+- from: /orgs/w3c/
+  to: /orgs/csswg/

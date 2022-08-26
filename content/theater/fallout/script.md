@@ -6,6 +6,7 @@ date: 2003-03-14
 tags:
   - writing
   - script
+  - artifact
 ---
 
 *Interior, three weeks later. Morning.

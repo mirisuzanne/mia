@@ -5,6 +5,7 @@ banner: The Obsolete Book
 sub: |
   in a Post-Obsolete World,
   as Represented by a Post-Obsolete Book About Dance
+type: performable website
 hero:
   img: elo14/dancesex.jpg
   caption: Say "ooooooooo" while you dance

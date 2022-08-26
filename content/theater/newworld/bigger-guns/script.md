@@ -6,6 +6,7 @@ date: 2007-04-20
 tags:
   - writing
   - script
+  - artifact
 summary: |
   An action comedy for the stage,
   based on our favorite movie tropes.

@@ -39,8 +39,8 @@ eleventyComputed:
 {%- if hfeed | length > 0 -%}
 <hr />
 <section class="h-feed">
-  <h2 class="p-name">Featured Stuff</h2>
-  {%- for item in hfeed | sortBy('data.date') | reverse | slice(5) -%}
+  <h2 class="p-name">Featured Artifacts</h2>
+  {%- for item in hfeed | sortBy('data.date') | reverse | slice(3) -%}
     {%- include 'part/hentry.njk' -%}
   {%- endfor -%}
 </section>

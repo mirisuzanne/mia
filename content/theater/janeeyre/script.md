@@ -1,4 +1,5 @@
 ---
+feature: true
 title: 'Script: JANE/EYRE'
 sub: A [queer adaptation](/theater/janeeyre/) of the classic novel
 type: script
@@ -7,6 +8,7 @@ hero:
   img: /art/theater/jane/DSC_0362.jpg
 tags:
   - script
+  - artifact
 ---
 
 ## Gateshead Hall

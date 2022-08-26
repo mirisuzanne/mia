@@ -7,6 +7,7 @@ hero:
   img: art/theater/missa.jpg
 tags:
   - script
+  - artifact
 summary: |
   A modern, theatrical interpretation
   of the Catholic Mass --

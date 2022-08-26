@@ -1,6 +1,6 @@
 ---
 index: art
-title: Cross-Media Artist
+title: Everything 'Art'
 hero:
   img: writing/sidesaddle/neck.jpg
   alt: |
@@ -9,24 +9,22 @@ hero:
     with red arrows
     and text that says "a longing"
 sub: |
-  [writing](/tags/writing/),
-  [music](/music/),
-  [theater](/theater/),
-  [visual art](/tags/visual/),
-  and more...
+  Often with [Teacup Gorilla](/orgs/teacup-gorilla/)
+  & [Grapefruit Lab](/orgs/grapefruit-lab/)
 summary: |
-  I make music
-  with [Teacup Gorilla](/orgs/teacup-gorilla/),
-  theater with [Grapefruit Lab](/orgs/grapefruit-lab/),
-  and have a variety of other
-  artistic projects underway.
+  My dad always said
+  that it's good to make art,
+  but bad to _be an artist_.
+  Emotionally unhealthy, or whatever.
+  That's ok,
+  I like my therapist.
 ---
 
-{%- set hfeed = collections.artifact | intersection(collections.art) | getPublic | filter('data.feature')  -%}
+{%- set hfeed = collections.artifact | intersection(collections.art) | getPublic | filter('data.feature') -%}
 {%- if hfeed | length > 0 -%}
 <section class="h-feed">
-  <h2 class="p-name">Featured Stuff</h2>
-  {%- for item in hfeed | sortBy('data.date') | reverse | slice(5) -%}
+  <h2 class="p-name">(Art)ifacts</h2>
+  {%- for item in hfeed | sortBy('data.date') | reverse | slice(3) -%}
     {%- include 'part/hentry.njk' -%}
   {%- endfor -%}
 </section>

@@ -1,7 +1,7 @@
 ---
-draft: true
 title: This Content Won't Architect Itself
 sub: What can a site be, and what can it be afraid of?
+date: 2022-08-25
 og:
   img: '2022/2008-e-dirtcircle.jpg'
 tags:
