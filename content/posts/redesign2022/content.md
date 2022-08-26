@@ -229,7 +229,7 @@ more and more complex:
 ) }}
 
 Until 2019,
-when I threw it out all the navigation
+when I removed all the navigation
 and moved onto Eleventy.
 I was tired of trying to sort
 my life into a nav hierarchy.
