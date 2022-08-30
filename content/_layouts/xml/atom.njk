@@ -20,7 +20,7 @@
   {%- for post in posts -%}
   {%- if post.templateContent or post.data.summary -%}
   {%- set absolutePostUrl = post.url | absoluteUrl(site.url) -%}
-  {%- set post_summary = post.data.summary | mdInline if post.data.summary else none -%}
+  {%- set post_summary = xml.summary(post, site) if post.data.summary else none -%}
   {%- set post_content = xml.entry(post, site) -%}
   {%- set mentions = webmentions | mentionsForUrl(absoluteUrl) | webMentions | length -%}
   <entry>

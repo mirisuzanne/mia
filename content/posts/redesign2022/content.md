@@ -277,7 +277,7 @@ for our design process.
 I'm not an expert on the approach,
 but the guiding principle
 is that humans have an object-oriented
-approach to the world around us.
+perception of the world around us.
 When we walk into a room,
 we quickly process objects like tables,
 chairs, couches.

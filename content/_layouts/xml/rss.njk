@@ -2,11 +2,11 @@
 {%- set posts = collections._xml | getPublic | reverse | slice(15) -%}
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"
-	xmlns:content="https://purl.org/rss/1.0/modules/content/"
-	xmlns:dc="https://purl.org/dc/elements/1.1/"
-	xmlns:atom="https://www.w3.org/2005/Atom"
-	xmlns:sy="https://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="https://purl.org/rss/1.0/modules/slash/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 >
    <channel>
       <title>{{ site.title }}</title>
@@ -30,7 +30,7 @@
       {%- for post in posts -%}
       {%- if post.templateContent or post.data.summary -%}
       {%- set absolutePostUrl = post.url | absoluteUrl(site.url) -%}
-      {%- set post_summary = post.data.summary | mdInline if post.data.summary else none -%}
+      {%- set post_summary = xml.summary(post, site) if post.data.summary else none -%}
       {%- set post_content = xml.entry(post, site) -%}
       {%- set mentions = webmentions | mentionsForUrl(absoluteUrl) | webMentions | length -%}
       <item>
