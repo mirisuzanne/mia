@@ -1,6 +1,68 @@
 {
-  "lastFetched": "2022-08-26T02:44:03.892Z",
+  "lastFetched": "2022-08-29T15:48:23.878Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Daniel Schildt",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/35cb2e1473790b792594f8d867aef0ddfd5f25a4dd0d69a102d0bec762f99018.png",
+        "url": "https://twitter.com/autiomaa"
+      },
+      "url": "https://twitter.com/autiomaa/status/1563977298142969857",
+      "published": "2022-08-28T19:50:19+00:00",
+      "wm-received": "2022-08-28T19:58:10Z",
+      "wm-id": 1497565,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1563977298142969857",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/25/content/",
+      "content": {
+        "html": "Really nice blog post about personal websites:\n<a href=\"https://www.miriamsuzanne.com/2022/08/25/content/\">miriamsuzanne.com/2022/08/25/con…</a>\n\nDifferences between a personal archive of interesting things, and whether personal sites should even be about marketing anything.\n\nHave been wondering about similar recently. This helped to clarify thinking.",
+        "text": "Really nice blog post about personal websites:\nmiriamsuzanne.com/2022/08/25/con…\n\nDifferences between a personal archive of interesting things, and whether personal sites should even be about marketing anything.\n\nHave been wondering about similar recently. This helped to clarify thinking."
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/08/25/content/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://flmarket.ru/2022/08/27/%d1%81%d0%be%d0%b2%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d0%b0%d0%bb%d1%8c%d1%82%d0%b5%d1%80%d0%bd%d0%b0%d1%82%d0%b8%d0%b2%d1%8b-%d0%b1%d1%8d%d0%bc/",
+      "published": null,
+      "wm-received": "2022-08-27T17:58:09Z",
+      "wm-id": 1496506,
+      "wm-source": "https://flmarket.ru/2022/08/27/%d1%81%d0%be%d0%b2%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d0%b0%d0%bb%d1%8c%d1%82%d0%b5%d1%80%d0%bd%d0%b0%d1%82%d0%b8%d0%b2%d1%8b-%d0%b1%d1%8d%d0%bc/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/31fcfd6282b72379bdececa7d23a188489aa4cf4f63f576928d87f6a3df9064b.jpg",
+        "url": "https://twitter.com/TerribleMia"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1563295494566461441",
+      "published": "2022-08-26T22:41:05+00:00",
+      "wm-received": "2022-08-27T02:46:23Z",
+      "wm-id": 1494195,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1563295494566461441",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/25/content/",
+      "content": {
+        "html": "I asked Erin about my new plan for site nav &amp; she said:\n\n\"Changing the navigation won't help. The problem is you can't decide what the site is for.\"\n\n😅 Here's my reflection on content architecture, my site over the years, &amp; what personal sites are *for*\n\n<a href=\"https://www.miriamsuzanne.com/2022/08/25/content/\">miriamsuzanne.com/2022/08/25/con…</a>",
+        "text": "I asked Erin about my new plan for site nav & she said:\n\n\"Changing the navigation won't help. The problem is you can't decide what the site is for.\"\n\n😅 Here's my reflection on content architecture, my site over the years, & what personal sites are *for*\n\nmiriamsuzanne.com/2022/08/25/con…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/08/25/content/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

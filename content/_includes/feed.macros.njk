@@ -1,4 +1,9 @@
-{% macro entry(post, site) %}
+{% macro summary(post, site) -%}
+  {{- post.data.summary | mdInline if post.data.summary else '' -}}
+  {{- elsewhere(post, site) -}}
+{%- endmacro %}
+
+{% macro entry(post, site) -%}
   {{- (post.data.sub | md if post.data.sub else '') | safe -}}
   {{- (post.data.summary | md if post.data.summary else '') | safe -}}
 
@@ -7,8 +12,11 @@
   {%- endif -%}
 
   {{- post.templateContent | safe -}}
+  {{- elsewhere(post, site) -}}
+{%- endmacro %}
 
+{% macro elsewhere(post, site) -%}
   {%- if post | hasTag('elsewhere') and post.data.url and post.data.venue -%}
   <p><a href="{{ post.data.url }}">More at {{ post.data.venue }} »</a></p>
   {%- endif -%}
-{% endmacro %}
+{%- endmacro %}
