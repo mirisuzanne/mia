@@ -1,0 +1,12 @@
+@mixin css {
+  [data-callout] {
+    background-color: var(--shadow, hsl(0deg 0% 0% / 12.5%));
+    margin-inline: var(--outset, 0);
+    padding: var(--gap) var(--gap) var(--half-shim);
+
+    & > strong {
+      font-size: var(--smaller);
+      text-transform: uppercase;
+    }
+  }
+}
