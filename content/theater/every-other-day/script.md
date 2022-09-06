@@ -1,13 +1,13 @@
 ---
 title: 'Script: Every Other Day'
 sub: a play in one act, and a short film
-venue: Pinchpenny Press
 type: script
 date: 2004-06-14
 events:
   - title: Best One-Act Play [finalist]
     venue: Kennedy Center ACTF
-    date: 2004-06-14
+  - title: Chapbook publication
+    venue: Pinchpenny Press
 tags:
   - writing
   - script

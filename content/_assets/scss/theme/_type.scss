@@ -1,10 +1,25 @@
 @mixin css {
+  html {
+    --mark-gradient: linear-gradient(
+      -85deg,
+      transparent,
+      var(--mark, var(--shadow)) 3% 98%,
+      transparent
+    );
+    --mark-bg: var(--mark-gradient) no-repeat 0 100% / 100% 60%;
+  }
+
   hr::after,
   main::after,
   main ~ :not(footer)::after {
     background: var(--text-gradient);
     background-clip: text;
-    background-clip: text;
     color: transparent;
+  }
+
+  mark,
+  code:not(pre *) {
+    background: var(--mark-bg);
+    color: inherit;
   }
 }

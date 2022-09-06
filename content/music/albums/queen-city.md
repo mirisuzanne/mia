@@ -1,7 +1,7 @@
 ---
 title: Queen City Magnetic
 date: 2014-03-03
-venue: BandCamp
+venue: Raven Jane
 url: https://ravenjane.bandcamp.com/
 tags:
   - raven jane

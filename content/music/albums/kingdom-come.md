@@ -1,8 +1,8 @@
 ---
-feature: true
+feature: home
 title: Kingdom Come
 date: 2009-05-19
-venue: SoundCloud
+venue: Dirt Circle Dogs
 url: https://soundcloud.com/dirt-circle-dogs/sets/kingdom-come
 hero:
   img: art/music/kingdom-come.png

@@ -6,9 +6,12 @@ tags:
   - writing
   - film
   - directing
+  - performance
+  - new world arts
 events:
   - title: Directed by Michael Natoli
     venue: New World Arts
+    url: /orgs/new-world-arts/
     date: 2004-09-09
     end: 2004-09-18
   - title: Audience Choice Award

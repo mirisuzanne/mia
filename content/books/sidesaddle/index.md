@@ -1,5 +1,5 @@
 ---
-feature: true
+feature: home
 type: novel
 title: Riding SideSaddle*
 sub: A queer novel, in fragments of memory…

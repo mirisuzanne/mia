@@ -17,9 +17,9 @@ events:
   - venue: The Narrators (podcast)
     url: https://thenarrators.org/232-miriam-suzanne-born-to-choose-this-way/
     date: 2021-05-14
-    feature: true
     type: podcast
-series: transition
+  - venue: The Narrators (live)
+    date: 2019-06-19
 tags:
   - transition
 podcast:

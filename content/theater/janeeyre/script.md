@@ -6,6 +6,9 @@ type: script
 date: 2018-03-03
 hero:
   img: /art/theater/jane/DSC_0362.jpg
+  alt: |
+    Helen dies in Jane's arms,
+    as Jane delicately touches her face.
 tags:
   - script
   - artifact

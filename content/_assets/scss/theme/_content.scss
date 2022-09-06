@@ -8,11 +8,7 @@
     font-style: italic;
 
     em {
-      background: linear-gradient(
-        to top,
-        var(--shadow) 0.6em,
-        transparent 0.6em
-      );
+      background: var(--mark-bg);
     }
   }
 }

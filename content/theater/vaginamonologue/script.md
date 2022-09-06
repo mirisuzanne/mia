@@ -5,7 +5,6 @@ type: script
 date: 2018-11-05
 hero:
   img: art/theater/vm/vm.jpg
-series: transition
 tags:
   - writing
   - script

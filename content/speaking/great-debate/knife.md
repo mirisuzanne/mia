@@ -1,7 +1,7 @@
 ---
 draft: true
 title: Swiss Army knives vs Octopuses
-date: 2022-08-10T17:22:20-06:00
+date: 2022-08-10
 ---
 
 Did you know the Swiss have an Army?

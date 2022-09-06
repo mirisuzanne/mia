@@ -14,7 +14,7 @@ summary: |
   the one-man show.
   And then Aeschylus introduced dialogue,
   a second actor --
-  and it's been [all down hill from there](/tags/scripts/).
+  and it's been [all down hill from there](/tags/script/).
   Shakespeare will start you off with
   _thunder, lightning, and three witches,_
   but then it's a show about some Scottish asshole.

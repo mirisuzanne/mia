@@ -4,7 +4,6 @@ date: 2017-08-16
 hero:
   img: narrators/crossingover.png
 url: https://thenarrators.org/august-2017/
-series: transition
 tags:
   - transition
 summary: |

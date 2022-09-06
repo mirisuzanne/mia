@@ -38,6 +38,8 @@ const pageEvents = (page) =>
       event.page = page;
       event.tense = eventTense(event);
       event.date = event.date || page.data.date;
+      event.venue = event.venue || page.data.venue;
+      event.url = event.url || page.data.url;
       return event;
     })
     .sort(sortEvents);

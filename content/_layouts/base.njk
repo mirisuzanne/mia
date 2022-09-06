@@ -6,9 +6,14 @@
   <title>{{ title if (page.url == '/') else [title, site.title] | join(' | ') }}</title>
   <meta name="description" content="{{ description }}" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
   {% if redirect -%}
     <meta http-equiv="refresh" content="0; URL={{ redirect.to }}" />
   {%- endif %}
+  {% if draft or redirect -%}
+    <meta name="robots" content="noindex">
+  {%- endif %}
+
   {%- include "head/theme.njk" -%}
   {%- include "head/styles.njk" -%}
   {%- include "head/preload.njk" -%}

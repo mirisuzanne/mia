@@ -2,7 +2,8 @@
 title: Bigger Guns III
 sub: Revenge of the Apocalypse, Again
 date: 2007-04-20
-end: 2007-04-28
+events:
+  - end: 2007-04-28
 tags:
   - writing
   - directing
