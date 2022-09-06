@@ -1,9 +1,11 @@
 ---
 title: Hello and Goodbye
 date: 2006-11-25
-end: 2006-12-04
 tags:
   - directing
+  - performance
+events:
+  - end: 2006-12-04
 press:
   - text: |
       Rarely does one encounter a production
@@ -11,7 +13,7 @@ press:
       of care and consideration.
     credit: Jack Walton
     venue: South Bend Tribune
-    _url: https://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
+    url: https://web.archive.org/web/20151008021425/http://articles.southbendtribune.com:80/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
     date: 2006-01-29
 summary: |
   A sister and brother dig through the rubble of their lives…

@@ -1,6 +1,11 @@
 {%- import 'utility.macros.njk' as utility -%}
+{%- set comma = joiner() -%}
 
-<style>@layer reset, default, theme;</style>
+<style>@layer
+  {%- for link in meta.styles | filter('layer') -%}
+    {{ comma() }} {{ link.layer }}
+  {%- endfor -%};
+</style>
 
 {%- for link in meta.styles | selectattr('url') -%}
   {% set link_attrs = {

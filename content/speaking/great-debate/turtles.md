@@ -1,17 +1,16 @@
 ---
 title: Turtles vs Backpacks
-date: &date 2020-02-18
+date: 2020-02-18
 hero:
   img: debate/turtles/slide.012.jpeg
   alt: |
     Victoria's Secret website
     Weekend of Love,
     with queen Victoria in all the photos
-event:
+events:
   - venue: Buntport Theater
     url: https://buntport.com/2022/06/third-tuesdays-2/
     adr: Denver, CO
-    date: *date
 gallery:
   - img: debate/turtles/slide.001.jpeg
     alt: |

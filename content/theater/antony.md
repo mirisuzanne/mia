@@ -5,7 +5,8 @@ sub: Stage management & lighting internship
 venue: Oregon Shakespeare Festival
 url: /education/osf/
 date: 2003-02-06
-end: 2003-04-26
+events:
+  - end: 2003-04-26
 adr: Ashland, OR
 hero:
   img: art/theater/osf.jpg
@@ -15,6 +16,7 @@ tags:
   - oregon shakespeare
   - education
   - intern
+  - performance
 summary: |
   A glittering tragedy,
   a passionate romance,

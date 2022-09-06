@@ -11,3 +11,13 @@
 
 - from: /orgs/w3c/
   to: /orgs/csswg/
+
+- from: /theater/newworld/danny-deep/lights/
+  to: /theater/newworld/danny-deep/
+- from: /theater/newworld/danny-deep/danny-deep/
+  to: /theater/newworld/danny-deep/
+
+- from: /theater/newworld/every-other-day/
+  to: /theater/every-other-day/
+- from: /theater/newworld/every-other-day/script/
+  to: /theater/every-other-day/script/

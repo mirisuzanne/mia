@@ -2,12 +2,13 @@
 title: ReTriplicate
 hero:
   img: projects/clyffordstill.jpg
+date: 2015-09-24
 url: https://buntport.com/
 venue: Buntport Theater
-date: 2015-09-24
 tags:
   - teacup gorilla
   - buntport
+  - performance
   - music
 press:
   - credit: Eden Lane

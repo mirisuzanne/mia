@@ -20,7 +20,7 @@ styles:
     url: layer/layout.css
     layer: layout
   - title: theme
-    layer: all
+    layer: theme
     url: all.css
 scripts:
   - scripts.js

@@ -3,6 +3,7 @@ title: Vagina Monologues
 sub: unofficial, autobiographical, trans-femme monologue
 venue: It Grows Wild
 date: 2018-11-02
+end: events
 hero:
   img: art/theater/vm/vm.jpg
 events:
@@ -17,6 +18,7 @@ events:
 tags:
   - writing
   - acting
+  - performance
 summary: |
   I was invited to perform
   a Vagina Monologue,

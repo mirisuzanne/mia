@@ -9,6 +9,7 @@ events:
     adr: Denver, CO
 tags:
   - acting
+  - performance
 video:
   - iframe: https://www.youtube.com/embed/FDbrHv-zLGU
     width: 560

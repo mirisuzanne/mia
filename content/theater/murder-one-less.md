@@ -9,6 +9,7 @@ hero:
 tags:
   - grapefruit lab
   - lighting
+  - performance
 events:
   - venue: Boulder International Fringe Festival
     date: 2009-08-14

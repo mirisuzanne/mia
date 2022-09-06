@@ -13,6 +13,7 @@ hero:
   img: art/theater/outsidetheroom.jpg
 tags:
   - directing
+  - performance
   - grapefruit lab
 video:
   - iframe: https://www.youtube.com/embed/aBBnSi5MJ8o

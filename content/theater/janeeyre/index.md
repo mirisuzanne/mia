@@ -18,6 +18,7 @@ tags:
   - acting
   - lighting
   - music
+  - performance
 gallery:
   - img: /art/theater/jane/DSC_0412.jpg
     alt: |

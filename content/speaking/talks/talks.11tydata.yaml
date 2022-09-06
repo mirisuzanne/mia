@@ -1,4 +1,5 @@
 type: talk
 permalink: '/speaking/{{ page.fileSlug }}/index.html'
+end: events
 tags:
   - code

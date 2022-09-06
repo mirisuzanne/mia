@@ -1,7 +1,7 @@
 ---
 title: Hit Single
 date: 2007-07-07
-venue: SoundCloud
+venue: Dirt Circle Dogs
 url: https://soundcloud.com/dirt-circle-dogs/sets/hit-single
 hero:
   img: art/music/dcd.png

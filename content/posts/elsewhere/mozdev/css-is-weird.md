@@ -1,13 +1,14 @@
 ---
-feature: true
+feature: home
 title: Why is CSS so Weird?
 sub: How can we design for an unknown & infinite canvas?
 date: 2019-10-03
-hero:
+og:
   img: mozdev/css-is-weird.png
 tags:
   - css
   - cascade
+  - artifact
 summary: |
   Love it or hate it, CSS is weird:
   not quite markup,

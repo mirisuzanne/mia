@@ -8,17 +8,14 @@ sub: |
 date: 2016-03-04
 hero:
   img: art/theater/10myths.jpg
+tags:
+  - performance
 index: 10myths
 events:
   - venue: Buntport Theater
     url: https://buntport.com/2016/03/10-myths-proper-application-beauty-products/
     date: 2016-03-04
     end: 2016-03-26
-  - title: 2016 True West Award
-    venue: Denver Center for the Performing Arts
-    url: https://www.denvercenter.org/news-center/2016-true-west-award-miriam-suzanne/
-    date: 2016-12-18
-    feature: true
 press:
   - text: |
       Suzanne wanted to tell a story that

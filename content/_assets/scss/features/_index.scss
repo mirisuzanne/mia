@@ -1,9 +1,11 @@
+@use 'callout';
 @use 'options';
 @use 'erase';
 @use 'gallery';
 @use 'swatch';
 
 @mixin css {
+  @include callout.css;
   @include options.css;
   @include erase.css;
   @include gallery.css;

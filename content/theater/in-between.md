@@ -8,11 +8,11 @@ events:
   - venue: Rio Mesa Center
     date: 2015-09-06
   - venue: Rio Mesa Center
-    url: https://www.julierada.com/#/the-in-between/
     date: 2016-05-21
 tags:
   - grapefruit lab
   - acting
+  - performance
 summary: |
   *Try to locate the moon.
   Look longingly at the sky.

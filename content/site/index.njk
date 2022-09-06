@@ -31,16 +31,16 @@ eleventyComputed:
   {%- for item in hfeed | sortBy('data.date') | reverse | slice(5) -%}
     {%- include 'part/hentry.njk' -%}
   {%- endfor -%}
-  <p><a href="/tags/post/">See all posts »</a></p>
+  <p><a href="{{ 'post' | tagLink(collections) }}">See all posts »</a></p>
 </section>
 {%- endif -%}
 
-{%- set hfeed = collections.artifact | getPublic | filter('data.feature')  -%}
+{%- set hfeed = collections.artifact | getPublic | filter(['data.feature', 'home'])  -%}
 {%- if hfeed | length > 0 -%}
 <hr />
 <section class="h-feed">
   <h2 class="p-name">Featured Artifacts</h2>
-  {%- for item in hfeed | sortBy('data.date') | reverse | slice(3) -%}
+  {%- for item in hfeed | sortBy('data.date') | reverse | slice(5) -%}
     {%- include 'part/hentry.njk' -%}
   {%- endfor -%}
 </section>

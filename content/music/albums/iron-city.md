@@ -1,7 +1,7 @@
 ---
 title: Iron City
 date: 2010-09-13
-venue: BandCamp
+venue: Raven Jane
 url: https://ironcity.bandcamp.com/album/iron-city
 hero:
   img: art/music/iron-city.jpg

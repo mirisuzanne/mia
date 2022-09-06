@@ -61,6 +61,10 @@
     }
   }
 
+  details {
+    padding-block: var(--half-gap);
+  }
+
   pre code {
     display: block;
     overflow: auto;
@@ -89,7 +93,7 @@
   kbd,
   samp {
     font-family: var(--font-code, var(--var-mono, var(--ui-mono)));
-    font-size: 0.8em;
+    font-size: var(--smaller, 0.8em);
   }
 
   ::selection {

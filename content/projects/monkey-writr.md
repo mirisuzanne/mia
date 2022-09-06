@@ -1,5 +1,5 @@
 ---
-feature: true
+feature: home
 type: code art
 title: Monkey Writr
 sub: An app for infinite monkeys on a deadline
