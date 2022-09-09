@@ -1,6 +1,310 @@
 {
-  "lastFetched": "2022-09-06T22:55:26.007Z",
+  "lastFetched": "2022-09-09T19:13:28.604Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mayank",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3b21cb81cc0e74a6d9f4c240e610493125a065d57a100559bfa7c3439b7ba3f2.jpg",
+        "url": "https://twitter.com/m_yxnk"
+      },
+      "url": "https://twitter.com/m_yxnk/status/1567790301879701507",
+      "published": "2022-09-08T08:21:50+00:00",
+      "wm-received": "2022-09-08T09:01:54Z",
+      "wm-id": 1513884,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1567539759777738752/1567790301879701507",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "&gt; that 8px body margin is replaced by a full 1em margin. I’m wild like that\n\n😆👏👏\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/davatron5000\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\"></a>",
+        "text": "> that 8px body margin is replaced by a full 1em margin. I’m wild like that\n\n😆👏👏"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bastien Calou",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4289defb59da1a9f0869e3b0bb6b76dc7814b07eeff3336e92dcce8c3ac1c242.jpg",
+        "url": "https://twitter.com/DctStrangelove"
+      },
+      "url": "https://twitter.com/DctStrangelove/status/1567774927888990208",
+      "published": "2022-09-08T07:20:45+00:00",
+      "wm-received": "2022-09-08T07:59:40Z",
+      "wm-id": 1513861,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1567774927888990208",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "Les layers permettent d'être beaucoup plus \"intentionnel\" dans la rédaction du CSS. \n\n<a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a> expérimente cela avec 7 layers, allant des fondations du navigateur à la themification de son site. Plein de choses à ré-envisager !\n\n<a href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\">miriamsuzanne.com/2022/09/06/lay…</a>",
+        "text": "Les layers permettent d'être beaucoup plus \"intentionnel\" dans la rédaction du CSS. \n\n@TerribleMia expérimente cela avec 7 layers, allant des fondations du navigateur à la themification de son site. Plein de choses à ré-envisager !\n\nmiriamsuzanne.com/2022/09/06/lay…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://daverupert.com/2022/08/modern-alternatives-to-bem/",
+      "published": null,
+      "wm-received": "2022-09-08T06:16:39Z",
+      "wm-id": 1513719,
+      "wm-source": "https://daverupert.com/2022/08/modern-alternatives-to-bem/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/08/07/minimal/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrew Woods",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c4ef14642507ae6e0e5168efc2d520a6bc13870700bf7342a2fef042869ec80f.jpg",
+        "url": "https://twitter.com/awoods"
+      },
+      "url": "https://twitter.com/awoods/status/1567677413764513793",
+      "published": "2022-09-08T00:53:16+00:00",
+      "wm-received": "2022-09-08T00:58:19Z",
+      "wm-id": 1513491,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1567539759777738752/1567677413764513793",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "maybe you just need a good name, and not an acronym . Perhaps call it Nachos because it’s like 7 layer dip. and Its Nacho mama’s CSS framework 😄\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/davatron5000\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\"></a>",
+        "text": "maybe you just need a good name, and not an acronym . Perhaps call it Nachos because it’s like 7 layer dip. and Its Nacho mama’s CSS framework 😄"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Phil Wolstenholme",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7319fa9e2e2a3825bfc27bbe885cbebc5d5230bef94d8b2782c48e95cedb5dd3.jpg",
+        "url": "https://twitter.com/philw_"
+      },
+      "url": "https://twitter.com/philw_/status/1567561024995205128",
+      "published": "2022-09-07T17:10:46+00:00",
+      "wm-received": "2022-09-07T17:50:15Z",
+      "wm-id": 1512997,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1567561024995205128",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "📚 Added 'A Whole Cascade of Layers' by <a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a> to my reading list at <a href=\"https://wolstenhol.me/#reading\">wolstenhol.me/#reading</a> 🤖\n\n<a href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\">miriamsuzanne.com/2022/09/06/lay…</a>",
+        "text": "📚 Added 'A Whole Cascade of Layers' by @TerribleMia to my reading list at wolstenhol.me/#reading 🤖\n\nmiriamsuzanne.com/2022/09/06/lay…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher Kirk-Nielsen",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4009d2d0f336a4a0c0dce899b3dd356e02eb34081195aa9c3e6767eada0d8365.jpg",
+        "url": "https://twitter.com/ckirknielsen"
+      },
+      "url": "https://twitter.com/ckirknielsen/status/1567554759384514561",
+      "published": "2022-09-07T16:45:53+00:00",
+      "wm-received": "2022-09-07T17:49:45Z",
+      "wm-id": 1512996,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1567539759777738752/1567554759384514561",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "Styles\nThoughtfully\nRanked\nAnd\nTastefully\nArranged\n\nSo STRATA, but that's only 6 letters… you definitely need 7 to mirror the layers. Maybe tack on \"Rad!\" at the end?\n\n(silly acronym thoughts aside, this was a v interesting read, good food for thoughts while I redesign my site!)\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/davatron5000\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\"></a>",
+        "text": "Styles\nThoughtfully\nRanked\nAnd\nTastefully\nArranged\n\nSo STRATA, but that's only 6 letters… you definitely need 7 to mirror the layers. Maybe tack on \"Rad!\" at the end?\n\n(silly acronym thoughts aside, this was a v interesting read, good food for thoughts while I redesign my site!)"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/31fcfd6282b72379bdececa7d23a188489aa4cf4f63f576928d87f6a3df9064b.jpg",
+        "url": "https://twitter.com/TerribleMia"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1567542393125359616",
+      "published": "2022-09-07T15:56:44+00:00",
+      "wm-received": "2022-09-07T16:39:53Z",
+      "wm-id": 1512937,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1567539759777738752/1567542393125359616",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "or call it a burrito?\n\nsadly these seven layers represent a half-done experiment more than a methodology.\n<a class=\"u-mention\" href=\"https://twitter.com/davatron5000\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/meyerweb\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\"></a>",
+        "text": "or call it a burrito?\n\nsadly these seven layers represent a half-done experiment more than a methodology."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "eric-meyer.css",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/22c9b5d9f905b66664328a12fab4b16cf4b6cfdf58dd1dcc4f2a7905d49c226f.png",
+        "url": "https://twitter.com/meyerweb"
+      },
+      "url": "https://twitter.com/meyerweb/status/1567541244800163845",
+      "published": "2022-09-07T15:52:10+00:00",
+      "wm-received": "2022-09-07T16:39:52Z",
+      "wm-id": 1512936,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1567539759777738752/1567541244800163845",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "Seven layers?  Call it the Optimal Style Indexing methodology! 😇😆\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/davatron5000\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\"></a>",
+        "text": "Seven layers?  Call it the Optimal Style Indexing methodology! 😇😆"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/31fcfd6282b72379bdececa7d23a188489aa4cf4f63f576928d87f6a3df9064b.jpg",
+        "url": "https://twitter.com/TerribleMia"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1567539759777738752",
+      "published": "2022-09-07T15:46:16+00:00",
+      "wm-received": "2022-09-07T16:39:51Z",
+      "wm-id": 1512935,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1567539759777738752",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "I can't write about my CSS *methodology* yet, because I haven't come up with a good acronym. But I did write about the seven 'layers' of style currently displayed on my site. What's with all those layers?\n\n(re <a href=\"https://twitter.com/davatron5000\">@davatron5000</a>'s Modern alternatives to BEM)\n\n<a href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\">miriamsuzanne.com/2022/09/06/lay…</a>",
+        "text": "I can't write about my CSS *methodology* yet, because I haven't come up with a good acronym. But I did write about the seven 'layers' of style currently displayed on my site. What's with all those layers?\n\n(re @davatron5000's Modern alternatives to BEM)\n\nmiriamsuzanne.com/2022/09/06/lay…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matt May",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/68c5113e3c4495f2a4480da77e5e2f3118cd7cb3ef4f7da3f094fd7f37eacdef.jpg",
+        "url": "https://twitter.com/mattmay"
+      },
+      "url": "https://twitter.com/mattmay/status/1567547432996847616",
+      "published": "2022-09-07T16:16:46+00:00",
+      "wm-received": "2022-09-07T16:39:26Z",
+      "wm-id": 1512934,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1567539759777738752/1567547432996847616",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "This one right here.\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/davatron5000\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eaton\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/meyerweb\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\"></a>",
+        "text": "This one right here."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/31fcfd6282b72379bdececa7d23a188489aa4cf4f63f576928d87f6a3df9064b.jpg",
+        "url": "https://twitter.com/TerribleMia"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1567543635729854464",
+      "published": "2022-09-07T16:01:40+00:00",
+      "wm-received": "2022-09-07T16:39:25Z",
+      "wm-id": 1512933,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1567539759777738752/1567543635729854464",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "'Provably delicious' is a perfect tagline.\n<a class=\"u-mention\" href=\"https://twitter.com/davatron5000\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eaton\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/meyerweb\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\"></a>",
+        "text": "'Provably delicious' is a perfect tagline."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Actually,",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/da449e68e051cb73caf92ed981c2cc7cb061cb67cbcfe5a2d590bd042045c137.jpg",
+        "url": "https://twitter.com/eaton"
+      },
+      "url": "https://twitter.com/eaton/status/1567543019213127691",
+      "published": "2022-09-07T15:59:13+00:00",
+      "wm-received": "2022-09-07T16:39:24Z",
+      "wm-id": 1512931,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1567539759777738752/1567543019213127691",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "did a talk on “burrito architecture” years back and am still fond of that analogy. It’s the most delicious methodology, provably!\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/davatron5000\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/meyerweb\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\"></a>",
+        "text": "did a talk on “burrito architecture” years back and am still fond of that analogy. It’s the most delicious methodology, provably!"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "eric-meyer.css",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/22c9b5d9f905b66664328a12fab4b16cf4b6cfdf58dd1dcc4f2a7905d49c226f.png",
+        "url": "https://twitter.com/meyerweb"
+      },
+      "url": "https://twitter.com/meyerweb/status/1567544061149446146",
+      "published": "2022-09-07T16:03:22+00:00",
+      "wm-received": "2022-09-07T16:39:24Z",
+      "wm-id": 1512932,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1567539759777738752/1567544061149446146",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "Maybe it should be called the Development Intention Priority methodology instead. <a href=\"https://www.yummly.com/recipe/Seven-Layer-Dip-Allrecipes\">yummly.com/recipe/Seven-L…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/davatron5000\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eaton\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\"></a>",
+        "text": "Maybe it should be called the Development Intention Priority methodology instead. yummly.com/recipe/Seven-L…"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Carlos Espada",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/090b669cb1ea093201ef726f63d31c5a1e5e91f1a8b312f45e06ae9e6136011a.jpg",
+        "url": "https://twitter.com/_carlosespada"
+      },
+      "url": "https://twitter.com/_carlosespada/status/1567385949599825920",
+      "published": "2022-09-07T05:35:05+00:00",
+      "wm-received": "2022-09-07T05:59:33Z",
+      "wm-id": 1512604,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1567385949599825920",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "content": {
+        "html": "There is always something to learn by reading people like <a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a> and how she approaches the CSS of her projects\n<a href=\"https://www.miriamsuzanne.com/2022/09/06/layers/\">miriamsuzanne.com/2022/09/06/lay…</a>",
+        "text": "There is always something to learn by reading people like @TerribleMia and how she approaches the CSS of her projects\nmiriamsuzanne.com/2022/09/06/lay…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
