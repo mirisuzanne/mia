@@ -102,7 +102,7 @@ that match the existing 'viewport-relative units' (`v*`).
 
 ## Resources {id=resources}
 
-{% for item in resources | sortBy('date') | reverse -%}
+{% for item in resources -%}
 - {{ utility.link_if(item.title, item.url) }}{% if item.credit %} by _{{ item.credit }}_{% endif %}{% if item.venue %} at **{{ item.venue }}**{% endif %}
 {% endfor %}
 

@@ -29,6 +29,18 @@ summary: |
 - [Safari 16](https://webkit.org/blog/13152/webkit-features-in-safari-16-0/)
   [{{ utility.datetime('2022-09-12') }}]
 
+If you want to start using these features
+(I recommend it!)
+just
+[make sure you're using the right syntax][syntax]!
+Some things have changed
+between the first prototype
+and the final version that's shipping in browsers.
+But don't worry --
+_it's stable now, and won't be changing again_!
+
+[syntax]: https://www.oddbird.net/2022/08/18/cq-syntax/
+
 Both Chrome 105
 and Safari 16
 come with an impressive list
