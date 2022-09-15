@@ -13,7 +13,7 @@ hero:
     originally saying 2 fast 2 furious.
 summary: |
   After nearly 15 years
-  as the most-requested feature in CSS --
+  as a highly-requested feature in CSS --
   and 15 years being told it was impossible --
   (size) Container Queries and units
   have shipped in both Chrome/Edge 105,
