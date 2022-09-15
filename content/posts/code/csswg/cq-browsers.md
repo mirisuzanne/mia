@@ -81,8 +81,9 @@ establishing two 'button themes' --
 toggled by a single custom property:
 
 {{ content.codepen(
-  'abGBNNx',
-  'Style query button themes'
+  id='abGBNNx',
+  title='Style query button themes',
+  tab='css,result'
 ) }}
 
 I'm excited to experiment with this more.
