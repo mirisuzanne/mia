@@ -11,6 +11,7 @@ hero:
   position: top
 tags:
   - container queries
+  - oddbird
 summary: |
   Media-queries allow an author
   to make style changes
@@ -19,6 +20,17 @@ summary: |
   authors would prefer styling modular components
   based on their context within a layout.
 ---
+
+{% import "utility.macros.njk" as utility %}
+
+{% callout 'warn' %}
+{{ utility.datetime('2022-09-14') }} --
+The syntax here is out of date.
+Make sure to
+[use the container query syntax](https://www.oddbird.net/2022/08/18/cq-syntax/)
+that has actually
+[shipped in browsers](/2022/09/14/cq-browsers/).
+{% endcallout %}
 
 [My proposal][issue] builds on
 [David Baron's `@container` proposal][dbaron],

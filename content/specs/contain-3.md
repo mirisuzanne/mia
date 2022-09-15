@@ -9,9 +9,9 @@ tags:
   - csswg
   - container queries
 events:
-  # - venue: Released in Browsers
-  #   url: https://caniuse.com/css-container-queries
-  #   date: 2022-02-08
+  - venue: Released in Browsers
+    url: /2022/09/14/cq-browsers/
+    date: 2022-08-30
   - venue: Working Draft
     url: https://www.w3.org/TR/css-contain-3/
     date: 2021-12-21
@@ -27,6 +27,9 @@ events:
 resources:
   - title: MDN documentation
     url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries
+  - title: Use the Right Container Query Syntax
+    url: https://www.oddbird.net/2022/08/18/cq-syntax/
+    credit: Miriam Suzanne
   - title: 'Container Queries: a Quick Start Guide'
     url: https://www.oddbird.net/2021/04/05/containerqueries/
     credit: David Herron
@@ -93,26 +96,17 @@ Both could be useful in different cases.
 [switch]: https://bkardell.com/blog/AllThemSwitches.html
 
 This specification builds on David Baron's `@container` approach,
-which works by applying size & layout containment
-to the queried elements.
-Any element with both size & layout containment
-can be queried using a new `@container` rule,
-with similar syntax to existing media-queries.
+with a syntax that is similar to media queries.
 We also define 'container-relative units' (`cq*`)
 that match the existing 'viewport-relative units' (`v*`).
 
-## Resources
+## Resources {id=resources}
 
 {% for item in resources | sortBy('date') | reverse -%}
 - {{ utility.link_if(item.title, item.url) }}{% if item.credit %} by _{{ item.credit }}_{% endif %}{% if item.venue %} at **{{ item.venue }}**{% endif %}
 {% endfor %}
 
-## Timeline & Documents
-
-{% for event in events | sortBy('date') | reverse -%}
-- {{ utility.link_if(event.venue, event.url) }} ({{ event.date | date }})
-{% endfor %}
-
 ## Browser Support
 
 {{ content.caniuse('css-container-queries') }}
+{{ content.caniuse('css-container-query-units') }}

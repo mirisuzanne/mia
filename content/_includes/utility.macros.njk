@@ -54,7 +54,7 @@
   format=none,
   attrs={},
   pubdate=false
-) %}
+) -%}
   {%- set is_range = start and end and (start != end) -%}
 
   {%- set human -%}
@@ -67,15 +67,15 @@
 
   {%- if is_range -%}
     <span class="time" {{ show_attrs(attrs) }}>{{ human | safe }}</span>
-  {%- else -%}
+  {% else -%}
     {%- set attrs = attrs | merge({
       'datetime': start | date('iso'),
       'class': 'dt-published' if pubdate else none
-    }) %}
+    }) -%}
 
     <time {{ show_attrs(attrs) }}>{{ human | safe }}</time>
   {%- endif -%}
-{% endmacro %}
+{%- endmacro %}
 
 {% macro _get_range(
   start,
@@ -123,7 +123,7 @@
     {%- set start_attrs = {
       'datetime': start | date('iso'),
       'class': ['dt-start dt-published'] if pubdate else 'dt-start'
-    } %}
+    } -%}
 
     <time {{ show_attrs(start_attrs) }}>
       {{- start | date(start_format) -}}

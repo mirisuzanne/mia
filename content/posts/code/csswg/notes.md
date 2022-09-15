@@ -4,6 +4,8 @@ sub: A scratchpad for new features
 date: 2020-11-17
 venue: css.oddbird.net
 url: https://css.oddbird.net
+tags:
+  - oddbird
 summary: |
   As I spend more of my time
   working on the CSS language,
