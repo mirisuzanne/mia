@@ -1,6 +1,103 @@
 {
-  "lastFetched": "2022-09-15T16:29:45.368Z",
+  "lastFetched": "2022-09-16T16:48:19.708Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://theprogrammernewshubb.com/2022/09/16/weekly-news-for-designers-%e2%84%96-661/",
+      "published": null,
+      "wm-received": "2022-09-16T15:38:43Z",
+      "wm-id": 1520231,
+      "wm-source": "https://theprogrammernewshubb.com/2022/09/16/weekly-news-for-designers-%e2%84%96-661/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://adstechy.com/weekly-news-for-designers-%e2%84%96-661-ux-checklists-for-interface-designers-css-glitch-hover-effect-free-iphone-14-pro-mockup-template/",
+      "published": null,
+      "wm-received": "2022-09-16T11:40:08Z",
+      "wm-id": 1520076,
+      "wm-source": "https://adstechy.com/weekly-news-for-designers-%e2%84%96-661-ux-checklists-for-interface-designers-css-glitch-hover-effect-free-iphone-14-pro-mockup-template/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://webwayamerica.com/weekly-news-for-designers-%e2%84%96-661/",
+      "published": null,
+      "wm-received": "2022-09-16T11:19:46Z",
+      "wm-id": 1520060,
+      "wm-source": "https://webwayamerica.com/weekly-news-for-designers-%e2%84%96-661/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://webwayamerica.com/weekly-news-for-designers-%e2%84%96-661/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://speckyboy.com/weekly-news-for-designers-661/",
+      "published": null,
+      "wm-received": "2022-09-16T10:47:19Z",
+      "wm-id": 1520034,
+      "wm-source": "https://speckyboy.com/weekly-news-for-designers-661/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/31fcfd6282b72379bdececa7d23a188489aa4cf4f63f576928d87f6a3df9064b.jpg",
+        "url": "https://twitter.com/TerribleMia"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1570447435436294145",
+      "published": "2022-09-15T16:20:20+00:00",
+      "wm-received": "2022-09-15T16:30:41Z",
+      "wm-id": 1519509,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1570447435436294145",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/14/cq-browsers/",
+      "content": {
+        "html": "After nearly 15 years as a highly-requested (impossible!?) feature, size-based Container Queries &amp; units have shipped in both Chrome/Edge 105 &amp; Safari 16! Firefox is not far behind.\n\n(also: there's a prototype of style queries!)\n\n<a href=\"https://www.miriamsuzanne.com/2022/09/14/cq-browsers/\">miriamsuzanne.com/2022/09/14/cq-…</a>",
+        "text": "After nearly 15 years as a highly-requested (impossible!?) feature, size-based Container Queries & units have shipped in both Chrome/Edge 105 & Safari 16! Firefox is not far behind.\n\n(also: there's a prototype of style queries!)\n\nmiriamsuzanne.com/2022/09/14/cq-…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/14/cq-browsers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
