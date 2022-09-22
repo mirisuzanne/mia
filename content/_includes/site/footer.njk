@@ -1,17 +1,18 @@
 {% import 'contact.macros.njk' as contact %}
 
-{% if not (page.url == '/contact/') %}
-  {{ contact.form(
-    attrs={'data-footer': 'contact'},
-    url=page.url
-  ) }}
-{% endif %}
-
 <footer>
   <p>
     Copyright &copy; {% getDate 'year' %}
     <strong>{{ site.author }}</strong>
   </p>
+
   {{ colophon | md | safe }}
+
+  <p>
+    {%- set input_path = (page.inputPath or '') | replace('./', '') -%}
+    <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}">
+      Edit this page on GitHub
+    </a>
+  </p>
 </footer>
 

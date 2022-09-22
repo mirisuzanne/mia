@@ -1,6 +1,7 @@
 @mixin css {
   #summary {
-    font-size: 1.4em;
+    font-size: var(--huge);
+    margin-block: var(--spacer);
   }
 
   #summary,

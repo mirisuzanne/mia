@@ -33,16 +33,7 @@
     </div>
   {% endif %}
 
-  {% include 'site/nav.njk' %}
-
   <main id="main" {% if erasure %}data-erase="off"{% endif %} {{ utility.show_attrs(attrs.main) }}>
-    {% if draft %}
-      {% set input_path = (page.inputPath or '') | replace('./', '') %}
-      <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}" class="edit-draft">
-        Edit this draft on GitHub
-      </a>
-    {% endif %}
-
     {{ content | safe }}
 
     <a href="{{ page.url | url }}" class="u-url" hidden></a>
@@ -60,11 +51,8 @@
     {% endif %}
   </main>
 
-  <div>
-    {% include 'site/tags.njk' %}
-    {% include 'site/settings.njk' %}
-  </div>
-
+  {% include 'site/settings.njk' %}
+  {% include 'site/contact.njk' %}
   {% include 'site/footer.njk' %}
 
   {% set scripts = meta.scripts | concat(scripts) if scripts else meta.scripts %}
