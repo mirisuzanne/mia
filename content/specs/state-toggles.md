@@ -3,7 +3,7 @@ title: CSS State Toggles [WIP]
 sub: Declarative controls for presentational state
 url: https://tabatkins.github.io/css-toggle/
 date: 2022-06-12
-type: unofficial draft spec
+type: spec
 tags:
   - csswg
   - state toggles
@@ -15,6 +15,11 @@ events:
   - venue: Unofficial Draft
     url: https://tabatkins.github.io/css-toggle/
     date: 2021-06-04
+summary: |
+  An early proposal
+  for creating declarative state controls in CSS,
+  and styling elements
+  based on the current state.
 ---
 
 There are many use-cases where an interaction

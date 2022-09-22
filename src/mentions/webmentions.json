@@ -1,6 +1,258 @@
 {
-  "lastFetched": "2022-09-16T16:48:19.708Z",
+  "lastFetched": "2022-09-22T01:26:49.397Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Frontend Dogma",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7fef0c3e728e532d829ec49a8f7129557bd31cf0d3585fad94ecb61c3e79fa8d.jpg",
+        "url": "https://twitter.com/frontenddogma"
+      },
+      "url": "https://twitter.com/frontenddogma/status/1572640258302287872",
+      "published": "2022-09-21T17:33:50+00:00",
+      "wm-received": "2022-09-21T18:01:16Z",
+      "wm-id": 1524329,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1572640258302287872",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/14/cq-browsers/",
+      "content": {
+        "html": "Container Queries in Browsers!, by <a href=\"https://twitter.com/TerribleMia\">@terriblemia</a>:\n\n<a href=\"https://www.miriamsuzanne.com/2022/09/14/cq-browsers/\">miriamsuzanne.com/2022/09/14/cq-…</a>",
+        "text": "Container Queries in Browsers!, by @terriblemia:\n\nmiriamsuzanne.com/2022/09/14/cq-…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/14/cq-browsers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://assuagetech.net/2022/09/17/weekly-news-for-designers-%e2%84%96-661/",
+      "published": null,
+      "wm-received": "2022-09-21T07:23:47Z",
+      "wm-id": 1523892,
+      "wm-source": "https://assuagetech.net/2022/09/17/weekly-news-for-designers-%e2%84%96-661/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara Soueidan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d99094f0d8c3eeb239c1d7425606924b8861e383534239e03ac34beab0fd6484.jpg",
+        "url": "https://twitter.com/SaraSoueidan"
+      },
+      "url": "https://twitter.com/SaraSoueidan/status/1572421128928501766",
+      "published": "2022-09-21T03:03:05+00:00",
+      "wm-received": "2022-09-21T04:01:32Z",
+      "wm-id": 1523830,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1572421128928501766",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "content": {
+        "html": "A long-term plan for logical properties?\n\n—\nYes, please!\n\n\"It’s not bad to use the physical properties sometimes, when they best express the design intent, but they shouldn’t be encouraged as the default choice.\" ⁦—<a href=\"https://twitter.com/TerribleMia\">@TerribleMia</a>⁩\n\n<a href=\"https://twitter.com/search?q=%23CSS\">#CSS</a> <a href=\"https://www.miriamsuzanne.com/2022/09/16/tpac-logical/\">miriamsuzanne.com/2022/09/16/tpa…</a>",
+        "text": "A long-term plan for logical properties?\n\n—\nYes, please!\n\n\"It’s not bad to use the physical properties sometimes, when they best express the design intent, but they shouldn’t be encouraged as the default choice.\" ⁦—@TerribleMia⁩\n\n#CSS miriamsuzanne.com/2022/09/16/tpa…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://mybn.online/weekly-news-for-designers-%e2%84%96-661/",
+      "published": null,
+      "wm-received": "2022-09-19T07:24:17Z",
+      "wm-id": 1522344,
+      "wm-source": "https://mybn.online/weekly-news-for-designers-%e2%84%96-661/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adactio Links",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8e0a805eae6791b05c23541931a123a5446393bb9929fcdd274f7e5c33d7792f.jpeg",
+        "url": "https://twitter.com/adactioLinks"
+      },
+      "url": "https://twitter.com/adactioLinks/status/1571179139218001922",
+      "published": "2022-09-17T16:47:52+00:00",
+      "wm-received": "2022-09-17T16:48:41Z",
+      "wm-id": 1521448,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1571179139218001922",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "content": {
+        "html": "A long-term plan for logical properties? | Miriam Eric Suzanne <a href=\"https://www.miriamsuzanne.com/2022/09/16/tpac-logical/\">miriamsuzanne.com/2022/09/16/tpa…</a>",
+        "text": "A long-term plan for logical properties? | Miriam Eric Suzanne miriamsuzanne.com/2022/09/16/tpa…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Justgu.us (looking for des-ops job!)",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2f2d5e86a042bdc54ad974d0fa8142aba0d242121d073583f7e7dcf056ce331a.jpg",
+        "url": "https://twitter.com/Bliepjes"
+      },
+      "url": "https://twitter.com/Bliepjes/status/1571147158266744835",
+      "published": "2022-09-17T14:40:47+00:00",
+      "wm-received": "2022-09-17T14:58:42Z",
+      "wm-id": 1521383,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1570821068188942338/1571147158266744835",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "content": {
+        "html": "I'm curious if the \"survivalship bias\" is on regarding the adoption of logical properties, and turning them into custom properties by naming things.\n\nMy take on this is that no matter how hard you try making them \"better\" technically, naming things is harder and mostly forgotten\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/adactio\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/csswg\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/fantasai\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/16/tpac-logical/\"></a>",
+        "text": "I'm curious if the \"survivalship bias\" is on regarding the adoption of logical properties, and turning them into custom properties by naming things.\n\nMy take on this is that no matter how hard you try making them \"better\" technically, naming things is harder and mostly forgotten"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher Kirk-Nielsen",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4009d2d0f336a4a0c0dce899b3dd356e02eb34081195aa9c3e6767eada0d8365.jpg",
+        "url": "https://twitter.com/ckirknielsen"
+      },
+      "url": "https://twitter.com/ckirknielsen/status/1570860749949640705",
+      "published": "2022-09-16T19:42:42+00:00",
+      "wm-received": "2022-09-16T19:47:47Z",
+      "wm-id": 1520564,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1570821068188942338/1570860749949640705",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "content": {
+        "html": "I've been using shorthand thinking they mapped to logical, oh no… I've been lying to myself this whole time?\n\nMy existential CriSiS aside, this is tough! All ideas have pros &amp; cons! The box-sizing-like approach would be my proposal…but that was discussed 5 years ago already. 🙈\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/adactio\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/csswg\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/fantasai\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/16/tpac-logical/\"></a>",
+        "text": "I've been using shorthand thinking they mapped to logical, oh no… I've been lying to myself this whole time?\n\nMy existential CriSiS aside, this is tough! All ideas have pros & cons! The box-sizing-like approach would be my proposal…but that was discussed 5 years ago already. 🙈"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://dandp.ltd/tasarimcilar-icin-haftalik-haberler-%e2%84%96-661/",
+      "published": null,
+      "wm-received": "2022-09-16T19:25:23Z",
+      "wm-id": 1520531,
+      "wm-source": "https://dandp.ltd/tasarimcilar-icin-haftalik-haberler-%e2%84%96-661/",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/06/layers/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jens Oliver Meiert",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/170b1f52695435511e29265e829c209e8692ebe1ba6ad337425a087d3dbe09b2.jpg",
+        "url": "https://twitter.com/j9t"
+      },
+      "url": "https://twitter.com/j9t/status/1570827464829730816",
+      "published": "2022-09-16T17:30:26+00:00",
+      "wm-received": "2022-09-16T18:10:40Z",
+      "wm-id": 1520391,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1570821068188942338/1570827464829730816",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "content": {
+        "html": "It’s great to read “long-term plan” here\n\nLogical properties would have been great to build on from the start\n\nHowever, with few sites (LTR *and* RTL) truly *needing* LPs, some excitement has also appeared more theoretical than practical in nature\n\nCurious about @CSSWG thoughts!\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/adactio\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/csswg\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/fantasai\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/16/tpac-logical/\"></a>",
+        "text": "It’s great to read “long-term plan” here\n\nLogical properties would have been great to build on from the start\n\nHowever, with few sites (LTR *and* RTL) truly *needing* LPs, some excitement has also appeared more theoretical than practical in nature\n\nCurious about @CSSWG thoughts!"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "全部入りHTML太郎",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8653ae577f72ffb0bfd95c1911dc135117b092f2c7ebc1284322e6fcb4834c2d.jpg",
+        "url": "https://twitter.com/_yuheiy"
+      },
+      "url": "https://twitter.com/_yuheiy/status/1570831036111814656",
+      "published": "2022-09-16T17:44:38+00:00",
+      "wm-received": "2022-09-16T18:10:37Z",
+      "wm-id": 1520390,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1570831036111814656",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "content": {
+        "html": "A long-term plan for logical properties? | Miriam Eric Suzanne <a href=\"https://www.miriamsuzanne.com/2022/09/16/tpac-logical/\">miriamsuzanne.com/2022/09/16/tpa…</a>",
+        "text": "A long-term plan for logical properties? | Miriam Eric Suzanne miriamsuzanne.com/2022/09/16/tpa…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/31fcfd6282b72379bdececa7d23a188489aa4cf4f63f576928d87f6a3df9064b.jpg",
+        "url": "https://twitter.com/TerribleMia"
+      },
+      "url": "https://twitter.com/TerribleMia/status/1570821068188942338",
+      "published": "2022-09-16T17:05:01+00:00",
+      "wm-received": "2022-09-16T17:27:55Z",
+      "wm-id": 1520339,
+      "wm-source": "https://brid.gy/post/twitter/TerribleMia/1570821068188942338",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "content": {
+        "html": "We need a long-term plan for making logical, flow-relative properties the 'default' in CSS. <a href=\"https://twitter.com/adactio\">@adactio</a> wrote a great post about his attempt to go logical-first yesterday. <a href=\"https://twitter.com/fantasai\">@fantasai</a> &amp; I have worked on it some. Now the <a href=\"https://twitter.com/csswg\">@csswg</a> is discussing the topic at TPAC.\n\n<a href=\"https://www.miriamsuzanne.com/2022/09/16/tpac-logical/\">miriamsuzanne.com/2022/09/16/tpa…</a>",
+        "text": "We need a long-term plan for making logical, flow-relative properties the 'default' in CSS. @adactio wrote a great post about his attempt to go logical-first yesterday. @fantasai & I have worked on it some. Now the @csswg is discussing the topic at TPAC.\n\nmiriamsuzanne.com/2022/09/16/tpa…"
+      },
+      "mention-of": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam Argyle",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ecb57ab7c7fc113262d8bdbe1e11c6aa95146a7184ae4e596b9eefe48e5558a8.jpg",
+        "url": "https://twitter.com/argyleink"
+      },
+      "url": "https://twitter.com/argyleink/status/1570825720821321728",
+      "published": "2022-09-16T17:23:31+00:00",
+      "wm-received": "2022-09-16T17:27:54Z",
+      "wm-id": 1520338,
+      "wm-source": "https://brid.gy/comment/twitter/TerribleMia/1570821068188942338/1570825720821321728",
+      "wm-target": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "content": {
+        "html": "excellent excellent article recap by @adactio!\n\ni look forward to the solutions and will try and be helpful in the proposals 🤓\n\nviva logical props!\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/adactio\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/csswg\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/fantasai\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.miriamsuzanne.com/2022/09/16/tpac-logical/\"></a>",
+        "text": "excellent excellent article recap by @adactio!\n\ni look forward to the solutions and will try and be helpful in the proposals 🤓\n\nviva logical props!"
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/2022/09/16/tpac-logical/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

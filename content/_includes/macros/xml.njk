@@ -6,17 +6,19 @@
 {% macro entry(post, site) %}
   {{- (post.data.sub | md if post.data.sub else '') | safe -}}
   {{- (post.data.summary | md if post.data.summary else '') | safe -}}
+  {{- elsewhere(post, site) -}}
 
   {%- if post.data.hero.img -%}
     {{ post.data.hero.img | img(hero.alt, 'hero', {class: 'hero-img'}) | safe }}
   {%- endif -%}
 
   {{- post.templateContent | safe -}}
-  {{- elsewhere(post, site) -}}
 {%- endmacro %}
 
 {% macro elsewhere(post, site) -%}
-  {%- if post | hasTag('elsewhere') and post.data.url and post.data.venue -%}
-  <p><a href="{{ post.data.url }}">More at {{ post.data.venue }} »</a></p>
+  {%- set elsewhere = tags and url and tags | includes(['elsewhere', 'link']) -%}
+
+  {%- if elsewhere -%}
+    <p><a href="{{ post.data.url | url }}" class="u-repost-of u-uid">Reposted from {{ post.data.venue }} »</a></p>
   {%- endif -%}
 {%- endmacro %}

@@ -1,9 +1,9 @@
 ---
+feature: true
 title: CSS Cascade 5 (Layers)
 sub: Specification for Cascade Layers
 url: https://www.w3.org/TR/css-cascade-5/
 date: 2020-09-15
-type: css spec
 index: cascade layers
 tags:
   - csswg
