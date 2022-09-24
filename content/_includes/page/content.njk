@@ -1,12 +1,6 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-{%- if series -%}
-  {%- include "page/series.njk" -%}
-{%- endif -%}
-
 {%- if content -%}
-  {%- if summary or series %}<hr />{% endif -%}
-
   <div id="content" {{ utility.show_attrs(attrs.content) }}>
     {{ content | safe }}
   </div>

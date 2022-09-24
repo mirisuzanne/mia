@@ -1,5 +1,14 @@
 @mixin css {
-  [aria-current='page'] {
-    color: inherit;
+  nav[aria-label='primary'] {
+    a:any-link {
+      text-decoration: none;
+    }
+
+    [rel='home'] {
+      font-size: var(--huge);
+      font-style: italic;
+      vertical-align: middle;
+      margin-inline: var(--half-shim) var(--shim);
+    }
   }
 }

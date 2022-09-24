@@ -7,7 +7,7 @@ tags:
   - writing
   - script
   - artifact
-  - performance
+  - show
 events:
   - title: Best 10 Minute Play [finalist]
     venue: Kennedy Center ACTF

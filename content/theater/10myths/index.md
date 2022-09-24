@@ -9,7 +9,7 @@ date: 2016-03-04
 hero:
   img: art/theater/10myths.jpg
 tags:
-  - performance
+  - show
 index: 10myths
 events:
   - venue: Buntport Theater

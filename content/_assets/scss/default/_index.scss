@@ -3,6 +3,7 @@
 @use 'links';
 @use 'buttons';
 @use 'media';
+@use 'nav';
 @use 'type';
 @use 'forms';
 
@@ -12,6 +13,7 @@
   @include links.css;
   @include buttons.css;
   @include media.css;
+  @include nav.css;
   @include type.css;
   @include forms.css;
 }

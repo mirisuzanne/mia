@@ -100,7 +100,7 @@ with a syntax that is similar to media queries.
 We also define 'container-relative units' (`cq*`)
 that match the existing 'viewport-relative units' (`v*`).
 
-## Resources {id=resources}
+## Resources
 
 {% for item in resources -%}
 - {{ utility.link_if(item.title, item.url) }}{% if item.credit %} by _{{ item.credit }}_{% endif %}{% if item.venue %} at **{{ item.venue }}**{% endif %}

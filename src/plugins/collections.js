@@ -2,7 +2,9 @@
 
 const { intersection } = require('lodash');
 
-const xmlTags = ['post', 'micro', '_feed'];
+const nav = require('../utils/nav');
+
+const xmlTags = nav.data.type.feed;
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addCollection('_xml', (collection) =>

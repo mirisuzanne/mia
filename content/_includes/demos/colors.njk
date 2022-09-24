@@ -1,59 +1,59 @@
 {% macro hwb(h='180deg') -%}
-  <table>
-    <thead>
-      <tr>
-        <th>h<code>{{ h }}</code></th>
+  <table style="--td-align: center;">{#
+    #}<thead>{#
+      #}<tr>{#
+        #}<th>h<code>{{ h }}</code></th>
         {%- for w in range(0, 11) -%}
           <th>w<code>{{ w * 10 }}%</code></th>
         {%- endfor -%}
-      </tr>
-    </thead>
-    <tbody>
+      </tr>{#
+    #}</thead>{#
+    #}<tbody>
     {%- for b in range(0, 11) -%}
       {%- set b = b * 10 -%}
-      <tr>
-        <th>b<code>{{ b }}%</code></th>
+      <tr>{#
+        #}<th>b<code>{{ b }}%</code></th>
         {%- for w in range(0, 11) -%}
           {%- set w = w * 10 -%}
           {%- set x = '❌' if (w + b > 100) else none -%}
           {%- set hwb = [h, w + '%', b + '%'] | join(' ') -%}
-          <td style="background-color: hwb({{ hwb }}); --cell-align: center;">
-            {{ x }}
+          <td style="background-color: hwb({{ hwb }});">
+            {{- x -}}
           </td>
         {%- endfor -%}
       </tr>
     {%- endfor -%}
-    </tbody>
-  </table>
+    </tbody>{#
+  #}</table>
 {%- endmacro %}
 
 {% macro hsl(h='180deg') -%}
-  <table>
-    <thead>
-      <tr>
-        <th>h<code>{{ h }}</code></th>
+  <table style="--td-align: center;">{#
+    #}<thead>{#
+      #}<tr>{#
+        #}<th>h<code>{{ h }}</code></th>
         {%- for s in range(0, 11) -%}
           <th>s<code>{{ s * 10 }}%</code></th>
         {%- endfor -%}
-      </tr>
-    </thead>
-    <tbody>
+      </tr>{#
+    #}</thead>{#
+    #}<tbody>
     {%- for l in range(0, 11) -%}
       {%- set l = l * 10 -%}
-      <tr>
-        <th>l<code>{{ l }}%</code></th>
+      <tr>{#
+        #}<th>l<code>{{ l }}%</code></th>
         {%- for s in range(0, 11) -%}
           {%- set s = s * 10 -%}
           {%- set x = '❌' if (((l == 0) or (l == 100)) and (s > 0)) else none -%}
           {%- set hsl = [h, s + '%', l + '%'] | join(' ') -%}
-          <td style="background-color: hsl({{ hsl }}); --cell-align: center;">
-            {{ x }}
+          <td style="background-color: hsl({{ hsl }});">
+            {{- x -}}
           </td>
         {%- endfor -%}
       </tr>
     {%- endfor -%}
-    </tbody>
-  </table>
+    </tbody>{#
+  #}</table>
 {%- endmacro %}
 
 {% macro gradient(

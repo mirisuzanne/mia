@@ -7,13 +7,7 @@
   <meta name="description" content="{{ description }}" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-  {% if redirect -%}
-    <meta http-equiv="refresh" content="0; URL={{ redirect.to }}" />
-  {%- endif %}
-  {% if draft or redirect -%}
-    <meta name="robots" content="noindex">
-  {%- endif %}
-
+  {%- include "head/redirect.njk" -%}
   {%- include "head/theme.njk" -%}
   {%- include "head/styles.njk" -%}
   {%- include "head/preload.njk" -%}
@@ -27,32 +21,21 @@
 <body {{ utility.show_attrs(attrs.body) }}>
   <a href="#main" class="visually-hidden">skip to content</a>
 
-  {% if message %}
-    <div id="message">
-      {{ message | md | safe }}
-    </div>
-  {% endif %}
+  <header id="banner">
+    {% include 'site/message.njk' %}
+    {% include 'site/nav.njk' %}
+  </header>
 
-  <main id="main" {% if erasure %}data-erase="off"{% endif %} {{ utility.show_attrs(attrs.main) }}>
+  {%- set main_attrs = {
+    'id': 'main',
+    'data-erase': 'off' if erasure else none
+  } | merge(attrs.main) -%}
+
+  <main {{ utility.show_attrs(main_attrs) }}>
     {{ content | safe }}
-
-    <a href="{{ page.url | url }}" class="u-url" hidden></a>
-
-    {% if rel %}
-      {% set rel_attrs = {
-        'reply': {'class': 'u-in-reply-to'},
-        'syndication': {'class': 'u-syndication', 'rel': 'syndication'},
-        'bookmark': {'class': 'u-bookmark-of'},
-        'like': {'class': 'u-like-of'}
-      } %}
-      {% for type, target in rel %}
-        <a href="{{ target | url }}" {{ utility.show_attrs(rel_attrs[type]) }} hidden></a>
-      {% endfor %}
-    {% endif %}
+    {% include 'page/links.njk' %}
   </main>
 
-  {% include 'site/settings.njk' %}
-  {% include 'site/contact.njk' %}
   {% include 'site/footer.njk' %}
 
   {% set scripts = meta.scripts | concat(scripts) if scripts else meta.scripts %}

@@ -8,7 +8,7 @@ venue: Buntport Theater
 tags:
   - teacup gorilla
   - buntport
-  - performance
+  - show
   - music
 press:
   - credit: Eden Lane

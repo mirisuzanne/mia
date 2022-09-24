@@ -12,7 +12,7 @@ hero:
   img: art/theater/lida/rain.jpg
 tags:
   - lighting
-  - performance
+  - show
 press:
   - text: |
       It’s theater of chaos.

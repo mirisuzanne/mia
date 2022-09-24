@@ -1,9 +1,15 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-{% set tags_public = tags | publicTags %}
+{% set link = (venue and url) %}
 
-{% if tags_public or org %}
-  <div class="meta">
+{% if link or org or adr %}
+  <p class="meta">
+    {% if org %}
+      <strong class='role'>
+        {{ org | mdInline | safe }}
+      </strong> |
+    {% endif %}
+
     {% if date and not (type in ['index', 'page']) %}
       {{ utility.datetime(
         start=date,
@@ -12,37 +18,18 @@
       ) }}
     {% endif %}
 
-    {% if (venue and url) %}
+    {% if link %}
       @
       <a href="{{ url | url }}" class="h-card org">
         {{ (venue or 'the interwebz') | mdInline | safe }}
       </a>
     {% endif %}
 
-    {% if org %}
-      as
-      <strong>
-        {{ org | mdInline | safe }}
-      </strong>
-    {% endif %}
-
     {% if adr %}
       in
-      <span>
+      <span class="adr">
         {{ adr | safe }}
       </span>
     {% endif %}
-
-    {% if tags_public | length > 0 %}
-      <ul data-list="tags">
-        {%- for tag in tags_public -%}
-          <li>
-            <a href="{{ tag | tagLink(collections) }}" class="p-category">
-              {{- tag | displayName -}}
-            </a>
-          </li>
-        {%- endfor -%}
-      </ul>
-    {% endif %}
-  </div>
+  </p>
 {% endif %}

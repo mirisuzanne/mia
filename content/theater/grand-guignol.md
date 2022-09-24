@@ -9,7 +9,7 @@ events:
 tags:
   - teacup gorilla
   - music
-  - performance
+  - show
 summary: |
   A night of classic horror theater
   by Pandemic Collective,

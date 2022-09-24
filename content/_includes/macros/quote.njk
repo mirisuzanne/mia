@@ -30,6 +30,7 @@
   data
 ) -%}
 {%- set where = _where(data) -%}
+{%- set where = none if (where == '') else where -%}
 {%- if data.credit and where and data.url -%}
 {{ data.credit }}, [{{ where }}]({{ data.url }})
 {%- elif data.credit and where -%}

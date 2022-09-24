@@ -22,7 +22,7 @@ tags:
   - lighting
   - grapefruit lab
   - pity+fear
-  - performance
+  - show
 press:
   - title: Live Show Review
     venue: Queen City Sounds & Art

@@ -7,7 +7,7 @@ events:
 tags:
   - lighting
   - assistant director
-  - performance
+  - show
 summary: |
   The play by Wendy MacLeod.
 ---

@@ -19,18 +19,14 @@
 {% macro figure(
   data=none,
   caption=none,
-  grid=true,
-  content=none
+  content=none,
+  attrs={}
 ) -%}
 {%- set content = _fig_content(data) if data else content -%}
-<figure>
-  {%- if grid -%}
-    <div class="gallery">
-      {{- content | safe -}}
-    </div>
-  {%- else -%}
-    {{- content | safe -}}
-  {%- endif -%}
+<figure {{ utility.show_attrs(attrs) }}>{#
+  #}<div class="gallery">
+    {{- content | trim | safe -}}
+  </div>
   {%- if caption -%}
     <figcaption>
       {{- caption | mdInline | safe -}}
@@ -51,7 +47,7 @@ params:
   path,
   alt=none
 ) -%}
-  {%- include path + '.svg' -%}
+  {%- include path if ('.svg' in path) else (path + '.svg') -%}
   {%- if alt -%}
     <span class="visually-hidden">{{ alt }}</span>
   {%- endif -%}
@@ -164,7 +160,7 @@ params:
     {% set full_width = (loop.length == 1) or (item.span == 'full') or (item.span > 1) %}
     {{- item.img | img(
       item.alt,
-      none if full_width else 'gallery',
+      item.size or (none if full_width else 'gallery'),
       {'style': style} | merge(item.attrs),
       [item.width, item.height]
     ) | safe -}}
@@ -227,7 +223,7 @@ params:
   url='https://codepen.io'
 ) }}.</p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 {%- endset -%}
-{{ figure(content=content, grid=false) }}
+{{ figure(content=content) }}
 {%- endmacro %}
 
 {% macro caniuse(

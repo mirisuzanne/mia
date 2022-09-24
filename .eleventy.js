@@ -3,6 +3,7 @@
 const yaml = require('js-yaml');
 const hljs = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rss = require('@11ty/eleventy-plugin-rss');
+const pluginTOC = require('eleventy-plugin-toc', { wrapper: '' });
 
 const configCollections = require('./src/plugins/collections');
 const configType = require('./src/plugins/type');
@@ -20,6 +21,7 @@ module.exports = (eleventyConfig) => {
   // third-party plugins
   eleventyConfig.addPlugin(hljs);
   eleventyConfig.addPlugin(rss);
+  eleventyConfig.addPlugin(pluginTOC);
 
   // config plugins
   eleventyConfig.addPlugin(configCollections);
@@ -50,6 +52,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('pageEvents', events.pageEvents);
   eleventyConfig.addFilter('getEvents', events.getEvents);
   eleventyConfig.addFilter('sortEvents', events.sortEvents);
+  eleventyConfig.addFilter('notPast', (all) =>
+    all.filter((item) => item.tense !== 'past'),
+  );
 
   // config
   eleventyConfig.addDataExtension('yaml', yaml.safeLoad);

@@ -3,7 +3,7 @@ title: Hello and Goodbye
 date: 2006-11-25
 tags:
   - directing
-  - performance
+  - show
 events:
   - end: 2006-12-04
 press:

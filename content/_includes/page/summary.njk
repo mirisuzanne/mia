@@ -1,14 +1,19 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-{%- set elsewhere = tags and url and tags | includes(['elsewhere', 'link']) -%}
-{%- if summary or elsewhere -%}
-  <div id="summary" {{ utility.show_attrs(attrs.summary) }}>
+{%- set is_link = venue and url and tags | includes(nav.type.link) -%}
+{%- if summary or is_link -%}
+  {%- set summary_attrs = {
+    'id': 'summary',
+    'aria-label': 'intro summary'
+  } | merge(attrs.summary) -%}
+
+  <section id="summary" {{ utility.show_attrs(summary_attrs) }}>
     {%- if summary -%}
       {{ summary | md | safe }}
     {%- endif -%}
 
-    {%- if elsewhere -%}
+    {%- if is_link -%}
       <p><a href="{{ url | url }}" class="u-repost-of u-uid">Reposted from {{ venue }} »</a></p>
     {%- endif -%}
-  </div>
+  </section>
 {%- endif -%}

@@ -1,0 +1,20 @@
+<nav id="page-nav" id="page-nav" aria-label="page navigation">
+  <ol>
+    <li>primary navigation</li>
+    <li>page navigation</li>
+    <li>
+      <div>main content</div>
+      {% if content | toc %}
+        {{ content | toc | safe }}
+      {% endif %}
+    </li>
+    <li>
+      <div>content info</div>
+      <ol>
+        <li>miriam eric suzanne</li>
+        <li>contact me</li>
+        <li>theme settings</li>
+      </ol>
+    </li>
+  </ol>
+</nav>

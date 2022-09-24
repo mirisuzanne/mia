@@ -1,7 +1,7 @@
 ---
 feature: true
 title: Oregon Shakespeare Festival
-sub: Among the oldest & largest professional non-profit theatres in the nation.
+sub: Among the oldest professional non-profit theaters in the nation.
 org: Stage Management Intern
 url: https://www.osfashland.org/
 date: 2003-02-06

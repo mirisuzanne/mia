@@ -3,6 +3,7 @@ title: Teacup Gorilla
 sub: Dark indie-rock soundscapes with evocative poetry
 org: Bass & Vocals
 type: band
+adr: Denver, CO
 hero:
   img: art/music/video-meta.jpg
 url: https://teacupgorilla.com/
@@ -50,11 +51,10 @@ press:
     credit: Tim Wenger
     url: https://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/
 summary: |
-  Teacup Gorilla inhabits the venues of Denver, CO
-  with dark indie-rock soundscapes and evocative poetry --
-  often compared to early Modest Mouse,
-  Explosions in the Sky,
-  or the Velvet Underground.
+  If you're gonna dance for war,
+  you're gonna dance for sure.
+  And if you're gonna dance for peace,
+  you will never cease.
 ---
 {% import "content.macros.njk" as content %}
 
@@ -64,9 +64,9 @@ summary: |
   caption='The Holes They Leave EP'
 ) }}
 
-We also enjoy collaborating across media
-with theaters, writers, dancers, and other artists.
-
+- **Spring 2010**
+  we collaborated with [Grapefruit Lab](/orgs/grapefruit-lab/)
+  to create [Missa Populi](/theater/missa/)
 - **Summer 2015**
   we released our debut EP,
   [The Holes They Leave](/music/albums/holes-they-leave/)

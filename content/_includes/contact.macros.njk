@@ -9,6 +9,8 @@
 ) %}
 {% set attrs = {
   'name': 'contact',
+  'id': 'contact',
+  'aria-labelledby': 'contact-label',
   'method': 'POST',
   'action': next,
   'netlify-honeypot': 'subject',
@@ -16,7 +18,7 @@
 } | merge(attrs) %}
 <form {{ utility.show_attrs(attrs) }}>
   {% if heading %}
-    {{ heading | md | safe }}
+    {{ [heading, '{#contact-label}'] | join | md | safe }}
   {% endif %}
 
   <label>

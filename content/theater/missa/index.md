@@ -12,7 +12,7 @@ events:
 tags:
   - music
   - directing
-  - performance
+  - show
 gallery:
   - img: /art/theater/missa/missa407.jpg
   - img: /art/theater/missa/missa543.jpg

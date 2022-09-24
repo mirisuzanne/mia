@@ -28,11 +28,9 @@ module.exports = (eleventyConfig) => {
       return _.includes(array || [], find);
     }
 
-    if (all) {
-      return find.every((item) => _.includes(array || [], item));
-    }
-
-    return _.intersection(array || [], find).length > 0;
+    return all
+      ? find.every((item) => _.includes(array || [], item))
+      : _.intersection(array || [], find).length > 0;
   });
 
   eleventyConfig.addFilter('intersection', (array, compare) =>

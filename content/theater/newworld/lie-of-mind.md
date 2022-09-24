@@ -6,7 +6,7 @@ events:
   - end: 2002-04-02
 tags:
   - lighting
-  - performance
+  - show
 summary: |
   Some brutal Sam Sheppard…
 ---

@@ -1,0 +1,14 @@
+@mixin css {
+  #banner {
+    --body-column: full;
+
+    display: grid;
+    row-gap: var(--gap);
+    grid: inherit;
+
+    > * {
+      grid-column: var(--banner-column, main);
+      margin-block: 0;
+    }
+  }
+}

@@ -1,18 +1,26 @@
 {% import 'contact.macros.njk' as contact %}
 
-<footer>
-  <p>
-    Copyright &copy; {% getDate 'year' %}
-    <strong>{{ site.author }}</strong>
-  </p>
+<footer id="contentinfo">
+  <div class="me">
+    {% include 'site/author.njk' %}
+    {% include 'site/contact.njk' %}
+  </div>
 
-  {{ colophon | md | safe }}
+  {% include 'site/settings.njk' %}
 
-  <p>
-    {%- set input_path = (page.inputPath or '') | replace('./', '') -%}
-    <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}">
-      Edit this page on GitHub
-    </a>
-  </p>
+  <div class="meta">
+    <p>
+      Copyright &copy; {% getDate 'year' %}
+      <strong>{{ site.author }}</strong>
+    </p>
+
+    {{ colophon | md | safe }}
+
+    <p>
+      {%- set input_path = (page.inputPath or '') | replace('./', '') -%}
+      <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}">
+        Edit this page on GitHub
+      </a>
+    </p>
+  </div>
 </footer>
-

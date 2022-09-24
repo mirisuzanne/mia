@@ -6,13 +6,15 @@
   <summary>
     Part of a series tagged '{{ series | displayName }}'
   </summary>
-  <ol>
-    {%- for item in collections[series] | sortBy('data.date') -%}
-      <li>
-        <a href="{{ item.url | url }}">{{ item.data.banner | mdInline }}</a>
-        &ndash; {{ utility.datetime(item.data.date) }}
-      </li>
-    {%- endfor -%}
-  </ol>
+  <nav aria-label="series">
+    <ol>
+      {%- for item in collections[series] | sortBy('data.date') -%}
+        <li>
+          <a href="{{ item.url | url }}">{{ item.data.banner | mdInline }}</a>
+          &ndash; {{ utility.datetime(item.data.date) }}
+        </li>
+      {%- endfor -%}
+    </ol>
+  </nav>
 </details>
 {%- endif -%}

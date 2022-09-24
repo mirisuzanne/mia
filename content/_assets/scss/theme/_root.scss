@@ -1,16 +1,18 @@
 @mixin css {
   body {
     --grid-margin: minmax(var(--margin), 1fr);
+    --wide: 100vw - 30em;
 
     display: grid;
     row-gap: var(--spacer);
     grid-template-columns:
       [full-start] var(--grid-margin)
+      [wide-start] minmax(0, clamp(0px, var(--wide), var(--spacer, 3em)))
       [main-start] minmax(12ch, var(--measure))
-      [main-end] var(--grid-margin)
+      [main-end] minmax(0, clamp(0px, var(--wide), var(--gap, 1em)))
+      [wide-end] var(--grid-margin)
       [full-end];
     margin: 0;
-    max-width: none;
 
     > * {
       grid-column: var(--body-column, main);

@@ -20,7 +20,6 @@
   }
 
   body {
-    margin: var(--line, var(--gap, 1em)) var(--margin, var(--gap, 1em));
-    max-width: var(--measure, 75ch);
+    margin: var(--gap, 1em) var(--margin, var(--gap, 1em));
   }
 }

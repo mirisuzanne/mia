@@ -7,24 +7,21 @@ eleventyComputed:
     {{ welcome | random | safe }}
 ---
 
-{% set event_groups = collections.all | getEvents | groupBy('tense') %}
+{% set event_list = collections.all | getEvents | notPast %}
 
-{% for tense, event_list in event_groups %}
-  {% if (tense != 'past') and event_list | length > 0 %}
-    <section class="events">
-      <h2>{{ hevent.titles[tense] or tense }}</h2>
-      {% for item in event_list | sortEvents(tense) %}
-        {% include 'part/hevent.njk' %}
-      {% endfor %}
-    </section>
-  {% endif %}
-{% endfor %}
+{% if event_list | length > 0 %}
+  <section class="events">
+    <h2>Current & Upcoming Events</h2>
+    {% for item in event_list | sortEvents('future') %}
+      {% include 'part/hevent.njk' %}
+    {% endfor %}
+  </section>
+{% endif %}
 
 {%- set hentry_heading = 'h3' -%}
 
 {%- set hfeed = collections.post | getPublic  -%}
 {%- if hfeed | length > 0 -%}
-<hr />
 <section class="h-feed">
   <h2 class="p-name">Recent Posts</h2>
   {%- for item in hfeed | sortBy('data.date') | reverse | slice(5) -%}
@@ -36,7 +33,6 @@ eleventyComputed:
 
 {%- set hfeed = collections.artifact | getPublic | filter(['data.feature', 'home'])  -%}
 {%- if hfeed | length > 0 -%}
-<hr />
 <section class="h-feed">
   <h2 class="p-name">Featured Artifacts</h2>
   {%- for item in hfeed | sortBy('data.date') | reverse | slice(5) -%}

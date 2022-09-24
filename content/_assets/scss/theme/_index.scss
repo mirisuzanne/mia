@@ -5,9 +5,12 @@
 @use 'fonts';
 @use 'type';
 @use 'headings';
-@use 'nav';
-@use 'content';
 @use 'media';
+@use 'root';
+@use 'banner';
+@use 'message';
+@use 'nav';
+@use 'main';
 
 @mixin css {
   @include fonts.files;
@@ -26,9 +29,12 @@
 
   @include type.css;
   @include headings.css;
-  @include nav.css;
-  @include content.css;
   @include media.css;
+  @include root.css;
+  @include banner.css;
+  @include message.css;
+  @include nav.css;
+  @include main.css;
 
   html::after {
     @include media.dim;

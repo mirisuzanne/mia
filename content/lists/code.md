@@ -7,11 +7,13 @@ sub: |
   & [Sass core team](/orgs/sass/)
   &c.
 summary: |
-  I made a website once,
-  and then another one,
-  and then another one.
-  I don't know why
-  I keep making all these websites.
+  I made a website,
+  and then I made another one.
+  A hobby that became an accidental career.
+  Not planned, but pursued.
+  Web code combines design with engineering,
+  poetry, and performance.
+  _(oh, and they'll pay you to do it)_
 ---
 
 {%- set hfeed = collections.artifact | intersection(collections.code) | getPublic | filter('data.feature') -%}

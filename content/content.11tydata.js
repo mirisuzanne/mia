@@ -4,8 +4,7 @@ const hasEvents = (data) => data.events && data.events.length >= 1;
 
 const endDate = (data) => {
   const needsDate =
-    data.end === 'events' ||
-    (!data.end && (data.tags || []).includes('performance'));
+    data.end === 'events' || (!data.end && (data.tags || []).includes('show'));
 
   if (needsDate && hasEvents(data)) {
     const map = data.events
