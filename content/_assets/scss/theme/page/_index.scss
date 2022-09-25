@@ -1,0 +1,11 @@
+@use 'summary';
+@use 'header';
+@use 'hero';
+@use 'footer';
+
+@mixin css {
+  @include summary.css;
+  @include header.css;
+  @include hero.css;
+  @include footer.css;
+}

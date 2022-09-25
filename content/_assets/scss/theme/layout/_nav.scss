@@ -1,5 +1,9 @@
+@use '../tools/text';
+
 @mixin css {
   nav[aria-label='primary'] {
+    margin-block-start: var(--nav-space, var(--spacer));
+
     a:any-link {
       text-decoration: none;
     }
@@ -10,5 +14,13 @@
       vertical-align: middle;
       margin-inline: var(--half-shim) var(--shim);
     }
+
+    [aria-current='page'] {
+      @include text.fancy;
+    }
+  }
+
+  #message + nav {
+    --nav-space: 0;
   }
 }

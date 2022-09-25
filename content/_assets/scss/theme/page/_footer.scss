@@ -1,0 +1,27 @@
+@use '../tools/text';
+
+@mixin css {
+  [data-list='tags'] {
+    flex-wrap: wrap;
+    gap: var(--gap);
+    list-style: none;
+
+    li {
+      display: inline;
+      font-style: italic;
+    }
+
+    li:not(:last-child)::after {
+      content: '&';
+      font-style: italic;
+      padding-inline: var(--half-shim);
+    }
+
+    &::before {
+      @include text.fancy;
+
+      content: '🔖';
+      padding-inline-end: var(--shim);
+    }
+  }
+}

@@ -12,11 +12,10 @@ sub: |
   Often with [Teacup Gorilla](/orgs/teacup-gorilla/)
   & [Grapefruit Lab](/orgs/grapefruit-lab/)
 summary: |
-  Here we are, stumbling through this wreckage and rubble,
-  finding beauty in the world and in each other along the way.
-  We fall between meanings and explore outside them.
-  And art gives us a venue to consider what remains;
-  what manifestos can never say.
+  Here we are,
+  stumbling through this wreckage and rubble --
+  finding beauty in the world
+  and in each other along the way.
 ---
 
 {%- set hfeed = collections.artifact | intersection(collections.art) | getPublic | filter('data.feature') -%}

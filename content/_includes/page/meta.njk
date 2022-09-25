@@ -1,35 +1,19 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-{% set link = (venue and url) %}
+{%- set show_date = date and not (type in ['index', 'page']) -%}
 
-{% if link or org or adr %}
+{% if show_date %}
   <p class="meta">
-    {% if org %}
-      <strong class='role'>
-        {{ org | mdInline | safe }}
-      </strong> |
-    {% endif %}
+    {{ utility.datetime(
+      start=date,
+      end=end,
+      pubdate=true
+    ) }}
 
-    {% if date and not (type in ['index', 'page']) %}
-      {{ utility.datetime(
-        start=date,
-        end=end,
-        pubdate=true
-      ) }}
-    {% endif %}
-
-    {% if link %}
-      @
-      <a href="{{ url | url }}" class="h-card org">
-        {{ (venue or 'the interwebz') | mdInline | safe }}
-      </a>
-    {% endif %}
-
-    {% if adr %}
-      in
-      <span class="adr">
-        {{ adr | safe }}
-      </span>
-    {% endif %}
+    {% if org or type -%}
+      | <em>
+        {{- (org or type) | mdInline | safe -}}
+      </em>
+    {%- endif %}
   </p>
 {% endif %}

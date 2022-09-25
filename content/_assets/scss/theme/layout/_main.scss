@@ -1,0 +1,19 @@
+@mixin css {
+  main {
+    --body-column: full;
+
+    display: grid;
+    row-gap: var(--spacer);
+    grid: inherit;
+    padding-block: 0;
+
+    > * {
+      grid-column: var(--main-column, main);
+      margin-block: 0;
+    }
+
+    &::after {
+      grid-column: full;
+    }
+  }
+}

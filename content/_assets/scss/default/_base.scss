@@ -24,21 +24,14 @@
     margin-block: 0;
 
     @include hr('after');
-
-    section:where(:not(#summary)) {
-      @include hr('before');
-    }
-  }
-
-  #summary {
-    @include hr('after');
   }
 
   #page-header {
     margin-block: var(--spacer);
   }
 
-  footer > * + * {
+  footer > * + *,
+  .me > * + * {
     @include hr('before');
   }
 

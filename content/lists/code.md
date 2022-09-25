@@ -9,11 +9,8 @@ sub: |
 summary: |
   I made a website,
   and then I made another one.
-  A hobby that became an accidental career.
-  Not planned, but pursued.
-  Web code combines design with engineering,
-  poetry, and performance.
-  _(oh, and they'll pay you to do it)_
+  A hobby that became an accidental career --
+  where design and poetry merge with engineering.
 ---
 
 {%- set hfeed = collections.artifact | intersection(collections.code) | getPublic | filter('data.feature') -%}

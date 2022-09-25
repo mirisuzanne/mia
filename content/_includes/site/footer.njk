@@ -15,12 +15,5 @@
     </p>
 
     {{ colophon | md | safe }}
-
-    <p>
-      {%- set input_path = (page.inputPath or '') | replace('./', '') -%}
-      <a href="{{ [site.source.repo, site.source.branch, input_path] | join }}">
-        Edit this page on GitHub
-      </a>
-    </p>
   </div>
 </footer>

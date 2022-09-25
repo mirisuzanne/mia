@@ -7,9 +7,13 @@
 }
 
 @mixin space {
-  --gap: var(--line);
+  --gap: 1rem;
   --half-gap: calc(var(--gap) / 2);
   --shim: calc(var(--gap) / 4);
   --half-shim: calc(var(--shim) / 2);
-  --spacer: clamp(var(--gap) * 2, var(--gap) * 2 + 1vw, var(--gap) * 4);
+  --spacer: clamp(
+    var(--gap) * 1.5,
+    var(--gap) + 4vw,
+    min(var(--gap) * 6, 20vmin)
+  );
 }

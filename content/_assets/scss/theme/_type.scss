@@ -1,3 +1,5 @@
+@use 'tools/text';
+
 @mixin css {
   html {
     --mark-gradient: linear-gradient(
@@ -11,15 +13,13 @@
 
   hr::after,
   main::after,
-  main ~ :not(footer)::after {
-    background: var(--text-gradient);
-    background-clip: text;
-    color: transparent;
+  footer ::before {
+    @include text.fancy;
   }
 
   mark,
   code:not(pre *) {
     background: var(--mark-bg);
-    color: inherit;
+    color: var(--text);
   }
 }

@@ -1,6 +1,6 @@
 @mixin css {
   #message {
-    --banner-column: full;
+    --body-column: full;
 
     background-color: var(--mark);
     display: grid;
