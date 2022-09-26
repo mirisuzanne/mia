@@ -2,13 +2,12 @@
 {% include 'page/summary.njk' %}
 {% include 'page/header.njk' %}
 
-{%- if series -%}
-  {%- include "page/series.njk" -%}
-{%- endif -%}
-
 {# content #}
 {% include 'page/hero.njk' %}
+{% include "page/series.njk" %}
 {% include 'page/content.njk' %}
 {% include 'page/tags.njk' %}
+
+{# extras #}
 {% include 'page/events.njk' %}
 {% include 'page/feed.njk' %}

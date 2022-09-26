@@ -2,6 +2,7 @@
 feature: true
 title: Container Queries Explainer & Proposal
 sub: A path forward, with single-axis containment
+venue: OddBird CSS Sandbox
 url: https://github.com/oddbird/css-sandbox/blob/main/src/rwd/query/explainer.md
 date: 2021-05-02
 hero:
@@ -12,6 +13,15 @@ hero:
 tags:
   - container queries
   - oddbird
+  - elsewhere
+callout:
+  - date: 2022-09-14
+    warn: |
+      The syntax here is out of date.
+      Make sure to
+      [use the container query syntax](https://www.oddbird.net/2022/08/18/cq-syntax/)
+      that has actually
+      [shipped in browsers](/2022/09/14/cq-browsers/).
 summary: |
   Media-queries allow an author
   to make style changes
@@ -20,17 +30,6 @@ summary: |
   authors would prefer styling modular components
   based on their context within a layout.
 ---
-
-{% import "utility.macros.njk" as utility %}
-
-{% callout 'warn' %}
-{{ utility.datetime('2022-09-14') }} --
-The syntax here is out of date.
-Make sure to
-[use the container query syntax](https://www.oddbird.net/2022/08/18/cq-syntax/)
-that has actually
-[shipped in browsers](/2022/09/14/cq-browsers/).
-{% endcallout %}
 
 [My proposal][issue] builds on
 [David Baron's `@container` proposal][dbaron],

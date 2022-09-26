@@ -1,7 +1,7 @@
 ---
 title: Theater
 banner: Too Much 'Theater'
-sub: mostly with [Grapefruit Lab](/orgs/grapefruit-lab/) these days
+sub: With [Grapefruit Lab](/orgs/grapefruit-lab/) for a decade now
 index: theater
 hero:
   img: /art/theater/jane/DSC_0362.jpg

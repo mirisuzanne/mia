@@ -1,5 +1,5 @@
 {%- import "utility.macros.njk" as utility -%}
-{%- set series_posts = collections[series] -%}
+{%- set series_posts = collections[series] if series else [] -%}
 
 {%- if series_posts | length > 1 -%}
 <details id="series">

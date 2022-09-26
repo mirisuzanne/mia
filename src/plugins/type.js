@@ -1,5 +1,7 @@
 'use strict';
 
+const time = require('../utils/time');
+
 const mdIt = require('markdown-it')({
   html: true,
   breaks: false,
@@ -16,14 +18,16 @@ const mdIt = require('markdown-it')({
 const block = (content) => (content ? mdIt.render(content.trim()) : '');
 const inline = (content) => (content ? mdIt.renderInline(content.trim()) : '');
 
-const callout = (content, type = 'note', label = null) => {
+const callout = (content, type = 'note', date = null) => {
   const labels = {
-    note: 'Note',
-    warn: 'Warning',
+    warn: 'warning',
   };
 
+  const labelBase = labels[type] || type;
+  const labelText = date ? `${labelBase} [${time.date(date)}]` : labelBase;
+
   return `<div data-callout="${type}">
-            <strong>${label || labels[type] || type}:</strong>
+            <strong>${inline(labelText)}:</strong>
             <div>${block(content.trim())}</div>
           </div>`;
 };

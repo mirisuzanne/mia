@@ -135,12 +135,14 @@ params:
 #}
 {% macro place(
   width,
-  height=none
+  height=none,
+  content=none
 ) -%}
+{%- set content = content if (content != none) else caller() -%}
 {%- set width = ['--width:', width, ';'] | join if width else '' -%}
 {%- set height = ['--height:', height, ';'] | join if height else '' -%}
 {%- set style = [width, height] | join if (width or height) else none -%}
-<div data-place {{ utility.attr_if('style', style) }}>{{ caller() }}</div>
+<div data-place {{ utility.attr_if('style', style) }}>{{ content }}</div>
 {%- endmacro %}
 
 {#

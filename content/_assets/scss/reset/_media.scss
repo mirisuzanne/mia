@@ -15,6 +15,7 @@
   }
 
   svg {
-    fill: currentcolor;
+    fill: var(--fill, var(--svg, currentcolor));
+    stroke: var(--stroke, var(--svg, currentcolor));
   }
 }

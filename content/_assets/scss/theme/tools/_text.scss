@@ -1,6 +1,8 @@
 @mixin fancy {
+  --svg: var(--complement);
+
   background: var(--text-gradient);
-  background-clip: text;
+  -webkit-background-clip: text; /* stylelint-disable-line property-no-vendor-prefix */
   background-clip: text;
   color: transparent;
 }

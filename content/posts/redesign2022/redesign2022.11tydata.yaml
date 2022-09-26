@@ -3,3 +3,13 @@ tags:
   - code
   - design
   - redesign 2022
+callout:
+  - warn: |
+      Since I'm posting about my site re-design
+      as it happens,
+      in a very non-linear process,
+      some of the specifics become outdated quickly --
+      like the number/names of layers.
+      It's like _planned obsolescence_,
+      but for blog posts!
+

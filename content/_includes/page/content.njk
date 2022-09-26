@@ -2,6 +2,8 @@
 
 {%- if content -%}
   <div id="content" {{ utility.show_attrs(attrs.content) }}>
+    {% include 'page/warn.njk' %}
+
     {{ content | safe }}
   </div>
 {%- endif -%}

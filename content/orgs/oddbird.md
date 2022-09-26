@@ -10,7 +10,6 @@ hero:
 index: oddbird
 tags:
   - code
-  - speaking
 press:
   - text: |
       Working with OddBird

@@ -6,7 +6,7 @@ tags:
   - color
 summary: |
   Working on Sass
-  [support for color spaces](https://css.oddbird.net/sass/color-spaces/proposal/),
+  [support for color spaces](/specs/sass-color-spaces/),
   I ran into a question
   about the proper handling of `hwb()` colors.
   That lead me down a rabbit hole,

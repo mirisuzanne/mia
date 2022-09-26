@@ -2,22 +2,45 @@
 
 @mixin css {
   nav[aria-label='primary'] {
+    display: flex;
+    justify-content: space-between;
     margin-block-start: var(--nav-space, var(--spacer));
 
     a:any-link {
+      color: var(--text);
+      font-style: italic;
       text-decoration: none;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      color: var(--active);
+      text-decoration: underline;
+    }
+
+    [aria-current='page']:any-link {
+      @include text.fancy;
     }
 
     [rel='home'] {
       font-size: var(--huge);
-      font-style: italic;
+      padding-inline-end: var(--shim);
       vertical-align: middle;
-      margin-inline: var(--half-shim) var(--shim);
     }
+  }
 
-    [aria-current='page'] {
-      @include text.fancy;
-    }
+  #logo {
+    align-items: center;
+    display: flex;
+  }
+
+  #logo svg {
+    aspect-ratio: 92 / 31 auto;
+    height: var(--huge);
+    flex: auto;
+    stroke-width: 2;
+    width: auto;
   }
 
   #message + nav {

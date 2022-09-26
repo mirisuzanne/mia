@@ -13,7 +13,6 @@ index: teacup gorilla
 tags:
   - art
   - music
-  - writing
   - band
 press:
   - text: |
