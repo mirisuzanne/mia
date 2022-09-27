@@ -17,6 +17,18 @@
     @include text.fancy;
   }
 
+  blockquote {
+    > *:not(.cite) {
+      font-size: var(--larger);
+      font-style: italic;
+    }
+
+    em,
+    i {
+      background: var(--mark-bg);
+    }
+  }
+
   mark,
   code:not(pre *) {
     background: var(--mark-bg);

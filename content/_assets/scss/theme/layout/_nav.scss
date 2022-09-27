@@ -10,6 +10,15 @@
       color: var(--text);
       font-style: italic;
       text-decoration: none;
+      transition: text-decoration-thickness 150ms ease;
+    }
+
+    a:where(.has-tag):any-link {
+      text-decoration: underline var(--action);
+    }
+
+    [aria-current='page']:any-link {
+      @include text.fancy;
     }
 
     a:hover,
@@ -17,10 +26,6 @@
     a:active {
       color: var(--active);
       text-decoration: underline;
-    }
-
-    [aria-current='page']:any-link {
-      @include text.fancy;
     }
 
     [rel='home'] {

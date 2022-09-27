@@ -1,5 +1,8 @@
 {%- import 'utility.macros.njk' as utility -%}
 
+{%- set has_org = title if (org and url) else none -%}
+{%- set venue = venue or has_org -%}
+
 {%- set has_venue = (venue and url) -%}
 {%- set repost = has_venue and tags | includes(nav.type.link) -%}
 {%- set venue_text = ['Reposted from **', venue, '**'] | join('') if repost else venue -%}

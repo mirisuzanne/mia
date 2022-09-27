@@ -1,9 +1,9 @@
 site:
   art: /art/
-  _amp: /
+  and: /
   code: /code/
 replace:
-  _amp: '&amp;'
+  and: '&amp;'
 tags:
   - writing
   - speaking

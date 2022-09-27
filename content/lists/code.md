@@ -2,7 +2,7 @@
 index: code
 title: All The 'Code'
 sub: |
-  with [OddBird](https://oddbird.net/)
+  with [OddBird](/orgs/oddbird/)
   & [CSS Working Group](/orgs/csswg/)
   & [Sass core team](/orgs/sass/)
   &c.

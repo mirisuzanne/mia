@@ -1,5 +1,5 @@
 ---
 title: Education
-sub: Mostly art, theater, and writing
+sub: Mostly in [art](/art/), [theater](/theater/), and [writing](/writing/)
 index: education
 ---

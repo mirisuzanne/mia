@@ -17,7 +17,8 @@
   .p-summary {
     font-style: italic;
 
-    em {
+    em,
+    i {
       background: var(--mark-bg);
     }
   }

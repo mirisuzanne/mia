@@ -2,6 +2,7 @@
 title: OddBird
 sub: Custom web applications, developer tools, and training
 org: Co-Founder
+url: https://oddbird.net/
 type: web agency
 date: 2008-04-15
 end: ongoing

@@ -14,7 +14,8 @@
         url=url,
         attrs={
         'aria-current': ('page' if (page.url == url) else none),
-        'rel': nav_rel[url] or none
+        'rel': nav_rel[url] or none,
+        'class': 'has-tag' if tags | includes(name)
       }) }}
     {% endfor %}
   </div>
