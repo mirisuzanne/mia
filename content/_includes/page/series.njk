@@ -2,19 +2,19 @@
 {%- set series_posts = collections[series] if series else [] -%}
 
 {%- if series_posts | length > 1 -%}
-<details id="series">
-  <summary>
-    Part of a series tagged '{{ series | displayName }}'
-  </summary>
-  <nav aria-label="series">
-    <ol>
-      {%- for item in collections[series] | sortBy('data.date') -%}
-        <li>
-          <a href="{{ item.url | url }}">{{ item.data.banner | mdInline }}</a>
-          &ndash; {{ utility.datetime(item.data.date) }}
-        </li>
-      {%- endfor -%}
-    </ol>
-  </nav>
-</details>
+<nav aria-labelledby="series-summary">
+  <details id="series">
+    <summary id="series-summary">
+      Part of a series tagged '{{ series | displayName }}'
+    </summary>
+      <ol>
+        {%- for item in collections[series] | sortBy('data.date') -%}
+          <li>
+            <a href="{{ item.url | url }}">{{ item.data.banner | mdInline }}</a>
+            &ndash; {{ utility.datetime(item.data.date) }}
+          </li>
+        {%- endfor -%}
+      </ol>
+  </details>
+</nav>
 {%- endif -%}

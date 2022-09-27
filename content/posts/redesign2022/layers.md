@@ -412,6 +412,14 @@ Just enough style to make me
 enjoy the site
 while I continue working on it.
 
+{% callout 'update', '2022-09-26' %}
+These two layers have been merged.
+While I'm still using separate files,
+and could still 'layer' them technically --
+the difference is more in _what is being styled_
+rather than in the _intent of those styles_.
+{% endcallout %}
+
 ### Reflecting on all those layers
 
 For a personal site,
