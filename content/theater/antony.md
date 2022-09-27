@@ -16,7 +16,7 @@ tags:
   - oregon shakespeare
   - education
   - intern
-  - performance
+  - show
 summary: |
   A glittering tragedy,
   a passionate romance,

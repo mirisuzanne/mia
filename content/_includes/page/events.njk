@@ -10,7 +10,6 @@
 
 {% for tense, event_list in page_events %}
   {% if event_list | length > 0 %}
-    <hr />
     <section class="events">
       <h2>{{ tense_titles[tense] or tense }}</h2>
       {% for item in event_list | sortEvents(tense) %}

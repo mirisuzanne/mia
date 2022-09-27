@@ -1,0 +1,15 @@
+{% set tags_public = tags | publicTags %}
+
+{% if tags_public | length > 0 %}
+<footer id="page-footer">
+  <ul data-list="tags">
+    {%- for tag in tags_public -%}
+      <li>
+        <a href="{{ tag | tagLink(collections) }}" class="p-category">
+          {{- tag | displayName -}}
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</footer>
+{% endif %}

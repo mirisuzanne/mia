@@ -3,11 +3,10 @@
   viewBox="0 0 346.2 454.8"
   width="200px"
   height="260px"
+  aria-hidden="true"
+  focusable="false"
   data-icon="miriam"
-  role="img"
-  aria-labelledby="miriam-face-title"
   >
-  <title id="miriam-face-title">Miriam's face</title>
   <style>
     @keyframes draw-logo {
       0% { stroke-dashoffset: 800; }

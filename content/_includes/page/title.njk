@@ -1,9 +1,11 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-<h1 {{ utility.show_attrs(attrs.h1) }}>{{ banner | mdInline | safe }}</h1>
+<div class="title-group">
+  <h1 {{ utility.show_attrs(attrs.h1) }}>{{ banner | mdInline | safe }}</h1>
 
-{% if sub %}
-  <p aria-roledescription="subtitle">
-    {{ sub | mdInline | safe }}
-  </p>
-{% endif %}
+  {% if sub %}
+    <p aria-roledescription="subtitle">
+      {{ sub | mdInline | safe }}
+    </p>
+  {% endif %}
+</div>

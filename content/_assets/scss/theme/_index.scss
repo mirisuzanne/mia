@@ -5,9 +5,10 @@
 @use 'fonts';
 @use 'type';
 @use 'headings';
-@use 'nav';
-@use 'content';
 @use 'media';
+
+@use 'layout';
+@use 'page';
 
 @mixin css {
   @include fonts.files;
@@ -26,9 +27,10 @@
 
   @include type.css;
   @include headings.css;
-  @include nav.css;
-  @include content.css;
   @include media.css;
+
+  @include layout.css;
+  @include page.css;
 
   html::after {
     @include media.dim;

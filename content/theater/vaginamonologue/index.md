@@ -18,7 +18,7 @@ events:
 tags:
   - writing
   - acting
-  - performance
+  - show
 summary: |
   I was invited to perform
   a Vagina Monologue,

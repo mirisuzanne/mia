@@ -6,10 +6,16 @@
   picture {
     max-width: 100%;
     height: auto;
-    aspect-ratio: auto var(--ratio, 16 / 9);
+    aspect-ratio: auto var(--ratio);
+  }
+
+  video,
+  iframe {
+    --ratio: 16 / 9;
   }
 
   svg {
-    fill: currentcolor;
+    fill: var(--fill, var(--svg, currentcolor));
+    stroke: var(--stroke, var(--svg, currentcolor));
   }
 }

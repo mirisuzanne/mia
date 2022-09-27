@@ -5,7 +5,7 @@ events:
   - end: 2004-10-24
 tags:
   - directing
-  - performance
+  - show
 summary: |
   It's not a great script,
   but it was my full-length directorial debut.

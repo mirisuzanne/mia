@@ -1,15 +1,31 @@
-{% import "utility.macros.njk" as utility %}
+{%- import "content.macros.njk" as content -%}
+{%- import "utility.macros.njk" as utility -%}
+
+{%- set nav_rel = {
+  '/': 'home',
+  '/who/': 'author'
+} -%}
 
 <nav aria-label="primary">
-  {% for name, url in nav.site %}
-    {% set attrs = {
-      'aria-current': ('page' if (page.url == url) else none),
-      'rel': ('home' if (url == '/') else none)
-    } %}
-    <div>
-      <a href="{{ url | url }}" {{ utility.show_attrs(attrs) }}>
-        {{- name -}}
-      </a>
-    </div>
-  {% endfor %}
+  <div>
+    {% for name, url in nav.site %}
+      {{ utility.link_if(
+        content=(nav.replace[name] or name) | mdInline | safe,
+        url=url,
+        attrs={
+        'aria-current': ('page' if (page.url == url) else none),
+        'rel': nav_rel[url] or none
+      }) }}
+    {% endfor %}
+  </div>
+
+  {{ utility.link_if(
+    content=content.svg('icons/miriam-sig', 'Miriam'),
+    url='/who/',
+    attrs={
+    'id': 'logo',
+    'aria-current': ('page' if (page.url == '/who/') else none),
+    'rel': 'author'
+  }) }}
 </nav>
+

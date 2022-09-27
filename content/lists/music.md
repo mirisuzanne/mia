@@ -1,13 +1,10 @@
 ---
-title: Music
+title: Making 'Music'
+sub: With [Teacup Gorilla](/orgs/teacup-gorilla/) a decade now
 index: music
 summary: |
-  I mostly play bass and tell stories --
-  some guitar, and the occasional mandolin.
-  Highlights include
-  [Dirt Circle Dogs](/orgs/dirt-circle-dogs/),
-  and my current long-running
-  indie-rock collaboration,
-  [Teacup Gorilla](/orgs/teacup-gorilla/).
+  Albums and gigs are fun,
+  but we really have a blast
+  when we get to
+  underscore live theater.
 ---
-

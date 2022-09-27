@@ -1,0 +1,6 @@
+{% if redirect -%}
+  <meta http-equiv="refresh" content="0; URL={{ redirect.to }}" />
+{%- endif %}
+{% if draft or redirect -%}
+  <meta name="robots" content="noindex">
+{%- endif %}

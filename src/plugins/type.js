@@ -1,28 +1,33 @@
 'use strict';
 
+const time = require('../utils/time');
+
 const mdIt = require('markdown-it')({
   html: true,
   breaks: false,
   typographer: true,
 })
   .disable('code')
+  .use(require('markdown-it-anchor'))
   .use(require('markdown-it-ins'))
   .use(require('markdown-it-mark'))
   .use(require('markdown-it-footnote'))
   .use(require('markdown-it-bracketed-spans'))
   .use(require('markdown-it-attrs'));
 
-const block = (content) => (content ? mdIt.render(content) : '');
-const inline = (content) => (content ? mdIt.renderInline(content) : '');
+const block = (content) => (content ? mdIt.render(content.trim()) : '');
+const inline = (content) => (content ? mdIt.renderInline(content.trim()) : '');
 
-const callout = (content, type = 'note', label = null) => {
+const callout = (content, type = 'note', date = null) => {
   const labels = {
-    note: 'Note',
-    warn: 'Warning',
+    warn: 'warning',
   };
 
+  const labelBase = labels[type] || type;
+  const labelText = date ? `${labelBase} [${time.date(date)}]` : labelBase;
+
   return `<div data-callout="${type}">
-            <strong>${label || labels[type] || type}:</strong>
+            <strong>${inline(labelText)}:</strong>
             <div>${block(content.trim())}</div>
           </div>`;
 };
@@ -30,6 +35,7 @@ const callout = (content, type = 'note', label = null) => {
 module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('md', block);
   eleventyConfig.addFilter('mdInline', inline);
+  eleventyConfig.addFilter('trim', (string) => (string || '').trim());
 
   eleventyConfig.addPairedShortcode('md', block);
   eleventyConfig.addPairedShortcode('mdInline', inline);

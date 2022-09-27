@@ -16,7 +16,7 @@ tags:
   - electronic literature
   - post-obsolete
   - reading
-  - performance
+  - show
 summary: |
   An artist residency at the **Media Archeology Lab**,
   working on development of

@@ -6,7 +6,7 @@ tags:
   - writing
   - film
   - directing
-  - performance
+  - show
   - new world arts
 events:
   - title: Directed by Michael Natoli

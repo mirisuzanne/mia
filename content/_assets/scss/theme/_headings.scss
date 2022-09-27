@@ -1,9 +1,5 @@
 @mixin css {
-  h1 {
-    font-size: var(--huge);
-  }
-
-  h2:not(:first-child) {
+  h2:not(#content > :first-child, #content > :first-child > :first-child) {
     margin-block-start: var(--spacer);
   }
 }

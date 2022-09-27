@@ -1,19 +1,15 @@
-{% if hero %}
-{% set hero_type = 'svg' if hero.svg else 'img' %}
+{%- import "content.macros.njk" as content -%}
 
-<figure id="hero">
-  <div>
-    {% if hero.img %}
-      {{ hero.img | img(hero.alt, 'hero', {class: 'u-photo'}) | safe }}
-    {% elif hero.svg %}
-      {% include "icons/" + hero.svg %}
-    {% endif %}
-  </div>
+{%- if hero -%}
+  {%- set hero_data = hero | merge({
+    'size': 'hero',
+    'svg': ['icons', hero.svg] | join('/') if hero.svg else none,
+    'attrs': {'class': 'u-photo'}
+  }) -%}
 
-  {% if hero.caption %}
-    <figcaption>
-      {{ hero.caption | mdInline | safe }}
-    </figcaption>
-  {% endif %}
-</figure>
-{% endif %}
+  {{ content.figure(
+    data=[hero_data],
+    caption=hero.caption,
+    attrs={'id': 'hero'}
+  ) }}
+{%- endif -%}

@@ -1,6 +1,5 @@
 {%- set feed = (collections[index] or []) | getPublic if index else none -%}
 {%- if feed | length > 0 -%}
-<hr />
 <section class="h-feed">
   <h2 class="p-name">Everything '{{ index | displayName | capitalize }}'</h2>
   {%- set hentry_heading = 'h3' -%}

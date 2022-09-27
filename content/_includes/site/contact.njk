@@ -1,0 +1,8 @@
+{% import "contact.macros.njk" as contact %}
+
+{% if not (page.url == '/contact/') %}
+  {{ contact.form(
+    attrs={'data-footer': 'contact'},
+    url=page.url
+  ) }}
+{% endif %}

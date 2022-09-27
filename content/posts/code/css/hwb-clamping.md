@@ -6,7 +6,7 @@ tags:
   - color
 summary: |
   Working on Sass
-  [support for color spaces](https://css.oddbird.net/sass/color-spaces/proposal/),
+  [support for color spaces](/specs/sass-color-spaces/),
   I ran into a question
   about the proper handling of `hwb()` colors.
   That lead me down a rabbit hole,
@@ -33,12 +33,12 @@ and then white and black in the other corners.
 This is how the old Chrome color picker
 used to show HWB color:
 
-{{- content.figure(
+{{ content.figure(
   data=[{
     'img': '2022/hwb-picker.png',
     'alt': 'color picker with an outer wheel for selecting hue, and an inner triangle for selecting relative amounts of white and black'
   }]
-) -}}
+) }}
 
 The side of the triangle
 across from our saturated-hue corner
@@ -84,11 +84,10 @@ are less than or equal to `100%` --
 but we also see a reflected grayscale triangle
 where the combined values are greater than `100%`:
 
-{{- content.figure(
+{{ content.figure(
   content=colors.hwb(),
-  grid=false,
   caption='An HWB table of colors using 180deg `hue`, incrementing `whiteness` and `blackness` from `0` to `100%`.'
-) -}}
+) }}
 
 That extended grayscale triangle
 is useless.
@@ -118,11 +117,10 @@ is identical to `hsl(0deg 60% 100%)`
 and `hsl(0deg 100% 100%)`.
 Still, that's a much smaller portion of the table:
 
-{{- content.figure(
+{{ content.figure(
   content=colors.hsl(),
-  grid=false,
   caption='An HSL table of colors using 180deg `hue`, incrementing `lightness` and `saturation` from `0` to `100%`.'
-) -}}
+) }}
 
 In both HWB & HSL colors,
 we can describe `white` and `black`
@@ -173,7 +171,7 @@ adjusting each channel along the way --
 we have to go through a full range of hues
 just to get from black to cyan:
 
-{{- content.figure(
+{{ content.figure(
   content=colors.gradient(
     stops=[
       'hsl(0deg 100% 0%)',
@@ -184,13 +182,13 @@ just to get from black to cyan:
     ],
     alt='A gradient from black to cyan, passing through several other hues on the way.'
   )
-) -}}
+) }}
 
 Lucky for us,
 browsers don't generally render gradients
 using naive HSL math:
 
-{{- content.figure(
+{{ content.figure(
   content=colors.gradient(
     stops=[
       'hsl(0deg 100% 0%)',
@@ -198,7 +196,7 @@ using naive HSL math:
     ],
     alt='A smooth gradient from black to cyan.'
   )
-) -}}
+) }}
 
 Currently browsers convert everything to `sRGB` before mixing.
 Gradients in RGB can still get muddy at times,
@@ -320,7 +318,7 @@ one needing to be scaled,
 and a final version that needs
 both clamping and scaling:
 
-{{- content.figure(
+{{ content.figure(
   content=colors.gradient(
     stops=[
       'hwb(0deg 80% 20%)',
@@ -329,10 +327,10 @@ both clamping and scaling:
     ],
     alt='A gradient that is actually just the same gray all the way along'
   )
-) -}}
+) }}
 
 Sass will soon be adding support
 for all these new color features,
 and a few more.
-_If only I would stop documenting the rabbit holes,
-and get back to work on the proposal._
+If only I would stop documenting the rabbit holes,
+and get back to work on the proposal.

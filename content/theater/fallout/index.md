@@ -11,7 +11,7 @@ tags:
   - film
   - new world arts
   - goshen college
-  - performance
+  - show
 events:
   - venue: ShortFilmFest05
     date: 2005-04-14

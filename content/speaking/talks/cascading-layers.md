@@ -17,10 +17,7 @@ summary: |
   Earlier this year,
   all the major browsers released Cascade Layers,
   with the potential to fundamentally change
-  how we write styles --
-  especially in an age of design systems,
-  component libraries,
-  and third-party tools.
+  how we write styles.
   But fundamental changes
   require us to re-think
   how all the pieces fit together.

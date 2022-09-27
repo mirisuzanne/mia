@@ -12,7 +12,7 @@ events:
 tags:
   - grapefruit lab
   - acting
-  - performance
+  - show
 summary: |
   *Try to locate the moon.
   Look longingly at the sky.

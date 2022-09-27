@@ -4,7 +4,17 @@
   }
 
   body {
-    margin: 1em;
-    max-width: 75ch;
+    margin: var(--gap, 1em) var(--margin, var(--gap, 1em));
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    max-width: var(--measure, 75ch);
   }
 }

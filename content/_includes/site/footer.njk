@@ -1,17 +1,19 @@
 {% import 'contact.macros.njk' as contact %}
 
-{% if not (page.url == '/contact/') %}
-  {{ contact.form(
-    attrs={'data-footer': 'contact'},
-    url=page.url
-  ) }}
-{% endif %}
+<footer id="contentinfo">
+  <div class="me">
+    {% include 'site/author.njk' %}
+    {% include 'site/contact.njk' %}
+  </div>
 
-<footer>
-  <p>
-    Copyright &copy; {% getDate 'year' %}
-    <strong>{{ site.author }}</strong>
-  </p>
-  {{ colophon | md | safe }}
+  {% include 'site/settings.njk' %}
+
+  <div class="meta">
+    <p>
+      Copyright &copy; {% getDate 'year' %}
+      <strong>{{ site.author }}</strong>
+    </p>
+
+    {{ colophon | md | safe }}
+  </div>
 </footer>
-

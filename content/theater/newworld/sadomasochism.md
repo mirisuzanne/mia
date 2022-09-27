@@ -6,7 +6,7 @@ events:
 tags:
   - writing
   - directing
-  - performance
+  - show
 summary: |
   We hurt ourselves for love…
 ---

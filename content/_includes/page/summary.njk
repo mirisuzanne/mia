@@ -1,0 +1,14 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+{%- if summary -%}
+  {%- set summary_attrs = {
+    'id': 'summary',
+    'aria-label': 'summary'
+  } | merge(attrs.summary) -%}
+
+  <section id="summary" {{ utility.show_attrs(summary_attrs) }}>
+    {%- if summary -%}
+      {{ summary | md | safe }}
+    {%- endif -%}
+  </section>
+{%- endif -%}

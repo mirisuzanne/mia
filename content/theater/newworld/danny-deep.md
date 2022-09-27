@@ -4,7 +4,7 @@ tags:
   - directing
   - lighting
   - assistant director
-  - performance
+  - show
 events:
   - title: Director
     date: 2006-09-15

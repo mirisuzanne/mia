@@ -1,5 +1,5 @@
 @mixin css {
   [aria-current='page'] {
-    color: inherit;
+    --link-color: currentcolor;
   }
 }

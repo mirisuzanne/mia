@@ -11,7 +11,7 @@ hero:
 tags:
   - writing
   - new world arts
-  - performance
+  - show
   - goshen college
 events:
   - venue: New World Arts

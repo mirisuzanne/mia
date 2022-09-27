@@ -16,13 +16,10 @@ hero:
 summary: |
   Browsers are starting to roll out
   support for new color spaces in CSS
-  as part of [Interop 2022](https://web.dev/interop-2022/#color-spaces-and-css-color-functions),
-  and Sass will be ready --
-  with full support, and some extra features.
-  [My proposal] was published today,
-  and is ready for public feedback.
-
-  [My proposal]: https://sass-lang.com/blog/request-for-comments-color-spaces
+  as part of [Interop 2022](https://web.dev/interop-2022/#color-spaces-and-css-color-functions).
+  [My proposal](https://sass-lang.com/blog/request-for-comments-color-spaces)
+  for the Sass implementation is live,
+  and ready for feedback.
 ---
 
 I'm very excited about this.

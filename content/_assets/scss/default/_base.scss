@@ -1,3 +1,12 @@
+@mixin hr($place) {
+  &::#{$place} {
+    content: var(--hr);
+    display: block;
+    margin-block: var(--spacer);
+    text-align: center;
+  }
+}
+
 @mixin css {
   html {
     --margin: var(--gap, 1em);
@@ -8,6 +17,22 @@
       --margin: var(--spacer, 2em);
       --outset: calc(var(--inset) * -1);
     }
+  }
+
+  main {
+    border: 0;
+    margin-block: 0;
+
+    @include hr('after');
+  }
+
+  #page-header {
+    margin-block: var(--spacer);
+  }
+
+  footer > * + *,
+  .me > * + * {
+    @include hr('before');
   }
 
   [data-options='theme'] {

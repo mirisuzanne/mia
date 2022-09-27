@@ -1,8 +1,8 @@
 @mixin css {
   [data-erase='off'] {
     mark {
-      background-color: transparent;
-      color: inherit;
+      background: transparent !important;
+      color: inherit !important;
     }
   }
 

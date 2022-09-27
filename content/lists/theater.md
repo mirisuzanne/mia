@@ -1,7 +1,7 @@
 ---
 title: Theater
 banner: Too Much 'Theater'
-sub: mostly with [Grapefruit Lab](/orgs/grapefruit-lab/) these days
+sub: With [Grapefruit Lab](/orgs/grapefruit-lab/) for a decade now
 index: theater
 hero:
   img: /art/theater/jane/DSC_0362.jpg
@@ -10,14 +10,11 @@ hero:
     dies in the arms of Jane Eyre
     (Lindsey Pierce).
 summary: |
-  So Thespis invents tragedy,
+  They say Thespis invented tragedy,
   the one-man show.
-  And then Aeschylus introduced dialogue,
+  And then Aeschylus introduced dialogue --
   a second actor --
   and it's been [all down hill from there](/tags/script/).
-  Shakespeare will start you off with
-  _thunder, lightning, and three witches,_
-  but then it's a show about some Scottish asshole.
 ---
 
 {% set event_groups = collections.theater | getEvents | groupBy('tense') %}

@@ -1,15 +1,15 @@
 @mixin css {
   a {
     &:where(:link) {
-      color: var(--Link);
+      color: var(--link-color, var(--Link));
     }
 
     &:where(:visited) {
-      color: var(--VisitedText);
+      color: var(--link-visited, var(--link-color, var(--VisitedText)));
     }
 
     &:where(:hover, :focus, :active) {
-      color: var(--ActiveText);
+      color: var(--link-active, var(--ActiveText));
     }
   }
 }

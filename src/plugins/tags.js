@@ -1,5 +1,7 @@
 'use strict';
 
+const _ = require('lodash');
+
 const nav = require('../utils/nav');
 
 const isPublic = (tag) => {
@@ -15,11 +17,20 @@ const isPublic = (tag) => {
 const publicTags = (tags) =>
   tags ? tags.filter((tag) => isPublic(tag)) : tags;
 
-const hasTag = (page, tag) =>
-  page.data && page.data.tags ? page.data.tags.includes(tag) : false;
+const hasTag = (page, tags, any = false) => {
+  const pageTags = page.data.tags || [];
 
-const withTag = (collection, tag) =>
-  collection.filter((page) => hasTag(page, tag));
+  if (typeof tags === 'string') {
+    return _.includes(pageTags, tags);
+  }
+
+  return any
+    ? _.intersection(pageTags, tags).length > 0
+    : tags.every((item) => _.includes(pageTags, item));
+};
+
+const withTag = (collection, tags, any = false) =>
+  collection.filter((page) => hasTag(page, tags, any));
 
 const tagData = (collections) => {
   const tags = Object.keys(collections)

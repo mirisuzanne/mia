@@ -1,3 +1,3 @@
 @mixin theme {
-  --huge: clamp(2rem, 1.5rem + 1vw, 4rem);
+  --huge: min(1.5rem + 1vw, 3rem);
 }

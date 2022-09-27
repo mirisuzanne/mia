@@ -1,23 +1,19 @@
+$h: h1, h2, h3, h4, h5, h6;
+
 @mixin css {
   // headers
-  header,
-  section,
-  footer {
-    :where(body, main) > & {
-      margin-block: var(--spacer, 2em);
-    }
-  }
-
   header {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
+    #{$h},
     p {
       margin-block: 0;
     }
+  }
+
+  // measure
+  #{$h},
+  p,
+  li {
+    max-width: var(--measure, 75ch);
   }
 
   // lists
@@ -32,6 +28,27 @@
     &:where(:not(:first-child)) {
       margin-block-start: var(---half-shim, 0.125em);
     }
+  }
+
+  // tables
+  table {
+    width: 100%;
+  }
+
+  th {
+    text-align: var(--th-align, left);
+    padding: var(
+      --th-padding,
+      var(--th-block, 0) var(--th-inline, var(--shim))
+    );
+  }
+
+  td {
+    text-align: var(--td-align, left);
+    padding: var(
+      --td-padding,
+      var(--td-block, 0) var(--td-inline, var(--shim))
+    );
   }
 
   // block

@@ -1,10 +1,10 @@
-@use 'root';
+@use 'body';
 @use 'message';
 @use 'nav';
 @use 'main';
 
 @mixin css {
-  @include root.css;
+  @include body.css;
   @include message.css;
   @include nav.css;
   @include main.css;

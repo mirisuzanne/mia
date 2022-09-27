@@ -1,11 +1,20 @@
 site:
-  Miriam Eric Suzanne: /
-  about: /who/
+  art: /art/
+  _amp: /
+  code: /code/
+replace:
+  _amp: '&amp;'
 tags:
-  - art
-  - code
   - writing
   - speaking
   - music
   - theater
 more: cetera
+type:
+  feed:
+    - _feed
+    - post
+  link:
+    - link
+    - elsewhere
+    - interview

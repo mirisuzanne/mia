@@ -12,11 +12,21 @@ events:
     url: https://sass-lang.com/blog/request-for-comments-color-spaces
     date: 2022-09-21
     end: 2022-10-21
+callout:
+  - date: 2022-09-21
+    note: |
+      A first draft of the proposal is complete,
+      and posted for
+      [public feedback](https://sass-lang.com/blog/request-for-comments-color-spaces).
 summary: |
   There’s been a lot of exciting work
-  in the CSS color specifications lately,
+  in the
+  [CSS color specifications](https://www.w3.org/TR/css-color-4/)
+  lately,
   and the new features are starting to land in browsers --
-  so we’ve been preparing to add support in Sass as well.
+  so we’ve been preparing to add
+  [support in Sass](https://sass-lang.com/blog/request-for-comments-color-spaces)
+  as well.
 ---
 
 I'm very excited about this.

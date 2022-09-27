@@ -2,6 +2,11 @@
   figure {
     display: grid;
     gap: var(--gap, 1em);
+    overflow-x: auto;
+
+    table {
+      font-size: var(--smaller);
+    }
   }
 
   figcaption {

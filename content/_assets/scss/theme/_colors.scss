@@ -1,9 +1,23 @@
 @use 'sass:color';
+@use 'sass:meta';
+
+@function multi-scale($color, $args...) {
+  $keywords: meta.keywords($args);
+
+  @each $setting, $amount in $keywords {
+    $arg: (
+      $setting: $amount,
+    );
+    $color: color.scale($color, $arg...);
+  }
+
+  @return $color;
+}
 
 // these are converted to custom properties
 // in theme/_index.scss
 $dark: darkslategray;
-$darker: color.scale(darkslategray, $lightness: -75%);
+$darker: multi-scale(darkslategray, $blackness: 20%, $lightness: -70%);
 $light: azure;
 $accent-light: hotpink;
 $complement-light: darkturquoise;

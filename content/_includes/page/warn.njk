@@ -1,0 +1,19 @@
+{%- for item in callout -%}
+  {%- if item.warn -%}
+    {%- callout 'warn', item.date -%}
+      {{ item.warn }}
+    {%- endcallout -%}
+  {%- elif item.note -%}
+    {%- callout 'note', item.date -%}
+      {{ item.note }}
+    {%- endcallout -%}
+  {%- elif item.update -%}
+    {%- callout 'update', item.date -%}
+      {{ item.update }}
+    {%- endcallout -%}
+  {%- else -%}
+    {%- callout item.type, item.date -%}
+      {{ item.content }}
+    {%- endcallout -%}
+  {%- endif -%}
+{%- endfor -%}

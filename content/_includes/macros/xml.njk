@@ -1,12 +1,12 @@
 {% macro summary(post, site) -%}
   {{- post.data.summary | mdInline if post.data.summary else '' -}}
-  {{- elsewhere(post, site) -}}
+  {{- repost(post, site) -}}
 {%- endmacro %}
 
 {% macro entry(post, site) %}
   {{- (post.data.sub | md if post.data.sub else '') | safe -}}
   {{- (post.data.summary | md if post.data.summary else '') | safe -}}
-  {{- elsewhere(post, site) -}}
+  {{- repost(post, site) -}}
 
   {%- if post.data.hero.img -%}
     {{ post.data.hero.img | img(hero.alt, 'hero', {class: 'hero-img'}) | safe }}
@@ -15,10 +15,10 @@
   {{- post.templateContent | safe -}}
 {%- endmacro %}
 
-{% macro elsewhere(post, site) -%}
-  {%- set elsewhere = tags and url and tags | includes(['elsewhere', 'link']) -%}
+{% macro repost(post, site) -%}
+  {%- set is_link = post.data.venue and post.data.url and post.data.tags | includes(nav.type.link) -%}
 
-  {%- if elsewhere -%}
+  {%- if is_link -%}
     <p><a href="{{ post.data.url | url }}" class="u-repost-of u-uid">Reposted from {{ post.data.venue }} »</a></p>
   {%- endif -%}
 {%- endmacro %}

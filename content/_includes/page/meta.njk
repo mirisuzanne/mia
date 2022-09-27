@@ -1,48 +1,19 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-{% set tags_public = tags | publicTags %}
+{%- set show_date = date and not (type in ['index', 'page']) -%}
 
-{% if tags_public or org %}
-  <div class="meta">
-    {% if date and not (type in ['index', 'page']) %}
-      {{ utility.datetime(
-        start=date,
-        end=end,
-        pubdate=true
-      ) }}
-    {% endif %}
+{% if show_date %}
+  <p class="meta">
+    {{ utility.datetime(
+      start=date,
+      end=end,
+      pubdate=true
+    ) }}
 
-    {% if (venue and url) %}
-      @
-      <a href="{{ url | url }}" class="h-card org">
-        {{ (venue or 'the interwebz') | mdInline | safe }}
-      </a>
-    {% endif %}
-
-    {% if org %}
-      as
-      <strong>
-        {{ org | mdInline | safe }}
-      </strong>
-    {% endif %}
-
-    {% if adr %}
-      in
-      <span>
-        {{ adr | safe }}
-      </span>
-    {% endif %}
-
-    {% if tags_public | length > 0 %}
-      <ul data-list="tags">
-        {%- for tag in tags_public -%}
-          <li>
-            <a href="{{ tag | tagLink(collections) }}" class="p-category">
-              {{- tag | displayName -}}
-            </a>
-          </li>
-        {%- endfor -%}
-      </ul>
-    {% endif %}
-  </div>
+    {% if org or type -%}
+      | <em>
+        {{- (org or type) | mdInline | safe -}}
+      </em>
+    {%- endif %}
+  </p>
 {% endif %}

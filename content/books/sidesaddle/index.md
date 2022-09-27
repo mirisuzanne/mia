@@ -72,12 +72,6 @@ press:
     credit: Erin Rollman & Brian Colonna
     venue: Buntport Theater
   - text: |
-      Rarely do you get to experience such intimate thoughts.
-      It's like being dropped into someone's head,
-      Quantum Leap style,
-      for a transformative time in their life.
-    credit: Chris Eppstein
-  - text: |
       I was just digging everything,
       and didnt want the night to be over.
     credit: Sam O’Daniel

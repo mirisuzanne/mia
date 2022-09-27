@@ -1,26 +1,9 @@
 {%- import 'utility.macros.njk' as utility -%}
 
-{%- set elsewhere = tags and url and tags | includes(['elsewhere', 'link']) -%}
-{%- if summary or elsewhere -%}
-  <div id="summary" {{ utility.show_attrs(attrs.summary) }}>
-    {%- if summary -%}
-      {{ summary | md | safe }}
-    {%- endif -%}
-
-    {%- if elsewhere -%}
-      <p><a href="{{ url | url }}" class="u-repost-of u-uid">Reposted from {{ venue }} »</a></p>
-    {%- endif -%}
-  </div>
-{%- endif -%}
-
-{%- if series -%}
-  {%- include "page/series.njk" -%}
-{%- endif -%}
-
 {%- if content -%}
-  {%- if summary or series %}<hr />{% endif -%}
-
   <div id="content" {{ utility.show_attrs(attrs.content) }}>
+    {% include 'page/warn.njk' %}
+
     {{ content | safe }}
   </div>
 {%- endif -%}
