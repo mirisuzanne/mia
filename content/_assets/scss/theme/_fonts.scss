@@ -46,51 +46,27 @@ $-uni-mono: ();
       --var-serif: 'AlegreyaVariable', var(--ui-serif);
       --var-mono: 'JetBrains MonoVariable', var(--ui-mono);
 
-      // fractions
-      --frac: off;
-      --dnom: off;
-      --numr: off;
-
-      // numbers
-      --lnum: off;
-      --tnum: off;
-      --pnum: off;
+      font-display: optional;
     }
 
-    html,
-    [data-font] {
-      font-feature-settings: (
-        'frac' var(--frac),
-        'dnom' var(--dnom),
-        'numr' var(--numr),
-        'lnum' var(--lnum),
-        'pnum' var(--pnum),
-        'tnum' var(--tnum)
-      );
+    [data-type~='smallcaps'] {
+      font-variant-caps: small-caps;
     }
 
-    [data-font~='frac'] {
-      --frac: on;
+    [data-type~='allcaps'] {
+      font-variant-caps: all-small-caps;
     }
 
-    [data-font~='dnom'] {
-      --dnom: on;
+    [data-numbers='tabular'] {
+      font-variant-numeric: tabular-nums;
     }
 
-    [data-font~='numr'] {
-      --numr: on;
+    [data-numbers='lining'] {
+      font-variant-numeric: lining-nums;
     }
 
-    [data-font~='lnum'] {
-      --lnum: on;
-    }
-
-    [data-font~='tnum'] {
-      --tnum: on;
-    }
-
-    [data-font~='pnum'] {
-      --pnum: on;
+    [data-numbers='fractions'] {
+      font-variant-numeric: diagonal-fractions;
     }
   }
 }
