@@ -1,24 +1,18 @@
-{% macro summary(post, site) -%}
+{% import "macros/indieweb.njk" as indieweb %}
+
+{% macro summary(post) -%}
   {{- post.data.summary | mdInline if post.data.summary else '' -}}
-  {{- repost(post, site) -}}
+  {{- indieweb.rel(post) -}}
 {%- endmacro %}
 
-{% macro entry(post, site) %}
+{% macro entry(post) %}
   {{- (post.data.sub | md if post.data.sub else '') | safe -}}
   {{- (post.data.summary | md if post.data.summary else '') | safe -}}
-  {{- repost(post, site) -}}
+  {{- indieweb.rel(post) -}}
 
   {%- if post.data.hero.img -%}
     {{ post.data.hero.img | img(hero.alt, 'hero', {class: 'hero-img'}) | safe }}
   {%- endif -%}
 
   {{- post.templateContent | safe -}}
-{%- endmacro %}
-
-{% macro repost(post, site) -%}
-  {%- set is_link = post.data.venue and post.data.url and post.data.tags | includes(nav.type.link) -%}
-
-  {%- if is_link -%}
-    <p><a href="{{ post.data.url | url }}" class="u-repost-of u-uid">Reposted from {{ post.data.venue }} »</a></p>
-  {%- endif -%}
 {%- endmacro %}

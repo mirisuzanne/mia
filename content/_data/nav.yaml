@@ -10,11 +10,19 @@ tags:
   - music
   - theater
 more: cetera
-type:
-  feed:
-    - _feed
-    - post
-  link:
-    - link
-    - elsewhere
-    - interview
+xml:
+  - _rss
+feed:
+  - post
+  - elsewhere
+  - link
+relations:
+  repost:
+    class: u-repost-of u-uid
+    intro: 'Repost from'
+  reply:
+    class: u-in-reply-to
+    intro: 'In reply to'
+  bookmark:
+    class: u-bookmark-of
+    intro: 'Link to'

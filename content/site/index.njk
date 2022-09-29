@@ -20,14 +20,14 @@ eleventyComputed:
 
 {%- set hentry_heading = 'h3' -%}
 
-{%- set hfeed = collections.post | getPublic  -%}
+{%- set hfeed = collections.the_feed | getPublic  -%}
 {%- if hfeed | length > 0 -%}
 <section class="h-feed">
-  <h2 class="p-name">Recent Posts</h2>
+  <h2 class="p-name">In The Feed</h2>
   {%- for item in hfeed | sortBy('data.date') | reverse | slice(5) -%}
     {%- include 'part/hentry.njk' -%}
   {%- endfor -%}
-  <p><a href="{{ 'post' | tagLink(collections) }}">See all posts »</a></p>
+  <p><a href="{{ 'the_feed' | tagLink(collections) }}">Keep feeding »</a></p>
 </section>
 {%- endif -%}
 

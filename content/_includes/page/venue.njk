@@ -1,23 +1,14 @@
-{%- import 'utility.macros.njk' as utility -%}
+{%- import 'macros/indieweb.njk' as indieweb -%}
 
 {%- set has_org = title if (org and url) else none -%}
 {%- set venue = venue or has_org -%}
-
 {%- set has_venue = (venue and url) -%}
-{%- set repost = has_venue and tags | includes(nav.type.link) -%}
-{%- set venue_text = ['Reposted from **', venue, '**'] | join('') if repost else venue -%}
 
 {%- if has_venue or adr -%}
   <p class="venue">
     {%- if has_venue -%}
-      {{- utility.link_if(
-        content=venue_text | mdInline | safe,
-        url=url,
-        attrs={
-          'class': 'u-repost-of u-uid' if repost else 'h-card org'
-        }
-      ) -}}
-      {%- if adr %},{% endif -%}
+      {{ indieweb.venue_link(venue, url, tags, rel, nav) }}
+      {% if adr %}|{% endif -%}
     {%- endif -%}
 
     {%- if adr %}
@@ -27,3 +18,4 @@
     {%- endif -%}
   </p>
 {%- endif -%}
+
