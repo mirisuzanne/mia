@@ -1,16 +1,16 @@
 ---
 title: Oddities & Curious Lands
 sub: the art of Jason Nelson
+date: 2012-07-24
 venue: Secret Technology
 url: https://www.secrettechnology.com/
-date: 2012-07-24
+hero:
+  img: 2012/i-made-this.jpg
+  alt: I made this, you play this, we are enemies
 tags:
   - art
   - code
   - electronic literature
-hero:
-  img: 2012/i-made-this.jpg
-  alt: I made this, you play this, we are enemies
 ---
 
 In case you are ever bored,

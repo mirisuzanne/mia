@@ -3,10 +3,10 @@ type: podcast
 title: Guts | Let's Faint for Each Other
 sub: Erin Rollman talks about my surgery
 date: 2019-02-15
-hero:
-  img: inspiration/erin-narrators.jpg
 venue: The Narrators
 url: https://thenarrators.org/174-erin-rollman-lets-faint-for-each-other/
+hero:
+  img: inspiration/erin-narrators.jpg
 tags:
   - transition
   - narrators

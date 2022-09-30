@@ -2,11 +2,12 @@
 title: A Whole Cascade of Layers
 sub: the path to SBRDFLT
 date: 2022-09-06
+venue: Dave Rupert
+url: https://daverupert.com/2022/08/modern-alternatives-to-bem/
+rel: reply
 tags:
   - css
   - cascade layers
-rel:
-  reply-to: https://daverupert.com/2022/08/modern-alternatives-to-bem/
 summary: |
   I really enjoyed Dave Rupert's
   [Modern alternatives to BEM](https://daverupert.com/2022/08/modern-alternatives-to-bem/),

@@ -1,5 +1,5 @@
 {%- import "macros/xml.njk" as xml -%}
-{%- set posts = collections._xml | getPublic | reverse | slice(15) -%}
+{%- set posts = collections.the_rss | getPublic | reverse | slice(15) -%}
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -30,11 +30,11 @@
       {%- for post in posts -%}
       {%- if post.templateContent or post.data.summary -%}
       {%- set absolutePostUrl = post.url | absoluteUrl(site.url) -%}
-      {%- set post_summary = xml.summary(post, site) if post.data.summary else none -%}
-      {%- set post_content = xml.entry(post, site) -%}
+      {%- set post_summary = xml.summary(post) if post.data.summary else none -%}
+      {%- set post_content = xml.entry(post) -%}
       {%- set mentions = webmentions | mentionsForUrl(absoluteUrl) | webMentions | length -%}
       <item>
-        <title>{{ post.data.title or site.data.banner | mdInline | striptags }}</title>
+        <title>{{ post.data.title }}</title>
         <link>{{ absolutePostUrl }}</link>
         <guid>{{ absolutePostUrl }}</guid>
         <pubDate>{{ post.date | date('rss') }}</pubDate>

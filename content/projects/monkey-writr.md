@@ -21,7 +21,8 @@ summary: |
   A monkey hitting keys at random
   for an infinite amount of time
   will eventually want some help writing Hamlet (or whatever).
-  You're the monkey. We're here to help.
+
+  _You're the monkey. We're here to help._
 ---
 
 The Monkey Writr app

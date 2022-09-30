@@ -1,13 +1,15 @@
-{% if rel %}
-  {% set rel_attrs = {
-    'reply': {'class': 'u-in-reply-to'},
-    'syndication': {'class': 'u-syndication', 'rel': 'syndication'},
-    'bookmark': {'class': 'u-bookmark-of'},
-    'like': {'class': 'u-like-of'}
-  } %}
-  {% for type, target in rel %}
-    <a href="{{ target | url }}" {{ utility.show_attrs(rel_attrs[type]) }} hidden></a>
-  {% endfor %}
-{% endif %}
+{% import "utility.macros.njk" as utility %}
+
+{% for item in syndication %}
+  {{ utility.link_if(
+    content=item.title or item.url,
+    url=item.url,
+    attrs = {
+      'class': 'u-syndication',
+      'rel': 'syndication',
+      'hidden': true
+    }
+  ) }}
+{% endfor %}
 
 <a href="{{ page.url | url }}" class="u-url" hidden></a>

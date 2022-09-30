@@ -1,7 +1,10 @@
-{%- for feed in collections.__feed_pages -%}
-<link
-  rel="alternate"
-  type="application/{{ feed.data.feed }}"
-  title="{{ feed.data.title }}: {{ site.description }}"
-  href="{{ feed.url | absoluteUrl(site.url) }}" />
-{%- endfor -%}
+{%- import "utility.macros.njk" as utility -%}
+{%- for feed in collections.__xml_feeds -%}
+  {%- set attrs = {
+    'rel': 'alternate',
+    'type': 'application/{{ feed.data.feed }}',
+    'title': '{{ feed.data.title }}: {{ site.description }}',
+    'href': '{{ feed.url | absoluteUrl(site.url) }}'
+  } -%}
+  <link {{ utility.show_attrs(attrs) }}/>
+{% endfor -%}

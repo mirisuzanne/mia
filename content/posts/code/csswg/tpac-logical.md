@@ -1,8 +1,9 @@
 ---
 title: A long-term plan for logical properties?
 date: 2022-09-16
-rel:
-  reply-to: https://adactio.com/journal/19457
+url: https://adactio.com/journal/19457
+venue: Jeremy Keith
+rel: reply
 summary: |
   The CSS Working Group is discussing
   'logical properties' today

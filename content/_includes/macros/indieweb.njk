@@ -1,0 +1,51 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+{% macro rel(post) -%}
+  {%- set has_venue = (post.data.venue and post.data.url) -%}
+  {%- set is_link = post.data.rel -%}
+  {%- set is_artifact = post.data.url and post.data.tags | includes('artifact') -%}
+
+  {%- if is_link and has_venue -%}
+    <p>{{ venue_link(
+      post.data.venue,
+      post.data.url,
+      post.data.tags,
+      post.data.rel,
+      post.data.nav
+    ) }}</p>
+  {% elif is_artifact %}
+    <p>{{ artifact_link(
+      post.data.banner,
+      post.data.url,
+      post.data.nav
+    ) }}</p>
+  {%- endif -%}
+{%- endmacro %}
+
+{% macro venue_link(venue, url, tags, rel, nav) %}
+  {%- set rel = nav.relations[rel] -%}
+  {%- set class = ['h-cite h-card', rel.class] | join(' ') if rel else none -%}
+
+  {{- rel.intro if rel else none }}
+  {{ utility.link_if(
+    content=venue | mdInline | safe,
+    url=url,
+    attrs={
+      'class': class or 'h-card org'
+    }
+  ) -}}
+{% endmacro %}
+
+{% macro artifact_link(name, url, nav) %}
+  {%- set rel = nav.relations.bookmark -%}
+  {%- set class = ['h-cite h-card', rel.class] | join(' ') if rel else none -%}
+
+  {{- rel.intro }}
+  {{ utility.link_if(
+    content=name | mdInline | safe,
+    url=url,
+    attrs={
+      'class': class or 'h-card org'
+    }
+  ) -}}
+{% endmacro %}

@@ -4,8 +4,7 @@
 <style>@layer
   {%- for link in meta.styles | filter('layer') -%}
     {{ comma() }} {{ link.layer }}
-  {%- endfor -%};
-</style>
+  {%- endfor -%};</style>
 
 {%- for link in meta.styles | selectattr('url') -%}
   {% set link_attrs = {

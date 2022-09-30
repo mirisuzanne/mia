@@ -21,3 +21,6 @@
   to: /theater/every-other-day/
 - from: /theater/newworld/every-other-day/script/
   to: /theater/every-other-day/script/
+
+- from: /notes/upcoming/2022-08-11/
+  to: /rss/upcoming/2022-08-11/
