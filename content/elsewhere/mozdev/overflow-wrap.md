@@ -2,6 +2,7 @@
 title: Overflow-Wrap in CSS
 banner: How do you wrap long words in CSS?
 date: 2019-11-06
+url: https://www.youtube.com/watch?v=UOKQ6gw21NA
 tags:
   - css
 hero:

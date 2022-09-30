@@ -2,6 +2,7 @@
 title: Styling Lists in CSS
 sub: Powerful New CSS for Styling Bullets, Numbers, and List Markers
 date: 2019-10-01
+url: https://www.youtube.com/watch?v=2awepiNoaZI
 tags:
   - css
   - selectors

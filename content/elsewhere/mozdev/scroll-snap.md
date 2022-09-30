@@ -2,6 +2,7 @@
 title: Scroll Snap in CSS
 sub: without any JavaScript "scrolljacking"
 date: 2019-10-31
+url: https://www.youtube.com/watch?v=pohyK8iz-SQ
 tags:
   - css
   - layout

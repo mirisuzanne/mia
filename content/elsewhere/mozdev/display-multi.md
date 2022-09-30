@@ -2,6 +2,7 @@
 title: Inner & Outer Values of the Display Property
 sub: allow us to be more explicit and expressive about layouts
 date: 2019-10-28
+url: https://www.youtube.com/watch?v=4Clyc38U-MA
 tags:
   - css
   - layout

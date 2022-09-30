@@ -4,6 +4,7 @@
 {%- set venue = venue or has_org -%}
 {%- set has_venue = (venue and url) -%}
 {%- set is_artifact = url and tags | includes('artifact') -%}
+{%- set rel = rel or ('bookmark' if is_artifact) -%}
 
 {%- if has_venue or adr or is_artifact -%}
   <p class="venue">

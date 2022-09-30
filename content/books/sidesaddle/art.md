@@ -2,6 +2,8 @@
 type: gallery
 title: Riding on the Walls
 sub: art & words from [Riding SideSaddle*](/books/sidesaddle/)
+venue: Miriam's Art Store
+url: https://miriamsuzanne.square.site
 date: 2015-10-10
 hero:
   img: huck.jpg

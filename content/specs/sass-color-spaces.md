@@ -2,7 +2,8 @@
 feature: true
 title: Sass Color Spaces
 sub: Support for new CSS color spaces in Sass
-venue: Sass
+venue: Sass Blog
+url: https://sass-lang.com/blog/request-for-comments-color-spaces
 date: 2022-09-21
 tags:
   - sass

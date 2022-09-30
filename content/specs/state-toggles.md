@@ -1,6 +1,7 @@
 ---
 title: CSS State Toggles [WIP]
 sub: Declarative controls for presentational state
+venue: Tab Atkins
 url: https://tabatkins.github.io/css-toggle/
 date: 2022-06-12
 type: spec

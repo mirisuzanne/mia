@@ -2,6 +2,7 @@
 title: Why isn't this CSS doing anything?
 sub: Have ever set a width in CSS, and... nothing happens?
 date: 2019-10-21
+url: https://www.youtube.com/watch?v=O3DAm82vIvU
 tags:
   - css
   - cascade

@@ -15,7 +15,7 @@
     ) }}</p>
   {% elif is_artifact %}
     <p>{{ artifact_link(
-      post.data.banner,
+      post.data.venue or post.data.banner,
       post.data.url,
       post.data.nav
     ) }}</p>

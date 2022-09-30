@@ -3,6 +3,7 @@ title: CSS Revert
 banner: What does `revert` do in CSS?
 sub: and how is it different from `unset` or `initial`?
 date: 2019-10-09
+url: https://www.youtube.com/watch?v=GAjoVRmipcU
 tags:
   - css
   - cascade

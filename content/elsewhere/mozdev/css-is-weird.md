@@ -3,6 +3,7 @@ feature: home
 title: Why is CSS so Weird?
 sub: How can we design for an unknown & infinite canvas?
 date: 2019-10-03
+url: https://www.youtube.com/watch?v=aHUtMbJw8iA
 og:
   img: mozdev/css-is-weird.png
 tags:

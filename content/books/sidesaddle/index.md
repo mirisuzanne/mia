@@ -2,9 +2,10 @@
 feature: home
 type: novel
 title: Riding SideSaddle*
+venue: ridingsidesaddle.com
+url: https://ridingsidesaddle.com
 sub: A queer novel, in fragments of memory…
 date: 2015-04-02
-venue: SpringGun Press
 hero:
   img: writing/sidesaddle/box.jpg
   alt:

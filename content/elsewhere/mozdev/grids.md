@@ -2,6 +2,7 @@
 title: Faster Layouts with CSS Grid
 sub: and fallbacks for legacy browsers
 date: 2019-10-14
+url: https://www.youtube.com/watch?v=KOvGeFUHAC0
 tags:
   - css
   - layout

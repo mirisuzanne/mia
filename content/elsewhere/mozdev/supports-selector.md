@@ -3,6 +3,7 @@ title: Selector Support Queries
 banner: Use new selectors responsibly with selector queries
 sub: Just in time for [Selectors Level 4](https://www.w3.org/TR/selectors-4/)!
 date: 2019-11-20
+url: https://www.youtube.com/watch?v=WjvJheGhHIQ
 tags:
   - css
   - selectors

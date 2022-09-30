@@ -2,6 +2,7 @@
 title: Subgrid for Better Card Layouts
 sub: and fallbacks for legacy browsers
 date: 2019-10-15
+url: https://www.youtube.com/watch?v=lLnFtK1LNu4
 tags:
   - css
   - layout
