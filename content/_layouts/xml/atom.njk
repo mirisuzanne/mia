@@ -24,7 +24,7 @@
   {%- set post_content = xml.entry(post) -%}
   {%- set mentions = webmentions | mentionsForUrl(absoluteUrl) | webMentions | length -%}
   <entry>
-    <title>{{ post.data.title or site.data.banner | mdInline | striptags }}</title>
+    <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>

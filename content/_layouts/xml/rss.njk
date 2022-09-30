@@ -34,7 +34,7 @@
       {%- set post_content = xml.entry(post) -%}
       {%- set mentions = webmentions | mentionsForUrl(absoluteUrl) | webMentions | length -%}
       <item>
-        <title>{{ post.data.title or site.data.banner | mdInline | striptags }}</title>
+        <title>{{ post.data.title }}</title>
         <link>{{ absolutePostUrl }}</link>
         <guid>{{ absolutePostUrl }}</guid>
         <pubDate>{{ post.date | date('rss') }}</pubDate>

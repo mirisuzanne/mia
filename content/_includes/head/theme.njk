@@ -1,4 +1,4 @@
 <meta name="color-scheme" content="dark light">
-{%- for theme, color in meta.theme -%}
+{% for theme, color in meta.theme -%}
   <meta name="theme-color" media="(prefers-color-scheme: {{ theme }})" content="{{ color }}">
-{%- endfor -%}
+{% endfor -%}

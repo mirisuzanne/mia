@@ -25,4 +25,4 @@ relations:
     intro: 'In reply to'
   bookmark:
     class: u-bookmark-of
-    intro: 'Link to'
+    intro: 'Bookmark of'

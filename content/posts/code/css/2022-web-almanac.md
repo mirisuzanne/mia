@@ -1,6 +1,6 @@
 ---
 draft: true
-title: The Tooling Disconnect
+title: The Web, According To Our Tools
 sub: Reflecting on the 2022 Web Almanac
 venue: 2022 Web Almanac
 url: https://almanac.httparchive.org/en/2022/

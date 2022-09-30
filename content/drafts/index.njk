@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
   <li>
     <strong>{{ utility.datetime(item.data.date) }}</strong> —
     <em>{{ utility.link_if(
-      content=(item.data.banner or item.data.title) | mdInline,
+      content=item.data.banner | mdInline | safe,
       url=item.url
     ) }}</em>
   </li>

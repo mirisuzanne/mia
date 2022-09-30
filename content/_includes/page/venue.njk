@@ -3,11 +3,15 @@
 {%- set has_org = title if (org and url) else none -%}
 {%- set venue = venue or has_org -%}
 {%- set has_venue = (venue and url) -%}
+{%- set is_artifact = url and tags | includes('artifact') -%}
 
-{%- if has_venue or adr -%}
+{%- if has_venue or adr or is_artifact -%}
   <p class="venue">
     {%- if has_venue -%}
       {{ indieweb.venue_link(venue, url, tags, rel, nav) }}
+      {% if adr %}|{% endif -%}
+    {% elif is_artifact %}
+      {{ indieweb.artifact_link(banner, url, nav) }}
       {% if adr %}|{% endif -%}
     {%- endif -%}
 

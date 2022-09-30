@@ -1,7 +1,7 @@
 {% import "macros/indieweb.njk" as indieweb %}
 
 {% macro summary(post) -%}
-  {{- post.data.summary | mdInline if post.data.summary else '' -}}
+  {{- post.data.summary | md if post.data.summary else '' -}}
   {{- indieweb.rel(post) -}}
 {%- endmacro %}
 
