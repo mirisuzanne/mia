@@ -1,0 +1,53 @@
+{%- import 'utility.macros.njk' as utility -%}
+{%- import 'content.macros.njk' as content -%}
+
+{%- set absoluteUrl = page.url | url | absoluteUrl(site.url) -%}
+{%- set url_mentions = webmentions | mentionsForUrl(absoluteUrl) -%}
+{%- set mentions = url_mentions | mentionTypes -%}
+
+{%- set is_post = tags | intersection(nav.feed) -%}
+{%- set is_artifact = tags | includes('artifact') -%}
+
+{% if mentions | length and (is_post or is_artifact) %}
+<section id="webmentions" aria-labelledby="webmentions-label">
+  <h2 id="webmentions-label">WebMentions</h2>
+
+  {% for webmention in mentions | reverse %}
+    {% set attrs = {
+      'class': 'webmention h-cite p-comment',
+      'id': ['webmention', webmention['wm-id']] | join('-'),
+      'data-mention': webmention['wm-property']
+    } %}
+    <article {{ utility.show_attrs(attrs) }}>
+      <header>
+        <h3 class="webmention-author{% if webmention.author %} p-author h-card{% endif %}">
+          {{ utility.link_if(
+            content=webmention.author.name,
+            url=webmention.url,
+            attrs={
+              'class': 'u-url',
+              'target': '_blank',
+              'rel': 'noopener noreferrer'
+            }
+          ) }}
+        </h3>
+        <p class='webmention-meta'>
+          {{ utility.datetime(
+            start=webmention.published,
+            pubdate=true
+          ) }}
+          on
+          {{ utility.link_if(
+            content=webmention.url | getDomain,
+            url=webmention.url
+          ) }}
+        </p>
+      </header>
+
+      <div class="webmention-content p-content">
+        {{ webmention.content.value | safe }}
+      </div>
+    </article>
+  {% endfor %}
+</section>
+{% endif %}

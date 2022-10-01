@@ -32,7 +32,6 @@
       {%- set absolutePostUrl = post.url | absoluteUrl(site.url) -%}
       {%- set post_summary = xml.summary(post) if post.data.summary else none -%}
       {%- set post_content = xml.entry(post) -%}
-      {%- set mentions = webmentions | mentionsForUrl(absoluteUrl) | webMentions | length -%}
       <item>
         <title>{{ post.data.title }}</title>
         <link>{{ absolutePostUrl }}</link>

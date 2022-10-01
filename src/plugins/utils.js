@@ -45,4 +45,9 @@ module.exports = (eleventyConfig) => {
 
     return array.slice(0, n);
   });
+
+  eleventyConfig.addFilter(
+    'getDomain',
+    (url) => new URL(url).origin.split('://')[1],
+  );
 };

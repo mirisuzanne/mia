@@ -1,6 +1,10 @@
 'use strict';
 const sanitizeHTML = require('sanitize-html');
-const _ = require('lodash');
+
+// define which types of webmentions are included by default
+// possible values listed here:
+// https://github.com/aaronpk/webmention.io#find-links-of-a-specific-type-to-a-specific-page
+const defaultTypes = ['mention-of', 'in-reply-to'];
 
 // sort webmentions by published timestamp chronologically.
 // swap a.published and b.published to reverse order.
@@ -12,54 +16,16 @@ const forUrl = (webMentions, url) =>
     .filter((entry) => entry['wm-private'] === false)
     .sort(orderByDate);
 
-const authors = (mentions) => {
-  const photos = mentions
-    .map((entry) => {
-      entry.author.property = entry['wm-property'];
-      return entry.author;
-    })
-    .filter((author) => author.photo);
-
-  return _.uniqBy(photos, 'photo').map((a) => {
-    a.property = _.uniq(
-      _.filter(photos, ['photo', a.photo]).map((i) => i.property),
-    );
-    return a;
-  });
-};
-
-const likes = (mentions) =>
-  mentions.filter((entry) => entry['wm-property'] === 'like-of');
-
-const reposts = (mentions) =>
-  mentions.filter((entry) => entry['wm-property'] === 'repost-of');
-
-const webMentions = (mentions) => {
-  // define which types of webmentions should be included per URL.
-  // possible values listed here:
-  // https://github.com/aaronpk/webmention.io#find-links-of-a-specific-type-to-a-specific-page
-  const allowedTypes = ['mention-of', 'in-reply-to'];
-
+const getTypes = (mentions, allow) => {
   // clean webmention content for output
   const clean = (entry) => {
     const { html, text } = entry.content;
+    // really long html mentions, usually newsletters or compilations
+    const isLong = html && html.length > 2000;
 
-    if (html) {
-      // really long html mentions, usually newsletters or compilations
-      entry.content.value = sanitizeHTML(
-        html.length > 2000
-          ? `
-            <p>${html.substring(0, 250)}…</p>
-            <p>
-              Read more:
-              <a href="${entry['wm-source']}">${entry['wm-source']}</a>
-            </p>
-          `
-          : html,
-      );
-    } else {
-      entry.content.value = sanitizeHTML(text);
-    }
+    entry.content.value = isLong
+      ? `${text.substring(0, 250)}…`
+      : sanitizeHTML(html || text);
 
     return entry;
   };
@@ -77,16 +43,18 @@ const webMentions = (mentions) => {
 
   // run all of the above for each webmention that targets the current URL
   return mentions
-    .filter((entry) => allowedTypes.includes(entry['wm-property']))
+    .filter((entry) => (allow || defaultTypes).includes(entry['wm-property']))
     .filter(checkRequiredFields)
     .sort(orderByDate)
     .map(clean);
 };
 
+module.exports = {
+  forUrl,
+  getTypes,
+};
+
 module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('mentionsForUrl', forUrl);
-  eleventyConfig.addFilter('webLikes', likes);
-  eleventyConfig.addFilter('webReposts', reposts);
-  eleventyConfig.addFilter('webAuthors', authors);
-  eleventyConfig.addFilter('webMentions', webMentions);
+  eleventyConfig.addFilter('mentionTypes', getTypes);
 };
