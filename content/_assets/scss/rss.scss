@@ -1,0 +1,8 @@
+@use 'layer/reset';
+@use 'layer/default';
+@use 'layer/features';
+@use 'layer/theme';
+
+article + article {
+  margin-block: var(--gap);
+}

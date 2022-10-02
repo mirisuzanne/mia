@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title if (page.url == '/') else [title, site.title] | join(' | ') }}</title>
   <meta name="description" content="{{ description }}" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
   {% include "head/redirect.njk" %}
   {% include "head/theme.njk" %}
