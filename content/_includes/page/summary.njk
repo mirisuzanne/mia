@@ -7,7 +7,14 @@
   } | merge(attrs.summary) -%}
 
   <section id="summary" {{ utility.show_attrs(summary_attrs) }}>
-    {%- if summary -%}
+    {%- if summary.random -%}
+      {%- set site_data = {
+        'welcome': welcome
+      } -%}
+      {% edge 'njk,md', site_data[summary.random] or summary %}
+        {{ random | random | safe }}
+      {% endedge %}
+    {%- else -%}
       {{ summary | md | safe }}
     {%- endif -%}
   </section>

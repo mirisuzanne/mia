@@ -5,6 +5,10 @@ publish = "_site"
 [dev]
 command = "yarn serve"
 
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/"
+
 [[plugins]]
 package = "netlify-plugin-cache"
 
