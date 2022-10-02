@@ -1,8 +1,10 @@
+/* stylelint-disable property-no-vendor-prefix */
+
 @mixin fancy {
   --svg: var(--complement);
 
   background: var(--text-gradient);
-  -webkit-background-clip: text; /* stylelint-disable-line property-no-vendor-prefix */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
 }
