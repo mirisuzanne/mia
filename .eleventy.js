@@ -4,6 +4,7 @@ const yaml = require('js-yaml');
 const hljs = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rss = require('@11ty/eleventy-plugin-rss');
 const pluginTOC = require('eleventy-plugin-toc', { wrapper: '' });
+const { EleventyEdgePlugin } = require('@11ty/eleventy');
 
 const configCollections = require('./src/plugins/collections');
 const configType = require('./src/plugins/type');
@@ -17,6 +18,7 @@ const pages = require('./src/utils/pages');
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.addPlugin(EleventyEdgePlugin);
 
   // third-party plugins
   eleventyConfig.addPlugin(hljs);

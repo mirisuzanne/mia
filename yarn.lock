@@ -7,7 +7,7 @@
   resolved "https://registry.yarnpkg.com/@11ty/dependency-tree/-/dependency-tree-2.0.1.tgz#b3c8fa6c91c4a29257e70dd19d26cca75cde89d2"
   integrity sha512-5R+DsT9LJ9tXiSQ4y+KLFppCkQyXhzAm1AIuBWE/sbU0hSXY5pkhoqQYEcPJQFg/nglL+wD55iv2j+7O96UAvg==
 
-"@11ty/eleventy-dev-server@^1.0.0-canary.13":
+"@11ty/eleventy-dev-server@^1.0.0-canary.14":
   version "1.0.0-canary.14"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-dev-server/-/eleventy-dev-server-1.0.0-canary.14.tgz#f7b592748d08fc5c4b020c8e850f57abbdb1ac30"
   integrity sha512-yIPRZCEieqe7943P8h+xG60db/82yp10iOgd8IRKiobLhWw43xDJtro8QnjTF4A9gRkx7UmulwTPkGbD1Lt8xQ==
@@ -69,13 +69,13 @@
   dependencies:
     normalize-path "^3.0.0"
 
-"@11ty/eleventy@2.0.0-canary.14":
-  version "2.0.0-canary.14"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-2.0.0-canary.14.tgz#f567601381eb3d4f7a86c297cb55d737391bd55e"
-  integrity sha512-D91HKgY5TkIXT1LgbA+tJLOuzq3C2XDeW2n6XxJTL1falSX839u2hcdxLiA70557YoTpd9u0zYPLVrUbZoO1sA==
+"@11ty/eleventy@2.0.0-canary.16":
+  version "2.0.0-canary.16"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-2.0.0-canary.16.tgz#9780ff27ec21fef7081d12c1acc1c6ed1cd48613"
+  integrity sha512-6HXaxmzTYDW0ihzasfa3+SbGeHAF6j7FFwgOnx2cjhwvcFAV2Ci9cZk/lQN9pHCilaI6OgcwOThC7hzjpbro1g==
   dependencies:
     "@11ty/dependency-tree" "^2.0.1"
-    "@11ty/eleventy-dev-server" "^1.0.0-canary.13"
+    "@11ty/eleventy-dev-server" "^1.0.0-canary.14"
     "@11ty/eleventy-utils" "^1.0.1"
     "@iarna/toml" "^2.2.5"
     "@sindresorhus/slugify" "^1.1.2"
@@ -85,7 +85,7 @@
     debug "^4.3.4"
     dependency-graph "^0.11.0"
     ejs "^3.1.8"
-    fast-glob "^3.2.11"
+    fast-glob "^3.2.12"
     graceful-fs "^4.2.10"
     gray-matter "^4.0.3"
     hamljs "^0.6.2"
@@ -93,9 +93,9 @@
     is-glob "^4.0.3"
     iso-639-1 "^2.1.15"
     kleur "^4.1.5"
-    liquidjs "^9.39.2"
+    liquidjs "9.41.0"
     lodash "^4.17.21"
-    luxon "^3.0.1"
+    luxon "^3.0.3"
     markdown-it "^13.0.1"
     minimist "^1.2.6"
     moo "^0.5.1"
@@ -105,6 +105,8 @@
     nunjucks "^3.2.3"
     path-to-regexp "^6.2.1"
     please-upgrade-node "^3.2.0"
+    posthtml "^0.16.6"
+    posthtml-urls "^1.0.0"
     pug "^3.0.2"
     recursive-copy "^2.0.14"
     semver "^7.3.7"
@@ -2458,6 +2460,17 @@ fast-glob@^3.2.11, fast-glob@^3.2.9:
     merge2 "^1.3.0"
     micromatch "^4.0.4"
 
+fast-glob@^3.2.12:
+  version "3.2.12"
+  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.12.tgz#7f39ec99c2e6ab030337142da9e0c18f37afae80"
+  integrity sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==
+  dependencies:
+    "@nodelib/fs.stat" "^2.0.2"
+    "@nodelib/fs.walk" "^1.2.3"
+    glob-parent "^5.1.2"
+    merge2 "^1.3.0"
+    micromatch "^4.0.4"
+
 fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
@@ -3409,10 +3422,10 @@ lint-staged@^10.0.8:
     string-argv "0.3.1"
     stringify-object "^3.3.0"
 
-liquidjs@^9.39.2:
-  version "9.39.2"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.39.2.tgz#f2409f1108b91fc4f1b06e1f51f2be70f434cb92"
-  integrity sha512-7fdd8hn7U/FUANGWaBbF41LmsRS40uXj/jFldyddYqgLDGMyZSYJsajOvZIZGkAxJdUYbZksrHRU4Q8kg8sTPg==
+liquidjs@9.41.0:
+  version "9.41.0"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.41.0.tgz#b6cf6bc3ee3457d14ff5e3cbf134d15f523c6989"
+  integrity sha512-Q1EfRoVYSFmbaTzEHoz39/dMNjPec8uJGHvQiHyzeMp14M9E40a6pOpmDHW009a6qHcjisZyOH96O6No2+1bBQ==
 
 list-to-array@^1.1.0:
   version "1.1.0"
@@ -3528,10 +3541,10 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-luxon@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.0.1.tgz#6901111d10ad06fd267ad4e4128a84bef8a77299"
-  integrity sha512-hF3kv0e5gwHQZKz4wtm4c+inDtyc7elkanAsBq+fundaCdUBNJB1dHEGUZIM6SfSBUlbVFduPwEtNjFK8wLtcw==
+luxon@^3.0.3:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.0.4.tgz#d179e4e9f05e092241e7044f64aaa54796b03929"
+  integrity sha512-aV48rGUwP/Vydn8HT+5cdr26YYQiUZ42NM6ToMoaGKwYfWbfLeRkEu1wXWMHBZT6+KyLfcbbtVcoQFCbbPjKlw==
 
 magic-string@^0.25.7:
   version "0.25.9"
@@ -4248,7 +4261,7 @@ posthtml-render@^3.0.0:
   dependencies:
     is-json "^2.0.1"
 
-posthtml-urls@1.0.0:
+posthtml-urls@1.0.0, posthtml-urls@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/posthtml-urls/-/posthtml-urls-1.0.0.tgz#3102d7b9e5c2fbdf19c8ec7ca825600dad3b9164"
   integrity sha512-CMJ0L009sGQVUuYM/g6WJdscsq6ooAwhUuF6CDlYPMLxKp2rmCYVebEU+wZGxnQstGJhZPMvXsRhtqekILd5/w==

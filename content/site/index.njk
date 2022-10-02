@@ -1,10 +1,10 @@
 ---
 layout: format/h-feed
+permalink: '/'
 title: Miriam Eric Suzanne
 eleventyExcludeFromCollections: true
-eleventyComputed:
-  summary: |
-    {{ welcome | random | safe }}
+summary:
+  random: welcome
 ---
 
 {% set event_list = collections.all | getEvents | notPast %}
