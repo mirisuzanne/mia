@@ -7,7 +7,7 @@
 } -%}
 
 <nav aria-label="primary">
-  <div>
+  <div id="art-code-nav">
     {% for name, url in nav.site %}
       {{ utility.link_if(
         content=(nav.replace[name] or name) | mdInline | safe,
@@ -20,13 +20,22 @@
     {% endfor %}
   </div>
 
-  {{ utility.link_if(
-    content=content.svg('icons/miriam-sig', 'Miriam'),
-    url='/who/',
-    attrs={
-    'id': 'logo',
-    'aria-current': ('page' if (page.url == '/who/') else none),
-    'rel': 'author'
-  }) }}
+  {% if layout == 'xml/xsl' %}
+    {{ utility.link_if(
+      content='Miriam Suzanne',
+      url='/who/',
+      attrs= { 'id': 'logo' }
+    ) }}
+  {% else %}
+    {{ utility.link_if(
+      content=content.svg('icons/miriam-sig', 'Miriam'),
+      url='/who/',
+      attrs={
+        'id': 'logo',
+        'aria-current': ('page' if (page.url == '/who/') else none),
+        'rel': 'author'
+      }
+    ) }}
+  {% endif %}
 </nav>
 

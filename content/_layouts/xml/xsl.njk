@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><xsl:value-of select="rss/channel/title"/> RSS Feed</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <style type="text/css">@import url(/css/rss.css);</style>
+  </head>
+  <body id="rss">
+    <a href="#main" class="visually-hidden">skip to content</a>
+
+    {% include 'site/nav.njk' %}
+
+    <main id="main">
+      <section id="summary">
+        {{ content | safe }}
+      </section>
+
+      <header id="page-header">
+        <div class="title-group">
+          <h1>
+            {{ banner | mdInline | safe }}
+          </h1>
+          <p aria-roledescription="subtitle">
+            <xsl:value-of select="/rss/channel/description"/>
+          </p>
+        </div>
+      </header>
+
+      <section id="content">
+        <h2>Latest Posts</h2>
+        <xsl:for-each select="rss/channel/item">
+        <article>
+          <header>
+            <h3><a href="{ link }" rel="bookmark"><xsl:value-of select="title"/></a></h3>
+            <time><xsl:value-of select="pubDate" /></time>
+          </header>
+        </article>
+        </xsl:for-each>
+      </section>
+    </main>
+
+    <footer id="contentinfo">
+      <div class="meta">
+        <p>
+          Copyright {% getDate 'year' %}
+          <strong>{{ site.author }}</strong>
+        </p>
+
+        {{ colophon | md | safe }}
+      </div>
+    </footer>
+
+  </body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
