@@ -1,5 +1,3 @@
-@mixin css {
-  h2:not(#content > :first-child, #content > :first-child > :first-child) {
-    margin-block-start: var(--spacer);
-  }
+h2:not(:first-child) {
+  margin-block-start: var(--spacer);
 }

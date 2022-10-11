@@ -1,0 +1,42 @@
+nav[aria-label='primary'] {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: var(--nav-space, var(--spacer));
+
+  a:any-link {
+    text-decoration: none;
+  }
+
+  a:where(.has-tag):any-link {
+    text-decoration: underline;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: var(--ActiveText);
+    text-decoration: underline;
+  }
+}
+
+#art-code-nav {
+  gap: 0.2rem;
+}
+
+#art-code-nav,
+#logo {
+  align-items: center;
+  display: flex;
+}
+
+#logo svg {
+  aspect-ratio: 92 / 31 auto;
+  height: var(--huge);
+  flex: auto;
+  stroke-width: 2;
+  width: auto;
+}
+
+#message + nav {
+  --nav-space: 0;
+}

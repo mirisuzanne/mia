@@ -1,21 +1,19 @@
-@mixin css {
-  [data-callout] {
-    --callout-border: calc(var(--inset) * 0.25);
-    --callout-inset: calc(var(--inset) - var(--callout-border));
+[data-callout] {
+  --callout-border: calc(var(--inset) * 0.25);
+  --callout-inset: calc(var(--inset) - var(--callout-border));
 
-    background-color: var(--shadow, hsl(0deg 0% 0% / 12.5%));
-    border-inline-start: var(--callout-border) solid var(--border);
-    margin-inline: var(--outset, 0);
-    padding: var(--gap) var(--inset) var(--half-shim);
-    padding-inline-start: calc(var(--callout-inset));
+  background-color: var(--shadow, hsl(0deg 0% 0% / 12.5%));
+  border-inline-start: var(--callout-border) solid var(--border);
+  margin-inline: var(--outset, 0);
+  padding: var(--gap) var(--inset) var(--half-shim);
+  padding-inline-start: calc(var(--callout-inset));
 
-    & > strong {
-      font-size: var(--smaller);
-      text-transform: uppercase;
-    }
+  & > strong {
+    font-size: var(--smaller);
+    text-transform: uppercase;
   }
+}
 
-  [data-callout='warn'] {
-    border-color: var(--accent);
-  }
+[data-callout='warn'] {
+  border-color: var(--accent);
 }

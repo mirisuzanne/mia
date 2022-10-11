@@ -1,0 +1,20 @@
+#message {
+  --body-column: full;
+
+  background-color: var(--mark, var(--Highlight));
+  color: var(--mark-text, var(--HighlightText));
+  display: grid;
+  font-style: italic;
+  row-gap: var(--shim);
+  grid: inherit;
+  padding-block: var(--shim);
+
+  p {
+    grid-column: main;
+    margin: 0;
+  }
+
+  a:any-link {
+    color: currentcolor;
+  }
+}

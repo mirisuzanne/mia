@@ -1,7 +1,4 @@
-@use 'layer/reset';
-@use 'layer/default';
-@use 'layer/features';
-@use 'layer/theme';
+@use 'all';
 
 article + article {
   margin-block: var(--gap);

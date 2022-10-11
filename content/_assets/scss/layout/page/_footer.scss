@@ -1,0 +1,14 @@
+[data-list='tags'] {
+  flex-wrap: wrap;
+  gap: var(--gap);
+  list-style: none;
+
+  li {
+    display: inline;
+  }
+
+  li:not(:last-child)::after {
+    content: '&';
+    padding-inline: var(--half-shim);
+  }
+}

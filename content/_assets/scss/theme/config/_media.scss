@@ -5,10 +5,3 @@
     --image-brightness: 100%;
   }
 }
-
-@mixin css {
-  img,
-  picture {
-    @include dim;
-  }
-}

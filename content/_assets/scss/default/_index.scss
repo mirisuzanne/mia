@@ -1,19 +1,8 @@
-@use 'a11y';
-@use 'base';
-@use 'links';
-@use 'buttons';
-@use 'media';
-@use 'nav';
-@use 'type';
-@use 'forms';
-
-@mixin css {
-  @include base.css;
-  @include a11y.css;
-  @include links.css;
-  @include buttons.css;
-  @include media.css;
-  @include nav.css;
-  @include type.css;
-  @include forms.css;
-}
+@forward 'a11y';
+@forward 'base';
+@forward 'links';
+@forward 'buttons';
+@forward 'media';
+@forward 'nav';
+@forward 'type';
+@forward 'forms';

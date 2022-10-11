@@ -1,0 +1,13 @@
+#summary {
+  --main-column: wide;
+
+  font-size: var(--huge);
+
+  > :first-child {
+    margin-block-start: 0;
+  }
+
+  > :last-child {
+    margin-block-end: 0;
+  }
+}
