@@ -1,15 +1,6 @@
-@use 'callout';
-@use 'click-select';
-@use 'options';
-@use 'erase';
-@use 'gallery';
-@use 'swatch';
-
-@mixin css {
-  @include callout.css;
-  @include click-select.css;
-  @include options.css;
-  @include erase.css;
-  @include gallery.css;
-  @include swatch.css;
-}
+@forward 'callout';
+@forward 'click-select';
+@forward 'options';
+@forward 'erase';
+@forward 'gallery';
+@forward 'swatch';

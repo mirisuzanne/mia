@@ -1,37 +1,33 @@
-@use 'tools/text';
+@use 'config/text';
 
-@mixin css {
-  html {
-    --mark-gradient: linear-gradient(
-      -85deg,
-      transparent,
-      var(--mark, var(--shadow)) 3% 98%,
-      transparent
-    );
-    --mark-bg: var(--mark-gradient) no-repeat 0 100% / 100% 60%;
+html {
+  --mark-gradient: linear-gradient(
+    -85deg,
+    transparent,
+    var(--mark, var(--shadow)) 3% 98%,
+    transparent
+  );
+  --mark-bg: var(--mark-gradient) no-repeat 0 100% / 100% 60%;
+}
+
+hr::after {
+  @include text.fancy;
+}
+
+blockquote {
+  > *:not(.cite) {
+    font-size: var(--larger);
+    font-style: italic;
   }
 
-  hr::after,
-  main::after,
-  footer ::before {
-    @include text.fancy;
-  }
-
-  blockquote {
-    > *:not(.cite) {
-      font-size: var(--larger);
-      font-style: italic;
-    }
-
-    em,
-    i {
-      background: var(--mark-bg);
-    }
-  }
-
-  mark,
-  code:not(pre *) {
+  em,
+  i {
     background: var(--mark-bg);
-    color: var(--text);
   }
+}
+
+mark,
+code:not(pre *) {
+  background: var(--mark-bg);
+  color: var(--text);
 }

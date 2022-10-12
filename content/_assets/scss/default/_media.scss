@@ -1,19 +1,17 @@
-@mixin css {
-  figure {
-    display: grid;
-    gap: var(--gap, 1em);
-    overflow-x: auto;
+figure {
+  display: grid;
+  gap: var(--gap, 1em);
+  overflow-x: auto;
 
-    table {
-      font-size: var(--smaller);
-    }
+  table {
+    font-size: var(--smaller);
   }
+}
 
-  figcaption {
-    font-style: italic;
+figcaption {
+  font-style: italic;
 
-    > * {
-      margin-block: 0;
-    }
+  > * {
+    margin-block: 0;
   }
 }

@@ -16,9 +16,12 @@ styles:
   - title: features
     url: layer/features.css
     layer: features
+  - title: layout
+    url: layer/layout.css
+    layer: layout
   - title: theme
+    url: layer/theme.css
     layer: theme
-    url: all.css
 scripts:
   - scripts.js
 theme:

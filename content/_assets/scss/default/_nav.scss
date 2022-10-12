@@ -1,5 +1,3 @@
-@mixin css {
-  [aria-current='page'] {
-    --link-color: currentcolor;
-  }
+[aria-current='page'] {
+  --link-color: currentcolor;
 }

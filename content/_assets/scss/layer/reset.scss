@@ -1,5 +1,5 @@
-@use '../reset';
+@use 'sass:meta';
 
 @layer reset {
-  @include reset.css;
+  @include meta.load-css('../reset');
 }

@@ -1,38 +1,36 @@
-@mixin css {
-  dd,
-  dir,
-  menu,
-  ol,
-  ul,
-  blockquote,
-  figure {
-    padding-inline: 1em;
-  }
+dd,
+dir,
+menu,
+ol,
+ul,
+blockquote,
+figure {
+  padding-inline: 1em;
+}
 
-  nav,
-  header,
-  main,
-  footer,
-  section,
-  article,
-  details {
-    margin-block: 1em;
-  }
+nav,
+header,
+main,
+footer,
+section,
+article,
+details {
+  margin-block: 1em;
+}
 
-  main {
-    border-block: thick double;
-    padding-block: 1em;
-  }
+main {
+  border-block: thick double;
+  padding-block: 1em;
+}
 
-  table {
-    width: 100%;
-  }
+table {
+  width: 100%;
+}
 
-  summary {
-    cursor: pointer;
-  }
+summary {
+  cursor: pointer;
+}
 
-  p:empty {
-    display: none;
-  }
+p:empty {
+  display: none;
 }

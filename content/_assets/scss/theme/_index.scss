@@ -1,53 +1,5 @@
-@use 'sass:meta';
-
-@use 'colors';
-@use 'sizes';
-@use 'fonts';
-@use 'type';
-@use 'headings';
-@use 'media';
-
-@use 'layout';
-@use 'page';
-
-@mixin css {
-  @include fonts.files;
-  @include fonts.css;
-
-  html {
-    @each $name, $val in meta.module-variables('colors') {
-      --#{$name}: #{$val};
-    }
-
-    @include colors.theme;
-    @include sizes.theme;
-
-    border-block: thick solid var(--AccentColor);
-  }
-
-  @include type.css;
-  @include headings.css;
-  @include media.css;
-
-  @include layout.css;
-  @include page.css;
-
-  html::after {
-    @include media.dim;
-
-    background: linear-gradient(
-        var(--flag-angle, to bottom right),
-        powderblue 0% 20%,
-        pink 20% 40%,
-        white 40% 60%,
-        pink 60% 80%,
-        powderblue 80% 100%
-      )
-      no-repeat scroll;
-    border-block-start: inherit;
-    content: '';
-    display: block;
-    height: max(50vh, var(--spacer));
-    margin-block-start: var(--gap, 1em);
-  }
-}
+@forward 'fonts';
+@forward 'type';
+@forward 'headings';
+@forward 'site';
+@forward 'page';

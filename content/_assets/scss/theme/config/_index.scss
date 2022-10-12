@@ -1,0 +1,22 @@
+@use 'sass:meta';
+
+@use 'colors';
+@use 'fonts';
+@use 'sizes';
+@use 'media';
+
+@include fonts.files;
+
+html {
+  @each $name, $val in meta.module-variables('colors') {
+    --#{$name}: #{$val};
+  }
+
+  @include colors.theme;
+  @include sizes.theme;
+}
+
+img,
+picture {
+  @include media.dim;
+}
