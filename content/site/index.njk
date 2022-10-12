@@ -5,7 +5,7 @@ title: Miriam Eric Suzanne
 eleventyExcludeFromCollections: true
 eleventyComputed:
   summary: |
-    {{ welcome.random | random | md | safe }}
+    {{ welcome.random | random | safe }}
 ---
 
 {% set event_list = collections.all | getEvents | notPast %}
