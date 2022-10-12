@@ -81,7 +81,7 @@
     "prettier": "^1.18.2",
     "rollup": "^2.1.0",
     "sanitize-html": "^2.7.0",
-    "sass": "^1.54.4",
+    "sass": "^1.55.0",
     "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard-scss": "^5.0.0",
