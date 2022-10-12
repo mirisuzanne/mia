@@ -1,20 +1,22 @@
-@mixin css {
-  html {
-    font-size: max(1em, 20px);
-  }
+html {
+  font-size: max(1em, 20px);
+}
 
-  body {
-    margin: var(--gap, 1em) var(--margin, var(--gap, 1em));
-  }
+body {
+  margin: var(--gap, 1em) var(--margin, var(--gap, 1em));
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  li {
-    max-width: var(--measure, 75ch);
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  max-width: var(--measure, 75ch);
+}
+
+[hidden] {
+  display: none !important;
 }

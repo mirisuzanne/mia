@@ -1,25 +1,9 @@
-@mixin css {
-  #summary {
-    --main-column: wide;
+#summary,
+.p-summary {
+  font-style: italic;
 
-    font-size: var(--huge);
-
-    > :first-child {
-      margin-block-start: 0;
-    }
-
-    > :last-child {
-      margin-block-end: 0;
-    }
-  }
-
-  #summary,
-  .p-summary {
-    font-style: italic;
-
-    em,
-    i {
-      background: var(--mark-bg);
-    }
+  em,
+  i {
+    background: var(--mark-bg);
   }
 }

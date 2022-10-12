@@ -1,125 +1,125 @@
-$h: h1, h2, h3, h4, h5, h6;
-
-@mixin css {
-  // headers
-  header {
-    #{$h},
-    p {
-      margin-block: 0;
-    }
+// headers
+header {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-block: 0;
   }
+}
 
-  // measure
-  #{$h},
-  p,
-  li {
-    max-width: var(--measure, 75ch);
+// measure
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  max-width: var(--measure, 75ch);
+}
+
+// lists
+ul,
+ol {
+  padding-inline-start: calc(var(--outset, 0px) + var(--gap, 1em));
+}
+
+li {
+  --outset: 0px;
+
+  &:where(:not(:first-child)) {
+    margin-block-start: var(---half-shim, 0.125em);
   }
+}
 
-  // lists
-  ul,
-  ol {
-    padding-inline-start: calc(var(--outset, 0px) + var(--gap, 1em));
-  }
+// tables
+table {
+  width: 100%;
+}
 
-  li {
+th {
+  text-align: var(--th-align, left);
+  padding: var(--th-padding, var(--th-block, 0) var(--th-inline, var(--shim)));
+}
+
+td {
+  text-align: var(--td-align, left);
+  padding: var(--td-padding, var(--td-block, 0) var(--td-inline, var(--shim)));
+}
+
+// block
+blockquote {
+  border-inline-start: thick solid var(--border, currentColor);
+  margin-inline: 0;
+  padding-inline: var(--gap, 1em);
+
+  & > * {
     --outset: 0px;
-
-    &:where(:not(:first-child)) {
-      margin-block-start: var(---half-shim, 0.125em);
-    }
   }
+}
 
-  // tables
-  table {
-    width: 100%;
+article + article {
+  margin-block-start: var(--spacer);
+}
+
+details,
+figure,
+pre {
+  background-color: var(--shadow, hsl(0deg 0% 0% / 12.5%));
+  margin-inline: var(--outset, 0);
+  padding: var(--gap, 1em);
+
+  > * {
+    --outset: 0px;
   }
+}
 
-  th {
-    text-align: var(--th-align, left);
-    padding: var(
-      --th-padding,
-      var(--th-block, 0) var(--th-inline, var(--shim))
-    );
+details {
+  padding-block: var(--half-gap);
+}
+
+pre code {
+  display: block;
+  overflow: auto;
+}
+
+summary {
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  margin: var(--spacer, 2em) 0;
+
+  &::after {
+    content: var(--hr, '* * *');
+    color: var(--border, inherit);
   }
+}
 
-  td {
-    text-align: var(--td-align, left);
-    padding: var(
-      --td-padding,
-      var(--td-block, 0) var(--td-inline, var(--shim))
-    );
-  }
+// inline
+tt,
+code,
+kbd,
+samp {
+  font-family: var(--font-code, var(--var-mono, var(--ui-mono)));
+  font-size: var(--smaller, 0.8em);
+}
 
-  // block
-  blockquote {
-    border-inline-start: thick solid var(--border, currentColor);
-    margin-inline: 0;
-    padding-inline: var(--gap, 1em);
+::selection {
+  background-color: var(--Highlight);
+  color: var(--HighlightText);
+}
 
-    & > * {
-      --outset: 0px;
-    }
-  }
-
-  article + article {
-    margin-block-start: var(--spacer);
-  }
-
-  details,
-  figure,
-  pre {
-    background-color: var(--shadow, hsl(0deg 0% 0% / 12.5%));
-    margin-inline: var(--outset, 0);
-    padding: var(--gap, 1em);
-
-    > * {
-      --outset: 0px;
-    }
-  }
-
-  details {
-    padding-block: var(--half-gap);
-  }
-
-  pre code {
-    display: block;
-    overflow: auto;
-  }
-
-  summary {
-    font-weight: bold;
-  }
-
-  hr {
-    border: 0;
-    display: flex;
-    height: auto;
-    justify-content: center;
-    margin: var(--spacer, 2em) 0;
-
-    &::after {
-      content: var(--hr, '* * *');
-      color: var(--border, inherit);
-    }
-  }
-
-  // inline
-  tt,
-  code,
-  kbd,
-  samp {
-    font-family: var(--font-code, var(--var-mono, var(--ui-mono)));
-    font-size: var(--smaller, 0.8em);
-  }
-
-  ::selection {
-    background-color: var(--Highlight);
-    color: var(--HighlightText);
-  }
-
-  mark {
-    background-color: var(--Highlight);
-    color: var(--HighlightText);
-  }
+mark {
+  background-color: var(--Highlight);
+  color: var(--HighlightText);
 }

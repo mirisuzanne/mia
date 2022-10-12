@@ -1,0 +1,59 @@
+// --------------
+
+$-border: thin solid var(--border);
+
+@mixin -flex-border {
+  border-block-end: $-border;
+  content: '';
+  flex: 1;
+}
+
+// --------------
+
+#page-header {
+  --main-column: extra;
+  --measure: 100%;
+
+  .meta,
+  .venue {
+    align-items: center;
+    display: flex;
+    gap: var(--shim);
+  }
+
+  .meta {
+    margin-block-end: var(--gap);
+
+    &::after {
+      @include -flex-border;
+    }
+  }
+
+  .venue {
+    margin-block-start: var(--gap);
+
+    &::before {
+      @include -flex-border;
+    }
+  }
+}
+
+// --------------
+
+.title-group {
+  &:first-child {
+    border-block-start: $-border;
+    padding-block-start: calc(var(--gap) + var(--line) * 0.25);
+  }
+
+  &:last-child {
+    border-block-end: $-border;
+    padding-block-end: calc(var(--gap) + var(--line) * 0.5);
+  }
+}
+
+// --------------
+
+[aria-roledescription='subtitle'] {
+  max-width: initial;
+}

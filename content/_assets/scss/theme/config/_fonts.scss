@@ -1,0 +1,41 @@
+@use '../../npm/alegreya';
+@use '../../npm/jetbrains';
+@use 'sass:map';
+
+$-fonts-dir: '/fonts';
+$-chars: ('latin', 'latin-ext');
+$-uni-serif: ();
+$-uni-mono: ();
+
+@each $char in $-chars {
+  $-uni-serif: map.set(
+    $-uni-serif,
+    $char,
+    map.get(alegreya.$unicodeMap, $char)
+  );
+  $-uni-mono: map.set($-uni-mono, $char, map.get(jetbrains.$unicodeMap, $char));
+}
+
+@mixin files {
+  @include alegreya.fontFaceVariable(
+    $fontDir: $-fonts-dir,
+    $unicodeMap: $-uni-serif
+  );
+
+  @include jetbrains.fontFaceVariable(
+    $fontDir: $-fonts-dir,
+    $unicodeMap: $-uni-mono
+  );
+
+  @include alegreya.fontFaceVariable(
+    $fontDir: $-fonts-dir,
+    $style: italic,
+    $unicodeMap: $-uni-serif
+  );
+
+  @include jetbrains.fontFaceVariable(
+    $fontDir: $-fonts-dir,
+    $style: italic,
+    $unicodeMap: $-uni-mono
+  );
+}

@@ -34,6 +34,7 @@ $mark-dark: color.change($accent-dark, $alpha: 0.2);
   --complement: var(--complement-dark);
   --complement-text: var(--bg);
   --mark: var(--mark-light);
+  --mark-text: var(--text);
   --shadow: hsl(0deg 0% 0% / 12.5%);
   --image-brightness: 100%;
 }
@@ -46,6 +47,7 @@ $mark-dark: color.change($accent-dark, $alpha: 0.2);
   --complement: var(--complement-light);
   --complement-text: var(--bg);
   --mark: var(--mark-dark);
+  --mark-text: var(--text);
   --shadow: hsl(0deg 0% 0% / 25%);
   --image-brightness: 80%;
 }
@@ -71,7 +73,9 @@ $mark-dark: color.change($accent-dark, $alpha: 0.2);
   --action: var(--accent);
   --active: var(--complement);
   --highlight: var(--accent);
+  --highlight-text: var(--accent-text);
   --selected: var(--complement);
+  --selected-text: var(--complement-text);
   --field-bg: var(--shadow);
   --btn-bg: var(--shadow);
   --text-gradient: radial-gradient(

@@ -1,72 +1,28 @@
-@use '../../../../node_modules/@fontsource/alegreya/scss/mixins' as alegreya;
-@use '../../../../node_modules/@fontsource/jetbrains-mono/scss/mixins' as jetbrains;
-@use 'sass:map';
+@supports (font-variation-settings: normal) {
+  html {
+    --var-serif: 'AlegreyaVariable', var(--ui-serif);
+    --var-mono: 'JetBrains MonoVariable', var(--ui-mono);
 
-$-fonts-dir: '../fonts';
-$-chars: ('latin', 'latin-ext');
-$-uni-serif: ();
-$-uni-mono: ();
+    font-display: optional;
+  }
 
-@each $char in $-chars {
-  $-uni-serif: map.set(
-    $-uni-serif,
-    $char,
-    map.get(alegreya.$unicodeMap, $char)
-  );
-  $-uni-mono: map.set($-uni-mono, $char, map.get(jetbrains.$unicodeMap, $char));
-}
+  [data-type~='smallcaps'] {
+    font-variant-caps: small-caps;
+  }
 
-@mixin files {
-  @include alegreya.fontFaceVariable(
-    $fontDir: $-fonts-dir,
-    $unicodeMap: $-uni-serif
-  );
+  [data-type~='allcaps'] {
+    font-variant-caps: all-small-caps;
+  }
 
-  @include jetbrains.fontFaceVariable(
-    $fontDir: $-fonts-dir,
-    $unicodeMap: $-uni-mono
-  );
+  [data-numbers='tabular'] {
+    font-variant-numeric: tabular-nums;
+  }
 
-  @include alegreya.fontFaceVariable(
-    $fontDir: $-fonts-dir,
-    $style: italic,
-    $unicodeMap: $-uni-serif
-  );
+  [data-numbers='lining'] {
+    font-variant-numeric: lining-nums;
+  }
 
-  @include jetbrains.fontFaceVariable(
-    $fontDir: $-fonts-dir,
-    $style: italic,
-    $unicodeMap: $-uni-mono
-  );
-}
-
-@mixin css {
-  @supports (font-variation-settings: normal) {
-    html {
-      --var-serif: 'AlegreyaVariable', var(--ui-serif);
-      --var-mono: 'JetBrains MonoVariable', var(--ui-mono);
-
-      font-display: optional;
-    }
-
-    [data-type~='smallcaps'] {
-      font-variant-caps: small-caps;
-    }
-
-    [data-type~='allcaps'] {
-      font-variant-caps: all-small-caps;
-    }
-
-    [data-numbers='tabular'] {
-      font-variant-numeric: tabular-nums;
-    }
-
-    [data-numbers='lining'] {
-      font-variant-numeric: lining-nums;
-    }
-
-    [data-numbers='fractions'] {
-      font-variant-numeric: diagonal-fractions;
-    }
+  [data-numbers='fractions'] {
+    font-variant-numeric: diagonal-fractions;
   }
 }

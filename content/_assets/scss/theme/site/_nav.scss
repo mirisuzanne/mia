@@ -1,0 +1,24 @@
+@use '../config/text';
+
+nav[aria-label='primary'] {
+  a:any-link {
+    color: var(--text);
+    font-style: italic;
+    text-decoration: none;
+    transition: text-decoration-thickness 150ms ease;
+  }
+
+  a:where(.has-tag):any-link {
+    text-decoration: underline var(--Link);
+  }
+
+  [aria-current='page']:any-link {
+    @include text.fancy;
+  }
+
+  [rel='home'] {
+    font-size: var(--huge);
+    padding-inline-end: var(--shim);
+    vertical-align: middle;
+  }
+}
