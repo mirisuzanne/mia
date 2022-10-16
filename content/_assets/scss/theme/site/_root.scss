@@ -1,6 +1,12 @@
 @use '../config/media';
 
 html {
+  background-image: linear-gradient(
+    to top right,
+    var(--mark),
+    transparent 15% 85%,
+    var(--mark)
+  );
   border-block: thick solid var(--AccentColor);
 
   &::after {

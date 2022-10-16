@@ -4,5 +4,6 @@
   @layer config {
     @include meta.load-css('../theme/config');
   }
+
   @include meta.load-css('../theme');
 }

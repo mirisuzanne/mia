@@ -1,5 +1,5 @@
 ---
-feature: home
+feature: true
 title: Kingdom Come
 date: 2009-05-19
 venue: Dirt Circle Dogs

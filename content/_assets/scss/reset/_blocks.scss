@@ -5,7 +5,7 @@ ol,
 ul,
 blockquote,
 figure {
-  padding-inline: 1em;
+  padding-inline: var(--gap, 1em);
 }
 
 nav,
@@ -15,12 +15,12 @@ footer,
 section,
 article,
 details {
-  margin-block: 1em;
+  margin-block: var(--gap, 1em);
 }
 
 main {
   border-block: thick double;
-  padding-block: 1em;
+  padding-block: var(--gap, 1em);
 }
 
 table {

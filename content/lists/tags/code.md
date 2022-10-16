@@ -7,10 +7,14 @@ sub: |
   & [Sass core team](/orgs/sass/)
   &c.
 summary: |
-  I made a website,
-  and then I made another one.
-  A hobby that became an accidental career --
-  where design and poetry merge with engineering.
+  It is required that HTML
+  be a common language
+  between all platforms.
+  This implies no device-specific markup,
+  _or anything which requires control
+  over fonts or colors_, for example.
+
+  ---[HTML Design Constraints](http://info.cern.ch/hypertext/WWW/MarkUp/HTMLConstraints.html)
 ---
 
 {%- set hfeed = collections.artifact | intersection(collections.code) | getPublic | filter('data.feature') -%}

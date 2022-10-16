@@ -20,10 +20,4 @@
       {%- endif -%}
     </p>
   </header>
-  {%- set item_summary = item.data.summary or item.data.sub -%}
-  {%- if item_summary -%}
-    <div class="p-summary">
-      {{- item_summary | md | safe -}}
-    </div>
-  {%- endif -%}
 </article>

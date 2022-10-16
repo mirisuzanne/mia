@@ -41,6 +41,10 @@ td {
 }
 
 // block
+section:not(:first-child) {
+  margin-block-start: var(--spacer);
+}
+
 blockquote {
   border-inline-start: thick solid var(--border, currentColor);
   margin-inline: 0;
@@ -49,10 +53,6 @@ blockquote {
   & > * {
     --outset: 0px;
   }
-}
-
-article + article {
-  margin-block-start: var(--spacer);
 }
 
 details,
