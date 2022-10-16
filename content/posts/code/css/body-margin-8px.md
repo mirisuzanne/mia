@@ -92,11 +92,12 @@ provided in the CSS specifications.
 ~~I'm not sure if there's a more recent version somewhere,
 but I couldn't find it?~~
 
-**Update:**
+{% callout 'update', '2022-07-27' -%}
 The recommended default styles
 are now part of the
 [HTML Living Standard](https://html.spec.whatwg.org/multipage/rendering.html#rendering),
 rather than the CSS specification.
+{%- endcallout %}
 
 <details data-pattern="figure">
 <summary>CSS 2.2 default style sheet</summary>

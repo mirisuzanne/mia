@@ -38,7 +38,8 @@
     "serve": "npm-run-all build:assets build:styles -p eleventy:serve watch:js watch:sass",
     "build:styles": "run-s sass",
     "build:assets": "npm-run-all assets:clean -p js",
-    "build": "run-s build:assets build:styles eleventy"
+    "build": "run-s build:assets build:styles eleventy",
+    "webmentions": "node mentions/fetch.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "2.0.0-canary.16",
@@ -65,6 +66,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-simple-import-sort": "^5.0.2",
+    "fs-extra": "^10.1.0",
     "husky": "^4.2.3",
     "js-yaml": "^3.13.1",
     "lint-staged": "^10.0.8",
@@ -77,6 +79,7 @@
     "markdown-it-ins": "^3.0.1",
     "markdown-it-mark": "^3.0.0",
     "netlify-plugin-cache": "^1.0.3",
+    "node-fetch": "2.6.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "rollup": "^2.1.0",
@@ -86,7 +89,8 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard-scss": "^5.0.0",
     "stylelint-prettier": "^2.0.0",
-    "stylelint-scss": "^4.3.0"
+    "stylelint-scss": "^4.3.0",
+    "truncate-html": "^1.0.4"
   },
   "husky": {
     "hooks": {

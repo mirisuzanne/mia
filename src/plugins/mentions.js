@@ -1,5 +1,7 @@
 'use strict';
+
 const sanitizeHTML = require('sanitize-html');
+const truncate = require('truncate-html');
 
 // define which types of webmentions are included by default
 // possible values listed here:
@@ -8,53 +10,56 @@ const defaultTypes = ['mention-of', 'in-reply-to'];
 
 // sort webmentions by published timestamp chronologically.
 // swap a.published and b.published to reverse order.
-const orderByDate = (a, b) => new Date(b.published) - new Date(a.published);
+const orderByDate = (a, b) => new Date(a.published) - new Date(b.published);
 
-const forUrl = (webMentions, url) =>
-  webMentions.children
-    .filter((entry) => entry['wm-target'] === url)
-    .filter((entry) => entry['wm-private'] === false)
-    .sort(orderByDate);
+const normalizeURL = (input) => {
+  const url = new URL(input);
+  url.search = url.hash = '';
+  const output = url.toString();
+  if (!output.endsWith('/')) {
+    return `${output}/`;
+  }
+  return output;
+};
 
-const getTypes = (mentions, allow) => {
-  // clean webmention content for output
-  const clean = (entry) => {
-    const { html, text } = entry.content;
-    // really long html mentions, usually newsletters or compilations
-    const isLong = html && html.length > 2000;
+// clean webmention content for output
+const clean = (entry) => {
+  const { html, text } = entry.content;
 
-    entry.content.value = isLong
-      ? `${text.substring(0, 250)}…`
-      : sanitizeHTML(html || text);
+  if (html) {
+    let truncated = truncate(html, 50, { byWords: true, ellipsis: '…' });
+    // Strip non-alphanumeric trailing chars (e.g. commas, periods):
+    if (
+      truncated.endsWith('…') &&
+      truncated.slice(-2, -1).match(/[^A-Z|a-z|0-9]/) !== null
+    ) {
+      truncated = `${truncated.slice(0, -2)}…`;
+    }
+    entry.content.value = sanitizeHTML(truncated);
+  } else {
+    entry.content.value = sanitizeHTML(text);
+  }
 
-    return entry;
-  };
+  return entry;
+};
 
-  // only allow webmentions that have an author name and a timestamp
-  const checkRequiredFields = (entry) => {
-    const { author, published, content } = entry;
-    return (
-      Boolean(author) &&
-      Boolean(author.name) &&
-      Boolean(published) &&
-      Boolean(content)
-    );
-  };
-
+const getTypes = (mentions, allow) =>
   // run all of the above for each webmention that targets the current URL
-  return mentions
+  mentions
     .filter((entry) => (allow || defaultTypes).includes(entry['wm-property']))
-    .filter(checkRequiredFields)
     .sort(orderByDate)
     .map(clean);
-};
 
-module.exports = {
-  forUrl,
-  getTypes,
-};
+const forUrl = (mentions, url, allow) =>
+  getTypes(
+    mentions.children.filter(
+      (entry) =>
+        normalizeURL(entry['wm-target']) === normalizeURL(url) &&
+        !entry['wm-private'],
+    ),
+    allow,
+  );
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('mentionsForUrl', forUrl);
-  eleventyConfig.addFilter('mentionTypes', getTypes);
 };
