@@ -7,4 +7,9 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+
+  &,
+  * {
+    text-decoration-color: var(--text);
+  }
 }
