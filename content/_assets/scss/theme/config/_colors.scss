@@ -49,7 +49,7 @@ $mark-dark: color.change($accent-dark, $alpha: 0.2);
   --mark: var(--mark-dark);
   --mark-text: var(--text);
   --shadow: hsl(0deg 0% 0% / 25%);
-  --image-brightness: 80%;
+  --image-brightness: 95%;
 }
 
 @mixin theme {
