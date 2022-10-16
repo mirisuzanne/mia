@@ -23,17 +23,19 @@
 {%- endmacro %}
 
 {% macro venue_link(venue, url, tags, rel, nav) %}
-  {%- set rel = nav.relations[rel] -%}
-  {%- set class = ['h-cite h-card', rel.class] | join(' ') if rel else none -%}
+  {%- if venue and url and rel -%}
+    {%- set rel = nav.relations[rel] -%}
+    {%- set class = ['h-cite h-card', rel.class] | join(' ') if rel else none -%}
 
-  {{- rel.intro if rel else none }}
-  {{ utility.link_if(
-    content=venue | mdInline | safe,
-    url=url,
-    attrs={
-      'class': class or 'h-card org'
-    }
-  ) -}}
+    {{- rel.intro if rel else none }}
+    {{ utility.link_if(
+      content=venue | mdInline | safe,
+      url=url,
+      attrs={
+        'class': class or 'h-card org'
+      }
+    ) -}}
+  {%- endif -%}
 {% endmacro %}
 
 {% macro artifact_link(name, url, nav) %}

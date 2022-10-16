@@ -2,17 +2,16 @@
 {%- import 'content.macros.njk' as content -%}
 
 {%- set absoluteUrl = page.url | url | absoluteUrl(site.url) -%}
-{%- set url_mentions = webmentions | mentionsForUrl(absoluteUrl) -%}
-{%- set mentions = url_mentions | mentionTypes -%}
+{%- set mentions = webmentions | mentionsForUrl(absoluteUrl) -%}
 
-{%- set is_post = tags | intersection(nav.feed) -%}
+{%- set is_post = tags | intersection(nav.feed) | length > 0 -%}
 {%- set is_artifact = tags | includes('artifact') -%}
 
 {% if mentions | length and (is_post or is_artifact) %}
 <section id="webmentions" aria-labelledby="webmentions-label">
   <h2 id="webmentions-label">WebMentions</h2>
 
-  {% for webmention in mentions | reverse %}
+  {% for webmention in mentions %}
     {% set attrs = {
       'class': 'webmention h-cite p-comment',
       'id': ['webmention', webmention['wm-id']] | join('-'),

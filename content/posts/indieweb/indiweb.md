@@ -118,7 +118,7 @@ Every time I think I have the basics in place,
 I find some other set of instructions
 suggesting there's another step to take.
 
-**Update:**
+{% callout 'update', '2022-06-05' -%}
 I seem to have things working here now,
 but I'm still not entirely clear
 on how it works.
@@ -133,6 +133,7 @@ and I'm not sure which validators to test against.
 If I want live updates
 (this is a static site)
 there's still more to learn.
+{%- endcallout %}
 
 
 ## A Proof Of Concept (for developers only)

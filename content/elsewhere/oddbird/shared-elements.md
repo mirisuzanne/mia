@@ -24,3 +24,12 @@ summary: |
   but what if we apply it to individual elements
   with changing styles on a single page?
 ---
+
+> Since [Single Page App] transitions are supported,
+> and SPA navigation happens entirely in-page,
+> a ‘page’ in this case is just _any given state of the document_.
+> We can capture the state of things at one moment,
+> define that as the starting page,
+> make any changes we want,
+> and define the results as our ending page –-
+> then animate between them.

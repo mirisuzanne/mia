@@ -5,6 +5,14 @@ date: 2022-06-09
 tags:
   - webmentions
   - code
+callout:
+  - date: 2022-06-11
+    update: |
+      There is a
+      [shared blocklist](https://github.com/sw-yx/domainblocklist)
+      maintained by
+      [Shawn Wang](https://www.swyx.io/),
+      which I'm now using.
 summary: |
   The other day, I posted an article about
   [implementing webmentions](/2022/06/04/indiweb/)
@@ -85,9 +93,3 @@ But there has to be a better way, right?
 Right?
 
 _There has to be a better way, right?_
-
-## Update (2022-06-11)
-
-There is a [shared blocklist](https://github.com/sw-yx/domainblocklist)
-maintained by [Shawn Wang](https://www.swyx.io/),
-which I'm now using and will contribute back to.
