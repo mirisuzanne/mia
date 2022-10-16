@@ -26,12 +26,25 @@ gallery:
     - img: 2022/roller/big-dice.jpg
       alt: |
         AI generated
+        big dice-like white boulder
+        with strange facets and black dots
+        sitting in a mountain range
     - img: 2022/roller/body-dice.jpg
       alt: |
         AI generated
+        black and white, a
+        muscular body without a head
+        leans over a large dice
+        with illegible markings –
+        there are mountains in the background
     - img: 2022/roller/dice-mountain.jpg
       alt: |
         AI generated
+        mountain side
+        with what might be people,
+        some large boulders,
+        and a massive distorted dice-like
+        object above them in the sky
   caption: |
     How long can you spend
     [generating AI art](https://huggingface.co/spaces/stabilityai/stable-diffusion)
