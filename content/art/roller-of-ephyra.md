@@ -75,6 +75,14 @@ Keep rolling the dice until one of the following:
 
 The game ends when any player gives up.
 
+## Strategy
+
+The more dice you roll, the farther you might move.
+But fewer dice will move you more quickly.
+
+Does it matter?
+No, it does not.
+
 ## Game Art
 
 {% import "content.macros.njk" as content %}
