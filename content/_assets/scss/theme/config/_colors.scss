@@ -17,17 +17,20 @@
 // these are converted to custom properties
 // in theme/_index.scss
 $dark: darkslategray;
-$darker: multi-scale(darkslategray, $blackness: 20%, $lightness: -70%);
+$darker: multi-scale($dark, $blackness: 20%, $lightness: -70%);
 $light: azure;
 $accent-light: hotpink;
 $complement-light: darkturquoise;
 $accent-dark: mediumvioletred;
+$bg-accent-dark: color.mix($accent-dark, $darker, 8%);
+$bg-accent-light: color.mix($accent-light, $light, 8%);
 $complement-dark: teal;
 $mark-light: color.change($accent-light, $alpha: 0.2);
 $mark-dark: color.change($accent-dark, $alpha: 0.2);
 
 @mixin light {
   --bg: var(--light);
+  --bg-alt: var(--bg-accent-light);
   --text: var(--dark);
   --accent: var(--accent-dark);
   --accent-text: var(--bg);
@@ -41,6 +44,7 @@ $mark-dark: color.change($accent-dark, $alpha: 0.2);
 
 @mixin dark {
   --bg: var(--darker);
+  --bg-alt: var(--bg-accent-dark);
   --text: var(--light);
   --accent: var(--accent-light);
   --accent-text: var(--bg);

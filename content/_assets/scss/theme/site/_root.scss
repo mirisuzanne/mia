@@ -1,12 +1,32 @@
 @use '../config/media';
 
 html {
-  background-image: linear-gradient(
-    to top right,
-    var(--mark),
-    transparent 15% 85%,
-    var(--mark)
-  );
+  /*
+  * Adapted from: https://css-pattern.com/
+  * By: Temani Afif (https://twitter.com/ChallengesCss)
+  */
+  --bgp-window: calc(var(--spacer) * 6);
+  --bgp-fade: 50%;
+  --bgp-s: var(--spacer); /* control the size */
+  --bgp-1: var(--bg);
+  --bgp-2: var(--bg-alt);
+  --bgp-hs: calc(var(--bgp-s) / 2);
+  --bgp-hp-ss: var(--bgp-hs) var(--bgp-hs) / var(--bgp-s) var(--bgp-s);
+  --bgp-0p-ss: 0 0 / var(--bgp-s) var(--bgp-s);
+  --bgp-grad: var(--bgp-1) 0% 5%, var(--bgp-2) 6% 15%, var(--bgp-1) 16% 25%,
+    var(--bgp-2) 26% 35%, var(--bgp-1) 36% 45%, var(--bgp-2) 46% 55%,
+    var(--bgp-1) 56% 65%, var(--bgp-2) 66% 75%, var(--bgp-1) 76% 85%,
+    var(--bgp-2) 86% 95%, transparent 96%;
+
+  background: radial-gradient(
+      175% var(--bgp-window, 12em) at top left,
+      transparent var(--bgp-fade, 50%),
+      var(--bg) 100%
+    ),
+    radial-gradient(50% 50% at 100% 0, var(--bgp-grad)) var(--bgp-0p-ss),
+    radial-gradient(50% 50% at 0 100%, var(--bgp-grad)) var(--bgp-0p-ss),
+    radial-gradient(50% 50%, var(--bgp-grad)) var(--bgp-0p-ss),
+    radial-gradient(50% 50%, var(--bgp-grad)) var(--bgp-hp-ss), var(--bgp-1);
   border-block: thick solid var(--AccentColor);
 
   &::after {

@@ -1,6 +1,8 @@
 @use '../config/text';
 
 nav[aria-label='primary'] {
+  filter: drop-shadow(1px 1px 0 var(--bg)) drop-shadow(2px 2px 3px var(--bg));
+
   a:any-link {
     color: var(--text);
     font-style: italic;

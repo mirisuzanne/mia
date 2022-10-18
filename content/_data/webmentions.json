@@ -1,6 +1,28 @@
 {
-  "lastFetched": "2022-10-16T03:46:52.566Z",
+  "lastFetched": "2022-10-18T03:51:17.696Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ppk.css 🇪🇺",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8a8cee8292c88f342b704294d7d3da308ac8b927a175828f0843ef01d195deae.jpg",
+        "url": "https://twitter.com/ppk"
+      },
+      "url": "https://twitter.com/ppk/status/1581786202549948417",
+      "published": "2022-10-16T23:16:33+00:00",
+      "wm-received": "2022-10-17T04:28:31Z",
+      "wm-id": 1540051,
+      "wm-source": "https://brid.gy/comment/twitter/terriblemia/1581776424616108033/1581786202549948417",
+      "wm-target": "https://www.miriamsuzanne.com/art/roller-of-ephyra/",
+      "content": {
+        "html": "Even less playable:\n\nRoll one die until all players agree with the result. Then move that many spaces.\n<a class=\"u-mention\" href=\"https://twitter.com/TerribleMia\"></a>",
+        "text": "Even less playable:\n\nRoll one die until all players agree with the result. Then move that many spaces."
+      },
+      "in-reply-to": "https://www.miriamsuzanne.com/art/roller-of-ephyra/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
