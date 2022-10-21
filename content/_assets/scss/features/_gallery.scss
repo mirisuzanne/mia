@@ -2,8 +2,10 @@
   display: grid;
   gap: var(--gap, 1em);
 
-  @media (min-width: 35em) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  &.multi {
+    @media (min-width: 35em) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   img,

@@ -1,13 +1,13 @@
-@use '../config/media';
-
 html {
+  --html-border: thick solid var(--AccentColor);
+
   /*
   * Adapted from: https://css-pattern.com/
   * By: Temani Afif (https://twitter.com/ChallengesCss)
   */
   --bgp-window: calc(var(--spacer) * 6);
   --bgp-fade: 50%;
-  --bgp-s: var(--spacer); /* control the size */
+  --bgp-s: max(3em, var(--spacer)); /* control the size */
   --bgp-1: var(--bg);
   --bgp-2: var(--bg-alt);
   --bgp-hs: calc(var(--bgp-s) / 2);
@@ -27,24 +27,5 @@ html {
     radial-gradient(50% 50% at 0 100%, var(--bgp-grad)) var(--bgp-0p-ss),
     radial-gradient(50% 50%, var(--bgp-grad)) var(--bgp-0p-ss),
     radial-gradient(50% 50%, var(--bgp-grad)) var(--bgp-hp-ss), var(--bgp-1);
-  border-block: thick solid var(--AccentColor);
-
-  &::after {
-    @include media.dim;
-
-    background: linear-gradient(
-        var(--flag-angle, to bottom right),
-        powderblue 0% 20%,
-        pink 20% 40%,
-        white 40% 60%,
-        pink 60% 80%,
-        powderblue 80% 100%
-      )
-      no-repeat scroll;
-    border-block-start: inherit;
-    content: '';
-    display: block;
-    height: max(50vh, var(--spacer));
-    margin-block-start: var(--gap, 1em);
-  }
+  border-block: var(--html-border);
 }

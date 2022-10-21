@@ -1,5 +1,7 @@
 @use 'sass:meta';
 
+// @use '../features';
+
 @layer features {
   @include meta.load-css('../features');
 }

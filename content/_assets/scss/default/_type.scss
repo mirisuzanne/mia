@@ -69,6 +69,10 @@ pre {
 
 details {
   padding-block: var(--half-gap);
+
+  &:only-child {
+    margin-block: 0;
+  }
 }
 
 pre code {

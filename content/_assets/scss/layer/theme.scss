@@ -1,5 +1,8 @@
 @use 'sass:meta';
 
+// @use '../theme/config';
+// @use '../theme';
+
 @layer layout {
   @layer config {
     @include meta.load-css('../theme/config');
