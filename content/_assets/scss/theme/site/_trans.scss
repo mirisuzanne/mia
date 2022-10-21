@@ -1,0 +1,36 @@
+#trans {
+  --c1: powderblue;
+  --c2: pink;
+  --c3: teal;
+  --c4: mediumvioletred;
+  --c5: turquoise;
+  --c6: hotpink;
+  --c7: steelblue;
+  --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6),
+    var(--c7);
+  --solid-wrap: var(--solid), var(--c1);
+  --trans: var(--c1), transparent, var(--c2), transparent, var(--c3),
+    transparent, var(--c4), transparent, var(--c5), transparent, var(--c6),
+    transparent, var(--c7);
+  --trans-wrap: var(--trans), transparent, var(--c1);
+  --body-column: full;
+
+  background: radial-gradient(circle, var(--trans)),
+    conic-gradient(from 180deg, var(--trans-wrap)),
+    radial-gradient(circle, var(--trans)), conic-gradient(var(--solid-wrap));
+  background-blend-mode: overlay;
+  border-block-start: var(--html-border);
+  display: grid;
+  min-height: max(80vh, var(--spacer));
+  margin-block-start: var(--gap, 1em);
+  padding-inline: var(--margin);
+  place-content: center;
+
+  h2 {
+    color: var(--bg);
+    font-size: var(--huge);
+    mix-blend-mode: color-burn;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

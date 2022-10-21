@@ -20,11 +20,15 @@
   data=none,
   caption=none,
   content=none,
+  gallery=true,
   attrs={}
 ) -%}
 {%- set content = _fig_content(data) if data else content -%}
-<figure {{ utility.show_attrs(attrs) }}>{#
-  #}<div class="gallery">
+{%- set default_gallery = gallery and not gallery | typeCheck('string') -%}
+{%- set multi = data and data | length > 1 -%}
+{%- set gallery = 'multi' if default_gallery and multi else gallery -%}
+<figure {{ utility.show_attrs(attrs) }}>
+  <div {{ utility.attr_if('data-gallery', gallery) }}>
     {{- content | trim | safe -}}
   </div>
   {%- if caption -%}
@@ -202,6 +206,7 @@ params:
   height=500,
   theme=none,
   preview=none,
+  caption=none,
   attrs={}
 ) -%}
 {%- set content -%}
@@ -212,8 +217,8 @@ params:
   'data-slug-hash': id,
   'data-default-tab': tab or 'result',
   'data-user': user or 'miriamsuzanne',
-  'data-embed-version': "2",
-  "data-preview": preview
+  'data-embed-version': '2',
+  "data-preview": 'true' if preview else none
 }) }}>See the Pen {{ utility.link_if(
   content=title,
   url=('https://codepen.io/' + user + '/pen/' + id)
@@ -225,7 +230,7 @@ params:
   url='https://codepen.io'
 ) }}.</p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 {%- endset -%}
-{{ figure(content=content) }}
+{{ figure(content=content, caption=caption) }}
 {%- endmacro %}
 
 {% macro caniuse(

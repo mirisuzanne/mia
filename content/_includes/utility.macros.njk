@@ -4,7 +4,7 @@
   value=none
 ) %}
   {%- if value -%}
-    {%- if (value | string | lower != 'true') -%}
+    {%- if value | typeCheck('string') or (value | string | lower != 'true') -%}
       {%- set value = value | string -%}
       {%- set value = value | url if (attr == 'href') else value -%}
       {{ attr }}="{{ value }}"

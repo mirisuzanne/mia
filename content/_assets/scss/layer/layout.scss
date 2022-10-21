@@ -1,5 +1,7 @@
 @use 'sass:meta';
 
+// @use '../layout';
+
 @layer layout {
   @include meta.load-css('../layout');
 }
