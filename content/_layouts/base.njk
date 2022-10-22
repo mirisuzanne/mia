@@ -18,9 +18,7 @@
 </head>
 <body {{ utility.show_attrs(attrs.body) }}>
   <a href="#main" class="visually-hidden">skip to content</a>
-
-  {% include 'site/message.njk' %}
-  {% include 'site/nav.njk' %}
+  {% include 'site/banner.njk' %}
 
   {% set main_attrs = {
     'id': 'main',

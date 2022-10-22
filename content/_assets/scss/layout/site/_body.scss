@@ -17,7 +17,7 @@ body {
     [full-end];
   margin: 0;
 
-  > * {
+  :where(&) > * {
     grid-column: var(--body-column, wide);
     margin-block: 0;
   }

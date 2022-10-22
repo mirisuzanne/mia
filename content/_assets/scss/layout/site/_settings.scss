@@ -1,0 +1,35 @@
+@use '../../tools';
+
+#settings {
+  margin: 0;
+
+  &:not([open]) {
+    background: none;
+  }
+
+  summary {
+    color: var(--Link);
+    border-radius: 50%;
+    display: flex;
+    height: var(--line);
+    width: var(--line);
+    place-content: center;
+
+    &:hover {
+      color: var(--ActiveText);
+    }
+
+    &::marker {
+      content: none;
+    }
+  }
+
+  &[open] summary {
+    background: var(--text-gradient) var(--selected);
+    color: var(--selected-text);
+  }
+
+  .summary-text {
+    @include tools.hide;
+  }
+}

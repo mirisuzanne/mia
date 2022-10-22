@@ -1,0 +1,15 @@
+.settings {
+  display: grid;
+  gap: var(--gap);
+  padding-block: var(--gap);
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#color-scheme {
+  --display-init: block;
+}

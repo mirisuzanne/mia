@@ -1,0 +1,5 @@
+#settings {
+  &:not([open]) summary:not(:focus, :hover) {
+    opacity: 0.5;
+  }
+}
