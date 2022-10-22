@@ -1,9 +1,11 @@
-<section data-options="theme" style="display: var(--display-init, none);">
-  <h3>Color Scheme</h3>
-  {%- for theme in ['auto', 'light', 'dark'] -%}
-    {% set isCurrent = 'true' if theme == 'auto' else 'false' %}
-    <button data-set="{{ theme }}" aria-pressed="{{ isCurrent }}">
-      {{- theme -}}
-    </button>
-  {% endfor -%}
-</section>
+<fieldset id="color-scheme" style="display: var(--display-init, none);">
+  <legend>Color Scheme</legend>
+  <div data-options="theme">
+    {%- for theme in ['auto', 'light', 'dark'] -%}
+      {% set isCurrent = 'true' if theme == 'auto' else 'false' %}
+      <button data-set="{{ theme }}" aria-pressed="{{ isCurrent }}">
+        {{- theme -}}
+      </button>
+    {% endfor -%}
+  </div>
+</fieldset>

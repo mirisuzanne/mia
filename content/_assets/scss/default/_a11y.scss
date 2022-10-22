@@ -1,3 +1,5 @@
+@use '../tools';
+
 body > [href='#main'] {
   background-color: var(--btn-link-bg, var(--Link));
   color: var(--btn-link-text, var(--Canvas));
@@ -18,14 +20,6 @@ body > [href='#main'] {
   z-index: 2;
 }
 
-.visually-hidden:not(:focus) {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
+.visually-hidden {
+  @include tools.hide;
 }

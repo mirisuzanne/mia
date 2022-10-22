@@ -1,6 +1,10 @@
-<section id="settings" aria-labelledby="settings-label" data-init="show" hidden>
-  <h2 id="settings-label">Theme settings</h2>
-
-  {% include "settings/scheme.njk" %}
-  {% include "settings/css.njk" %}
-</section>
+<details id="settings" data-init="show" hidden>
+  <summary>
+    {% include "icons/paint.svg" %}
+    <span class="summary-text">Preferences</span>
+  </summary>
+  <div class="settings">
+    {% include "settings/scheme.njk" %}
+    {% include "settings/css.njk" %}
+  </div>
+</details>

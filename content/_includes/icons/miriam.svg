@@ -5,8 +5,8 @@
   height="260px"
   aria-hidden="true"
   focusable="false"
-  data-icon="miriam"
-  >
+  data-svg="miriam"
+>
   <style>
     @keyframes draw-logo {
       0% { stroke-dashoffset: 800; }

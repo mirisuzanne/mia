@@ -1,5 +1,5 @@
 export default function() {
-  const toShow = document.querySelectorAll(`[data-init~=show]`);
+  const toShow = document.querySelectorAll('[data-init~=show]');
   toShow.forEach((el) => {
     el.removeAttribute('hidden');
   });

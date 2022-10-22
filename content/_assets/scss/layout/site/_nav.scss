@@ -1,7 +1,13 @@
 nav[aria-label='primary'] {
+  --body-column: wide;
+
   display: flex;
   justify-content: space-between;
-  margin-block-start: var(--nav-space, var(--spacer));
+  margin-block: var(--gap) 0;
+
+  [hidden] + & {
+    margin-block-start: var(--spacer);
+  }
 
   a:any-link {
     text-decoration: none;
@@ -35,8 +41,4 @@ nav[aria-label='primary'] {
   flex: auto;
   stroke-width: 2;
   width: auto;
-}
-
-#message + nav {
-  --nav-space: 0;
 }

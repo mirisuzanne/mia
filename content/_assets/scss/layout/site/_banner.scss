@@ -1,0 +1,11 @@
+#banner {
+  --body-column: full;
+
+  display: grid;
+  grid-template-columns: inherit;
+  grid-template-columns: subgrid;
+
+  :where(&) > * {
+    grid-column: var(--body-column, full);
+  }
+}
