@@ -22,6 +22,10 @@
     &::marker {
       content: none;
     }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
   }
 
   &[open] summary {
