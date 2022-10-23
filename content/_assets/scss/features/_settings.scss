@@ -1,7 +1,36 @@
-.settings {
-  display: grid;
-  gap: var(--gap);
-  padding-block: var(--gap);
+#settings {
+  &[open] {
+    --icon-bg: var(--selected);
+    --icon-color: var(--selected-text);
+  }
+
+  summary {
+    align-items: center;
+    display: flex;
+    font-weight: normal;
+
+    &::marker {
+      content: none;
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  [data-icon] {
+    background: var(--icon-bg);
+    color: var(--icon-color);
+  }
+
+  .summary-text {
+    padding-inline: var(--shim);
+  }
+
+  .details {
+    display: grid;
+    gap: var(--gap);
+  }
 
   fieldset {
     border: 0;

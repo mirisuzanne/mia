@@ -1,5 +1,32 @@
+@use '../../tools';
+
 #settings {
-  &:not([open]) summary:not(:focus, :hover) {
+  &:not([open], :focus-within, :hover) {
     opacity: 0.5;
+
+    .summary-text {
+      @include tools.hide;
+    }
+  }
+
+  summary {
+    color: var(--Link);
+    font-style: italic;
+
+    &:hover {
+      color: var(--ActiveText);
+    }
+  }
+
+  [data-icon] {
+    clip-path: circle(50%);
+    overflow: hidden;
+    height: var(--line);
+    padding: var(--half-shim);
+    width: var(--line);
+  }
+
+  &[open] {
+    --icon-bg: var(--text-gradient) var(--selected);
   }
 }

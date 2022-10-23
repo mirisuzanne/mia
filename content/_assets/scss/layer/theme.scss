@@ -1,7 +1,7 @@
 @use 'sass:meta';
 
-// @use '../theme/config';
-// @use '../theme';
+@use '../theme/config';
+@use '../theme';
 
 @layer layout {
   @layer config {

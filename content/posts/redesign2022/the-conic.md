@@ -185,11 +185,3 @@ What happens if we use the trans colors?
   id='bGMXdey',
   title='Conic splash'
 ) }}
-
-{% callout 'warn' %}
-The national republican party
-has declared my trans existence
-_sexually explicit_ and _a danger to children_.
-This is going to get people killed.
-Please speak up for trans rights.
-{%- endcallout -%}

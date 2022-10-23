@@ -84,6 +84,10 @@ summary {
   font-weight: bold;
 }
 
+.details {
+  margin-block: var(--gap);
+}
+
 hr {
   border: 0;
   display: flex;
