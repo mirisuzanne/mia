@@ -19,7 +19,7 @@ summary: |
   Snow is hybrid of wish and lament.
 
   ---Yoko Ono
-
+  {.cite}
 ---
 
 Julie, Kenny, and Miriam have been working together since 2007,

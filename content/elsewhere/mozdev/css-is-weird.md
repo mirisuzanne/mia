@@ -39,10 +39,11 @@ with CSS advancing leaps and bounds over the last few years,
 but there's a real problem we can't ignore --
 the web is *display-agnostic*:
 
-  This implies no device-specific markup,
-  *or anything which requires control over fonts or colors.*
-
-  ---The [first website][cern] from CERN
+> This implies no device-specific markup,
+> *or anything which requires control over fonts or colors.*
+>
+> ---The [first website][cern] from CERN
+> {.cite}
 
 Here we are,
 putting fonts and colors on the web.
