@@ -3,10 +3,6 @@
 #settings {
   &:not([open], :focus-within, :hover) {
     opacity: 0.5;
-
-    .summary-text {
-      @include tools.hide;
-    }
   }
 
   summary {
@@ -16,10 +12,16 @@
     &:hover {
       color: var(--ActiveText);
     }
+
+    &:not([open] *, :focus, :hover) {
+      .summary-text {
+        @include tools.hide;
+      }
+    }
   }
 
   [data-icon] {
-    clip-path: circle(50%);
+    border-radius: 50%;
     overflow: hidden;
     height: var(--line);
     padding: var(--half-shim);
