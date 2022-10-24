@@ -13,7 +13,7 @@
     transparent, var(--c4), transparent, var(--c5), transparent, var(--c6),
     transparent, var(--c7);
   --trans-wrap: var(--trans), transparent, var(--c1);
-  --body-column: full;
+  --footer-column: full;
 
   background: radial-gradient(circle, var(--trans)),
     conic-gradient(from 180deg, var(--trans-wrap)),
@@ -26,7 +26,7 @@
   padding-inline: var(--margin);
   place-content: center;
 
-  h2 {
+  p {
     color: var(--bg);
     font-size: var(--huge);
     mix-blend-mode: overlay;

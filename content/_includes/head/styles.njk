@@ -7,9 +7,10 @@
   {%- endfor -%};</style>
 
 {%- for link in meta.styles | selectattr('url') -%}
+  {%- set external = link.url if '://' in link.url | string else none -%}
   {% set link_attrs = {
     'rel': 'stylesheet',
-    'href': link.url if '://' in link.url | string else ['/css/', link.url] | join,
+    'href': external or [meta.assets.css, link.url] | join,
     'data-layer': link.layer,
     'data-alt': link.alt,
     'media': 'all' if link.layer else 'print'

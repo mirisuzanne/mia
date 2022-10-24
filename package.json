@@ -21,7 +21,7 @@
   },
   "scripts": {
     "js": "rollup -c",
-    "sass": "sass content/_assets/scss:_site/css",
+    "sass": "sass src/scss:_site/assets/css",
     "prettier:js": "prettier --write \"**/*.js\"",
     "prettier:other": "prettier --write \"**/*.{json,yml}\"",
     "eslint": "eslint \"*.js\" \"**/*.js\" --fix",
@@ -31,7 +31,7 @@
     "lint:sass": "stylelint \"**/*.scss\" --fix",
     "eleventy": "eleventy",
     "eleventy:serve": "eleventy --serve --incremental",
-    "watch:sass": "sass --watch content/_assets/scss:_site/css",
+    "watch:sass": "sass --watch src/scss:_site/assets/css",
     "watch:js:compile": "rollup -c --watch",
     "watch:js": "run-p watch:js:*",
     "assets:clean": "rm -rf ./_built/",

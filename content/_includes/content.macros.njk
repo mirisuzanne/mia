@@ -167,7 +167,7 @@ params:
     {{- item.img | img(
       item.alt,
       item.size or (none if full_width else 'gallery'),
-      {'style': style} | merge(item.attrs),
+      item.attrs if item.url else {'style': style} | merge(item.attrs),
       [item.width, item.height]
     ) | safe -}}
   {%- elif item.svg -%}
@@ -189,8 +189,11 @@ params:
   {%- endif -%}
   {%- endset -%}
   {%- if item.url -%}
-    {%- set url = item.img | imgSrc if item.url | typeCheck('boolean') else item.url -%}
-    <a href="{{ url | url }}">{{ item_content | safe }}</a>
+    {{- utility.link_if(
+      content=item_content | safe,
+      url=item.img | imgSrc if item.url | typeCheck('boolean') else item.url,
+      attrs={'style': style}
+    ) -}}
   {%- else -%}
     {{ item_content | safe }}
   {%- endif -%}

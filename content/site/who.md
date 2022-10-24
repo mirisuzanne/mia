@@ -8,17 +8,10 @@ sub: |
   a.k.a [Mia]{.p-nickname} --
   [Author, Artist, and Web Developer]{.p-role}
 description: Author, Artist, and Web Developer
-hero:
-  img: headshots/mia-smashing.jpg
-  alt: |
-    Miriam with a laptop and water bottle,
-    wearing a bright yellow leather jacket,
-    trans lightning earrings,
-    and a headset mic
-    while speaking at a conference.
 eleventyComputed:
   headshots:
     - img: headshots/mia-smashing.jpg
+      span: full
       url: |
         {{ 'headshots/mia-smashing.jpg' | imgSrc }}
       attrs:
@@ -29,16 +22,6 @@ eleventyComputed:
         trans lightning earrings,
         and a headset mic
         while speaking at a conference.
-    - img: headshots/from-the-hip.jpg
-      url: |
-        {{ 'headshots/from-the-hip.jpg' | imgSrc }}
-      attrs:
-        class: u-photo
-      alt: |
-        Miriam in a spotlight,
-        standing at a mic and holding papers,
-        in front of a large blank screen.
-        From The Hip Photo watermark logo.
     - img: headshots/mia-speaking.jpg
       url: |
         {{ 'headshots/mia-speaking.jpg' | imgSrc }}
@@ -58,12 +41,18 @@ eleventyComputed:
         singing into a mic,
         with Dan on his knees playing guitar,
         and a drum set behind them.
+    - img: headshots/from-the-hip.jpg
+      span: full
+      url: |
+        {{ 'headshots/from-the-hip.jpg' | imgSrc }}
+      attrs:
+        class: u-photo
+      alt: |
+        Miriam in a spotlight,
+        standing at a mic and holding papers,
+        in front of a large blank screen.
+        From The Hip Photo watermark logo.
 summary: |
-  As a co-founder of
-  <a class="h-card p-org" href="/orgs/oddbird/">OddBird</a>,
-  <a class="h-card p-org" href="/orgs/teacup-gorilla/">Teacup Gorilla</a>,
-  and
-  <a class="h-card p-org" href="/orgs/grapefruit-lab/">Grapefruit Lab</a>
   I hope to create art & software
   that [celebrate the queerness](/why/)
   of human experience.
@@ -71,27 +60,28 @@ summary: |
 
 {% import 'contact.macros.njk' as contact %}
 
+<div class="p-note">
+  {{ bios.intro | md | safe }}
+</div>
+
+{% for detail in ['art', 'code'] %}
+<details id="{{ detail }}-bio">
+  <summary>detailed {{ detail }} bio</summary>
+  <div class="p-note">
+    {{ bios[detail] | md | safe }}
+  </div>
+</details>
+{% endfor %}
+
 ## Where to find me
 
 {{ contact.links(social) }}
-
-{% for name, bio in bios %}
-{% if name != 'intro' %}
-## {{ name | capitalize }} bio
-
-<div class="p-note">
-{{ bio | md | safe }}
-</div>
-{% endif %}
-{% endfor %}
 
 ## Photos
 
 {% import 'content.macros.njk' as content %}
 
-{{ content.figure(
-  headshots
-) }}
+{{ content.figure(headshots) }}
 
 ## Affiliations
 

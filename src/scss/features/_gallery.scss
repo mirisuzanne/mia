@@ -1,12 +1,6 @@
-.gallery {
+[data-gallery] {
   display: grid;
   gap: var(--gap, 1em);
-
-  &.multi {
-    @media (min-width: 35em) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
 
   img,
   video,
@@ -21,5 +15,15 @@
   :only-child,
   :last-child:nth-child(odd):not([style*='--span'] ~ *) {
     grid-column: 1 / -1;
+  }
+}
+
+[data-gallery='multi'] {
+  @media (min-width: 35em) {
+    grid-template-columns: [full-start] repeat(2, minmax(0, 1fr)) [full-end];
+
+    > * {
+      grid-column: var(--span);
+    }
   }
 }

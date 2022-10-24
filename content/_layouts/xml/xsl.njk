@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><xsl:value-of select="rss/channel/title"/> RSS Feed</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <style type="text/css">@import url(/css/rss.css);</style>
+    <style type="text/css">@import url({{ meta.assets.css }}rss.css);</style>
   </head>
   <body id="rss">
     <a href="#main" class="visually-hidden">skip to content</a>

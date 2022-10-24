@@ -13,7 +13,7 @@ module.exports = [
       rollupCommonjs(),
     ],
     output: {
-      file: '_built/js/scripts.js',
+      file: '_site/assets/js/scripts.js',
       format: 'iife',
     },
   },
