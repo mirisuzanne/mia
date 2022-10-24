@@ -84,6 +84,8 @@ There are a lot of CSS background pattern ideas out there:
   [CSS3 Patterns Gallery](http://projects.verou.me/css3patterns/)
 - Temani Afif's
   [CSS-Pattern.com](https://css-pattern.com/)
+- Ana Tudor's
+  [Background Patterns, Simplified by Conic Gradients](https://css-tricks.com/background-patterns-simplified-by-conic-gradients/)
 - Jim Raptis'
   [CSS Background Patterns](https://www.magicpattern.design/tools/css-backgrounds)
   tool

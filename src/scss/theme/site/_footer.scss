@@ -1,0 +1,12 @@
+#contentinfo {
+  --body-column: full;
+
+  border-block-start: medium dotted var(--border);
+  display: grid;
+  grid: inherit;
+  padding-block-start: var(--gap);
+
+  > * {
+    grid-column: var(--footer-column, main);
+  }
+}

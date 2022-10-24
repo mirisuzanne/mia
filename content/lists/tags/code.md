@@ -7,10 +7,12 @@ sub: |
   & [Sass core team](/orgs/sass/)
   &c.
 summary: |
-  At it's heart,
-  the web
-  is a collective anti-capitalist
-  art experiment.
+  We value what is good in [code];
+  but we believe in the existence of other,
+  and more vivid kinds of goodness.
+
+  ---Charlotte Brontë, maybe
+  {.cite}
 ---
 
 {%- set hfeed = collections.artifact | intersection(collections.code) | getPublic | filter('data.feature') -%}

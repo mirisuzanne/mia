@@ -1,9 +1,10 @@
 {%- import 'utility.macros.njk' as utility -%}
 
 {%- for item in meta.preload -%}
+  {% set base_url = meta.assets[item.as] %}
   {%- set item_attrs = {
     'rel': 'preload',
-    'href': item.url | url,
+    'href': [base_url, item.url] | join | url,
     'as': item.as,
     'type': item.type,
     'crossorigin': item.as == 'font' or item.cors

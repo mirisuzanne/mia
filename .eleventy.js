@@ -33,9 +33,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(configTags);
 
   // pass-through
-  eleventyConfig.addPassthroughCopy({ _built: 'assets' });
-  eleventyConfig.addPassthroughCopy({ './content/_assets/fonts': 'fonts' });
-  eleventyConfig.addPassthroughCopy({ './content/_includes/icons': 'icons' });
+  eleventyConfig.addPassthroughCopy('content/assets/fonts');
+  eleventyConfig.addPassthroughCopy('content/assets/icons/*.svg');
   eleventyConfig.addPassthroughCopy('content/favicon.svg');
   eleventyConfig.addPassthroughCopy('content/**/*.txt');
 

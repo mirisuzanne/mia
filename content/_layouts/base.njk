@@ -34,7 +34,7 @@
 
   {% set scripts = meta.scripts | concat(scripts) if scripts else meta.scripts -%}
   {%- for url in scripts -%}
-    {%- set url = url if '://' in url | string else ['/assets/js/', url] | join -%}
+    {%- set url = url if '://' in url | string else [meta.assets.js, url] | join -%}
     <script src="{{ url | url }}"></script>
   {% endfor %}
 </body>

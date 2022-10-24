@@ -1,21 +1,19 @@
 {% import 'contact.macros.njk' as contact %}
 
 <footer id="contentinfo">
-  <div class="me">
-    {% include 'site/author.njk' %}
-    {% include 'site/contact.njk' %}
-  </div>
-
   <div class="meta">
     <p>
       Copyright &copy; {% getDate 'year' %}
-      <strong>{{ site.author }}</strong>
+      <a href="/who/" class="h-card">{{ site.author }}</a>
+      |
+      <a href="/contact/">contact</a>
     </p>
 
     {{ colophon | md | safe }}
   </div>
+
+  <div id="trans" aria-labelledby="trans-label">
+    <p id="trans-label">Protect Trans Kids</p>
+  </div>
 </footer>
 
-<aside id="trans" aria-labelledby="trans-label">
-  <h2 id="trans-label">Protect Trans Kids</h2>
-</aside>

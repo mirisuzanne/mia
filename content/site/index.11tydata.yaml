@@ -1,16 +1,17 @@
-random:
+layout: format/h-feed
+permalink: '/'
+eleventyExcludeFromCollections: true
+welcome:
 - |
   This is not what I had in mind.
   I thought my website would be way cooler than this.
-  I wanted to make something like
-  the [1996 SpaceJam website](https://www.spacejam.com/1996/jam.html),
-  but about me instead.
 - |
   Someone told me that my home page
   should always be selling something.
-  _To be blunt,
-  no one who lands on your personal site
-  got there because they care about you personally._
+  Have you read
+  [No More Police](https://bookshop.org/p/books/no-more-police-a-case-for-abolition-mariame-kaba/17396993?ean=9781620977323)
+  by _Mariame Kaba_ & _Andrea Ritchie_?
+  Go buy a copy! Buy! Buy! Buy!
 - |
   The following website has been modified
   from its original version.
@@ -25,10 +26,3 @@ random:
   but there are several theories,
   including _sea of bitterness_,
   or _beloved_, or _wished-for child_.
-- |
-  We value what is good in [the web];
-  but we believe in the existence of other,
-  and more vivid kinds of goodness.
-
-  ---Charlotte Brontë, maybe
-  {.cite}
