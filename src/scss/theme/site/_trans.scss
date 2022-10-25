@@ -1,11 +1,13 @@
 #trans {
-  --c1: powderblue;
-  --c2: pink;
-  --c3: teal;
-  --c4: mediumvioletred;
-  --c5: turquoise;
-  --c6: hotpink;
-  --c7: steelblue;
+  --a1: 55deg;
+  --a2: 230deg;
+  --c1: var(--complement-light);
+  --c2: var(--accent-light);
+  --c3: var(--accent-dark);
+  --c4: var(--complement-light);
+  --c5: var(--bg-alt);
+  --c6: var(--complement-dark);
+  --c7: var(--accent-light);
   --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6),
     var(--c7);
   --solid-wrap: var(--solid), var(--c1);
@@ -16,8 +18,9 @@
   --footer-column: full;
 
   background: radial-gradient(circle, var(--trans)),
-    conic-gradient(from 180deg, var(--trans-wrap)),
-    radial-gradient(circle, var(--trans)), conic-gradient(var(--solid-wrap));
+    conic-gradient(from var(--a1), var(--trans-wrap)),
+    radial-gradient(circle, var(--trans)),
+    conic-gradient(from var(--a2), var(--solid-wrap));
   background-blend-mode: overlay;
   border-block-start: var(--html-border);
   display: grid;
@@ -26,10 +29,13 @@
   padding-inline: var(--margin);
   place-content: center;
 
+  @media (prefers-color-scheme: dark) {
+    --c1: var(--complement-dark);
+    --c7: var(--accent-dark);
+  }
+
   p {
-    color: var(--bg);
     font-size: var(--huge);
-    mix-blend-mode: overlay;
     text-align: center;
     text-transform: uppercase;
   }
