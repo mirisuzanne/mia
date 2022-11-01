@@ -1,24 +1,11 @@
 {% import 'contact.macros.njk' as contact %}
 
-{% if not (page.url == '/who/') %}
-  <section id="author" aria-labelledby="author-label" class="h-card p-author vcard">
-    {% img
-      'headshots/rss.jpg',
-      'Miriam with asymmetrical orange hair at a mic, smiling',
-      'face',
-      {'class': 'photo u-photo'}
-    %}
+<div id="author" class="h-card p-author vcard">
+  <a href="/who/" rel="author" class="p-name u-url u-uid fn url uid">
+    {{- site.author -}}
+  </a>
+  |
+  <a href="/contact/">contact</a>
 
-    <h2 id="author-label">
-      <a href="{{ '/who/' | url }}" rel="author" class="p-name u-url u-uid fn url uid">
-        {{- site.author -}}
-      </a>
-    </h2>
-
-    <div class="p-note">
-      {{ bios.intro | md | safe }}
-    </div>
-
-    {{ contact.links(social) }}
-  </section>
-{% endif %}
+  {{ contact.links(social) }}
+</div>

@@ -42,7 +42,7 @@
     "webmentions": "node mentions/fetch.js"
   },
   "devDependencies": {
-    "@11ty/eleventy": "2.0.0-canary.16",
+    "@11ty/eleventy": "^2.0.0-canary.16",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^2.0.0",
     "@11ty/eleventy-plugin-rss": "^1.1.2",

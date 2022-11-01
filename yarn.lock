@@ -69,7 +69,7 @@
   dependencies:
     normalize-path "^3.0.0"
 
-"@11ty/eleventy@2.0.0-canary.16":
+"@11ty/eleventy@^2.0.0-canary.16":
   version "2.0.0-canary.16"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-2.0.0-canary.16.tgz#9780ff27ec21fef7081d12c1acc1c6ed1cd48613"
   integrity sha512-6HXaxmzTYDW0ihzasfa3+SbGeHAF6j7FFwgOnx2cjhwvcFAV2Ci9cZk/lQN9pHCilaI6OgcwOThC7hzjpbro1g==

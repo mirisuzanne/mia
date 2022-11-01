@@ -1,13 +1,16 @@
+- email: hello@miriam.codes
+- site: Mastodon.social
+  url: https://mastodon.social/@TerribleMia
+  user: '@TerribleMia'
 - site: Twitter
   url: https://twitter.com/TerribleMia
   user: '@TerribleMia'
 - site: Github
   url: https://github.com/mirisuzanne
-  user: '@MiriSuzanne'
-- site: Codepen
+  user: 'MiriSuzanne'
+- site: CodePen
   url: https://codepen.io/miriamsuzanne/
-  user: '@MiriamSuzanne'
-- email: miriam@miriamsuzanne.com
+  user: 'MiriamSuzanne'
 - site: RSS feed
   url: https://www.miriamsuzanne.com/feed.xml
 # - site: StackOverflow

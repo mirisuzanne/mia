@@ -1,15 +1,11 @@
 {% import 'contact.macros.njk' as contact %}
 
 <footer id="contentinfo">
-  <div class="meta">
-    <p>
-      Copyright &copy; {% getDate 'year' %}
-      <a href="/who/" class="h-card">{{ site.author }}</a>
-      |
-      <a href="/contact/">contact</a>
-    </p>
+  {% include "site/author.njk" %}
 
-    {{ colophon | md | safe }}
+  <div class="colophon">
+    {%- set year = null | date('year') -%}
+    {{ colophon | replace('@year@', year) | md | safe }}
   </div>
 
   <div id="trans" aria-labelledby="trans-label">

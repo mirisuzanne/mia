@@ -1,9 +1,8 @@
 |
 
 This site was built
-with love and care and
-[reckless abandon](/why/)
 using open web standards,
+indieweb principles,
 [Eleventy](https://www.11ty.dev/),
 and
 [Sass](https://sass-lang.com).
@@ -11,5 +10,4 @@ Hosted on
 [GitHub](https://github.com/mirisuzanne/mia)
 and published with
 [Netlify](https://www.netlify.com/).
-
-_Take care of each other._
+&copy; @year@

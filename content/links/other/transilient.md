@@ -3,6 +3,8 @@ title: Trans Interviews & Photography
 date: 2017-02-26
 url: https://www.wearetransilient.com/
 venue: Transilient
+tags:
+  - trans
 hero:
   img: 2017/transilient.jpg
   caption: Photos by Transilient

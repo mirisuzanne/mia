@@ -4,7 +4,6 @@ venue: Harry Roberts
 url: https://csswizardry.com/2022/09/critical-css-not-so-fast/
 date: 2022-10-23
 tags:
-  - code
   - css
 summary: |
   Harry Roberts provides

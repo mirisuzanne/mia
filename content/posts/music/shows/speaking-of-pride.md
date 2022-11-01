@@ -6,7 +6,7 @@ adr: Denver, CO
 url: https://playgroundensemble.org/2018/05/speaking-of-pride/
 tags:
   - writing
-  - transition
+  - trans
 events:
   - venue: Invisible City
     date: 2018-06-14

@@ -8,7 +8,6 @@ hero:
   img: 2012/i-made-this.jpg
   alt: I made this, you play this, we are enemies
 tags:
-  - art
   - code
   - electronic literature
 ---

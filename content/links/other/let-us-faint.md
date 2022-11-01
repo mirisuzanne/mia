@@ -8,10 +8,9 @@ url: https://thenarrators.org/174-erin-rollman-lets-faint-for-each-other/
 hero:
   img: inspiration/erin-narrators.jpg
 tags:
-  - transition
+  - trans
   - narrators
   - podcast
-  - link
 track:
   - audio: https://media.blubrry.com/narratorspodcast/p/thenarrators.org/wp-content/uploads/174-Narrators-Erin-Rollman.mp3?_=1
 summary: |

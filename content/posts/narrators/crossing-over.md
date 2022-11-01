@@ -5,7 +5,7 @@ hero:
   img: narrators/crossingover.png
 url: https://thenarrators.org/august-2017/
 tags:
-  - transition
+  - trans
 summary: |
   I used excerpts from
   [Body & Gender Fragments](/2017/03/01/my-body/)

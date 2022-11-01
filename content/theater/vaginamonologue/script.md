@@ -9,7 +9,7 @@ tags:
   - writing
   - script
   - artifact
-  - transition
+  - trans
 summary: |
   Script for [My Body, My Gender](/theater/vaginamonologue/)
   rogue Vagina Monologue.

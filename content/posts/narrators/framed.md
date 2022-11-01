@@ -21,7 +21,7 @@ events:
   - venue: The Narrators (live)
     date: 2019-06-19
 tags:
-  - transition
+  - trans
 podcast:
   - iframe: https://playlist.megaphone.fm/?e=WTM2270650214
     title: Audio embed

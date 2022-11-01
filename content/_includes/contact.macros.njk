@@ -63,21 +63,41 @@
 {% macro links(social) %}
 <ul>
   {% for item in social -%}
-    {%- set content -%}
-      {%- if item.user %}{{ item.user }} on {% endif -%}
-      {{- item.site or item.email -}}
-    {%- endset -%}
-    {%- set url = ['mailto:', item.email] | join if item.email else item.url -%}
-    <li>
-      {{- utility.link_if(
-        content,
-        url,
-        {
-          'rel': 'me',
-          'class': 'u-email' if item.email else 'u-url'
-        }
-      ) -}}
-    </li>
+    {%- if item.email %}
+      <li>
+        {{- utility.link_if(
+          item.email,
+          ['mailto:', item.email] | join,
+          {
+            'rel': 'me',
+            'class': 'u-email'
+          }
+        ) -}}
+      </li>
+    {% elif item.user %}
+      <li>
+        {{- utility.link_if(
+          item.user,
+          item.url,
+          {
+            'rel': 'me',
+            'class': 'u-url'
+          }
+        ) }}
+        <span>on {{ item.site }}</span>
+      </li>
+    {% else %}
+      <li>
+        {{- utility.link_if(
+          item.site,
+          item.url,
+          {
+            'rel': 'me',
+            'class': 'u-url'
+          }
+        ) -}}
+      </li>
+    {% endif -%}
   {%- endfor %}
 </ul>
 {% endmacro %}
