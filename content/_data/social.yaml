@@ -1,7 +1,7 @@
 - email: hello@miriam.codes
-- site: Mastodon.social
-  url: https://mastodon.social/@TerribleMia
-  user: '@TerribleMia'
+- site: Mastodon
+  url: https://front-end.social/@mia
+  user: '@mia@front-end.social'
 - site: Twitter
   url: https://twitter.com/TerribleMia
   user: '@TerribleMia'
