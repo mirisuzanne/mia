@@ -8,27 +8,23 @@ intro: |
   on the [CSS Working Group](/orgs/csswg/){.h-card .p-org},
   a core contributor
   to the [Sass](/orgs/sass/){.h-card .p-org} language,
-  and a regular [speaker](/speaking/)
-  at conferences around the world.
+  a regular conference [speaker](/speaking/),
+  and a lover of yarn-related crafts.
 code: |
-  Miriam is an artist, developer, and open-web advocate.
-  As a [co-founder]{.p-job-title} of [OddBird](https://oddbird.net){.h-card .p-org},
-  [Invited Expert]{.p-job-title} with the
+  Miriam is an artist, engineer,
+  and open-web advocate.
+  She's a [co-founder]{.p-job-title} of [OddBird](https://oddbird.net){.h-card .p-org},
+  [Invited Expert]{.p-job-title} on the
   [W3C CSS Working Group](https://www.w3.org/Style/CSS/members){.h-card .p-org},
   and [Sass](https://sass-lang.com/){.h-card .p-org}
-  [core contributor]{.p-job-title},
-  She has spent the last 15+ years building,
-  teaching, and helping push the boundaries of web technology.
+  [core contributor]{.p-job-title}
+  who enjoys pushing the boundaries of web technology.
 
-  Miriam created the popular
-  [Susy](/projects/susy/),
-  grid library for Sass in 2009,
-  and then [True](/projects/true/),
-  the leading Sass tool for unit testing.
-  These days she's working on extending the Sass color module
-  to support wide-gamut color-spaces,
-  while guiding the development of
-  Container Queries, Scope, and Cascade Layers in CSS.
+  These days she's working on specifications for
+  Container Queries, Scope, and Cascade Layers in CSS;
+  extending the Sass color module
+  to support wide-gamut colors;
+  and learning to crochet socks.
 art: |
   Miriam is an artist and developer
   working across a range of media.
