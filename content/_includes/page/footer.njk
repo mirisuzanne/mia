@@ -1,7 +1,7 @@
 {%- import 'macros/indieweb.njk' as indieweb -%}
 
 {% if (venue and url and rel) or tags %}
-  <footer>
+  <footer id="page-footer">
     {% if (venue and url and rel) %}
       <p>{{ indieweb.venue_link(venue, url, tags, rel, nav) }} »</p>
     {% endif %}
