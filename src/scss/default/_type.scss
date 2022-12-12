@@ -67,17 +67,26 @@ pre {
   }
 }
 
-details {
-  padding-block: var(--half-gap);
+pre[class*='language-'] {
+  background-color: revert-layer;
+  padding: 0;
 
-  &:only-child {
-    margin-block: 0;
+  > code {
+    padding: var(--gap, 1em);
   }
 }
 
 pre code {
   display: block;
   overflow: auto;
+}
+
+details {
+  padding-block: var(--half-gap);
+
+  &:only-child {
+    margin-block: 0;
+  }
 }
 
 summary {
