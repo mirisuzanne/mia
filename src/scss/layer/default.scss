@@ -8,5 +8,11 @@
     @include meta.load-css('../default/config');
   }
 
-  @include meta.load-css('../default');
+  @layer prismjs {
+    @include meta.load-css('../npm/prismjs');
+  }
+
+  @layer styles {
+    @include meta.load-css('../default');
+  }
 }
