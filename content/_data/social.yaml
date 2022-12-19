@@ -2,9 +2,9 @@
 - site: Mastodon
   url: https://front-end.social/@mia
   user: '@mia@front-end.social'
-- site: Twitter
-  url: https://twitter.com/TerribleMia
-  user: '@TerribleMia'
+# - site: Twitter
+#   url: https://twitter.com/TerribleMia
+#   user: '@TerribleMia'
 - site: Github
   url: https://github.com/mirisuzanne
   user: 'MiriSuzanne'

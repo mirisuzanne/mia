@@ -176,7 +176,7 @@ the most in-depth
 [complete guide](https://css-tricks.com/css-cascade-layers/)
 possible --
 or I will condense the entire thought
-[into 240 characters](https://twitter.com/TerribleMia/status/1534946918509342726)
+[into 240 characters](https://tweets.miriamsuzanne.com/1534946918509342726)
 and hit send.
 
 When I do start to get precious --

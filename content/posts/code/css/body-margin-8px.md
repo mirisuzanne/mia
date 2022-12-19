@@ -311,7 +311,7 @@ and eventually standardized
 for the sake of web-and-browser consistency.
 
 But where did it come from originally?
-I decided to [ask twitter](https://twitter.com/TerribleMia/status/1537986972177747968),
+I decided to [ask twitter](https://tweets.miriamsuzanne.com/1537986972177747968),
 and eventually we were able to
 (mostly) track it down.
 
@@ -383,7 +383,7 @@ but it didn't give me any more detail on the body margin question:
 > https://www.w3.org/Style/CSS20/history.html
 >
 > ---@TerribleMia,
-> [June 17 @ 9:52pm](https://twitter.com/TerribleMia/status/1538006627151818756)
+> [June 17 @ 9:52pm](https://tweets.miriamsuzanne.com/1538006627151818756)
 
 ### Step 3: The www-talk & www-style archives
 

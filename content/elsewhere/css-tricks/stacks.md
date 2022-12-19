@@ -26,5 +26,5 @@ CSS custom properties can improve this for us…
 {{ content.codepen(
   id='GRpmOjr',
   title='Custom Property Cascades (sass function)',
-  user='TerribleMia'
+  user='miriamsuzanne'
 ) }}

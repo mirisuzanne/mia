@@ -38,7 +38,7 @@ and I posted about it on Twitter:
 > If we want 'personal sites' to be an answer to social platforms,
 > we have a lot of work to do.
 >
-> ---[Me, on Twitter](https://twitter.com/TerribleMia/status/1519404061711224833)
+> ---[Me, on Twitter](https://tweets.miriamsuzanne.com/1519404061711224833)
 
 At the core,
 I'm skeptical about
@@ -176,7 +176,7 @@ Somewhere that non-technical people can:
 That's _a large feature set_, I know.
 In my mind, it would make the most sense
 for those features to live
-[in a browser](https://twitter.com/TerribleMia/status/1488582497382408197),
+[in a browser](https://tweets.miriamsuzanne.com/1488582497382408197),
 but it might be possible
 to build as a web service with browser plugins?
 
