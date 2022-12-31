@@ -1,1 +1,5 @@
 @use 'all';
+
+#rss #contentinfo {
+  padding-block: var(--gap);
+}

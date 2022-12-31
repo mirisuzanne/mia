@@ -36,7 +36,12 @@
         <article>
           <header>
             <h3><a href="{ link }" rel="bookmark"><xsl:value-of select="title"/></a></h3>
-            <time><xsl:value-of select="pubDate" /></time>
+            <time>
+              <xsl:variable name="pdate"><xsl:value-of select="pubDate"/></xsl:variable>
+              <xsl:value-of select="substring($pdate, 1, 16)"/>
+            </time>
+            |
+            <xsl:value-of select="category"/>
           </header>
         </article>
         </xsl:for-each>
@@ -49,11 +54,8 @@
           Copyright {% getDate 'year' %}
           <strong>{{ site.author }}</strong>
         </p>
-
-        {{ colophon | md | safe }}
       </div>
     </footer>
-
   </body>
 </html>
 </xsl:template>
