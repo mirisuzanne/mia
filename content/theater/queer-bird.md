@@ -20,7 +20,7 @@ actions:
 summary: >
   A playful and intimate reflection on love
   in the early days of the pandemic --
-  based on a true story.
+  based on a true story of queer joy.
 ---
 
 > Rattlesnakes are low to the ground and full of surprises.
