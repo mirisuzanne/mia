@@ -14,9 +14,6 @@ events:
   - venue: Buntport Theater
     date: 2023-04-07
     end: 2023-04-15
-actions:
-  - text: Reserve Tickets
-    url: https://grapefruitlab.com/shows/queer-bird/
 summary: >
   A playful and intimate reflection on love
   in the early days of the pandemic --
