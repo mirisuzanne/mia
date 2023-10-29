@@ -4,7 +4,7 @@ date: 2022-04-20
 tags:
   - theater
   - pity+fear
-summary:
+summary: >
   Reflections on making theater,
   and my family reacting to it.
 ---

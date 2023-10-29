@@ -9,7 +9,11 @@ tags:
   - csswg
   - container queries
   - cascade layers
+  - code
   - css scope
+hero:
+  img: elsewhere/podrocket.jpg
+  alt: Grainy art-deco illustration of a rocket launch
 summary: |
   I talk with Noel Minchow
   about how to style the intrinsic web,

@@ -1,5 +1,4 @@
 ---
-feature: true
 title: Sass Color Spaces
 sub: Support for new CSS color spaces in Sass
 venue: Sass Blog

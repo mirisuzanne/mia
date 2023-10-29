@@ -9,15 +9,19 @@
         {{- item.data.banner | mdInline | safe -}}
       </a>
     </{{ hentry_heading }}>
+    {{- indieweb.rel(post) -}}
     <p>
       {{- utility.datetime(
         item.data.date,
         item.data.end,
         pubdate=true
       ) -}}
-      {%- if item.data.type %}
+      {% if item.data.type %}
         » <em>{{ item.data.type }}</em>
-      {%- endif -%}
+      {% endif %}
+      {% if item.data.venue %}
+        @ <em>{{ item.data.venue }}</em>
+      {% endif %}
     </p>
   </header>
 </article>
