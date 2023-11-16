@@ -125,7 +125,7 @@ place to start:
 you start by writing declarative HTML:
 
 ```html
-<template data-register="my-component">
+<template>
   <style>/* Normal old CSS */</style>
   <section>
     <slot name="title">
@@ -145,11 +145,11 @@ you start by writing declarative HTML:
 It's possible to do this in a way
 that all your components auto-register
 with minimal JavaScript
-and no additional behavior.
+and no additional custom behavior.
 For example,
 we can loop over all templates
 that have a `data-register` attribute,
-and generate custom elements for each:
+and generate a custom element from each:
 
 ```js
 const elementTemplates = document.querySelectorAll('template[data-register]');
@@ -213,8 +213,7 @@ Vue, Svelte, Liquid, etc.
 It seems to me like these quick templates
 with shadow DOM
 can generate a rough equivalent
-of the most basic use-cases,
-but won't go much farther.
+of the most basic use-cases.
 You get some amount of progressive enhancement
 if you set it up right,
 and you get CSS encapsulation for free,
@@ -224,15 +223,15 @@ to get the slots and parts set up
 with necessary styling.
 That may just be inexperience.
 
-And wait,
+And then I wonder,
 progressive enhancement
 compared to what exactly?
 In my example above
 all the content is accessible from first load,
-without the custom property registration.
+without the custom element registration.
 That's better than some SPA frameworks,
 but server-side templates
-would get us even farther even faster.
+would get us even farther.
 
 And what if we want to pass in data,
 then use flow control
@@ -241,6 +240,7 @@ That's not a wild use-case.
 Many sites and applications
 need some way to
 generate HTML from a database or CMS.
+I suppose I could do it with more JS.
 
 This is where tools like
 [WebC](https://www.11ty.dev/docs/languages/webc/)
@@ -264,17 +264,16 @@ with additional control-flow features:
 </article>
 ```
 
-WebC is great.
-It will pre-render
-whatever it can,
-and only pass along to the browser
-things that need dynamic rendering.
+WebC is great for other reasons.
+It will pre-render whatever it can,
+and only require browser JS
+for things that need dynamic rendering.
 
 But the farther I go down this path
-of special build-time templating,
+of data-to-html templating,
 the heavier my components feel --
 and the less declarative.
-I end up writing mostly empty markup,
+I end up writing mostly empty elements,
 with all my content
 hidden away inside private custom attributes.
 
@@ -304,10 +303,11 @@ we're not on the web platform any more.==
 ## What's a 'component', anyway?
 
 The problem there isn't WebC,
-or any of the other build-time options.
+or any of the other web component libraries.
 You can easily get to that same place
 without any build steps at all,
-just by using Shadow-DOM without slots.
+just by using Shadow-DOM
+with more attributes than slots.
 It must be a common issue,
 because every article above
 mentions the enticing danger
@@ -322,33 +322,42 @@ since my first time using PHP
 in the early 2000's.
 Before we called them _components_
 we had _includes_.
-For me at least,
+For me at least
 they served a similar purpose:
 _reusable snippets of HTML,
 generating markup from data_.
-What's new here is only the HTML-looking
+In most of these languages,
+the simplest pattern is a
+one-liner with parameters:
+
+```liquid
+{% comment %}Liquid rendering{% endcomment %}
+{% render 'blockquote', text: quoteText, … %}
+```
+
+```nunjucks
+<!-- Nunjucks macros -->
+{% import "content.macros.njk" as content %}
+{{ content.blockquote(
+  text: quoteText,
+  …
+) }}
+```
+
+In both cases,
+we're passing in values rather than markup.
+And that's the entire point, right?
+The purpose of the component
+is to generate the markup for us.
+All that's new
+with frameworks and web components
+is the HTML-looking
 element-and-attributes syntax.
 
 Meanwhile,
 the articles above
 all push for nearly the opposite approach
-to 'HTML web components':
-
-1. Start without any template or slots or Shadow DOM
-2. Don't write any HTML or CSS
-3. It's all just JavaScript
-4. Even inside the JavaScriptS, there's no HTML
-5. Maybe inline injected CSS, but maybe not
-6. More JavaScripting
-7. Only JavaScripts
-8. Title the article
-   "_HTML Web Components_"
-
-It's a strange-looking argument,
-but the results are compelling.
-Single-purpose and broadly reusable custom elements
-that augment HTML with extra behavior
-without adding a lot of overhead.
+to 'HTML web components'.
 
 The suggestion is to wrap custom elements
 around normal HTML,
@@ -357,9 +366,11 @@ with JavaScript [superpowers](https://htmlwithsuperpowers.netlify.app/).
 No shadow DOM required,
 though it may be sprinkled over top
 in some cases.
-The point is to provide an HTML-like 'API'
-for the components,
+The point is to provide an HTML-like use
+of the components,
 which doesn't rely on Shadow DOM as the baseline.
+We pass in markup rather than raw values.
+
 Eric Meyer provides a great side-by-side comparison
 with his `super-slider`:
 
@@ -378,9 +389,10 @@ with his `super-slider`:
 </super-slider>
 ```
 
-Now the custom element doesn't (necessarily)
+In this case,
+the custom element doesn't (necessarily)
 generate anything at all.
-The data is all there in the light DOM, on load,
+The content is all there in the light DOM, on load,
 before any JavaScript gets involved.
 These aren't _templates_,
 they're _markup_.
@@ -431,7 +443,7 @@ into a well-contained snippet.
 Custom Elements
 seem designed for providing
 (wait for it)
-_custom elements_,
+_custom elements_ (markup),
 while framework components
 (old and new)
 put more focus
@@ -453,18 +465,14 @@ as 'third party' tools,
 even when they come from inside the house?
 Maybe there's an architectural benefit
 to treating template-components
-the same way we treat behavior-components?
+the same way we treat markup-components?
 For sure there are use-cases
 that don't fall neatly into one category or the other.
 
 ## JS in HTML in JS
 
-I feel like I'm going around in circles here,
-and it's not clear to me
-that I've provided any new insight.
-
 I _like_ the HTML-familiar
-custom property shape
+custom element shape
 that's recommended by these articles.
 I think it's a good idea
 to use the light DOM
@@ -473,10 +481,9 @@ even when you're providing
 more Shadow-DOM structure
 behind the scenes.
 
-I even like the results
-of experimenting
-with a JS-only custom property
-based on Eric's `<super-slider>`.
+I was even inspired
+by Eric's `<super-slider>`,
+to build something similar of my own.
 It's still experimental,
 and I still have a lot to learn
 (how do JS classes work?),
@@ -490,14 +497,27 @@ on my personal site in the future:
   title='Ground Control web component'
 ) }}
 
-But it still strikes me as odd
-that the way to make things
-feel more like HTML
-is to write them entirely in JS?
+But I was surprised to find,
+this approach is even more JS-forward
+than my previous experiments:
+
+1. Start without any template or slots or Shadow DOM
+2. Don't write any HTML or CSS
+3. It's all just JavaScript
+4. Even inside the JavaScript, there's no HTML
+5. Maybe inline injected CSS, or maybe not
+6. More JavaScripting
+7. Only JavaScripts
+8. Title the article "_HTML Web Components_"
+
+It's a strange argument,
+but the results are compelling.
+Single-purpose and broadly reusable custom elements
+that augment HTML with extra behavior
+without adding a lot of overhead.
 
 I also expect I'll keep playing
-with structural (rather than behavioral)
-elements that I can define
+with _template_ elements that I can define
 entirely in HTML,
 with some form of auto-registration:
 
@@ -506,21 +526,25 @@ with some form of auto-registration:
   title='Auto-Registered Custom Elements w/ Shadow DOM'
 ) }}
 
+I'll also keep playing with WebC.
 I think some of the same API design principles can apply.
-Let the light DOM handle content wherever possible.
+Let the light DOM handle content wherever possible,
+and add progressive enhancements
+from either JS or shadow DOM or both.
 
-As I understand it,
-the downside here is
-how to distribute a component
-written in HTML.
+It seems like the downside
+of writing HTML in HTML
+with the `<template>` tag is
+getting it into a website.
 Even within my own projects,
-I would have to render the templates
+I would have to render the template instructions
 on every page where they are needed.
-There are no HTML imports.
+HTML imports never happened.
 I imagine that's why
 every example I've seen
 wraps the template in a JavaScript module,
-which can be more easily imported.
+which can be easily imported
+on any page.
 
 Declarative shadow DOM
 doesn't really seem to help that problem.
@@ -535,15 +559,26 @@ and frustrated about how much JS
 is required
 to write even the simplest
 'components' in my HTML.
+
 And in many cases,
 I would still want a build step
 _on top of_
 the web platform functionality.
-That's without even getting into
+But I'm not sure what I expected.
+If I want raw-data flow-control,
+I want something that isn't markup.
+Something to _generate_ the markup.
+
+I've said for some time
+that Sass isn't going away.
+Sass (and other pre-processors)
+can still provide structured abstractions of CSS,
+in a way that CSS can never replicate.
+Maybe the same is true with HTML components.
+
+I still haven't even looked into
 tools like Lit,
 which seem to come highly recommended.
-
-Do I need more JS in my JS
-to get that superpowered
+Do I need even more JS in my JS
+to get that super-powered
 HTML into my HTML?
-
