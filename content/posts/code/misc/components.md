@@ -81,7 +81,8 @@ Just last week:
 - [HTML Web Components: An Example](https://blog.jim-nielsen.com/2023/html-web-components-an-example/),
   by Jim Nielsen (again!)
 
-They're not alone.
+I recommend all of them.
+And they're not alone.
 I've been hearing the Good News constantly,
 from folks like
 Cassondra Roberts,
@@ -331,17 +332,17 @@ the simplest pattern is a
 one-liner with parameters:
 
 ```liquid
-{% comment %}Liquid rendering{% endcomment %}
-{% render 'blockquote', text: quoteText, … %}
+&#123;% comment %&#125;Liquid rendering&#123;% endcomment %&#125;
+&#123;% render 'blockquote', text: quoteText, … %&#125;
 ```
 
-```nunjucks
+```jinja2
 <!-- Nunjucks macros -->
-{% import "content.macros.njk" as content %}
-{{ content.blockquote(
+&#123;% import "content.macros.njk" as content %&#125;
+&#123;&#123; content.blockquote(
   text: quoteText,
   …
-) }}
+) &#125;&#125;
 ```
 
 In both cases,
@@ -548,7 +549,8 @@ on any page.
 
 Declarative shadow DOM
 doesn't really seem to help that problem.
-While it will provide some other benefits,
+While it will provide some
+other benefits,
 it requires even more duplication --
 which makes the templating use-case less attractive.
 
@@ -576,9 +578,37 @@ can still provide structured abstractions of CSS,
 in a way that CSS can never replicate.
 Maybe the same is true with HTML components.
 
-I still haven't even looked into
+I don't think I'm saying anything new here,
+these same points seem to come up often.
+I'm just stubbing my toe
+on the well-documented table-leg,
+as many have before me.
+
+Here's Zach,
+walking us through the steps:
+
+{{ content.figure(
+  data=[{
+    iframe: 'https://www.youtube.com/embed/R4Ri4ft7bXY',
+    title: 'The Good, The Bad, and The Web Components',
+    width: '560',
+    height: '315'
+  }],
+  caption='Hmmm, yeah. He already said it. I bet others have to. Why did I write this?'
+) }}
+
+Zach even comes to the same conclusion I have:
+These features are promising,
+but they doesn't (yet) provide
+the DRY solution we're all hoping for.
+I've seen that talk before,
+but that was before I survived my own toe incident.
+We must all stub our own toes.
+
+(I still haven't even looked into
 tools like Lit,
 which seem to come highly recommended.
+I wonder what those are for.
 Do I need even more JS in my JS
 to get that super-powered
-HTML into my HTML?
+HTML into my HTML?)
