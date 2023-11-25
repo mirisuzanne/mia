@@ -4,8 +4,8 @@ title: When Our Tools Hold Us Back
 sub: What happens if the 'pace layers' get out of sync?
 date: 2022-11-14
 url: https://www.oddbird.net/2022/11/11/platform-tools/
-image:
-  src: 2022/pace-layer.jpg
+hero:
+  img: 2022/pace-layers.jpg
   alt: |
     Nested semicircles,
     from innermost and slowest

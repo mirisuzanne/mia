@@ -7,4 +7,7 @@ url: https://www.curioustheatre.org/cnv/
 tags:
   - acting
   - show
+summary: >
+  I performed…
 ---
+

@@ -3,8 +3,8 @@ title: Use the Right Container Query Syntax
 sub: Size queries are stable, and shipping in browsers
 url: https://www.oddbird.net/2022/08/18/cq-syntax/
 date: 2022-08-18
-image:
-  src: talks/container-query.jpg
+hero:
+  img: talks/container-query.jpg
   alt: |
     Wireframe of card elements
     in different sized containers --
