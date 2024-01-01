@@ -1,14 +1,10 @@
 ---
 feature: true
 title: On Sass & CSS
-venue: Shop Talk Show
 date: 2019-10-28
 url: https://shoptalkshow.com/384/
 tags:
-  - code
   - sass
-  - css
-  - oddbird
 summary: |
   I drop by the show to talk about Sass in 2019,
   design tokens, Oddbird, unused CSS, new CSS properties,

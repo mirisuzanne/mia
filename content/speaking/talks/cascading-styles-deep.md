@@ -9,11 +9,8 @@ tags:
   - cascade layers
   - container queries
   - css scope
-hero:
+og:
   img: talks/mia-smashing-de.jpg
-  alt: |
-    Miriam on stage
-    at Smashing Conf Freiburg
 events:
   - venue: Smashing Workshops
     date: 2024-02-26
@@ -26,13 +23,21 @@ events:
 actions:
   - text: Tickets on sale now!
     url: https://smashingconf.com/online-workshops/workshops/modern-css-miriam-suzanne/
+media:
+  - iframe: https://player.vimeo.com/video/880145407
 summary: |
   It’s a good time to step back and understand
   how these tools fit together in a declarative system --
   a resilient cascade of styles.
 ---
+{% import "content.macros.njk" as content %}
 
-[Tickets on sale now!](https://smashingconf.com/online-workshops/workshops/modern-css-miriam-suzanne/)
+{{ content.figure(
+  media,
+  "[Tickets on sale now!](https://smashingconf.com/online-workshops/workshops/modern-css-miriam-suzanne/)"
+) }}
+
+---
 
 New CSS features are shipping at an unprecedented rate --
 cascade layers, container queries, the `:has()` selector,
