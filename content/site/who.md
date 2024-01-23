@@ -9,7 +9,16 @@ sub: |
   [Author, Artist, and Web Developer]{.p-role}
 description: Author, Artist, and Web Developer
 eleventyComputed:
-  headshots:
+  cssday:
+    - img: headshots/cssday-2023.webp
+      alt: >
+        Miriam on stage at CSS Day 2023,
+        wearing various black and white patterns
+      attrs:
+        class: u-photo
+      url: |
+        {{ 'headshots/cssday-2023.webp' | imgSrc }}
+  smashing:
     - img: headshots/mia-smashing.jpg
       span: full
       url: |
@@ -22,6 +31,19 @@ eleventyComputed:
         trans lightning earrings,
         and a headset mic
         while speaking at a conference.
+  narrators:
+    - img: headshots/from-the-hip.jpg
+      span: full
+      url: |
+        {{ 'headshots/from-the-hip.jpg' | imgSrc }}
+      attrs:
+        class: u-photo
+      alt: |
+        Miriam in a spotlight,
+        standing at a mic and holding papers,
+        in front of a large blank screen.
+        From The Hip Photo watermark logo.
+  headshots:
     - img: headshots/mia-speaking.jpg
       url: |
         {{ 'headshots/mia-speaking.jpg' | imgSrc }}
@@ -41,17 +63,6 @@ eleventyComputed:
         singing into a mic,
         with Dan on his knees playing guitar,
         and a drum set behind them.
-    - img: headshots/from-the-hip.jpg
-      span: full
-      url: |
-        {{ 'headshots/from-the-hip.jpg' | imgSrc }}
-      attrs:
-        class: u-photo
-      alt: |
-        Miriam in a spotlight,
-        standing at a mic and holding papers,
-        in front of a large blank screen.
-        From The Hip Photo watermark logo.
 summary: |
   I hope to create art & software
   that [celebrate the queerness](/why/)
@@ -81,6 +92,18 @@ summary: |
 
 {% import 'content.macros.njk' as content %}
 
+{{ content.figure(
+  cssday,
+  caption='photo by [Wiebrig Krakau](https://wiebrig.nl/)'
+) }}
+{{ content.figure(
+  narrators,
+  caption="photo by [From the Hip Photo](https://fromthehipphoto.com)"
+) }}
+{{ content.figure(
+  smashing,
+  caption='photo by Drew McLellan'
+) }}
 {{ content.figure(headshots) }}
 
 ## Affiliations
