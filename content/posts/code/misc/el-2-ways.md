@@ -52,6 +52,12 @@ I'm not sure.
 
 What do you think?
 
+{% import "content.macros.njk" as content %}
+{{ content.codepen(
+  'KKEXQKr',
+  'custom element, two ways'
+) }}
+
 <script>
 class ColorTile extends HTMLElement {
   static register(tagName) {
