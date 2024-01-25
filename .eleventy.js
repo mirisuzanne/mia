@@ -3,6 +3,7 @@
 const yaml = require('js-yaml');
 const hljs = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rss = require('@11ty/eleventy-plugin-rss');
+const eleventyWebcPlugin = require('@11ty/eleventy-plugin-webc');
 const pluginTOC = require('eleventy-plugin-toc', { wrapper: '' });
 
 const configCollections = require('./src/plugins/collections');
@@ -22,6 +23,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(hljs);
   eleventyConfig.addPlugin(rss);
   eleventyConfig.addPlugin(pluginTOC);
+  eleventyConfig.addPlugin(eleventyWebcPlugin, {
+    components: [
+      'content/_includes/**/*.webc',
+      'npm:@11ty/eleventy-img/*.webc',
+    ],
+  });
 
   // config plugins
   eleventyConfig.addPlugin(configCollections);

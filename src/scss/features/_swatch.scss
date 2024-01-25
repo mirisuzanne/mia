@@ -1,13 +1,10 @@
 code[style*='--swatch']::before {
-  background: repeating-linear-gradient(
-    45deg,
-    var(--swatch, black) 10%,
-    var(--swatch, white) 10% 20%
-  );
-  border: thin solid var(--border, currentColor);
+  aspect-ratio: 1;
+  background: linear-gradient(var(--swatch), var(--swatch)),
+    linear-gradient(45deg, black 50%, white 50%);
+  border: thin solid;
   content: '';
   display: inline-block;
-  height: 1em;
-  width: 1em;
-  margin-inline: 0.2em;
+  inline-size: 1em;
+  margin-inline-end: 0.2ch;
 }
