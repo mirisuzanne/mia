@@ -9,6 +9,7 @@ hero:
     drawn over the photo of an empty playground swing
 tags:
   - grapefruit lab
+  - teacup gorilla
   - show
 events:
   - venue: Buntport Theater

@@ -9,6 +9,43 @@ sub: |
   [Author, Artist, and Web Developer]{.p-role}
 description: Author, Artist, and Web Developer
 eleventyComputed:
+  headshots:
+    - img: headshots/selfie-direct.jpg
+      url: |
+        {{ 'headshots/selfie-direct.jpg' | imgSrc }}
+      attrs:
+        class: u-photo
+      alt: |
+        Miriam selfie in black coveralls
+        and neon pink lightning-bolt earrings,
+        with a lock of orange hair on one side.
+    - img: headshots/mia-speaking.jpg
+      url: |
+        {{ 'headshots/mia-speaking.jpg' | imgSrc }}
+      attrs:
+        class: u-photo
+      alt: |
+        Miriam close up at a mic, smiling,
+        in a brown flannel,
+        in front of a blue screen.
+    - img: headshots/syntax.jpg
+      url: |
+        {{ 'headshots/syntax.jpg' | imgSrc }}
+      attrs:
+        class: u-photo
+      alt: |
+        Miriam on stage with a bass under red lights,
+        singing into a mic,
+        with Dan on his knees playing guitar,
+        and a drum set behind them.
+    - img: headshots/pity-reaching.jpg
+      url: |
+        {{ 'headshots/pity-reaching.jpg' | imgSrc }}
+      attrs:
+        class: u-photo
+      alt: |
+        Miriam in yellow short-sleeve overalls and theater lighting
+        reaches dramatically out across her body.
   cssday:
     - img: headshots/cssday-2023.webp
       alt: >
@@ -43,26 +80,6 @@ eleventyComputed:
         standing at a mic and holding papers,
         in front of a large blank screen.
         From The Hip Photo watermark logo.
-  headshots:
-    - img: headshots/mia-speaking.jpg
-      url: |
-        {{ 'headshots/mia-speaking.jpg' | imgSrc }}
-      attrs:
-        class: u-photo
-      alt: |
-        Miriam close up at a mic, smiling,
-        in a brown flannel,
-        in front of a blue screen.
-    - img: headshots/syntax.jpg
-      url: |
-        {{ 'headshots/syntax.jpg' | imgSrc }}
-      attrs:
-        class: u-photo
-      alt: |
-        Miriam on stage with a bass under red lights,
-        singing into a mic,
-        with Dan on his knees playing guitar,
-        and a drum set behind them.
 summary: |
   I hope to create art & software
   that [celebrate the queerness](/why/)
@@ -92,6 +109,7 @@ summary: |
 
 {% import 'content.macros.njk' as content %}
 
+{{ content.figure(headshots) }}
 {{ content.figure(
   cssday,
   caption='photo by [Wiebrig Krakau](https://wiebrig.nl/)'
@@ -104,7 +122,6 @@ summary: |
   smashing,
   caption='photo by Drew McLellan'
 ) }}
-{{ content.figure(headshots) }}
 
 ## Affiliations
 
