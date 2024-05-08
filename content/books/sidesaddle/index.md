@@ -8,8 +8,12 @@ sub: A queer novel, in fragments of memory…
 date: 2015-04-02
 hero:
   img: writing/sidesaddle/box.jpg
-  alt:
-  caption: A novel on 250 note-cards
+  alt: A novel, in a box
+  caption: |
+    [Buy the book](https://miriamsuzanne.square.site/)
+    or
+    [read it online](https://ridingsidesaddle.com)
+
 index: riding sidesaddle
 events:
   - title: Queer Art
@@ -111,9 +115,21 @@ summary: |
 
 {% import "content.macros.njk" as content %}
 
-[Buy the book](https://miriamsuzanne.square.site/)
-or
-[read it online](https://ridingsidesaddle.com)
+Since it was published in 2015,
+the novel has inspired a number of
+[Teacup Gorilla](/orgs/teacup-gorilla/) songs --
+including a series of 4 of that make up our new EP
+and theatrical production,
+_[Whiskey From Strangers](/theater/whiskey-2024/)_.
+Produced with [Grapefruit Lab](/orgs/grapefruit-lab/),
+it's a love letter to our city,
+and to friendships that change over time.
+
+Join us! **May 10** — **June 1**
+@ Buntport Theater, 717 Lipan St.
+
+All tickets are pay-what-you-want.
+[Reserve your seats now!](https://grapefruitlab.com/shows/whiskey-2024/)
 
 ---
 
@@ -131,7 +147,7 @@ or
 
 {{ 'writing/sidesaddle/true-west-award.jpg' | img('True West Award') | safe }}
 
-Riding SideSaddle was
+Riding SideSaddle was previously
 [adapted for the stage][10myths] by [Buntport Theater][buntport],
 with original music by [Teacup Gorilla][tg].
 
@@ -145,7 +161,9 @@ with original music by [Teacup Gorilla][tg].
 
 ## The Holes They Leave
 
-The Teacup Gorilla EP includes several songs based on the novel:
+The first Teacup Gorilla EP
+also includes several songs
+related to the novel:
 
 {% set ep = collections.all | getPage('/music/albums/holes-they-leave/') %}
 

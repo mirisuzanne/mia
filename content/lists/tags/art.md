@@ -18,6 +18,17 @@ summary: |
   and in each other along the way.
 ---
 
+{% set event_list = collections.art | getEvents | notPast %}
+
+{% if event_list | length > 0 %}
+  <section class="events">
+    <h2>Current & Upcoming Events</h2>
+    {% for item in event_list | sortEvents('future') %}
+      {% include 'part/hevent.njk' %}
+    {% endfor %}
+  </section>
+{% endif %}
+
 {%- set hfeed = collections.artifact | intersection(collections.art) | getPublic | filter('data.feature') -%}
 {%- if hfeed | length > 0 -%}
 <section class="h-feed">

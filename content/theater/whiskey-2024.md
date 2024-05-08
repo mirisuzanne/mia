@@ -17,6 +17,7 @@ hero:
 tags:
   - grapefruit lab
   - teacup gorilla
+  - riding sidesaddle
   - show
 summary: >
   As a Teacup Gorilla album-release concert
