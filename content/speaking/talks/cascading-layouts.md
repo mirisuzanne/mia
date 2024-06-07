@@ -23,13 +23,9 @@ summary: |
   CSS layout techniques have come a long way
   since the early days of responsive design,
   but many websites are still using
-  decade-old approaches
+  decade-old approaches,
   that require more fragile code
-  and more ongoing maintenance.
-  **Take your sites to the next level
-  with this 3-session workshop
-  on building more resilient and maintainable web layouts
-  using modern CSS**.
+  and ongoing maintenance.
 ---
 {% import "content.macros.njk" as content %}
 
@@ -39,6 +35,11 @@ summary: |
 ) }}
 
 ---
+
+**Take your sites to the next level**
+with this 3-session workshop
+on building more resilient and maintainable web layouts
+using modern CSS.
 
 Find out more on the
 [OddBird website](https://www.oddbird.net/workshops/cascading-layouts/),
