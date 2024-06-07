@@ -18,7 +18,7 @@ events:
     adr: Online
     url: https://www.oddbird.net/workshops/cascading-layouts/
 media:
-  - iframe: https://www.youtube.com/watch?v=9EDOzJJdxWA
+  - video: https://youtu.be/9EDOzJJdxWA
 summary: |
   CSS layout techniques have come a long way
   since the early days of responsive design,
