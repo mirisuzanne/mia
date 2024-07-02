@@ -1,5 +1,5 @@
 ---
-title: Notes Towards Queer Art
+title: Notes Towards a More Queer Art
 sub: and a more humane technology
 date: 2011-09-17
 erasure: true
