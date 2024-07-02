@@ -26,6 +26,7 @@ that I think others might consider adding:
 
 It's an opportunity
 to say what you care about,
+what [direction](/2023/12/31/23-24/) you're heading,
 and how you hope to exist in the world.
 A _minifesto_ on the purpose of your site,
 or your work.
