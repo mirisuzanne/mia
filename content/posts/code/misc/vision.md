@@ -57,11 +57,13 @@ Not all theaters or bands
 are collaborative, but many are --
 and there are long traditions
 around 'devised' or 'ensemble' theater in particular.
-But learning to write or act
-does not prepare you to devise with an ensemble.
+Learning to _write plays_ or _act in them_
+does not prepare you to devise with an ensemble,
+but there are many people who do
+study, learn, practice, document and teach those skills.
 
-(_Which is what I've spent my life studying and doing_,
-with some occasional CSS distractions)
+(In fact, it's what I've spent most of my life doing,
+with occasional CSS distractions)
 
 But I suppose Robin is right that
 even good collaboration
