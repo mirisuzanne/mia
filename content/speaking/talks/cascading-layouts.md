@@ -30,8 +30,7 @@ summary: |
 {% import "content.macros.njk" as content %}
 
 {{ content.figure(
-  media,
-  "[Tickets on sale now!](https://www.oddbird.net/workshops/cascading-layouts/)"
+  media
 ) }}
 
 ---
@@ -45,7 +44,3 @@ Find out more on the
 [OddBird website](https://www.oddbird.net/workshops/cascading-layouts/),
 or…
 
-## Register Now
-
-<script src="https://js.tito.io/v2" async></script>
-<tito-widget event="pland/css-layout"></tito-widget>
