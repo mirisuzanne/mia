@@ -80,18 +80,22 @@ I think:
 - The `embed/ei.js` logic should be part of the element definition,
   not a separate script
 
+Along the way,
+I learned that the `height` attribute
+is only allowed on specific elements,
+which is why I had to use the `style` attribute instead.
+One of those elements is the `iframe`.
+
 Looking closer,
 the [CodePen Embed docs]()
-demonstrate using an `iframe` from the start --
-no JS required:
+demonstrate using an `iframe` from the start,
+if you need to avoid JS:
 
 ```html
 <iframe src="https://codepen.io/miriamsuzanne/embed/BEvjbm" height="600" width="100%" loading="lazy"></iframe>
 ```
 
 Well that sure gets right to the point.
-And it works with or without JS.
-
 Maybe that's all I need?
 I don't feel like I'm losing essential behavior, here.
 All the parameters are still available via the URL.
