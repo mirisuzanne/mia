@@ -1,0 +1,19 @@
+events:
+  - title: CSS Containers, What Do They Know?
+    venue: Web Directions Developer Summit
+    date: 2024-11-27
+    end: 2024-11-28
+    adr: Sydney, Australia
+    url: https://webdirections.org/dev-summit/
+  - title: Hints and Suggestions
+    venue: Beyond Tellerand
+    adr: Berlin, DE
+    url: https://beyondtellerrand.com/events/berlin-2024
+    date: 2024-11-07
+    end: 2024-11-08
+  - title: Hints and Suggestions
+    venue: 11ty International Symposium on Making Websites Real Good
+    url: https://conf.11ty.dev
+    adr: Online
+    date: 2024-05-09
+    youtube: uaN9kY8lKPU
