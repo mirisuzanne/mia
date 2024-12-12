@@ -29,7 +29,7 @@ press:
 ------
 
 The Dirt Circle Dogs were an indi-rock band
-that formed in Goshenm, IN
+that formed in Goshen, IN
 before moving to Denver, CO.
 The band featured Daniel Eisenstat,
 Sondra Eby,
