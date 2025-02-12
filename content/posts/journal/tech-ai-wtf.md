@@ -9,6 +9,42 @@ summary: |
   I need to remember why I'm here.
 ---
 
+## You are here
+
+A note of warning,
+before you proceed:
+this is a journal entry,
+at a difficult time.
+
+> It’s very hard to think or act
+> when you can’t tell if you’re about to lose your job,
+> have your research killed off,
+> have your healthcare terminated,
+> witness unstoppable crimes,
+> or just experience extended and
+> apparently unescapable moral injury.
+>
+> ---Erin Kissane, [Against Entropy](https://erinkissane.com/against-entropy)
+
+TL;DR this journal entry is about
+billionaires who love eugenics,
+and cheer on a pro-eugenics government,
+selling us a product
+that they promise will help their longterm
+eugenic goals.
+But really this is a post about how I feel,
+when colleagues treat that product
+as though it _might have merit,
+if we just give it a chance_.
+
+For some strange reason,
+I find that opinion to be _in bad taste_.
+(I don't like eugenics)
+
+Reader, _it fucks me up_.
+
+## Chill out, it's just a tool
+
 For years we've been saying that
 _tech is political_,
 and that _tech is not neutral_.
@@ -38,11 +74,6 @@ If only the _good people like ourselves_
 would get involved early,
 we can surely teach everyone else to use it ethically!
 
-Once we've established some useful norms --
-a 'best practice' or two --
-I can't imagine anyone
-[_crowd violently storms the capitol_].
-
 Every tool is a hammer,
 and it's up to us
 to determine _individually_
@@ -51,6 +82,11 @@ There is no system, no society,
 no marketing department, no regulation.
 Each of us is an island of isolated ~~trolly conductors~~
 _hammer enthusiasts_.
+
+Once we've established some useful norms --
+a 'best practice' or two --
+I can't imagine anyone
+[_crowd violently storms the capitol_].
 
 ## Meanwhile, back at the hammer factory…
 
@@ -182,7 +218,7 @@ or even _excited_ about 'AI' and 'Agents'
 and 'codegen' and all the rest of it.
 As far as I can tell,
 most of our industry is still on board with the project,
-even when booing the CEOs and changing corporate politics.
+even while protesting the changes in corporate politics.
 There are certainly many of us
 raising alarms or expressing frustration, but --
 based on every conference I've attended over the last year --
@@ -215,8 +251,13 @@ If I wanted slop code, I wouldn't be a developer.
 It's impossible for me to discuss the _utility_ of a thing
 when I fundamentally disagree with the _purpose_ of it.
 
+I don't care how well their 'AI' _works_ --
+or if you found a fancy fun use-case.
+It _fucks me up_ watching peers treat this tech
+_from people who want to eradicate me_
+as a future worth considering.
 I don't want any of this.
-I don't care if it works, I hate what it's _for_.
+
 I don't need _an agent_,
 I want to _maintain my own agency_.
 
@@ -234,7 +275,7 @@ The future is actually _inhuman word synthesizers_.
 
 Oops, I fell for the _genders_
 and their sneaky _ideology_!
-No I'm a crime!
+Now I'm a crime!
 Haha, oops!
 
 Work is already harder to find,
@@ -253,8 +294,8 @@ How do I stay engaged in this field,
 and keep paying my bills,
 without feeling like a constant outsider?
 I know I'm not the only one feeling this way,
-but the layering of constant betrayals add up,
-and it feels so isolating.
+but the layering of threats and betrayals add up.
+It feels so isolating.
 
 ## It's probably good to get this clarity
 
@@ -266,15 +307,17 @@ But I'm here for the web,
 a weird little project
 designed for sharing research between scientists.
 And I still think the web could be pretty cool, actually,
-if it wasn't so trapped in the clutches of tech.
+if it wasn't so trapped in the clutches of big tech.
 If we can focus on
-[the bits that make it special](https://tweets.miriamsuzanne.com/1198717316269084672/) --
+the bits that make it special --
 the bits that make it unwieldy for capitalism:
 
 > Large companies find HTML & CSS frustrating “at scale”
 > because the web is
 > a fundamentally anti-capitalist mashup art experiment,
 > designed to give consumers all the power.
+>
+> ---Me, [before all this](https://tweets.miriamsuzanne.com/1198717316269084672/)
 
 What are we going to build now --
 those of us who still care about
