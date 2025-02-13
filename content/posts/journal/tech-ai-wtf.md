@@ -134,6 +134,13 @@ _that wants to exterminate trans and disabled people_,
 fire black people,
 and deport all my immigrant friends and colleagues.
 
+It's wild to see major tech companies
+throwing out all pretense --
+giddy to abandon previous commitments around
+diversity, equity, inclusion, or accessibility.
+Run free, little mega-corps!
+Be the evil you've always dreamed for the world!
+
 Surely this has nothing to do with their products, though.
 
 ## But her use-cases
@@ -297,6 +304,20 @@ I want to _maintain my own agency_.
 >
 > ---[Cassandra Granade](https://wandering.shop/@xgranade/113987828759081498)
 
+I know the anti-DEI(A) sea-change
+in mega-corp C-suites
+doesn't reflect the desires of my
+friends and colleagues
+now working for (_surprise!_) AI arms dealers,
+but just trying to do their best
+for open web standards.
+I don't know what I would do in that situation.
+Labor and capital are often at odds.
+I imagine we all
+[deserve a tech union](https://ethanmarcotte.com/books/you-deserve-a-tech-union/).
+But I worry about how few people
+seem to see the need for it.
+
 Every time I log on
 I feel like I'm being gaslit --
 asked to train my shitty replacement,
@@ -307,8 +328,8 @@ You can be sued in the US
 for intentionally hiring women.
 The future is actually _inhuman word synthesizers_.
 
-_Oh no, I fell for the genders
-with their sneaky ideology!
+_Oh no, I was tricked by the genders
+and their sneaky ideology!
 Now I'm a crime!
 Haha, oops!_
 
@@ -317,8 +338,9 @@ and companies mostly want help
 slopping more slop into the slop machine.
 _Because it will help users_, you ask?
 Of course not!
-Jut because everyone has slop on-tap,
-and needs to do somewhere to put it all!
+Because everyone now has slop _on-tap_,
+and needs to turn that flow of garbage
+into a cash-flow!
 
 ~~_That's the trouble with tribbles._~~
 [Money, gain, profit](https://business-business.business/)!
