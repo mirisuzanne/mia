@@ -11,12 +11,6 @@ tags:
   - css scope
 og:
   img: talks/mia-smashing-de.jpg
-events:
-  - venue: OddBird Workshops
-    date: 2025-04-07
-    end: 2025-04-09
-    adr: Online
-    url: https://www.oddbird.net/workshops/cascading-layouts/
 media:
   - iframe: https://www.youtube.com/embed/9EDOzJJdxWA?si=PDDIMT-QyEJEj9PU
 summary: |

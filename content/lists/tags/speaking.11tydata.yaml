@@ -1,4 +1,23 @@
 events:
+  - title: Modern CSS Architecture
+    venue: Smashing Workshop
+    date: 2025-10-09
+    adr: New York
+    url: https://smashingconf.com/ny-2025
+  - title: Talk TBD
+    venue: Smashing Conference
+    adr: New York
+    date: 2025-10-06
+    url: https://smashingconf.com/ny-2025
+  - title: Talk TBD
+    venue: JS Heroes
+    adr: Cluj, Romania
+    date: 2025-05-29
+    url: https://jsheroes.io/
+  - title: Hints and Suggestions
+    venue: Smashing Meets
+    adr: Online
+    date: 2025-04-01
   - title: CSS Containers, What Do They Know?
     venue: Web Directions Developer Summit
     date: 2024-11-27

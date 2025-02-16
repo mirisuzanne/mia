@@ -387,3 +387,55 @@ Can we get back to building a web
 where people have _agency_ instead of _inhuman agents_?
 
 Where are you looking to put your energy next?
+
+---
+
+## Addendum, 2025-02-16
+
+I've been spending a lot of time in the pottery studio
+instead of keeping up with my RSS feed --
+so I wasn't aware of the most recent _AI discourse_.
+Jeremy Keith does a great job
+putting my thoughts in context
+of a [larger blogging conversation](https://adactio.com/journal/21712).
+I recommend reading that summary,
+and the excellent linked posts by
+[Baldur Bjarnason](https://www.baldurbjarnason.com/notes/2025/now-im-disappointed/)
+and [Michelle Barker](https://css-irl.info/debating-the-merits-of-llms/).
+
+I find it particularly troubling
+the way we talk about current harms of current technology
+as _temporary and therefor insignificant_ --
+as though something being "solvable"
+means that it's basically solved already,
+and we shouldn't worry about it.
+The logic seems so [obviously backwards to me](https://adactio.com/journal/21405).
+Solve the problems first,
+if they are so easily solvable.
+
+This is often used to dismiss the current energy use of LLMs,
+but also a common rhetorical trick of CEOs
+as they lay off their workforce.
+Don't worry,
+your current unemployment could someday be solved
+with a _universal basic income_.
+Please ignore the harms of capitalism
+_as we weaponize it against you_ --
+because _socialism could eventually make it better_!
+
+And yet (_surprise!_) when the tech titans
+take over government institutions,
+they don't seem to have much interest for
+improving social safety nets.
+It's almost (almost) like their goal
+is to _weaken_ the bargaining power of labor,
+and they don't consider this a flaw in the first place.
+
+In our marketing-department imagined future
+of a new technology
+all harms will somehow disappear (details TBD),
+but the potential benefits are endless and unbelievable.
+Step 3 might be missing entirely,
+but the profit described by step 4 is undeniable.
+[We could cure cancer](https://front-end.social/@mia/114004360489192892)!
+Critics always lack proper imagination.
