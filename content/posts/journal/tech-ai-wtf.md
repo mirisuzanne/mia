@@ -434,8 +434,14 @@ and they don't consider this a flaw in the first place.
 In our marketing-department imagined future
 of a new technology
 all harms will somehow disappear (details TBD),
-but the potential benefits are endless and unbelievable.
-Step 3 might be missing entirely,
-but the profit described by step 4 is undeniable.
-[We could cure cancer](https://front-end.social/@mia/114004360489192892)!
-Critics always lack proper imagination.
+but the potential benefits are endless and extraordinary.
+We could cure cancer!
+But are any of the AI companies
+trying to cure cancer,
+as a primary goal of their work?
+Well, no…
+
+_Step 2 may be actively harmful,
+and step 3 might be perpetually absent,
+but the [profit described by step 4 is undeniable](https://front-end.social/@mia/114004360489192892).
+Critics always lack the proper imagination._
