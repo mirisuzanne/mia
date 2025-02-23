@@ -4,6 +4,11 @@ events:
     date: 2025-10-09
     adr: New York
     url: https://smashingconf.com/ny-2025
+  - title: Is Sass Dead Yet? CSS Mixins & Functions
+    venue: CSS Day
+    adr: Amsterdam, Netherlands
+    date: 2025-06-05
+    url: https://cssday.nl/
   - title: Talk TBD
     venue: Smashing Conference
     adr: New York

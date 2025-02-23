@@ -8,6 +8,8 @@ summary: |
   I need to remember why I'm here.
 ---
 
+([en français](../tech-ai-wtf-fr/))
+
 ## You are here, on my personal web log
 
 A note of warning,
@@ -282,7 +284,7 @@ as a future worth considering.
 I don't want any of this.
 
 I don't need _an agent_,
-I want to _maintain my own agency_.
+I want to [_maintain my own agency_](https://www.youtube.com/watch?v=QEJpZjg8GuA).
 
 ## I don't know
 

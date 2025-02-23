@@ -6,7 +6,7 @@ const isPublic = (page, page_list = true) => {
   const nav_only = page_list
     ? ['index', 'page'].includes(page.data.type)
     : false;
-  const live = !page.data.draft && !nav_only;
+  const live = !page.data.draft && !page.data.private && !nav_only;
   const title = page.data && page.data.title;
   return title ? live : false;
 };
