@@ -12,7 +12,7 @@ summary: |
 **Avertissement** : ceci est une traduction;
 toute erreur est possible.
 [L'original en anglais fait foi](../tech-ai-wtf/).
-_Traduction par
+_Traduit le 14 février 2025 par
 [Coralie Mercier](https://blog.koalie.net/about/)_.
 
 ## Vous êtes ici, sur mon blog personnel
@@ -39,10 +39,10 @@ et nous vendent un produit
 qui, selon eux, aidera à atteindre leurs objectifs eugénistes à long terme.
 Mais en réalité, il s'agit d'un article sur ce que je ressens,
 quand des collègues traitent ce produit
-comme si cela _pourrait avoir du mérite, si seulement nous lui donnions une chance_.
+comme si cela _pouvait avoir du mérite, si seulement nous lui donnions une chance_.
 
 Pour une raison ou une autre,
-je trouve cette opinion _mauvais goût_.
+je trouve cette opinion _de mauvais goût_.
 Je sais que si je n'aime pas je ne devrais pas vous en dégoûter, ou autre,
 mais je n'aime pas l'eugénisme.
 
@@ -68,7 +68,7 @@ que les _technologies portent souvent en elles une idéologie_ :
 > qui consacrent la normativité de toutes sortes,
 > « en éliminant l'inhabituel ».
 >
-> ---Ben Myers, [Je suis une girafe sans tâche (_I'm a Spotless Giraffe_)](https://benmyers.dev/blog/spotless-giraffe/)
+> ---Ben Myers, [Je suis une girafe sans tâches (_I'm a Spotless Giraffe_)](https://benmyers.dev/blog/spotless-giraffe/)
 
 Les outils ont tendance à être le lien entre nous et un objectif,
 et la forme de l'outil
@@ -84,7 +84,7 @@ Peut-être qu'il faut prendre en compte les croyances et les hypothèses
 qui ont été intégrées à une technologie
 avant de l'adopter ?
 Alors que souvent on préfère considérer chaque nouveau joujou
-comme une _opportunité_ abstraite et dénuée de motivation.
+comme une _opportunité_ abstraite et dénuée d'intention.
 Si seulement les _gens bien comme nous_
 s'impliquaient suffisamment tôt,
 nous pourrions sûrement apprendre à tout le monde à l'utiliser de manière éthique !
@@ -174,7 +174,7 @@ Pourquoi ne vais-je pas me concentrer sur les cas d'utilisation réels ?
 
 _Et vous, pourquoi ne vous concentrez-vous pas
 sur les préjudices réels répertoriés ?
-D'une certaine manière, les gens trouvent toujours moyen
+D'une certaine manière, les gens trouvent toujours le moyen
 de balayer les inquiétudes en les qualifiant d'« exagérées et infondées »
 passée la première tentative de coup d'État,
 et en plein dans une prise de pouvoir autoritaire._
@@ -271,7 +271,7 @@ qui ont été _conçus pour me nier_.
 Cela me semble tellement absurde à dire.
 Je n'ai aucune envie d'essayer
 de faire de l'ingénierie inverse sur les cas d'utilisation,
-ou d'améliorer les défauts pour les rendre "meilleur",
+ou d'améliorer leurs défauts pour les rendre "meilleur",
 ou d'aider à les vendre en les pliant à de nouvelles utilisations.
 
 Lorsque des milliardaires obsédés par l'eugénisme
@@ -374,8 +374,8 @@ construit pour partager la recherche entre scientifiques.
 Et je pense toujours que ce web pourrait être plutôt cool, en fait,
 s'il n'était pas pris dans les griffes des grandes entreprises de la technologies.
 Si nous pouvions nous concentrer sur
-les éléments qui le rendent spécial --
-les éléments qui le rendent difficile à manipuler pour le capitalisme :
+les aspects qui le rendent spécial --
+les aspects qui le rendent difficile à manipuler pour le capitalisme :
 
 > Les grandes entreprises trouvent HTML et CSS frustrants « à grande échelle »
 > parce que le web est
