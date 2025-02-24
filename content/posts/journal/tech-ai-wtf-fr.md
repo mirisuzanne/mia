@@ -165,7 +165,7 @@ Ils construisent un dieu numérique
 qui nous mènera au salut,
 téléchargé dans le superamas de la Vierge
 où nous pourrons étendre la lumière du
-[profit exponentiel (_exponential profit_)](https://bengrosser.com/projects/andreessens-techno-optimist-manifesto-as-redaction-poetry//)
+[profit exponentiel](https://bengrosser.com/projects/andreessens-techno-optimist-manifesto-as-redaction-poetry//)
 à travers le cosmos !
 C’est le véritable récit de plusieurs PDG d’IA,
 bien qu'il soit facile à rejeter
@@ -221,7 +221,7 @@ et Anthropic s'associe à Palantir.
 Je parie que les « agents » sont cool.
 
 _Je ne voudrais pas manger
-[un cocktail de crevettes sous la pluie (_a shrimp cocktail in the rain_)](https://defector.com/salesforce-is-using-a-hallucination-to-sell-ai)._
+[un cocktail de crevettes sous la pluie](https://defector.com/salesforce-is-using-a-hallucination-to-sell-ai)._
 
 ## Les travailleurs du secteur technologique semblent en fait aimer la technologie
 
@@ -348,8 +348,8 @@ Parce que tout le monde a maintenant de la bouse à portée de main,
 et qu'on doit transformer ce tas de merde
 en flux de trésorerie !
 
-~~_C'est le problème avec les tribulations._~~
-[Argent, gain, profit (_Money, gain, profit_)](https://business-business.business/)!
+~~_C'est le trouble avec les Tribules._~~
+[Argent, gain, profit](https://business-business.business/)!
 
 Qu'est-ce qu'on fait ici?
 Qu'est-ce que je fais ici ?
