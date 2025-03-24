@@ -28,7 +28,7 @@ at a difficult time.
 > ---Erin Kissane, [Against Entropy](https://erinkissane.com/against-entropy)
 
 TL;DR -- This is a post about
-billionaires who love eugenics,
+billionaires who love eugenics[^lol],
 support a pro-eugenics government,
 and sell us a product
 that they promise will help their longterm
@@ -447,3 +447,31 @@ _Step 2 may be actively harmful,
 and step 3 might be perpetually absent,
 but the [profit described by step 4 is undeniable](https://front-end.social/@mia/114004360489192892).
 Critics always lack the proper imagination._
+
+[^lol]: Hashtag Not All Billionaires, or whatever.
+I chose this language,
+because I'm feeling vulnerable and upset --
+and because it reflects what I see
+when I look at the _longtermist_
+and _pro-natalist_
+and _ultra-utilitarian_ comments and actions
+of many AI-backers,
+and their ties to _rationalist_ (lol) forums.
+I'm not the first one to suggest that
+there's [a hint of eugenics](https://www.truthdig.com/articles/nick-bostrom-longtermism-and-the-eternal-return-of-eugenics-2/)
+in the way these LLM-as-AI-enthusiasts
+talk about their techno-utopian dreams.
+
+    I understand it is not always productive
+to rely on the strongest and least nuanced terms available.
+I imagine _some_ of the billionaires involved
+are primarily in it for the money, actually.
+But that seems like distinction
+with very little difference to me,
+especially as it relates to _how I feel about this moment_.
+Even without citing _eugenics-per-se_,
+I remain opposed to their project,
+and the documented exploitations at every step.
+
+    Anyway, this is a journal entry,
+not an explainer on billionaire ideologies.

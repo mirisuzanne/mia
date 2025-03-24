@@ -20,7 +20,8 @@
         » <em>{{ item.data.type }}</em>
       {% endif %}
       {% if item.data.venue %}
-        @ <em>{{ item.data.venue }}</em>
+        {{ 'in reply to' if item.data.rel == 'reply' else '@' }}
+        <em>{{ item.data.venue }}</em>
       {% endif %}
     </p>
   </header>
