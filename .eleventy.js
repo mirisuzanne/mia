@@ -41,6 +41,7 @@ module.exports = (eleventyConfig) => {
 
   // pass-through
   eleventyConfig.addPassthroughCopy('content/assets/fonts');
+  eleventyConfig.addPassthroughCopy('content/assets/downloads');
   eleventyConfig.addPassthroughCopy('content/assets/icons/*.svg');
   eleventyConfig.addPassthroughCopy('content/favicon.svg');
   eleventyConfig.addPassthroughCopy('content/**/*.txt');
