@@ -25,12 +25,13 @@ gallery:
       One of the arms is attached to the frame
       using a bat pin and wing nut.
 summary: |
-  My throwing gauge design  --
-  but I wanted to make both construction
-  and repairs as simple as possible.
+  I designed a pottery throwing gauge
+  that I could laser cut with scrap material,
+  and assemble using only friction
+  and bat pins.
 ---
 
-Download the templates (choose a format):
+Choose a format to download the design templates:
 
 - <a href="/assets/downloads/throwing_gauge.dxf" download>DXF drawings</a>
 - <a href="/assets/downloads/throwing_gauge.lbrn2" download>LightBurn 2</a>
