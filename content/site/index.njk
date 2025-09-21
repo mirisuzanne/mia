@@ -3,7 +3,32 @@ title: Miriam Eric Suzanne
 eleventyComputed:
   summary: |
     {{ welcome | random | safe }}
+gallery:
+  - img: art/pottery/2025/08/bowls-bw.jpg
+    url: https://art.miriamsuzanne.com/
+    alt: >
+      Two stacks of large black-clay ramen bowls
+      with a deep foot
+      and grooved texture around the bare clay base,
+      then a frosty white glaze at the rim and inside --
+      and notches cut out for chopsticks.
+  - img: art/pottery/2025/08/ice-jar.jpg
+    url: https://art.miriamsuzanne.com/product/lidded-jar-winter-woods
+    alt: >
+      A small jar with a slightly wide base
+      and angular walls sloping in slightly
+caption: >
+  A few of my pieces…
+  Find more in
+  [my art shop](https://art.miriamsuzanne.com/)!
 ---
+
+{% import "content.macros.njk" as content %}
+
+{{ content.figure(
+  data=gallery,
+  caption=caption
+) }}
 
 {% set event_list = collections.all | getEvents | notPast %}
 
