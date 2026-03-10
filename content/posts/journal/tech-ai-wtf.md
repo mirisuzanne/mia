@@ -2,6 +2,38 @@
 title: Tech continues to be political
 sub: And the politics aren't looking great
 date: 2025-02-12
+pottery:
+  sample:
+    - img: art/pottery/2026/do-trans.jpg
+      url: https://art.miriamsuzanne.com/
+      alt: >
+        Handmade ceramic cups that say
+        'do trans, be crimes'
+        in a handwritten slab serif.
+        Each has a deep foot ring
+        and slightly rounded wide base,
+        and bare clay textured walls
+        that slope in towards the mossy
+        green-and-gold glazed rim.
+    - img: art/pottery/2026/no-cops.jpg
+      url: https://art.miriamsuzanne.com/
+      alt: >
+        Similar cups, but these say
+        'no cops, no cages, no borders'
+        and have a blue glaze at the rim and inside.
+    - img: art/pottery/2026/two-tone-bottles.jpg
+      url: https://art.miriamsuzanne.com/
+      alt: >
+        A set of angular ceramic bottles,
+        some with an inset hourglass waist,
+        some outset and diamond-shaped.
+        All of them have a black clay base
+        and a hard slightly-swirled transition
+        to white clay for the upper two-thirds.
+        They also have soap dispenser pumps in the top.
+  caption:
+    Enjoy some [handmade functional art](https://art.miriamsuzanne.com/)?
+    Keep fighting for your neighbors.
 summary: |
   Being "in tech" in 2025 is depressing,
   and if I'm going to stick around,
@@ -392,9 +424,17 @@ Where are you looking to put your energy next?
 
 ---
 
+{% import "content.macros.njk" as content %}
+
+{{ content.figure(
+  data=pottery.sample,
+  caption=pottery.caption
+) }}
+
 ## Addendum, 2025-02-16
 
-I've been spending a lot of time in the pottery studio
+I've been spending a lot of time
+[in the pottery studio](https://art.miriamsuzanne.com/)
 instead of keeping up with my RSS feed --
 so I wasn't aware of the most recent _AI discourse_.
 Jeremy Keith does a great job
