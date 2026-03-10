@@ -6,7 +6,6 @@
   video,
   audio,
   iframe,
-  picture,
   svg {
     width: var(--media-width, 100%);
     height: var(--media-height, auto);
@@ -22,7 +21,7 @@
   @media (min-width: 35em) {
     grid-template-columns: [full-start] repeat(2, minmax(0, 1fr)) [full-end];
 
-    > * {
+    [style*='--span'] {
       grid-column: var(--span);
     }
   }

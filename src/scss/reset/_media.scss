@@ -1,11 +1,18 @@
 img,
 video,
 audio,
-iframe,
-picture {
+iframe {
   max-width: 100%;
   height: auto;
   aspect-ratio: auto var(--ratio);
+}
+
+picture {
+  display: contents;
+}
+
+source {
+  display: none;
 }
 
 video,
